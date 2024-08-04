@@ -1,0 +1,2 @@
+# eqbot
+eq master bot
