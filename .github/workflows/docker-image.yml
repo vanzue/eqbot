@@ -1,0 +1,54 @@
+name: CI/CD Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    environment: Prod
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Login to DockerHub
+      uses: docker/login-action@v1
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: true
+        tags: kaitaoms/eqbot:latest
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    environment: Prod
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Login to Azure
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Create Web App with Docker support
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az appservice plan create --name myAppServicePlan --resource-group eqmaster --sku B1 --is-linux
+          az webapp create --resource-group eqmaster --plan myAppServicePlan --name eqmaster --deployment-container-image-name kaitaoms/eqbot:latest
+        
+    - name: Configure docker image
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az webapp config container set --name eqmaster --resource-group eqmaster --docker-custom-image-name kaitaoms/eqmaster:latest --docker-registry-server-url https://registry.hub.docker.com
