@@ -43,5 +43,10 @@ def company_wechat():
     return (echo_str)
 
 
+@app.route('/ping', methods=['GET'])
+def ping():
+    return ("true")
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
