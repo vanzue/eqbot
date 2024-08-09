@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:main"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "main:app"]
