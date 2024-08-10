@@ -47,8 +47,8 @@ jobs:
           az appservice plan create --name myAppServicePlan --resource-group eqmaster --sku B1 --is-linux
           az webapp create --resource-group eqmaster --plan myAppServicePlan --name eqmaster --deployment-container-image-name kaitaoms/eqmaster:latest
         
-    - name: Configure docker image
+    - name: Configure DockerHub credentials for private image
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          az webapp config container set --name eqmaster --resource-group eqmaster --docker-custom-image-name kaitaoms/eqmaster:latest --docker-registry-server-url https://index.docker.io/v1/
+          az webapp config container set --name eqmaster --resource-group eqmaster --docker-custom-image-name kaitaoms/eqmaster:latest --docker-registry-server-url https://index.docker.io/v1/ --docker-registry-server-user ${{ secrets.DOCKERHUB_USERNAME }} --docker-registry-server-password ${{ secrets.DOCKERHUB_TOKEN }}
