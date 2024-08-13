@@ -35,7 +35,7 @@ def verify_signature(request: SignatureVerifyModel, i):
         return echo_str
 
 
-@app.get('/ack')
+@app.get('/')
 def ack_alive(
     msg_signature: str,
     timestamp: int,
