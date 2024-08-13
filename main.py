@@ -14,7 +14,7 @@ load_dotenv()
 
 sToken = os.getenv('TOKEN')
 sEncodingAESKey = os.getenv('ENCODING_AES_KEY')
-sCorpID = os.getenv('CORP_ID')
+sCorpID = os.getenv('CORPID')
 
 app = FastAPI()
 
@@ -23,15 +23,17 @@ qy_api = [
     WXBizMsgCrypt(sToken, sEncodingAESKey, sCorpID),
 ]
 
+
 def verify_signature(request: SignatureVerifyModel, i):
     ret, echo_str = qy_api[i].VerifyURL(
-        request.msg_signature, request.timestamp, 
+        request.msg_signature, request.timestamp,
         request.nonce, request.echo_str)
     if (ret != 0):
         print("ERR: VerifyURL ret: " + str(ret))
         return ("failed")
     else:
         return echo_str
+
 
 @app.get('/ack')
 def ack_alive(
