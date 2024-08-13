@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from data_types import SignatureVerifyModel
 
 import uvicorn
+import urllib.parse
 
 load_dotenv()
 
@@ -28,7 +29,7 @@ def verify_signature(request: SignatureVerifyModel, i):
     print("verify_signature begins")
     ret, echo_str = qy_api[i].VerifyURL(
         request.msg_signature, request.timestamp,
-        request.nonce, request.echostr)
+        request.nonce, urllib.parse.unquote(request.echostr))
     if (ret != 0):
         print("ERR: VerifyURL ret: " + str(ret))
         return ("failed")
@@ -40,7 +41,7 @@ def verify_signature(request: SignatureVerifyModel, i):
 @app.get('/')
 def ack_alive(
     msg_signature: str,
-    timestamp: int,
+    timestamp: str,
     nonce: str,
     echostr: str
 ):
