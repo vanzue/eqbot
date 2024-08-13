@@ -46,7 +46,8 @@ def ack_alive(
 ):
     print("company_wechat begin to verify signature")
     echo_str = verify_signature(
-        SignatureVerifyModel(msg_signature, timestamp, nonce, echostr),
+        SignatureVerifyModel(msg_signature=msg_signature,
+                             timestamp=timestamp, nonce=nonce, echostr=echostr),
         0)
     print("company_wechat")
     return echo_str
