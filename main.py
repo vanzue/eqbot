@@ -25,13 +25,15 @@ qy_api = [
 
 
 def verify_signature(request: SignatureVerifyModel, i):
+    print("verify_signature begins")
     ret, echo_str = qy_api[i].VerifyURL(
         request.msg_signature, request.timestamp,
-        request.nonce, request.echo_str)
+        request.nonce, request.echostr)
     if (ret != 0):
         print("ERR: VerifyURL ret: " + str(ret))
         return ("failed")
     else:
+        print("VerifyURL success")
         return echo_str
 
 
@@ -42,6 +44,7 @@ def ack_alive(
     nonce: str,
     echostr: str
 ):
+    print("company_wechat begin to verify signature")
     echo_str = verify_signature(
         SignatureVerifyModel(msg_signature, timestamp, nonce, echostr),
         0)
