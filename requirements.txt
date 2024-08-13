@@ -1,5 +1,6 @@
-Flask
+fastapi
 requests
 pycryptodome
 python-dotenv
 gunicorn
+uvicorn

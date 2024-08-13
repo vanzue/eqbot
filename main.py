@@ -1,9 +1,13 @@
 import os
-from flask import Flask, request
+from fastapi import FastAPI
 import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
 from dotenv import load_dotenv
+
+from data_types import SignatureVerifyModel
+
+import uvicorn
 
 load_dotenv()
 
@@ -12,41 +16,41 @@ sToken = os.getenv('TOKEN')
 sEncodingAESKey = os.getenv('ENCODING_AES_KEY')
 sCorpID = os.getenv('CORP_ID')
 
-app = Flask(__name__)
+app = FastAPI()
 
 
 qy_api = [
     WXBizMsgCrypt(sToken, sEncodingAESKey, sCorpID),
-]  # 对应接受消息回调模式中的token，EncodingAESKey 和 企业信息中的企业id
+]
 
-# 开启消息接受模式时验证接口连通性
-
-
-def signature(request, i):
-    msg_signature = request.args.get('msg_signature', '')
-    timestamp = request.args.get('timestamp', '')
-    nonce = request.args.get('nonce', '')
-    echo_str = request.args.get('echostr', '')
-    ret, sEchoStr = qy_api[i].VerifyURL(
-        msg_signature, timestamp, nonce, echo_str)
+def verify_signature(request: SignatureVerifyModel, i):
+    ret, echo_str = qy_api[i].VerifyURL(
+        request.msg_signature, request.timestamp, 
+        request.nonce, request.echo_str)
     if (ret != 0):
         print("ERR: VerifyURL ret: " + str(ret))
         return ("failed")
     else:
-        return (sEchoStr)
+        return echo_str
 
-
-@app.route('/company_wechat', methods=['GET', 'POST'])
-def company_wechat():
-    echo_str = signature(request, 0)
+@app.get('/ack')
+def ack_alive(
+    msg_signature: str,
+    timestamp: int,
+    nonce: str,
+    echostr: str
+):
+    echo_str = verify_signature(
+        SignatureVerifyModel(msg_signature, timestamp, nonce, echostr),
+        0)
     print("company_wechat")
-    return (echo_str)
+    return echo_str
 
 
-@app.route('/ping', methods=['GET'])
-def ping():
-    return ("true")
+@app.get('/ping')
+async def ping():
+    return "true"
 
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+if __name__ == "__main__":
+    # This will start the FastAPI server and allow for debugging
+    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="debug")
