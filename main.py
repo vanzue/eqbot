@@ -39,7 +39,8 @@ def verify_signature(request: SignatureVerifyModel, i):
 
 
 @app.get('/')
-def ack_alive(
+@app.post('/')
+def wechat_message(
     msg_signature: str,
     timestamp: str,
     nonce: str,
@@ -56,7 +57,7 @@ def ack_alive(
 
 @app.get('/ping')
 async def ping():
-    return "true"
+    return "version 1.1"
 
 if __name__ == "__main__":
     # This will start the FastAPI server and allow for debugging
