@@ -47,7 +47,6 @@ CREATE TABLE Contact (
     name VARCHAR(100),
     tag VARCHAR(50),
     relationship_type VARCHAR(50),
-    emotional_score DECIMAL(5,2),
     FOREIGN KEY (person_id) REFERENCES PersonalInfo(id)
 );
 
