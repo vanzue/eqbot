@@ -28,6 +28,7 @@ jobs:
 
   setup-and-create-db:
     runs-on: ubuntu-latest
+    environment: Prod
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -35,9 +36,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
           # client-id: ${{ secrets.AZURE_CLIENT_ID }}
           # tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Create Azure SQL Database Resource Group
         run: |
