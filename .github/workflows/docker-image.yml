@@ -37,8 +37,6 @@ jobs:
         uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          # client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          # tenant-id: ${{ secrets.AZURE_TENANT_ID }}
 
       - name: Create Azure SQL Database Resource Group
         run: |
@@ -61,7 +59,7 @@ jobs:
         env:
           SQLCMDPASSWORD: ${{ secrets.SQL_PSWD }}
         run: |
-          sqlcmd -S tcp:eqmasterserver.database.windows.net,1433 -d eqmasterdb -U myadmin -i sql/init.sql
+          sqlcmd -S tcp:eqmasterserver.database.windows.net,1433 -d eqmasterdb -G -U ${{ secrets.AZURE_CLIENT_ID }} -i sql/init.sql
 
   deploy:
     needs: build-and-push
