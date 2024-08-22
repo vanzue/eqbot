@@ -1,12 +1,12 @@
 -- personal table
 CREATE TABLE PersonalInfo (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY IDENTITY(1,1),
     name VARCHAR(100)
 );
 
 -- eq test score table
 CREATE TABLE EQScore (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY IDENTITY(1,1),
     person_id INT,
     dimension1_score INT,
     dimension2_score INT,
@@ -19,14 +19,14 @@ CREATE TABLE EQScore (
 
 -- tag table
 CREATE TABLE InternalTags (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY IDENTITY(1,1),
     tag VARCHAR(50),
     tag_description TEXT
 );
 
 -- course table
 CREATE TABLE Courses (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY IDENTITY(1,1),
     course_name VARCHAR(100),
     course_description TEXT
 );
@@ -42,7 +42,7 @@ CREATE TABLE PersonalInfoCourses (
 
 -- 创建对方表，带外键
 CREATE TABLE Contact (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY IDENTITY(1,1),
     person_id INT,
     name VARCHAR(100),
     tag VARCHAR(50),
@@ -52,7 +52,7 @@ CREATE TABLE Contact (
 
 -- 创建聊天记录表，带外键
 CREATE TABLE ChatRecords (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY IDENTITY(1,1),
     person_id INT,
     other_id INT,
     chat_time DATETIME,
