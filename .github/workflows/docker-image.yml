@@ -51,15 +51,16 @@ jobs:
         run: |
           az sql db create --resource-group eqmaster --server eqmasterserver --name eqmasterdb --service-objective S0
 
-      - name: Install SQLCMD
+      - name: Run SQL Script
         run: |
-          sudo apt-get install mssql-tools unixodbc-dev
+          az sql db query --server ${{ secrets.SQL_SERVER_NAME }} --database ${{ secrets.SQL_DATABASE_NAME }} \
+          --query "SELECT @@VERSION" --auth-type adPassword
 
       - name: Execute SQL script to create tables
-        env:
-          SQLCMDPASSWORD: ${{ secrets.SQL_PSWD }}
+        # env:
+        #   SQLCMDPASSWORD: ${{ secrets.SQL_PSWD }}
         run: |
-          sqlcmd -S tcp:eqmasterserver.database.windows.net,1433 -d eqmasterdb -G -U ${{ secrets.AZURE_CLIENT_ID }} -i sql/init.sql
+          sqlcmd -S tcp:eqmasterserver.database.windows.net,1433 -d eqmasterdb -G -i sql/init.sql
 
   deploy:
     needs: build-and-push
