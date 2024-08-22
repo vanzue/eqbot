@@ -72,13 +72,7 @@ jobs:
         env:
           SQLCMDPASSWORD: ${{ secrets.SQL_PSWD }}
         run: |
-          sqlcmd -S tcp:eqmasterserver,1433 -d eqmasterdb -U myadmin -P ${{ secrets.SQL_PSWD }} -i sql/init.sql
-
-      - name: Execute SQL script to create tables
-        # env:
-        #   SQLCMDPASSWORD: ${{ secrets.SQL_PSWD }}
-        run: |
-          sqlcmd -S tcp:eqmasterserver.database.windows.net,1433 -d eqmasterdb -G -i sql/init.sql
+          sqlcmd -S tcp:eqmasterserver.database.windows.net,1433 -d eqmasterdb -U myadmin -P ${{ secrets.SQL_PSWD }} -i sql/init.sql
 
       - name: Remove firewall rule
         run: |
