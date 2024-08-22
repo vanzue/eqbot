@@ -3,7 +3,7 @@ from database import database, models, schemas
 from database.crud import create_personal_info, get_personal_info
 
 # Initialize the database
-models.Base.metadata.create_all(bind=database.engine)
+#models.Base.metadata.create_all(bind=database.engine)
 
 
 def main():
