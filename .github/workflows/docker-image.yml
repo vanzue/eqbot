@@ -7,7 +7,7 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    environment: Prod
+    # environment: Prod
 
     steps:
       - name: Checkout code
@@ -28,7 +28,7 @@ jobs:
 
   setup-and-create-db:
     runs-on: ubuntu-latest
-    environment: Prod
+    # environment: Prod
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -84,7 +84,7 @@ jobs:
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
-    environment: Prod
+    # environment: Prod
 
     steps:
       - name: Checkout code
