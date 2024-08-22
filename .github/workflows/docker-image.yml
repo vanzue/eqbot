@@ -77,8 +77,8 @@ jobs:
       - name: Remove firewall rule
         run: |
           az sql server firewall-rule delete \
-            --resource-group <your-resource-group> \
-            --server <your-sql-server-name> \
+            --resource-group eqmaster \
+            --server eqmasterserver \
             --name AllowGitHubAction
 
   deploy:
