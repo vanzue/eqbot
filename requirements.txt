@@ -4,3 +4,6 @@ pycryptodome
 python-dotenv
 gunicorn
 uvicorn
+sqlalchemy
+pydantic
+pyodbc
