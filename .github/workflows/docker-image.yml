@@ -51,16 +51,41 @@ jobs:
         run: |
           az sql db create --resource-group eqmaster --server eqmasterserver --name eqmasterdb --service-objective S0
 
-      - name: Run SQL Script
+      - name: Install sqlcmd (if not available)
         run: |
-          az sql db query --server ${{ secrets.SQL_SERVER_NAME }} --database ${{ secrets.SQL_DATABASE_NAME }} \
-          --query "SELECT @@VERSION" --auth-type adPassword
+          sudo apt-get install -y mssql-tools unixodbc-dev
+
+      - name: Get public IP of GitHub runner
+        run: |
+          echo "PUBLIC_IP=$(curl -s https://checkip.amazonaws.com)" >> $GITHUB_ENV
+
+      - name: Add firewall rule
+        run: |
+          az sql server firewall-rule create \
+            --resource-group eqmaster \
+            --server eqmasterserver \
+            --name AllowGitHubAction \
+            --start-ip-address ${{ env.PUBLIC_IP }} \
+            --end-ip-address ${{ env.PUBLIC_IP }}
+
+      - name: Execute SQL query to init schema
+        env:
+          SQLCMDPASSWORD: ${{ secrets.SQL_PSWD }}
+        run: |
+          sqlcmd -S tcp:eqmasterserver,1433 -d eqmasterdb -U myadmin -P ${{ secrets.SQL_PSWD }} -i sql/init.sql
 
       - name: Execute SQL script to create tables
         # env:
         #   SQLCMDPASSWORD: ${{ secrets.SQL_PSWD }}
         run: |
           sqlcmd -S tcp:eqmasterserver.database.windows.net,1433 -d eqmasterdb -G -i sql/init.sql
+
+      - name: Remove firewall rule
+        run: |
+          az sql server firewall-rule delete \
+            --resource-group <your-resource-group> \
+            --server <your-sql-server-name> \
+            --name AllowGitHubAction
 
   deploy:
     needs: build-and-push
