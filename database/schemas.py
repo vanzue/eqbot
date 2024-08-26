@@ -50,22 +50,6 @@ class EQScore(EQScoreBase):
     class Config:
         orm_mode = True
 
-# InternalTags Schema
-class InternalTagsBase(BaseModel):
-    tag: str
-    tag_description: Optional[str]
-
-
-class InternalTagsCreate(InternalTagsBase):
-    pass
-
-
-class InternalTags(InternalTagsBase):
-    id: int
-
-    class Config:
-        orm_mode = True
-
 # Courses Schema
 class CoursesBase(BaseModel):
     course_name: str

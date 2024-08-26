@@ -66,29 +66,6 @@ def delete_eq_score(db: Session, eq_score_id: int):
         db.commit()
     return db_eq_score
 
-# CRUD for InternalTags
-
-def create_internal_tag(db: Session, internal_tag: schemas.InternalTagsCreate):
-    db_internal_tag = models.InternalTags(
-        tag=internal_tag.tag, 
-        tag_description=internal_tag.tag_description
-    )
-    db.add(db_internal_tag)
-    db.commit()
-    db.refresh(db_internal_tag)
-    return db_internal_tag
-
-
-def get_internal_tags(db: Session, skip: int = 0, limit: int = 100):
-    return db.query(models.InternalTags).offset(skip).limit(limit).all()
-
-
-def delete_internal_tag(db: Session, internal_tag_id: int):
-    db_internal_tag = db.query(models.InternalTags).filter(models.InternalTags.id == internal_tag_id).first()
-    if db_internal_tag:
-        db.delete(db_internal_tag)
-        db.commit()
-    return db_internal_tag
 
 # CRUD for Courses
 
