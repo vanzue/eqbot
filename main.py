@@ -3,6 +3,7 @@ from fastapi import FastAPI
 import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
+from eq_master_api import router as eqmaster_router
 from dotenv import load_dotenv
 
 from data_types import SignatureVerifyModel
@@ -18,16 +19,15 @@ sEncodingAESKey = os.getenv('ENCODING_AES_KEY')
 sCorpID = os.getenv('CORPID')
 
 app = FastAPI()
-
-
-qy_api = [
-    WXBizMsgCrypt(sToken, sEncodingAESKey, sCorpID),
-]
-
+app.include_router(eqmaster_router)
 
 def verify_signature(request: SignatureVerifyModel, i):
-    print("verify_signature begins")
-    ret, echo_str = qy_api[i].VerifyURL(
+    if not sToken or not sEncodingAESKey or not sCorpID:
+        return ""
+    qy_api = WXBizMsgCrypt(sToken, sEncodingAESKey, sCorpID)
+    if not qy_api:
+        return ""
+    ret, echo_str = qy_api.VerifyURL(
         request.msg_signature, request.timestamp,
         request.nonce, urllib.parse.unquote(request.echostr))
     if (ret != 0):
