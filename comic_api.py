@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-router = APIRouter()
+comic_router = APIRouter()
 
 
-@router.get("/comic/ping")
+@comic_router.get("/comic/ping")
 async def ping_eqmaster():
     return "From comic"
