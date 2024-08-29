@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-router = APIRouter()
+eqmaster_router = APIRouter()
 
-@router.get("/eqmaster/ping")
+
+@eqmaster_router.get("/eqmaster/ping")
 async def ping_eqmaster():
     return "From eq master"
-

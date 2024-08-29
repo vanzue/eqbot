@@ -3,7 +3,9 @@ from fastapi import FastAPI
 import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
-from eq_master_api import router as eqmaster_router
+from eq_master_api import eqmaster_router as eqmaster_router
+from comic_api import comic_router as comic_router
+from echo_space_api import echo_space_router as echo_space_router
 from dotenv import load_dotenv
 
 from data_types import SignatureVerifyModel
@@ -20,6 +22,9 @@ sCorpID = os.getenv('CORPID')
 
 app = FastAPI()
 app.include_router(eqmaster_router)
+app.include_router(comic_router)
+app.include_router(echo_space_router)
+
 
 def verify_signature(request: SignatureVerifyModel, i):
     if not sToken or not sEncodingAESKey or not sCorpID:
