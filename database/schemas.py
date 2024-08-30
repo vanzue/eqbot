@@ -20,7 +20,8 @@ class PersonalInfo(PersonalInfoBase):
     chat_records: List['ChatRecords'] = []  # Relationship
 
     class Config:
-        orm_mode = True
+        # orm_mode = True
+        from_attributes = True
 
 # EQScore Schema
 class EQScoreBase(BaseModel):
@@ -40,15 +41,16 @@ class EQScoreBase(BaseModel):
 
 
 class EQScoreCreate(EQScoreBase):
-    person_id: str  # ForeignKey to PersonalInfo.id
+    person_id: int  # ForeignKey to PersonalInfo.id
 
 
 class EQScore(EQScoreBase):
     id: int
-    person_id: str  # ForeignKey to PersonalInfo.id
+    person_id: int  # ForeignKey to PersonalInfo.id
 
     class Config:
-        orm_mode = True
+        # orm_mode = True
+        from_attributes = True
 
 # Courses Schema
 class CoursesBase(BaseModel):
@@ -64,11 +66,12 @@ class Courses(CoursesBase):
     id: int
 
     class Config:
-        orm_mode = True
+        # orm_mode = True
+        from_attributes = True
 
 # PersonalInfoCourses Schema (Many-to-Many relationship between PersonalInfo and Courses)
 class PersonalInfoCoursesBase(BaseModel):
-    person_id: str  # ForeignKey to PersonalInfo.id
+    person_id: int  # ForeignKey to PersonalInfo.id
     course_id: int  # ForeignKey to Courses.id
 
 
@@ -78,14 +81,15 @@ class PersonalInfoCoursesCreate(PersonalInfoCoursesBase):
 
 class PersonalInfoCourses(PersonalInfoCoursesBase):
     class Config:
-        orm_mode = True
+        # orm_mode = True
+        from_attributes = True
 
 # Contact Schema
 class ContactBase(BaseModel):
-    person_id: str  # ForeignKey to PersonalInfo.id
+    person_id: int  # ForeignKey to PersonalInfo.id
     name: str
     tag: Optional[str]
-    relationship: Optional[str]
+    contact_relationship : Optional[str]
 
 
 class ContactCreate(ContactBase):
@@ -93,15 +97,16 @@ class ContactCreate(ContactBase):
 
 
 class Contact(ContactBase):
-    id: str  # Changed to str to match the SQLAlchemy model
+    id: int  # Changed to str to match the SQLAlchemy model
 
     class Config:
-        orm_mode = True
+        # orm_mode = True
+        from_attributes = True
 
 # ChatRecords Schema
 class ChatRecordsBase(BaseModel):
-    person_id: str  # ForeignKey to PersonalInfo.id
-    contact_id: str  # ForeignKey to Contact.id
+    person_id: int  # ForeignKey to PersonalInfo.id
+    contact_id: int  # ForeignKey to Contact.id
     chat_time: datetime  # Use DateTime
     chat_content: str
 
@@ -114,4 +119,5 @@ class ChatRecords(ChatRecordsBase):
     id: int
 
     class Config:
-        orm_mode = True
+        # orm_mode = True
+        from_attributes = True

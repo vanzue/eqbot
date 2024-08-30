@@ -6,7 +6,7 @@ from .database import Base
 class PersonalInfo(Base):
     __tablename__ = 'PersonalInfo'
 
-    id = Column(String(100), primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     name = Column(String(100), nullable=False)
     tag = Column(String(50))
     tag_description = Column(Text)
@@ -20,7 +20,7 @@ class EQScore(Base):
     __tablename__ = 'EQScore'
 
     id = Column(Integer, primary_key=True, index=True)
-    person_id = Column(String(100), ForeignKey('PersonalInfo.id'), nullable=False)
+    person_id = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
     dimension1_score = Column(Integer)
     dimension1_detail = Column(Text)
     dimension2_score = Column(Integer)
@@ -49,7 +49,7 @@ class InternalTags(Base):
 class Courses(Base):
     __tablename__ = 'Courses'
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     course_name = Column(String(100), nullable=False)
     course_description = Column(Text)
 
@@ -59,21 +59,21 @@ class Courses(Base):
 class PersonalInfoCourses(Base):
     __tablename__ = 'PersonalInfoCourses'
 
-    person_id = Column(String(100), ForeignKey('PersonalInfo.id'), primary_key=True)
+    person_id = Column(Integer, ForeignKey('PersonalInfo.id'), primary_key=True)
     course_id = Column(Integer, ForeignKey('Courses.id'), primary_key=True)
 
-    person = relationship("PersonalInfo", back_populates="courses")
+    # person = relationship("PersonalInfo", back_populates="courses")
     course = relationship("Courses", back_populates="personal_info_courses")
 
 # Contact Table
 class Contact(Base):
     __tablename__ = 'Contact'
 
-    id = Column(String(100), primary_key=True, index=True)
-    person_id = Column(String(100), ForeignKey('PersonalInfo.id'), nullable=False)
+    id = Column(Integer, primary_key=True, index=True)
+    person_id = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
     name = Column(String(100), nullable=False)
     tag = Column(String(50))
-    relationship = Column(String(50))
+    contact_relationship = Column(String(50))
 
     person = relationship("PersonalInfo", back_populates="contacts")
     chat_records = relationship("ChatRecords", back_populates="contact")
@@ -83,8 +83,8 @@ class ChatRecords(Base):
     __tablename__ = 'ChatRecords'
 
     id = Column(Integer, primary_key=True, index=True)
-    person_id = Column(String(100), ForeignKey('PersonalInfo.id'), nullable=False)
-    contact_id = Column(String(100), ForeignKey('Contact.id'), nullable=False)
+    person_id = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
+    contact_id = Column(Integer, ForeignKey('Contact.id'), nullable=False)
     chat_time = Column(DateTime)  # Use DateTime instead of String
     chat_content = Column(Text)
 

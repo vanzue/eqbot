@@ -19,9 +19,12 @@ def get_personal_info(db: Session, personal_info_id: str):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == personal_info_id).first()
 
 
-def get_personal_infos(db: Session, skip: int = 0, limit: int = 100):
-    return db.query(models.PersonalInfo).offset(skip).limit(limit).all()
+def get_personal_infos(db: Session, id: int):
+    return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == id).one_or_none()
 
+def get_personal_id_by_name(db: Session, name: str):
+    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).one_or_none()
+    return personal_info.id
 
 def delete_personal_info(db: Session, personal_info_id: str):
     db_personal_info = get_personal_info(db, personal_info_id)
@@ -124,7 +127,7 @@ def create_contact(db: Session, contact: schemas.ContactCreate):
         person_id=contact.person_id,
         name=contact.name,
         tag=contact.tag,
-        relationship=contact.relationship
+        contact_relationship =contact.contact_relationship 
     )
     db.add(db_contact)
     db.commit()
