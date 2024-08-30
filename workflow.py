@@ -2,23 +2,22 @@ from fastapi import APIRouter
 from fastapi import APIRouter, Request, HTTPException, Depends
 from sqlalchemy.orm import Session
 
-from eq_master_api import router as eqmaster_router
-from database import get_db,  models, schemas, crud
-from llm import request_LLM_response, retry_parse_LLMresponse
+from database import database, models, schemas, crud
+from llm import eq_eval
 import helper
 
 router = APIRouter()
 
 # create a new user
-@router.post("/creat_personal_info")
-def create_personal_info_endpoint(name: str, tag: str, tag_description: str, db: Session = Depends(get_db)):
+@router.post("/create_personal_info")
+async def create_personal_info_endpoint(name: str, tag: str, tag_description: str, db: Session = Depends(database.get_db)):
     personal_info_data = schemas.PersonalInfoCreate(name=name, tag=tag, tag_description=tag_description)
     db_personal_info = crud.create_personal_info(db, personal_info_data)
     return db_personal_info
 
 # create a new eq score report
 @router.post("/create_eq_scores")
-def create_eqscore_endpoint(person_id: int, scores_details:dict, db: Session = Depends(get_db)):
+async def create_eqscore_endpoint(person_id: int, scores_details:dict, db: Session = Depends(database.get_db)):
     eq_score_data = schemas.EQScoreCreate(
             person_id=person_id,
             dimension1_score=scores_details['dimension1_score'],
@@ -40,7 +39,7 @@ def create_eqscore_endpoint(person_id: int, scores_details:dict, db: Session = D
 
 # signup as a new user and get the EQ Score Report
 @router.post("/create_profile")
-def create_user(request: Request):
+async def create_profile(request: Request, db: Session = Depends(database.get_db)):
     # Receive all the info from frontend
     # personal info
     # username = request.info.username
@@ -68,14 +67,15 @@ def create_user(request: Request):
 
     # Send necessary info to llm agent and receive response from it
     # TBD: subsitute by real test answers
-    user_info = "该用户是一名" + gender + ",ta在生活中经常受到" + concerns + "的困扰" \
+    user_info = "该用户是一名" + gender + "性,ta在生活中经常受到" + concerns + "的困扰" \
                 + ".ta会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，" + answer1 + "。" \
                 + "在饭局上，老板和ta开了一些不合适的玩笑，让ta感到非常不适，ta最有可能会" + answer2 + "。" \
                 + "在酒局上，重要客户说：今天ta不喝酒就是不给客户面子，ta最有可能用" + answer3 + "这句话婉拒。" \
                 + "在商务饭局上，客户说着对项目情况的担忧，同事正好把酒洒在客户身上，ta最有可能会说 “" + answer4 + "”。" 
     # user_info = "该用户是一名女性，她会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，冷静分析双方意见和优缺点"
-    llm_response = request_LLM_response(user_info)
-    eq_scores = retry_parse_LLMresponse(llm_response)
+    llm_response = eq_eval.request_LLM_response(user_info)
+    eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
+    print(eq_scores)
 
     # 整理数据，明确什么是tag，什么是tag description，,如何计算以及overall score是否是五项均分
     # TBD: tag_description
@@ -86,10 +86,10 @@ def create_user(request: Request):
     tag_id = helper.min_score_index(scores)
 
     # create a new user
-    db_personal_info = create_personal_info_endpoint(name=username, tag=tags[tag_id], tag_description=tag_description)
+    db_personal_info = await create_personal_info_endpoint(name=username, tag=tags[tag_id], tag_description=tag_description, db=db)
     
     # create EQ score
-    create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores)
+    await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, db=db)
 
     # return info back to frontend
     return {"score": overall_score, 
@@ -106,11 +106,11 @@ def create_user(request: Request):
 
 # login to the existed user
 @router.post("/login_personal_info/{name}")
-def loginin_user(request: Request, name: str, db: Session = Depends(get_db)):
+def loginin_user(request: Request, name: str, db: Session = Depends(database.get_db)):
     personal_id = crud.get_personal_id_by_name(db, name=name)
 
-    # TBD: confirm what to return
-    pass
+    return personal_id
+
 
 if __name__ == "__main__":
     create_user()

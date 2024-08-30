@@ -29,13 +29,14 @@ def main():
 
     try:
         # Create PersonalInfo
-        # personal_info_data = schemas.PersonalInfoCreate(name="Jay Park", tag="idol", tag_description="black cat")
-        # personal_info = crud.create_personal_info(db, personal_info_data)
-        # print(f"Created PersonalInfo: {personal_info}")
+        personal_info_data = schemas.PersonalInfoCreate(name="Jay Park2", tag="idol", tag_description="black cat")
+        personal_info = crud.create_personal_info(db, personal_info_data)
+        print(f"Created PersonalInfo: {personal_info.id}")
 
         # Retrieve PersonalInfo by ID
-        retrieved_personal_info = crud.get_personal_info(db, 1)
-        print(f"Retrieved PersonalInfo: {retrieved_personal_info.name}")
+        # for _ in range(10):
+        #     retrieved_personal_info = crud.get_personal_info(db, 1)
+        #     print(f"Retrieved PersonalInfo: {retrieved_personal_info.id}")
 
         # Create EQScore
         # eq_score_data = schemas.EQScoreCreate(
