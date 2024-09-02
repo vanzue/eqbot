@@ -101,8 +101,9 @@ async def create_profile(request: schemas.CreateUserRequest, background_tasks: B
     return {"job_id": job_id}
 
 async def process_user_data(request, user_info, tags, tag_description, job_id, db):
-    llm_response = eq_eval.request_LLM_response(user_info)
-    eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
+    # llm_response = eq_eval.request_LLM_response(user_info)
+    # eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
+    eq_scores = eq_eval.retry_parse_LLMresponse(user_info)
     tag_id = helper.min_score_index([eq_scores['dimension1_score'], eq_scores['dimension2_score'], eq_scores['dimension3_score'], eq_scores['dimension4_score'], eq_scores['dimension5_score']])
     
     # create a new user and EQ score
