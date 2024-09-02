@@ -180,4 +180,4 @@ if __name__ == "__main__":
     # print(response)
 
     eq_scores = retry_parse_LLMresponse(response)
-    print(eq_scores)
+    # print(eq_scores)

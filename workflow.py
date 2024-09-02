@@ -1,8 +1,9 @@
+import uuid
 from fastapi import APIRouter
 from fastapi import APIRouter, Request, HTTPException, Depends
 from sqlalchemy.orm import Session
 
-from database import database, models, schemas, crud
+from database import database, schemas, crud
 from llm import eq_eval
 import helper
 
@@ -39,31 +40,31 @@ async def create_eqscore_endpoint(person_id: int, scores_details:dict, db: Sessi
 
 # signup as a new user and get the EQ Score Report
 @router.post("/create_profile")
-async def create_profile(request: Request, db: Session = Depends(database.get_db)):
+async def create_profile(request: schemas.CreateUserRequest, db: Session = Depends(database.get_db)):
     # Receive all the info from frontend
     # personal info
-    # username = request.info.username
-    username = "Jay Park"
+    username = request.info.username
+    # username = "Jay Park"
     
     # preference
-    # gender = request.preference.gender
-    # issues = request.preference.issues
-    gender = "男"
-    issues = ["不太擅长回复消息"]
+    gender = request.preference.gender
+    issues = request.preference.issues
+    # gender = "男"
+    # issues = ["不太擅长回复消息"]
 
     concerns = ""
     for issue in issues:
         concerns += issue + ', '
 
     # test answer
-    # answer1 = request.test.answer1
-    # answer2 = request.test.answer2
-    # answer3 = request.test.answer3
-    # answer4 = request.test.answer4
-    answer1 = "等待领导决定"
-    answer2 = "不理他"
-    answer3 = "那我喝吧"
-    answer4 = "帮客户清理并解释项目情况"
+    answer1 = request.test.answer1
+    answer2 = request.test.answer2
+    answer3 = request.test.answer3
+    answer4 = request.test.answer4
+    # answer1 = "等待领导决定"
+    # answer2 = "不理他"
+    # answer3 = "那我喝吧"
+    # answer4 = "帮客户清理并解释项目情况"
 
     # Send necessary info to llm agent and receive response from it
     # TBD: subsitute by real test answers
@@ -75,7 +76,7 @@ async def create_profile(request: Request, db: Session = Depends(database.get_db
     # user_info = "该用户是一名女性，她会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，冷静分析双方意见和优缺点"
     llm_response = eq_eval.request_LLM_response(user_info)
     eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
-    print(eq_scores)
+    # print(eq_scores)
 
     # 整理数据，明确什么是tag，什么是tag description，,如何计算以及overall score是否是五项均分
     # TBD: tag_description
@@ -102,7 +103,13 @@ async def create_profile(request: Request, db: Session = Depends(database.get_db
             "summary": eq_scores['summary'],
             "detail": eq_scores['detail'],
             "overall_suggestion": eq_scores['overall_suggestion']}
+    # return uuid.uuid4()
 
+
+@router.get("/get_profile/{job_id}")
+async def get_profile(request: Request, job_id: int, db: Session = Depends(database.get_db)):
+    # TBD
+    pass
 
 # login to the existed user
 @router.post("/login_personal_info/{name}")
@@ -112,5 +119,5 @@ def loginin_user(request: Request, name: str, db: Session = Depends(database.get
     return personal_id
 
 
-if __name__ == "__main__":
-    create_user()
+# if __name__ == "__main__":
+#     create_user()

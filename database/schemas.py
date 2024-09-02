@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional
 from datetime import datetime
 
@@ -121,3 +121,23 @@ class ChatRecords(ChatRecordsBase):
     class Config:
         # orm_mode = True
         from_attributes = True
+
+
+
+class UserInfo(BaseModel):
+    username: str = Field(None, example="Jay Park")
+
+class UserPreference(BaseModel):
+    gender: str = Field(None, example="男")
+    issues: List[str] = Field(None, example=["不太擅长回复消息"])
+
+class UserTest(BaseModel):
+    answer1: str = Field(None, example="等待领导决定")
+    answer2: str = Field(None, example="不理他")
+    answer3: str = Field(None, example="那我喝吧")
+    answer4: str = Field(None, example="帮客户清理并解释项目情况")
+
+class CreateUserRequest(BaseModel):
+    info: UserInfo
+    preference: UserPreference
+    test: UserTest
