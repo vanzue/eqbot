@@ -98,7 +98,7 @@ async def create_profile(request: schemas.CreateUserRequest, background_tasks: B
     # # create EQ score
     # await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, job_id=job_id, db=db)
 
-    return job_id
+    return {"job_id": job_id}
 
 async def process_user_data(request, user_info, tags, tag_description, job_id, db):
     llm_response = eq_eval.request_LLM_response(user_info)
