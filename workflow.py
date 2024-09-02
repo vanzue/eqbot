@@ -70,14 +70,14 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
     # Send necessary info to llm agent and receive response from it
     # TBD: subsitute by real test answers
     user_info = "该用户是一名" + gender + "性,ta在生活中经常受到" + concerns + "的困扰" \
-                + ".ta会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，" + answer1 + "。" \
+                + ".ta会在开会讨论遇到两个同事意见不合并且其中一个同事小王情绪很激动的时候，" + answer1 + "。" \
                 + "在饭局上，老板和ta开了一些不合适的玩笑，让ta感到非常不适，ta最有可能会" + answer2 + "。" \
                 + "在酒局上，重要客户说：今天ta不喝酒就是不给客户面子，ta最有可能用" + answer3 + "这句话婉拒。" \
                 + "在商务饭局上，客户说着对项目情况的担忧，同事正好把酒洒在客户身上，ta最有可能会说 “" + answer4 + "”。" 
     # user_info = "该用户是一名女性，她会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，冷静分析双方意见和优缺点"
     llm_response = eq_eval.request_LLM_response(user_info)
     eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
-    # print(eq_scores)
+    print(eq_scores)
 
     # 整理数据，明确什么是tag，什么是tag description，,如何计算以及overall score是否是五项均分
     # TBD: tag_description
