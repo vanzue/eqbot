@@ -129,7 +129,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-eqbot/
+
 
 # Spyder project settings
 .spyderproject
