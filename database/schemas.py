@@ -7,6 +7,7 @@ class PersonalInfoBase(BaseModel):
     name: str
     tag: Optional[str]
     tag_description: Optional[str]
+    job_id: str
 
 
 class PersonalInfoCreate(PersonalInfoBase):
@@ -38,6 +39,7 @@ class EQScoreBase(BaseModel):
     summary: Optional[str]
     detail: Optional[str]
     overall_suggestion: Optional[str]
+    job_id: str
 
 
 class EQScoreCreate(EQScoreBase):

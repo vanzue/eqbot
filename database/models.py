@@ -10,6 +10,7 @@ class PersonalInfo(Base):
     name = Column(String(100), nullable=False)
     tag = Column(String(50))
     tag_description = Column(Text)
+    job_id = Column(String(100))
 
     eq_scores = relationship("EQScore", back_populates="person")
     contacts = relationship("Contact", back_populates="person")
@@ -34,6 +35,7 @@ class EQScore(Base):
     summary = Column(Text)
     detail = Column(Text)
     overall_suggestion = Column(Text)
+    job_id = Column(String(100))
 
     person = relationship("PersonalInfo", back_populates="eq_scores")
 

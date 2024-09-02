@@ -7,7 +7,8 @@ def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate)
     db_personal_info = models.PersonalInfo(
         name=personal_info.name, 
         tag=personal_info.tag, 
-        tag_description=personal_info.tag_description
+        tag_description=personal_info.tag_description,
+        job_id = personal_info.job_id
     )
     db.add(db_personal_info)
     db.commit()
@@ -25,6 +26,10 @@ def get_personal_infos(db: Session, id: int):
 def get_personal_id_by_name(db: Session, name: str):
     personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).one_or_none()
     return personal_info.id
+
+def get_personal_info_by_job_id(db: Session, job_id: str):
+    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.job_id == job_id).one_or_none()
+    return personal_info
 
 def delete_personal_info(db: Session, personal_info_id: str):
     db_personal_info = get_personal_info(db, personal_info_id)
@@ -50,7 +55,8 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
         dimension5_detail=eq_score.dimension5_detail,
         summary=eq_score.summary,
         detail=eq_score.detail,
-        overall_suggestion=eq_score.overall_suggestion
+        overall_suggestion=eq_score.overall_suggestion,
+        job_id = eq_score.job_id
     )
     db.add(db_eq_score)
     db.commit()
@@ -61,6 +67,8 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
 def get_eq_scores_by_person_id(db: Session, person_id: str, skip: int = 0, limit: int = 100):
     return db.query(models.EQScore).filter(models.EQScore.person_id == person_id).offset(skip).limit(limit).all()
 
+def get_eq_scores_by_job_id(db: Session, job_id: str):
+    return db.query(models.EQScore).filter(models.EQScore.job_id == job_id).one_or_none()
 
 def delete_eq_score(db: Session, eq_score_id: int):
     db_eq_score = db.query(models.EQScore).filter(models.EQScore.id == eq_score_id).first()

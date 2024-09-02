@@ -3,7 +3,7 @@ from fastapi import APIRouter
 from fastapi import APIRouter, Request, HTTPException, Depends
 from sqlalchemy.orm import Session
 
-from database import database, schemas, crud
+from database import database, schemas, crud, models
 from llm import eq_eval
 import helper
 
@@ -11,14 +11,14 @@ router = APIRouter()
 
 # create a new user
 @router.post("/create_personal_info")
-async def create_personal_info_endpoint(name: str, tag: str, tag_description: str, db: Session = Depends(database.get_db)):
-    personal_info_data = schemas.PersonalInfoCreate(name=name, tag=tag, tag_description=tag_description)
+async def create_personal_info_endpoint(name: str, tag: str, tag_description: str, job_id: str, db: Session = Depends(database.get_db)):
+    personal_info_data = schemas.PersonalInfoCreate(name=name, tag=tag, tag_description=tag_description, job_id=job_id)
     db_personal_info = crud.create_personal_info(db, personal_info_data)
     return db_personal_info
 
 # create a new eq score report
 @router.post("/create_eq_scores")
-async def create_eqscore_endpoint(person_id: int, scores_details:dict, db: Session = Depends(database.get_db)):
+async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: str, db: Session = Depends(database.get_db)):
     eq_score_data = schemas.EQScoreCreate(
             person_id=person_id,
             dimension1_score=scores_details['dimension1_score'],
@@ -33,7 +33,8 @@ async def create_eqscore_endpoint(person_id: int, scores_details:dict, db: Sessi
             dimension5_detail=scores_details['dimension5_detail'],
             summary=scores_details['summary'],
             detail=scores_details['detail'],
-            overall_suggestion=scores_details['overall_suggestion']
+            overall_suggestion=scores_details['overall_suggestion'],
+            job_id=job_id
         )
     db_eq_score = crud.create_eq_score(db, eq_score_data)
     return db_eq_score
@@ -82,34 +83,66 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
     # TBD: tag_description
     tag_description = "TBD"
     scores = [eq_scores['dimension1_score'], eq_scores['dimension2_score'], eq_scores['dimension3_score'], eq_scores['dimension4_score'], eq_scores['dimension5_score']]
-    overall_score = helper.calculate_average(*scores)
+    # overall_score = helper.calculate_average(*scores)
     tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
     tag_id = helper.min_score_index(scores)
+    job_id = str(uuid.uuid4())
 
     # create a new user
-    db_personal_info = await create_personal_info_endpoint(name=username, tag=tags[tag_id], tag_description=tag_description, db=db)
+    db_personal_info = await create_personal_info_endpoint(name=username, tag=tags[tag_id], tag_description=tag_description, job_id=job_id, db=db)
     
     # create EQ score
-    await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, db=db)
+    await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, job_id=job_id, db=db)
 
     # return info back to frontend
-    return {"score": overall_score, 
-            "tag": tags[tag_id], "tag_description": tag_description,
-            "dimension1_score": eq_scores['dimension1_score'], "dimension1_detail": eq_scores['dimension1_detail'],
-            "dimension2_score": eq_scores['dimension2_score'], "dimension2_detail": eq_scores['dimension2_detail'],
-            "dimension3_score": eq_scores['dimension3_score'], "dimension3_detail": eq_scores['dimension3_detail'],
-            "dimension4_score": eq_scores['dimension4_score'], "dimension4_detail": eq_scores['dimension4_detail'],
-            "dimension5_score": eq_scores['dimension5_score'], "dimension5_detail": eq_scores['dimension5_detail'],
-            "summary": eq_scores['summary'],
-            "detail": eq_scores['detail'],
-            "overall_suggestion": eq_scores['overall_suggestion']}
-    # return uuid.uuid4()
+    # return {"score": overall_score, 
+    #         "tag": tags[tag_id], "tag_description": tag_description,
+    #         "dimension1_score": eq_scores['dimension1_score'], "dimension1_detail": eq_scores['dimension1_detail'],
+    #         "dimension2_score": eq_scores['dimension2_score'], "dimension2_detail": eq_scores['dimension2_detail'],
+    #         "dimension3_score": eq_scores['dimension3_score'], "dimension3_detail": eq_scores['dimension3_detail'],
+    #         "dimension4_score": eq_scores['dimension4_score'], "dimension4_detail": eq_scores['dimension4_detail'],
+    #         "dimension5_score": eq_scores['dimension5_score'], "dimension5_detail": eq_scores['dimension5_detail'],
+    #         "summary": eq_scores['summary'],
+    #         "detail": eq_scores['detail'],
+    #         "overall_suggestion": eq_scores['overall_suggestion']}
+    return job_id
 
 
 @router.get("/get_profile/{job_id}")
-async def get_profile(request: Request, job_id: int, db: Session = Depends(database.get_db)):
-    # TBD
-    pass
+async def get_profile(request: Request, job_id: str, db: Session = Depends(database.get_db)):
+    personal_info = crud.get_personal_info_by_job_id(db, job_id)
+    eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
+
+    if not personal_info:
+        return {"message": "Uncomplete1"}
+    if not eq_scores:
+        return {"message": "Uncomplete2"}
+    
+    scores = [eq_scores.dimension1_score, eq_scores.dimension2_score, eq_scores.dimension3_score, eq_scores.dimension4_score, eq_scores.dimension5_score]
+    overall_score = helper.calculate_average(*scores)
+    
+    response = {
+        "personal_info": {
+            "name": personal_info.name,
+            "tag": personal_info.tag,
+            "tag_description": personal_info.tag_description,
+            "job_id": personal_info.job_id
+        },
+        "eq_scores": {
+            "score": overall_score, 
+            "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
+            "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
+            "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
+            "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
+            "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
+            "summary": eq_scores.summary,
+            "detail": eq_scores.detail,
+            "overall_suggestion": eq_scores.overall_suggestion
+            }
+    }
+    
+    return response
+
 
 # login to the existed user
 @router.post("/login_personal_info/{name}")
