@@ -1,5 +1,5 @@
 import uuid
-from fastapi import APIRouter
+from fastapi import APIRouter, BackgroundTasks
 from fastapi import APIRouter, Request, HTTPException, Depends
 from sqlalchemy.orm import Session
 
@@ -41,7 +41,7 @@ async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: s
 
 # signup as a new user and get the EQ Score Report
 @router.post("/create_profile")
-async def create_profile(request: schemas.CreateUserRequest, db: Session = Depends(database.get_db)):
+async def create_profile(request: schemas.CreateUserRequest, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db)):
     # Receive all the info from frontend
     # personal info
     username = request.info.username
@@ -53,9 +53,7 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
     # gender = "男"
     # issues = ["不太擅长回复消息"]
 
-    concerns = ""
-    for issue in issues:
-        concerns += issue + ', '
+    concerns = ", ".join(issues)
 
     # test answer
     answer1 = request.test.answer1
@@ -75,38 +73,41 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
                 + "在酒局上，重要客户说：今天ta不喝酒就是不给客户面子，ta最有可能用" + answer3 + "这句话婉拒。" \
                 + "在商务饭局上，客户说着对项目情况的担忧，同事正好把酒洒在客户身上，ta最有可能会说 “" + answer4 + "”。" 
     # user_info = "该用户是一名女性，她会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，冷静分析双方意见和优缺点"
-    llm_response = eq_eval.request_LLM_response(user_info)
-    eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
-    print(eq_scores)
 
-    # 整理数据，明确什么是tag，什么是tag description，,如何计算以及overall score是否是五项均分
-    # TBD: tag_description
-    tag_description = "TBD"
-    scores = [eq_scores['dimension1_score'], eq_scores['dimension2_score'], eq_scores['dimension3_score'], eq_scores['dimension4_score'], eq_scores['dimension5_score']]
-    # overall_score = helper.calculate_average(*scores)
     tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
-    tag_id = helper.min_score_index(scores)
+    tag_description = "TBD"
     job_id = str(uuid.uuid4())
+    background_tasks.add_task(process_user_data, request, user_info, tags, tag_description, job_id, db)
 
-    # create a new user
-    db_personal_info = await create_personal_info_endpoint(name=username, tag=tags[tag_id], tag_description=tag_description, job_id=job_id, db=db)
+    # llm_response = eq_eval.request_LLM_response(user_info)
+    # eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
+    # print(eq_scores)
+
+    # # 整理数据，明确什么是tag，什么是tag description，,如何计算以及overall score是否是五项均分
+    # # TBD: tag_description
+    # tag_description = "TBD"
+    # scores = [eq_scores['dimension1_score'], eq_scores['dimension2_score'], eq_scores['dimension3_score'], eq_scores['dimension4_score'], eq_scores['dimension5_score']]
+    # # overall_score = helper.calculate_average(*scores)
+    # tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
+    # tag_id = helper.min_score_index(scores)
+    # job_id = str(uuid.uuid4())
+
+    # # create a new user
+    # db_personal_info = await create_personal_info_endpoint(name=username, tag=tags[tag_id], tag_description=tag_description, job_id=job_id, db=db)
     
-    # create EQ score
-    await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, job_id=job_id, db=db)
+    # # create EQ score
+    # await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, job_id=job_id, db=db)
 
-    # return info back to frontend
-    # return {"score": overall_score, 
-    #         "tag": tags[tag_id], "tag_description": tag_description,
-    #         "dimension1_score": eq_scores['dimension1_score'], "dimension1_detail": eq_scores['dimension1_detail'],
-    #         "dimension2_score": eq_scores['dimension2_score'], "dimension2_detail": eq_scores['dimension2_detail'],
-    #         "dimension3_score": eq_scores['dimension3_score'], "dimension3_detail": eq_scores['dimension3_detail'],
-    #         "dimension4_score": eq_scores['dimension4_score'], "dimension4_detail": eq_scores['dimension4_detail'],
-    #         "dimension5_score": eq_scores['dimension5_score'], "dimension5_detail": eq_scores['dimension5_detail'],
-    #         "summary": eq_scores['summary'],
-    #         "detail": eq_scores['detail'],
-    #         "overall_suggestion": eq_scores['overall_suggestion']}
     return job_id
 
+async def process_user_data(request, user_info, tags, tag_description, job_id, db):
+    llm_response = eq_eval.request_LLM_response(user_info)
+    eq_scores = eq_eval.retry_parse_LLMresponse(llm_response)
+    tag_id = helper.min_score_index([eq_scores['dimension1_score'], eq_scores['dimension2_score'], eq_scores['dimension3_score'], eq_scores['dimension4_score'], eq_scores['dimension5_score']])
+    
+    # create a new user and EQ score
+    db_personal_info = await create_personal_info_endpoint(name=request.info.username, tag=tags[tag_id], tag_description=tag_description, job_id=job_id, db=db)
+    await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, job_id=job_id, db=db)
 
 @router.get("/get_profile/{job_id}")
 async def get_profile(request: Request, job_id: str, db: Session = Depends(database.get_db)):
