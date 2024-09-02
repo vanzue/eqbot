@@ -165,10 +165,11 @@ def parse_LLMresponse(json_data):
         print("JSON is invalid:", e)
         raise
 
-def retry_parse_LLMresponse(json_data, max_retries=5):
+def retry_parse_LLMresponse(user_info, max_retries=5):
     attempt = 0
     while attempt < max_retries:
         try:
+            json_data = request_LLM_response(user_info)
             eq_scores = parse_LLMresponse(json_data)
             return eq_scores
         except json.JSONDecodeError as e:
@@ -181,8 +182,8 @@ def retry_parse_LLMresponse(json_data, max_retries=5):
 
 if __name__ == "__main__":
     user_info = "该用户是一名女性，她会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，冷静分析双方意见和优缺点"
-    response = request_LLM_response(user_info)
-    print(response)
+    # response = request_LLM_response(user_info)
+    # print(response)
 
-    eq_scores = retry_parse_LLMresponse(response)
-    # print(eq_scores)
+    eq_scores = retry_parse_LLMresponse(user_info)
+    print(eq_scores)
