@@ -29,9 +29,9 @@ def main():
 
     try:
         # Create PersonalInfo
-        # personal_info_data = schemas.PersonalInfoCreate(name="Jay Park", tag="idol", tag_description="black cat", job_id="aa94c32e-aa33-4c5d-8cda-effb8c9fda90")
-        # personal_info = crud.create_personal_info(db, personal_info_data)
-        # print(f"Created PersonalInfo: {personal_info.id}")
+        personal_info_data = schemas.PersonalInfoCreate(name="Jay Park", tag="idol", tag_description="黑猫", job_id="aa94c32e-aa33-4c5d-8cda-effb8c9fda90")
+        personal_info = crud.create_personal_info(db, personal_info_data)
+        print(f"Created PersonalInfo: {personal_info.id}")
 
         # Retrieve PersonalInfo by ID
         # for _ in range(10):
@@ -65,8 +65,8 @@ def main():
         # # Retrieve EQScores by person_id
         # eq_scores = crud.get_eq_scores_by_person_id(db, personal_info.id)
         # print(f"Retrieved EQScores: {eq_scores}")
-        eq_scores = crud.get_eq_scores_by_job_id(db, "aa94c32e-aa33-4c5d-8cda-effb8c9fda90")
-        print(f"Retrieved EQScores: {eq_scores.summary}")
+        # eq_scores = crud.get_eq_scores_by_job_id(db, "aa94c32e-aa33-4c5d-8cda-effb8c9fda90")
+        # print(f"Retrieved EQScores: {eq_scores.summary}")
 
         # # Create Course
         # course_data = schemas.CoursesCreate(course_name="Emotional Intelligence 101", course_description="A beginner course on EQ.")
