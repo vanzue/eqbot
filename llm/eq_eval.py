@@ -3,10 +3,15 @@ import requests
 import base64
 import json
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+LLM_API = os.getenv('LLM_API')
 
 def request_LLM_response(user_info):
     # Configuration
-    API_KEY = "7fb1e487a04c4fb1b8951c1675abc093"
+    API_KEY = LLM_API
     # IMAGE_PATH = "YOUR_IMAGE_PATH"
     # encoded_image = base64.b64encode(open(IMAGE_PATH, 'rb').read()).decode('ascii')
     headers = {
@@ -177,7 +182,7 @@ def retry_parse_LLMresponse(json_data, max_retries=5):
 if __name__ == "__main__":
     user_info = "该用户是一名女性，她会在开会讨论遇到两个同事意见不合并且其中一个情绪很激动的时候，冷静分析双方意见和优缺点"
     response = request_LLM_response(user_info)
-    # print(response)
+    print(response)
 
     eq_scores = retry_parse_LLMresponse(response)
     # print(eq_scores)
