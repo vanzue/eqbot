@@ -1,24 +1,37 @@
 import uuid
-from fastapi import APIRouter, BackgroundTasks
-from fastapi import APIRouter, Request, HTTPException, Depends
+from fastapi import APIRouter, Request, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
+from typing import Optional
 
-from database import database, schemas, crud, models
-from llm import eq_eval
+from database import database, schemas, crud
 import helper
 
 router = APIRouter()
 
 # create a new user
-@router.post("/create_personal_info")
-async def create_personal_info_endpoint(name: str, tag: str, tag_description: str, job_id: str, db: Session = Depends(database.get_db)):
-    personal_info_data = schemas.PersonalInfoCreate(name=name, tag=tag, tag_description=tag_description, job_id=job_id)
+async def create_personal_info_endpoint(    
+    name: str,
+    gender: str,
+    job_level: str,
+    issues: str,
+    job_id: str,
+    tag: Optional[str] = None,
+    tag_description: Optional[str] = None,
+    db: Session = Depends(database.get_db)
+):
+    personal_info_data = schemas.PersonalInfoCreate(
+                            name=name, 
+                            gender=gender, 
+                            tag=tag, 
+                            tag_description=tag_description, 
+                            job_level=job_level, 
+                            issues=issues, 
+                            job_id=job_id)
     db_personal_info = crud.create_personal_info(db, personal_info_data)
     return db_personal_info
 
 
 # create a new eq score report
-@router.post("/create_eq_scores")
 async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: str, db: Session = Depends(database.get_db)):
     eq_score_data = schemas.EQScoreCreate(
             person_id=person_id,
@@ -43,60 +56,52 @@ async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: s
 
 # signup as a new user and get the EQ Score Report
 @router.post("/create_profile")
-async def create_profile(request: schemas.CreateUserRequest, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db)):
+async def create_profile(request: schemas.CreateUserRequest, db: Session = Depends(database.get_db)):
     # Receive all the info from frontend
     # personal info
-    username = request.info.username
+    name = request.name
     
     # preference
-    gender = request.preference.gender
-    issues = request.preference.issues
+    job_level = request.job_level
+    gender = request.gender
+    concerns = request.concerns
+    issues = ", ".join(concerns)
 
-    concerns = ", ".join(issues)
-
-    # test answer
-    answer1 = request.test.answer1
-    answer2 = request.test.answer2
-    answer3 = request.test.answer3
-    answer4 = request.test.answer4
-
-    # Send necessary info to llm agent and receive response from it
-    user_info = "该用户是一名" + gender + "性,ta在生活中经常受到" + concerns + "的困扰" \
-                + ".ta会在开会讨论遇到两个同事意见不合并且其中一个同事小王情绪很激动的时候，" + answer1 + "。" \
-                + "在饭局上，老板和ta开了一些不合适的玩笑，让ta感到非常不适，ta最有可能会" + answer2 + "。" \
-                + "在酒局上，重要客户说：今天ta不喝酒就是不给客户面子，ta最有可能用" + answer3 + "这句话婉拒。" \
-                + "在商务饭局上，客户说着对项目情况的担忧，同事正好把酒洒在客户身上，ta最有可能会说 “" + answer4 + "”。" 
-
-    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
-    tag_description = "TBD"
+    # tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
+    # tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"]
     job_id = str(uuid.uuid4())
-    background_tasks.add_task(process_user_data, username, user_info, tags, tag_description, job_id, db)
 
+    await create_personal_info_endpoint(name=name, gender=gender, job_level=job_level, issues=issues, job_id=job_id, db=db)
+    
     return {"job_id": job_id}
 
 
-async def process_user_data(username, user_info, tags, tag_description, job_id, db):
-    eq_scores = eq_eval.retry_parse_LLMresponse(user_info)
-    tag_id = helper.min_score_index([eq_scores['dimension1_score'], eq_scores['dimension2_score'], eq_scores['dimension3_score'], eq_scores['dimension4_score'], eq_scores['dimension5_score']])
-    
-    # create a new user and EQ score
-    db_personal_info = await create_personal_info_endpoint(name=username, tag=tags[tag_id], tag_description=tag_description, job_id=job_id, db=db)
-    await create_eqscore_endpoint(person_id=db_personal_info.id, scores_details=eq_scores, job_id=job_id, db=db)
 
-
-@router.get("/get_profile/{job_id}")
-async def get_profile(request: Request, job_id: str, db: Session = Depends(database.get_db)):
+@router.get("/get_page/{job_id}")
+async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
+    # profile & eq scores
     personal_info = crud.get_personal_info_by_job_id(db, job_id)
     eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
 
     if not personal_info:
-        return {"message": "Uncomplete1"}
+        return {"message": "Uncomplete personal info"}
     if not eq_scores:
-        return {"message": "Uncomplete2"}
+        return {"message": "Uncomplete eq scores"}
     
-    scores = [eq_scores.dimension1_score, eq_scores.dimension2_score, eq_scores.dimension3_score, eq_scores.dimension4_score, eq_scores.dimension5_score]
+    scores = [eq_scores.dimension1_score, 
+              eq_scores.dimension2_score, 
+              eq_scores.dimension3_score, 
+              eq_scores.dimension4_score, 
+              eq_scores.dimension5_score]
     overall_score = helper.calculate_average(*scores)
     
+    # network
+    contacts = crud.get_contacts_by_person_name(db, personal_info.name)
+    contacts_list = []
+    for contact in contacts:
+        contacts_list.append(contact.name)
+
+
     response = {
         "personal_info": {
             "name": personal_info.name,
@@ -114,10 +119,29 @@ async def get_profile(request: Request, job_id: str, db: Session = Depends(datab
             "summary": eq_scores.summary,
             "detail": eq_scores.detail,
             "overall_suggestion": eq_scores.overall_suggestion
-            }
+        },
+        "contacts": contacts_list
     }
     
-    return response
+    return {"response": response}
+
+
+@router.get("/get_analysis_detail/{job_id}")
+async def get_analysis_detail(job_id: str, db: Session = Depends(database.get_db)):
+    eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
+
+    if not eq_scores:
+        return {"message": "Uncomplete eq scores"}
+    
+    response = {
+        "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
+        "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
+        "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
+        "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
+        "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
+    }
+    
+    return {"response": response}
 
 
 # login to the existed user

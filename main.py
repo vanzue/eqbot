@@ -4,8 +4,9 @@ import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
 from eq_master_api import router as eqmaster_router
-from workflow import router as workflow_router
-
+from workflow_api import router as workflow_router
+from onboarding.onboarding_api import router as onboarding_router
+from network_api import router as network_router
 from dotenv import load_dotenv
 
 from data_types import SignatureVerifyModel
@@ -23,6 +24,8 @@ sCorpID = os.getenv('CORPID')
 app = FastAPI()
 app.include_router(eqmaster_router)
 app.include_router(workflow_router)
+app.include_router(onboarding_router)
+app.include_router(network_router)
 
 def verify_signature(request: SignatureVerifyModel, i):
     if not sToken or not sEncodingAESKey or not sCorpID:

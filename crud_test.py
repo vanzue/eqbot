@@ -1,4 +1,4 @@
-import os
+import os, json
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from database import crud, models, schemas
@@ -29,9 +29,29 @@ def main():
 
     try:
         # Create PersonalInfo
-        personal_info_data = schemas.PersonalInfoCreate(name="Jay Park", tag="idol", tag_description="黑猫", job_id="aa94c32e-aa33-4c5d-8cda-effb8c9fda90")
-        personal_info = crud.create_personal_info(db, personal_info_data)
-        print(f"Created PersonalInfo: {personal_info.id}")
+        # issues = ["沟通不畅", "团队合作"]
+        # concerns = ", ".join(issues)
+        # personal_info_data = schemas.PersonalInfoCreate(
+        #                         name="Jay Park", 
+        #                         gender="male",
+        #                         tag=None, 
+        #                         tag_description="黑猫",
+        #                         job_level="Junior", 
+        #                         issues=concerns,
+        #                         job_id="ba94c32e-aa33-4c5d-8cda-effb8c9fda90"
+        #                         )
+        # personal_info = crud.create_personal_info(db, personal_info_data)
+        # print(f"Created PersonalInfo: {personal_info.id}")
+
+        # Update PersonalInfo
+        # personal_info = crud.get_personal_info_by_job_id(db, "d508fc86-948c-42a4-8b98-c415d9f3c5e3")
+        # print(f"Retrieved PersonalInfo: {personal_info.name}")
+        # personal_info_update = schemas.PersonalInfoUpdate(
+        #     tag="情绪小火山",
+        #     tag_description="情绪小火山tag_description"
+        # )
+        # updated_personal_info = crud.update_personal_info_by_name(db, personal_info.name, personal_info_update)
+        # print(f"Updated PersonalInfo: {updated_personal_info.tag}")
 
         # Retrieve PersonalInfo by ID
         # for _ in range(10):
@@ -83,13 +103,18 @@ def main():
         # print(f"Retrieved PersonalInfoCourses: {personal_info_courses}")
 
         # # Create Contact
-        # contact_data = schemas.ContactCreate(person_id=personal_info.id, name="Jane Smith", tag="Friend", relationship="Friend")
+        # contact_data = schemas.ContactCreate(person_id=1, name="Sunoo", tag="摸鱼高手", contact_relationship="Subordinate")
         # contact = crud.create_contact(db, contact_data)
         # print(f"Created Contact: {contact}")
 
         # # Retrieve Contacts by person_id
         # contacts = crud.get_contacts_by_person_id(db, personal_info.id)
         # print(f"Retrieved Contacts: {contacts}")
+
+        contacts = crud.get_contacts_by_person_name(db, "Jay Park")
+        print(f"Retrieved Contacts: {contacts}")
+        for contact in contacts:
+            print(f"Contact: {contact.name}")
 
         # # Create ChatRecord
         # chat_record_data = schemas.ChatRecordsCreate(person_id=personal_info.id, contact_id=contact.id, chat_time="2024-08-26 14:00:00", chat_content="Hello, how are you?")
@@ -109,6 +134,17 @@ def main():
         # crud.delete_personal_info(db, personal_info.id)
 
         # print("Cleaned up all created records.")
+
+        # analysis = schemas.SubordinateAnalysisCreate(
+        #             contact_id=1,
+        #             relationship_analysis="你与这位同事的关系较为紧张，沟通中存在信息不对称和误解，表现出一定的争执和不满。",
+        #             work_compatibility="你们的共事契合度较低，沟通中缺乏明确的职责分工和有效的协作，需要加强沟通与职责明确。",
+        #             cunning_index="65, 同事在对话中表现出一定的防备和推诿责任的倾向，可能会在特定情况下保护自己的利益。",
+        #             work_personality="同事表现出较为谨慎和防御的性格特征，倾向于明确职责范围，不愿多承担额外的责任。",
+        #             interests="从聊天记录来看，同事对特定话题没有明显的兴趣，更多的是关注职责的明确和自身的工作范围。",
+        #             bad_colleague_risk="同事表现出推诿责任的行为，但没有明显的恶意或破坏性行为迹象，需进一步观察其在团队中的表现。"
+        #             )
+        # crud.create_subordinate_analysis(db, analysis)
 
     finally:
         db.close()
