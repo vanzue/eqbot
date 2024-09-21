@@ -151,6 +151,7 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
 
 @router.post("/choose_scenario")
 async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db)):
+    print("job_id: " + choice.job_id)
     if scenario_manager.choice_count == 4:
         scenario_manager.make_choice(choice.choice)
         background_tasks.add_task(background_process_data, scenario_manager, choice.job_id, db)
@@ -158,7 +159,7 @@ async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Ses
     else:
         return scenario_manager.make_choice(choice.choice)
 
-@router.get("/current_scenario")
+@router.get("/get_current_scenario")
 async def get_current_scene():
     return scenario_manager.get_scene()
 

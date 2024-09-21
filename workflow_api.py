@@ -77,13 +77,13 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
 
 
 
-@router.get("/get_page/{job_id}")
+@router.get("/get_homepage/{job_id}")
 async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
     # profile & eq scores
     personal_info = crud.get_personal_info_by_job_id(db, job_id)
     eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
 
-    if not personal_info:
+    if not personal_info.tag:
         return {"message": "Uncomplete personal info"}
     if not eq_scores:
         return {"message": "Uncomplete eq scores"}
