@@ -22,3 +22,13 @@ class ChatCreate(BaseModel):
     chat_content: str
     tag: Optional[str] = None
     contact_relationship: Optional[str] = None
+
+class EchoSpaceModel(BaseModel):
+    moodDescription: str
+    themes: list
+    musicTypes: list
+
+class EchoSpaceResponseModel(BaseModel):
+    success: bool
+    jobID: str
+
