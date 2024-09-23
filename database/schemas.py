@@ -5,13 +5,27 @@ from datetime import datetime
 # PersonalInfo Schema
 class PersonalInfoBase(BaseModel):
     name: str
-    tag: Optional[str]
-    tag_description: Optional[str]
+    gender: str
+    tag: Optional[str] = None
+    tag_description: Optional[str] = None
+    job_level: str
+    issues: str
     job_id: str
 
 
 class PersonalInfoCreate(PersonalInfoBase):
     pass
+
+class PersonalInfoUpdate(BaseModel):
+    gender: Optional[str] = None
+    tag: Optional[str] = None
+    tag_description: Optional[str] = None
+    job_level: Optional[str] = None
+    issues: Optional[str] = None
+    job_id: Optional[str] = None
+
+    class Config:
+        from_attributes = True
 
 
 class PersonalInfo(PersonalInfoBase):
@@ -125,21 +139,56 @@ class ChatRecords(ChatRecordsBase):
         from_attributes = True
 
 
+# Subordinate Analysis Schema
+class SubordinateAnalysisBase(BaseModel):
+    contact_id: int
+    relationship_analysis: str
+    work_compatibility: str
+    cunning_index: str
+    work_personality: str
+    interests: str
+    bad_colleague_risk: str
 
-class UserInfo(BaseModel):
-    username: str = Field(None, example="Jay Park")
 
-class UserPreference(BaseModel):
-    gender: str = Field(None, example="男")
-    issues: List[str] = Field(None, example=["不太擅长回复消息"])
+class SubordinateAnalysisCreate(SubordinateAnalysisBase):
+    pass
 
-class UserTest(BaseModel):
-    answer1: str = Field(None, example="等待领导决定")
-    answer2: str = Field(None, example="不理他")
-    answer3: str = Field(None, example="那我喝吧")
-    answer4: str = Field(None, example="帮客户清理并解释项目情况")
+
+class SubordinateAnalysis(SubordinateAnalysisBase):
+    id: int
+
+    class Config:
+        # orm_mode = True
+        from_attributes = True
+
+
+# Supervisor Analysis Schema
+class SupervisorAnalysisBase(BaseModel):
+    contact_id: int
+    relationship_analysis: str
+    interaction_suggestions: str
+    leader_opinion_of_me: str
+    pua_detection: str
+    preferred_subordinate: str
+    gift_recommendation: str
+
+
+class SupervisorAnalysisCreate(SupervisorAnalysisBase):
+    pass
+
+
+class SupervisorAnalysis(SupervisorAnalysisBase):
+    id: int
+
+    class Config:
+        # orm_mode = True
+        from_attributes = True
+
+
+# Patterns
 
 class CreateUserRequest(BaseModel):
-    info: UserInfo
-    preference: UserPreference
-    test: UserTest
+    name: str
+    job_level: str
+    gender: str
+    concerns: List[str]

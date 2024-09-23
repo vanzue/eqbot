@@ -4,10 +4,14 @@ import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
 
+from workflow_api import router as workflow_router
+from onboarding.onboarding_api import router as onboarding_router
+from network_api import router as network_router
+
+
 from eq_master_api import eqmaster_router as eqmaster_router
 from comic_api import comic_router as comic_router
 from echo_space_api import echo_space_router as echo_space_router
-from workflow import router as workflow_router
 
 from dotenv import load_dotenv
 
@@ -27,6 +31,8 @@ app = FastAPI()
 app.include_router(eqmaster_router)
 
 app.include_router(workflow_router)
+app.include_router(onboarding_router)
+app.include_router(network_router)
 
 app.include_router(comic_router)
 app.include_router(echo_space_router)
@@ -71,4 +77,5 @@ async def ping():
 
 if __name__ == "__main__":
     # This will start the FastAPI server and allow for debugging
-    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="debug")
+    # uvicorn.run(app, host="127.0.0.1", port=8000, log_level="debug")
+    uvicorn.run(app, host="0.0.0.0", port=8180, log_level="debug")

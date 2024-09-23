@@ -1,4 +1,5 @@
 from sqlalchemy.orm import Session
+from sqlalchemy import desc
 from . import models, schemas
 
 # CRUD for PersonalInfo
@@ -6,8 +7,11 @@ from . import models, schemas
 def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate):
     db_personal_info = models.PersonalInfo(
         name=personal_info.name, 
+        gender=personal_info.gender,
         tag=personal_info.tag, 
         tag_description=personal_info.tag_description,
+        job_level=personal_info.job_level,
+        issues=personal_info.issues,
         job_id = personal_info.job_id
     )
     db.add(db_personal_info)
@@ -15,6 +19,24 @@ def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate)
     db.refresh(db_personal_info)
     return db_personal_info
 
+def update_personal_info_by_name(
+    db: Session, 
+    name: str, 
+    personal_info_update: schemas.PersonalInfoUpdate
+):
+    db_personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).first()
+    
+    if db_personal_info is None:
+        return None
+
+    update_data = personal_info_update.model_dump(exclude_unset=True)
+
+    for key, value in update_data.items():
+        setattr(db_personal_info, key, value)
+
+    db.commit()
+    db.refresh(db_personal_info)
+    return db_personal_info
 
 def get_personal_info(db: Session, personal_info_id: str):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == personal_info_id).first()
@@ -146,6 +168,17 @@ def create_contact(db: Session, contact: schemas.ContactCreate):
 def get_contacts_by_person_id(db: Session, person_id: str, skip: int = 0, limit: int = 100):
     return db.query(models.Contact).filter(models.Contact.person_id == person_id).offset(skip).limit(limit).all()
 
+def get_contacts_by_contact_id(db: Session, contact_id: str):
+    return db.query(models.Contact).filter(models.Contact.id == contact_id).one_or_none()
+
+
+def get_contacts_by_person_name(db: Session, person_name: str, skip: int = 0, limit: int = 100):
+    db_personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == person_name).first()
+    if db_personal_info:
+        return db.query(models.Contact).filter(models.Contact.person_id == db_personal_info.id)\
+            .order_by(desc(models.Contact.id))\
+            .offset(skip).limit(limit).all()
+    return []
 
 def delete_contact(db: Session, contact_id: str):
     db_contact = db.query(models.Contact).filter(models.Contact.id == contact_id).first()
@@ -169,8 +202,8 @@ def create_chat_record(db: Session, chat_record: schemas.ChatRecordsCreate):
     return db_chat_record
 
 
-def get_chat_records_by_person_id(db: Session, person_id: str, skip: int = 0, limit: int = 100):
-    return db.query(models.ChatRecords).filter(models.ChatRecords.person_id == person_id).offset(skip).limit(limit).all()
+def get_chat_records_by_person_id(db: Session, person_id: str):
+    return db.query(models.ChatRecords).filter(models.ChatRecords.person_id == person_id).all()
 
 
 def delete_chat_record(db: Session, chat_record_id: int):
@@ -179,3 +212,42 @@ def delete_chat_record(db: Session, chat_record_id: int):
         db.delete(db_chat_record)
         db.commit()
     return db_chat_record
+
+# CRUD for SubordinateAnalysis
+
+def create_subordinate_analysis(db: Session, analysis: schemas.SubordinateAnalysisCreate):
+    db_analysis = models.SubordinateAnalysis(
+        contact_id = analysis.contact_id,
+        relationship_analysis = analysis.relationship_analysis,
+        work_compatibility = analysis.work_compatibility,
+        cunning_index = analysis.cunning_index,
+        work_personality = analysis.work_personality,
+        interests = analysis.interests,
+        bad_colleague_risk = analysis.bad_colleague_risk
+    )
+    db.add(db_analysis)
+    db.commit()
+    db.refresh(db_analysis)
+    return db_analysis
+
+
+def create_supervisor_analysis(db: Session, analysis: schemas.SupervisorAnalysisCreate):
+    db_analysis = models.SupervisorAnalysis(
+        contact_id = analysis.contact_id,
+        relationship_analysis = analysis.relationship_analysis,
+        interaction_suggestions = analysis.interaction_suggestions,
+        leader_opinion_of_me = analysis.leader_opinion_of_me,
+        pua_detection = analysis.pua_detection,
+        preferred_subordinate = analysis.preferred_subordinate,
+        gift_recommendation = analysis.gift_recommendation
+    )
+    db.add(db_analysis)
+    db.commit()
+    db.refresh(db_analysis)
+    return db_analysis
+
+def get_subordinate_analysis_by_contact_id(db: Session, contact_id: str):
+    return db.query(models.SubordinateAnalysis).filter(models.SubordinateAnalysis.contact_id == contact_id).one_or_none()
+
+def get_supervisor_analysis_by_contact_id(db: Session, contact_id: str):
+    return db.query(models.SupervisorAnalysis).filter(models.SupervisorAnalysis.contact_id == contact_id).one_or_none()
