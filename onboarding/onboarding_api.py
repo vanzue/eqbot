@@ -19,7 +19,8 @@ class ScenarioManager:
     def __init__(self):
         self.current_branch = ""
         # self.folder = self.get_latest_scenario_folder()
-        self.folder = "onboarding\\scenario_20240912_175052"
+        # self.folder = "onboarding\\scenario_20240912_175052"
+        self.folder =  os.path.join("onboarding", "scenario_20240912_175052")
         self.scores = {
             "情绪侦查力": 0,
             "情绪掌控力": 0,
@@ -106,6 +107,7 @@ scenario_manager = ScenarioManager()
 
 @router.post("/start_scenario")
 async def start_scenario():
+    print(os.getcwd())
     scenario_manager.current_branch = ""
     scenario_manager.scores = {key: 0 for key in scenario_manager.scores}
     scenario_manager.choice_count = 0
