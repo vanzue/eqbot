@@ -104,7 +104,7 @@ class ScenarioManager:
 
 scenario_manager = ScenarioManager()
 
-@router.get("/start_scenario")
+@router.post("/start_scenario")
 async def start_scenario():
     scenario_manager.current_branch = ""
     scenario_manager.scores = {key: 0 for key in scenario_manager.scores}
@@ -159,7 +159,7 @@ async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Ses
     else:
         return scenario_manager.make_choice(choice.choice)
 
-@router.get("/get_current_scenario")
+@router.post("/get_current_scenario")
 async def get_current_scene():
     return scenario_manager.get_scene()
 
