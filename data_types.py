@@ -22,3 +22,7 @@ class ChatCreate(BaseModel):
     chat_content: str
     tag: Optional[str] = None
     contact_relationship: Optional[str] = None
+
+class Choice(BaseModel):
+    choice: int
+    job_id: str

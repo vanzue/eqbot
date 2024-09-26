@@ -3,31 +3,11 @@ import requests
 import base64
 import json
 
-from dotenv import load_dotenv
+from llm_setup import setup_LLM
 
-load_dotenv()
-
-LLM_API = os.getenv('LLM_API')
 
 def request_LLM_response(scenario):
-    # Configuration
-    API_KEY = LLM_API
-    # IMAGE_PATH = "YOUR_IMAGE_PATH"
-    # encoded_image = base64.b64encode(open(IMAGE_PATH, 'rb').read()).decode('ascii')
-    headers = {
-        "Content-Type": "application/json",
-        "api-key": API_KEY,
-    }
-
-    # Payload for the request
-    payload = {
-    "messages": [
-        {
-        "role": "system",
-        "content": [
-            {
-            "type": "text",
-            "text": """
+    payload_content = """
                     **任务描述:**
                     - 你是一位非常专业的情商评估师。根据提供的一系列用户信息，你已经从以下五个维度对用户的情商进行打分：情绪侦查力、情绪掌控力、人际平衡术、沟通表达力、社交得体度。
 
@@ -102,29 +82,7 @@ def request_LLM_response(scenario):
                         }
                     }
                     """
-            }
-        ]
-        }
-    ],
-    "temperature": 0.7,
-    "top_p": 0.95,
-    "max_tokens": 800
-    }
-
-    ENDPOINT = "https://peitingaoai.openai.azure.com/openai/deployments/4opeitingus/chat/completions?api-version=2024-02-15-preview"
-
-    # Send request
-    try:
-        response = requests.post(ENDPOINT, headers=headers, json=payload)
-        response.raise_for_status()  # Will raise an HTTPError if the HTTP request returned an unsuccessful status code
-    except requests.RequestException as e:
-        raise SystemExit(f"Failed to make the request. Error: {e}")
-
-    # Handle the response as needed (e.g., print or process)
-    # print(response.json())
-    # print(type(response))
-
-    return response.json()['choices'][0]['message']['content']
+    return setup_LLM(payload_content=payload_content)
 
 def parse_LLMresponse(json_data):
     try:

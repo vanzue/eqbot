@@ -7,13 +7,10 @@ from typing import List, Dict
 
 from database import crud, database, schemas
 from llm.profile_eval import process_with_llm
+from data_types import Choice
 
 router = APIRouter()
 
-
-class Choice(BaseModel):
-    choice: int
-    job_id: str
 
 class ScenarioManager:
     def __init__(self):
@@ -103,16 +100,6 @@ class ScenarioManager:
         # 这里可以添加将结果保存到数据库或其他操作
         return min_score_idx, response
 
-# scenario_manager = ScenarioManager()
-
-# @router.post("/start_scenario")
-# async def start_scenario():
-#     print(os.getcwd())
-#     scenario_manager.current_branch = ""
-#     scenario_manager.scores = {key: 0 for key in scenario_manager.scores}
-#     scenario_manager.choice_count = 0
-#     scenario_manager.analysis_data = []
-#     return scenario_manager.get_scene()
 
 # 全局字典用于存储用户的 ScenarioManager 实例
 user_scenarios: Dict[str, ScenarioManager] = {}
