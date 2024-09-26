@@ -94,7 +94,10 @@ def request_LLM_response(scenario):
                         "7. 情商修炼建议": {
                             "建议": [针对最低得分的维度提供详细的修炼建议]
                         },
-                        "8. 评估总结": {
+                        "8. 情商修炼建议总结": {
+                            "建议总结": [基于情商修炼建议总结成一句话，20字以内]
+                        },
+                        "9. 评估总结": {
                             "总结": [针对用户情况，给出综合评价以及对用户的美好愿望]
                         }
                     }
@@ -145,7 +148,8 @@ def parse_LLMresponse(json_data):
 
         summary = response['6. 综合小贴士']['小贴士']
         detail = response['7. 情商修炼建议']['建议']
-        overall_suggestion = response['8. 评估总结']['总结']
+        detail_summary = response['8. 情商修炼建议总结']['建议总结']
+        overall_suggestion = response['9. 评估总结']['总结']
 
         eq_scores = {
             "dimension1_score": dimension1_score,
@@ -160,6 +164,7 @@ def parse_LLMresponse(json_data):
             "dimension5_detail": dimension5_detail,
             "summary": summary,
             "detail": detail,
+            "detail_summary": detail_summary,
             "overall_suggestion": overall_suggestion
         }
         return eq_scores
@@ -219,8 +224,8 @@ if __name__ == "__main__":
         scenario += f"分析: {analysis['analysis']}\n"
     # print(scenario)
     
-    # response = request_LLM_response(scenario)
-    # print(response)
+    response = request_LLM_response(scenario)
+    print(response)
 
     eq_scores = retry_parse_LLMresponse(scenario)
     print(eq_scores)

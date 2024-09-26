@@ -38,6 +38,7 @@ class EQScore(Base):
     dimension5_detail = Column(UnicodeText)
     summary = Column(UnicodeText)
     detail = Column(UnicodeText)
+    detail_summary = Column(UnicodeText)
     overall_suggestion = Column(UnicodeText)
     job_id = Column(String(100))
 

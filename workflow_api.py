@@ -47,6 +47,7 @@ async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: s
             dimension5_detail=scores_details['dimension5_detail'],
             summary=scores_details['summary'],
             detail=scores_details['detail'],
+            detail_summary=scores_details['detail_summary'],
             overall_suggestion=scores_details['overall_suggestion'],
             job_id=job_id
         )
@@ -118,6 +119,7 @@ async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
             "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
             "summary": eq_scores.summary,
             "detail": eq_scores.detail,
+            "detail_summary": eq_scores.detail_summary,
             "overall_suggestion": eq_scores.overall_suggestion
         },
         "contacts": contacts_list
