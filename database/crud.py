@@ -77,6 +77,7 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
         dimension5_detail=eq_score.dimension5_detail,
         summary=eq_score.summary,
         detail=eq_score.detail,
+        detail_summary=eq_score.detail_summary,
         overall_suggestion=eq_score.overall_suggestion,
         job_id = eq_score.job_id
     )

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, BackgroundTasks, Depends
+from fastapi import APIRouter, HTTPException, BackgroundTasks, Depends, Body
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 import json
@@ -103,16 +103,37 @@ class ScenarioManager:
         # 这里可以添加将结果保存到数据库或其他操作
         return min_score_idx, response
 
-scenario_manager = ScenarioManager()
+# scenario_manager = ScenarioManager()
 
-@router.post("/start_scenario")
-async def start_scenario():
-    print(os.getcwd())
-    scenario_manager.current_branch = ""
-    scenario_manager.scores = {key: 0 for key in scenario_manager.scores}
-    scenario_manager.choice_count = 0
-    scenario_manager.analysis_data = []
-    return scenario_manager.get_scene()
+# @router.post("/start_scenario")
+# async def start_scenario():
+#     print(os.getcwd())
+#     scenario_manager.current_branch = ""
+#     scenario_manager.scores = {key: 0 for key in scenario_manager.scores}
+#     scenario_manager.choice_count = 0
+#     scenario_manager.analysis_data = []
+#     return scenario_manager.get_scene()
+
+# 全局字典用于存储用户的 ScenarioManager 实例
+user_scenarios: Dict[str, ScenarioManager] = {}
+
+def get_scenario_manager(job_id: str) -> ScenarioManager:
+    if job_id not in user_scenarios:
+        user_scenarios[job_id] = ScenarioManager()
+    return user_scenarios[job_id]
+
+def reset_scenario_manager(job_id: str):
+    user_scenarios[job_id] = ScenarioManager()
+
+@router.post("/start_scenario/{job_id}")
+async def start_scenario(job_id: str):
+    reset_scenario_manager(job_id)
+    scenario = get_scenario_manager(job_id)
+    scenario.current_branch = ""
+    scenario.scores = {key: 0 for key in scenario.scores}
+    scenario.choice_count = 0
+    scenario.analysis_data = []
+    return scenario.get_scene()
 
 async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db)):
     min_score_idx, response = await scenario_manager.process_final_data()
@@ -145,34 +166,42 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
         dimension5_detail=response["dimension5_detail"],
         summary=response["summary"],
         detail=response["detail"],
+        detail_summary=response['detail_summary'],
         overall_suggestion=response["overall_suggestion"],
         job_id=job_id
     )
     eq_score = crud.create_eq_score(db, eq_score_data)
     print(f"Created EQScore: {eq_score}")
 
+    if job_id in user_scenarios:
+        del user_scenarios[job_id]
+        print(f"已删除 job_id 为 {job_id} 的 ScenarioManager 实例。")
+
 @router.post("/choose_scenario")
 async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db)):
-    print("job_id: " + choice.job_id)
-    if scenario_manager.choice_count == 4:
-        scenario_manager.make_choice(choice.choice)
-        background_tasks.add_task(background_process_data, scenario_manager, choice.job_id, db)
+    job_id = choice.job_id
+    scenario = get_scenario_manager(job_id)
+    if scenario.choice_count == 4:
+        scenario.make_choice(choice.choice)
+        background_tasks.add_task(background_process_data, scenario, job_id, db)
         return {"message": "Final choice made. Processing data in background."}
     else:
-        return scenario_manager.make_choice(choice.choice)
+        return scenario.make_choice(choice.choice)
 
-@router.post("/get_current_scenario")
-async def get_current_scene():
-    return scenario_manager.get_scene()
+@router.post("/get_current_scenario/{job_id}")
+async def get_current_scene(job_id: str):
+    scenario = get_scenario_manager(job_id)
+    return scenario.get_scene()
+    # return scenario_manager.get_scene()
 
-@router.get("/get_scores")
-async def get_scores():
-    print(scenario_manager.choice_count)
-    return scenario_manager.get_average_scores()
+# @router.get("/get_scores")
+# async def get_scores(job_id: str):
+#     print(scenario_manager.choice_count)
+#     return scenario_manager.get_average_scores()
 
-@router.get("/get_analysis_data")
-async def get_analysis_data():
-    return scenario_manager.get_analysis_data()
+# @router.get("/get_analysis_data")
+# async def get_analysis_data(job_id: str):
+#     return scenario_manager.get_analysis_data()
 
 # if __name__ == "__main__":
 #     import uvicorn
