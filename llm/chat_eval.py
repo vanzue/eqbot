@@ -2,31 +2,11 @@ import os
 import requests
 import json
 
-from dotenv import load_dotenv
+from llm.llm_setup import setup_LLM
 
-load_dotenv()
-
-LLM_API = os.getenv('LLM_API')
 
 def request_LLM_response_with_subordinate(chat_history):
-    # Configuration
-    API_KEY = LLM_API
-    # IMAGE_PATH = "YOUR_IMAGE_PATH"
-    # encoded_image = base64.b64encode(open(IMAGE_PATH, 'rb').read()).decode('ascii')
-    headers = {
-        "Content-Type": "application/json",
-        "api-key": API_KEY,
-    }
-
-    # Payload for the request
-    payload = {
-    "messages": [
-        {
-        "role": "system",
-        "content": [
-            {
-            "type": "text",
-            "text": """
+    payload_content = """
                     **任务描述**
                     - 你是一位关系分析专家。你将接收一段我与同级同事的聊天记录。你需要根据以下几个维度对聊天记录进行分析。
 
@@ -71,28 +51,7 @@ def request_LLM_response_with_subordinate(chat_history):
                     **以下是聊天记录**
 
                     """ + chat_history
-            }
-        ]
-        }
-    ],
-    "temperature": 0.7,
-    "top_p": 0.95,
-    "max_tokens": 800
-    }
-
-    ENDPOINT = "https://peitingaoai.openai.azure.com/openai/deployments/4opeitingus/chat/completions?api-version=2024-02-15-preview"
-
-    # Send request
-    try:
-        response = requests.post(ENDPOINT, headers=headers, json=payload)
-        response.raise_for_status()  # Will raise an HTTPError if the HTTP request returned an unsuccessful status code
-    except requests.RequestException as e:
-        raise SystemExit(f"Failed to make the request. Error: {e}")
-
-    # Handle the response as needed (e.g., print or process)
-    # print(response.json())
-
-    return response.json()['choices'][0]['message']['content']
+    return setup_LLM(payload_content=payload_content)
 
 
 def parse_LLMresponse_from_subordinate(json_data):
@@ -123,24 +82,7 @@ def parse_LLMresponse_from_subordinate(json_data):
 
 
 def request_LLM_response_with_supervisor(chat_history):
-    # Configuration
-    API_KEY = LLM_API
-    # IMAGE_PATH = "YOUR_IMAGE_PATH"
-    # encoded_image = base64.b64encode(open(IMAGE_PATH, 'rb').read()).decode('ascii')
-    headers = {
-        "Content-Type": "application/json",
-        "api-key": API_KEY,
-    }
-
-    # Payload for the request
-    payload = {
-    "messages": [
-        {
-        "role": "system",
-        "content": [
-            {
-            "type": "text",
-            "text": """
+    payload_content = """
                     **任务描述:**
                     - 你是一位关系分析专家。你将接收一段聊天记录，其中包含我与对方的对话内容。对方的身份是我职场上的领导。你需要根据以下几个维度对聊天记录进行分析。
 
@@ -183,28 +125,7 @@ def request_LLM_response_with_supervisor(chat_history):
 
                     **以下是聊天记录：**
                     """ + chat_history
-            }
-        ]
-        }
-    ],
-    "temperature": 0.7,
-    "top_p": 0.95,
-    "max_tokens": 800
-    }
-
-    ENDPOINT = "https://peitingaoai.openai.azure.com/openai/deployments/4opeitingus/chat/completions?api-version=2024-02-15-preview"
-
-    # Send request
-    try:
-        response = requests.post(ENDPOINT, headers=headers, json=payload)
-        response.raise_for_status()  # Will raise an HTTPError if the HTTP request returned an unsuccessful status code
-    except requests.RequestException as e:
-        raise SystemExit(f"Failed to make the request. Error: {e}")
-
-    # Handle the response as needed (e.g., print or process)
-    # print(response.json())
-
-    return response.json()['choices'][0]['message']['content']
+    return setup_LLM(payload_content=payload_content)
 
 
 def parse_LLMresponse_from_supervisor(json_data):

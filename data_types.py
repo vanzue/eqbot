@@ -23,6 +23,11 @@ class ChatCreate(BaseModel):
     tag: Optional[str] = None
     contact_relationship: Optional[str] = None
 
+
+class Choice(BaseModel):
+    choice: int
+    job_id: str
+
 class EchoSpaceModel(BaseModel):
     moodDescription: str
     themes: list
@@ -31,4 +36,3 @@ class EchoSpaceModel(BaseModel):
 class EchoSpaceResponseModel(BaseModel):
     success: bool
     jobID: str
-
