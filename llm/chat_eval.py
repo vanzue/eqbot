@@ -2,7 +2,7 @@ import os
 import requests
 import json
 
-from llm_setup import setup_LLM
+from llm.llm_setup import setup_LLM
 
 
 def request_LLM_response_with_subordinate(chat_history):

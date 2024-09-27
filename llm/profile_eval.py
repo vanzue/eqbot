@@ -3,7 +3,7 @@ import requests
 import base64
 import json
 
-from llm_setup import setup_LLM
+from llm.llm_setup import setup_LLM
 
 
 def request_LLM_response(scenario):
