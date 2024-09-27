@@ -148,7 +148,6 @@ async def upload_image(file: UploadFile = File(...)):
     # generate unique filename
     temp_filename = f"{uuid.uuid4()}.png"
     temp_filepath = os.path.join("temp_images", temp_filename)
-
     os.makedirs("temp_images", exist_ok=True)
 
     try:
