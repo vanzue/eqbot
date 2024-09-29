@@ -4,11 +4,16 @@ import requests
 import base64
 from datetime import datetime
 import time
+import random
 
 from dotenv import load_dotenv
 
 load_dotenv()
 LLM_API = os.getenv('LLM_API')
+
+# Add these variables at the top of the file, after the imports
+SCENARIO_TYPES = ["职场刁难", "帮助别人融入", "应对突发状况"]
+used_scenarios = set()
 
 # Configuration
 API_KEY = LLM_API
@@ -78,16 +83,26 @@ initial_context = ("""
           }
         }
         请根据以上格式生成一个关于[职位等级][性别]在[职场场合]场景会遇到的提问和回答选项json格式。
-        问题和回答都是对话的形式。
+        问题和回答都是对话的形式。打分可以区分度稍微大一点。
 
-        职场场合：公司饭局
-        性别：女性
-        职位等级：新人
+        职场场合：电梯间小对话
+        性别：无性
+        职位等级：实习生
+        前置背景：你想要让老板记住你
+
+        # Add these variables at the top of the file, after the imports
+        SCENARIO_TYPES = ["职场刁难", "帮助别人融入", "应对突发状况"]
+        used_scenarios = set()
+                   
+        **额外指示**
+        请在打分时生成的三个回答，主要体现三个不同方面较高的情商维度，但也不能有明显的情商不足，即对于三个选择，每个选择的五个维度的总分应当接近。
+        不同选择间分差拉开，鼓励低分出现。同一个选择的五个维度分值也要拉开，给出的分数不要太高。
+
 
         请确保返回的 JSON 数据结构（开头不要写上json字母，不要漏,）
         请确保返回的 JSON 数据结构（开头不要写上json字母，不要漏,）
         请确保返回的 JSON 数据结构（开头不要写上json字母，不要漏,）
-
+        
         """)
 
 
@@ -155,7 +170,11 @@ def validate_json_structure(json_data):
 def create_scenario_folder():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     folder_name = f"scenario_{timestamp}"
-    os.makedirs(folder_name, exist_ok=True)
+
+    current_path = os.getcwd()
+    folder_path = os.path.join(current_path, folder_name)
+    os.makedirs(folder_path, exist_ok=True)
+
     return folder_name
 
 
@@ -177,8 +196,18 @@ def calculate_average_score(option_scores_list):
 
 
 def recursive_dialogue(context, folder, depth=0, max_depth=5, branch_path=""):
+    global used_scenarios
     if depth >= max_depth:
         return []
+
+    # Select a scenario type
+    available_scenarios = list(set(SCENARIO_TYPES) - used_scenarios)
+    if not available_scenarios:
+        available_scenarios = SCENARIO_TYPES
+        used_scenarios.clear()
+
+    scenario_type = random.choice(available_scenarios)
+    used_scenarios.add(scenario_type)
 
     next_question = generate_next_question(context, depth)
 
@@ -197,7 +226,7 @@ def recursive_dialogue(context, folder, depth=0, max_depth=5, branch_path=""):
         print(f"\n-----------------------------------执行分支 {i}:")
         print(f"分支 {i} - 选项 {i} 分析: {option['analysis']}")
 
-        new_context = context + f"\n系统生成一样格式的问题和选项:\n{json.dumps(next_question, ensure_ascii=False)}\n用户选择: {i}。新的问题要注意上下文过渡，最好保持在一个情境下，情境有两个NPC[小王]和[小李]和你。NPC的[]的符号只会出现在background中。你们三个人发生对话和故事。对话和情境不要重复。每过三轮对话可以换个去到新的场景来展开话题。情境和会话要有冲突。最好阴阳怪气一下。或者有职场刁难。问题和回答都是对话的形式。回答给一个意图不明的抽象回答，给一个赞同倾向的回答，给一个反驳倾向的回答，可以阴阳。但是三个选项都各有道理。大家选的时候会纠结。口语化一点。"
+        new_context = context + f"\n系统生成一样格式的问题和选项:\n{json.dumps(next_question, ensure_ascii=False)}\n用户选择: {i}。新的问题要接着上一个场景和选择，注意上下文过渡，换情境的话要有过渡，情境有两个NPC[小王]和[小李]和你。NPC的[]的符号只会出现在background中。你们三个人发生对话和故事。对话和情境不要重复。每过三轮对话可以换个去到新的场景来展开话题。情境和会话要有冲突。最好阴阳怪气一下。或者有{scenario_type}。回答给一个意图不明的抽象回答，给一个赞同倾向的回答，给一个反驳倾向的回答，可以阴阳。但是三个选项都各有道理。大家选的时候会纠结。口语化一点。"
 
         new_branch_path = f"{branch_path}{i}"
         sub_scores = recursive_dialogue(new_context, folder, depth + 1, max_depth, new_branch_path)
@@ -206,7 +235,7 @@ def recursive_dialogue(context, folder, depth=0, max_depth=5, branch_path=""):
     current_scores = [option['scores'] for option in next_question['scenes']['options']]
     all_scores.extend(current_scores)
 
-    save_to_file(f"深度 {depth} 分支路径 {branch_path} 的对话:\n{json.dumps(next_question, ensure_ascii=False)}")
+    # save_to_file(f"深度 {depth} 分支路径 {branch_path} 的对话:\n{json.dumps(next_question, ensure_ascii=False)}")
 
     return all_scores
 

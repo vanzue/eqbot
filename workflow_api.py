@@ -170,6 +170,43 @@ async def get_analysis(job_id: str, db: Session = Depends(database.get_db)):
     return {"response": response}
 
 
+@router.post("/get_analysis_detail/{name}")
+async def get_analysis_detail(name: str, db: Session = Depends(database.get_db)):
+    # profile & eq scores
+    personal_info = crud.get_personal_info_by_name(db, name)
+    eq_scores = crud.get_eq_scores_by_person_id(db, personal_info)
+    
+    scores = [eq_scores.dimension1_score, 
+              eq_scores.dimension2_score, 
+              eq_scores.dimension3_score, 
+              eq_scores.dimension4_score, 
+              eq_scores.dimension5_score]
+    overall_score = helper.calculate_average(*scores)
+
+    response = {
+        "personal_info": {
+            "name": personal_info.name,
+            "tag": personal_info.tag,
+            "tag_description": personal_info.tag_description,
+            "job_id": personal_info.job_id
+        },
+        "eq_scores": {
+            "score": overall_score, 
+            "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
+            "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
+            "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
+            "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
+            "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
+            "summary": eq_scores.summary,
+            "detail": eq_scores.detail,
+            "detail_summary": eq_scores.detail_summary,
+            "overall_suggestion": eq_scores.overall_suggestion
+        }
+    }
+    
+    return {"response": response}
+
+
 # login to the existed user
 @router.post("/login_personal_info/{name}")
 def loginin_user(request: Request, name: str, db: Session = Depends(database.get_db)):
