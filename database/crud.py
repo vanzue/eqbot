@@ -49,6 +49,10 @@ def get_personal_id_by_name(db: Session, name: str):
     personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).one_or_none()
     return personal_info.id
 
+def get_personal_info_by_name(db: Session, name: str):
+    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).one_or_none()
+    return personal_info\
+
 def get_personal_info_by_job_id(db: Session, job_id: str):
     personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.job_id == job_id).one_or_none()
     return personal_info
