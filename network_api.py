@@ -1,7 +1,5 @@
 from fastapi import APIRouter, HTTPException, UploadFile, Depends, File
 from sqlalchemy.orm import Session
-from io import BytesIO
-from PIL import Image
 import os
 import uuid
 
