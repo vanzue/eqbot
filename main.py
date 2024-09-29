@@ -13,6 +13,8 @@ from eq_master_api import eqmaster_router as eqmaster_router
 from comic_api import comic_router as comic_router
 from echo_space_api import echo_space_router as echo_space_router
 
+from battlefield_api import router as batttlefield_router
+
 from dotenv import load_dotenv
 
 from data_types import SignatureVerifyModel
@@ -36,6 +38,8 @@ app.include_router(network_router)
 
 app.include_router(comic_router)
 app.include_router(echo_space_router)
+
+app.include_router(batttlefield_router)
 
 def verify_signature(request: SignatureVerifyModel, i):
     if not sToken or not sEncodingAESKey or not sCorpID:
