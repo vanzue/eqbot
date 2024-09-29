@@ -52,6 +52,7 @@ class EQScoreBase(BaseModel):
     dimension5_detail: Optional[str]
     summary: Optional[str]
     detail: Optional[str]
+    detail_summary: Optional[str]
     overall_suggestion: Optional[str]
     job_id: str
 

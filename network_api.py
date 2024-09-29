@@ -1,10 +1,15 @@
-from fastapi import APIRouter, HTTPException, BackgroundTasks, Depends
+from fastapi import APIRouter, HTTPException, UploadFile, Depends, File
 from sqlalchemy.orm import Session
+from io import BytesIO
+import os
+import uuid
 
 import data_types
 from database import crud, database, schemas
 from datetime import datetime
 from llm.chat_eval import retry_parse_LLMresponse_with_subordinate, retry_parse_LLMresponse_with_supervisor
+from llm.image2chat import image2text
+
 
 router = APIRouter()
 
@@ -45,8 +50,18 @@ def create_subordinate_analysis(request: data_types.ChatCreate, db: Session = De
 
 @router.post("/create_subordinate_by_chat")
 def create_subordinate_by_chat(request: data_types.ChatCreate, db: Session = Depends(database.get_db)):
-    contact_profile = create_contact_profile(request, db)
-    request.contact_id = contact_profile["contact_id"]
+    personal_id = crud.get_personal_id_by_name(db, request.personal_name)
+    db_contact_profile = crud.get_contacts_by_contact_name(db, request.name)
+
+
+    if not db_contact_profile or db_contact_profile.person_id != personal_id:
+        print("新的contact subordinate")
+        contact_profile = create_contact_profile(request, db)
+        request.contact_id = contact_profile["contact_id"]
+    else:
+        print("已有的contact subordinate")
+        request.contact_id = db_contact_profile.id
+    
     create_subordinate_analysis(request, db)
     return {"message": "Subordinate created successfully"}
 
@@ -75,8 +90,17 @@ def create_supervisor_analysis(request: data_types.ChatCreate, db: Session = Dep
 
 @router.post("/create_supervisor_by_chat")
 def create_supervisor_by_chat(request: data_types.ChatCreate, db: Session = Depends(database.get_db)):
-    contact_profile = create_contact_profile(request, db)
-    request.contact_id = contact_profile["contact_id"]
+    personal_id = crud.get_personal_id_by_name(db, request.personal_name)
+    db_contact_profile = crud.get_contacts_by_contact_name(db, request.name)
+
+    if not db_contact_profile or db_contact_profile.person_id != personal_id:
+        print("新的contact supervisor")
+        contact_profile = create_contact_profile(request, db)
+        request.contact_id = contact_profile["contact_id"]
+    else:
+        print("已有的contact supervisor")
+        request.contact_id = db_contact_profile.id
+
     create_supervisor_analysis(request, db)
     return {"message": "Supervisor created successfully"}
 
@@ -113,3 +137,31 @@ def get_contact_profile(contact_id: int, db: Session = Depends(database.get_db))
         raise HTTPException(status_code=400, detail="Invalid contact relationship")
     
     return {"contact_profile": profile}
+
+
+@router.post("/upload_image")
+async def upload_image(file: UploadFile = File(...)):
+    if file.content_type not in ["image/jpeg", "image/png"]:
+        raise HTTPException(status_code=400, detail="Invalid image format. Please upload JPEG or PNG image.")
+    
+    # generate unique filename
+    temp_filename = f"{uuid.uuid4()}.png"
+    temp_filepath = os.path.join("temp_images", temp_filename)
+    os.makedirs("temp_images", exist_ok=True)
+
+    try:
+        # download locally
+        with open(temp_filepath, "wb") as f:
+            f.write(await file.read())
+
+        chat_history = image2text(image_path=temp_filepath)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Image processing failed: {e}")
+    finally:
+        # delete after process
+        if os.path.exists(temp_filepath):
+            os.remove(temp_filepath)
+    
+    return {"chat_history": chat_history}
+
+    

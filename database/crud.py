@@ -77,6 +77,7 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
         dimension5_detail=eq_score.dimension5_detail,
         summary=eq_score.summary,
         detail=eq_score.detail,
+        detail_summary=eq_score.detail_summary,
         overall_suggestion=eq_score.overall_suggestion,
         job_id = eq_score.job_id
     )
@@ -171,6 +172,8 @@ def get_contacts_by_person_id(db: Session, person_id: str, skip: int = 0, limit:
 def get_contacts_by_contact_id(db: Session, contact_id: str):
     return db.query(models.Contact).filter(models.Contact.id == contact_id).one_or_none()
 
+def get_contacts_by_contact_name(db: Session, contact_name: str):
+    return db.query(models.Contact).filter(models.Contact.name == contact_name).one_or_none()
 
 def get_contacts_by_person_name(db: Session, person_name: str, skip: int = 0, limit: int = 100):
     db_personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == person_name).first()
