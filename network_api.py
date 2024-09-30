@@ -33,7 +33,7 @@ def create_subordinate_analysis(request: data_types.ChatCreate, db: Session = De
                                             chat_content=request.chat_content)
     crud.create_chat_record(db, chat_record)
 
-    response = retry_parse_LLMresponse_with_subordinate(request.chat_content)
+    response = retry_parse_LLMresponse_with_subordinate(request.personal_name, request.name, request.chat_content)
 
     analysis_data = schemas.SubordinateAnalysisCreate(contact_id=request.contact_id, 
                                                       relationship_analysis=response['relationship_analysis'], 
@@ -74,7 +74,7 @@ def create_supervisor_analysis(request: data_types.ChatCreate, db: Session = Dep
                                             chat_content=request.chat_content)
     crud.create_chat_record(db, chat_record)
 
-    response = retry_parse_LLMresponse_with_supervisor(request.chat_content)
+    response = retry_parse_LLMresponse_with_supervisor(request.personal_name, request.name, request.chat_content)
 
     analysis_data = schemas.SupervisorAnalysisCreate(contact_id=request.contact_id, 
                                                       relationship_analysis=response['relationship_analysis'], 
@@ -110,6 +110,8 @@ def get_contact_profile(contact_id: int, db: Session = Depends(database.get_db))
 
     if db_contact.contact_relationship == "subordinate":
         contact_analysis = crud.get_subordinate_analysis_by_contact_id(db, contact_id)
+        if contact_analysis is None:
+            return {"message": "analysis not available"}
         profile = {
             "name": db_contact.name,
             "tag": db_contact.tag,
@@ -122,6 +124,8 @@ def get_contact_profile(contact_id: int, db: Session = Depends(database.get_db))
         }
     elif db_contact.contact_relationship == "supervisor":
         contact_analysis = crud.get_supervisor_analysis_by_contact_id(db, contact_id)
+        if contact_analysis is None:
+            return {"message": "analysis not available"}
         profile = {
             "name": db_contact.name,
             "tag": db_contact.tag,
