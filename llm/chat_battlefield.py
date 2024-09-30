@@ -3,6 +3,7 @@ import requests
 import json
 
 from dotenv import load_dotenv
+from llm.llm_setup import setup_LLM
 
 load_dotenv()
 
@@ -28,6 +29,66 @@ def request_LLM_response(chat_history):
     for message in chat_history:
         payload['messages'].append(message)
     return send_to_LLM(payload)
+
+    
+def chat_eval(chat_history, max_retries=5):
+    attempt = 0
+    while attempt < max_retries:
+        try:
+            json_data = request_LLM_response_by_eval(chat_history)
+            result = parse_response_to_json(json_data)
+            return result
+        except json.JSONDecodeError as e:
+            attempt += 1
+            print(f"Attempt {attempt} failed. Retrying...")
+            if attempt == max_retries:
+                print("Max retries reached. Giving up.")
+                # raise
+    return None
+
+def request_LLM_response_by_eval(chat_history):
+    payload = """
+        你是一位情商大师，请根据以下聊天对话，分析对方对我的满意度，并给出提升情商的小技巧。
+        **标准输出格式(不要写上json字母, 也不要漏,)**
+        {  
+            "领导": {  
+                "满意度": "满意/不满意",  
+                "分析": "根据聊天内容，分析领导对我的感受"  
+            },  
+            "同事A": {  
+                "满意度": "满意/不满意",  
+                "分析": "根据聊天内容，分析同事A对我的感受"  
+            },  
+            "同事B": {  
+                "满意度": "满意/不满意",  
+                "分析": "根据聊天内容，分析同事B对我的感受"  
+            },  
+            "情商技巧": [  
+                {  
+                    "建议": "根据实际情况给出建议，不超过二十字"  
+                },  
+                {  
+                    "建议": "根据实际情况给出建议，不超过二十字"  
+                },  
+                {  
+                    "建议": "根据实际情况给出建议，不超过二十字"  
+                }  
+            ]  
+        }  
+
+        以下是聊天记录：
+    """ + chat_history
+    return setup_LLM(payload_content=payload)
+
+def parse_response_to_json(response):
+    try:
+        response = json.loads(response)
+        print("JSON is valid.")
+        return response
+    except json.JSONDecodeError as e:
+        print("JSON is invalid:", e)
+        raise
+
 
 def send_to_LLM(messages):
     # Configuration

@@ -37,7 +37,7 @@ class EchoSpaceResponseModel(BaseModel):
     success: bool
     jobID: str
 
-class ChatBattlefieldRequest(BaseModel):
+class BattlefieldRequest(BaseModel):
     person_id: int
     course_id: str
     chat_content: str
