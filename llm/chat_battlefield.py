@@ -156,7 +156,7 @@ def send_to_LLM(messages):
         "api-key": API_KEY,
     }
 
-    ENDPOINT = "https://peitingaoai.openai.azure.com/openai/deployments/4opeitingus/chat/completions?api-version=2024-02-15-preview"
+    ENDPOINT = "https://peitingaoai.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview"
 
     # Send request
     try:
