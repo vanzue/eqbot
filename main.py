@@ -3,14 +3,18 @@ from fastapi import FastAPI
 import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
+
 from workflow_api import router as workflow_router
 from onboarding.onboarding_api import router as onboarding_router
 from network_api import router as network_router
+
 
 from eq_master_api import eqmaster_router as eqmaster_router
 from comic_api import comic_router as comic_router
 from echo_space_api import echo_space_router as echo_space_router
 
+from battlefield_api import router as batttlefield_router
+from file_upload import file_router
 from dotenv import load_dotenv
 
 from data_types import SignatureVerifyModel
@@ -34,6 +38,9 @@ app.include_router(network_router)
 
 app.include_router(comic_router)
 app.include_router(echo_space_router)
+
+app.include_router(batttlefield_router)
+app.include_router(file_router)
 
 def verify_signature(request: SignatureVerifyModel, i):
     if not sToken or not sEncodingAESKey or not sCorpID:

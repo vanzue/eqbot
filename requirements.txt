@@ -9,3 +9,4 @@ pydantic
 pyodbc
 langchain
 python-multipart
+aiofiles

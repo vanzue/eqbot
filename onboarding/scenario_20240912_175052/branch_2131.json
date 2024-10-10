@@ -1,6 +1,6 @@
 {
   "scenes": {
-    "background": "[小李]点了点头，而[小王]则继续追问：",
+    "background": "小李点了点头，而小王则继续追问：",
     "description": "那你打算怎么改进呢？你有具体的计划吗？",
     "options": [
       {

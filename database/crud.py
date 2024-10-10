@@ -46,11 +46,11 @@ def get_personal_infos(db: Session, id: int):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == id).one_or_none()
 
 def get_personal_id_by_name(db: Session, name: str):
-    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).one_or_none()
-    return personal_info.id
+    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).limit(1).one_or_none()
+    return getattr(personal_info, 'id', '')
 
 def get_personal_info_by_name(db: Session, name: str):
-    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).one_or_none()
+    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).limit(1).one_or_none()
     return personal_info\
 
 def get_personal_info_by_job_id(db: Session, job_id: str):
@@ -254,7 +254,7 @@ def create_supervisor_analysis(db: Session, analysis: schemas.SupervisorAnalysis
     return db_analysis
 
 def get_subordinate_analysis_by_contact_id(db: Session, contact_id: str):
-    return db.query(models.SubordinateAnalysis).filter(models.SubordinateAnalysis.contact_id == contact_id).one_or_none()
+    return db.query(models.SubordinateAnalysis).filter(models.SubordinateAnalysis.contact_id == contact_id).first()
 
 def get_supervisor_analysis_by_contact_id(db: Session, contact_id: str):
-    return db.query(models.SupervisorAnalysis).filter(models.SupervisorAnalysis.contact_id == contact_id).one_or_none()
+    return db.query(models.SupervisorAnalysis).filter(models.SupervisorAnalysis.contact_id == contact_id).first()

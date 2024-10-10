@@ -99,8 +99,20 @@ async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
     # network
     contacts = crud.get_contacts_by_person_name(db, personal_info.name)
     contacts_list = []
+    
     for contact in contacts:
-        contacts_list.append(contact.name)
+        one_contact = dict()
+        one_contact["name"] = contact.name
+        one_contact["tag"] = contact.tag
+        one_contact["contact_relationship"] = contact.contact_relationship
+
+        if contact.contact_relationship == "subordinate":
+            relationship_analysis = crud.get_subordinate_analysis_by_contact_id(db, contact.id)
+        elif contact.contact_relationship == "supervisor":
+            relationship_analysis = crud.get_supervisor_analysis_by_contact_id(db, contact.id)
+        one_contact["relationship_analysis"] = relationship_analysis
+
+        contacts_list.append(one_contact)
 
 
     response = {
