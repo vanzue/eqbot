@@ -4,6 +4,7 @@ from pydantic import BaseModel
 import json
 import os
 from typing import List, Dict
+import random
 
 from database import crud, database, schemas
 from llm.profile_eval import process_with_llm
@@ -16,8 +17,13 @@ class ScenarioManager:
     def __init__(self):
         self.current_branch = ""
         # self.folder = self.get_latest_scenario_folder()
-        # self.folder = "onboarding\\scenario_20240912_175052"
-        self.folder =  os.path.join("onboarding", "scenario_20240912_175052")
+        # self.filename = ["scenario_20241009_112231", "scenario_20241009_114211",
+        #                  "scenario_20241009_125849", "scenario_20241009_132409",
+        #                  "scenario_20241009_134237", "scenario_20241009_140614",
+        #                  "scenario_20241009_142639", "scenario_20241009_152457", 
+        #                  "scenario_20241009_161313", "scenario_20241009_164159"]
+        # self.folder =  os.path.join("onboarding", random.choice(self.filename))
+        self.folder =  os.path.join("onboarding", "scenario_20241010_143143")
         self.scores = {
             "情绪侦查力": 0,
             "情绪掌控力": 0,

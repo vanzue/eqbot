@@ -254,7 +254,7 @@ def create_supervisor_analysis(db: Session, analysis: schemas.SupervisorAnalysis
     return db_analysis
 
 def get_subordinate_analysis_by_contact_id(db: Session, contact_id: str):
-    return db.query(models.SubordinateAnalysis).filter(models.SubordinateAnalysis.contact_id == contact_id).one_or_none()
+    return db.query(models.SubordinateAnalysis).filter(models.SubordinateAnalysis.contact_id == contact_id).first()
 
 def get_supervisor_analysis_by_contact_id(db: Session, contact_id: str):
-    return db.query(models.SupervisorAnalysis).filter(models.SupervisorAnalysis.contact_id == contact_id).one_or_none()
+    return db.query(models.SupervisorAnalysis).filter(models.SupervisorAnalysis.contact_id == contact_id).first()
