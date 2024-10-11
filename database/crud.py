@@ -92,7 +92,7 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
 
 
 def get_eq_scores_by_person_id(db: Session, person_id: str, skip: int = 0, limit: int = 100):
-    return db.query(models.EQScore).filter(models.EQScore.person_id == person_id).offset(skip).limit(limit).all()
+    return db.query(models.EQScore).filter(models.EQScore.person_id == person_id).offset(skip).limit(limit).first()
 
 def get_eq_scores_by_job_id(db: Session, job_id: str):
     return db.query(models.EQScore).filter(models.EQScore.job_id == job_id).one_or_none()

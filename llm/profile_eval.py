@@ -3,7 +3,9 @@ import requests
 import base64
 import json
 
-from llm.llm_setup import setup_LLM
+# from llm.llm_setup import setup_LLM
+from llm.keyless_setup import creat_llm
+from langchain_core.prompts import ChatPromptTemplate
 
 
 def request_LLM_response(scenario):
@@ -43,46 +45,67 @@ def request_LLM_response(scenario):
                     - 提供评分时请保持公正和建设性，避免任何带有负面色彩的评论，确保给出的修炼建议能够切实帮助用户提高情商。
 
                     **用户信息：**
-                    - 请根据以下用户信息及他的场景对话生成上述的报告：""" + scenario + """
-                    不同维度的打分已给出，请根据打分生成原因解释。
+                    - 请根据输入的用户信息及他的场景对话生成上述的报告，并且不同维度的打分已给出，请根据打分生成原因解释。
 
                     **标准输出格式(不要写上json字母, 也不要漏,)**
-                    {
-                        "1. 情绪侦查力": {
+                    {{
+                        "1. 情绪侦查力": {{
                             "分数": [分数],
                             "原因": [原因简述]
-                        },
-                        "2. 情绪掌控力": {
+                        }},
+                        "2. 情绪掌控力": {{
                             "分数": [分数],
                             "原因": [原因简述]
-                        },
-                        "3. 人际平衡术": {
+                        }},
+                        "3. 人际平衡术": {{
                             "分数": [分数],
                             "原因": [原因简述]
-                        },
-                        "4. 沟通表达力": {
+                        }},
+                        "4. 沟通表达力": {{
                             "分数": [分数],
                             "原因": [原因简述]
-                        },
-                        "5. 社交得体度": {
+                        }},
+                        "5. 社交得体度": {{
                             "分数": [分数],
                             "原因": [原因简述]
-                        },
-                        "6. 综合小贴士": {
+                        }},
+                        "6. 综合小贴士": {{
                             "小贴士": [提供一个简短的小贴士，20字以内]
-                        },
-                        "7. 情商修炼建议": {
+                        }},
+                        "7. 情商修炼建议": {{
                             "建议": [针对最低得分的维度提供详细的修炼建议]
-                        },
-                        "8. 情商修炼建议总结": {
+                        }},
+                        "8. 情商修炼建议总结": {{
                             "建议总结": [基于情商修炼建议总结成一句话，20字以内]
-                        },
-                        "9. 评估总结": {
+                        }},
+                        "9. 评估总结": {{
                             "总结": [针对用户情况，给出综合评价以及对用户的美好愿望]
-                        }
-                    }
+                        }}
+                    }}
                     """
-    return setup_LLM(payload_content=payload_content)
+    # return setup_LLM(payload_content=payload_content)
+    user_prompt = """
+                **以下是用户信息及他的场景对话**
+
+                {scenario}
+                """
+
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ('system', payload_content),
+            ('user', user_prompt),
+        ]
+    )
+    
+    input_dict = {'scenario': scenario}
+
+    llm = creat_llm()
+    model = prompt | llm
+
+    analysis_output = model.invoke(input_dict)
+    output = analysis_output.content
+
+    return output
 
 def parse_LLMresponse(json_data):
     try:
@@ -182,8 +205,8 @@ if __name__ == "__main__":
         scenario += f"分析: {analysis['analysis']}\n"
     # print(scenario)
     
-    response = request_LLM_response(scenario)
-    print(response)
+    # response = request_LLM_response(scenario)
+    # print(response)
 
     eq_scores = retry_parse_LLMresponse(scenario)
     print(eq_scores)
