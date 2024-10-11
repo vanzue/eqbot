@@ -2,58 +2,78 @@ import os
 import requests
 import json
 
-from llm.llm_setup import setup_LLM
+from langchain_core.prompts import ChatPromptTemplate
+from llm.keyless_setup import creat_llm
+
+# from llm.llm_setup import setup_LLM
 
 
-def request_LLM_response_with_subordinate(personal_name, name, chat_history):
-    payload_content = """
+def request_LLM_response_with_subordinate(personal_name, contact_name, chat_history):
+    system_prompt = """
                     **任务描述**
                     - 你是一位关系分析专家。你将接收一段我与同级同事的聊天记录。你需要根据以下几个维度对聊天记录进行分析。
 
                     **关键细节**
                     - 维度包括：
-                    1. 关系分析
-                    2. 共事契合度
-                    3. 心眼子指数
-                    4. 职场性格
-                    5. 感兴趣的话题
-                    6. 鉴别坏同事
+                    1. {{关系分析}}
+                    2. {{共事契合度}}
+                    3. {{心眼子指数}}
+                    4. {{职场性格}}
+                    5. {{感兴趣的话题}}
+                    6. {{鉴别坏同事}}
 
                     **语气与风格**
                     - 专业且客观，同时保持礼貌和中立的语气。
 
                     **标准输出格式(不要写上json字母, 也不要漏,)**
-                    {
+                    {{
                         "关系分析": [对你与同级同事之间关系的简短分析，注意分析边界感],
                         "共事契合度": [分析你们在工作中的配合程度，契合度高低及原因],
                         "心眼子指数": [推测同事的心机程度，0到100分，说明原因，需要关注是否存在窥探个人隐私的情况],
                         "职场性格": [根据聊天记录，分析同事的职场性格特征，如外向、谨慎、独立等],
                         "感兴趣的话题": [基于聊天内容，分析同事对哪些话题感兴趣],
                         "鉴别坏同事": [判断该同事是否有潜在的负面影响或坏同事行为，并说明理由]
-                    }
+                    }}
 
                     **受众**
                     - 目标受众为希望了解与同级同事关系，并提升共事能力的用户，具有基本的职场经验。
 
                     **输出示例**
-                    {
+                    {{
                         "关系分析": "你与这位同事的关系看似不太紧密，沟通中缺乏一定的理解和包容，表现出一定的紧张和争执。",
                         "共事契合度": "你们的共事契合度较低，沟通中存在信息不对称和职责分工不明确的问题，需要加强沟通与协调。",
                         "心眼子指数": “75, 同事在对话中表现出一定的防备和推诿责任的倾向，可能会在特定情况下保护自己的利益。",
                         "职场性格": "同事表现出较为谨慎和防御的性格特征，倾向于明确职责范围，不愿多承担额外的责任。",
                         "感兴趣的话题": "从聊天记录来看，没有明确显示同事对特定话题的兴趣，更多的是关注工作职责分工。",
                         "鉴别坏同事": "同事表现出一定的推诿责任的行为，但没有明显的恶意或破坏性行为迹象，需进一步观察其在团队中的表现。"
-                    }
+                    }}
 
                     **额外指示**
                     - 确保分析客观、公正，避免任何过度主观或带有偏见的推测，提供的建议应有助于用户改善职场关系，但也要谨防他人对于个人隐私的追问。
+                    """
+    user_prompt = """
+                我的名字是{personal_name}, 同事的名字是{contact_name}。
 
-                    **以下是聊天记录**
+                **以下是聊天记录**
 
-                    """ + chat_history + \
-                    "我的名字是" + personal_name + \
-                    "同事的名字是" + name
-    return setup_LLM(payload_content=payload_content)
+                {chat_history}
+                """
+
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ('system', system_prompt),
+            ('user', user_prompt),
+        ]
+    )
+    
+    input_dict = {'personal_name': personal_name, 'contact_name': contact_name, 'chat_history': chat_history}
+
+    llm = creat_llm()
+    model = prompt | llm
+
+    analysis_output = model.invoke(input_dict)
+    output = analysis_output.content
+    return output
 
 
 def parse_LLMresponse_from_subordinate(json_data):
@@ -84,8 +104,8 @@ def parse_LLMresponse_from_subordinate(json_data):
 
 # - 带有一些怀疑对方的态度，猜测对方是否有PUA倾向，并且观察对方是否侵占下班后的私人时间
 # - 持有怀疑老板意图的偏见，看是否存在不好的情况
-def request_LLM_response_with_supervisor(personal_name, name, chat_history):
-    payload_content = """
+def request_LLM_response_with_supervisor(personal_name, contact_name, chat_history):
+    system_prompt = """
                     **任务描述:**
                     - 你是一位关系分析专家。你将接收一段聊天记录，其中包含我与对方的对话内容。对方的身份是我职场上的领导。你需要根据以下几个维度对聊天记录进行分析。
 
@@ -114,23 +134,43 @@ def request_LLM_response_with_supervisor(personal_name, name, chat_history):
                     - 目标受众为希望了解与上司关系，并改进职场表现的用户，具有基本的职场经验。
 
                     **标准输出格式(不要写上json字母, 也不要漏,)**
-                    {
+                    {{
                         "关系分析": "领导与您保持着较为正式的职场关系，对方似乎欣赏您的工作能力，但还没有表现出深层次的信任。",
                         "相处建议": "多关注领导的沟通风格，适当增加沟通的主动性，显示出您的责任感和团队协作能力。",
                         "对我的看法": "领导认为您是一个努力且有潜力的员工，但在一些决策时可能显得犹豫不决。",
                         "PUA鉴别": "没有明显的PUA行为迹象，领导的要求和建议大多合情合理，具有建设性。",
                         "喜欢什么样的下属": "领导可能更喜欢能够独立解决问题，并在关键时刻表现出主动性和领导力的下属。",
                         "礼物推荐": "选择实用且不过于私人化的礼物，如高档钢笔、工作相关的实用工具，或是领导喜欢的品牌咖啡。"
-                    }
+                    }}
 
                     **额外指示:**
                     - 确保分析客观、公正，避免任何过度主观或带有偏见的推测。
+                    """
 
-                    **以下是聊天记录：**
-                    """ + chat_history + \
-                    "我的名字是" + personal_name + \
-                    "领导的名字是" + name
-    return setup_LLM(payload_content=payload_content)
+
+    user_prompt = """
+                我的名字是{personal_name}, 领导的名字是{contact_name}。
+
+                **以下是聊天记录**
+
+                {chat_history}
+                """
+
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ('system', system_prompt),
+            ('user', user_prompt),
+        ]
+    )
+    
+    input_dict = {'personal_name': personal_name, 'contact_name': contact_name, 'chat_history': chat_history}
+
+    llm = creat_llm()
+    model = prompt | llm
+
+    analysis_output = model.invoke(input_dict)
+    output = analysis_output.content
+    return output
 
 
 def parse_LLMresponse_from_supervisor(json_data):
@@ -161,11 +201,11 @@ def parse_LLMresponse_from_supervisor(json_data):
         raise
 
 
-def retry_parse_LLMresponse_with_subordinate(personal_name, name, chat_history, max_retries=5):
+def retry_parse_LLMresponse_with_subordinate(personal_name, contact_name, chat_history, max_retries=5):
     attempt = 0
     while attempt < max_retries:
         try:
-            json_data = request_LLM_response_with_subordinate(personal_name, name, chat_history)
+            json_data = request_LLM_response_with_subordinate(personal_name, contact_name, chat_history)
             eq_scores = parse_LLMresponse_from_subordinate(json_data)
             return eq_scores
         except json.JSONDecodeError as e:
@@ -177,11 +217,11 @@ def retry_parse_LLMresponse_with_subordinate(personal_name, name, chat_history, 
     return None
 
 
-def retry_parse_LLMresponse_with_supervisor(personal_name, name, chat_history, max_retries=5):
+def retry_parse_LLMresponse_with_supervisor(personal_name, contact_name, chat_history, max_retries=5):
     attempt = 0
     while attempt < max_retries:
         try:
-            json_data = request_LLM_response_with_supervisor(personal_name, name, chat_history)
+            json_data = request_LLM_response_with_supervisor(personal_name, contact_name, chat_history)
             eq_scores = parse_LLMresponse_from_supervisor(json_data)
             return eq_scores
         except json.JSONDecodeError as e:
@@ -197,12 +237,12 @@ if __name__ == "__main__":
     chat_history1 = "[{\"role\": \"user\", \"content\": \"姐，麻烦看下邮件呢，那个资料今天必须要了，都是星期五了\"}, {\"role\": \"colleague\", \"content\": \"那个不是我负责的\"}, {\"role\": \"user\", \"content\": \"不是一直都是你负责的吗\"}, {\"role\": \"user\", \"content\": \"以前每个月都是你发给我们的啊\"}, {\"role\": \"user\", \"content\": \"是业务交给别人了吗\"}, {\"role\": \"colleague\", \"content\": \"不知道 反正不是我负责的\"}]"
     chat_history2 = [{"role": "colleague", "content": "亲爱的你干什么去了？"}, {"role": "user", "content": "在处理点事情。"}, {"role": "colleague", "content": "说嘛，咋俩谁跟谁。"}, {"role": "user", "content": "在忙，待会儿聊。"}, {"role": "colleague", "content": "你不会是去面试了吧？"}]
 
-    # response = retry_parse_LLMresponse_with_subordinate(chat_history=chat_history)
-    # response = request_LLM_response_with_supervisor(chat_history=chat_history)
-    # print(response)
+    # response = retry_parse_LLMresponse_with_subordinate(personal_name="test", contact_name="test_contact", chat_history=chat_history1)
+    response = request_LLM_response_with_supervisor(personal_name="test", contact_name="test_contact", chat_history=chat_history2)
+    print(response)
 
     # response = parse_LLMresponse_from_supervisor(response)
     # print(response)
 
-    response = retry_parse_LLMresponse_with_supervisor(chat_history=chat_history2)
-    print(response)
+    # response = retry_parse_LLMresponse_with_supervisor(chat_history=chat_history2)
+    # print(response)

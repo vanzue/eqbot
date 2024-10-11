@@ -20,7 +20,7 @@ def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depen
 @router.post("/eval/battlefield") 
 def create_course_eval(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
     return chat_eval(request.chat_content)
-    # TODO: Implement this
+    # TODO: Implement this 存db库
     # course_eval = schemas.CourseEvalCreate(course_id=request.course_id,
     #                                        eval_content=request.chat_content,
     #                                        eval_time=datetime.now())

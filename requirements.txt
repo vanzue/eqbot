@@ -10,3 +10,4 @@ pyodbc
 langchain
 python-multipart
 aiofiles
+azure-identity

@@ -29,19 +29,19 @@ def main():
 
     try:
         # Create PersonalInfo
-        # issues = ["沟通不畅", "团队合作"]
-        # concerns = ", ".join(issues)
-        # personal_info_data = schemas.PersonalInfoCreate(
-        #                         name="Jay Park", 
-        #                         gender="male",
-        #                         tag=None, 
-        #                         tag_description="黑猫",
-        #                         job_level="Junior", 
-        #                         issues=concerns,
-        #                         job_id="ba94c32e-aa33-4c5d-8cda-effb8c9fda90"
-        #                         )
-        # personal_info = crud.create_personal_info(db, personal_info_data)
-        # print(f"Created PersonalInfo: {personal_info.id}")
+        issues = ["沟通不畅", "团队合作"]
+        concerns = ", ".join(issues)
+        personal_info_data = schemas.PersonalInfoCreate(
+                                name="Jay Park", 
+                                gender="male",
+                                tag=None, 
+                                tag_description="黑猫",
+                                job_level="Junior", 
+                                issues=concerns,
+                                job_id="ba94c32e-aa33-4c5d-8cda-effb8c9fda90"
+                                )
+        personal_info = crud.create_personal_info(db, personal_info_data)
+        print(f"Created PersonalInfo: {personal_info.id}")
 
         # Update PersonalInfo
         # personal_info = crud.get_personal_info_by_job_id(db, "d508fc86-948c-42a4-8b98-c415d9f3c5e3")
@@ -111,10 +111,10 @@ def main():
         # contacts = crud.get_contacts_by_person_id(db, personal_info.id)
         # print(f"Retrieved Contacts: {contacts}")
 
-        contacts = crud.get_contacts_by_person_name(db, "Jay Park")
-        print(f"Retrieved Contacts: {contacts}")
-        for contact in contacts:
-            print(f"Contact: {contact.name}")
+        # contacts = crud.get_contacts_by_person_name(db, "Jay Park")
+        # print(f"Retrieved Contacts: {contacts}")
+        # for contact in contacts:
+        #     print(f"Contact: {contact.name}")
 
         # # Create ChatRecord
         # chat_record_data = schemas.ChatRecordsCreate(person_id=personal_info.id, contact_id=contact.id, chat_time="2024-08-26 14:00:00", chat_content="Hello, how are you?")
