@@ -6,22 +6,51 @@ from datetime import datetime
 import time
 import random
 
-from dotenv import load_dotenv
+from langchain_openai import AzureChatOpenAI
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+from langchain_core.prompts import ChatPromptTemplate
 
+from dotenv import load_dotenv
 load_dotenv()
-LLM_API = os.getenv('LLM_API')
+# LLM_API = os.getenv('LLM_API')
 
 # Add these variables at the top of the file, after the imports
 SCENARIO_TYPES = ["职场刁难", "帮助别人融入", "应对突发状况"]
 used_scenarios = set()
 
 # Configuration
-API_KEY = LLM_API
-headers = {
-    "Content-Type": "application/json",
-    "api-key": API_KEY,
-}
-ENDPOINT = "https://peitingaoai.openai.azure.com/openai/deployments/4opeitingus/chat/completions?api-version=2024-02-15-preview"
+# API_KEY = LLM_API
+# headers = {
+#     "Content-Type": "application/json",
+#     "api-key": API_KEY,
+# }
+# ENDPOINT = "https://peitingaoai.openai.azure.com/openai/deployments/4opeitingus/chat/completions?api-version=2024-02-15-preview"
+AZURE_OPENAI_ENDPOINT = os.getenv('AZURE_OPENAI_ENDPOINT')
+AZURE_DEPLOYMENT = os.getenv('AZURE_DEPLOYMENT')
+AZURE_DEPLOYMENT_API_VERSION = os.getenv('AZURE_DEPLOYMENT_API_VERSION')
+
+# Set up Azure AD Token Provider
+token_provider = get_bearer_token_provider(
+    DefaultAzureCredential(), "https://cognitiveservices.azure.com/.default"
+)
+
+def creat_llm():
+    llm = AzureChatOpenAI(
+        azure_ad_token_provider=token_provider,
+        azure_endpoint=AZURE_OPENAI_ENDPOINT,
+        api_version=AZURE_DEPLOYMENT_API_VERSION,
+        azure_deployment=AZURE_DEPLOYMENT,
+    )
+    return llm
+
+def escape_braces(template_str):
+    """
+    将模板字符串中的花括号转义为双花括号
+    :param template_str: 原始模板字符串
+    :return: 转义后的模板字符串
+    """
+    # 替换单花括号为双花括号
+    return template_str.replace("{", "{{").replace("}", "}}")
 
 # Initial context for the first question
 initial_context = ("""
@@ -59,38 +88,38 @@ initial_context = ("""
         我擅长维护和提升个人形象，避免在社交中犯下失礼行为。（1-5分）
 
         请返回的 JSON 数据结构如下：
-        {
-          "scenes": {
+        {{
+            "scenes": {{
             "background": 你帮同事[小王]盛饭，盛得比较多，同事[小王]问：,
             "role": "小王",
             "location": "食堂",
             "description": "你这是在喂猪呢？",
             "options": [  
-                {  
+                {{  
                     "text": "1.哈哈，只是想让你吃饱嘛。",  
-                    "scores": {"情绪侦查力": 4, "情绪掌控力": 3, "人际平衡术": 4, "沟通表达力": 3, "社交得体度": 4},  
+                    "scores": {{"情绪侦查力": 4, "情绪掌控力": 3, "人际平衡术": 4, "沟通表达力": 3, "社交得体度": 4}},  
                     "analysis": "你用幽默化解了尴尬，表现了较好的情绪侦查力和人际平衡术。",  
-                },  
-                {  
+                }},  
+                {{  
                     "text": "2.我不允许你这样子骂自己。",  
-                    "scores": {"情绪侦查力": 2, "情绪掌控力": 3, "人际平衡术": 2, "沟通表达力": 3, "社交得体度": 2},  
+                    "scores": {{"情绪侦查力": 2, "情绪掌控力": 3, "人际平衡术": 2, "沟通表达力": 3, "社交得体度": 2}},  
                     "analysis": "你用幽默化解了尴尬，表现了较好的情绪侦查力和人际平衡术。",  
-                },  
-                {  
+                }},  
+                {{  
                     "text": "3.不好意思，我盛多了。",  
-                    "scores": {"情绪侦查力": 3, "情绪掌控力": 4, "人际平衡术": 2, "沟通表达力": 3, "社交得体度": 3},  
+                    "scores": {{"情绪侦查力": 3, "情绪掌控力": 4, "人际平衡术": 2, "沟通表达力": 3, "社交得体度": 3}},  
                     "analysis": "你选择了道歉，表现了较好的情绪掌控力，但在人际平衡术上稍显欠缺。",  
-                }  
+                }}
             ]  
-          }
-        }
+          }}
+        }}
         请根据以上格式生成一个关于[职位等级][性别]在[职场场合]场景会遇到的提问和回答选项json格式。
         问题和回答都是对话的形式。打分可以区分度稍微大一点。
-
-        职场场合：公司食堂
-        性别：女性
+                   
+        职场场合：会议室
+        性别：男性
         职位等级：新人
-        前置背景：你在向大家敬酒时，不小心把酒洒到了桌子上，主管笑着说：“看来你还得多练练敬酒啊！”
+        前置背景：你想要和同事处理好关系，给他们留下一个初始的好印象
 
         # Add these variables at the top of the file, after the imports
         SCENARIO_TYPES = ["职场刁难", "帮助别人融入", "应对突发状况"]
@@ -107,25 +136,37 @@ initial_context = ("""
         
         """)
 
+llm = creat_llm()
 
 def generate_next_question(context, branch_number, max_retries=3):
-    payload = {
-        "messages": [
-            {
-                "role": "system",
-                "content": context
-            }
-        ],
-        "temperature": 1,
-        "top_p": 0.95,
-        "max_tokens": 4000
-    }
+    # payload = {
+    #     "messages": [
+    #         {
+    #             "role": "system",
+    #             "content": context
+    #         }
+    #     ],
+    #     "temperature": 1,
+    #     "top_p": 0.95,
+    #     "max_tokens": 4000
+    # }
 
     for attempt in range(max_retries):
         try:
-            response = requests.post(ENDPOINT, headers=headers, json=payload)
-            response.raise_for_status()
-            a = response.json()['choices'][0]['message']['content']
+            # response = requests.post(ENDPOINT, headers=headers, json=payload)
+            prompt = ChatPromptTemplate.from_messages(
+                [
+                    ('system', context),
+                ]
+            )
+            input_dict = {}
+
+            model = prompt | llm
+            analysis_output = model.invoke(input_dict)
+            a = analysis_output.content
+
+            # response.raise_for_status()
+            # a = response.json()['choices'][0]['message']['content']
             try:
                 output_json = json.loads(a)
                 if validate_json_structure(output_json):
@@ -145,7 +186,7 @@ def generate_next_question(context, branch_number, max_retries=3):
 
 def validate_json_structure(json_data):
     required_keys = ['scenes']
-    scenes_required_keys = ['background', 'description', 'options']
+    scenes_required_keys = ['background', 'role', 'location', 'description', 'options']
     option_required_keys = ['text', 'scores', 'analysis']
     ability_keys = ["情绪侦查力", "情绪掌控力", "人际平衡术", "沟通表达力", "社交得体度"]
 
@@ -228,7 +269,9 @@ def recursive_dialogue(context, folder, depth=0, max_depth=5, branch_path=""):
         print(f"\n-----------------------------------执行分支 {i}:")
         print(f"分支 {i} - 选项 {i} 分析: {option['analysis']}")
 
-        new_context = context + f"\n系统生成一样格式的问题和选项:\n{json.dumps(next_question, ensure_ascii=False)}\n用户选择: {i}。新的问题要接着上一个场景和选择，注意上下文过渡，换情境的话要有过渡，情境有两个NPC[小王]和[小李]和你。NPC的[]的符号只会出现在background中。你们三个人发生对话和故事。对话和情境不要重复。每过三轮对话可以换个去到新的场景来展开话题。情境和会话要有冲突。最好阴阳怪气一下。或者有{scenario_type}。回答给一个意图不明的抽象回答，给一个赞同倾向的回答，给一个反驳倾向的回答，可以阴阳。但是三个选项都各有道理。大家选的时候会纠结。口语化一点。"
+        new_scenario = escape_braces(json.dumps(next_question, ensure_ascii=False))
+
+        new_context = context + f"\n系统生成一样格式的问题和选项:\n{new_scenario}\n用户选择: {i}。新的问题要接着上一个场景和选择，注意上下文过渡，换情境的话要有过渡，情境有两个NPC[小王]和[小李]和你。NPC的[]的符号只会出现在background中。你们三个人发生对话和故事。对话和情境不要重复。每过三轮对话可以换个去到新的场景来展开话题。情境和会话要有冲突。最好阴阳怪气一下。或者有{scenario_type}。回答给一个意图不明的抽象回答，给一个赞同倾向的回答，给一个反驳倾向的回答，可以阴阳。但是三个选项都各有道理。大家选的时候会纠结。口语化一点。"
 
         new_branch_path = f"{branch_path}{i}"
         sub_scores = recursive_dialogue(new_context, folder, depth + 1, max_depth, new_branch_path)

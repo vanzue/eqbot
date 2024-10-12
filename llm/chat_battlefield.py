@@ -12,11 +12,17 @@ load_dotenv()
 
 LLM_API = os.getenv('LLM_API')
 
+def escape_braces(template_str):
+    return template_str.replace("{", "{{").replace("}", "}}")
+
 def request_LLM_response(user_query):
     
     user_prompt = ""
     for message in user_query:
-        user_prompt += message
+        if isinstance(message, dict):
+            user_prompt += escape_braces(json.dumps(message))
+        else:
+            user_prompt += message
     return retry(send_to_LLM, user_prompt)
 
     
