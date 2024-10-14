@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
+from sqlalchemy.exc import NoResultFound
 from . import models, schemas
 
 # CRUD for PersonalInfo
@@ -12,7 +13,8 @@ def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate)
         tag_description=personal_info.tag_description,
         job_level=personal_info.job_level,
         issues=personal_info.issues,
-        job_id = personal_info.job_id
+        job_id = personal_info.job_id,
+        num_star = 100
     )
     db.add(db_personal_info)
     db.commit()
@@ -37,6 +39,20 @@ def update_personal_info_by_name(
     db.commit()
     db.refresh(db_personal_info)
     return db_personal_info
+
+def update_personal_stars_by_name(db: Session, name: str, new_stars: int):
+    try:
+        person = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).one()
+        person.num_star = new_stars
+        db.commit()
+        return True
+    except NoResultFound:
+        print(f"No person found with name {name}")
+        return False
+    except Exception as e:
+        db.rollback()
+        print(f"An error occurred: {e}")
+        return False
 
 def get_personal_info(db: Session, personal_info_id: str):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == personal_info_id).first()
@@ -91,8 +107,8 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
     return db_eq_score
 
 
-def get_eq_scores_by_person_id(db: Session, person_id: str, skip: int = 0, limit: int = 100):
-    return db.query(models.EQScore).filter(models.EQScore.person_id == person_id).offset(skip).limit(limit).first()
+def get_eq_scores_by_person_id(db: Session, person_id: str):
+    return db.query(models.EQScore).filter(models.EQScore.person_id == person_id).first()
 
 def get_eq_scores_by_job_id(db: Session, job_id: str):
     return db.query(models.EQScore).filter(models.EQScore.job_id == job_id).one_or_none()
@@ -109,8 +125,9 @@ def delete_eq_score(db: Session, eq_score_id: int):
 
 def create_course(db: Session, course: schemas.CoursesCreate):
     db_course = models.Courses(
-        course_name=course.course_name, 
-        course_description=course.course_description
+        course_type=course.course_type, 
+        course_level=course.course_level,
+        prompt = course.prompt
     )
     db.add(db_course)
     db.commit()
@@ -122,6 +139,13 @@ def get_courses(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Courses).offset(skip).limit(limit).all()
 
 
+def get_course_by_course_type_and_level(db: Session, course_type: str, course_level: int):
+    return db.query(models.Courses).filter(
+        models.Courses.course_type == course_type,
+        models.Courses.course_level == course_level
+    ).first()
+
+
 def delete_course(db: Session, course_id: int):
     db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
     if db_course:
@@ -131,14 +155,51 @@ def delete_course(db: Session, course_id: int):
 
 # CRUD for PersonalInfoCourses (Many-to-Many Relationship)
 
-def add_course_to_personal_info(db: Session, personal_info_courses: schemas.PersonalInfoCoursesCreate):
-    db_personal_info_course = models.PersonalInfoCourses(
-        person_id=personal_info_courses.person_id, 
-        course_id=personal_info_courses.course_id
+def create_personal_info_course(db: Session, person_id: int, course_id: int, course_type: str, course_level: int, status: str, result: int = None, comment1: str = None, comment2: str = None, comment3: str = None):
+    new_course = schemas.PersonalInfoCourses(
+        person_id=person_id,
+        course_id=course_id,
+        course_type=course_type,
+        course_level=course_level,
+        status=status,
+        result=result,
+        comment1=comment1,
+        comment2=comment2,
+        comment3=comment3
     )
-    db.add(db_personal_info_course)
+    db.add(new_course)
     db.commit()
-    return db_personal_info_course
+    db.refresh(new_course)
+    return new_course
+
+
+def get_courses_by_person_id(db: Session, person_id: int):
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id).all()
+
+
+def update_personal_info_course(db: Session, person_id: int, course_id: int, course_type: str = None, course_level: int = None, status: str = None, result: int = None, comment1: str = None, comment2: str = None, comment3: str = None):
+    course = db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id, models.PersonalInfoCourses.course_type == course_type).first()
+
+    if not course:
+        return None
+
+    # 更新字段（如果传递了新的值）
+    if course_level is not None:
+        course.course_level = course_level
+    if status is not None:
+        course.status = status
+    if result is not None:
+        course.result = result
+    if comment1 is not None:
+        course.comment1 = comment1
+    if comment2 is not None:
+        course.comment2 = comment2
+    if comment3 is not None:
+        course.comment3 = comment3
+
+    db.commit()
+    db.refresh(course)
+    return course
 
 
 def get_personal_info_courses(db: Session, person_id: str):

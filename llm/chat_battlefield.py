@@ -15,26 +15,25 @@ LLM_API = os.getenv('LLM_API')
 def escape_braces(template_str):
     return template_str.replace("{", "{{").replace("}", "}}")
 
-def request_LLM_response(user_query):
-    
+def request_LLM_response(user_query, db_prompt):    
     user_prompt = ""
     for message in user_query:
         if isinstance(message, dict):
             user_prompt += escape_braces(json.dumps(message))
         else:
             user_prompt += message
-    return retry(send_to_LLM, user_prompt)
+    return retry(send_to_LLM, user_prompt, db_prompt)
 
     
 def chat_eval(user_query, max_retries=5):
     return retry(request_LLM_response_by_eval, user_query, max_retries)
 
 
-def retry(func, user_prompt, max_retries=5):
+def retry(func, user_prompt, db_prompt=None, max_retries=5):
     attempt = 0
     while attempt < max_retries:
         try:
-            json_data = func(user_prompt)
+            json_data = func(user_prompt, db_prompt)
             result = parse_response_to_json(json_data)
             return result
         except json.JSONDecodeError as e:
@@ -46,7 +45,7 @@ def retry(func, user_prompt, max_retries=5):
     return None
 
 
-def request_LLM_response_by_eval(user_query):
+def request_LLM_response_by_eval(user_query, db_prompt=None):
     system_prompt = """
                     你是一位情商大师，请根据以下聊天对话，分析对方对我的满意度，并给出提升情商的小技巧。
                     **标准输出格式(不要写上json字母, 也不要漏,)**
@@ -85,7 +84,7 @@ def request_LLM_response_by_eval(user_query):
             ('user', user_prompt),
         ]
     )
-    
+
     llm = creat_llm()
     model = prompt | llm
 
@@ -105,14 +104,8 @@ def parse_response_to_json(response):
         raise
 
 
-def send_to_LLM(user_prompt):
-    system_prompt = """
-                    你是一位情绪掌控大师。今晚，我和三位同事——我的领导、同事A和同事B——在餐厅聚餐。通过轻松的日常对话，他们会考察我的情绪掌控力。每位同事初始都有一个心情值，每次对话都会使他们的心情加或减。请根据以下人物性格生成对话：请根据以下人物性格生成对话：
-
-                        领导：擅长PUA，脾气很大。
-                        同事A：阿谀奉承，讨好领导。
-                        同事B：尖酸刻薄。
-
+def send_to_LLM(user_prompt, db_prompt):
+    system_prompt = db_prompt+ """
                     对话流程：
 
                     1. 生成话题：请根据餐厅点菜场景生成一个自然的对话，采用轻松的语气，不使用反问句。输出以下格式，不要有多余的回复， **标准输出格式(不要写上json字母, 也不要漏,)**：
@@ -167,6 +160,18 @@ def send_to_LLM(user_prompt):
 
                     请按照这个步骤，请生成第一个话题，并开始对话。
                     """
+    # messages = [
+    #     ('system', system_prompt)  # Add the system message as a tuple
+    # ]
+
+    # for item in user_prompt:
+    #     role = item['role']
+    #     # Join all 'text' values into a single string for the content
+    #     text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
+    #     # Append each message as a tuple (role, content)
+    #     messages.append((role, text_content))
+
+    # prompt = ChatPromptTemplate.from_messages(messages)
     prompt = ChatPromptTemplate.from_messages(
         [
             ('system', system_prompt),

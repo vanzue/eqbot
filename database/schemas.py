@@ -71,8 +71,9 @@ class EQScore(EQScoreBase):
 
 # Courses Schema
 class CoursesBase(BaseModel):
-    course_name: str
-    course_description: Optional[str]
+    course_type: str
+    course_level: int
+    prompt: str
 
 
 class CoursesCreate(CoursesBase):
@@ -90,6 +91,13 @@ class Courses(CoursesBase):
 class PersonalInfoCoursesBase(BaseModel):
     person_id: int  # ForeignKey to PersonalInfo.id
     course_id: int  # ForeignKey to Courses.id
+    course_type: str
+    course_level: int
+    status: str
+    result: Optional[int]
+    comment1: Optional[str]
+    comment2: Optional[str]
+    comment3: Optional[str]
 
 
 class PersonalInfoCoursesCreate(PersonalInfoCoursesBase):
