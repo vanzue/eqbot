@@ -128,7 +128,7 @@ async def start_scenario(job_id: str):
     scenario.scores = {key: 0 for key in scenario.scores}
     scenario.choice_count = 0
     scenario.analysis_data = []
-    return scenario.get_scene(), scenario.scenario_id+1
+    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
 
 async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db)):
     min_score_idx, response = await scenario_manager.process_final_data()
