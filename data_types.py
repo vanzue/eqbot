@@ -39,5 +39,5 @@ class EchoSpaceResponseModel(BaseModel):
 
 class BattlefieldRequest(BaseModel):
     person_id: int
-    course_id: str
+    course_id: int
     chat_content: str
