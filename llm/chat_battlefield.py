@@ -24,6 +24,17 @@ def request_LLM_response(user_query, db_prompt):
             user_prompt += message
     return retry(send_to_LLM, user_prompt, db_prompt)
 
+#     modified_data = escape_curly_braces(user_query)
+#     return retry(send_to_LLM, modified_data)
+
+# def escape_curly_braces(data):
+#     for item in data:
+#         for content in item['content']:
+#             # Escape curly braces and quotes in the text field
+#             content['text'] = content['text'].replace('{', '{{').replace('}', '}}').replace('"', '\\"')
+#     return data
+
+
     
 def chat_eval(user_query, max_retries=5):
     return retry(request_LLM_response_by_eval, user_query, max_retries)
