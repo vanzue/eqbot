@@ -177,9 +177,9 @@ def send_to_LLM(user_prompt):
 
                     请按照这个步骤，请生成第一个话题，并开始对话。
                     """
-    messages = [
-        ('system', system_prompt)  # Add the system message as a tuple
-    ]
+    # messages = [
+    #     ('system', system_prompt)  # Add the system message as a tuple
+    # ]
 
     # for item in user_prompt:
     #     role = item['role']
@@ -188,7 +188,13 @@ def send_to_LLM(user_prompt):
     #     # Append each message as a tuple (role, content)
     #     messages.append((role, text_content))
 
-    prompt = ChatPromptTemplate.from_messages(messages)
+    # prompt = ChatPromptTemplate.from_messages(messages)
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ('system', system_prompt),
+            ('user', user_prompt),
+        ]
+    )
     
     llm = creat_llm()
     model = prompt | llm
