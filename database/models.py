@@ -15,10 +15,12 @@ class PersonalInfo(Base):
     job_level = Column(Unicode(50))
     issues = Column(Unicode(100))
     job_id = Column(Unicode(100))
+    num_star = Column(Integer)
 
     eq_scores = relationship("EQScore", back_populates="person")
     contacts = relationship("Contact", back_populates="person")
     chat_records = relationship("ChatRecords", back_populates="person")
+    courses = relationship("PersonalInfoCourses", back_populates="person")
 
 # EQScore Table
 class EQScore(Base):
@@ -57,20 +59,27 @@ class Courses(Base):
     __tablename__ = 'Courses'
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    course_name = Column(String(100), nullable=False)
-    course_description = Column(Text)
+    course_type = Column(Unicode(50), nullable=False)
+    course_level = Column(Integer)
+    prompt = Column(UnicodeText)
 
-    personal_info_courses = relationship("PersonalInfoCourses", back_populates="course")
 
 # PersonalInfoCourses Table (Many-to-Many relationship between PersonalInfo and Courses)
 class PersonalInfoCourses(Base):
     __tablename__ = 'PersonalInfoCourses'
 
     person_id = Column(Integer, ForeignKey('PersonalInfo.id'), primary_key=True)
-    course_id = Column(Integer, ForeignKey('Courses.id'), primary_key=True)
+    course_id = Column(Integer, ForeignKey('Courses.id'))
+    course_type = Column(Unicode(50), nullable=False)
+    course_level = Column(Integer)
+    status = Column(Unicode(50))
+    result = Column(Integer)
+    comment1 = Column(UnicodeText)
+    comment2 = Column(UnicodeText)
+    comment3 = Column(UnicodeText)
 
-    # person = relationship("PersonalInfo", back_populates="courses")
-    course = relationship("Courses", back_populates="personal_info_courses")
+    person = relationship("PersonalInfo", back_populates="courses")
+    # course = relationship("Courses", back_populates="personal_info_courses")
 
 # Contact Table
 class Contact(Base):
