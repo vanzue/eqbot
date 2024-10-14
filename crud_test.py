@@ -1,27 +1,53 @@
-import os, json
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+import os
+import pyodbc, struct
 from database import crud, models, schemas
-# from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import declarative_base
+from azure import identity
+from azure.identity import DefaultAzureCredential
+from sqlalchemy import create_engine, event, text, MetaData
+from sqlalchemy.orm import sessionmaker, declarative_base
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
-user_name = os.getenv('DB_USERNAME')
-db_password = os.getenv('DB_PASSWORD')
+# Define your Azure SQL Database details
 server = os.getenv('DB_SERVER')
-db_name = os.getenv('DB_NAME')
+database = os.getenv('DB_NAME')
 
-DATABASE_URL = f"mssql+pyodbc://{user_name}:{db_password}@{server}.database.windows.net:1433/{db_name}?driver=ODBC+Driver+18+for+SQL+Server"
+SQL_COPT_SS_ACCESS_TOKEN = 1256  # As defined in msodbcsql.h
 
-engine = create_engine(DATABASE_URL)
+def inject_azure_credential(credential, engine, token_url='https://database.windows.net/'):
+    @event.listens_for(engine, 'do_connect')
+    def do_connect(dialect, conn_rec, cargs, cparams):
+        token = credential.get_token(token_url).token.encode('utf-16-le')
+        token_struct = struct.pack(f'=I{len(token)}s', len(token), token)
+        attrs_before = cparams.setdefault('attrs_before', {})
+        attrs_before[SQL_COPT_SS_ACCESS_TOKEN] = bytes(token_struct)
+        return dialect.connect(*cargs, **cparams)
+
+# Use DefaultAzureCredential or any other Azure credentials
+creds = DefaultAzureCredential()
+
+# Create the SQLAlchemy engine
+engine = create_engine(
+    'mssql+pyodbc:///?odbc_connect=DRIVER={ODBC Driver 18 for SQL Server};'
+    f'SERVER={server};'
+    f'DATABASE={database};'
+    'TrustServerCertificate=yes;'
+    'Encrypt=yes'
+)
+
+# Inject Azure credentials into the engine
+inject_azure_credential(creds, engine)
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
 
+metadata = MetaData(schema='dbo')
+
+Base = declarative_base(metadata=metadata)
 # Create all tables
 models.Base.metadata.create_all(bind=engine)
+
 
 def main():
     # Start a database session
@@ -31,6 +57,7 @@ def main():
         # Create PersonalInfo
         issues = ["沟通不畅", "团队合作"]
         concerns = ", ".join(issues)
+
         personal_info_data = schemas.PersonalInfoCreate(
                                 name="Jay Park", 
                                 gender="male",
