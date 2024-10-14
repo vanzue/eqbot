@@ -15,8 +15,7 @@ LLM_API = os.getenv('LLM_API')
 def escape_braces(template_str):
     return template_str.replace("{", "{{").replace("}", "}}")
 
-def request_LLM_response(user_query):
-    
+def request_LLM_response(user_query):    
     user_prompt = ""
     for message in user_query:
         if isinstance(message, dict):
@@ -24,6 +23,17 @@ def request_LLM_response(user_query):
         else:
             user_prompt += message
     return retry(send_to_LLM, user_prompt)
+
+#     modified_data = escape_curly_braces(user_query)
+#     return retry(send_to_LLM, modified_data)
+
+# def escape_curly_braces(data):
+#     for item in data:
+#         for content in item['content']:
+#             # Escape curly braces and quotes in the text field
+#             content['text'] = content['text'].replace('{', '{{').replace('}', '}}').replace('"', '\\"')
+#     return data
+
 
     
 def chat_eval(user_query, max_retries=5):
@@ -85,7 +95,7 @@ def request_LLM_response_by_eval(user_query):
             ('user', user_prompt),
         ]
     )
-    
+
     llm = creat_llm()
     model = prompt | llm
 
@@ -167,12 +177,18 @@ def send_to_LLM(user_prompt):
 
                     请按照这个步骤，请生成第一个话题，并开始对话。
                     """
-    prompt = ChatPromptTemplate.from_messages(
-        [
-            ('system', system_prompt),
-            ('user', user_prompt),
-        ]
-    )
+    messages = [
+        ('system', system_prompt)  # Add the system message as a tuple
+    ]
+
+    for item in user_prompt:
+        role = item['role']
+        # Join all 'text' values into a single string for the content
+        text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
+        # Append each message as a tuple (role, content)
+        messages.append((role, text_content))
+
+    prompt = ChatPromptTemplate.from_messages(messages)
     
     llm = creat_llm()
     model = prompt | llm
