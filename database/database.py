@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Define your Azure SQL Database details
-server = os.getenv('DB_SERVER')
-database = os.getenv('DB_NAME')
+server = os.getenv('DATABASE_SERVER')
+database = os.getenv('DATABASE_NAME')
 
 SQL_COPT_SS_ACCESS_TOKEN = 1256  # As defined in msodbcsql.h
 
