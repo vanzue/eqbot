@@ -181,12 +181,12 @@ def send_to_LLM(user_prompt):
         ('system', system_prompt)  # Add the system message as a tuple
     ]
 
-    for item in user_prompt:
-        role = item['role']
-        # Join all 'text' values into a single string for the content
-        text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
-        # Append each message as a tuple (role, content)
-        messages.append((role, text_content))
+    # for item in user_prompt:
+    #     role = item['role']
+    #     # Join all 'text' values into a single string for the content
+    #     text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
+    #     # Append each message as a tuple (role, content)
+    #     messages.append((role, text_content))
 
     prompt = ChatPromptTemplate.from_messages(messages)
     
