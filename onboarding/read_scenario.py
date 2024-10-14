@@ -109,7 +109,7 @@ def start_interaction():
 
     # latest_folder = max(scenario_folders)
     # print(f"使用最新的场景文件夹: {latest_folder}")
-    latest_folder = "scenario_20240929_100105"
+    latest_folder = "scenario_20241012_113354"
 
     all_scores, analysis_data = navigate_dialogue_tree(resource_path(latest_folder))
 

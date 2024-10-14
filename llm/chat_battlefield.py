@@ -12,16 +12,28 @@ load_dotenv()
 
 LLM_API = os.getenv('LLM_API')
 
-def request_LLM_response(user_query):
-    modified_data = escape_curly_braces(user_query)
-    return retry(send_to_LLM, modified_data)
+def escape_braces(template_str):
+    return template_str.replace("{", "{{").replace("}", "}}")
 
-def escape_curly_braces(data):
-    for item in data:
-        for content in item['content']:
-            # Escape curly braces and quotes in the text field
-            content['text'] = content['text'].replace('{', '{{').replace('}', '}}').replace('"', '\\"')
-    return data
+def request_LLM_response(user_query):    
+    user_prompt = ""
+    for message in user_query:
+        if isinstance(message, dict):
+            user_prompt += escape_braces(json.dumps(message))
+        else:
+            user_prompt += message
+    return retry(send_to_LLM, user_prompt)
+
+#     modified_data = escape_curly_braces(user_query)
+#     return retry(send_to_LLM, modified_data)
+
+# def escape_curly_braces(data):
+#     for item in data:
+#         for content in item['content']:
+#             # Escape curly braces and quotes in the text field
+#             content['text'] = content['text'].replace('{', '{{').replace('}', '}}').replace('"', '\\"')
+#     return data
+
 
     
 def chat_eval(user_query, max_retries=5):

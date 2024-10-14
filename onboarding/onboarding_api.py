@@ -17,13 +17,15 @@ class ScenarioManager:
     def __init__(self):
         self.current_branch = ""
         # self.folder = self.get_latest_scenario_folder()
-        # self.filename = ["scenario_20241009_112231", "scenario_20241009_114211",
-        #                  "scenario_20241009_125849", "scenario_20241009_132409",
-        #                  "scenario_20241009_134237", "scenario_20241009_140614",
-        #                  "scenario_20241009_142639", "scenario_20241009_152457", 
-        #                  "scenario_20241009_161313", "scenario_20241009_164159"]
-        # self.folder =  os.path.join("onboarding", random.choice(self.filename))
-        self.folder =  os.path.join("onboarding", "scenario_20241010_143143")
+        self.filename = ["scenario_1", "scenario_2",
+                         "scenario_3", "scenario_4",
+                         "scenario_5", "scenario_6",
+                         "scenario_7", "scenario_8", 
+                         "scenario_9", "scenario_10"]
+        self.scenario_id = random.randrange(0, len(self.filename))
+        self.folder =  os.path.join("onboarding", self.filename[self.scenario_id])
+        
+        # self.folder =  os.path.join("onboarding", "scenario_7")
         self.scores = {
             "情绪侦查力": 0,
             "情绪掌控力": 0,
@@ -126,7 +128,7 @@ async def start_scenario(job_id: str):
     scenario.scores = {key: 0 for key in scenario.scores}
     scenario.choice_count = 0
     scenario.analysis_data = []
-    return scenario.get_scene()
+    return scenario.get_scene(), scenario.scenario_id+1
 
 async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db)):
     min_score_idx, response = await scenario_manager.process_final_data()
