@@ -186,7 +186,7 @@ async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Ses
 @router.post("/get_current_scenario/{job_id}")
 async def get_current_scene(job_id: str):
     scenario = get_scenario_manager(job_id)
-    return scenario.get_scene()
+    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
     # return scenario_manager.get_scene()
 
 # @router.get("/get_scores")

@@ -32,7 +32,7 @@ def main():
         issues = ["沟通不畅", "团队合作"]
         concerns = ", ".join(issues)
         personal_info_data = schemas.PersonalInfoCreate(
-                                name="Jay Park", 
+                                name="Jay Park11", 
                                 gender="male",
                                 tag=None, 
                                 tag_description="黑猫",
