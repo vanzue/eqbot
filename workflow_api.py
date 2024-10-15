@@ -72,13 +72,20 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
     # tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"]
     job_id = str(uuid.uuid4())
 
-    isExist_name = crud.get_personal_id_by_name(db, name)
-    if isExist_name:
-        return {"message": "Name is exist, please use another name."}
+    # isExist_name = crud.get_personal_id_by_name(db, name)
+    # if isExist_name:
+    #     return {"message": "Name is exist, please use another name."}
 
-    await create_personal_info_endpoint(name=name, gender=gender, job_level=job_level, issues=issues, job_id=job_id, db=db)
-    
-    return {"job_id": job_id}
+    # await create_personal_info_endpoint(name=name, gender=gender, job_level=job_level, issues=issues, job_id=job_id, db=db)
+    personal_info_data = schemas.PersonalInfoCreate(
+                            name=name, 
+                            gender=gender, 
+                            job_level=job_level, 
+                            issues=issues, 
+                            job_id=job_id)
+    db_personal_info = crud.create_personal_info(db, personal_info_data)
+
+    return {"job_id": job_id, "user_id": db_personal_info.id}
 
 
 
@@ -144,10 +151,10 @@ async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
     return {"response": response}
 
 
-@router.post("/get_homepage/{name}")
-async def get_homepage(name: str, db: Session = Depends(database.get_db)):
+@router.post("/get_homepage/{personal_id}")
+async def get_homepage(personal_id: int, db: Session = Depends(database.get_db)):
     # profile & eq scores
-    personal_info = crud.get_personal_info_by_name(db, name)
+    personal_info = crud.get_personal_id_by_personid(db, personal_id)
     eq_scores = crud.get_eq_scores_by_person_id(db, personal_info.id)
 
     # if not personal_info.tag:
