@@ -82,5 +82,5 @@ async def ping():
 
 if __name__ == "__main__":
     # This will start the FastAPI server and allow for debugging
-    # uvicorn.run(app, host="127.0.0.1", port=8000, log_level="debug")
-    uvicorn.run(app, host="0.0.0.0", port=8180, log_level="debug")
+    uvicorn.run(app, host="127.0.0.1", port=8000, log_level="debug")
+    # uvicorn.run(app, host="0.0.0.0", port=8180, log_level="debug")

@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 import json
 import os
-from typing import List, Dict
+from typing import List, Dict, Optional
 import random
 
 from database import crud, database, schemas
@@ -14,7 +14,7 @@ router = APIRouter()
 
 
 class ScenarioManager:
-    def __init__(self):
+    def __init__(self, scenario_id: Optional[int] = None):
         self.current_branch = ""
         # self.folder = self.get_latest_scenario_folder()
         self.filename = ["scenario_1", "scenario_2",
@@ -22,7 +22,7 @@ class ScenarioManager:
                          "scenario_5", "scenario_6",
                          "scenario_7", "scenario_8", 
                          "scenario_9", "scenario_10"]
-        self.scenario_id = random.randrange(0, len(self.filename))
+        self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
         self.folder =  os.path.join("onboarding", self.filename[self.scenario_id])
         
         # self.folder =  os.path.join("onboarding", "scenario_7")
@@ -112,13 +112,13 @@ class ScenarioManager:
 # 全局字典用于存储用户的 ScenarioManager 实例
 user_scenarios: Dict[str, ScenarioManager] = {}
 
-def get_scenario_manager(job_id: str) -> ScenarioManager:
+def get_scenario_manager(job_id: str, scenario_id: Optional[int] = None) -> ScenarioManager:
     if job_id not in user_scenarios:
-        user_scenarios[job_id] = ScenarioManager()
+        user_scenarios[job_id] = ScenarioManager(scenario_id)
     return user_scenarios[job_id]
 
-def reset_scenario_manager(job_id: str):
-    user_scenarios[job_id] = ScenarioManager()
+def reset_scenario_manager(job_id: str, scenario_id: Optional[int] = None):
+    user_scenarios[job_id] = ScenarioManager(scenario_id)
 
 @router.post("/start_scenario/{job_id}")
 async def start_scenario(job_id: str):
@@ -188,6 +188,16 @@ async def get_current_scene(job_id: str):
     scenario = get_scenario_manager(job_id)
     return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
     # return scenario_manager.get_scene()
+
+@router.post("/start_scenario_by_scenario_id/{job_id}/{scenario_id}")  # 0-9
+async def start_scenario_by_scenario_id(job_id: str, scenario_id:int):
+    reset_scenario_manager(job_id, scenario_id)
+    scenario = get_scenario_manager(job_id, scenario_id)
+    scenario.current_branch = ""
+    scenario.scores = {key: 0 for key in scenario.scores}
+    scenario.choice_count = 0
+    scenario.analysis_data = []
+    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
 
 # @router.get("/get_scores")
 # async def get_scores(job_id: str):
