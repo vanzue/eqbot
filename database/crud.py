@@ -65,6 +65,10 @@ def get_personal_id_by_name(db: Session, name: str):
     personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).limit(1).one_or_none()
     return getattr(personal_info, 'id', '')
 
+def get_personal_id_by_personid(db: Session, personid: int):
+    personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.id == personid).first()
+    return personal_info
+
 def get_personal_info_by_name(db: Session, name: str):
     personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).limit(1).one_or_none()
     return personal_info\
@@ -138,11 +142,20 @@ def create_course(db: Session, course: schemas.CoursesCreate):
 def get_courses(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Courses).offset(skip).limit(limit).all()
 
+def get_course_by_id(db: Session, course_id: int):
+    course = db.query(models.Courses.course_type, models.Courses.course_level).filter(models.Courses.id == course_id).first()
+
+    return course.course_type, course.course_level
 
 def get_course_by_course_type_and_level(db: Session, course_type: str, course_level: int):
     return db.query(models.Courses).filter(
         models.Courses.course_type == course_type,
         models.Courses.course_level == course_level
+    ).first()
+
+def get_course_by_coursid(db: Session, course_id: int):
+    return db.query(models.Courses).filter(
+        models.Courses.id == course_id
     ).first()
 
 
@@ -155,17 +168,17 @@ def delete_course(db: Session, course_id: int):
 
 # CRUD for PersonalInfoCourses (Many-to-Many Relationship)
 
-def create_personal_info_course(db: Session, person_id: int, course_id: int, course_type: str, course_level: int, status: str, result: int = None, comment1: str = None, comment2: str = None, comment3: str = None):
-    new_course = schemas.PersonalInfoCourses(
-        person_id=person_id,
-        course_id=course_id,
-        course_type=course_type,
-        course_level=course_level,
-        status=status,
-        result=result,
-        comment1=comment1,
-        comment2=comment2,
-        comment3=comment3
+def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCoursesCreate):
+    new_course = models.PersonalInfoCourses(
+        person_id=course_data.person_id,
+        course_id=course_data.course_id,
+        course_type=course_data.course_type,
+        course_level=course_data.course_level,
+        status=course_data.status,
+        result=course_data.result,
+        comment1=course_data.comment1,
+        comment2=course_data.comment2,
+        comment3=course_data.comment3
     )
     db.add(new_course)
     db.commit()
