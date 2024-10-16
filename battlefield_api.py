@@ -57,6 +57,11 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
     course_type, course_level = crud.get_course_by_id(db, course_id=request.course_id)
     # print(course_type, course_level)
 
+    # update stars
+    person_star = request.person_star
+    db_person = crud.get_personal_id_by_personid(db, personid=request.person_id)
+    db_person.num_star += person_star
+
     # 创建新的数据库条目
     course_entry = schemas.PersonalInfoCoursesCreate(
         person_id=request.person_id,
@@ -76,7 +81,7 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
 
 
 
-@router.get("/get_battlefield/person_id")
+@router.get("/get_battlefield/{person_id}")
 def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
     eq_scores = crud.get_eq_scores_by_person_id(db, person_id=person_id)
 
@@ -93,11 +98,15 @@ def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
         }
         
         # 找到最低分的维度
-        lowest_dimension = min(scores, key=scores.get)
+        lowest_dimension_key = min(scores, key=scores.get)
+        lowest_dimension = int(lowest_dimension_key.replace("dimension", ""))
         
     eq_dimensions = ["情绪侦查力", "情绪掌控力", "人际平衡术", "沟通表达力", "社交得体度"]
-    eq_type = eq_dimensions[lowest_dimension]
+    # eq_type = eq_dimensions[lowest_dimension]
+    eq_type = "情绪掌控力"
 
     person_course = crud.get_courses_by_person_id(db, person_id=person_id)
     if not person_course:
-        matching_courses = crud.get_course_by_course_type_and_level(db, course_type=eq_type, course_level=1)
+        person_course = crud.get_course_by_course_type_and_level(db, course_type=eq_type, course_level=1)
+    
+    return {"course": person_course}
