@@ -41,3 +41,11 @@ class BattlefieldRequest(BaseModel):
     person_id: int
     course_id: int
     chat_content: str
+
+class BattlefieldEval(BaseModel):
+    person_id: int
+    course_id: int
+    chat_content: str
+    status: str
+    result: int
+    person_star: int
