@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "你作为公司新人，正在开会期间发言。",
-        "role": "资深同事老李",
+        "role": "老李",
         "location": "会议室",
         "description": "新来的，你对这个提案有什么高见吗？",
         "options": [
