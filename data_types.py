@@ -48,3 +48,4 @@ class BattlefieldEval(BaseModel):
     chat_content: str
     status: str
     result: int
+    person_star: int
