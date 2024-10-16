@@ -189,6 +189,101 @@ def send_to_LLM(user_prompt, db_prompt):
     return analysis_output.content
 
 
+def send_to_LLM_v2(user_prompt, db_prompt):
+    system_prompt = db_prompt+ """
+                    对话流程：
+
+                    1. 生成话题：请根据餐厅点菜场景生成一个自然的对话，采用轻松的语气，不使用反问句。输出以下格式，不要有多余的回复， **标准输出格式(不要写上json字母, 也不要漏,)**：
+                    {{
+                        "dialog": [
+                            {{
+                                "role": "领导",
+                                "content": "xxx"
+                            }},
+                            {{
+                                "role": "同事A",
+                                "content": "xxx"
+                            }},
+                            {{
+                                "role": "同事B",
+                                "content": "xxx"
+                            }}
+                        ]
+                    }}
+                    2. 我会做出回应。
+                    3. 根据我的表现进行评估，**标准输出格式(不要写上json字母, 也不要漏,)**：
+                    {{
+                        "comments": "xxx",
+                        "moods": [
+                            {{
+                                "role": "领导",
+                                "mood": "根据情况 +或者- 一定数值"
+                            }}, 
+                            {{
+                                "role": "同事A",
+                                "mood": "根据情况 +或者- 一定数值"
+                            }}, 
+                            {{
+                                "role": "同事B",
+                                "mood": "根据情况 +或者- 一定数值"
+                            }}
+                        ]
+                    }}
+
+                    4. 等待我发出下一步的指令：
+                    1）如果我回答“继续”，则聊天继续。不要有多余的信息。
+                    2）**只有在我发出“帮我回答”指令时**，才帮我回答。直接给出最适合的答复，不要有多余的信息。**标准输出格式(不要写上json字母, 也不要漏,)**：
+                    {{
+                        "responsive": "xxx"
+                    }}
+                    3）**只有在我发出“给我提示”指令时**，给我提示。只提供提示，不直接给出答案，不要有多余的信息。**标准输出格式(不要写上json字母, 也不要漏,)**
+                    {{
+                        "tips": "你可以从这个角度出发：xxx"
+                    }}
+
+                    5. 每次对话后，只选择随机一位或两位同事参与下一轮对话。话题需要紧扣点菜，可以出现具体的菜品名称
+                    6. 如果用户给出了一个合理的点菜方案，请让领导说出“你点的菜真不错”这句话。
+
+                    请按照这个步骤，请生成第一个话题，并开始对话。
+                    """
+    # messages = [
+    #     ('system', system_prompt)  # Add the system message as a tuple
+    # ]
+
+    # for item in user_prompt:
+    #     role = item['role']
+    #     # Join all 'text' values into a single string for the content
+    #     text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
+    #     # Append each message as a tuple (role, content)
+    #     messages.append((role, text_content))
+
+    # prompt = ChatPromptTemplate.from_messages(messages)
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ('system', system_prompt),
+            ('user', user_prompt),
+        ]
+    )
+    
+    llm = creat_llm()
+    model = prompt | llm
+
+    input_dict = {}
+
+    analysis_output = model.invoke(input_dict)
+    # print(analysis_output.content)
+    return analysis_output.content
+
+
+def request_LLM_response_v2(user_query, db_prompt):    
+    user_prompt = ""
+    for message in user_query:
+        if isinstance(message, dict):
+            user_prompt += escape_braces(json.dumps(message))
+        else:
+            user_prompt += message
+    return retry(send_to_LLM_v2, user_prompt, db_prompt)
+
 if __name__ == "__main__":
     user_query = ["开始"]
 
