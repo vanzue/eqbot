@@ -57,6 +57,14 @@ def update_personal_stars_by_name(db: Session, name: str, new_stars: int):
 def get_personal_info(db: Session, personal_info_id: str):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == personal_info_id).first()
 
+def update_personal_stars(db: Session, id:int, num_stars: int):
+    db_person = db.query(models.PersonalInfo).filter(models.PersonalInfo.id == id).one_or_none()
+    db_person.num_star += num_stars
+
+    db.commit()
+    db.refresh(db_person)
+    return db_person.num_star
+
 
 def get_personal_infos(db: Session, id: int):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == id).one_or_none()
@@ -65,7 +73,7 @@ def get_personal_id_by_name(db: Session, name: str):
     personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.name == name).limit(1).one_or_none()
     return getattr(personal_info, 'id', '')
 
-def get_personal_id_by_personid(db: Session, personid: int):
+def get_personal_info_by_personid(db: Session, personid: int):
     personal_info = db.query(models.PersonalInfo).filter(models.PersonalInfo.id == personid).first()
     return personal_info
 
@@ -186,13 +194,14 @@ def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCo
     return new_course
 
 
-def get_courses_by_person_id(db: Session, person_id: int):
-    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id).all()
+def get_coursesperson_by_person_id(db: Session, person_id: int, course_id: int):
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id, 
+                                                       models.PersonalInfoCourses.course_id==course_id).one_or_none()
 
 
-def update_personal_info_course(db: Session, person_id: int, course_id: int, course_type: str = None, course_level: int = None, status: str = None, result: int = None, comment1: str = None, comment2: str = None, comment3: str = None):
-    course = db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id, models.PersonalInfoCourses.course_type == course_type).first()
-
+def update_personal_info_course(db: Session, person_id: int, course_id: int, course_level: int = None, status: str = None, result: int = None, comment1: str = None, comment2: str = None, comment3: str = None):
+    course = db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id==person_id, 
+                                                        models.PersonalInfoCourses.course_id==course_id).first()
     if not course:
         return None
 

@@ -89,66 +89,66 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
 
 
 
-@router.post("/get_homepage/{job_id}")
-async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
-    # profile & eq scores
-    personal_info = crud.get_personal_info_by_job_id(db, job_id)
-    eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
+# @router.post("/get_homepage/{job_id}")
+# async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
+#     # profile & eq scores
+#     personal_info = crud.get_personal_info_by_job_id(db, job_id)
+#     eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
 
-    # if not personal_info.tag:
-    #     return {"message": "Uncomplete personal info"}
-    if not eq_scores:
-        return {"message": "Uncomplete eq scores"}
+#     # if not personal_info.tag:
+#     #     return {"message": "Uncomplete personal info"}
+#     if not eq_scores:
+#         return {"message": "Uncomplete eq scores"}
     
-    scores = [eq_scores.dimension1_score, 
-              eq_scores.dimension2_score, 
-              eq_scores.dimension3_score, 
-              eq_scores.dimension4_score, 
-              eq_scores.dimension5_score]
-    overall_score = helper.calculate_average(*scores)
+#     scores = [eq_scores.dimension1_score, 
+#               eq_scores.dimension2_score, 
+#               eq_scores.dimension3_score, 
+#               eq_scores.dimension4_score, 
+#               eq_scores.dimension5_score]
+#     overall_score = helper.calculate_average(*scores)
     
-    # network
-    contacts = crud.get_contacts_by_person_name(db, personal_info.name)
-    contacts_list = []
+#     # network
+#     contacts = crud.get_contacts_by_person_name(db, personal_info.name)
+#     contacts_list = []
     
-    for contact in contacts:
-        one_contact = dict()
-        one_contact["name"] = contact.name
-        one_contact["tag"] = contact.tag
-        one_contact["contact_relationship"] = contact.contact_relationship
+#     for contact in contacts:
+#         one_contact = dict()
+#         one_contact["name"] = contact.name
+#         one_contact["tag"] = contact.tag
+#         one_contact["contact_relationship"] = contact.contact_relationship
 
-        if contact.contact_relationship == "subordinate":
-            relationship_analysis = crud.get_subordinate_analysis_by_contact_id(db, contact.id)
-        elif contact.contact_relationship == "supervisor":
-            relationship_analysis = crud.get_supervisor_analysis_by_contact_id(db, contact.id)
-        one_contact["relationship_analysis"] = relationship_analysis
+#         if contact.contact_relationship == "subordinate":
+#             relationship_analysis = crud.get_subordinate_analysis_by_contact_id(db, contact.id)
+#         elif contact.contact_relationship == "supervisor":
+#             relationship_analysis = crud.get_supervisor_analysis_by_contact_id(db, contact.id)
+#         one_contact["relationship_analysis"] = relationship_analysis
 
-        contacts_list.append(one_contact)
+#         contacts_list.append(one_contact)
 
 
-    response = {
-        "personal_info": {
-            "name": personal_info.name,
-            "tag": personal_info.tag,
-            "tag_description": personal_info.tag_description,
-            "job_id": personal_info.job_id
-        },
-        "eq_scores": {
-            "score": overall_score, 
-            "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
-            "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
-            "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
-            "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
-            "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
-            "summary": eq_scores.summary,
-            "detail": eq_scores.detail,
-            "detail_summary": eq_scores.detail_summary,
-            "overall_suggestion": eq_scores.overall_suggestion
-        },
-        "contacts": contacts_list
-    }
+#     response = {
+#         "personal_info": {
+#             "name": personal_info.name,
+#             "tag": personal_info.tag,
+#             "tag_description": personal_info.tag_description,
+#             "job_id": personal_info.job_id
+#         },
+#         "eq_scores": {
+#             "score": overall_score, 
+#             "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
+#             "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
+#             "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
+#             "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
+#             "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
+#             "summary": eq_scores.summary,
+#             "detail": eq_scores.detail,
+#             "detail_summary": eq_scores.detail_summary,
+#             "overall_suggestion": eq_scores.overall_suggestion
+#         },
+#         "contacts": contacts_list
+#     }
     
-    return {"response": response}
+#     return {"response": response}
 
 
 @router.post("/get_homepage/{personal_id}")

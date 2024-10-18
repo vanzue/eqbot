@@ -68,7 +68,8 @@ class Courses(Base):
 class PersonalInfoCourses(Base):
     __tablename__ = 'PersonalInfoCourses'
 
-    person_id = Column(Integer, ForeignKey('PersonalInfo.id'), primary_key=True)
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    person_id = Column(Integer, ForeignKey('PersonalInfo.id'))
     course_id = Column(Integer, ForeignKey('Courses.id'))
     course_type = Column(Unicode(50), nullable=False)
     course_level = Column(Integer)

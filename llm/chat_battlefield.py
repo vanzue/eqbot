@@ -16,13 +16,13 @@ def escape_braces(template_str):
     return template_str.replace("{", "{{").replace("}", "}}")
 
 def request_LLM_response(user_query, db_prompt):    
-    user_prompt = ""
-    for message in user_query:
-        if isinstance(message, dict):
-            user_prompt += escape_braces(json.dumps(message))
-        else:
-            user_prompt += message
-    return retry(send_to_LLM, user_prompt, db_prompt)
+    # user_prompt = ""
+    # for message in user_query:
+    #     if isinstance(message, dict):
+    #         user_prompt += escape_braces(json.dumps(message, ensure_ascii=False))
+    #     else:
+    #         user_prompt += message
+    return retry(send_to_LLM, user_query, db_prompt)
 
     
 def chat_eval(user_query, max_retries=5):
@@ -113,15 +113,15 @@ def send_to_LLM(user_prompt, db_prompt):
                         "dialog": [
                             {{
                                 "role": "领导",
-                                "content": "xxx"
+                                "words": "xxx"
                             }},
                             {{
                                 "role": "同事A",
-                                "content": "xxx"
+                                "words": "xxx"
                             }},
                             {{
                                 "role": "同事B",
-                                "content": "xxx"
+                                "words": "xxx"
                             }}
                         ]
                     }}
@@ -160,24 +160,41 @@ def send_to_LLM(user_prompt, db_prompt):
 
                     请按照这个步骤，请生成第一个话题，并开始对话。
                     """
-    # messages = [
-    #     ('system', system_prompt)  # Add the system message as a tuple
-    # ]
+    messages = [
+        ('system', system_prompt)  # Add the system message as a tuple
+    ]
 
-    # for item in user_prompt:
-    #     role = item['role']
-    #     # Join all 'text' values into a single string for the content
-    #     text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
-    #     # Append each message as a tuple (role, content)
-    #     messages.append((role, text_content))
+    # print("prompt: ", user_prompt)
 
-    # prompt = ChatPromptTemplate.from_messages(messages)
-    prompt = ChatPromptTemplate.from_messages(
-        [
-            ('system', system_prompt),
-            ('user', user_prompt),
-        ]
-    )
+    for item in user_prompt:
+        role = item['role']
+        # Join all 'text' values into a single string for the content
+        # print('item:', item)
+
+        texts = []
+        for text in item['content']: 
+            if isinstance(text, dict):
+                texts.append(text['text'])
+                # text_content.join(text['text'])
+            else:
+                if isinstance(text, str):
+                    texts.append(text)
+                    # text_content.join(text)
+        text_content = ''.join(texts)
+        
+        # Append each message as a tuple (role, content)
+        messages.append((role, escape_braces(text_content)))
+        # print(text_content)
+
+    print(messages)
+    prompt = ChatPromptTemplate.from_messages(messages)
+    # prompt = ChatPromptTemplate.from_messages(
+    #     [
+    #         ('system', system_prompt),
+    #         ('user', user_prompt),
+    #     ]
+    # )
+    # print(prompt)
     
     llm = creat_llm()
     model = prompt | llm
@@ -193,7 +210,7 @@ def send_to_LLM_v2(user_prompt, db_prompt):
     system_prompt = db_prompt+ """
                     对话流程：
 
-                    1. 生成话题：请根据餐厅点菜场景生成一个自然的对话，采用轻松的语气，不使用反问句。输出以下格式，不要有多余的回复， **标准输出格式(不要写上json字母, 也不要漏,)**：
+                    1. 生成话题：请根据给定场景生成一个自然的对话，采用轻松的语气，不使用反问句。输出以下格式，不要有多余的回复， **标准输出格式(不要写上json字母, 也不要漏,)**：
                     {{
                         "dialog": [
                             {{
@@ -241,29 +258,29 @@ def send_to_LLM_v2(user_prompt, db_prompt):
                         "tips": "你可以从这个角度出发：xxx"
                     }}
 
-                    5. 每次对话后，只选择随机一位或两位同事参与下一轮对话。话题需要紧扣点菜，可以出现具体的菜品名称
-                    6. 如果用户给出了一个合理的点菜方案，请让领导说出“你点的菜真不错”这句话。
+                    5. 每次对话后，只选择随机一位或两位同事参与下一轮对话。
 
                     请按照这个步骤，请生成第一个话题，并开始对话。
                     """
-    # messages = [
-    #     ('system', system_prompt)  # Add the system message as a tuple
-    # ]
+    messages = [
+        ('system', system_prompt)  # Add the system message as a tuple
+    ]
 
-    # for item in user_prompt:
-    #     role = item['role']
-    #     # Join all 'text' values into a single string for the content
-    #     text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
-    #     # Append each message as a tuple (role, content)
-    #     messages.append((role, text_content))
 
-    # prompt = ChatPromptTemplate.from_messages(messages)
-    prompt = ChatPromptTemplate.from_messages(
-        [
-            ('system', system_prompt),
-            ('user', user_prompt),
-        ]
-    )
+    for item in user_prompt:
+        role = item['role']
+        # Join all 'text' values into a single string for the content
+        text_content = ''.join(content['text'] for content in item['content'] if content['type'] == 'text')
+        # Append each message as a tuple (role, content)
+        messages.append((role, escape_braces(text_content)))
+
+    prompt = ChatPromptTemplate.from_messages(messages)
+    # prompt = ChatPromptTemplate.from_messages(
+    #     [
+    #         ('system', system_prompt),
+    #         ('user', user_prompt),
+    #     ]
+    # )
     
     llm = creat_llm()
     model = prompt | llm
