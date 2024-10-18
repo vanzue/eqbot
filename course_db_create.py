@@ -43,6 +43,7 @@ inject_azure_credential(creds, engine)
 metadata = MetaData(schema='dbo')
 
 Base = declarative_base(metadata=metadata)
+models.Base.metadata.create_all(bind=engine)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 def main():
@@ -59,6 +60,10 @@ def main():
                             领导：擅长PUA，脾气很大。
                             同事A：阿谀奉承，讨好领导。
                             同事B：尖酸刻薄。
+
+                            NPC的话题需要紧扣点菜，可以出现具体的菜品名称。
+                            
+                            另外，如果用户给出了一个合理的点菜方案，请让领导说出“你点的菜真不错”这句话。
                             """
                         )
         db_course_data = crud.create_course(db, course_data)
