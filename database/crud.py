@@ -224,7 +224,7 @@ def update_personal_info_course(db: Session, person_id: int, course_id: int, cou
     return course
 
 
-def get_personal_info_courses(db: Session, person_id: str):
+def get_coursesperson_by_person_id_all(db: Session, person_id: str):
     return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id).all()
 
 
