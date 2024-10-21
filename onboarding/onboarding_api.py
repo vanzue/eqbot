@@ -15,10 +15,9 @@ router = APIRouter()
 
 
 class ScenarioManager:
-    def __init__(self, scenario_id: Optional[int] = None, version: Optional[str] = None):
-        # print("version:",version)
+    def __init__(self, scenario_id: Optional[int] = None, locale: Optional[str] = None):
         self.current_branch = ""
-        self.version = version
+        self.locale = locale
         # self.folder = self.get_latest_scenario_folder()
         self.filename = ["scenario_1", "scenario_2",
                          "scenario_3", "scenario_4",
@@ -30,12 +29,12 @@ class ScenarioManager:
         
         # self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
         # self.scenario_id_en = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename_en))
-        if version == "en":
+        if locale == "en":
             self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(0, len(self.filename_en))
         else:
             self.scenario_id = scenario_id if scenario_id is not None and scenario_id < len(self.filename) else random.randrange(0, len(self.filename))
 
-        self.folder =  os.path.join("onboarding", self.filename[self.scenario_id]) if version!="en" else os.path.join("onboarding", self.filename_en[self.scenario_id_en])
+        self.folder =  os.path.join("onboarding", self.filename[self.scenario_id]) if locale!="en" else os.path.join("onboarding", self.filename_en[self.scenario_id_en])
         # print(self.folder)
         # self.folder =  os.path.join("onboarding", "scenario_7")
         self.scores = {
@@ -44,7 +43,7 @@ class ScenarioManager:
             "人际平衡术": 0,
             "沟通表达力": 0,
             "社交得体度": 0
-        } if version!="en" else{
+        } if locale!="en" else{
             "Emotion Perception": 0,
             "Self Regulation": 0,
             "Empathy": 0,
@@ -117,12 +116,12 @@ class ScenarioManager:
     def get_analysis_data(self):
         return self.analysis_data
     
-    async def process_final_data(self, version: Optional[str] = None):
+    async def process_final_data(self, locale: Optional[str] = None):
         scores, min_score_idx= self.process_scores()
         analysis_data = self.get_analysis_data()
 
         # 异步调用LLM处理函数
-        if version !="en":
+        if locale !="en":
             response = await process_with_llm(scores, analysis_data)
         else:
             response = await process_with_llm_en(scores, analysis_data)
@@ -133,30 +132,30 @@ class ScenarioManager:
 # 全局字典用于存储用户的 ScenarioManager 实例
 user_scenarios: Dict[str, ScenarioManager] = {}
 
-def get_scenario_manager(job_id: str, scenario_id: Optional[int] = None, version: Optional[str] = None) -> ScenarioManager:
+def get_scenario_manager(job_id: str, scenario_id: Optional[int] = None, locale: Optional[str] = None) -> ScenarioManager:
     if job_id not in user_scenarios:
-        user_scenarios[job_id] = ScenarioManager(scenario_id, version=version)
+        user_scenarios[job_id] = ScenarioManager(scenario_id, locale=locale)
     return user_scenarios[job_id]
 
-def reset_scenario_manager(job_id: str, scenario_id: Optional[int] = None, version: Optional[str] = None):
-    user_scenarios[job_id] = ScenarioManager(scenario_id, version=version)
+def reset_scenario_manager(job_id: str, scenario_id: Optional[int] = None, locale: Optional[str] = None):
+    user_scenarios[job_id] = ScenarioManager(scenario_id, locale=locale)
 
 @router.post("/start_scenario/{job_id}")
-async def start_scenario(job_id: str, version: Optional[str] = None):
-    reset_scenario_manager(job_id, version=version)
-    scenario = get_scenario_manager(job_id, version=version)
+async def start_scenario(job_id: str, locale: Optional[str] = None):
+    reset_scenario_manager(job_id, locale=locale)
+    scenario = get_scenario_manager(job_id, locale=locale)
     scenario.current_branch = ""
     scenario.scores = {key: 0 for key in scenario.scores}
     scenario.choice_count = 0
     scenario.analysis_data = []
-    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1 if version!="en" else scenario.scenario_id_en+1}
+    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1 if locale!="en" else scenario.scenario_id_en+1}
 
-async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db), version: Optional[str] = None):
-    min_score_idx, response = await scenario_manager.process_final_data(version)
+async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db), locale: Optional[str] = None):
+    min_score_idx, response = await scenario_manager.process_final_data(locale)
     
     # update personal info
-    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if version!="en" else ["Ostriches", "Monkey", "Hedgehog", "Coyote", "Capybara"]
-    tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"] if version!="en" else ["tag_description0", "tag_description1", "tag_description2", "tag_description3", "tag_description4"]
+    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if locale!="en" else ["Ostriches", "Monkey", "Hedgehog", "Coyote", "Capybara"]
+    tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"] if locale!="en" else ["tag_description0", "tag_description1", "tag_description2", "tag_description3", "tag_description4"]
     
     personal_info = crud.get_personal_info_by_job_id(db, job_id)
     print(f"Retrieved PersonalInfo: {personal_info.name}")
@@ -195,21 +194,20 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
 
 
 @router.post("/choose_scenario")
-async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db), version: Optional[str] = None):
+async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db), locale: Optional[str] = None):
     job_id = choice.job_id
     scenario = get_scenario_manager(job_id)
     if scenario.choice_count == 4:
         scenario.make_choice(choice.choice)
-        background_tasks.add_task(background_process_data, scenario, job_id, db, version)
+        background_tasks.add_task(background_process_data, scenario, job_id, db, locale)
         return {"message": "Final choice made. Processing data in background."}
     else:
         return scenario.make_choice(choice.choice)
 
 @router.post("/get_current_scenario/{job_id}")
-async def get_current_scene(job_id: str, version: Optional[str] = None):
-    print(version)
+async def get_current_scene(job_id: str, locale: Optional[str] = None):
     scenario = get_scenario_manager(job_id)
-    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1 if version!="en" else scenario.scenario_id_en+1}
+    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1 if locale!="en" else scenario.scenario_id_en+1}
     # return scenario_manager.get_scene()
 
 @router.post("/start_scenario_by_scenario_id/{job_id}/{scenario_id}")  # 0-9
