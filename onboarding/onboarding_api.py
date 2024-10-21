@@ -8,6 +8,7 @@ import random
 
 from database import crud, database, schemas
 from llm.profile_eval import process_with_llm
+from llm.profile_eval_en import process_with_llm_en
 from data_types import Choice
 
 router = APIRouter()
@@ -15,8 +16,7 @@ router = APIRouter()
 
 class ScenarioManager:
     def __init__(self, scenario_id: Optional[int] = None, version: Optional[str] = None):
-        print(version)
-        print(scenario_id)
+        # print("version:",version)
         self.current_branch = ""
         self.version = version
         # self.folder = self.get_latest_scenario_folder()
@@ -26,7 +26,7 @@ class ScenarioManager:
                          "scenario_7", "scenario_8", 
                          "scenario_9", "scenario_10"]
         self.filename_en = ["scenario_1_en", "scenario_2_en",
-                         "scenario_3"]
+                         "scenario_3_en", "scenario_4_en"]
         
         # self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
         # self.scenario_id_en = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename_en))
@@ -35,8 +35,8 @@ class ScenarioManager:
         else:
             self.scenario_id = scenario_id if scenario_id is not None and scenario_id < len(self.filename) else random.randrange(0, len(self.filename))
 
-        self.folder =  os.path.join("onboarding", self.filename[self.scenario_id]) if version is None else  os.path.join("onboarding", self.filename_en[self.scenario_id_en])
-        
+        self.folder =  os.path.join("onboarding", self.filename[self.scenario_id]) if version!="en" else os.path.join("onboarding", self.filename_en[self.scenario_id_en])
+        # print(self.folder)
         # self.folder =  os.path.join("onboarding", "scenario_7")
         self.scores = {
             "情绪侦查力": 0,
@@ -117,12 +117,15 @@ class ScenarioManager:
     def get_analysis_data(self):
         return self.analysis_data
     
-    async def process_final_data(self):
+    async def process_final_data(self, version: Optional[str] = None):
         scores, min_score_idx= self.process_scores()
         analysis_data = self.get_analysis_data()
 
         # 异步调用LLM处理函数
-        response = await process_with_llm(scores, analysis_data)
+        if version !="en":
+            response = await process_with_llm(scores, analysis_data)
+        else:
+            response = await process_with_llm_en(scores, analysis_data)
         # 这里可以添加将结果保存到数据库或其他操作
         return min_score_idx, response
 
@@ -148,12 +151,12 @@ async def start_scenario(job_id: str, version: Optional[str] = None):
     scenario.analysis_data = []
     return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1 if version!="en" else scenario.scenario_id_en+1}
 
-async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db)):
-    min_score_idx, response = await scenario_manager.process_final_data()
+async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db), version: Optional[str] = None):
+    min_score_idx, response = await scenario_manager.process_final_data(version)
     
     # update personal info
-    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
-    tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"]
+    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if version!="en" else ["Ostriches", "Monkey", "Hedgehog", "Coyote", "Capybara"]
+    tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"] if version!="en" else ["tag_description0", "tag_description1", "tag_description2", "tag_description3", "tag_description4"]
     
     personal_info = crud.get_personal_info_by_job_id(db, job_id)
     print(f"Retrieved PersonalInfo: {personal_info.name}")
@@ -190,47 +193,6 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
         del user_scenarios[job_id]
         print(f"已删除 job_id 为 {job_id} 的 ScenarioManager 实例。")
 
-async def background_process_data_en(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db)):
-    min_score_idx, response = await scenario_manager.process_final_data()
-    
-    # update personal info TBD
-    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
-    tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"]
-    
-    personal_info = crud.get_personal_info_by_job_id(db, job_id)
-    print(f"Retrieved PersonalInfo: {personal_info.name}")
-    personal_info_update = schemas.PersonalInfoUpdate(
-        tag=tags[min_score_idx],
-        tag_description=tag_description[min_score_idx]
-    )
-    updated_personal_info = crud.update_personal_info_by_name(db, personal_info.name, personal_info_update)
-    print(f"Updated PersonalInfo: {updated_personal_info.tag}")
-    
-    # create eq score
-    eq_score_data = schemas.EQScoreCreate(
-        person_id=personal_info.id,
-        dimension1_score=response["dimension1_score"],
-        dimension1_detail=response["dimension1_detail"],
-        dimension2_score=response["dimension2_score"],
-        dimension2_detail=response["dimension2_detail"],
-        dimension3_score=response["dimension3_score"],
-        dimension3_detail=response["dimension3_detail"],
-        dimension4_score=response["dimension4_score"],
-        dimension4_detail=response["dimension4_detail"],
-        dimension5_score=response["dimension5_score"],
-        dimension5_detail=response["dimension5_detail"],
-        summary=response["summary"],
-        detail=response["detail"],
-        detail_summary=response['detail_summary'],
-        overall_suggestion=response["overall_suggestion"],
-        job_id=job_id
-    )
-    eq_score = crud.create_eq_score(db, eq_score_data)
-    print(f"Created EQScore: {eq_score}")
-
-    if job_id in user_scenarios:
-        del user_scenarios[job_id]
-        print(f"已删除 job_id 为 {job_id} 的 ScenarioManager 实例。")
 
 @router.post("/choose_scenario")
 async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db), version: Optional[str] = None):
@@ -238,7 +200,7 @@ async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Ses
     scenario = get_scenario_manager(job_id)
     if scenario.choice_count == 4:
         scenario.make_choice(choice.choice)
-        background_tasks.add_task(background_process_data, scenario, job_id, db)
+        background_tasks.add_task(background_process_data, scenario, job_id, db, version)
         return {"message": "Final choice made. Processing data in background."}
     else:
         return scenario.make_choice(choice.choice)
@@ -259,16 +221,3 @@ async def start_scenario_by_scenario_id(job_id: str, scenario_id:int):
     scenario.choice_count = 0
     scenario.analysis_data = []
     return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
-
-# @router.get("/get_scores")
-# async def get_scores(job_id: str):
-#     print(scenario_manager.choice_count)
-#     return scenario_manager.get_average_scores()
-
-# @router.get("/get_analysis_data")
-# async def get_analysis_data(job_id: str):
-#     return scenario_manager.get_analysis_data()
-
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(app, host="0.0.0.0", port=8000)

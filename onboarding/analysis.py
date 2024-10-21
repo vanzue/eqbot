@@ -9,8 +9,8 @@ plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
 plt.rcParams['axes.unicode_minus'] = False    # 正常显示负号
 
 
-abilities = ["情绪侦查力", "情绪掌控力", "人际平衡术", "沟通表达力", "社交得体度"]
-
+# abilities = ["情绪侦查力", "情绪掌控力", "人际平衡术", "沟通表达力", "社交得体度"]
+abilities = ["Emotion Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -132,7 +132,7 @@ def start_interaction():
     # 设置场景文件夹
     # latest_folder = "scenario_20240929_104637"
     # latest_folder = "scenario_20240929_100105"
-    latest_folder = "scenario_20240912_175052"
+    latest_folder = "scenario_4_en"
 
     # 遍历所有分支并记录所有路径的得分
     all_paths = traverse_tree(latest_folder)

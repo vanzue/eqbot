@@ -154,7 +154,7 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
 @router.post("/get_homepage/{personal_id}")
 async def get_homepage(personal_id: int, db: Session = Depends(database.get_db)):
     # profile & eq scores
-    personal_info = crud.get_personal_id_by_personid(db, personal_id)
+    personal_info = crud.get_personal_info_by_personid(db, personal_id)
     eq_scores = crud.get_eq_scores_by_person_id(db, personal_info.id)
 
     # if not personal_info.tag:
