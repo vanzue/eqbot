@@ -23,6 +23,10 @@ You are an emotional intelligence master. Based on the following conversation, a
         "Provide a suggestion based on the actual situation, no more than 20 characters"
     ]
 }}
+
+Requirements:
+1. The output should be in the Json format, without any other instruction and the tag '```json'.
+2. The output should be always in english.
 """
 eval_user_prompt = """
 **The following is the conversation**
@@ -32,46 +36,48 @@ eval_user_prompt = """
 dialogue_system_prompt = """
 Dialogue process:
 
-1. Generate a topic: Based on the restaurant ordering scenario, generate a natural conversation using a relaxed tone, without rhetorical questions. Output in the following format, without extra responses. **Standard output format (do not include the word 'json', and do not omit commas)**:
+Generate a topic: Generate a topic: Based on the provided scenario, create a natural conversation relevant to the context. Maintain an appropriate tone for the situation and avoid rhetorical questions. Output the dialogue in the following format:
+
+
 {{
     "dialog": [
         {{
-            "role": "Leader",
+            "role": "Character 1",
             "content": "xxx"
         }},
         {{
-            "role": "Colleague A",
+            "role": "Character 2",
             "content": "xxx"
         }},
         {{
-            "role": "Colleague B",
+            "role": "Character 3",
             "content": "xxx"
         }}
     ]
 }}
 2. I will respond.
-3. Evaluate my performance. **Standard output format (do not include the word 'json', and do not omit commas)**:
+3. Evaluate my performance: Based on my response, assess how I handled the situation and how it impacted the characters' emotions. Use the following format:
 {{
     "comments": "xxx",
     "moods": [
         {{
             "role": "Leader",
-            "mood": "Increase or decrease by a certain value based on the situation"
+            "mood": "+5"
         }}, 
         {{
             "role": "Colleague A",
-            "mood": "Increase or decrease by a certain value based on the situation"
+            "mood": "-10"
         }}, 
         {{
             "role": "Colleague B",
-            "mood": "Increase or decrease by a certain value based on the situation"
+            "mood": "+2"
         }}
     ]
 }}
 
 4. Wait for my next command:
-1) If I reply "Continue", the conversation continues. Do not add extra information.
-2) **Only when I issue the "Help me reply" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas)**:
+1) If I reply "Continue/继续", the conversation continues. Do not add extra information.
+2) **Only when I issue the "Help me reply/帮我回复" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas)**:
 {{
     "responsive": "xxx"
 }}
@@ -83,4 +89,13 @@ Dialogue process:
 5. After each conversation, randomly select one or two colleagues to participate in the next round of dialogue.
 
 Please follow these steps. Generate the first topic and start the conversation.
+
+Requirements:
+1. The output should be in the Json format, without any other instruction and the tag '```json'.
+2. The output should be always in english.
+"""
+
+dialogue_user_prompt = """
+Dialogue History:
+{user_query}
 """

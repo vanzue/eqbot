@@ -11,11 +11,11 @@ class AbstractAgent(abc.ABC):
         self.tools = tools
         self.prompt = None
 
-    def invoke(self, input_dict=None, max_retries=3):
+    def act(self, input_dict=None, max_retries=3):
         for attempt in range(max_retries):
             try:
                 output = self.invoke_llm_once(input_dict)
-                return json.dumps(output, indent=2) if self.json_output else output
+                return json.loads(output.content) if self.json_output else output
             except Exception as e:
                 if attempt == max_retries - 1:
                     print(f'Max {max_retries} retries reached: {e}')
@@ -26,12 +26,11 @@ class AbstractAgent(abc.ABC):
             raise ValueError("Prompt is not set. Please set the prompt before invoking the LLM.")
         output = (self.prompt | self.llm).invoke(input_dict)
         if not self.json_output:
-            return output
-        try:
-            return json.loads(output.content)
-        except json.JSONDecodeError:
-            raise ValueError(f"Output content is not a valid JSON:\n{output.content}")
-
+            try:
+                json.loads(output.content)
+            except json.JSONDecodeError:
+                raise ValueError(f"Output content is not a valid JSON:\n{output.content}")
+        return output
 
 class Agent(AbstractAgent):
     def __init__(self, name, llm, functions=None, tools=None, json_output=True, **kwargs):
