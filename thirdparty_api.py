@@ -28,4 +28,4 @@ async def line_webhook(request: Request):
       reply_token = event['replyToken']
       print(f"Received message: {message}")
       # Here you can add logic to reply to the message
-  return JSONResponse(status_code=200)
+  return JSONResponse(status_code=200, content={"message": "Message received"})
