@@ -116,3 +116,8 @@ def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
     else:
         return {"courses": person_course}
     # return {"course": person_course}
+
+@router.get("/course_exists/{person_id}")
+def course_exists(person_id: int, db: Session = Depends(database.get_db)):
+    record = crud.course_exists(db, person_id=person_id)
+    return record
