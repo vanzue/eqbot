@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] crossed her arms and sighed, while [Bob] leaned against the wall, looking thoughtful. You explained your decision to help Mark even though you were on leave.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica]: 'Seriously, Alex? You should have just ignored his message.' [Bob]: 'Yeah, maybe you should have set a firmer boundary. What do you think now?'",
+    "options": [
+      {
+        "text": "Maybe you’re right. I should have been firmer about my boundaries.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the need for stronger boundaries, showing good self-regulation, but your empathy and motivation towards the team's urgent needs were lower."
+      },
+      {
+        "text": "I think it was the right call to assist this time, but it's clear we need better processes to handle these emergencies.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You balanced empathy and self-regulation well, showing good emotional perception and social skills by addressing the need for better processes."
+      },
+      {
+        "text": "Honestly, I don't know. Maybe it was a mistake, or maybe it wasn't. It’s a tough call.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "Your response was unclear, reflecting internal conflict and lower self-regulation and motivation."
+      }
+    ]
+  }
+}

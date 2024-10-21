@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark then replied, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You agreed to help, asking Mark to send you the details. Now, you're working through the task and manage to complete it, but you feel a bit frustrated as your time off was interrupted.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "You inform Mark that the task is completed. He responds with, 'Thanks, Alex. I knew I could count on you. By the way, Monica and Bob were discussing this issue earlier, and they think it might be good if you could join their call later to explain your approach.'",
+    "options": [
+      {
+        "text": "I'll join the call. Just let me know the time.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed high empathy and emotional perception by agreeing to join the call, but your self-regulation could be improved as you continue to compromise your time off."
+      },
+      {
+        "text": "I'm really on leave and can't join the call. Please handle it without me.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You maintained good self-regulation by setting boundaries, but showed less empathy and motivation towards the team's needs."
+      },
+      {
+        "text": "I understand the importance, but I need to rest. Can we schedule a follow-up session once I'm back?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You balanced empathy and self-regulation well, and communicated your availability clearly, showing good social skills."
+      }
+    ]
+  }
+}

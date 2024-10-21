@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest keeping it simple and elegant. Bob reluctantly nods, but his enthusiasm seems to wane. Monica smiles and says, 'That sounds perfect.' Bob mutters under his breath, 'Sure, if you like boring.'",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "Monica looks at Bob and says, 'Maybe we can add a little something to make it less boring. What do you think, Alex?' Bob raises an eyebrow, waiting for your response. You suggested having a small awards ceremony to recognize everyone's hard work. Bob rolls his eyes and Monica claps her hands in excitement. Bob then says, 'An awards ceremony? Really? What are we, in high school?' Monica frowns and looks at you again.",
+    "options": [
+      {
+        "text": "It's just an idea, but if you both really don't like it, we can think of something else.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "This response shows good emotional detection and self-regulation by acknowledging both Monica's and Bob's reactions and suggesting flexibility in the plan."
+      },
+      {
+        "text": "Well, I thought it could be fun. But if you have a better idea, let's hear it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "This response shows moderate emotional detection but lacks empathy and motivation, as it challenges Bob to come up with a better idea without fully addressing the concerns."
+      },
+      {
+        "text": "If you think an awards ceremony is too childish, maybe we can add a trivia game or something interactive.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "This option shows empathy and some emotional detection by suggesting an alternative that might be more appealing. However, it lacks self-regulation and social skill as it somewhat undermines the previous idea."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Alex then suggests a middle ground: a team-building activity followed by dinner, saving the bar for another time. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex then suggests a fancy restaurant for dinner, but Monica raises an eyebrow and says, 'Even with your compromise, we still need to decide on the dinner venue. Bob prefers a fancy restaurant, but I think a casual place would be more relaxed.' Bob sighs, clearly frustrated. Alex agrees with Bob, suggesting a fancy restaurant for the celebration. Monica frowns slightly and says, 'I just think a casual place would put everyone at ease. Bob, why is it so important for you to have a fancy dinner?' Bob shrugs, looking a bit defensive. Alex then proposes a place that offers both casual and elegant options.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "[Monica] looks thoughtful but [Bob] still seems unconvinced. Bob asks, 'But what if the place ends up being neither casual nor fancy enough for anyone?'",
+    "options": [
+      {
+        "text": "We can always do a quick check of the reviews and menu online to make sure it meets our expectations.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's concerns. It demonstrates good social skills and motivation to ensure everyone is satisfied."
+      },
+      {
+        "text": "I understand the concern, Bob, but we've worked hard and deserve a special evening. Let’s trust that this place will be just right.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes a more optimistic outlook over addressing Bob’s concern directly."
+      },
+      {
+        "text": "If it's going to be this complicated, maybe we should just stick with the majority's preference for simplicity's sake.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-abilities = ["情绪侦查力", "情绪掌控力", "人际平衡术", "沟通表达力", "社交得体度"]
+abilities = ["Emotion Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -109,7 +109,7 @@ def start_interaction():
 
     # latest_folder = max(scenario_folders)
     # print(f"使用最新的场景文件夹: {latest_folder}")
-    latest_folder = "scenario_20241012_113354"
+    latest_folder = "scenario_1_en"
 
     all_scores, analysis_data = navigate_dialogue_tree(resource_path(latest_folder))
 

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. Monica expressed her disbelief at Mark’s request, and you explained how you handled it. Monica then asked if Mark thanked you, and you replied that Mark was grateful, but you hope he learned to respect your boundaries. Bob then asked what you would do if it happens again, and you stated that you would be firmer next time and assert your boundaries more clearly.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica]: 'That's a good plan, but it sounds like a tough situation. Do you think Mark really understood your message?' [Bob]: 'Yeah, sometimes people need to be told more than once before it sinks in.'",
+    "options": [
+      {
+        "text": "I'm not sure, honestly. I hope he did, but only time will tell.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed good emotional perception by acknowledging the uncertainty, but your self-regulation and motivation to address the potential recurring issue directly could be improved."
+      },
+      {
+        "text": "I think he got it. I'll just have to reinforce it if the situation arises again.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You maintained a balance between emotional perception and social skill by showing confidence in your communication, though your empathy and self-regulation could be slightly improved."
+      },
+      {
+        "text": "Honestly, if it happens again, I might need to have a more serious conversation with Mark or even involve HR.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed high empathy and emotional perception by considering the seriousness of the issue, but your self-regulation was lower as you considered escalating the issue rather than managing it directly."
+      }
+    ]
+  }
+}

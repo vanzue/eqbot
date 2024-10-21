@@ -14,16 +14,28 @@ router = APIRouter()
 
 
 class ScenarioManager:
-    def __init__(self, scenario_id: Optional[int] = None):
+    def __init__(self, scenario_id: Optional[int] = None, version: Optional[str] = None):
+        print(version)
+        print(scenario_id)
         self.current_branch = ""
+        self.version = version
         # self.folder = self.get_latest_scenario_folder()
         self.filename = ["scenario_1", "scenario_2",
                          "scenario_3", "scenario_4",
                          "scenario_5", "scenario_6",
                          "scenario_7", "scenario_8", 
                          "scenario_9", "scenario_10"]
-        self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
-        self.folder =  os.path.join("onboarding", self.filename[self.scenario_id])
+        self.filename_en = ["scenario_1_en", "scenario_2_en",
+                         "scenario_3"]
+        
+        # self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
+        # self.scenario_id_en = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename_en))
+        if version == "en":
+            self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(0, len(self.filename_en))
+        else:
+            self.scenario_id = scenario_id if scenario_id is not None and scenario_id < len(self.filename) else random.randrange(0, len(self.filename))
+
+        self.folder =  os.path.join("onboarding", self.filename[self.scenario_id]) if version is None else  os.path.join("onboarding", self.filename_en[self.scenario_id_en])
         
         # self.folder =  os.path.join("onboarding", "scenario_7")
         self.scores = {
@@ -32,6 +44,12 @@ class ScenarioManager:
             "人际平衡术": 0,
             "沟通表达力": 0,
             "社交得体度": 0
+        } if version!="en" else{
+            "Emotion Perception": 0,
+            "Self Regulation": 0,
+            "Empathy": 0,
+            "Social Skill": 0,
+            "Motivation": 0
         }
         self.choice_count = 0
         self.analysis_data = []
@@ -112,24 +130,23 @@ class ScenarioManager:
 # 全局字典用于存储用户的 ScenarioManager 实例
 user_scenarios: Dict[str, ScenarioManager] = {}
 
-def get_scenario_manager(job_id: str, scenario_id: Optional[int] = None) -> ScenarioManager:
+def get_scenario_manager(job_id: str, scenario_id: Optional[int] = None, version: Optional[str] = None) -> ScenarioManager:
     if job_id not in user_scenarios:
-        user_scenarios[job_id] = ScenarioManager(scenario_id)
+        user_scenarios[job_id] = ScenarioManager(scenario_id, version=version)
     return user_scenarios[job_id]
 
-def reset_scenario_manager(job_id: str, scenario_id: Optional[int] = None):
-    user_scenarios[job_id] = ScenarioManager(scenario_id)
+def reset_scenario_manager(job_id: str, scenario_id: Optional[int] = None, version: Optional[str] = None):
+    user_scenarios[job_id] = ScenarioManager(scenario_id, version=version)
 
 @router.post("/start_scenario/{job_id}")
-async def start_scenario(job_id: str, version: str = None):
-    print(version)
-    reset_scenario_manager(job_id)
-    scenario = get_scenario_manager(job_id)
+async def start_scenario(job_id: str, version: Optional[str] = None):
+    reset_scenario_manager(job_id, version=version)
+    scenario = get_scenario_manager(job_id, version=version)
     scenario.current_branch = ""
     scenario.scores = {key: 0 for key in scenario.scores}
     scenario.choice_count = 0
     scenario.analysis_data = []
-    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
+    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1 if version!="en" else scenario.scenario_id_en+1}
 
 async def background_process_data(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db)):
     min_score_idx, response = await scenario_manager.process_final_data()
@@ -173,8 +190,50 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
         del user_scenarios[job_id]
         print(f"已删除 job_id 为 {job_id} 的 ScenarioManager 实例。")
 
+async def background_process_data_en(scenario_manager: ScenarioManager, job_id: str, db: Session = Depends(database.get_db)):
+    min_score_idx, response = await scenario_manager.process_final_data()
+    
+    # update personal info TBD
+    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
+    tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"]
+    
+    personal_info = crud.get_personal_info_by_job_id(db, job_id)
+    print(f"Retrieved PersonalInfo: {personal_info.name}")
+    personal_info_update = schemas.PersonalInfoUpdate(
+        tag=tags[min_score_idx],
+        tag_description=tag_description[min_score_idx]
+    )
+    updated_personal_info = crud.update_personal_info_by_name(db, personal_info.name, personal_info_update)
+    print(f"Updated PersonalInfo: {updated_personal_info.tag}")
+    
+    # create eq score
+    eq_score_data = schemas.EQScoreCreate(
+        person_id=personal_info.id,
+        dimension1_score=response["dimension1_score"],
+        dimension1_detail=response["dimension1_detail"],
+        dimension2_score=response["dimension2_score"],
+        dimension2_detail=response["dimension2_detail"],
+        dimension3_score=response["dimension3_score"],
+        dimension3_detail=response["dimension3_detail"],
+        dimension4_score=response["dimension4_score"],
+        dimension4_detail=response["dimension4_detail"],
+        dimension5_score=response["dimension5_score"],
+        dimension5_detail=response["dimension5_detail"],
+        summary=response["summary"],
+        detail=response["detail"],
+        detail_summary=response['detail_summary'],
+        overall_suggestion=response["overall_suggestion"],
+        job_id=job_id
+    )
+    eq_score = crud.create_eq_score(db, eq_score_data)
+    print(f"Created EQScore: {eq_score}")
+
+    if job_id in user_scenarios:
+        del user_scenarios[job_id]
+        print(f"已删除 job_id 为 {job_id} 的 ScenarioManager 实例。")
+
 @router.post("/choose_scenario")
-async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db), version: str = None):
+async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db), version: Optional[str] = None):
     job_id = choice.job_id
     scenario = get_scenario_manager(job_id)
     if scenario.choice_count == 4:
@@ -185,10 +244,10 @@ async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Ses
         return scenario.make_choice(choice.choice)
 
 @router.post("/get_current_scenario/{job_id}")
-async def get_current_scene(job_id: str, version: str = None):
+async def get_current_scene(job_id: str, version: Optional[str] = None):
     print(version)
     scenario = get_scenario_manager(job_id)
-    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
+    return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1 if version!="en" else scenario.scenario_id_en+1}
     # return scenario_manager.get_scene()
 
 @router.post("/start_scenario_by_scenario_id/{job_id}/{scenario_id}")  # 0-9

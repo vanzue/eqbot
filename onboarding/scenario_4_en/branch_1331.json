@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned. [Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.' You balanced the conversation by admitting the need for flexibility while promising to set boundaries in the future, showing moderate scores in all dimensions. [Monica] sighs, 'I just hope this doesn't become a trend, Alex. It's hard enough to balance work and personal life.' [Bob] shrugs, 'Yeah, and it feels like we're the only ones who care about this.' You acknowledged their concerns and showed empathy but suggested making sacrifices sometimes.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica] raises an eyebrow, 'Sacrifices? At what cost, Alex?' [Bob] leans forward, 'Yeah, how do you plan to make it better for all of us?'",
+    "options": [
+      {
+        "text": "I hear you both. Maybe we should set clearer guidelines to prevent this from happening again.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested a proactive approach by setting clearer guidelines, showing good emotional perception, empathy, and social skills, but your motivation to set boundaries could be more assertive."
+      },
+      {
+        "text": "I get your point, but let's not overreact. It's not like this happens every day.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You maintained good self-regulation and justified your action as an exception, but showed less empathy towards the broader concern and the need for stricter boundaries."
+      },
+      {
+        "text": "We all need to be adaptable. If it becomes a trend, we'll address it as a team.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You balanced the conversation by admitting the need for adaptability while promising to set boundaries in the future, showing moderate scores in all dimensions."
+      }
+    ]
+  }
+}

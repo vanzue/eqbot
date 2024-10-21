@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'",
+    "options": [
+      {
+        "text": "I get what you're saying, but I felt it was necessary this time. I'll be more careful in the future.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged their concerns and showed empathy, but your motivation to stick to boundaries could be improved."
+      },
+      {
+        "text": "I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed good emotional perception and social skills by explaining your actions, but your self-regulation might need improvement."
+      },
+      {
+        "text": "I thought it was important to help out. If it becomes a habit, I'll address it then.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+      }
+    ]
+  }
+}

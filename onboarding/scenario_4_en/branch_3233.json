@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica]: 'That’s a strong stance, Alex. Did he react badly?' [Bob]: 'I’d be worried about how that might affect team dynamics in the future. Did you consider that?' You responded that Mark didn’t seem too happy, but you can’t always be on call, stressing that it’s unreasonable. Monica and Bob seem to ponder your response.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica]: 'You know, sometimes handling such urgent tasks helps build our team's reputation. Did you think about that?' [Bob]: 'Yeah, but it’s also important to have a work-life balance. How are you feeling about it now, Alex?'",
+    "options": [
+      {
+        "text": "I understand the importance, but I believe setting limits is crucial for long-term productivity.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You balanced emotional perception and self-regulation well, emphasizing healthy boundaries, though motivation towards immediate task resolution might be lower."
+      },
+      {
+        "text": "I see your point, Monica. But everyone deserves their personal time, right?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You showed empathy and good social skills by acknowledging Monica's point, but your self-regulation and motivation towards the team's needs are somewhat lacking."
+      },
+      {
+        "text": "Sure, it might help the team, but constantly being on call is just not sustainable.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "Your response shows moderate emotional perception and self-regulation, but empathy and social skills were lower, potentially leading to future tension."
+      }
+    ]
+  }
+}

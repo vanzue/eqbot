@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. Monica expressed disbelief about Mark's request, and Bob acknowledged that work emergencies happen. You told them you helped but emphasized to Mark the importance of respecting your time off. Monica then asked if Mark at least thanked you, and Bob questioned if Mark promised not to bother you again. You responded that Mark thanked you but made it clear your time off should be respected. Monica then questioned if Mark will keep his promise, and Bob wondered if Mark understood the importance of your leave.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica]: 'That's good to hear, but will he really keep that promise?' [Bob]: 'Yeah, I wonder if he understands how important your leave is.' You: 'Honestly, I'm not sure. It felt like he was just saying what I wanted to hear.' [Monica]: 'So, what will you do if he asks again?' [Bob]: 'Would you handle it the same way next time?'",
+    "options": [
+      {
+        "text": "I'll probably handle it case by case, but I hope it doesn't come to that.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You balanced your response by showing flexibility and hope, demonstrating good social skills but average empathy and emotional perception."
+      },
+      {
+        "text": "I'll remind him again that my time off is important, but I might help if it's truly urgent.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed high emotional perception and empathy by considering the urgency, but your self-regulation and motivation could be improved as you seem open to interruption."
+      },
+      {
+        "text": "If he asks again, I'll have to be firm and say no. My time off is non-negotiable.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You maintained strong self-regulation by setting firm boundaries, but your empathy and motivation towards the team’s urgent needs were lower."
+      }
+    ]
+  }
+}

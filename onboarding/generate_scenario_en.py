@@ -89,8 +89,8 @@ initial_context = ("""
                     Please return the data in the following json format strictly:
                     {{
                         "scenes": {{
-                            "background": "You served extra food to your colleague Sarah, and Xiao Wang asks:",
-                            "role": "John",
+                            "background": "You served extra food to your colleague [Sarah], and [Sarah] asks:",
+                            "role": "[John]",
                             "location": "Cafeteria",
                             "description": "'Are you feeding a pig here?'",
                             "options": [
@@ -130,7 +130,7 @@ initial_context = ("""
                     Both questions and answers are conversational. The ratings can make a little more of a difference.
                     The background should not contain repetitive statements, but should be logically coherent.
 
-                    In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict.
+                    You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task.
                     ## Don't repeat the tedious background each time, just display it the front of the scenario
                     
                     SCENARIO_TYPES = [" Workplace difficulties ", "helping others fit in "," Responding to emergencies "]
