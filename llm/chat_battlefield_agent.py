@@ -16,34 +16,37 @@ def request_LLM_response_by_eval(user_query, db_prompt=None, lang='zh'):
     prompt_battlefield = prompt_battlefield_multilingual_library[lang]
 
     eval_agent = Agent(name="eval", llm=creat_llm())
-    system_prompt = prompt_battlefield.system_prompt
-    user_prompt = prompt_battlefield.user_prompt
+    system_prompt = prompt_battlefield.eval_system_prompt
+    user_prompt = prompt_battlefield.eval_user_prompt
     eval_agent.set_prompts(system_prompt, user_prompt)
     input_dict = {'user_query': user_query}
-    analysis_output = eval_agent.invoke(input_dict)
-    return analysis_output.content
+    analysis_output = eval_agent.act(input_dict)
+    return analysis_output
 
-def send_to_LLM(user_prompt, db_prompt, lang='zh'):
+def request_LLM_response(user_query, db_prompt, lang='zh'):
     assert lang in prompt_battlefield_multilingual_library, f"Language {lang} not supported"
     prompt_battlefield = prompt_battlefield_multilingual_library[lang]
 
-    system_prompt = db_prompt + prompt_battlefield['dialogue_system_prompt']
+    # user_prompt = escape_braces(user_prompt)
+    system_prompt = db_prompt + prompt_battlefield.dialogue_system_prompt
+    user_prompt = prompt_battlefield.dialogue_user_prompt
     dialog_agent = Agent(name="dialog", llm=creat_llm())
     dialog_agent.set_prompts(system_prompt, user_prompt)
-    input_dict = {}
-    analysis_output = dialog_agent.invoke(input_dict)
-    return dialog_agent.content
+    input_dict = {'user_query': user_query}
+    analysis_output = dialog_agent.act(input_dict)
+    return analysis_output
 
-def send_to_LLM_multiagent(user_prompt, db_prompt, lang='zh'):
+def send_to_LLM_multiagent(user_query, db_prompt, lang='zh'):
     assert lang in prompt_battlefield_multilingual_library, f"Language {lang} not supported"
-    prompt_battlefield = prompt_battlefield_multilingual_library[lang]
 
-    system_prompt = db_prompt+prompt_battlefield['dialogue_system_prompt']
+    prompt_battlefield = prompt_battlefield_multilingual_library[lang]
+    system_prompt = db_prompt+prompt_battlefield.dialogue_system_prompt
+    user_prompt = prompt_battlefield.dialogue_user_prompt
     dialog_agent = Agent(name="dialog", llm=creat_llm())
     dialog_agent.set_prompts(system_prompt, user_prompt)
-    input_dict = {}
-    analysis_output = dialog_agent.invoke(input_dict)
-    return analysis_output.content
+    input_dict = {'user_query': user_query}
+    analysis_output = dialog_agent.act(input_dict)
+    return analysis_output
 
 
 if __name__ == "__main__":
