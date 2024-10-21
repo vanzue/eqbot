@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Sarah, says, 'I don't think we can make it in time. This is too much!' You responded, 'I know it's tough, but let's break it down into smaller tasks and tackle them one by one. We'll get through this together.' Monica and Bob are also present during the discussion. Monica nods in agreement but looks worried. Bob, on the other hand, crosses his arms and seems skeptical. Monica then says, 'I feel like we’re all just going through the motions. It's hard to stay motivated.' You suggested, 'I understand, Monica. Let's have a quick break and share any ideas that might make this project more engaging for everyone.' The team takes a short break, and after returning, Bob still seems unconvinced. Bob then says, 'Even with a break, I don't see how we can pull this off. The deadline is just too tight.' You responded, 'We’ve tackled tight deadlines before. Let’s not get bogged down by doubts and keep pushing forward.' Monica seems to be feeling somewhat better, but Bob is still restless, pacing around the room.",
+    "role": "Team Leader",
+    "location": "Office",
+    "description": "Monica sighs and says, 'I'm trying to stay positive, but the stress is really getting to me.' Bob adds, 'And it doesn't help that we don't even have all the resources we need.'",
+    "options": [
+      {
+        "text": "Let’s take a moment to list the resources we’re missing and see if there's anything we can do to obtain them quickly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You acknowledged the issue and proposed a practical solution, showing good emotional perception and interpersonal balance skills, though social skills could be improved."
+      },
+      {
+        "text": "I understand the stress, but we need to stay focused. Complaining won’t get us any closer to the finish line.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You emphasized the need to stay focused and avoid negativity, showing good emotional regulation and communication skills, though interpersonal balance could be improved."
+      },
+      {
+        "text": "I know it’s tough, but we’ve faced similar pressures before and come through. Let’s try to keep our heads up and push forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You tried to motivate the team by emphasizing past successes, showing good communication skills and social skills, though emotional perception and regulation could be improved."
+      }
+    ]
+  }
+}

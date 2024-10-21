@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily then started a detailed analysis, but Alex interrupted impatiently, leading you to ask Lily to quickly outline her main points. After Lily's summary, Alex muttered under his breath, to which you responded by asking Alex to respect the process and Lily to wrap up quickly. Now, after Lily wrapped up, Alex rolls his eyes and mutters again, 'This is why we never get anything done on time.' Lily looks defeated.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex rolls his eyes and mutters, 'This is why we never get anything done on time,' while Lily looks defeated.'",
+    "options": [
+      {
+        "text": "Alex, let's keep our comments constructive. Lily, your analysis is valuable, but let's focus on actionable steps now.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You aimed to maintain a constructive atmosphere and shift the focus towards actionable steps, demonstrating good emotional perception and empathy."
+      },
+      {
+        "text": "Alex, I understand your concern about time, but we need thorough analysis to avoid mistakes. Lily, can you summarize the key points quickly?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Alex's concern while emphasizing the importance of thorough analysis, showcasing strong self-regulation and social skills."
+      },
+      {
+        "text": "Maybe we need a new approach. Alex, can you propose a faster method that still includes Lily's thoroughness?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You suggested a new approach that involves both team members, demonstrating good social skills and motivation to find an efficient solution."
+      }
+    ]
+  }
+}

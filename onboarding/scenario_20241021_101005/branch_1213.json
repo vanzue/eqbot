@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you acknowledged Lisa's feelings and suggested breaking down the tasks to manage them better. You also emphasized the importance of the project and asked for a team effort. Now, in the office, [Monica] and [Bob] are discussing with you. Bob looks particularly stressed and says, 'I don't see how we can get this done in time without working around the clock.' Monica chimes in, 'Yeah, and it's not fair to expect us to pull all-nighters.' You suggested brainstorming ideas to redistribute the workload more effectively. Bob seems somewhat relieved but still worried. Monica then says, 'Even if we redistribute, it feels like we're just shifting the burden around. How do we actually lighten the load?' Bob nods in agreement with Monica and adds, 'Yeah, and what if we still can't meet the deadline even with redistribution?'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "You emphasized the need to focus on solutions and control what you can. Monica sighs and says, 'I get it, but it still feels like we're being set up to fail.' Bob adds, 'Exactly. It's like we're being asked to do the impossible.'",
+    "options": [
+      {
+        "text": "I understand your frustration. Let's discuss what specific tasks we can cut or delay to make this more manageable.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged their frustration and suggested a practical approach to make the workload more manageable, showing strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I hear you, but we need to find a way to push through this. Maybe we can find some creative solutions if we brainstorm together.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the difficulty but emphasized the need for effort and creativity, demonstrating good emotional control and communication skills, though emotional detection could be slightly improved."
+      },
+      {
+        "text": "We can't afford to waste time complaining. Let's focus on what we can do right now.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on the need for solutions, but the emotional detection and interpersonal balance could be improved, as the response might come across as dismissive."
+      }
+    ]
+  }
+}

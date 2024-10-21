@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asked Lily to quickly finish up so the team could move on. Lily summarized her points, but Alex seemed dissatisfied, rolling his eyes and muttering under his breath. You sought a compromise by asking Lily to provide a concise action plan based on her analysis. Lily quickly outlined her action plan while Alex listened reluctantly, arms still crossed.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex, with a resigned sigh, says, 'Fine, let's get this over with.' Lily looks cautiously optimistic, but glances at you for reassurance.'",
+    "options": [
+      {
+        "text": "Let's take a moment to ensure everyone is clear on the action plan. Alex, do you have any final thoughts before we proceed?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You attempted to ensure clarity and inclusivity by asking for final thoughts, demonstrating strong emotional perception and empathy."
+      },
+      {
+        "text": "Alex, I understand your frustration, but let's move forward with Lily's plan for now and adjust as needed.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Alex's frustration while committing to Lily's plan, showing good self-regulation and social skills."
+      },
+      {
+        "text": "Lily, make sure to keep it brief and actionable. Alex, we'll need your support to execute this efficiently.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You focused on efficiency and getting support from both parties, demonstrating good social skills and motivation."
+      }
+    ]
+  }
+}

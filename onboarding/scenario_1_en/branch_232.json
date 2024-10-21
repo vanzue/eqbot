@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. During a team meeting, [Monica] slammed her pen on the table and added, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nodded in agreement, looking equally concerned. You then acknowledged their frustration but emphasized the importance of focusing on what can be controlled. Now, [Monica] leans forward, exasperated. 'Focusing on what we can control is fine, but what about the lack of time?' [Bob] chimes in, 'Yeah, we're still going to need more hours in the day to get this done.'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica]'s exasperation grows, and [Bob] looks to you for a solution.",
+    "options": [
+      {
+        "text": "We need to prioritize our tasks by importance. Let's identify what's critical and what can be postponed.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You suggested prioritizing tasks to manage the workload effectively, showing good emotional perception and empathy."
+      },
+      {
+        "text": "I get that time is a major issue. We might need to work longer hours or even weekends.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the time constraint and suggested potential sacrifices, demonstrating balanced emotional intelligence and high motivation."
+      },
+      {
+        "text": "We need to adapt to the situation. If it means putting in extra effort now, we can manage it.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You emphasized adapting to the situation and putting in extra effort, showing good self-regulation and social skills."
+      }
+    ]
+  }
+}

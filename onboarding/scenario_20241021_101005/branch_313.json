@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team begins to break down the tasks, [Monica] seems hesitant and [Bob] looks frustrated. You advised the team to stay focused on what they can control. [Monica] and [Bob] still seem uneasy. You emphasized the importance of focusing on tasks, causing [Monica] to frown and [Bob] to nod with a sarcastic tone. The atmosphere remains tense.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] crosses her arms: 'I still don't see how this will work out, even if we manage to stay focused.' [Bob] adds with a sigh: 'Yeah, it's like trying to bail water out of a sinking ship with a spoon.'",
+    "options": [
+      {
+        "text": "Maybe we need to rethink our approach altogether. Any new ideas?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You invited the team to contribute ideas, showing good interpersonal balance and an open communication style, but emotional regulation could be improved."
+      },
+      {
+        "text": "I understand the skepticism, but let's give it our best shot and see where we land.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the team's feelings while encouraging them to try their best, showing good emotional detection and social skills."
+      },
+      {
+        "text": "Complaining won't get us anywhere. Let's focus on finding solutions instead.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You emphasized the need to find solutions, showing good emotional regulation and communication skills, but emotional perception and interpersonal balance could be improved."
+      }
+    ]
+  }
+}

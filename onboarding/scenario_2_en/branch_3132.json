@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. [Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvenes in the meeting room. [Monica] starts to speak up but is interrupted by [Alex] who says, 'We don't have time for this. We need to decide now.' [Lily] looks visibly upset. You tried to steer the conversation back to the main goal. Subsequently, you acknowledged Bob's concerns and suggested a compromise on the timeline. Now, [Monica] and [Bob] exchange skeptical looks, while [Alex] seems impatient.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "[Monica] hesitates before saying, 'I'm not sure this compromise will work,' while [Bob] adds, 'It feels like we're going in circles.' [Alex] starts tapping his pen on the table, clearly irritated.",
+    "options": [
+      {
+        "text": "It seems we're still facing some resistance. Monica, can you elaborate on your concerns?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You invited Monica to share more about her concerns, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Bob, I see your point. Alex, can we afford a bit more time to ensure everyone is on the same page?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Bob's point and sought Alex's input on adjusting the timeline, showing good self-regulation and social skills."
+      },
+      {
+        "text": "We need to stay focused. Let's outline the key steps and assign tasks to move forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You attempted to steer the conversation back to actionable steps, demonstrating good social skills and motivation."
+      }
+    ]
+  }
+}

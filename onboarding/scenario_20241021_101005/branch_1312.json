@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you emphasized the importance of the project and asked for a team effort despite the challenges. Now, in the office, [Monica] and [Bob] are continuing to discuss the assignment with you. Monica, arms crossed, says, 'It's easy to say we should put in extra effort, but it's wearing us down.' Bob, leaning back in his chair, murmurs, 'Yeah, it's like we're just being told to suck it up.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] adds, 'We need a sustainable way to deal with this, not just more pressure.'",
+    "options": [
+      {
+        "text": "I hear you both. Let’s take a moment to reassess our plan and see where we can make adjustments.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged their concerns and suggested a practical solution by reassessing the plan, showing strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I understand it's tough, but this project is crucial for our success. Can we all push through just for this short period?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You reiterated the importance of the project and asked for a team effort, showing good emotional control and communication skills, though emotional perception could be improved."
+      },
+      {
+        "text": "I get it, but we can’t keep focusing on the negatives. We need to find solutions, not dwell on the difficulties.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on the need for solutions, but the emotional perception and interpersonal balance could be improved, as the response might come across as dismissive."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Sarah, says, 'I don't think we can make it in time. This is too much!' You responded, 'I know it's tough, but let's break it down into smaller tasks and tackle them one by one. We'll get through this together.' Monica and Bob are also present during the discussion. Monica nods in agreement but looks worried. Bob, on the other hand, crosses his arms and seems skeptical. Monica then says, 'I feel like we’re all just going through the motions. It's hard to stay motivated.' You suggested, 'I understand, Monica. Let's have a quick break and share any ideas that might make this project more engaging for everyone.' The team takes a short break, and after returning, Bob still seems unconvinced. Bob then says, 'Even with a break, I don't see how we can pull this off. The deadline is just too tight.' You responded, 'We need to stay focused on what we can control. Let’s outline what’s absolutely essential and prioritize those tasks.' Monica starts jotting down notes, but Bob remains skeptical, leaning back in his chair. Monica looks up and says, 'I think we need more than just prioritizing tasks. This project requires creativity and collaboration, and right now we’re all just stressed out.' You responded, 'We’ve managed stress before. Let’s not lose sight of our goal and keep pushing forward. Any collaboration ideas can come later.' Bob looks at you, his frustration evident in his furrowed brow.",
+    "role": "Team Leader",
+    "location": "Office",
+    "description": "Bob then says, 'I’m sorry, but pushing forward blindly isn’t going to solve our problems. We need to address the root cause of our stress and find a real solution.'",
+    "options": [
+      {
+        "text": "It's not about pushing blindly, Bob. Let’s identify specific stressors and tackle them together.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You acknowledged Bob's concerns and proposed a collaborative approach, showing strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I get that you’re feeling overwhelmed, but we need to stay focused on the tasks at hand. We can discuss stress management strategies later.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You emphasized the importance of staying focused, showing good emotional regulation and communication skills, though interpersonal balance could be improved."
+      },
+      {
+        "text": "If you're that stressed, maybe you should take a step back and let us handle it. We can’t afford any distractions right now.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You addressed the stress issue directly but suggested a solution that could be seen as dismissive, showing mixed results in emotional perception and social skills."
+      }
+    ]
+  }
+}

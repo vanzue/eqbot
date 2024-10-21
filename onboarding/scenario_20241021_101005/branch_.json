@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.'",
+    "options": [
+      {
+        "text": "I understand, Lisa. Let's break down the tasks and see how we can manage them better.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged Lisa's feelings and suggested a constructive way to manage the workload, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "Lisa, I know it's challenging, but we can do it if we support each other and stay focused.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You provided reassurance and emphasized teamwork, demonstrating good emotional control and communication skills, but emotional detection could be slightly improved."
+      },
+      {
+        "text": "I hear you, Lisa. How about we prioritize the tasks and see if we need to get additional resources?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the difficulty and suggested a practical solution, showing a good balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, said, 'This is impossible! We can't get this done in time.' You suggested taking a short break and coming back with a fresh perspective. [Monica] agreed, but [Bob] still seemed skeptical. After the break, [Bob] said, 'Even with a break, I don't see how we're going to manage this.' [Monica] added, 'Yeah, we need a better plan or more resources.' You acknowledged the team's concerns and suggested breaking down the tasks into smaller pieces and assigning them based on everyone's strengths. Now, [Monica] is looking over the task breakdown, and [Bob] is still frowning. You proposed identifying specific parts of the plan that seem unfeasible and discussing adjustments. [Bob] shrugged and [Monica] sighed. You decided to stick with the current plan while staying open to adjustments later. [Monica] nodded, but [Bob] still seemed doubtful.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Bob] finally says, 'I still think we need more hands on deck. This workload is just too much for us, even with the task breakdown.'",
+    "options": [
+      {
+        "text": "I understand, Bob. Let's discuss this with upper management to see if we can get additional resources.",
+        "scores": {
+          "Emotion Perception": 5,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Bob's concern and proposed a practical solution, demonstrating strong emotional perception and empathy."
+      },
+      {
+        "text": "We need to push through with what we have now. Any changes or additional resources will take too much time to arrange.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You decided to stick with the current resources, showing good self-regulation but limited empathy."
+      },
+      {
+        "text": "We can revisit the resource allocation and see if there are any non-critical tasks that can be postponed or delegated elsewhere.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested optimizing the current resources by reprioritizing tasks, demonstrating good emotional perception and self-regulation."
+      }
+    ]
+  }
+}

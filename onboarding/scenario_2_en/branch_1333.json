@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily started a detailed analysis but was interrupted by Alex, leading you to ask Lily to quickly outline her main points. After Lily's brief summary, Alex muttered under his breath, 'This is still taking too long,' while Lily looked visibly upset. You proposed setting a timer to keep discussions efficient and allotted Lily two more minutes. As the timer ran out, Alex looked at his watch impatiently while Lily glanced nervously at her notes. You proposed taking a break to ease the tension and allow Lily to finalize her points. Now, during the break, [Monica] and [Bob] join the conversation.",
+    "role": "Team Leader",
+    "location": "Break Room",
+    "description": "[Monica] says, 'I think we need to find a way to balance both styles,' while [Bob] adds, 'Yeah, but we're running out of time.'",
+    "options": [
+      {
+        "text": "It's clear we need to find a middle ground. How about both of you share your thoughts on the best way to proceed?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged collaboration and input from both Monica and Bob, demonstrating good emotional perception and empathy."
+      },
+      {
+        "text": "Monica, I agree we need balance, but time is critical. Bob, what do you suggest to expedite this?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the need for balance while emphasizing the urgency, showcasing strong self-regulation and social skills."
+      },
+      {
+        "text": "This isn't getting us anywhere. Let's split into smaller groups to tackle different parts and reconvene.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You proposed a practical solution to divide tasks, showing good social skills and motivation to maintain productivity."
+      }
+    ]
+  }
+}

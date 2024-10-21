@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. [Monica] looks worried, and [Bob] is visibly agitated. After discussing breaking down tasks and staying organized, [Monica] expresses her concern again. You encouraged trust and open communication.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Bob] sighs heavily and says, 'I don't know if I can handle this much stress. It's like we're set up to fail.'",
+    "options": [
+      {
+        "text": "We need to focus on what we can control and take it one step at a time. Stress is part of the process, but we can manage it together.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the stress and emphasized the importance of focusing on manageable steps, showing good emotional perception and interpersonal balance, but the communication could have been more reassuring."
+      },
+      {
+        "text": "I get it, Bob. It's a lot to handle, but we're all in this together. Let's communicate openly and support each other through this tough time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You validated Bob's feelings and emphasized teamwork and support, demonstrating good emotional regulation and communication skills, but social skills were slightly lacking."
+      },
+      {
+        "text": "I understand the stress, Bob. If we prioritize and stay focused on the critical tasks, we can manage it. Let's keep pushing forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You recognized the stress and suggested a practical approach, showing good emotional regulation and communication skills, but the emotional perception could be better."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, [Monica] and [Bob] are also expressing their concerns. [Monica] looks worried and says, 'I'm afraid we're setting ourselves up for failure.' [Bob] frowns and adds, 'I agree with Monica. This is unrealistic.' You responded: 'It's a tight deadline, no doubt. But if we don't try, we'll never know what we're capable of.' [Monica] sighs deeply, and [Bob] continues to frown, crossing his arms. You acknowledged your team’s concerns and suggested reassessing priorities, saying: 'I hear your concerns. Let's take a step back and reassess our priorities.' [Monica] still looks unconvinced and [Bob] shakes his head. You offered a reassuring approach by focusing on incremental progress, saying: 'I get it, it's a lot. How about we just focus on one step at a time and see how far we can get?'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] and [Bob] still seem doubtful and unsure about the project's feasibility.",
+    "options": [
+      {
+        "text": "Let's schedule a quick meeting to discuss our options and see if we can delegate some tasks.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You proposed a practical solution by suggesting a meeting to discuss task delegation, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "I understand. Maybe we should consider asking for an extension if it's too overwhelming.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the difficulty and suggested a practical solution of asking for an extension, showing a good balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      },
+      {
+        "text": "Well, it is what it is. We just have to push through and see where we end up.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You offered a pragmatic approach to just pushing through, demonstrating strong emotional regulation but leaving some room for improvement in emotional detection and interpersonal balance."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You reinforced the importance of listening and respecting each team member's input, asking Alex to respect the process and allowing Lily to continue. Lily finishes her points, but Alex still looks dissatisfied, crossing his arms and leaning back in his chair.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex leans back and says, 'Fine, but we're wasting time. We need to move on.' Lily looks slightly relieved but also concerned about Alex's reaction.'",
+    "options": [
+      {
+        "text": "Alex, I understand your frustration, but it's important we consider all aspects. Lily, thank you for your input. Let's now discuss a way forward.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You balanced acknowledging Alex's frustration with appreciating Lily's input, demonstrating strong emotional perception and empathy."
+      },
+      {
+        "text": "Alex, your point is noted. Lily, let's wrap this up quickly so we can decide our next steps.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You aimed for a middle ground by acknowledging Alex's urgency while ensuring Lily's voice is heard, showcasing good self-regulation and social skills."
+      },
+      {
+        "text": "Lily, you made some good points. Alex, let's decide quickly based on what we've heard so far.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You focused on moving forward by summarizing key points, demonstrating good social skills and motivation to keep the meeting on track."
+      }
+    ]
+  }
+}

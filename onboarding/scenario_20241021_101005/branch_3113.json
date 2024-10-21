@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team begins to break down the tasks, [Monica] seems hesitant and [Bob] looks frustrated. You advised the team to stay focused on what they can control, and suggested taking a short break before tackling the tasks one step at a time. [Monica] and [Bob] still seem uneasy. You invited alternative suggestions but reiterated sticking to the plan if no better ideas are proposed. The tension continues as [Monica] and [Bob] remain skeptical about the approach.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] throws up her hands in exasperation and says: 'This is hopeless. No plan is going to save us from this mess.' [Bob] adds with a hint of resignation: 'Honestly, I'm starting to think we should just let management see the disaster unfold.'",
+    "options": [
+      {
+        "text": "Let's take a step back and think this through. We might find a silver lining.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You encouraged the team to re-evaluate the situation, showing good interpersonal balance and a calm approach."
+      },
+      {
+        "text": "I know it's tough, but giving up isn't an option. We need to push through.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You provided a motivational push, demonstrating good emotional control and communication skills, but social skills could be improved."
+      },
+      {
+        "text": "Maybe you're right. Let's document the issues and present them to management.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You suggested escalating the issues to management, showing good communication skills, but emotional perception and interpersonal balance could be improved."
+      }
+    ]
+  }
+}

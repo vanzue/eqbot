@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Earlier, you acknowledged Lisa's feelings and suggested breaking down the tasks to manage them better. Now, in the office, [Monica] and [Bob] are discussing the assignment with you. Bob looks particularly stressed and says, 'I don't see how we can get this done in time without working around the clock.' Monica chimes in, 'Yeah, and it's not fair to expect us to pull all-nighters.' You acknowledged their concerns and suggested focusing on solutions rather than problems. Despite this, Monica and Bob still seem uneasy. Bob adds, 'It feels like we're just being told to suck it up and deal with it.' Monica nods in agreement and says, 'Yeah, it's easy to say 'focus on solutions,' but we're the ones burning out here.' You responded by suggesting focusing on what can be controlled and pushing through. Bob, visibly frustrated, replies, 'So, we're back to square one. Just deal with it and hope for the best?'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] and [Bob] are looking at you with a mix of frustration and resignation. Monica sighs, 'I'm not sure how much more we can take.'",
+    "options": [
+      {
+        "text": "Let's rethink our approach. Maybe we can find a way to redistribute the workload more effectively.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged their concerns and suggested a practical solution, showing strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I get it, but we need to stay focused and keep pushing through. Let's make sure we take breaks to avoid burnout.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You emphasized the importance of teamwork and perseverance, demonstrating good emotional control and communication skills, though emotional detection could be improved."
+      },
+      {
+        "text": "I hear you, but we can't afford to dwell on the negatives. Let's concentrate on what we can control and get this done.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on the need for solutions, but the emotional detection and interpersonal balance could be improved, as the response might come across as dismissive."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, said: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team began to break down the tasks, [Monica] seemed hesitant and [Bob] looked frustrated. [Monica] sighed and said to [Bob]: 'I still feel like we're going to miss the deadline, even with the prioritized tasks.' [Bob] responded with a hint of frustration: 'Honestly, this whole prioritizing thing just feels like rearranging deck chairs on the Titanic.' You invited alternative suggestions, but the emotional perception and social skills could be improved. Now, the team is gathered in the meeting room, and the tension is palpable. [Bob], still looking frustrated, said: 'I just don't see how this is going to work. We're all going to burn out at this rate.' [Monica] nodded in agreement, adding: 'We need a different approach, or we're just setting ourselves up for failure.' You then suggested working in shifts to manage the workload better. [Monica], looking slightly relieved but still tense, said: 'Okay, shifts might help, but what if we still can't meet the deadline? What will happen then?' [Bob], crossing his arms, added: 'Yeah, and who decides the shifts? I don't want to be stuck with the night shifts every time.' You responded by saying, 'We'll cross that bridge when we get to it. Let's focus on the immediate tasks.'",
+    "role": "Project Manager",
+    "location": "Meeting Room",
+    "description": "[Monica], still looking anxious, says: 'I just hope this works out. It feels like we're on a sinking ship.' [Bob], rubbing his temples, adds: 'And what if we hit another snag? Do we have a backup plan?'",
+    "options": [
+      {
+        "text": "Let's stay adaptable. We can adjust our plan if new issues arise.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You provided a general reassurance that focuses on adaptability, showing balanced but moderate emotional detection, regulation, and communication skills."
+      },
+      {
+        "text": "I understand your concerns. Let's think about possible contingencies together.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the team's concerns and suggested a collaborative approach, showing good emotional perception, interpersonal balance, and communication skills."
+      },
+      {
+        "text": "If we hit another snag, we'll deal with it when it comes. For now, let's stick to the plan.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You provided a direct answer focusing on sticking to the plan, showing good communication skills but lacking in emotional perception and social skills."
+      }
+    ]
+  }
+}

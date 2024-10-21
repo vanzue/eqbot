@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. During a subsequent team meeting, [Monica] slammed her pen on the table and expressed her frustration about the deadline, with [Bob] agreeing. You acknowledged Monica's feelings and suggested prioritizing the most critical tasks. However, [Bob] then leaned back in his chair, crossing his arms, and expressed doubt about the effectiveness of prioritizing due to being understaffed. You suggested discussing ways to bring in additional help or resources. Despite this, the tension remains high. Seeing that the tension is still high, [Monica] then sighed heavily and expressed concern about maintaining quality. You suggested a collaborative approach to streamline processes without compromising standards. The atmosphere is still tense.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Bob] now looks at you with a frustrated expression and says, 'Even if we streamline everything, it still feels like we're running in circles. What's the real plan here?'",
+    "options": [
+      {
+        "text": "Bob, I hear your frustration. Let's take a step back and reassess our strategy to make sure we are on the right track.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged Bob's frustration and suggested reassessing the strategy, showing high empathy and good emotional perception."
+      },
+      {
+        "text": "I understand your concerns, Bob. Let's put our heads together and come up with a more concrete plan of action.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You recognized Bob's concerns and suggested a collaborative approach to create a concrete plan, showing good self-regulation and social skills."
+      },
+      {
+        "text": "We've been through tough times before and succeeded. If we stay focused and work smart, we'll get through this too.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You focused on motivating the team by recalling past successes and encouraging focus, demonstrating high motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

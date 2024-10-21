@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Then, you proposed a structured timeline that includes checkpoints for quick decisions and thorough reviews. Now, Alex and Lily are discussing the timeline, but tensions remain high as they still seem skeptical.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex and Lily continue to discuss the timeline, but the tension in the room is still palpable.'",
+    "options": [
+      {
+        "text": "Let's have a trial period for this approach. We can review and adjust it based on the results. How do you both feel about that?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggested a flexible approach with a trial period, showing good emotional perception and empathy while keeping the team motivated."
+      },
+      {
+        "text": "I think this timeline can work if we all commit to it and communicate openly. What are your thoughts, Alex and Lily?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You reinforced the importance of commitment and communication, demonstrating strong self-regulation and social skills."
+      },
+      {
+        "text": "If you both have any concerns about the timeline, now is the time to voice them. Let's make sure we address any issues before moving forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You invited open discussion about concerns, aiming for a collaborative solution and demonstrating good social skills and motivation."
+      }
+    ]
+  }
+}

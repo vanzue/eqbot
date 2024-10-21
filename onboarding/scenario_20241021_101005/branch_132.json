@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you acknowledged Bob and Monica's frustration and suggested talking to upper management about adjusting the deadline or getting more hands on deck. Now, in the office, [Monica] and [Bob] continue to discuss the assignment with you. Bob, looking slightly relieved but still concerned, says, 'Even if we get more help, I'm not sure it's going to be enough to meet this deadline.' Monica nods, 'I agree, and I'm worried about the quality of our work suffering.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "Bob adds, 'We need to be realistic about what we can achieve here.'",
+    "options": [
+      {
+        "text": "Let's focus on doing our best with what we have and see where we can make improvements as we go.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You encouraged the team to focus on doing their best, demonstrating good emotional regulation and communication skills, though emotional perception could be slightly improved."
+      },
+      {
+        "text": "I hear your concerns, but we need to push through this together. Let's prioritize the most critical tasks and set realistic goals.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged their concerns and emphasized teamwork and prioritization, indicating strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I understand the pressure, but we can't afford to lower our standards. Let's focus on finding solutions instead of dwelling on the problems.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on maintaining standards but may have come across as dismissive, indicating a need for improvement in emotional perception and interpersonal balance."
+      }
+    ]
+  }
+}

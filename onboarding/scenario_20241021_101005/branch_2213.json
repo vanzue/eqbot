@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, [Monica] and [Bob] are also expressing their concerns. [Monica] looks worried and says, 'I'm afraid we're setting ourselves up for failure.' [Bob] frowns and adds, 'I agree with Monica. This is unrealistic.' You acknowledged their concerns and suggested focusing on the most critical tasks first. [Monica] sighs deeply and says, 'Even if we focus on critical tasks, this is still overwhelming.' [Bob], crossing his arms, adds, 'Yeah, we need a more practical approach.' You suggested brainstorming some immediate solutions together. [Monica] looks at you with a hint of hope, 'Okay, but where do we start?' [Bob] raises an eyebrow and mutters, 'This better be good.' You encouraged the team to take action by starting somewhere.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] and [Bob] are now looking at you for further direction.",
+    "options": [
+      {
+        "text": "Let's set up a quick meeting to align on the most pressing tasks and distribute the workload evenly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You suggested a practical approach to align the team, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "I know it's stressful, but if we pool our ideas and resources, I'm sure we can come up with a solution.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You emphasized teamwork and resource pooling, demonstrating good emotional control and communication skills, though emotional detection could be slightly improved."
+      },
+      {
+        "text": "It's a tough situation, but sometimes the best ideas come under pressure. Let's just dive in and see what we can accomplish.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the difficulty and motivated the team to take action, showing a good balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      }
+    ]
+  }
+}

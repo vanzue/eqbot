@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested taking a step back and hearing each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You acknowledged Alex's need for speed while ensuring Lily's voice is heard. Lily wrapped up her points, but Alex seemed unconvinced.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex rolls his eyes and mutters under his breath, 'This is a waste of time,' while Lily looks at you expectantly.'",
+    "options": [
+      {
+        "text": "Alex, I understand your frustration, but let's give Lily's approach a chance. We need to consider all aspects before making a decision.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You reinforced the importance of considering different perspectives, demonstrating strong emotional perception and empathy."
+      },
+      {
+        "text": "Alex, I get that you're eager to move forward, but dismissing Lily's input won't help. Let's value her insights and then decide.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Alex's urgency while emphasizing the importance of valuing team members' contributions, showcasing good self-regulation and social skills."
+      },
+      {
+        "text": "Lily, let's finish up quickly so we can move on. Alex, try to be patient; we're almost done.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You aimed for efficiency by asking Lily to wrap up quickly, showing good social skills and motivation to keep the meeting on track."
+      }
+    ]
+  }
+}

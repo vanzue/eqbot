@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. During a team meeting, [Monica] slammed her pen on the table and added, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nodded in agreement, looking equally concerned. You suggested taking a pause to rethink the approach. With the team gathered again, [Monica] leaned back in her chair, crossing her arms, and said, 'So, what’s the new grand plan?' You invited collaborative problem-solving by suggesting, 'Let's brainstorm some ideas together. We need everyone's input to come up with a viable plan.' [Monica] rolled her eyes and said, 'Brainstorming isn’t going to magically give us more hours in the day.' [Bob] added, 'I mean, if we’re going to do this, we need concrete steps, not just ideas.' You acknowledged the team's frustration and suggested a pragmatic step to re-prioritize tasks.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] sighs heavily and says, 'Okay, so what’s the priority? We need a clear plan.' [Bob] leans forward, waiting for your direction.",
+    "options": [
+      {
+        "text": "Let's map out our deadlines and see which tasks we can push back or get help with.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You proposed a practical approach to managing deadlines and seeking assistance, showing good emotional perception and empathy."
+      },
+      {
+        "text": "I think we should list all tasks and redistribute them based on each person's strengths.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggested redistributing tasks to leverage individual strengths, demonstrating good self-regulation and motivation."
+      },
+      {
+        "text": "We’ve been in tough spots before. Let’s focus on what’s in our control and give it our best shot.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You aimed to motivate the team by focusing on control and effort, showing high motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

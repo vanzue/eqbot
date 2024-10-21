@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You responded by suggesting breaking the tasks into smaller parts. The team seemed somewhat relieved but still on edge. [Monica] and [Bob] exchange concerned looks. Monica then speaks up, 'Even with smaller tasks, the deadline is still too tight.' Bob, looking frustrated, adds, 'I don't think anyone here believes we can actually pull this off.' You encouraged the team to stay focused and work together, showing good self-regulation and motivational skills. Monica and Bob still seem unconvinced. Monica crosses her arms and says, 'I just don't see how this is going to work.' Bob looks at you, exasperated, 'Are we really going to keep pushing everyone this hard?' You opened the floor for suggestions but also pushed the team to continue working, showing moderate emotion perception and self-regulation. Monica sighs and says, 'I think we're setting ourselves up for failure here.' You pushed the team to continue working despite their concerns, showing strong self-regulation but lacking empathy.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "Bob shakes his head, 'This isn't sustainable. We're going to burn out before we even get close to finishing.'",
+    "options": [
+      {
+        "text": "I get that it's tough, but we need to push through. Let's keep our heads down and focus on what we can control.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the difficulty but focused on pushing the team to persist, showing strong self-regulation and motivation but lacking in empathy."
+      },
+      {
+        "text": "Maybe we need to revisit our strategy. Let's gather and brainstorm some alternative approaches.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggested a strategic reassessment, showing good emotional perception, empathy, and social skills."
+      },
+      {
+        "text": "I understand the concern, but we don't have the luxury of time. We need to stick to the plan and work efficiently.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the concern but emphasized the need to follow the plan, showing strong self-regulation and motivation but lacking in empathy and emotional perception."
+      }
+    ]
+  }
+}

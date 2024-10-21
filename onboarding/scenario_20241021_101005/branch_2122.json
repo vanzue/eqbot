@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, said: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, Monica and Bob are also expressing their concerns. Monica looks worried and says, 'I'm afraid we're setting ourselves up for failure.' Bob frowns and adds, 'I agree with Monica. This is unrealistic.' You responded: 'I hear your concerns. Let's take a step back and reassess our priorities.' The team gathers around the table looking expectant and a bit skeptical. Monica crosses her arms, and Bob leans back in his chair, both waiting for your next move. You said: 'I know it's a lot, but if we stay focused and put in the effort, we can get it done. Let's take it one step at a time.' Monica raised an eyebrow skeptically and Bob sighed deeply, saying, 'It still feels like an uphill battle.' You said: 'I get how you feel, but we need to stay positive and push through. Let's focus on what we can control.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] purses her lips and [Bob] shakes his head, both looking unconvinced. Monica says, 'But what if we can't make it? We're not miracle workers.'",
+    "options": [
+      {
+        "text": "It's hard to say for sure, but we won't know unless we try. Let's just take it one day at a time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the uncertainty and encouraged a focus on day-by-day progress, demonstrating a balanced approach in emotional detection and social skills, though emotional regulation could be better."
+      },
+      {
+        "text": "You're right; it's a big challenge. But we have a strong team, and if we pull together, we can make it happen.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the difficulty and motivated the team by emphasizing their strengths, showing good emotional detection and communication skills, though interpersonal balance could be improved."
+      },
+      {
+        "text": "I get that it feels impossible, but giving up now won't solve anything. Let's give it our best and see what we can do.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the team's feelings and encouraged them to persevere, demonstrating good emotional regulation and social skills, though emotional detection could be enhanced."
+      }
+    ]
+  }
+}

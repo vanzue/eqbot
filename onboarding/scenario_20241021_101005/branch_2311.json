@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, [Monica] and [Bob] are also expressing their concerns. [Monica] looks worried and says, 'I'm afraid we're setting ourselves up for failure.' [Bob] frowns and adds, 'I agree with Monica. This is unrealistic.' You responded: 'It's a tight deadline, no doubt. But if we don't try, we'll never know what we're capable of.' [Monica] sighs deeply, and [Bob] continues to frown, crossing his arms. You acknowledged your team’s concerns and suggested reassessing priorities, saying: 'I hear your concerns. Let's take a step back and reassess our priorities.' [Monica] still looks unconvinced and [Bob] shakes his head. You proposed a practical solution by suggesting a meeting to discuss task delegation, saying: 'Let's schedule a quick meeting to discuss our options and see if we can delegate some tasks.' [Monica] glances at her watch and [Bob] leans back in his chair.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] and [Bob] seem hesitant and are unsure about the next steps.",
+    "options": [
+      {
+        "text": "I see this is a lot to take in. Let's take a short break and come back with fresh minds.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You suggested taking a break to allow the team to reset, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "I know it's overwhelming, but breaking it down into smaller steps will help us manage it better.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You provided a reassuring approach by focusing on breaking down tasks, demonstrating good emotional control and communication skills, though emotional detection could be slightly improved."
+      },
+      {
+        "text": "Maybe we need to adjust our expectations and focus on what's truly achievable.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the difficulty and suggested adjusting expectations, showing a good balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, said: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team began to break down the tasks, [Monica] seemed hesitant and [Bob] looked frustrated. [Monica] sighed and said to [Bob]: 'I still feel like we're going to miss the deadline, even with the prioritized tasks.' [Bob] responded with a hint of frustration: 'Honestly, this whole prioritizing thing just feels like rearranging deck chairs on the Titanic.' You invited alternative suggestions, but the emotional perception and social skills could be improved. Now, the team is gathered in the meeting room, and the tension is palpable.",
+    "role": "Project Manager",
+    "location": "Meeting Room",
+    "description": "[Bob], still looking frustrated, says: 'I just don't see how this is going to work. We're all going to burn out at this rate.' [Monica] nods in agreement, adding: 'We need a different approach, or we're just setting ourselves up for failure.'",
+    "options": [
+      {
+        "text": "Let's take a moment to breathe and then brainstorm some fresh ideas.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the stress and suggested a constructive break, showing good emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I hear you. Maybe we should consider working in shifts to manage the workload better.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You offered a practical solution while acknowledging the team's concerns, showing good emotional regulation and social skills."
+      },
+      {
+        "text": "If you think we're setting ourselves up for failure, what do you suggest we do instead?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You challenged the team's perspective, showing good communication skills, but emotional perception and social skills could be improved."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You responded by suggesting breaking the tasks into smaller parts. The team seemed somewhat relieved but still on edge. Monica and Bob exchange concerned looks. Monica then speaks up, 'Even with smaller tasks, the deadline is still too tight.' Bob, looking frustrated, adds, 'I don't think anyone here believes we can actually pull this off.' You responded by asking if anyone has a better idea or a more efficient way to get this done, otherwise, to get back to work. The team resumes work, but the tension is palpable. Monica sighs loudly and says, 'I really don't see how we can manage this.' You noticed Bob shaking his head and muttering, 'This is just setting us up for failure.' You addressed the negativity directly and opened the floor for specific concerns. Bob raises his hand and says, 'I think we need more resources or more time to make this feasible.' Monica nods in agreement and says, 'He's right, we can't do this alone.' You responded by saying we have to work with what we have and focus on optimizing our current resources. The team continues to work, but frustration is still evident. Monica looks at you and says, 'I get it, but what if this still isn't enough?'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "Bob, visibly annoyed, adds, 'I think we're just wasting our time here.'",
+    "options": [
+      {
+        "text": "Sometimes we need to push through the discomfort to see the results. Let's keep going and reassess in a few hours.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to push through despite the discomfort, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "I understand your frustration, Bob. Let's focus on what we can control and take it one step at a time.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Bob's feelings and suggested a practical approach, demonstrating empathy and good social skills."
+      },
+      {
+        "text": "Complaining won't help us. If you have specific concerns, let's address them now so we can move forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You addressed the negativity directly and opened the floor for specific concerns, showing moderate emotion perception and self-regulation."
+      }
+    ]
+  }
+}

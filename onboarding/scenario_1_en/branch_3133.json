@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, said, 'This is impossible! We can't get this done in time.' You suggested taking a short break and coming back with a fresh perspective. [Monica] agreed, but [Bob] still seemed skeptical. After the break, [Bob] said, 'Even with a break, I don't see how we're going to manage this.' [Monica] added, 'Yeah, we need a better plan or more resources.' You acknowledged the team's concerns and suggested breaking down the tasks into smaller pieces and assigning them based on everyone's strengths. Now, [Monica] is looking over the task breakdown, and [Bob] is still frowning. You mentioned considering alternative solutions or additional help if needed. [Bob] looked slightly relieved, but [Monica] still seemed worried and said, 'I'm not sure even with more help, we'll get this done on time.' [Bob] nodded and added, 'Yeah, we might need to prioritize some tasks over others.' You suggested delaying less urgent tasks or negotiating for an extended deadline. [Monica] appeared somewhat reassured, but [Bob] seemed to have more to say. [Bob] then remarked, 'But what if we still can't meet the deadline even with these adjustments?'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] looks at Bob and says, 'Maybe we should just be honest with the client about our limitations.'",
+    "options": [
+      {
+        "text": "That's a fair point, Monica. Let's have a candid discussion with the client about our current situation and explore feasible adjustments.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Monica's suggestion and proposed a transparent approach with the client, demonstrating empathy and good social skills."
+      },
+      {
+        "text": "I understand the concern, but let's not jump to conclusions yet. We should first see how we progress with the new plan.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to stay focused on the new plan before making any drastic decisions, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "If we think we're still struggling, we might need to consider the possibility of requesting more time or even reallocating some tasks to other departments.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested considering additional time or task reallocation, showing good emotional perception and self-regulation."
+      }
+    ]
+  }
+}

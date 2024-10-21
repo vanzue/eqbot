@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, said: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team began to break down the tasks, [Monica] seemed hesitant and [Bob] looked frustrated. [Monica] sighed and said to [Bob]: 'I still feel like we're going to miss the deadline, even with the prioritized tasks.' [Bob] responded with a hint of frustration: 'Honestly, this whole prioritizing thing just feels like rearranging deck chairs on the Titanic.' You invited alternative suggestions, but the emotional perception and social skills could be improved. Now, the team is gathered in the meeting room, and the tension is palpable. You suggested taking a moment to breathe and then brainstorm some fresh ideas. [Monica] looked slightly more relaxed but still concerned: 'Okay, let's brainstorm then. But I'm still worried about the workload.' [Bob] crossed his arms: 'Yeah, a break is fine, but we need a real plan.' You acknowledged the concerns while encouraging a prioritized approach.",
+    "role": "Project Manager",
+    "location": "Meeting Room",
+    "description": "[Bob] scratches his head and says: 'Even with a prioritized approach, some tasks are just too big to handle on our own.' [Monica] adds: 'We might need more hands or a different strategy entirely.'",
+    "options": [
+      {
+        "text": "Let's think about who else can help us or what tasks we can outsource.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You suggested seeking additional help or outsourcing tasks, showing good emotional regulation but could improve on emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I agree, let's focus on finding additional resources or splitting the work differently.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the need for additional resources and suggested a practical approach, showing good emotional perception and interpersonal balance."
+      },
+      {
+        "text": "If you think we need a different strategy, then let's hear some suggestions.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You challenged the team to provide alternative strategies, showing good communication skills, but emotional perception and social skills could be improved."
+      }
+    ]
+  }
+}

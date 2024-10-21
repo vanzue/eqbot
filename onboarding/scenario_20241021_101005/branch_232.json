@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, [Monica] and [Bob] are also expressing their concerns. [Monica] looks worried and says, 'I'm afraid we're setting ourselves up for failure.' [Bob] frowns and adds, 'I agree with Monica. This is unrealistic.' You responded: 'I understand it's tough, but maybe we can find a way to make it work if we focus on the most critical tasks first.' [Monica] crosses her arms and [Bob] runs a hand through his hair, both looking tense.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] and [Bob] still seem doubtful and anxious about the project's success.",
+    "options": [
+      {
+        "text": "Why don't we list out the potential risks and see how we can mitigate them?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You addressed the concerns by suggesting a practical approach to manage risks, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "I get it, but if we don't give it our best shot, we'll never know what we can achieve.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You encouraged persistence and effort, demonstrating good emotional control and communication skills, but emotional detection could be slightly improved."
+      },
+      {
+        "text": "Maybe we're overthinking this. Let's just get started and see how it goes.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You suggested taking immediate action, showing a balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      }
+    ]
+  }
+}

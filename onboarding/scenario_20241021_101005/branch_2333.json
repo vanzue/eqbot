@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, [Monica] and [Bob] are also expressing their concerns. [Monica] looks worried and says, 'I'm afraid we're setting ourselves up for failure.' [Bob] frowns and adds, 'I agree with Monica. This is unrealistic.' You responded: 'It's a tight deadline, no doubt. But if we don't try, we'll never know what we're capable of.' [Monica] sighs deeply, and [Bob] continues to frown, crossing his arms. The tension in the room is palpable, and everyone is waiting for the next step. [Monica] then says, 'Maybe we should ask for an extension.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] suggests asking for an extension, while [Bob] seems to agree by nodding slightly.",
+    "options": [
+      {
+        "text": "That's an option, but let's first see what we can achieve with the time we have.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged Monica's suggestion but encouraged the team to do their best within the given time, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "We could consider that, but let's prioritize our tasks and see where we stand before we make any decisions.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You provided a balanced response, suggesting a practical approach while leaving room for the possibility of asking for an extension, demonstrating good emotional control and communication skills."
+      },
+      {
+        "text": "I think we should try to meet the deadline first. If it becomes unmanageable, we can then discuss an extension.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You emphasized the importance of attempting to meet the deadline first before considering an extension, showing a good balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      }
+    ]
+  }
+}

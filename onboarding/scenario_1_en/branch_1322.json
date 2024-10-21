@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You responded by suggesting breaking the tasks into smaller parts. The team seemed somewhat relieved but still on edge. Monica and Bob exchange concerned looks. Monica then speaks up, 'Even with smaller tasks, the deadline is still too tight.' Bob, looking frustrated, adds, 'I don't think anyone here believes we can actually pull this off.' You responded by asking if anyone has a better idea or a more efficient way to get this done, otherwise, to get back to work. The team resumes work, but the tension is palpable. Monica sighs loudly and says, 'I really don't see how we can manage this.' You noticed Bob shaking his head and muttering, 'This is just setting us up for failure.' You acknowledged Bob's feelings and suggested focusing on what can be controlled and taking it one step at a time. Bob nodded slightly, but the tension remained. Monica, still looking concerned, says, 'What if we miss the deadline despite our efforts? What will happen then?' You reassured the team of your support and encouraged them to try their best. Bob nodded again, but the anxiety still lingered.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "Bob, with a hint of exasperation, says, 'I just don't see how we can manage this and still keep our sanity.'",
+    "options": [
+      {
+        "text": "Sometimes we have to push our limits to see what we're truly capable of. Let's give it our all and see what happens.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to push through despite the pressure, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "I understand the pressure, Bob. Let's take a short break to clear our minds and come back with renewed focus.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged Bob's feelings and suggested taking a break, demonstrating high empathy and good emotional regulation."
+      },
+      {
+        "text": "Complaining won't help us right now. Let's focus on what we can control and make the best of the situation.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You addressed the negativity directly and suggested focusing on constructive actions, showing moderate emotion perception and self-regulation."
+      }
+    ]
+  }
+}

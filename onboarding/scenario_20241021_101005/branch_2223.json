@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, [Monica] and [Bob] are also expressing their concerns. [Monica] looks worried and says, 'I'm afraid we're setting ourselves up for failure.' [Bob] frowns and adds, 'I agree with Monica. This is unrealistic.' You acknowledged their concerns and suggested focusing on the most critical tasks first. [Monica] sighs deeply and says, 'Even if we focus on critical tasks, this is still overwhelming.' [Bob], crossing his arms, adds, 'Yeah, we need a more practical approach.' You reassured them by suggesting breaking down the tasks further to make them less daunting. [Monica] and [Bob] are still visibly stressed, and [Monica] says, 'Breaking it down is a start, but I'm not sure if it's enough.' [Bob] nods and adds, 'We need a better plan or more help.' You motivated the team by suggesting that the challenge will help them grow as a team. [Monica] looks unconvinced and [Bob] shakes his head slightly.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] looks unconvinced and [Bob] shakes his head slightly.",
+    "options": [
+      {
+        "text": "I understand. Let's have a quick team meeting to brainstorm some immediate solutions.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged your team’s concerns and suggested a collaborative approach, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "I know it's still tough, but if we keep pushing through and trust the process, we might surprise ourselves.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You provided reassurance and emphasized perseverance, demonstrating good emotional control and communication skills, but emotional detection could be slightly improved."
+      },
+      {
+        "text": "I get it. But sometimes, facing these challenges head-on can help us grow stronger as a team.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the difficulty and motivated the team to see the positive side, showing a good balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      }
+    ]
+  }
+}

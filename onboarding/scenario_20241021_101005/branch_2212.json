@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded: 'Lisa, I know it's challenging, but we can do it if we support each other and stay focused.' Now, [Monica] and [Bob] are also expressing their concerns. [Monica] looks worried and says, 'I'm afraid we're setting ourselves up for failure.' [Bob] frowns and adds, 'I agree with Monica. This is unrealistic.' You acknowledged their concerns and suggested focusing on the most critical tasks first. [Monica] sighs deeply and says, 'Even if we focus on critical tasks, this is still overwhelming.' [Bob], crossing his arms, adds, 'Yeah, we need a more practical approach.' You suggested brainstorming some immediate solutions together. [Monica] looks at you with a hint of hope, 'Okay, but where do we start?' [Bob] raises an eyebrow and mutters, 'This better be good.' You suggested thinking outside the box and finding innovative solutions to streamline the workflow. Now, [Monica] and [Bob] are waiting for your next steps. [Monica] looks at you and says, 'Innovative solutions sound great, but what if we don't have the resources?' [Bob] chimes in, 'Yeah, we might need more than just ideas.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] and [Bob] express concern about resource limitations for innovative solutions.",
+    "options": [
+      {
+        "text": "We can start by utilizing what we have more efficiently and identify any gaps.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You provided a practical approach by optimizing existing resources, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "I understand the concern, but let's focus on what we can control and make the best of it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You reassured the team and encouraged focusing on controllable factors, demonstrating good emotional control and communication skills, though emotional detection could be slightly improved."
+      },
+      {
+        "text": "Resource limitations are part of the challenge. Overcoming them will make us stronger.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the difficulty and motivated the team to see the positive side, showing a good balance of emotional detection and social skills, though emotional regulation could be enhanced."
+      }
+    ]
+  }
+}

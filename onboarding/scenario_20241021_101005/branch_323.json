@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team begins to break down the tasks, [Monica] seems hesitant and [Bob] looks frustrated. You encouraged the team to take it one step at a time, emphasizing perseverance. Despite this, the tension among the team members remains palpable. [Monica] crosses her arms and says: 'Even if we take it step by step, we still might not make it. What's the backup plan?' [Bob] adds with a hint of sarcasm: 'Yeah, do we have a miracle worker on standby?' You invited alternative suggestions, showing good communication skills, but the emotional perception and social skills could be improved.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] rolls her eyes and says: 'Honestly, I'm not seeing how this is going to work. We need a more concrete plan.' [Bob] mutters under his breath: 'Yeah, like a miracle is going to happen.'",
+    "options": [
+      {
+        "text": "It's a tough situation, but we've got to keep pushing forward. Let's give it our best shot.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You encouraged persistence and emphasized the need to keep pushing forward, showing good communication skills but could improve on interpersonal balance."
+      },
+      {
+        "text": "I know it's difficult. Let's take a quick break and come back with fresh minds.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the difficulty and suggested taking a break to refresh, showing good emotional perception and regulation."
+      },
+      {
+        "text": "If we don't believe in ourselves, no plan will work. Let's stay focused.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You emphasized the importance of self-belief and staying focused, but emotional perception and social skills could be improved."
+      }
+    ]
+  }
+}

@@ -121,7 +121,8 @@ def reset_scenario_manager(job_id: str, scenario_id: Optional[int] = None):
     user_scenarios[job_id] = ScenarioManager(scenario_id)
 
 @router.post("/start_scenario/{job_id}")
-async def start_scenario(job_id: str):
+async def start_scenario(job_id: str, version: str = None):
+    print(version)
     reset_scenario_manager(job_id)
     scenario = get_scenario_manager(job_id)
     scenario.current_branch = ""
@@ -173,7 +174,7 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
         print(f"已删除 job_id 为 {job_id} 的 ScenarioManager 实例。")
 
 @router.post("/choose_scenario")
-async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db)):
+async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db), version: str = None):
     job_id = choice.job_id
     scenario = get_scenario_manager(job_id)
     if scenario.choice_count == 4:
@@ -184,7 +185,8 @@ async def make_choice(choice: Choice, background_tasks: BackgroundTasks, db: Ses
         return scenario.make_choice(choice.choice)
 
 @router.post("/get_current_scenario/{job_id}")
-async def get_current_scene(job_id: str):
+async def get_current_scene(job_id: str, version: str = None):
+    print(version)
     scenario = get_scenario_manager(job_id)
     return {"scene": scenario.get_scene(), "scenario_id": scenario.scenario_id+1}
     # return scenario_manager.get_scene()

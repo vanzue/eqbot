@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you acknowledged Lisa's feelings and suggested breaking down the tasks to manage them better. Now, in the office, [Monica] and [Bob] are discussing the assignment with you. Bob looks particularly stressed and says, 'I don't see how we can get this done in time without working around the clock.' Monica chimes in, 'Yeah, and it's not fair to expect us to pull all-nighters.' You acknowledged their concerns and suggested bringing in temporary help if needed. Despite the suggestion, Monica still seems uneasy and says, 'Even with extra help, I'm not sure we can avoid burnout.' [Monica] and [Bob] are looking at you expectantly. Bob adds, 'And what if the temporary help isn't up to speed? We could end up doing more work.' You proposed focusing on supporting each other through this, but the team remains uneasy. Bob raises an eyebrow and says, 'I just don't see how we can stay motivated through this.' Monica nods in agreement, 'Yeah, we need a plan that actually works.' You suggested focusing on tasks and dealing with hurdles as they come. Bob crosses his arms and says, 'Maybe we're just not cut out for this kind of pressure.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "Monica looks pensive and adds, 'Do we even have enough resources to pull this off?'",
+    "options": [
+      {
+        "text": "Let's brainstorm some ways to make this work with what we have.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You suggested a collaborative approach to find solutions, showing strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I get that it's daunting, but we need to push through and see what we can achieve.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You emphasized perseverance and effort, demonstrating good emotional control and communication skills, though emotional detection could be slightly improved."
+      },
+      {
+        "text": "Dwelling on what we lack won't help. Let's focus on what we can do.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on the need for action rather than complaints, but the emotional detection and interpersonal balance could be improved, as the response might come across as dismissive."
+      }
+    ]
+  }
+}

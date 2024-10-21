@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you told Bob and Monica that complaining wouldn't help and that the focus should be on solving the problems. Now, in the office, [Monica] and [Bob] continue to discuss the assignment with you. Monica, with a frown, says, 'I just feel like we're not being heard. This workload is unrealistic.' Bob nods in agreement.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "Monica adds, 'It's demotivating to see our concerns brushed aside.'",
+    "options": [
+      {
+        "text": "I hear your concerns, but let's focus on what we can control right now. How about we start by listing the most critical tasks?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged their concerns but redirected the focus to actionable tasks, demonstrating good emotional regulation and communication skills, though the emotional perception could be slightly improved."
+      },
+      {
+        "text": "I understand you're frustrated. Maybe we can talk to upper management about adjusting the deadline or getting more hands on deck.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You showed empathy and proposed a practical solution involving management, indicating strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I get it, but we can't waste time dwelling on it. We need to put our heads down and get to work.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on the urgency of the work but may have come across as dismissive, indicating a need for improvement in emotional perception and interpersonal balance."
+      }
+    ]
+  }
+}

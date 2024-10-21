@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You responded by suggesting breaking the tasks into smaller parts. The team seemed somewhat relieved but still on edge. [Monica] and [Bob] exchange concerned looks. Monica then speaks up, 'Even with smaller tasks, the deadline is still too tight.' Bob, looking frustrated, adds, 'I don't think anyone here believes we can actually pull this off.' You then acknowledged the team's feelings and opened the floor for discussion. Now, Monica sighs and says, 'Even if we discuss our concerns, the time isn't going to magically expand.'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "Bob, rubbing his temples, mutters, 'This is just going to be a disaster waiting to happen.'",
+    "options": [
+      {
+        "text": "I understand your frustration, Monica. Let's take a moment to prioritize the most critical tasks and see if we can extend the deadline for less urgent ones.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed understanding of the team's feelings and proposed a practical solution, demonstrating empathy and good social skills."
+      },
+      {
+        "text": "I know it's tough, but we need to stay focused and do our best. If we all pull together, we might be able to make this work.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to stay focused and work together, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "If anyone has a better idea or a more efficient way to get this done, now's the time to speak up. Otherwise, let's get back to work.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You opened the floor for suggestions but also pushed the team to continue working, showing moderate emotion perception and self-regulation."
+      }
+    ]
+  }
+}

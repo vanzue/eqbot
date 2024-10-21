@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You suggested taking a short break and coming back with a fresh perspective. Monica agreed, but Bob still seems skeptical. After the break, Bob says, 'Even with a break, I don't see how we're going to manage this.' Monica adds, 'Yeah, we need a better plan or more resources.' You suggested taking a step back to reassess the situation and offered to seek additional resources. Bob looks frustrated, and Monica seems a bit more hopeful. Bob then says, 'Revisiting our strategy is fine, but we still need a realistic plan to get this done.' Monica, looking thoughtful, says, 'Maybe we should also consider the skills and availability of each team member.' You acknowledged Monica's input and proposed a detailed task assignment plan. Bob still seems unconvinced and says, 'Even with a detailed plan, what if someone can't keep up?' You emphasized focusing on what can be managed and adapting as you go. Bob sighs and says, 'Alright, but what if we hit another roadblock?'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "Monica, looking worried, says, 'We can't afford any more delays.'",
+    "options": [
+      {
+        "text": "We need to stay adaptable. If we hit a roadblock, let's regroup and find a workaround.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You demonstrated adaptability and a proactive approach, showing good emotional perception and empathy."
+      },
+      {
+        "text": "I understand the concern, Bob. Let's just focus on the next task at hand and deal with issues as they arise.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged Bob's concern and emphasized taking it one step at a time, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "We can cross that bridge when we come to it. For now, let's prioritize and execute our current plan.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested focusing on the current plan while staying open to adjustments, showing good emotional perception and self-regulation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you encouraged mutual understanding and collaboration, emphasizing seeing things from each other's perspective to find common ground. However, the tension still lingers. [Monica] fidgets in her seat and [Bob] taps his pen impatiently, both clearly frustrated.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "[Monica] fidgets in her seat and [Bob] taps his pen impatiently, both clearly frustrated.",
+    "options": [
+      {
+        "text": "It's clear we're still struggling. Let's take a moment to identify what's most important to each of us for this project.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You aimed to refocus the team by identifying key priorities, demonstrating good emotional perception and self-regulation."
+      },
+      {
+        "text": "Monica, Bob, I can see the frustration. How about we each list one thing we appreciate about the other's approach?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You tried to foster appreciation and empathy between team members, showing strong empathy and motivation."
+      },
+      {
+        "text": "If we can't come to an agreement, we might need to reconsider our strategies and goals entirely.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested a more drastic approach to resolving the conflict, showing good social skills and moderate emotional perception."
+      }
+    ]
+  }
+}

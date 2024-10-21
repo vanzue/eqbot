@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you suggested reassessing the strategy to find a more efficient way to tackle the tasks. Now, in the office, [Monica] and [Bob] are still discussing the assignment with you. Bob, looking slightly relieved, says, 'Okay, but where do we start? We need a clear plan.' [Monica] nods, adding, 'Yes, we need to know who's doing what and when.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "Bob continues, 'It feels like we're just spinning our wheels without a concrete plan.'",
+    "options": [
+      {
+        "text": "Let's set up a quick meeting to outline everyone's responsibilities and deadlines.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You proposed a structured approach to clarify the plan, which shows strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I understand the need for clarity, but we don't have much time. Can we just start with what we know?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged their need for clarity but emphasized the urgency, demonstrating good emotional control and communication skills."
+      },
+      {
+        "text": "I get it, but we can't waste more time planning. Let's just dive in and adjust as we go.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on immediate action but may have come across as dismissive, indicating a need for improvement in emotional perception and interpersonal balance."
+      }
+    ]
+  }
+}

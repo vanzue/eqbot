@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You responded by suggesting breaking the tasks into smaller parts. The team seemed somewhat relieved but still on edge. [Monica] and [Bob] exchange concerned looks. Monica then speaks up, 'Even with smaller tasks, the deadline is still too tight.' Bob, looking frustrated, adds, 'I don't think anyone here believes we can actually pull this off.' You encouraged the team to stay focused and work together, showing good self-regulation and motivational skills. Monica and Bob still seem unconvinced. Monica crosses her arms and says, 'I just don't see how this is going to work.' Bob looks at you, exasperated, 'Are we really going to keep pushing everyone this hard?' You reiterated the importance of staying focused and giving the best effort, but the team remains skeptical. Monica sighs heavily and says, 'Maybe we should just tell the client we need more time.'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "Bob, looking drained, adds, 'That might be the only realistic option at this point.'",
+    "options": [
+      {
+        "text": "Let's at least give it a shot for another day. If we still feel overwhelmed, we can discuss extending the deadline with the client.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You validated the team's feelings while proposing a short-term solution to reassess later, showing empathy and good social skills."
+      },
+      {
+        "text": "I understand your concerns, but we need to show our commitment. Let's push through and see how far we can get.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the difficulty but emphasized perseverance and commitment, demonstrating good self-regulation and motivational skills."
+      },
+      {
+        "text": "If anyone has a better idea or a more efficient way to get this done, now's the time to speak up. Otherwise, let's get back to work.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You opened the floor for suggestions but also pushed the team to continue working, showing moderate emotion perception and self-regulation."
+      }
+    ]
+  }
+}

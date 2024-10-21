@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, said: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team began to break down the tasks, [Monica] seemed hesitant and [Bob] looked frustrated. [Monica] sighed and said to [Bob]: 'I still feel like we're going to miss the deadline, even with the prioritized tasks.' [Bob] responded with a hint of frustration: 'Honestly, this whole prioritizing thing just feels like rearranging deck chairs on the Titanic.' You invited alternative suggestions, but the emotional perception and social skills could be improved. Now, the team is gathered in the meeting room, and the tension is palpable. You suggested taking a moment to breathe and then brainstorm some fresh ideas. [Monica] looked slightly more relaxed but still concerned: 'Okay, let's brainstorm then. But I'm still worried about the workload.' [Bob] crossed his arms: 'Yeah, a break is fine, but we need a real plan.' You challenged Bob to provide an alternative solution, but the emotional perception and social skills could be improved.",
+    "role": "Project Manager",
+    "location": "Meeting Room",
+    "description": "[Bob], looking more resolute, says: 'Alright, if we're going to do this, we need to be smart about it. Maybe we should pull in some extra resources or even work overtime if necessary.' [Monica] adds, 'But we can't just keep pushing ourselves without a clear strategy.'",
+    "options": [
+      {
+        "text": "Bob, you're right about needing extra resources. Let's see if we can get some temporary help.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged Bob's point and suggested obtaining additional resources, showing good interpersonal balance and social skills."
+      },
+      {
+        "text": "I understand the concerns. How about we create a detailed action plan first and then decide if overtime or extra help is needed?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the concerns while suggesting a prioritized approach, showing good emotional perception and interpersonal balance."
+      },
+      {
+        "text": "If you both think we need extra resources and overtime, let's discuss the specifics and make it happen.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You agreed to the suggestions, showing good communication skills, but emotional perception and social skills could be improved."
+      }
+    ]
+  }
+}

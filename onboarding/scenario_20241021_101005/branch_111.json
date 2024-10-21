@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you acknowledged Lisa's feelings and suggested breaking down the tasks to manage them better. Now, in the office, [Monica] and [Bob] are discussing the assignment with you. Bob looks particularly stressed and says, 'I don't see how we can get this done in time without working around the clock.' Monica chimes in, 'Yeah, and it's not fair to expect us to pull all-nighters.' You acknowledged their concerns and suggested bringing in temporary help if needed. Despite the suggestion, Monica still seems uneasy and says, 'Even with extra help, I'm not sure we can avoid burnout.' [Monica] and [Bob] are looking at you expectantly. Bob adds, 'And what if the temporary help isn't up to speed? We could end up doing more work.' You proposed focusing on supporting each other through this, but the team remains uneasy.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "Bob raises an eyebrow and says, 'I just don't see how we can stay motivated through this.' Monica nods in agreement, 'Yeah, we need a plan that actually works.'",
+    "options": [
+      {
+        "text": "We can organize a quick daily check-in to address any issues. Let's see if that helps.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You suggested a practical solution to keep the team connected and address concerns as they arise, showing good emotional detection and interpersonal balance."
+      },
+      {
+        "text": "I know it's tough, but we need to stay focused and give it our best shot. We'll find a way through this.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You emphasized the importance of staying focused and giving the best effort, demonstrating strong emotional control and communication skills, though emotional detection could be slightly improved."
+      },
+      {
+        "text": "Complaining won't help us. Let's focus on the tasks and deal with hurdles as they come.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on the need for action rather than complaints, but the emotional detection and interpersonal balance could be improved, as the response might come across as dismissive."
+      }
+    ]
+  }
+}

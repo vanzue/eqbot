@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You responded by suggesting breaking the tasks into smaller parts. The team seemed somewhat relieved but still on edge. Monica and Bob exchanged concerned looks. Monica then spoke up, 'Even with smaller tasks, the deadline is still too tight.' Bob, looking frustrated, added, 'I don't think anyone here believes we can actually pull this off.' You responded by asking if anyone has a better idea or a more efficient way to get this done, otherwise, to get back to work. The team resumed work, but the tension was palpable. Monica sighed loudly and said, 'I really don't see how we can manage this.' You noticed Bob shaking his head and muttering, 'This is just setting us up for failure.' You encouraged the team to push through despite the pressure. Monica then said, 'I guess we’ll have to try our best, but I’m still worried about the quality of our work under such pressure.' Bob followed with, 'Rushing this might lead to mistakes we can't afford.' You acknowledged Monica's concerns and suggested setting up regular check-ins to monitor progress. [Monica] nodded but looked unsure, 'I'm just worried that even with check-ins, we might miss something important.' [Bob], rubbing his temple, added, 'And what if we miss a major deadline because we're too focused on details?'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] looks at you with concern, 'How do we balance speed and quality?'",
+    "options": [
+      {
+        "text": "Let's prioritize the most critical tasks first and ensure they meet our standards. We can fine-tune the rest as time permits.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggested a practical approach to balance speed and quality, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "I understand the pressure, Monica. We'll work together to find a balance. Maybe we can delegate some tasks to ensure nothing is overlooked.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Monica's concerns and suggested teamwork and delegation, demonstrating empathy and good social skills."
+      },
+      {
+        "text": "If anyone feels this is too much, we need to address it now. We can't afford to compromise on quality or miss deadlines.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You addressed the concern about balance directly and opened the floor for feedback, showing moderate emotion perception and self-regulation."
+      }
+    ]
+  }
+}

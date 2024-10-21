@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you acknowledged Lisa's feelings and suggested breaking down the tasks to manage them better. You also emphasized the importance of the project and asked for a team effort. Bob, after hearing your previous response, said the workload was unreasonable and he didn't think it could be handled without burning out. You responded by focusing on the need for solutions instead of dwelling on the negatives. Now, in the office, [Monica] and [Bob] continue the conversation with you. Monica looks frustrated and says, 'Honestly, I'm not sure why we always end up in these last-minute crunches. It's exhausting.' Bob nods in agreement.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "Monica sighs and adds, 'And it's not like we ever get any recognition for pulling these off.'",
+    "options": [
+      {
+        "text": "I get it, Monica. It's a tough situation, but let's try to focus on the immediate task at hand and discuss how we can avoid this in the future.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged Monica's frustration and suggested focusing on the current task while also addressing future improvements, demonstrating good emotional perception and communication skills."
+      },
+      {
+        "text": "I understand your frustration. Maybe we need to have a conversation with upper management about these last-minute assignments.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the frustration and suggested involving upper management, showing good emotional regulation and social skills, but could improve emotional perception slightly."
+      },
+      {
+        "text": "Complaining isn't going to help us right now. Let's just get through this and then we can talk about recognition and workload management.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on completing the task before addressing complaints, but this might come across as dismissive and lacks in emotional perception and interpersonal balance."
+      }
+    ]
+  }
+}

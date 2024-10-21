@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.\nEarlier, you acknowledged Lisa's feelings and suggested breaking down the tasks to manage them better. You also emphasized the importance of the project and asked for a team effort. Now, in the office, [Monica] and [Bob] are discussing with you. Bob looks particularly stressed and says, 'I don't see how we can get this done in time without working around the clock.' Monica chimes in, 'Yeah, and it's not fair to expect us to pull all-nighters.' After hearing your previous response, Bob says: 'I understand it's important, but this workload is really unreasonable. I don't think we can handle it without burning out.' Monica, visibly frustrated, adds, 'We need to come up with a realistic plan that doesn't exhaust us.'",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "Bob, after hearing your previous response and noticing Monica's frustration, says: 'I appreciate the effort to brainstorm, but we still need more concrete steps. What exactly can we do differently?'",
+    "options": [
+      {
+        "text": "Let's list out our tasks and deadlines, then figure out what can be delegated or delayed.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You suggested a practical approach to redistribute the workload, showing strong emotional perception and interpersonal balance."
+      },
+      {
+        "text": "I understand it's overwhelming, but we need to stay focused. Let's start by addressing the most critical tasks.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the difficulty but emphasized the need for focus, demonstrating good emotional control and communication skills."
+      },
+      {
+        "text": "We can't let this stress get to us. Let's take a step back and think about how we can tackle this more efficiently.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You focused on the need for efficiency, but the emotional detection and interpersonal balance could be improved as the response might come across as dismissive."
+      }
+    ]
+  }
+}

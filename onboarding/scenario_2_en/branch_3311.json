@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you encouraged mutual understanding and collaboration, emphasizing seeing things from each other's perspective to find common ground. You then aimed to refocus the team by identifying key priorities, but [Monica] and [Bob] still seem frustrated.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "[Monica] rubs her temples, clearly stressed, while [Bob] leans back in his chair, sighing loudly.",
+    "options": [
+      {
+        "text": "Monica, Bob, let's focus on actionable steps we can individually take to move forward.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You directed the team to think about personal contributions to progress, showing solid emotional perception and self-regulation."
+      },
+      {
+        "text": "I think we're getting bogged down in the details. Let's zoom out and look at the bigger picture.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to take a broader perspective to avoid getting stuck, demonstrating good social skills and motivation."
+      },
+      {
+        "text": "Maybe we need to rethink our approach entirely. Any suggestions on how we can align better?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You opened the floor for new ideas and alignment, showing strong empathy and willingness to adapt."
+      }
+    ]
+  }
+}

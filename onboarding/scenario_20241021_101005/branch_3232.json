@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team begins to break down the tasks, [Monica] seems hesitant and [Bob] looks frustrated. You encouraged the team to take it one step at a time, emphasizing perseverance. Despite this, the tension among the team members remains palpable. [Monica] crosses her arms and says: 'Even if we take it step by step, we still might not make it. What's the backup plan?' [Bob] adds with a hint of sarcasm: 'Yeah, do we have a miracle worker on standby?' You invited alternative suggestions, showing good communication skills, but the emotional perception and social skills could be improved. [Monica] rolls her eyes and says: 'Honestly, I'm not seeing how this is going to work. We need a more concrete plan.' [Bob] mutters under his breath: 'Yeah, like a miracle is going to happen.' You acknowledged the difficulty and suggested taking a break to refresh, showing good emotional perception and regulation. The team takes a short break and reconvenes. However, the tension is still present.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "[Monica] looks at you and says: 'This break didn't really help. We still don't have a solid plan.' [Bob] nods in agreement, saying: 'We need something more than just hope and breaks.'",
+    "options": [
+      {
+        "text": "Let's brainstorm some actionable steps we can take right now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You suggested a practical approach to move forward, demonstrating good interpersonal balance and social skills."
+      },
+      {
+        "text": "I get it. Let's discuss what we can realistically achieve within the given time.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You acknowledged the team's concerns and suggested a realistic discussion, showing good emotional perception and communication skills."
+      },
+      {
+        "text": "If we keep doubting ourselves, we won't get anywhere. Let's just start working.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You emphasized action over doubt, showing good emotional regulation, but emotional perception and social skills could be improved."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of your team members, Lisa, says: 'I don't think we can meet this deadline. It's just too much work in too little time.' You responded by acknowledging the difficulty and suggesting to prioritize tasks and see if additional resources are needed. As the team begins to break down the tasks, [Monica] seems hesitant and [Bob] looks frustrated. You advised the team to stay focused on what they can control. [Monica] and [Bob] still seemed uneasy. You suggested reassessing priorities and postponing less urgent tasks. [Monica] and [Bob] are still uneasy, but they nod in agreement. However, the tension remains. You encouraged a positive outlook and emphasized progress. [Monica] and [Bob] still look worried and unsure about the next steps.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "You notice [Monica] rubbing her temples and [Bob] crossing his arms again. [Monica] says: 'Even with a positive outlook, I'm worried about burning out.' [Bob] adds: 'Yeah, and what if we can't keep up this pace?'",
+    "options": [
+      {
+        "text": "Let's take a step back and see if there's a way to redistribute the workload.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 3,
+          "Social Skills": 3
+        },
+        "analysis": "You acknowledged the team's concerns and suggested a practical solution, showing good emotional detection and interpersonal balance skills."
+      },
+      {
+        "text": "I hear you. Maybe we need to check with management about extending the deadline.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 4
+        },
+        "analysis": "You acknowledged the team's concerns and suggested a practical solution, showing good emotional control and social skills, though emotional perception could be slightly improved."
+      },
+      {
+        "text": "We need to stay focused and keep pushing forward. Complaining won't help.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 2,
+          "Communication Skills": 4,
+          "Social Skills": 2
+        },
+        "analysis": "You emphasized the importance of focusing on tasks and discouraged negativity, showing good communication skills, but emotional perception and interpersonal balance could be improved."
+      }
+    ]
+  }
+}

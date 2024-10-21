@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. During a team meeting, [Monica] slammed her pen on the table and added, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nodded in agreement, looking equally concerned. You suggested taking a pause to rethink the approach. Now, with the team gathered again, [Monica] leaned back in her chair, crossing her arms, and said, 'So, what’s the new grand plan?' You motivated the team by recalling past successes and urging them to tackle the challenge head-on. However, the tension is still palpable. [Bob] leaned forward, sighing, 'I just don't see how we can pull this off without burning out.' You emphasized teamwork and staying focused. The team is now looking at you expectantly for further direction.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] shakes her head and says, 'Even if we take it step by step, we still need to figure out how to manage the workload without stretching ourselves too thin.' [Bob] chimes in, 'Yeah, we need a realistic plan or else we'll just end up in the same place.'",
+    "options": [
+      {
+        "text": "You're right, Monica. Let's sit down and see which tasks are absolutely essential and which can be postponed or delegated.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You validated Monica's concerns and suggested a practical approach to prioritize the workload, demonstrating high empathy and good emotional perception."
+      },
+      {
+        "text": "I understand the concern, Bob. Maybe we need to discuss with management about extending the deadline or getting more resources.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the team's concerns and suggested a practical step to discuss potential solutions with management, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "We’ve been in tight spots before, and we've always managed to pull through. This is no different; we just need to push harder.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You focused on motivating the team by recalling past successes and urging them to push harder, demonstrating high motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

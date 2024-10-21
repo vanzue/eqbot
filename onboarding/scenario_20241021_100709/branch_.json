@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety.",
+    "role": "Project Manager",
+    "location": "Office",
+    "description": "'How are we supposed to finish this on time?'",
+    "options": [
+      {
+        "text": "Let's focus on breaking down the tasks and tackle them one at a time. We can do this if we stay organized.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Emotion Regulation": 3,
+          "Interpersonal Balance": 4,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You exhibited good emotional perception and provided a plan to manage the workload, showing effective communication and interpersonal balance."
+      },
+      {
+        "text": "I understand it's overwhelming, but we're in this together. Let's support each other and communicate openly.",
+        "scores": {
+          "Emotion Perception": 5,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 3,
+          "Social Skills": 2
+        },
+        "analysis": "You showed high emotional perception and regulation, emphasizing teamwork and support, but the social skills were slightly lacking."
+      },
+      {
+        "text": "It's a tough situation, but if we prioritize and stay focused, we can make significant progress. Let's take it one step at a time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Emotion Regulation": 4,
+          "Interpersonal Balance": 3,
+          "Communication Skills": 4,
+          "Social Skills": 3
+        },
+        "analysis": "You demonstrated good emotional regulation and communication skills, but the emotional perception could be improved."
+      }
+    ]
+  }
+}

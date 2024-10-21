@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you suggested considering both perspectives and proposed a collaborative solution. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction. Monica and Bob exchange uneasy glances as the tension builds. You involved Monica and Bob in the discussion to find a blended approach.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Monica and Bob share their thoughts, but the tension between Alex and Lily is still palpable. Alex seems impatient while Lily looks contemplative.'",
+    "options": [
+      {
+        "text": "Monica and Bob have provided useful insights. Alex and Lily, can we agree to trial a combined approach for this project?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested a practical solution, showing good self-regulation and social skills, while aiming for a balanced approach."
+      },
+      {
+        "text": "I think it's important to balance the urgency with thoroughness. What if we set specific guidelines to integrate both methods?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You proposed a structured solution, demonstrating good social skills and motivation to resolve the conflict."
+      },
+      {
+        "text": "This conversation is insightful, but we need to move forward. How about we split tasks based on each other's strengths?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggested leveraging each team member's strengths, showing good emotional perception and empathy while promoting collaboration."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. Now, during a team meeting, [Monica] slams her pen on the table and adds, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nods in agreement, looking equally concerned. You acknowledged Monica's feelings and suggested a pragmatic approach to prioritize work. The tension is still high. [Bob] then leaned back in his chair, crossing his arms, and said, 'Prioritizing won't change the fact that we’re understaffed and overworked. What’s the point?' You recognized Bob's concerns and suggested a practical approach to manage the workload. Despite the suggestions, the atmosphere is still tense. [Monica] looked at you intently and said, 'Even delegating tasks won't change the fact that we simply don’t have enough time. What do you suggest we do next?' You acknowledged the difficulty and suggested a practical approach to manage expectations, showing good self-regulation and social skills. The tension in the room remains palpable, and [Monica] still appears skeptical while [Bob] fidgets with his pen.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] shakes her head and says, 'Reassessing priorities is good, but it feels like we're just delaying the inevitable failure.' [Bob] adds, 'Yeah, it's like we're setting ourselves up to fail.'",
+    "options": [
+      {
+        "text": "I see why you might feel that way, but let's explore all possible avenues before giving up. What if we split into smaller teams to tackle specific tasks?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged their concerns and proposed a collaborative approach, demonstrating high empathy and good emotional perception."
+      },
+      {
+        "text": "I get it, this is not easy. Maybe we need to have an honest conversation with our stakeholders about the deadline and see if there's any flexibility.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the difficulty and suggested a practical approach to manage expectations, showing good self-regulation and social skills."
+      },
+      {
+        "text": "We’ve been through tough times before. If we stay focused and give it our all, we can overcome this challenge as well.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You encouraged the team to stay focused and motivated by recalling past successes, demonstrating high motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}
