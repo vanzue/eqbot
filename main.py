@@ -15,6 +15,7 @@ from echo_space_api import echo_space_router as echo_space_router
 
 from battlefield_api import router as batttlefield_router
 from file_upload import file_router
+from thirdparty_api import router as thirdparty_router
 from dotenv import load_dotenv
 
 from data_types import SignatureVerifyModel
@@ -41,6 +42,7 @@ app.include_router(echo_space_router)
 
 app.include_router(batttlefield_router)
 app.include_router(file_router)
+app.include_router(thirdparty_router)
 
 def verify_signature(request: SignatureVerifyModel, i):
     if not sToken or not sEncodingAESKey or not sCorpID:
