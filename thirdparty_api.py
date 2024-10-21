@@ -65,3 +65,23 @@ def upload_image_to_blob(message_id: str, image_data):
         print(f"Image uploaded as '{message_id}' in container '{CONTAINER_NAME}'.")
     except Exception as e:
         print(f"An error occurred while uploading the image: {e}")
+
+def send_message(data,replyToken):
+# Ensure the access token is valid before sending a message
+  print(botToken)
+  headers = {
+      "Content-Type": "application/json",
+      "Authorization": f"Bearer {botToken}",
+  }
+  message_url = f"https://api.line.me/v2/bot/message/reply"
+  data = {
+      "replyToken":replyToken,
+      "messages":[
+          {
+              "type":"text",
+              "text":data
+          },
+      ]
+  }
+  response = requests.post(message_url, headers=headers, data=json.dumps(data))
+  return response.json()
