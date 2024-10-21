@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. [Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvenes in the meeting room. [Monica] starts to speak up but is interrupted by [Alex] who says, 'We don't have time for this. We need to decide now.' [Lily] looks visibly upset. You tried to steer the conversation back to the main goal. Now, [Bob] and [Monica] exchange skeptical looks, while [Alex] seems impatient. You acknowledged the team's frustration and invited specific suggestions. Now, [Monica] and [Bob] start discussing potential solutions, while [Alex] remains silent and [Lily] looks slightly relieved.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "[Bob] suggests, 'Maybe we can split the tasks to balance both approaches.' [Monica] adds, 'That could work, but we need clear roles.' [Alex] finally speaks, 'This is still too slow.' [Lily] nods in agreement with [Monica].",
+    "options": [
+      {
+        "text": "Alright, let's clearly define the roles and responsibilities. Alex, can you take the lead on quick decision tasks while Lily handles the in-depth analysis?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You proposed a clear division of responsibilities, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Bob, I like your idea. Let's map out the tasks and see where we can integrate both approaches more efficiently.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You supported Bob's suggestion and proposed a detailed plan, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "We need to focus on the project's primary objectives. Let's assign tasks based on urgency and importance, avoiding unnecessary discussions.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You aimed to streamline the process and stay focused on the main goals, showing good social skills and motivation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly. You decide to skip the celebration and focus on the next project. Monica frowns and Bob looks disappointed. You reconsider and suggest a small celebration. Monica lights up and Bob nods in agreement. Monica suggests combining both suggestions with a small outdoor activity followed by a dinner. Bob adds to keep it simple. You express concerns about getting too carried away. Monica sighs, and Bob looks at you with a raised eyebrow.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "Monica says, 'Alex, it feels like you're not really listening to us. We need this break.' Bob adds, 'Yeah, it's not just about work all the time.' Everyone is waiting for your next move.",
+    "options": [
+      {
+        "text": "I hear you both. Let's take a quick poll again to see if we all agree on combining the two activities.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "This response reflects a neutral stance, showing moderate levels of emotional detection, self-regulation, empathy, and social skills. Motivation is average as it reopens the discussion without strong direction."
+      },
+      {
+        "text": "You're right. Let's combine the outdoor activity and dinner. We can keep it simple and enjoyable for everyone.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
+      },
+      {
+        "text": "If you think combining the activities is necessary, then let's do it. But let's try to keep it focused and not too elaborate.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "This response shows higher motivation to maintain focus on work but lower emotional detection and empathy. Social skills are also lower due to the passive-aggressive undertone."
+      }
+    ]
+  }
+}

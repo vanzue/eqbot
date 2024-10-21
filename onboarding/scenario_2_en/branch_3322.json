@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you emphasized staying on task and managing emotions, but tension still lingers. [Monica] glares at [Bob] and says, 'This is why nothing ever gets done.' [Bob] retorts, 'Well, maybe if we didn't overthink everything...'",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "The tension in the room escalates as [Monica] and [Bob] continue their argument. [Monica] crosses her arms and [Bob] leans back in his chair, clearly frustrated.",
+    "options": [
+      {
+        "text": "Let's take a step back and try to see things from each other's perspective.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You encouraged mutual understanding and collaboration, showing strong emotional perception, self-regulation, empathy, and social skills."
+      },
+      {
+        "text": "Monica, Bob, let's put aside personal differences and focus on the task at hand.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized staying on task and managing emotions, demonstrating excellent self-regulation and motivation."
+      },
+      {
+        "text": "If we keep arguing, we'll never get anything done. Let's agree to disagree and move forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You aimed to de-escalate the conflict by encouraging compromise, showing good social skills and moderate emotional perception."
+      }
+    ]
+  }
+}

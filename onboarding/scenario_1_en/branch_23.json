@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. Now, during a team meeting, [Monica] slams her pen on the table and adds, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nods in agreement, looking equally concerned. You focused on motivating the team by recalling past successes. Monica's frustration is still palpable, and Bob's agreement seems to add to the tension.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] leans back in her chair, crossing her arms, 'It's not just about trying hard; we need more resources.' [Bob] mutters, 'Yeah, we're drowning here.'",
+    "options": [
+      {
+        "text": "We can ask for additional help. Let's compile a list of what we need and I'll take it to management.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You recognized the team's need for support and suggested a practical solution, showing good empathy and self-regulation."
+      },
+      {
+        "text": "I understand your frustration, but we need to focus on what we can control right now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the team's frustration but emphasized the importance of focusing on controllable factors, demonstrating balanced emotional intelligence."
+      },
+      {
+        "text": "We've been through worse and come out stronger. Let's prove we can handle this.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You focused on motivating the team by recalling past challenges, showing high motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

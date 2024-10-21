@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. Monica and Bob exchange glances, clearly uneasy with the ongoing tension. After suggesting a brainstorming session to combine quick decisions with detailed discussions, Alex and Lily agree but still seem skeptical.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Monica and Bob continue to look concerned as the discussion progresses. Alex and Lily are more engaged in the brainstorming session but occasionally revert to their initial stances.'",
+    "options": [
+      {
+        "text": "I appreciate the progress we're making. Let's keep the momentum and ensure everyone's input is valued.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged continued collaboration and valued everyone's contributions, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Alex, your decisiveness is crucial, but Lily's thoroughness ensures we don't overlook details. How about we assign roles based on these strengths?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged both perspectives and suggested a practical solution, demonstrating strong self-regulation and social skills."
+      },
+      {
+        "text": "It seems like we're still struggling to integrate both approaches. Maybe we need a new strategy altogether?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You recognized ongoing challenges and suggested reevaluating the strategy, showing good social skills and motivation."
+      }
+    ]
+  }
+}

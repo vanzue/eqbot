@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. You then proposed a picnic as a simple and inclusive option. [Monica] and [Bob] were now discussing how to proceed with the picnic plan. You suggested making a checklist and assigning different types of food to each person while planning for contingencies in case of rain. The team agreed, but [Monica] and [Bob] are now discussing further details.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "[Monica] says, 'A checklist is a great idea, but should we assign tasks based on people's preferences or just randomly?' [Bob] adds, 'And what time should we start the picnic? Morning or afternoon?' Everyone is once again looking at you for a decision.",
+    "options": [
+      {
+        "text": "Let's ask everyone for their food preferences before assigning tasks. As for the timing, I think starting late morning would be ideal.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences before making assignments. It also demonstrates good social skills and motivation."
+      },
+      {
+        "text": "We can assign tasks randomly to keep it fair. Starting in the afternoon might give everyone more time to prepare and arrive.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and fairness, but slightly lower empathy as it might not cater to individual preferences."
+      },
+      {
+        "text": "Honestly, we should just let everyone bring whatever they want. Morning or afternoon, does it really matter?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making a decisive call and does not thoroughly address the team's needs."
+      }
+    ]
+  }
+}

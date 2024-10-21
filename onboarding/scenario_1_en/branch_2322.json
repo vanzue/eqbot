@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. During a team meeting, [Monica] slammed her pen on the table and added, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nodded in agreement, looking equally concerned. You then acknowledged their frustration but emphasized the importance of focusing on what can be controlled. When Monica leaned forward exasperated, and Bob echoed the need for more time, you suggested that the team might need to work longer hours or weekends. Now, [Monica] throws up her hands in frustration, '[Monica] says, 'I don't know if I can handle working weekends on top of everything else.' [Bob] looks visibly tired and adds, 'We need a break, not more work.'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica]'s frustration is growing, and [Bob] appears exhausted, waiting for your response.",
+    "options": [
+      {
+        "text": "I understand this is a tough ask. Let's see if we can negotiate some flexibility with the deadline.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You recognized the team's stress and suggested a practical solution by negotiating the deadline, demonstrating high emotional perception, self-regulation, and empathy."
+      },
+      {
+        "text": "I know it's a lot, but if we push through now, we can avoid future crunches.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the difficulty but emphasized the long-term benefits of the extra effort, showing good self-regulation and motivation."
+      },
+      {
+        "text": "We need to adapt to the situation. If it means putting in extra effort now, we can manage it.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You emphasized adapting to the situation and putting in extra effort, showing good self-regulation and social skills."
+      }
+    ]
+  }
+}

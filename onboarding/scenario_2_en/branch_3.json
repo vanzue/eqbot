@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "[Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.'",
+    "options": [
+      {
+        "text": "It seems like we're all getting a bit frustrated. Let's take a short break and come back with fresh minds.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 5,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You recognized the rising tension and suggested a break to allow everyone to cool down, showing excellent emotional regulation and empathy."
+      },
+      {
+        "text": "Monica, Bob, I can see you're frustrated. Let's hear your thoughts on how we can move forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged their frustration and invited their input, demonstrating good empathy and social skills."
+      },
+      {
+        "text": "I understand this is challenging, but we need to stay focused. Let's push through and find a solution.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to stay focused and motivated, showing good self-regulation and motivation."
+      }
+    ]
+  }
+}

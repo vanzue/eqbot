@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then opted to proceed with Alex's approach while acknowledging Lily's input for future adjustments. Alex seemed satisfied, but Lily looked visibly upset and crossed her arms.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Lily sighs and says, 'I feel like my input isn't valued here.' Alex rolls his eyes, and you can sense the tension rising in the room.'",
+    "options": [
+      {
+        "text": "Lily, I understand your frustration. Let's schedule some time later to go over your insights in more detail.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged Lily's feelings and proposed a solution to address her concerns later, showing strong emotional perception and empathy."
+      },
+      {
+        "text": "Lily, your insights are important, but we need to act quickly right now. Let's focus on moving forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You emphasized the need for quick action while acknowledging Lily's importance, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "Lily, let's wrap this up for now and revisit your points as we progress. We need to start executing.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You aimed to keep the project moving by suggesting to revisit Lily's points later, showing good social skills and motivation."
+      }
+    ]
+  }
+}

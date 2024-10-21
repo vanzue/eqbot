@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, said, 'This is impossible! We can't get this done in time.' You suggested taking a short break and coming back with a fresh perspective. [Monica] agreed, but [Bob] still seemed skeptical. After the break, [Bob] said, 'Even with a break, I don't see how we're going to manage this.' [Monica] added, 'Yeah, we need a better plan or more resources.' You acknowledged the team's concerns and suggested breaking down the tasks into smaller pieces and assigning them based on everyone's strengths. Now, [Monica] is looking over the task breakdown, and [Bob] is still frowning. You mentioned considering alternative solutions or additional help if needed. [Bob] looks slightly relieved, but [Monica] still seems worried and says, 'I'm not sure even with more help, we'll get this done on time.'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Bob] nods and adds, 'Yeah, we might need to prioritize some tasks over others.'",
+    "options": [
+      {
+        "text": "You're right, Bob. Let's identify the most critical tasks and focus on those first.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Bob's point and proposed a practical solution by prioritizing tasks, demonstrating empathy and good social skills."
+      },
+      {
+        "text": "I get it, Monica. But panicking won't help; let's stick to the plan and see how far we get.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to stay focused and avoid panicking, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "If we're really struggling, we might need to consider delaying less urgent tasks or negotiating for an extended deadline.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested delaying less urgent tasks or negotiating for more time, showing good emotional perception and self-regulation."
+      }
+    ]
+  }
+}

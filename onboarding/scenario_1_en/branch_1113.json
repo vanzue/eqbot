@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You responded by suggesting breaking the tasks into smaller parts. The team seemed somewhat relieved but still on edge. [Monica] and [Bob] exchange concerned looks. Monica then speaks up, 'Even with smaller tasks, the deadline is still too tight.' Bob, looking frustrated, adds, 'I don't think anyone here believes we can actually pull this off.' You then acknowledged the team's feelings and opened the floor for discussion. Now, Monica sighs and says, 'Even if we discuss our concerns, the time isn't going to magically expand.' Bob, rubbing his temples, mutters, 'This is just going to be a disaster waiting to happen.' You showed understanding of the team's feelings and proposed a practical solution, suggesting to prioritize the most critical tasks. Monica, however, appears skeptical and asks, 'But what if even the critical tasks can't be completed on time?' Bob, leaning back in his chair, adds, 'We might seriously need to consider abandoning some tasks altogether.' You pushed the team to continue working while opening the floor for better ideas. Monica frowns and says, 'Alright, let's get back to work. But does anyone really have a better idea?'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "Bob, sighing deeply, looks at you and says, 'Well, what if we do have better ideas but don't feel comfortable sharing them?'",
+    "options": [
+      {
+        "text": "If anyone has suggestions or concerns, please share them now. We're in this together, and every idea counts.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You encouraged open communication and emphasized the importance of teamwork, showing high empathy and good social skills."
+      },
+      {
+        "text": "I understand it might be difficult to speak up, but we need to hear all potential solutions. Let's create a safe space for everyone to share their thoughts.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the difficulty in speaking up and tried to create a safe environment for sharing, showing good self-regulation and empathy."
+      },
+      {
+        "text": "If you're not comfortable sharing ideas now, maybe we can discuss them privately later. For now, let's focus on what we can do.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You offered an alternative for those not comfortable speaking up immediately, while trying to keep the team focused on the tasks at hand, showing moderate emotion perception and self-regulation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction. You acknowledged both perspectives and aimed for a balanced approach. You suggested combining quick decisions with detailed discussions, and the team agrees to brainstorm a combined approach. [Monica] and [Bob] seem to be taking sides, with [Monica] supporting Alex's quick decision-making and [Bob] favoring Lily's thorough discussions.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Monica nods in agreement with Alex, while Bob gives a supportive look to Lily. The tension in the room is palpable as the discussion continues.'",
+    "options": [
+      {
+        "text": "Let's take a moment to list the pros and cons of both approaches before making a final decision.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged a structured approach to resolving the conflict, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Monica and Bob, your input is valuable too. How do you think we can merge both approaches effectively?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You involved other team members in the discussion to find a balanced solution, demonstrating strong self-regulation and social skills."
+      },
+      {
+        "text": "This brainstorming session is a good start, but we need a clear action plan. Let's set a timeline to implement both strategies.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You aimed for a practical solution by proposing a clear action plan, showing good social skills and motivation."
+      }
+    ]
+  }
+}

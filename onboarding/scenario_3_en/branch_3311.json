@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly. You decide to skip the celebration and focus on the next project. Monica frowns and Bob looks disappointed. You reconsider and suggest a small celebration. Monica lights up and Bob nods in agreement. Monica suggests combining both suggestions with a small outdoor activity followed by a dinner, and Bob agrees. You decide to plan it that way.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "[Monica] comments, 'I'm so glad we found a solution that makes everyone happy.' [Bob] interjects with a smile, 'Yeah, it's perfect. Let's make sure we have everything ready.' You nod, but then [Monica] adds, 'By the way, we need someone to coordinate the details. Any volunteers?' Everyone looks at you again.",
+    "options": [
+      {
+        "text": "I can take charge of organizing the event. Let's make it memorable!",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This response shows high emotional detection and empathy by stepping up to take responsibility. It also demonstrates good social skills and motivation."
+      },
+      {
+        "text": "Maybe we should form a small committee to handle the details. That way, we can share the workload.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and social skills by suggesting a collaborative approach. Empathy is moderate as it shares the responsibility."
+      },
+      {
+        "text": "I think someone else would be more suited for this. I'm not the best at organizing events.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "This response shows lower emotional detection and empathy, as it shifts responsibility away. Social skills and motivation are low due to the passive tone."
+      }
+    ]
+  }
+}

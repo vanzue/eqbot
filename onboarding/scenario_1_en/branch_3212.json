@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You suggested taking a short break and coming back with a fresh perspective. [Monica] agreed, but [Bob] still seems skeptical. After the break, [Bob] says, 'Even with a break, I don't see how we're going to manage this.' You encouraged the team to stay focused and work together, showing good self-regulation and motivational skills. [Monica] adds, 'Yeah, we need a better plan or more resources.' Now, [Bob] crosses his arms and says, 'I'm still not convinced this will work. Maybe we need to rethink everything.' You acknowledged both Monica's and Bob's concerns and proposed a collaborative approach to solve the issue. [Monica] looks worried and says, 'I think we need more direction. What if we can't pull this off?' [Bob] sighs and says, 'We might just be setting ourselves up for failure.' You encouraged the team to stay focused and support each other, demonstrating good self-regulation and motivational skills. [Monica] fidgets with her pen and [Bob] continues to look skeptical.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Bob] leans back in his chair and says, 'I still think we're in over our heads here. What if this just leads to a complete disaster?'",
+    "options": [
+      {
+        "text": "I understand your concern, Bob. Let's dive deeper into the plan and identify specific risks. Monica, can you help with this?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Bob's concern and proposed a collaborative approach to identify and mitigate risks, demonstrating high levels of empathy and social skills."
+      },
+      {
+        "text": "We've dealt with challenging projects before, and we've always come through. Let's focus on what we can control and keep pushing forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to stay focused and draw on past successes, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "Maybe we should have a contingency plan in place. If things start to go off track, we can quickly adapt and make necessary changes.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested having a contingency plan, showing good emotional perception and self-regulation. However, this option might not fully address the team's immediate concerns."
+      }
+    ]
+  }
+}

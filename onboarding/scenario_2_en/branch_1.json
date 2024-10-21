@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex interrupts Lily's explanation and says, 'We don't have time for this, we need to act now!' while Lily looks frustrated.'",
+    "options": [
+      {
+        "text": "Alex, let's respect Lily's turn. Lily, please continue and we'll decide our next steps shortly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You asserted control over the situation, ensuring fairness and showing good emotional perception and empathy."
+      },
+      {
+        "text": "Alex, I understand your urgency, but interrupting won't help us move forward efficiently. Let's give Lily a chance to finish.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You addressed Alex's concerns while emphasizing the importance of listening, showcasing strong self-regulation and social skills."
+      },
+      {
+        "text": "Maybe we can speed things up by summarizing key points. Lily, can you quickly outline your main points?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You aimed for a compromise by asking for a concise summary, demonstrating good social skills and motivation to keep things moving."
+      }
+    ]
+  }
+}

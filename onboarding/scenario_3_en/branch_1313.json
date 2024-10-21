@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then decides to go with Sam's idea and hit the bar, thinking it might be the easiest option. Now, the team is discussing how to proceed with the plan. Monica raises an eyebrow, 'So, are we all okay with just going to the bar? What if some people aren't comfortable with that?' Bob nods, 'Yeah, maybe we should reconsider.' Alex suggests voting again, but Monica and Bob still seem uncertain about the plan.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "Monica frowns slightly, 'Alex, we need to make a decision soon. We can't keep going back and forth.' Bob looks frustrated, 'Yeah, it's getting a bit ridiculous.'",
+    "options": [
+      {
+        "text": "Let's go with the formal dinner. It's a safe choice and everyone can enjoy it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and maintains a calm demeanor, but it may come across as dismissive of other suggestions."
+      },
+      {
+        "text": "We could split into groups based on preference. Some can go to the bar, others to dinner, and the rest for the outdoor activity.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It demonstrates good social skills and motivation to find a compromise."
+      },
+      {
+        "text": "Maybe we should just cancel the celebration if we can't agree on one thing.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "This option reflects frustration and low motivation as it avoids making a constructive decision. It shows poor empathy and social skills by dismissing the celebration altogether."
+      }
+    ]
+  }
+}

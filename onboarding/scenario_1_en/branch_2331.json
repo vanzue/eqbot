@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. During a team meeting, [Monica] slammed her pen on the table and added, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nodded in agreement, looking equally concerned. You responded by focusing on motivating the team by recalling past successes. Monica's frustration is still palpable, and Bob's agreement seems to add to the tension. [Monica] then leaned back in her chair, crossing her arms, 'It's not just about trying hard; we need more resources.' [Bob] muttered, 'Yeah, we're drowning here.' You focused on motivating the team by recalling past challenges. [Monica] sighed deeply and said, 'Motivation alone isn't going to get us through this. We need concrete action.' [Bob] added, 'We need a plan that actually addresses our current capacity.' You acknowledged their concerns and suggested a pragmatic approach.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Bob] frowns and says, 'But even if we reassess, it's not going to magically solve our capacity issues.' [Monica] nods, 'Exactly. We need a real strategy, not just optimism.'",
+    "options": [
+      {
+        "text": "I understand. Let's work on a detailed action plan together. We can delegate tasks based on everyone's strengths and see where we might need extra hands.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged their concerns and proposed a collaborative and strategic approach, showing good emotional perception and empathy."
+      },
+      {
+        "text": "I see your point. We need to focus on what we can control and ensure we're using our resources as efficiently as possible.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You recognized the concerns but emphasized control and optimization, showing balanced emotional intelligence."
+      },
+      {
+        "text": "I get it, but let's not forget that we've faced worse and come out stronger. We can handle this if we stay committed.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You focused on motivating the team by recalling past challenges, showing high motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

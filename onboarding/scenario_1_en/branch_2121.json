@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. During a team meeting, [Monica] slammed her pen on the table and added, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nodded in agreement, looking equally concerned. You acknowledged Monica's feelings and suggested a pragmatic approach to prioritize work. The tension remained high. [Bob] then leaned back in his chair, crossing his arms, and said, 'Prioritizing won't change the fact that we’re understaffed and overworked. What’s the point?' You recognized Bob's concerns and suggested a practical approach to manage the workload. Despite the suggestions, the atmosphere was still tense. [Monica] looked at you intently, clearly still unconvinced, and said, 'Even delegating tasks won't change the fact that we simply don’t have enough time. What do you suggest we do next?' You proposed brainstorming to find possible shortcuts or efficiencies. Now, [Bob] sighs heavily and says, 'Even if we find a few shortcuts, it feels like we’re just putting a band-aid on a bigger problem.'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] fidgets with her notebook, her expression still one of doubt. The tension is palpable.",
+    "options": [
+      {
+        "text": "Bob, I understand. Maybe we need to have a deeper discussion about our processes and see if there are any systemic issues we can address long-term.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged Bob's broader concerns and suggested a long-term solution, demonstrating high empathy and good emotional perception."
+      },
+      {
+        "text": "I see your point, Bob. Let’s take a step back and think about whether we need to adjust our overall strategy to better handle these kinds of assignments in the future.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You recognized Bob's broader concerns and suggested a practical approach to manage similar situations in the future, showing good self-regulation and social skills."
+      },
+      {
+        "text": "We’ve managed tight deadlines before. If we stay focused and give it our all, we can achieve this. Let’s not get distracted by long-term issues right now.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You encouraged the team to stay focused and motivated by recalling past successes, demonstrating high motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

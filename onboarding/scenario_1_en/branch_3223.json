@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. One of the team members, Alex, says, 'This is impossible! We can't get this done in time.' You suggested taking a short break and coming back with a fresh perspective. [Monica] agreed, but [Bob] still seems skeptical. After the break, [Bob] says, 'Even with a break, I don't see how we're going to manage this.' You encouraged the team to stay focused and work together, showing good self-regulation and motivational skills. [Monica] adds, 'Yeah, we need a better plan or more resources.' Now, [Bob] crosses his arms and says, 'I'm still not convinced this will work. Maybe we need to rethink everything.' You reassured them by saying, 'We've faced tough situations before and succeeded. Let's keep our heads down and focus on the tasks. We can do this.' However, [Monica] still looks worried and says, 'I think we need more direction. What if we can't pull this off?' [Bob] looks conflicted but remains silent. You suggested taking a step back and reconsidering priorities, perhaps requesting additional resources. [Monica] fidgets with her pen and [Bob] glances around the room before saying, 'Honestly, I'm not sure we're even prioritizing the right tasks.'",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] sighs and says, 'Maybe we should just focus on the most critical parts and leave the rest.'",
+    "options": [
+      {
+        "text": "That could work. Let's identify the most crucial tasks and make sure they get done first. We can deal with the rest later.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Monica's suggestion and proposed a practical approach to prioritize tasks, demonstrating high empathy and social skills."
+      },
+      {
+        "text": "I think we need to stay the course and complete everything as planned. It's going to be tough, but we can manage if we stay organized.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You encouraged the team to stick to the original plan and stay organized, showing good self-regulation and motivational skills."
+      },
+      {
+        "text": "Maybe you're right, Monica. We might need to cut down on some tasks. Let's talk to the higher-ups and see if we can get some leeway.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested reassessing priorities and talking to management for possible adjustments, showing good emotional perception and self-regulation."
+      }
+    ]
+  }
+}

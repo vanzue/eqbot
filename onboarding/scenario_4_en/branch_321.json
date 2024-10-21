@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. A few hours later, you find yourself discussing this situation with Monica and Bob. After explaining that you believe Mark understood your need to set healthy boundaries, the conversation continues.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica]: 'Setting boundaries is important, but what if Mark doesn't respect them next time?' [Bob]: 'Yeah, and what if this affects your relationship with the team?'",
+    "options": [
+      {
+        "text": "I guess we’ll cross that bridge when we get there. For now, I think it's essential to stick to my boundaries.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You maintained clarity and self-regulation, reaffirming your boundaries. However, empathy and motivation towards team dynamics might need improvement."
+      },
+      {
+        "text": "I understand your concerns, but personal time off should be respected by everyone, including Mark.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You showed balanced emotional perception and social skills, but self-regulation and motivation to address team needs could be stronger."
+      },
+      {
+        "text": "If Mark can't respect my boundaries, then maybe we need to have a more serious conversation about this.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You maintained moderate emotional perception and self-regulation, but empathy and social skills were lower, indicating possible future tension."
+      }
+    ]
+  }
+}

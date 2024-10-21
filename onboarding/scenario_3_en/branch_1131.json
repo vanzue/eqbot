@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Alex then suggests a middle ground: a team-building activity followed by dinner, saving the bar for another time. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex suggests picking a place that has a bit of both—a bistro that’s casual but still has great food. Monica and Bob still seem unsure. You then suggest going with the majority's preference to avoid any conflicts. Monica rolls her eyes and says, 'So, we’re back to square one? Great.' Bob mutters, 'This is getting exhausting.' Alex then proposes to list out the pros and cons of each option. Monica taps her foot impatiently and says, 'Alex, we need to finalize this. We can’t keep going in circles.' Bob looks at you expectantly, waiting for a decisive answer.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "Monica sighs and says, 'Okay, let's list out the pros and cons quickly. But we need to decide soon.' Bob looks at his watch and mutters, 'Time is ticking, Alex.'",
+    "options": [
+      {
+        "text": "Alright, let's quickly jot down the main points. I think this will help us see things more clearly and make the best decision.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "This option shows good emotional detection and self-regulation by trying to bring structure to the decision-making process. It demonstrates empathy and social skill by involving everyone in listing pros and cons, but the motivation to push for a final decision is moderate."
+      },
+      {
+        "text": "I think we've discussed enough. Let's just choose the formal dinner and move forward.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and social skills by taking a decisive stand, but it demonstrates lower empathy as it leans toward one suggestion over others. The motivation is moderate as it tries to end the indecision."
+      },
+      {
+        "text": "Honestly, at this point, I'm wondering if it's worth all the stress. Maybe we should just hold off on celebrating for now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "This option reflects empathy and emotional detection by acknowledging the tension but shows lower social skills and motivation as it opts to cancel the celebration rather than finding a solution."
+      }
+    ]
+  }
+}

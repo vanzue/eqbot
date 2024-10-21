@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested reconsidering strategies and goals entirely if an agreement couldn't be reached. Tension still lingers. [Monica] and [Bob] exchange frustrated glances, clearly at odds.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "[Monica] and [Bob] exchange frustrated glances, clearly at odds.",
+    "options": [
+      {
+        "text": "Let's list out what we think are the main roadblocks and see if there's a pattern we can address.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You aimed to methodically identify and address roadblocks, demonstrating good emotional perception and self-regulation."
+      },
+      {
+        "text": "Monica, Bob, let's take a moment to reflect on how our individual approaches can complement each other rather than clash.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You encouraged reflection on complementary strengths, showing strong empathy and social skills."
+      },
+      {
+        "text": "If this continues, we might need to assign different roles based on our strengths to avoid further conflicts.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You suggested reassigning roles to leverage strengths and reduce conflict, demonstrating good social skills and motivation."
+      }
+    ]
+  }
+}

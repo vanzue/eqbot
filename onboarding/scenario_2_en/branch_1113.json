@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You reinforced the importance of listening and respecting each team member's input, asking Alex to respect the process and allowing Lily to continue. Lily finishes her points, but Alex still looks dissatisfied, crossing his arms and leaning back in his chair. You focused on moving forward by summarizing key points and suggesting a quick decision based on the discussion. Alex and Lily seem to have reached a temporary understanding, but the tension is still palpable. Bob, another team member, raises a concern about the deadline, adding to the stress.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Bob says, 'If we don't decide soon, we'll miss the deadline.' Alex and Lily look at each other, unsure of how to proceed.'",
+    "options": [
+      {
+        "text": "Let's focus on actionable steps. Bob, what are your suggestions to meet the deadline effectively?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You shifted the focus to practical solutions and empowered Bob to contribute, demonstrating good emotional perception and empathy."
+      },
+      {
+        "text": "We need to make a decision now. Alex, can you and Lily quickly summarize your main points?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You emphasized the urgency while ensuring both Alex and Lily's points are heard, showcasing strong self-regulation and social skills."
+      },
+      {
+        "text": "Bob's right. Let's quickly decide based on what we've discussed so far and move forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You aimed to expedite the decision-making process, demonstrating good social skills and motivation to keep the project on track."
+      }
+    ]
+  }
+}

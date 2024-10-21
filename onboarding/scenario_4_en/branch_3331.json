@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. [Monica]: 'I can't believe Mark asked you to work during your leave. That's so inconsiderate.' [Bob]: 'Yeah, but sometimes work emergencies happen. How did you handle it, Alex?' You: 'I told Mark I’d help this time but asked him to handle such tasks without me in the future.' [Monica]: 'Did Mark at least thank you?' [Bob]: 'And did he promise not to bother you again?' You: 'He did appreciate my help, but it seemed like he didn't fully get the message.' [Monica]: 'So, what will you do if this happens again?' [Bob]: 'Yeah, what’s your plan for next time?' You: 'I guess I'll have to remind him more firmly about my boundaries.'",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica]: 'Reminding him is good, but what if reminding doesn't work?' [Bob]: 'Yeah, what if he still keeps bothering you?'",
+    "options": [
+      {
+        "text": "I'll escalate the issue to our manager if it continues.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed strong self-regulation by planning to escalate the issue, but your empathy and motivation towards resolving it directly could be improved."
+      },
+      {
+        "text": "I'll try having a more in-depth conversation with Mark to ensure he understands.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed high empathy and good social skills by planning to have a more detailed conversation, while maintaining balanced emotional perception and self-regulation."
+      },
+      {
+        "text": "I'll probably just go along with it if it happens again, it's not worth the hassle.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You displayed low self-regulation and motivation by considering to go along with it, though your empathy was slightly better."
+      }
+    ]
+  }
+}

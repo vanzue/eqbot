@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] are now discussing how to proceed with the plan. You suggested an escape room for the outdoor activity and a semi-formal dinner, which some team members liked. [Monica] and [Bob] are still debating the final details. You proposed a short hike followed by a picnic to combine outdoor fun with a relaxed vibe. [Monica] and [Bob] are thinking about it while discussing the specifics.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "[Monica] says, 'A short hike followed by a picnic sounds nice, but what if we get bad weather? Should we have a backup plan?' [Bob] adds, 'And what kind of food should we bring? Should we assign dishes or just let everyone decide on their own?' Everyone is waiting for your input.",
+    "options": [
+      {
+        "text": "Let's plan for a picnic, but have an indoor backup like a potluck at someone's house in case of bad weather.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This option shows a high level of emotional detection and empathy by considering the possibility of bad weather and having a backup plan. It also demonstrates good social skills and motivation."
+      },
+      {
+        "text": "I think we should stick to the plan. If it rains, we can just have the picnic under a shelter. As for food, let everyone decide what to bring.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it might not address everyone's concerns about weather and food organization."
+      },
+      {
+        "text": "Maybe a picnic isn't the best idea. Let's just book a restaurant and avoid the hassle of planning around the weather and food.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "This option reflects a practical approach but shows slightly lower empathy and motivation as it suggests abandoning the original plan."
+      }
+    ]
+  }
+}

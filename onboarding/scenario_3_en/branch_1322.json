@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex decides to stick to Emma's suggestion of a formal dinner to keep things simple. Monica and Bob appear to be processing this decision, with Monica tapping her foot and Bob scratching his head. After reconsidering, Alex suggests switching to the outdoor team-building activity as a more engaging option. Monica and Bob still seem unsure and are waiting for further clarification.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "Monica raises an eyebrow and says, 'So, we're changing the plan again? How are we supposed to keep up?' Bob sighs, 'Yeah, this back and forth is getting tiring.' Both Monica and Bob look at you with a mix of frustration and expectation.",
+    "options": [
+      {
+        "text": "The outdoor team-building activity will be a refreshing change. Let's give it a shot and see how it goes.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This option shows a high level of emotional detection and empathy by trying to make the outdoor activity more appealing. It demonstrates good social skills and motivation to keep everyone engaged."
+      },
+      {
+        "text": "I understand this is frustrating. Maybe we should stick to the initial plan and just go with Emma's formal dinner.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and maintains a calm demeanor, but it may come across as indecisive by reverting to an earlier suggestion."
+      },
+      {
+        "text": "If this back and forth is too much, maybe we should just let everyone decide for themselves how they want to celebrate.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "This option shows good social skills by trying to avoid further conflict but demonstrates lower empathy and motivation as it suggests abandoning a unified celebration."
+      }
+    ]
+  }
+}

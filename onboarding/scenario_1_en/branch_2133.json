@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are leading a project team that has just received an urgent assignment requiring a significant amount of work to be completed within a tight deadline. The team is feeling a lot of pressure, and morale is low, with some members showing signs of frustration and anxiety. Previously, when one of the team members, Alex, said, 'This is impossible! We can't get this done in time,' you responded by encouraging the team to stay focused and work together. Following that, during a team meeting, [Monica] slammed her pen on the table and added, 'Even if we try our best, there's no way we can meet this deadline.' [Bob] nodded in agreement, looking equally concerned. You acknowledged Monica's feelings and suggested a pragmatic approach to prioritize work, but the tension remained high. [Bob] then leaned back in his chair, crossing his arms, and said, 'Prioritizing won't change the fact that we’re understaffed and overworked. What’s the point?' You tried to motivate the team by recalling past successes. [Monica] sighed deeply and said, 'I just don't see how working smart will get us through this. What if we miss the deadline? What then?' [Bob] looked at you expectantly, waiting for your response. You downplayed the consequences of missing the deadline, focusing on immediate actions.",
+    "role": "Lead",
+    "location": "Office",
+    "description": "[Monica] crosses her arms and looks away, clearly still unconvinced. [Bob] stands up and starts pacing, saying, 'Honestly, this entire project feels like a setup for failure. Why aren't we pushing back against this unrealistic deadline?'",
+    "options": [
+      {
+        "text": "Bob, I understand your frustration. Maybe we should have a discussion with upper management about the feasibility of this deadline.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged Bob's frustration and proposed a solution to discuss the deadline with upper management, demonstrating high empathy and good emotional perception."
+      },
+      {
+        "text": "I get it, Bob. Let's take a moment to think about how we can present a case to management for more reasonable expectations.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You recognized Bob's concerns and suggested a practical approach to manage expectations with management, showing good self-regulation and social skills."
+      },
+      {
+        "text": "We've been given this deadline for a reason, and we need to focus on what we can control. Complaining won't solve anything.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 5
+        },
+        "analysis": "You focused on the importance of staying on task and discouraged complaining, showing good self-regulation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

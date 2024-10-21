@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned. [Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.' You acknowledged the collective impact and suggested a group discussion on handling these situations better.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "As you discuss the situation further with [Monica] and [Bob], [Monica] sighs, 'We need to be on the same page as a team.' [Bob] adds, 'It's about fairness and respect for everyone's time.'",
+    "options": [
+      {
+        "text": "I hear you both. Let's set some clear guidelines to prevent this from happening again.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed good emotional perception and empathy by listening to their concerns and suggesting clear guidelines, but your motivation to set boundaries could be enhanced."
+      },
+      {
+        "text": "I understand your frustration. Let's try to find a balance that works for everyone.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You maintained good self-regulation by acknowledging their frustration and seeking a balance, but showed moderate empathy and motivation."
+      },
+      {
+        "text": "I get it, but sometimes we have to be flexible. We'll figure it out as we go.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the need for flexibility and showed motivation to adapt, but your empathy towards their concerns was lacking."
+      }
+    ]
+  }
+}

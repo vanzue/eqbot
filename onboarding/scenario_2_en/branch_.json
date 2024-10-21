@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex and Lily start arguing about the best approach to take for an important task.'",
+    "options": [
+      {
+        "text": "Let's take a step back and hear each other out. Alex, why don't you go first and then we'll hear Lily's perspective?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You mediated the conflict by encouraging both sides to express their views, demonstrating good emotional perception and empathy."
+      },
+      {
+        "text": "Alex, I understand your need for quick action, but let's also consider Lily's approach to ensure we don't miss any crucial details.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged both perspectives and aimed for a balanced approach, showing strong self-regulation and social skills."
+      },
+      {
+        "text": "This conflict shows we need a better strategy. Let's brainstorm a combined approach that leverages both quick decisions and thorough discussions.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You proposed a collaborative solution, demonstrating good social skills and motivation to resolve the conflict."
+      }
+    ]
+  }
+}

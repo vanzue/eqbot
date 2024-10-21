@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned.",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.'",
+    "options": [
+      {
+        "text": "I understand the bigger picture. Let's discuss how we can all handle these situations better.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You showed high emotional perception and empathy by acknowledging the collective impact, and good social skills by suggesting a group discussion, but your motivation to assert boundaries could improve."
+      },
+      {
+        "text": "I see your point, but this was a one-time thing. Let's not blow it out of proportion.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You maintained good self-regulation and justified your action as an exception, but showed less empathy towards the broader concern."
+      },
+      {
+        "text": "We all need to be flexible sometimes. If it happens again, I'll make sure to push back.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You balanced the conversation by admitting the need for flexibility while promising to set boundaries in the future, showing moderate scores in all dimensions."
+      }
+    ]
+  }
+}

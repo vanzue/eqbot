@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark then replied, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You agreed to help, asking Mark to send you the details. Now, you're working through the task and manage to complete it, but you feel a bit frustrated as your time off was interrupted. You inform Mark that the task is completed. He responds with, 'Thanks, Alex. I knew I could count on you. By the way, Monica and Bob were discussing this issue earlier, and they think it might be good if you could join their call later to explain your approach.' You replied, 'I understand the importance, but I need to rest. Can we schedule a follow-up session once I'm back?'",
+    "role": "Alex",
+    "location": "Home",
+    "description": "Mark replies, 'That sounds reasonable. I'll let them know. Take care!' A few days later, back at work, you find yourself in a meeting with Monica and Bob. During the meeting, Monica says, 'Alex, we really appreciated your help last week. How do you manage to stay so calm under pressure?'",
+    "options": [
+      {
+        "text": "It's all about practice and experience. I've learned to adapt over time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You provided a balanced and professional response, showing good self-regulation and social skills, although your motivation could be seen as lacking."
+      },
+      {
+        "text": "Honestly, it can be tough. But I try to focus on the task at hand and not let emotions get in the way.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You gave a realistic and relatable response, displaying a balanced approach across all emotional intelligence dimensions."
+      },
+      {
+        "text": "Well, sometimes you just have to put your feelings aside and get the job done, even if it means sacrificing personal time.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You showed high emotional perception and motivation but indicated a lower level of empathy and self-regulation by acknowledging the personal sacrifice."
+      }
+    ]
+  }
+}

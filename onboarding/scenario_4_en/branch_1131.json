@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded, 'I get what you're saying, but I felt it was necessary this time. I'll be more careful in the future.' [Monica] nods thoughtfully and says, 'I understand, but it's important to take care of yourself too.' [Bob] shrugs, 'Well, it's done now. Let's just hope it doesn't become a trend.' You replied, 'If it becomes a problem, I'll address it then. For now, let's not worry too much.' [Monica] sighs, 'I just don't want you to get burned out, Alex.' [Bob] adds, 'Yeah, it's not fair for you to always be the go-to person for emergencies.' You responded, 'I hear you both. I'll make sure to take it easy and not always be the first to jump in.'",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica] looks at you with concern, 'I really hope you mean that, Alex. It's just not healthy to always be on call.' [Bob] adds with a slight frown, 'Remember, it's okay to say no sometimes.'",
+    "options": [
+      {
+        "text": "I'll definitely keep that in mind. Thanks for the advice.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged their advice and showed empathy, but your motivation to proactively change your behavior could be higher."
+      },
+      {
+        "text": "I appreciate your concern. I'll try to find a better balance moving forward.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed high empathy and social skills by expressing appreciation for their concern, but self-regulation could be improved as you didn't fully commit to setting boundaries."
+      },
+      {
+        "text": "I get what you're saying, but it's sometimes just easier to handle things myself.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You chose to justify your actions, showing moderate self-regulation but lower empathy and emotional perception towards their concerns."
+      }
+    ]
+  }
+}

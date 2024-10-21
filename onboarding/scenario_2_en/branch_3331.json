@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, [Monica] and [Bob] further escalated the situation with their body language and comments. You suggested bringing in an external consultant for a fresh perspective, but the tension remains.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "[Monica] throws her hands up in the air and says, 'Seriously? We can't even solve this on our own?' [Bob] smirks and adds, 'Maybe we just need better leadership.'",
+    "options": [
+      {
+        "text": "Let's try to focus on the solution rather than the blame. How about we list down our individual concerns?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You tried to redirect the conversation towards problem-solving while showing good empathy and self-regulation."
+      },
+      {
+        "text": "If you both think you can do better, I'm open to hearing your suggestions on how to lead this project.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You responded to the criticism by inviting constructive feedback, showing a moderate level of emotional perception and motivation."
+      },
+      {
+        "text": "We can argue all day, but it's not productive. Let's agree on the next steps and move forward.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You aimed to cut through the argument and push for progress, showing strong emotional perception and self-regulation."
+      }
+    ]
+  }
+}

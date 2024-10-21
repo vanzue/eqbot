@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you suggested Alex and Lily find a compromise that respects both approaches. Now, [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, still showing signs of tension, continue discussing their approaches. Monica and Bob exchange glances, clearly uneasy with the ongoing tension.",
+    "role": "Team Leader",
+    "location": "Project Meeting Room",
+    "description": "'Alex, still visibly frustrated, takes a deep breath and leans forward, while Lily's expression remains focused but tense. Monica and Bob shift uncomfortably in their seats.'",
+    "options": [
+      {
+        "text": "Let's take a moment to reflect on what's really important here. Can we focus on our common goal and set aside our differences for now?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the common goal to defuse the tension and refocus the team, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Alex, while your need for quick decisions is valid, we must also value Lily's thorough approach. How about we divide the tasks so that each of you can work in your preferred style?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged both perspectives again and suggested a practical solution, demonstrating empathy and social skills."
+      },
+      {
+        "text": "This ongoing tension is not productive. Maybe we need to rethink our team dynamics and assign roles that better match individual strengths.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You proposed a broader strategy adjustment, showing good motivation and social skills."
+      }
+    ]
+  }
+}

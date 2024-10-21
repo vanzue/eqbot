@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] are now discussing how to proceed with the plan.",
+    "role": "Alex",
+    "location": "Office Conference Room",
+    "description": "[Monica] says, 'I think we should finalize the details soon. What kind of outdoor activity should we do?' [Bob] responds, 'Yeah, and what kind of dinner are we thinking about? Something fancy or more casual?' Everyone is waiting for your input.",
+    "options": [
+      {
+        "text": "Let's do a simple hike followed by a dinner at a nice restaurant. It keeps things balanced.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
+      },
+      {
+        "text": "How about an escape room for the outdoor activity? It’s fun and engaging. For dinner, something semi-formal should be perfect.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it might not appeal to everyone."
+      },
+      {
+        "text": "Honestly, we could just go for a picnic. It's easy to organize and everyone can bring something they like.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "This option reflects a balanced approach but shows slightly lower motivation as it suggests a simpler plan."
+      }
+    ]
+  }
+}

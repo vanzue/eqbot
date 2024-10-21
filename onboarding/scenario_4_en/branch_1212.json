@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'. You explained your actions to Monica and Bob saying, 'I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.' Now, they seem unconvinced. [Monica] raises an eyebrow and says, 'But where do you draw the line, Alex?' [Bob] nods in agreement, adding, 'Yeah, you can't always be the go-to person.' You acknowledged their concerns and showed empathy by saying, 'I understand your point. I'll try to establish clearer boundaries going forward.' [Monica] crosses her arms and says, 'We'll see if you can stick to that, Alex.' [Bob] shrugs, adding, 'It's not just about setting boundaries. It's about respecting them too.' You responded by saying, 'I hear you, but I think there's always room for exceptions in urgent situations.'",
+    "role": "Alex",
+    "location": "Home",
+    "description": "[Monica] lets out a sigh, saying, 'I just hope it doesn't become a habit.' [Bob] nods, 'Yeah, we've seen this pattern before.'",
+    "options": [
+      {
+        "text": "I understand your concerns. I'll make a conscious effort to prevent this from becoming a habit.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged their concerns and showed empathy, but your motivation to stick to boundaries could be improved."
+      },
+      {
+        "text": "I get it, but sometimes we have to be flexible and deal with things as they come.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed good emotional perception and social skills by explaining your actions, but your self-regulation might need improvement."
+      },
+      {
+        "text": "I hear you, but I believe in being adaptable. If it gets too much, I'll address it then.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+      }
+    ]
+  }
+}
