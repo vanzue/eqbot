@@ -11,7 +11,6 @@ router = APIRouter()
 async def line_webhook(request: Request):
   # Read the request body as text for debugging
   body = await request.body()
-  print(f"Received body: {body.decode('utf-8')}")  # Log the raw body
 
   try:
     # Parse the JSON
