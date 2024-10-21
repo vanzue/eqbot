@@ -198,6 +198,10 @@ def get_coursesperson_by_person_id(db: Session, person_id: int, course_id: int):
     return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id, 
                                                        models.PersonalInfoCourses.course_id==course_id).one_or_none()
 
+def course_exists(db: Session, person_id:int):
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id).first() is not None    
+
+
 
 def update_personal_info_course(db: Session, person_id: int, course_id: int, course_level: int = None, status: str = None, result: int = None, comment1: str = None, comment2: str = None, comment3: str = None):
     course = db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id==person_id, 
