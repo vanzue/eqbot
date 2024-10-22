@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You agreed to help your colleague with the urgent task for a short time and will hand it off to someone else later. However, as you're working on it, [Monica] messages you. You replied that you're in the middle of it and will send her the details soon. As you continue working, [Bob] walks over to your desk and says,",
+    "role": "Bob",
+    "location": "Office",
+    "description": "'Hey, I thought you were on leave? Why are you even here?'",
+    "options": [
+      {
+        "text": "I know, but there was an urgent task that needed immediate attention. I'll be handing it off soon.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You explained the situation clearly, showing good social skills and motivation. However, empathy might be lacking as Bob might feel you're not respecting your own boundaries."
+      },
+      {
+        "text": "Yeah, it’s not ideal, but I’m just trying to help out. I’ll be done soon.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the difficulty of the situation, showing good emotional perception and empathy. However, motivation might be lower as you don't seem fully committed to the task."
+      },
+      {
+        "text": "I’m only here for a short time to handle something urgent. I'll be gone soon.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You focused on the urgency of the task, showing good self-regulation and motivation. However, social skills could be better as Bob might feel you're brushing off his concern."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to assist despite being on leave, showing good emotional control and motivation. However, this impacted your ability to recharge effectively. You quickly took a look at the task and realized it required more effort than initially thought. When asked to stay on it longer, you prioritized your time off and declined, indicating that someone else would need to take over. Monica and Bob discuss the situation after your decision. You agreed to help out this one time, but made it clear that you can't keep doing this.",
+    "role": "Monica",
+    "location": "Office Chat",
+    "description": "[Monica] says, 'Bob's right. This task is really critical. Are you sure you can't just handle it this one time?' She looks at you expectantly.",
+    "options": [
+      {
+        "text": "I understand it's important, but I can't keep making these exceptions. My break is vital for my effectiveness.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You emphasize the importance of your break and maintaining boundaries, showing good emotional perception and self-regulation, but empathy and motivation are lower."
+      },
+      {
+        "text": "Alright, I'll help out, but we need to find a long-term solution for these kinds of situations.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You agree to help out while addressing the need for a long-term solution, showing good empathy and social skills, but motivation and self-regulation could be higher."
+      },
+      {
+        "text": "I already made an exception this time. It's not fair to keep asking for more.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You stand firm on your decision, showing good emotional perception and motivation, but empathy and social skills are lower."
+      }
+    ]
+  }
+}

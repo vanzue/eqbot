@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task.",
+    "role": "[Colleague]",
+    "location": "Messaging App",
+    "description": "'Hey, there's an urgent task that really needs your attention. Could you please help?'",
+    "options": [
+      {
+        "text": "I understand the urgency, but I am currently on leave. Can you ask someone else to take care of it?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You recognized the urgency but maintained your boundary, demonstrating strong emotional control and perception."
+      },
+      {
+        "text": "I can help out, but I need some time to get to a place where I can work on it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You agreed to help, showing empathy and motivation, but you may need to work on maintaining your boundaries better."
+      },
+      {
+        "text": "I’m really sorry, but I need this break to recharge. Can we find a way to handle this without my immediate involvement?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged your need for a break and politely declined, showing good emotional control and social skills."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to assist despite being on leave, showing good emotional control and motivation. However, this may impact your ability to recharge effectively. You decide to quickly take a look at the task and realize it requires more effort than initially thought. After deciding to handle the task but delegate some parts, you reached out to [Bob] for support. After clarifying your stance with [Bob], [Monica] reaches out to you.",
+    "role": "Monica",
+    "location": "Video Call",
+    "description": "[Monica] crosses her arms and says, 'I heard you’re handling the task but delegating parts. Are you sure that’s fair to the rest of us?'",
+    "options": [
+      {
+        "text": "It's a team effort, Monica. I believe we can all pitch in.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You emphasize teamwork and collective responsibility, showing good social skills. However, empathy and emotional perception could be improved."
+      },
+      {
+        "text": "I understand your concern, but this is the best way to get it done efficiently.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledge the concern and justify your decision, showing good emotional perception and motivation. However, social skills could be higher."
+      },
+      {
+        "text": "I'm doing my part while on leave. I hope you can appreciate that.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You assert your contributions, showing good self-regulation and emotional control. However, emotional perception and motivation could be improved."
+      }
+    ]
+  }
+}

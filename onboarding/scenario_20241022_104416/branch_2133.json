@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to express doubt about the urgency of the task. [Monica] and [Bob] are now visibly frustrated, and the conversation has moved to a video call to resolve the issue.",
+    "role": "Monica",
+    "location": "Video Call",
+    "description": "'Look, we really need your help. This project is critical, and we're running out of time. Can't you just log in for an hour?'",
+    "options": [
+      {
+        "text": "I understand the urgency, but I need this break to recharge. How about I guide someone through it instead?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the urgency and offered a compromise by guiding someone else, showing good emotional perception and empathy. However, motivation to directly handle the task was lower."
+      },
+      {
+        "text": "I could help out a bit, but I really need to maintain my break. Could we find a middle ground?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offered a compromise, displaying good social skills and emotional balance. However, motivation and self-regulation could be improved."
+      },
+      {
+        "text": "It's hard to believe there's no one else who can handle this. Why is this task so urgent anyway?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You expressed doubt about the urgency and questioned the situation, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

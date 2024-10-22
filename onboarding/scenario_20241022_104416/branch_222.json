@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to assist for a short time but reiterated your need to recharge. Despite your compromise, [Monica] and [Bob] continue the discussion in the office group chat, expressing their frustration.",
+    "role": "Monica",
+    "location": "Office Group Chat",
+    "description": "'We really appreciate your help, but it feels like you're not fully committed to the team. Can't you just push through this one time?'",
+    "options": [
+      {
+        "text": "I understand your frustration. Let's try to find a way to distribute the workload more evenly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the team's frustration and suggested a solution, showing good emotional perception and social skills. However, empathy and motivation were lower."
+      },
+      {
+        "text": "I can pitch in for a bit longer, but I really need to step back soon.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You reiterated your willingness to assist while maintaining your need for rest, showing good emotional control. Social skills and motivation could be improved."
+      },
+      {
+        "text": "I find it hard to believe there's no one else who can help. My break is truly important.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the importance of your break, showing good empathy and motivation. However, emotional perception and social skills were lacking."
+      }
+    ]
+  }
+}

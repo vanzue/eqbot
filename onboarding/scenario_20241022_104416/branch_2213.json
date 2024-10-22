@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You emphasized the importance of your break, but [Monica] and [Bob] remain concerned about the task and continue to discuss it in the office group chat.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'I get that you need time off, but we're really struggling without your expertise. How can we ensure this gets done well?'",
+    "options": [
+      {
+        "text": "Let's have a quick call to outline the key points, and I'll guide you through what needs to be done.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offered practical support while maintaining your distance, showing good emotional perception and social skills. However, empathy and motivation were lower."
+      },
+      {
+        "text": "I can provide some guidance, but I need someone else to take the lead on this.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You reiterated your willingness to assist while setting boundaries, showing good emotional control. Social skills and motivation could be improved."
+      },
+      {
+        "text": "I understand the struggle, but I really need this time to rest. Someone else must step up.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the importance of your break, showing good empathy and motivation. However, emotional perception and social skills were lacking."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You agreed to help your colleague with the urgent task for a short time and will hand it off to someone else later. However, as you're working on it, [Monica] messages you, 'Hey, I just heard you're working on the urgent task. Can you give me a quick update?'",
+    "role": "Monica",
+    "location": "Messaging App",
+    "description": "'Hey, I just heard you're working on the urgent task. Can you give me a quick update?'",
+    "options": [
+      {
+        "text": "I'm in the middle of it, but I'll send you the details soon.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You chose to keep working while promising to update later, showing good emotional control and motivation. However, empathy might be lacking as Monica might need the update urgently."
+      },
+      {
+        "text": "I'm really busy with this right now. Can you wait until I'm done?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You prioritized your own work, showing good emotional perception and empathy. However, interpersonal balance could be better as Monica might feel ignored."
+      },
+      {
+        "text": "I can give you a brief update, but I'll need to get back to work quickly.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You chose a middle ground, offering a brief update while emphasizing the need to continue working. This shows good social skills and emotional balance, though motivation and self-regulation might be higher."
+      }
+    ]
+  }
+}

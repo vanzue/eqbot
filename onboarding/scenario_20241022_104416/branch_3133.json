@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to assist despite being on leave, showing good emotional control and motivation. However, this may impact your ability to recharge effectively. You decide to quickly take a look at the task and realize it requires more effort than initially thought. You commit to finishing the task, showing high motivation and self-regulation, but social skills and emotional perception could be improved. Now, Monica and Bob are discussing the progress of the task with you. You mentioned that you should be able to wrap it up in a couple of hours, but it's been quite draining. Monica looks concerned and says:",
+    "role": "Monica",
+    "location": "Team Chat",
+    "description": "'I understand it's been tough. Do you think we should ask someone else to help you out?'",
+    "options": [
+      {
+        "text": "I think I can manage, but it wouldn't hurt to have some backup just in case.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You show empathy by acknowledging the difficulty and social skill by suggesting backup, but your self-regulation is slightly lower."
+      },
+      {
+        "text": "If you can find someone to help, that would be great. I'm really close to finishing though.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You show good emotional perception and empathy by being honest, but social skills could be improved."
+      },
+      {
+        "text": "I'd rather just finish it myself. Getting someone else up to speed will take more time.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You show high motivation by wanting to complete the task yourself, but emotional perception and empathy are low."
+      }
+    ]
+  }
+}

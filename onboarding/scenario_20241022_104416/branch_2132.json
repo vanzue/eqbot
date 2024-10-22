@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to offer a middle ground by helping out for a bit but maintaining your break. [Monica] and [Bob] are now discussing the situation more heatedly on the video call, and you can feel the tension rising.",
+    "role": "Bob",
+    "location": "Video Call",
+    "description": "'I appreciate your offer, but we really need full commitment on this. Could you extend your help a bit longer?'",
+    "options": [
+      {
+        "text": "I understand the need, but I can't compromise my well-being. Maybe we can arrange for some extra help?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the urgency and suggested finding additional help, showing good emotional perception and empathy. However, motivation to directly handle the task was lower."
+      },
+      {
+        "text": "I can extend my help for a little longer, but I really do need to get back to my break soon.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offered to extend your help, showing good social skills and emotional balance. However, motivation and self-regulation could be improved."
+      },
+      {
+        "text": "I'm finding it hard to believe there's no one else who can step in. Why wasn't this planned better?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You questioned the planning and urgency, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

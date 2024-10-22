@@ -1,0 +1,84 @@
+{
+  "scenes": {
+    "background": "After responding to your colleague, you continue your leave. The next day, [Monica] and [Bob] approach you in the break room. [Monica] leads the conversation, while [Bob] stands by, seemingly supportive but silent.",
+    "role": "Monica",
+    "location": "Break Room",
+    "description": "'Hey, we noticed you didn’t help out with the task yesterday. It put a lot of pressure on the team. What’s your justification?'",
+    "options": [
+      {
+        "text": "I thought my break was important to maintain my productivity.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You defended your need for a break, showing empathy for yourself and motivation to stay productive. However, your social skills and emotional regulation could be improved."
+      },
+      {
+        "text": "I apologize if it caused any trouble. I needed that time to recharge.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed empathy and emotional perception by apologizing and explaining your need for rest. However, your motivation might come into question."
+      },
+      {
+        "text": "I understand it was tough, but my break was planned long ago.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You maintained emotional control and social skills. However, your empathy and emotional perception might seem lacking."
+      }
+    ]
+  },
+  "next_scene": {
+    "background": "After your explanation, [Monica] sighs and [Bob] nods slightly, giving you a look of understanding. [Monica] continues the conversation with a hint of frustration, while [Bob] now seems more neutral.",
+    "role": "Monica",
+    "location": "Break Room",
+    "description": "'Well, it’s done now. But we have another project coming up and we need all hands on deck. Can we count on you this time?'",
+    "options": [
+      {
+        "text": "I’ll see what I can do, but I can’t promise anything right now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You gave an unclear response, showing some level of emotional perception and self-regulation but lacking in empathy and motivation."
+      },
+      {
+        "text": "Sure, I’ll help out as much as I can.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You agreed to help, showing high empathy and social skills. However, emotional perception and self-regulation are lower."
+      },
+      {
+        "text": "I’ll try, but don't expect me to handle everything on my own.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You agreed with a condition, showing good emotional control and balance. However, social skills and empathy could be improved."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You responded: 'I understand the urgency, but I am currently on leave. Can you ask someone else to take care of it?' [Monica] replied: 'I understand, but you're the only one who can handle this correctly. It's really important for the project.' You then responded: 'I can help out, but I need some time to get to a place where I can work on it.'",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "[Bob] says: 'I can't believe you couldn't handle it right away. We really needed you.'",
+    "options": [
+      {
+        "text": "I understand it's frustrating, but I also need to take care of myself to be effective when I return.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the frustration and explained your need for self-care, showing emotional control and balanced empathy."
+      },
+      {
+        "text": "I did my best given the circumstances. Maybe we can find a better way to handle such situations in the future.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You expressed understanding and offered a constructive suggestion for future improvements, showing empathy and motivation."
+      },
+      {
+        "text": "I think it's unfair to put all the responsibility on me when I'm on leave. We need a better backup plan.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You pointed out the unfairness and suggested a need for a better plan, showing social skills but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

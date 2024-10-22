@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to assist despite being on leave, showing good emotional control and motivation. However, this may impact your ability to recharge effectively. You decide to quickly take a look at the task and realize it requires more effort than initially thought. You commit to finishing the task, showing high motivation and self-regulation, but social skills and emotional perception could be improved. Now, [Monica] and [Bob] are discussing the progress of the task with you. You asked [Bob] if he could handle some of the pending issues.",
+    "role": "Monica",
+    "location": "Team Chat",
+    "description": "[Monica] says, 'I understand it's been tough. What if we split the remaining work? How do you feel about that?'",
+    "options": [
+      {
+        "text": "That sounds fair. Let's divide the tasks and get it done together.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You chose to collaborate, showing good empathy and maintaining a balanced approach, but the emotional perception and self-regulation could be improved."
+      },
+      {
+        "text": "I appreciate the offer, but I think I can handle it if I push through.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You show high self-regulation and motivation by choosing to handle the task alone, but empathy and emotional perception are lower."
+      },
+      {
+        "text": "Honestly, I'm already quite drained. Maybe it's best if you take over from here.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You show good emotional perception by acknowledging your exhaustion, but self-regulation and motivation are lower."
+      }
+    ]
+  }
+}

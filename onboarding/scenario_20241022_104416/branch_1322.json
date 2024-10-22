@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help for a short time but emphasized that you would need to hand it off to someone else after that. You informed your colleagues [Monica] and [Bob] about your decision, and now you're in a video call with them discussing the situation. You agreed to extend your support a bit longer if necessary.",
+    "role": "Bob",
+    "location": "Video Call",
+    "description": "[Bob] raises an eyebrow and says, 'I get that you're on leave, but isn't this part of our responsibility? What if this affects our team's performance?'",
+    "options": [
+      {
+        "text": "Let's focus on the task at hand first and then discuss responsibilities.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offered an abstract response, showing balanced emotional perception and social skills, but motivation could be higher."
+      },
+      {
+        "text": "You're right; I'll stay on as long as needed to ensure everything's covered.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You agreed to extend your support fully, showing self-regulation and motivation, but empathy and emotional perception could be improved."
+      },
+      {
+        "text": "I already made it clear that someone else needs to take over after a while.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You reiterated your stance, showing good emotional perception and empathy, but self-regulation and social skills were less prominent."
+      }
+    ]
+  }
+}

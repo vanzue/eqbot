@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You offered to help out a bit but emphasized needing to hand off the task soon. A little later, [Monica] and [Bob] are still discussing the situation in the office group chat.",
+    "role": "Monica",
+    "location": "Office Group Chat",
+    "description": "'We appreciate your willingness to help, but we really need someone to take full responsibility. Can you reconsider?'",
+    "options": [
+      {
+        "text": "I'm really stretched thin and can't commit fully right now. How about we split the task among multiple people?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the need for help but suggested a practical solution, showing good emotional perception and empathy, though social skills were a bit lacking."
+      },
+      {
+        "text": "I can help a bit more, but I still need to hand it off soon. Maybe we can find another person to co-manage it?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You reiterated your willingness to assist while suggesting a co-management approach, displaying good social skills and emotional balance but lower motivation."
+      },
+      {
+        "text": "It seems like this urgent task is becoming an expectation rather than an exception. Shouldn't we address the root cause?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You pointed out a potential systemic issue, showing good emotional control and motivation, but empathy and emotional perception were weaker."
+      }
+    ]
+  }
+}

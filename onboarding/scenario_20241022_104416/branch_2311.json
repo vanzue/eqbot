@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You emphasized the importance of breaks for productivity, showing good emotional perception and empathy. A few days later, [Monica] and [Bob] continue the discussion during a team meeting.",
+    "role": "Bob",
+    "location": "Team Meeting Room",
+    "description": "'I see your point about needing breaks, but we have to find a way to handle emergencies without relying on time off. Any ideas on how to make this work for everyone?'",
+    "options": [
+      {
+        "text": "Perhaps we could create a rotating on-call schedule, so everyone gets their time off while still having someone available for emergencies.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You suggested a practical solution, showing good emotional control and balance. However, the response could be more empathetic."
+      },
+      {
+        "text": "I think it's essential to have a backup plan where the team can cover for each other without compromising anyone's break.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You emphasized the importance of teamwork and support, showing good emotional perception and empathy. However, it lacks strong social skills."
+      },
+      {
+        "text": "While it's important to be prepared, it feels unfair to expect people to give up their break time for emergencies.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You highlighted the need for fair expectations, showing good social skills and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

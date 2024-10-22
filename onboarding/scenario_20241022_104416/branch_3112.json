@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to assist despite being on leave, showing good emotional control and motivation. However, this may impact your ability to recharge effectively. You decide to quickly take a look at the task and realize it requires more effort than initially thought. After deciding to handle the task but delegate some parts, you reached out to [Bob] for support and agreed to complete the task with his help. Now, you and [Bob] are discussing the task over a video call, when [Monica] joins the call.",
+    "role": "Monica",
+    "location": "Video Call",
+    "description": "[Monica] leans forward and says, 'I heard you’re still working on this. Do you think it's fair to take on more when you're already on leave?'",
+    "options": [
+      {
+        "text": "It’s a complex situation; I'm just trying to help where I can.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge the complexity of the situation and your willingness to help, showing good emotional control and social skills, but motivation could be higher."
+      },
+      {
+        "text": "I understand your concern, but I have already committed to this task.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You express understanding and reaffirm your commitment, showing good emotional perception and empathy, though social skills and motivation could be improved."
+      },
+      {
+        "text": "I’m just trying to balance my leave and work commitments as best as I can.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You explain your efforts to balance commitments, showing good social skills, but emotional perception and empathy could be better."
+      }
+    ]
+  }
+}

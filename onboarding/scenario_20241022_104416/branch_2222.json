@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to assist for a bit longer but emphasized your need to step back soon. The discussion continues in the office group chat as [Monica] and [Bob] express their lingering concerns.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'We get that you need a break, but the project deadlines are looming. Can we count on you to see this through?'",
+    "options": [
+      {
+        "text": "I understand the pressure. Let's brainstorm how to tackle this efficiently.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the urgency and suggested a collaborative approach, showing good emotional perception and social skills. However, empathy and motivation were lower."
+      },
+      {
+        "text": "I can extend my help a bit more, but after that, I need to fully disconnect.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You reiterated your willingness to assist while maintaining your need for rest, showing good emotional control. Social skills and motivation could be improved."
+      },
+      {
+        "text": "Isn't there a way to manage this without me? My break is truly essential.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the importance of your break, showing good empathy and motivation. However, emotional perception and social skills were lacking."
+      }
+    ]
+  }
+}

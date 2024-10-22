@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You've decided to drop everything else and focus on the urgent task right now, as requested by Bob. Just as you're deep into the work, [Monica] messages you again, 'I see you're prioritizing the urgent task now. Could you update me on your progress so far?'",
+    "role": "Monica",
+    "location": "Messaging App",
+    "description": "'I see you're prioritizing the urgent task now. Could you update me on your progress so far?'",
+    "options": [
+      {
+        "text": "I'm in the thick of it; I'll update you once I have more substantial progress.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You focused on the task at hand, showing good motivation, but the lack of immediate update may be perceived as a lack of empathy."
+      },
+      {
+        "text": "I'm making good progress. I'll send you the details shortly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You reassured Monica while continuing to work, showing good emotional perception and social skills. However, your self-regulation might need improvement."
+      },
+      {
+        "text": "I'll update you now, but this will delay my work on the task.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You chose to update Monica immediately, showing good empathy. However, it might affect your ability to focus on the task, impacting self-regulation."
+      }
+    ]
+  }
+}

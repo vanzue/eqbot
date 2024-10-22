@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to help for a short time but will need to hand it off to someone else. Monica and Bob are involved in the conversation now.",
+    "role": "Monica",
+    "location": "Office Chat Room",
+    "description": "'Thanks for stepping in earlier. Bob mentioned that things are still not resolved. What's the plan now?' Monica asks, looking visibly stressed.",
+    "options": [
+      {
+        "text": "Let's brainstorm together to find a solution. Maybe we can split the tasks?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You show good emotional perception and empathy by suggesting a collaborative approach. However, your self-regulation could be higher as you're still involving yourself while on leave."
+      },
+      {
+        "text": "I think it's best if Bob and the team handle it from here. I trust you all can manage.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You demonstrate strong self-regulation and motivation by setting a clear boundary. However, this might come off as less empathetic and poor social skill."
+      },
+      {
+        "text": "I can help for a little longer, but someone else needs to step up soon.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You show a willingness to extend your help further, demonstrating good social skills and empathy. However, your motivation and self-regulation could be higher."
+      }
+    ]
+  }
+}

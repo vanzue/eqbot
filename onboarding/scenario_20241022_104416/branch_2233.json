@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "After reiterating your need for a break and suggesting finding an alternative, [Monica] and [Bob] seem to be growing increasingly frustrated. [Bob] leans back in his chair and frowns, while [Monica] types furiously on her keyboard.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'Look, we really need your expertise on this. It's not something anyone else can handle at the moment. Can you just take a quick look?'",
+    "options": [
+      {
+        "text": "I understand the urgency, but what if we schedule a quick call to go over the key points and then delegate the rest?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the importance of the task and suggested a collaborative solution, showing good emotional perception and social skills. Motivation could be higher."
+      },
+      {
+        "text": "I can spare a few minutes to help, but I really need to get back to my break after that.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You offered limited assistance while emphasizing your need for rest, showing good emotional control. Empathy and motivation could be improved."
+      },
+      {
+        "text": "I understand the urgency, but I need to unplug right now. Can you find someone else or wait until I'm back?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You reiterated your need for a break and suggested finding an alternative, showing good empathy and motivation. Emotional control and social skills were lacking."
+      }
+    ]
+  }
+}

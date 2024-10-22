@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You suggested splitting the task among multiple people due to being stretched thin. A bit later, [Monica] and [Bob] continue discussing the situation in the office group chat.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'I understand your point, but splitting the task might complicate things even more. Can't you handle it just this once?'",
+    "options": [
+      {
+        "text": "I see what you're saying, but I really can't take on the full task right now. Maybe we can find a way to simplify it?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the concern and suggested simplifying the task, showing good emotional perception and empathy, but motivation could be improved."
+      },
+      {
+        "text": "Alright, I'll do my best to handle it, but I may need some support if it gets too much.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You agreed to take on the responsibility, showing good social skills and emotional balance, but the empathy and self-regulation could be better."
+      },
+      {
+        "text": "It seems like we're always in this situation. Maybe it's time to rethink our approach to urgent tasks.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You highlighted a recurring issue, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

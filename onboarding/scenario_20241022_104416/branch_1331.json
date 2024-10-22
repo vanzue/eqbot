@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to help for a short time but will need to hand it off to someone else. When you informed your colleague about your decision, they appreciated your assistance but mentioned that Bob was struggling to pick up the slack. You agreed to spare a little more time but emphasized that you need to disconnect after that. Later, you receive another message.",
+    "role": "Colleague",
+    "location": "Messaging App",
+    "description": "'Monica and I are still having trouble managing everything. Could you possibly help us just a bit longer?'",
+    "options": [
+      {
+        "text": "I'd love to help, but I really need this time to recharge. Maybe we can find another solution?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You prioritize your own well-being, showing good emotional perception and empathy. However, interpersonal balance could be improved."
+      },
+      {
+        "text": "Alright, I can extend my help for a little longer, but this will be the last time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You agree to extend your help, showing strong self-regulation and motivation. However, this might impact your ability to fully recharge."
+      },
+      {
+        "text": "I understand the urgency, but I really can't extend my time any further. Perhaps Bob can handle it?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show willingness to help further, demonstrating empathy and good social skills, but you also set a limit to maintain your personal time."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decide to take a quick look at the task. While discussing the issue, [Monica] and [Bob] join the conversation.",
+    "role": "Monica",
+    "location": "Messaging App",
+    "description": "'Thanks for looking into this. I'm sure we can get it done quickly. But Bob and I are swamped with other tasks too. Can we split the work evenly?' She frowns slightly, typing quickly.",
+    "options": [
+      {
+        "text": "I can help you for a short time, but I’ll need to hand it off to someone else after that.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You choose a middle ground, showing good social skills and emotional balance. However, motivation and self-regulation could be higher."
+      },
+      {
+        "text": "I’m really trying to keep my leave time sacred. Can we split the work evenly?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You prioritize your own well-being and suggest a fair distribution of work, showing good emotional perception and empathy, though social skills could be better."
+      },
+      {
+        "text": "I’ll do what I can, but I might need you both to help with some parts.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You agree to help while expressing the need for some assistance, showing good emotional control and motivation, but empathy could be improved."
+      }
+    ]
+  }
+}

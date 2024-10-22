@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to assist despite being on leave, showing good emotional control and motivation. However, this may impact your ability to recharge effectively. You decide to quickly take a look at the task and realize it requires more effort than initially thought.",
+    "role": "Monica",
+    "location": "Messaging App",
+    "description": "[Monica] says, 'Thanks for helping out! This task is actually more complex than we expected. Can you stay on it a bit longer?'",
+    "options": [
+      {
+        "text": "I'll try to handle it, but I'll need to delegate some parts.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You show good emotional control and a balanced approach by offering to help while delegating parts of the task."
+      },
+      {
+        "text": "I really can't commit more time. Someone else will need to take over.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You prioritize your time off, showing good emotional perception, but empathy and motivation are lower."
+      },
+      {
+        "text": "I'll do my best to finish it, but I might need more time.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You commit to finishing the task, showing high motivation and self-regulation, but social skills and emotional perception could be improved."
+      }
+    ]
+  }
+}
