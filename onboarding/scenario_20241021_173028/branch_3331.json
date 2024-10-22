@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You suggest a constructive approach, saying, 'It was a tough call. Maybe we should discuss better ways to handle such situations in the future.' [Bob] nods slightly, but he still looks a bit annoyed. [Bob] crosses his arms and raises an eyebrow, 'Discussing is fine, but it doesn't change the fact that someone has to do the work. Why couldn't you just take a quick look?' You downplay the situation and say, 'Well, I didn't see it as a big deal at the moment. We all need breaks, right?' [Monica] and [Bob] exchange glances, and the tension in the room thickens. [Monica] takes a deep breath and asks, 'So, [Alex], do you think you could handle things differently next time to avoid such issues?' You respond abstractly, 'Maybe, but it's hard to say without knowing all the circumstances.'",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] leans forward, his voice slightly raised, 'Well, it's not just about circumstances, [Alex]. It's about responsibility. Do you take any accountability here?'",
+    "options": [
+      {
+        "text": "It's complicated. There are always different factors at play.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You provide an abstract response, indicating decent self-regulation and emotional perception but lacking in social skills and motivation."
+      },
+      {
+        "text": "You're right, I should have been more accountable. I'll make sure to handle it differently next time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the accountability and show willingness to improve, demonstrating good empathy and social skills."
+      },
+      {
+        "text": "I still believe my time off is important. Maybe we need to discuss better delegation strategies.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You stand by your need for breaks and suggest a systematic change, showing good self-regulation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

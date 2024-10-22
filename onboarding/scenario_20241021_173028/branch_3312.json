@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You suggest a constructive approach, saying, 'It was a tough call. Maybe we should discuss better ways to handle such situations in the future.' [Bob] nods slightly, but he still looks a bit annoyed. [Bob] crosses his arms and raises an eyebrow, 'Discussing is fine, but it doesn't change the fact that someone has to do the work. Why couldn't you just take a quick look?' You acknowledge the situation and explain your need for a break, saying, 'I understand your frustration, but I needed to disconnect to recharge properly.' [Bob] rubs his temples, clearly still irritated. [Monica] shakes her head slightly and adds, 'I think we all need to be more considerate of each other's time. It's not just about getting the work done.' You agree, suggesting a better backup plan.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] sighs and looks away, 'Backup plans are great, but what if there's no one else available? How do we handle that?'",
+    "options": [
+      {
+        "text": "We could establish a rotating on-call system so there's always someone available.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offer a practical solution, showing strong emotional perception and empathy but lower motivation."
+      },
+      {
+        "text": "It's a tough situation. Maybe we can discuss this more in our next team meeting.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You suggest deferring the discussion, showing balanced emotional perception and self-regulation but moderate empathy."
+      },
+      {
+        "text": "I understand, but we all need to respect each other's time off. We can't always be available.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You maintain your stance on respecting time off, showing strong self-regulation but lower empathy and social skills."
+      }
+    ]
+  }
+}

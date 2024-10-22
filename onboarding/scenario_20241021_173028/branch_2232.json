@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, [Monica] and [Bob] have joined the conversation, adding their perspectives. [Monica] seems understanding, while [Bob] appears frustrated. You acknowledged the urgency but reinforced your boundaries, suggesting to stick with phone guidance. Bob sighed, looking increasingly frustrated, and asked for your direct involvement, while Monica suggested finding a middle ground. You then emphasized the importance of disconnecting and asked them to consider other options. Bob frowns, visibly irritated, and insists on your expertise. Monica suggests brainstorming other ways to manage the task without your direct involvement. You prioritized your leave and discussed how they could handle it from their end.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Bob] clenches his jaw, clearly upset, '[Alex], this is really important. We can't afford to mess this up.' [Monica] adds softly, 'Alex, we value your help. Is there any chance you might reconsider?'",
+    "options": [
+      {
+        "text": "I understand the importance, Bob, but my leave is crucial for my well-being. Let's brainstorm together on how you can manage it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You re-emphasize the importance of your leave while offering to help indirectly, showing strong self-regulation and balanced empathy and social skills."
+      },
+      {
+        "text": "Maybe we can have a quick call to go over the critical points and see if that helps.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You offer a middle-ground solution, showing good emotional perception and balanced social skills."
+      },
+      {
+        "text": "Bob, it's not just about the urgency. My time off is also important. You need to find another solution.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You firmly prioritize your leave, demonstrating strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

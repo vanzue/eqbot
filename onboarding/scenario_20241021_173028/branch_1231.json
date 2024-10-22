@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You expressed understanding of Monica's concerns and acknowledged you should have set clearer boundaries. [Bob] chimed in, suggesting that it's over the top to worry about boundaries and everyone needs to pitch in when things get tough. You responded by expressing concern for personal boundaries, indicating that pitching in all the time could leave no personal life. [Monica] then suggested that if the team doesn't step up, the whole team might suffer, and you proposed having a team meeting to discuss boundaries and expectations.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Bob] leans back in his chair and says, 'So, [Alex], are you suggesting we have another meeting to talk about meetings? Isn't that a bit excessive?'",
+    "options": [
+      {
+        "text": "It's more about setting clear guidelines to avoid future issues.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You clarify your point, showing good self-regulation and social skills, while maintaining a balanced view."
+      },
+      {
+        "text": "Maybe you're right. We could handle this more informally.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You agree with Bob's perspective, demonstrating empathy and emotional perception but lower social skills."
+      },
+      {
+        "text": "If we don't address it formally, it might keep happening.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You stress the importance of formal guidelines, showing strong motivation but lower empathy and social skills."
+      }
+    ]
+  }
+}

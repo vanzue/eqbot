@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You suggest a constructive approach, saying, 'It was a tough call. Maybe we should discuss better ways to handle such situations in the future.' [Bob] nods slightly, but he still looks a bit annoyed. [Bob] crosses his arms and raises an eyebrow, 'Discussing is fine, but it doesn't change the fact that someone has to do the work. Why couldn't you just take a quick look?' You reply, showing empathy and willingness to improve, 'I get it, maybe I should've managed my time better. Let's find a way to balance this in the future.' [Monica] sighs and looks at [Bob], then back at you. [Monica] tilts her head slightly, 'So, what should we do if this happens again? Do you think we need a backup plan?' You emphasize the need for boundaries, saying, 'Honestly, if I'm on leave, I expect to fully disconnect. We should respect that boundary.' [Bob] looks frustrated, and [Monica] seems contemplative.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] shakes his head, 'Respecting boundaries is fine, but it leaves us in a bind. What if we desperately need your expertise?'",
+    "options": [
+      {
+        "text": "I understand that, but we need to build a team that can function even when one member is unavailable.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the situation and propose a solution, showing good emotional perception, self-regulation, and social skills."
+      },
+      {
+        "text": "I get your point. Maybe we can look into cross-training to ensure everyone can handle urgent tasks.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show empathy and provide a constructive suggestion, demonstrating good social skills and empathy."
+      },
+      {
+        "text": "If it's truly desperate, maybe we need to discuss our staffing and workload distribution.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You address the issue directly but with less emotional perception and motivation, focusing more on self-regulation."
+      }
+    ]
+  }
+}

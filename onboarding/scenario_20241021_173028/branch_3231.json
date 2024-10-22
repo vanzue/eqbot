@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You acknowledged the situation and showed willingness to improve, promising to be available next time. [Bob] sighs and folds his arms, 'I get it, but it really put me in a tough spot. How do we ensure this doesn't happen again?' You implied that others should be able to handle tasks too, showing less empathy and social skills. [Monica] frowns slightly, 'It's just that we really needed your expertise, and it felt like you left us hanging. Can we count on you next time?' You agreed to come up with a plan to avoid future issues.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] shifts uncomfortably, 'I'm worried we're not all on the same page here. How do we move forward without misunderstandings?'",
+    "options": [
+      {
+        "text": "Let's have regular check-ins to ensure we're aligned.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggest a proactive approach to improve communication, showing strong emotional perception and empathy."
+      },
+      {
+        "text": "I understand your concerns. I'll make sure to be more communicative.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the issue and commit to better communication, demonstrating good self-regulation and balanced emotional perception."
+      },
+      {
+        "text": "I don't see why this is such a big deal. We can handle it as it comes.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You downplay the issue, showing less empathy and emotional perception, but maintain a calm demeanor."
+      }
+    ]
+  }
+}

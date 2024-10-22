@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You explained that it was a one-time thing to make sure the team didn't struggle. [Monica] frowns slightly while [Bob] crosses his arms.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Monica] continues, 'I understand your intentions, [Alex]. But what will you do if this happens again? It's a tricky situation for you.'",
+    "options": [
+      {
+        "text": "I'll address it if it comes up again. For now, let's focus on getting through today.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the concern and aim to stay in the present, showing good emotional perception and empathy while maintaining balance."
+      },
+      {
+        "text": "You're right, Monica. I need to think about clearer boundaries.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You agree with the concern, indicating a need to set clearer limits, reflecting good self-regulation but moderate motivation."
+      },
+      {
+        "text": "Honestly, if this keeps happening, maybe it's time for the team to learn to manage without me during my leave.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You take a firm stance on setting boundaries, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

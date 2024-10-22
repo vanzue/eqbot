@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messaged you privately, saying there's an urgent task that needs immediate attention. The request created a dilemma as you tried to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, Monica and Bob have joined the conversation, adding their perspectives. Monica seemed understanding, while Bob appeared frustrated. You offered to do your best to guide them through it quickly, but insisted on sticking to phone guidance. Monica now seems more concerned, while Bob remains impatient. You emphasized needing the break and asked them to handle it without you for now.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] sighs and says, 'Alex, we really need your expertise. Are you sure you can't help us out more directly?' [Bob] adds, 'This is important for all of us. Can't you reconsider?'",
+    "options": [
+      {
+        "text": "I understand the importance, but I really need to rest. Please find another solution.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You reaffirm your need for rest, showing strong self-regulation but lower empathy and motivation."
+      },
+      {
+        "text": "Let me think about it for a minute. Maybe there's a way to balance this.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You show willingness to consider their request, demonstrating moderate self-regulation and empathy."
+      },
+      {
+        "text": "I can try giving you a bit more guidance in short bursts, but that's all I can manage right now.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You offer a compromise, showing good emotional perception and balanced social skills."
+      }
+    ]
+  }
+}

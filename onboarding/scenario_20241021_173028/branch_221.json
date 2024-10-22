@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, [Monica] and [Bob] have joined the conversation, adding their perspectives. [Monica] seems understanding, while [Bob] appears frustrated. You acknowledged the urgency but reinforced your boundaries, suggesting to stick with phone guidance. [Bob] sighed, looking increasingly frustrated, and [Monica] interjected softly, suggesting a middle ground. You proposed a quick video call to resolve the issue more efficiently.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Bob] frowns, 'I suppose a video call might help, but what if it doesn't? We can't afford any mistakes.' [Monica] nods, 'Let's give it a try, Alex. We appreciate your flexibility.'",
+    "options": [
+      {
+        "text": "Let's set up the video call now and see how it goes.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You show willingness to assist, demonstrating good emotional perception and a balanced approach while maintaining some boundaries."
+      },
+      {
+        "text": "I understand your concern, Bob. If the video call doesn't work, we'll explore further options.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge Bob's frustration and leave room for other solutions, showing strong self-regulation but moderate empathy and social skills."
+      },
+      {
+        "text": "I’ve already extended my help through a video call. If that's not sufficient, you'll have to manage without me.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You prioritize your personal time strongly, showing high self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

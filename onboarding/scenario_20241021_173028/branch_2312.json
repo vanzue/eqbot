@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone, but then [Monica] and [Bob] joined the conversation. [Monica] showed understanding, while [Bob] seemed frustrated. You chose to prioritize your time off, asking them to find another solution. [Monica] then expressed concern, and [Bob] became more agitated. You responded by saying you would think about it and get back to them. [Monica] looked hopeful, while [Bob] was still visibly upset. You finally agreed to assist immediately, giving in to the pressure.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] smiles gratefully, 'Thank you so much, Alex. We knew we could count on you.' [Bob] nods but still looks tense, 'Let's get this over with quickly. What do we need to do first?'",
+    "options": [
+      {
+        "text": "Let's tackle the most critical part first and then move on from there.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You take charge and focus on prioritizing tasks, showing good emotional perception and motivation to resolve the issue efficiently."
+      },
+      {
+        "text": "I'll need some time to review everything first. Please be patient.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You ask for patience and time to review, showing good self-regulation but moderate motivation and social skills."
+      },
+      {
+        "text": "I hope this doesn't take long. I'm really trying to rest.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You express a desire to finish quickly, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

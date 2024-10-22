@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone, but then [Monica] and [Bob] joined the conversation. [Monica] showed understanding, while [Bob] seemed frustrated. You chose to prioritize your time off, asking them to find another solution. Now, [Monica] is visibly concerned, and [Bob] appears more agitated.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] sighs and says, 'I understand you're on leave, but we're really stuck here. Is there anything else we can do?' [Bob] grumbles, 'This is why we can't rely on people. Can you not see how urgent this is?'",
+    "options": [
+      {
+        "text": "I'll think about it and get back to you.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You provide an open-ended response, showing moderate emotional perception and self-regulation but lower motivation."
+      },
+      {
+        "text": "Fine, I'll see what I can do right now.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You agree to help immediately, indicating high empathy but lower self-regulation as you give in to pressure."
+      },
+      {
+        "text": "Honestly, this isn't my responsibility while I'm on leave.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 1
+        },
+        "analysis": "You firmly set boundaries, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

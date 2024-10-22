@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone, but then [Monica] and [Bob] joined the conversation. [Monica] showed understanding, while [Bob] seemed frustrated. You eventually agreed to help immediately, despite the pressure. Now, after some time trying to resolve the issue, more complications arise, and [Monica] and [Bob] seem more desperate.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] looks worried and says, 'Alex, we hit another roadblock. We really need your expertise here.' [Bob], clearly agitated, raises his voice, 'This is a disaster! We can't afford any more delays. Can you handle this or not?'",
+    "options": [
+      {
+        "text": "I'll see what I can do, but no promises.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You provide a cautious response, showing moderate emotional perception and self-regulation but lower motivation."
+      },
+      {
+        "text": "Alright, I'll take full control of this now.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You decide to take charge, indicating high motivation and emotional perception but lower self-regulation as you succumb to the urgency."
+      },
+      {
+        "text": "Honestly, this situation should have been handled better in my absence. I'm doing my best here.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 1
+        },
+        "analysis": "You express frustration about the situation, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

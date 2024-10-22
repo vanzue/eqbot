@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messaged you privately, saying there's an urgent task that needs immediate attention. The request created a dilemma as you tried to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, Monica and Bob have joined the conversation, adding their perspectives. Monica seemed understanding, while Bob appeared frustrated. You offered to do your best to guide them through it quickly, but insisted on sticking to phone guidance. Monica now seems more concerned, while Bob remains impatient. You acknowledged their situation but stuck to your boundaries.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] sighs, 'Alex, this isn't fair to you, but we really need your expertise.' [Bob] rolls his eyes and says, 'Come on, Alex. Just this once, can't you be a team player?'",
+    "options": [
+      {
+        "text": "I get it, but let's keep the phone guidance. It's the best I can do right now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge their situation but stick to your boundaries, demonstrating strong self-regulation and moderate social skills."
+      },
+      {
+        "text": "I'll see what I can do, but no promises. Let's start with the phone guidance.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You offer a compromise by starting with phone guidance, showing good emotional perception and moderate empathy."
+      },
+      {
+        "text": "I really need this break. Please try to handle it without me for now.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You prioritize your need for rest, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

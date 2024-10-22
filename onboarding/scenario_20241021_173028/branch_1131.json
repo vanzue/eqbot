@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You explained that it was a one-time thing to make sure the team didn't struggle. [Monica] frowns slightly, and you expressed that if the team needs you this often, they need to learn to cope without you. [Bob] raises an eyebrow slightly. [Bob] sighs, 'I get your point, [Alex], but what if this attitude creates resentment among the team? We all depend on each other.' You proposed a team discussion about boundaries. [Monica] nods thoughtfully while [Bob] rubs his chin, deep in thought.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Monica] says, 'A team discussion might help, but it could also bring out some hidden frustrations. Do you think everyone will be open to it?'",
+    "options": [
+      {
+        "text": "It's hard to say, Monica. We'll have to tread carefully and ensure everyone's voice is heard.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the complexity of the situation and propose a balanced approach, showing good self-regulation and social skills."
+      },
+      {
+        "text": "I understand your concern. Maybe we should start with one-on-one discussions to gauge everyone's feelings first.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You agree with the concern and suggest a more empathetic approach, showing strong emotional perception and empathy but lower social skills and motivation."
+      },
+      {
+        "text": "If hidden frustrations come out, maybe it's a sign that our team dynamics need serious work.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You take a more assertive stance, focusing on the need for improvement, which shows strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

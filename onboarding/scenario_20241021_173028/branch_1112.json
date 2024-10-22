@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You explained that it was a one-time thing to make sure the team didn't struggle. [Monica] frowns slightly while [Bob] crosses his arms. You acknowledged the need to set clearer boundaries.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Bob] finally speaks up, 'But [Alex], isn't it your responsibility to ensure the project runs smoothly, even if you're on leave?'",
+    "options": [
+      {
+        "text": "I see where you're coming from, Bob. I'll definitely consider how to manage this better in the future.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge the concern, showing good emotional regulation and perception while indicating a need for clearer boundaries."
+      },
+      {
+        "text": "Maybe, but it's also important for me to have uninterrupted time off to recharge.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You firmly assert the importance of your time off, showing strong self-regulation but lower empathy and motivation."
+      },
+      {
+        "text": "Let's focus on finishing the current task well. We can discuss how to handle such situations more effectively later.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You keep the conversation focused on the present task while acknowledging the need for future improvements, showing good emotional perception and empathy."
+      }
+    ]
+  }
+}

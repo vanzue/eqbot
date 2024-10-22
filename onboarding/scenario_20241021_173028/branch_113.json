@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You explained that it was a one-time thing to make sure the team didn't struggle. [Monica] frowns slightly, and you expressed that if the team needs you this often, they need to learn to cope without you. [Bob] raises an eyebrow slightly.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Bob] sighs, 'I get your point, [Alex], but what if this attitude creates resentment among the team? We all depend on each other.'",
+    "options": [
+      {
+        "text": "Resentment is a two-way street, Bob. Maybe we need to have a team discussion about boundaries.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the potential issue and propose a balanced solution, showing good self-regulation and social skills."
+      },
+      {
+        "text": "You're right, Bob. Perhaps I should have been more tactful in expressing my concerns.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You agree with the concern, showing empathy and emotional perception but lower social skills and motivation."
+      },
+      {
+        "text": "If being honest about my limits creates resentment, then maybe our team dynamics need re-evaluating.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You take a more assertive stance, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You expressed understanding of Monica's concerns and acknowledged you should have set clearer boundaries. Bob commented that worrying about setting boundaries is over the top, and you agreed with him, noting that sometimes sacrifices are necessary for the team. Monica sighed and questioned how to avoid burnout. You replied that knowing limits and communicating them effectively is crucial. Bob then crosses his arms, looking more serious.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Bob] frowns, 'Alright, but what happens when everyone starts claiming they have limits? Doesn't that just create more chaos?'",
+    "options": [
+      {
+        "text": "It's about finding a middle ground where we respect each other's boundaries while still being productive.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You emphasize the importance of balance and mutual respect, showing good emotional perception and empathy but moderate motivation."
+      },
+      {
+        "text": "Maybe you're right, Bob. We should focus on being more adaptable to whatever comes our way.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You lean towards agreement with Bob's stance, showing adaptability and strong social skills but moderate self-regulation."
+      },
+      {
+        "text": "If everyone sets limits, then maybe we need to reassess our workload and priorities.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You propose a more assertive solution, indicating strong motivation but lower empathy and social skills."
+      }
+    ]
+  }
+}

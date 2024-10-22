@@ -135,10 +135,12 @@ initial_context = ("""
                     
                     SCENARIO_TYPES = [" Workplace difficulties ", "helping others fit in "," Responding to emergencies "]
                     used_scenarios = set()
+                   
                     ##Additional instructions ##
                     Please generate three answers in the scoring, mainly reflect the three different aspects of high EQ dimensions, but there should be no obvious lack of EQ, that is, for the three choices, the total score of the five dimensions of each choice should be close.
                     The score difference between different choices is widened to encourage low scores. The score values of the five dimensions of the same selection should also be separated, so that the variance is large, the distribution is more uniform, the low segment and the middle segment are more, and the high segment is less.
-
+                    The possibility of each dimension to be the lowest for each path should be almost equal.
+                   
                     Make sure to return the JSON data structure (do not start with json letters, do not omit,).
                     Make sure to return the JSON data structure (do not start with json letters, do not omit,).
                     Make sure to return the JSON data structure (do not start with json letters, do not omit,).

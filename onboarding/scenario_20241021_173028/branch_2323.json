@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone, but then [Monica] and [Bob] joined the conversation. [Monica] showed understanding, while [Bob] seemed frustrated. You eventually agreed to help immediately, despite the pressure. After facing more complications and expressing your frustration about how the situation should have been handled in your absence, [Monica] and [Bob] continue to seek your help.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] says, 'I'm sorry, Alex. We're really struggling here. Is there any way you can give us more detailed guidance? [Bob] interjects with a sigh, 'This is getting out of hand. We need a solid plan, not just quick fixes. Can you step in or not?'",
+    "options": [
+      {
+        "text": "Let me give you a detailed plan and see if it helps.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You offer to provide a more comprehensive solution, showing high emotional perception and balanced social skills."
+      },
+      {
+        "text": "I'm on leave, but I'll try to give you a step-by-step guide.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You offer assistance while reinforcing your boundaries, demonstrating good self-regulation."
+      },
+      {
+        "text": "Honestly, this shouldn't be my problem right now. Find another way.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You firmly set boundaries and express frustration, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

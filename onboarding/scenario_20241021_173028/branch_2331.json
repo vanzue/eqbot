@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone, but then [Monica] and [Bob] joined the conversation. [Monica] showed understanding, while [Bob] seemed frustrated. You chose to prioritize your time off, asking them to find another solution. Now, [Monica] is visibly concerned, and [Bob] appears more agitated. With some body movements, [Monica] leans forward, wringing her hands, while [Bob] crosses his arms tightly. You responded that you would think about it and get back to them.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] tries to reassure you, saying, 'We really appreciate any help you can provide, even if it's just a little guidance.' [Bob] cuts in, 'We need a decision now, Alex. This can't wait any longer.'",
+    "options": [
+      {
+        "text": "I'll check my schedule and let you know as soon as possible.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You provide a vague response, buying time while maintaining moderate emotional perception and self-regulation."
+      },
+      {
+        "text": "Alright, I'll log in and see what I can do.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You agree to help immediately, showing high empathy and motivation but lower self-regulation."
+      },
+      {
+        "text": "I really can't give this the attention it needs right now.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You firmly set boundaries, prioritizing your time off and showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

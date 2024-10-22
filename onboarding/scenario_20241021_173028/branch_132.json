@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. [Monica] says, 'Hey [Alex], I heard you helped out with the urgent task during your leave. That's really commendable, but don't you think it's setting a precedent for others to bother you on your days off?' You responded assertively, stating that maybe the team needs to be more self-reliant. Now, [Monica] frowns slightly and [Bob] raises an eyebrow. [Bob] remarks, 'Well, if everyone just starts saying no to extra work, won't that leave us in a bind during real emergencies?' You agreed with [Bob], saying perhaps you should have thought about the long-term implications.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Monica] now looks at you with a concerned expression and asks, 'So, what do you think we should do next time if there's another urgent task during someone's leave?'",
+    "options": [
+      {
+        "text": "Maybe we should set up a rotation system to handle emergencies without overburdening anyone.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You propose a practical solution, showing empathy and emotional perception but slightly lower social skills as it may need more consensus."
+      },
+      {
+        "text": "Let's discuss this in our next team meeting and come up with a fair approach.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggest a collaborative approach, maintaining good self-regulation and social skills while showing moderate motivation."
+      },
+      {
+        "text": "If emergencies are common, maybe we need to hire more staff to cover these situations.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You propose a more drastic solution, showing strong motivation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

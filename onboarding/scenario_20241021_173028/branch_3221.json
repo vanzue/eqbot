@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You acknowledged the situation and showed willingness to improve, promising to be available next time. [Bob] sighs and folds his arms, 'I get it, but it really put me in a tough spot. How do we ensure this doesn't happen again?' You downplayed the impact and promised to be available next time. Feeling a bit defensive, [Monica] looks at [Bob] then back at you, 'So, [Alex], if you knew it was going to be such a hassle, why didn't you at least check in?' You acknowledged that you thought someone else would step up, maybe misjudging the situation.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "With a hint of frustration, [Bob] says, 'Alright, but this can't happen again. We need a reliable solution for such emergencies.' [Monica] nods in agreement.",
+    "options": [
+      {
+        "text": "Maybe we should create a roster for emergencies during leaves.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggest a practical solution, showing good emotional perception and empathy while maintaining balance."
+      },
+      {
+        "text": "I get it, but I was really looking forward to my break. Let's figure out a better way to manage this.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You express understanding while emphasizing your need for a break, showing moderate emotional perception and empathy but lesser self-regulation."
+      },
+      {
+        "text": "It's not like I'm the only one who can handle these tasks. Others should be able to step up too.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You imply that others should be able to handle tasks too, showing less empathy and social skills."
+      }
+    ]
+  }
+}

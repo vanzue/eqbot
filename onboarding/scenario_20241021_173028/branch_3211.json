@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You acknowledged the situation and showed willingness to improve, promising to be available next time. [Bob] sighs and folds his arms, 'I get it, but it really put me in a tough spot. How do we ensure this doesn't happen again?' You suggested having a backup plan for such scenarios. [Monica] looks thoughtful and leans forward, 'A backup plan sounds good, but what if it's another emergency and no one else is available?' You proposed rotating on-call duties even during leaves.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] nods but looks skeptical, 'Rotating on-call duties might help, but will everyone agree to it?'",
+    "options": [
+      {
+        "text": "We can discuss it in the next team meeting and get everyone's input.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggest a democratic approach, showing good emotional perception, empathy, and social skills."
+      },
+      {
+        "text": "I think it's a fair solution, considering the circumstances.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You support the proposed solution, showing moderate emotional perception, empathy, and social skills."
+      },
+      {
+        "text": "If people have issues, they can bring them up. We need to be flexible in emergencies.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You emphasize the need for flexibility, showing less empathy and social skills but some motivation."
+      }
+    ]
+  }
+}

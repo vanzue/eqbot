@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. During your time away, a colleague messaged you privately, saying there's an urgent task that needs immediate attention. This created a dilemma as you tried to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Monica and Bob joined the conversation, adding their perspectives. Monica seemed understanding, while Bob appeared frustrated. You offered to do your best to guide them quickly but later decided to prioritize your time off, suggesting they find another solution. You then proposed a compromise to assist for 30 minutes and then let them take over. Monica and Bob agreed, and you helped for the agreed time. Now, the task is not yet complete, and the conversation continues.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] says, 'Alex, we're still struggling a bit. Could you extend your help just a bit longer?' [Bob], looking even more stressed, says, 'We need you to fully commit until this is done. Partial help just isn't cutting it.'",
+    "options": [
+      {
+        "text": "Alright, I'll stay until we're done, but this is really pushing my limits.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You agree to help fully, showing empathy and good social skills, but your self-regulation and motivation may suffer."
+      },
+      {
+        "text": "I've already extended my help. You need to manage the rest on your own.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 1
+        },
+        "analysis": "You reinforce your boundaries firmly, showing strong self-regulation but lower empathy and motivation."
+      },
+      {
+        "text": "Let's try to break down the task into manageable parts together for the next 15 minutes.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You propose a balanced approach, showing good emotional perception and empathy while maintaining personal boundaries."
+      }
+    ]
+  }
+}

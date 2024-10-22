@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You suggest a constructive approach, saying, 'It was a tough call. Maybe we should discuss better ways to handle such situations in the future.' [Bob] nods slightly, but he still looks a bit annoyed.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] crosses his arms and raises an eyebrow, 'Discussing is fine, but it doesn't change the fact that someone has to do the work. Why couldn't you just take a quick look?'",
+    "options": [
+      {
+        "text": "I understand your frustration, but I needed to disconnect to recharge properly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the situation and explain your need for a break, showing strong self-regulation and emotional perception but less social skill."
+      },
+      {
+        "text": "I get it, maybe I should've managed my time better. Let's find a way to balance this in the future.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show empathy and willingness to improve, maintaining a balanced approach with good social skills."
+      },
+      {
+        "text": "Well, I didn't see it as a big deal at the moment. We all need breaks, right?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You downplay the situation, showing good self-regulation but lower empathy and emotional perception."
+      }
+    ]
+  }
+}

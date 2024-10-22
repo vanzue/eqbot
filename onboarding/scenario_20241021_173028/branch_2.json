@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, [Monica] and [Bob] have joined the conversation, adding their perspectives. [Monica] seems understanding, while [Bob] appears frustrated.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] says, 'Alex, we really appreciate your help. Do you think this can be resolved quickly?' [Bob] adds, 'We can't afford any delays. Can you give it a bit more attention?'",
+    "options": [
+      {
+        "text": "I'll do my best to guide you through it quickly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You show willingness to assist while suggesting efficiency, demonstrating good emotional perception and moderate empathy."
+      },
+      {
+        "text": "I understand the urgency, but I'm on leave. Let's stick to the phone guidance.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the situation but reinforce your boundaries, showing strong self-regulation."
+      },
+      {
+        "text": "I'm sorry, but I'm really trying to rest. Please find another solution.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You prioritize your time off, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, [Monica] and [Bob] have joined the conversation, adding their perspectives. [Monica] seems understanding, while [Bob] appears frustrated. You acknowledged the urgency but reinforced your boundaries, suggesting to stick with phone guidance. [Bob] sighed, looking increasingly frustrated, insisting on your direct involvement. [Monica] interposed, suggesting to find a middle ground. You chose to assert your need to disconnect, pushing for other options. [Bob], becoming visibly agitated, crossed his arms as [Monica] nodded, still seeking a solution.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Bob] raises his voice, 'Alex, this is really critical. We can't afford mistakes and we need your expertise.' [Monica] tries to calm the situation, 'Maybe we can figure out a way to manage this without fully disrupting your leave?'",
+    "options": [
+      {
+        "text": "I understand the pressure. Let's try a quick video call and see if we can sort it out efficiently.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You suggest an alternative method to assist more effectively while still maintaining some boundaries. This shows good emotional perception and a balanced approach."
+      },
+      {
+        "text": "I get this is important, but my leave is important too. Let's stick with the phone guidance, Bob.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You reinforce your boundaries and acknowledge Bob's frustration, showing strong self-regulation but lower empathy and social skills."
+      },
+      {
+        "text": "I understand it's a tough spot, but I really need this break. Please explore other options, Monica.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You prioritize your personal time off strongly, demonstrating high self-regulation but showing less empathy and motivation."
+      }
+    ]
+  }
+}

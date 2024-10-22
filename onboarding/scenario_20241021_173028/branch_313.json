@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You responded by saying it was fair to ask someone else to handle it since you were on leave. [Bob] then sighed and said, 'I understand you're on leave, but couldn't you have at least checked in to see if it was really urgent? It put a lot of pressure on us.' You stood your ground and emphasized the importance of respecting each other's time off. The conversation continues with [Monica] and [Bob] still visibly concerned about the situation.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Monica] crosses her arms, looking a bit frustrated, 'It’s not just about the task, [Alex]. It’s about teamwork and support. How do you think this affects our team dynamic?'",
+    "options": [
+      {
+        "text": "I understand that teamwork is important. Maybe we need a clearer protocol for handling urgent tasks when someone's on leave.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the importance of teamwork and suggest a constructive approach, showing good emotional perception and social skills."
+      },
+      {
+        "text": "I get your point, but everyone needs a break. We can't always be available, and we should respect that.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You emphasize the need for personal time off, showing strong self-regulation but less empathy and motivation."
+      },
+      {
+        "text": "I think the real issue is that we don't have enough staff to cover these situations. Maybe we need to discuss that with management.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You highlight a potential systemic issue and suggest discussing it with management, showing balanced emotional perception, self-regulation, and motivation."
+      }
+    ]
+  }
+}

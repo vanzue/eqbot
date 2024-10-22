@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone, but then [Monica] and [Bob] joined the conversation. [Monica] showed understanding, while [Bob] seemed frustrated. You eventually agreed to help immediately, despite the pressure. After some time trying to resolve the issue, more complications arose, prompting you to provide a cautious response. Now, [Monica] and [Bob] are visibly anxious as the situation remains unresolved.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] looks at you with concern and says, 'We really appreciate your help, Alex, but it looks like there's another issue we didn't anticipate. Can you take a look at it?' [Bob] shakes his head in frustration and says, 'This is getting out of control. We need a quick solution. Are you going to sort this out or not?'",
+    "options": [
+      {
+        "text": "I'll try to help, but I can't make any guarantees.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You provide a cautious response, showing moderate emotional perception and self-regulation but lower motivation."
+      },
+      {
+        "text": "Fine, I'll take over and handle everything from here.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You decide to take charge, indicating high motivation and emotional perception but lower self-regulation as you succumb to the urgency."
+      },
+      {
+        "text": "Honestly, this should have been managed better in my absence. I'm doing my best with the limited time I have.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 1
+        },
+        "analysis": "You express frustration about the situation, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You expressed understanding of Monica's concerns and acknowledged you should have set clearer boundaries. [Bob] then chimed in, and you emphasized the need for balance. [Monica] sighed and expressed frustration about people not respecting time off. You took a more assertive stance, suggesting a rethink of priorities.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Bob] raises an eyebrow and says, 'Well, [Alex], if we start rethinking priorities, doesn’t that mean we're not team players anymore?'",
+    "options": [
+      {
+        "text": "It's not about not being team players, Bob. It's about respecting everyone's time.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You emphasize the importance of mutual respect, showing good emotional perception and empathy while maintaining balance."
+      },
+      {
+        "text": "I see your point, Bob. Maybe we need to find a better way to balance team needs and personal time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge Bob's perspective and suggest finding a balanced solution, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "If being a team player means always sacrificing personal time, then maybe we need to redefine what teamwork means.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You challenge the current definition of teamwork, showing strong motivation but lower empathy and social skills."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You explained that it was a one-time thing to make sure the team didn't struggle. [Monica] then expressed concern about setting a precedent. You agreed with her point and mentioned that perhaps you should have communicated your limits better.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Bob] smirks and says, 'Well, [Alex], if you keep helping out like that, you might as well never take a leave. Don’t you think it just shows how indispensable you are?'",
+    "options": [
+      {
+        "text": "Maybe, but I think it’s important to strike a balance. Everyone needs time off.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge the importance of balance, showing strong emotional perception and empathy, but moderate motivation."
+      },
+      {
+        "text": "I see your point, Bob. It’s definitely something I need to work on.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show understanding and willingness to improve, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "Honestly, if the team needs me that much, maybe they need to step up their game.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You take a more assertive stance, showing strong self-regulation but lower empathy and social skills."
+      }
+    ]
+  }
+}

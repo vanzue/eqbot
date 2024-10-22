@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to take a quick look and help out. After some time, [Monica] and [Bob] approach you in the cafeteria. [Monica] looks slightly concerned while [Bob] seems indifferent. You explained that it was a one-time thing to make sure the team didn't struggle. [Monica] then expressed concern about setting a precedent. You agreed with her point and mentioned that perhaps you should have communicated your limits better. [Bob] smirks and says, 'Well, [Alex], if you keep helping out like that, you might as well never take a leave. Don’t you think it just shows how indispensable you are?' You acknowledged his point and mentioned that it's something you need to work on.",
+    "role": "[Alex]",
+    "location": "Cafeteria",
+    "description": "[Monica] sighs and adds, 'Still, [Alex], it feels like a slippery slope. Do you really think this approach is sustainable in the long run?'",
+    "options": [
+      {
+        "text": "Well, I guess that's something we'll have to navigate as a team moving forward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You provide a somewhat abstract response, reflecting on the complexity of the situation and emphasizing teamwork."
+      },
+      {
+        "text": "You’re right, Monica. I think I need to be stricter with my boundaries.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You agree with Monica, showing empathy and emotional perception, but acknowledging the need for better self-regulation."
+      },
+      {
+        "text": "Honestly, if it’s not sustainable, then maybe we need to rethink how we handle these urgent tasks.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You take a more assertive stance, suggesting a need for organizational change, showing strong self-regulation but lower empathy."
+      }
+    ]
+  }
+}

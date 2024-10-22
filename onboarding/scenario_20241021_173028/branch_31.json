@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You responded by saying it was fair to ask someone else to handle it since you were on leave. The conversation continues.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] sighs and says, 'I understand you're on leave, but couldn't you have at least checked in to see if it was really urgent? It put a lot of pressure on us.'",
+    "options": [
+      {
+        "text": "Maybe you're right. I should have checked in briefly to assess the situation.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the concern and show empathy, but it highlights a need for better self-regulation."
+      },
+      {
+        "text": "I hear you, but I needed a complete break to recharge. Let's brainstorm ways to handle this better next time.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggest a constructive approach while maintaining good emotional perception and social skills."
+      },
+      {
+        "text": "I didn't feel it was my responsibility to check in while on leave. We all need to respect each other's time off.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You stick to your stance, showing strong self-regulation but less empathy and social skills."
+      }
+    ]
+  }
+}

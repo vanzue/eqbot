@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messaged you privately, saying there's an urgent task that needs immediate attention. The request created a dilemma as you tried to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, Monica and Bob have joined the conversation, adding their perspectives. Monica seemed understanding, while Bob appeared frustrated. You offered to do your best to guide them through it quickly. As the call progressed, Monica seemed to be catching on, but Bob was still struggling. When asked to explain in a different way or handle it yourself, you chose to prioritize your rest. Now, the situation has escalated.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] says, 'Alex, I understand you're on leave, but we're really struggling here. Is there no way you can step in just this once?' [Bob], with a hint of sarcasm, adds, 'Yeah, Alex, it seems like you have all the time in the world to rest while we're drowning here.'",
+    "options": [
+      {
+        "text": "I can give it another 10 minutes, but then I really need to log off.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You show a willingness to help within limits, demonstrating good emotional perception and moderate empathy."
+      },
+      {
+        "text": "It sounds tough, but I trust you can manage. Let's stick to the plan.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the difficulty but reinforce the boundaries, showing strong self-regulation and moderate motivation."
+      },
+      {
+        "text": "I'm really sorry, but I need to disconnect now. Please find another solution.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You emphasize your need to rest, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messaged you privately, saying there's an urgent task that needs immediate attention. The request created a dilemma as you tried to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, Monica and Bob have joined the conversation, adding their perspectives. Monica seemed understanding, while Bob appeared frustrated. You offered to do your best to guide them through it quickly. As the call progresses, Monica seems to be catching on, but Bob is still struggling. You decided to review the key points together. Monica seems to be following along better, but Bob is still visibly frustrated.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] says, 'Thanks, Alex. I'm getting it now. Bob, are you okay with this?' [Bob], still frustrated, says, 'This is taking too long. Alex, can't you just do it for us and save us the trouble?'",
+    "options": [
+      {
+        "text": "Let's keep working on it together. I'm sure we'll get there.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You encourage continued collaboration, demonstrating good emotional perception and moderate empathy."
+      },
+      {
+        "text": "I understand your frustration, but it's important for you to learn this. Let's stick with it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the frustration but emphasize the importance of learning, showing strong self-regulation."
+      },
+      {
+        "text": "Honestly, I'm on leave and need to rest. Maybe there's a different way you can figure this out.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You prioritize your time off, showing strong self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, [Monica] and [Bob] have joined the conversation, adding their perspectives. [Monica] seems understanding, while [Bob] appears frustrated. You acknowledged the urgency but reinforced your boundaries, suggesting to stick with phone guidance. [Bob] sighed, looking increasingly frustrated, and [Monica] interjected softly, suggesting a middle ground. You proposed a quick video call to resolve the issue more efficiently. [Bob] voiced concerns about the adequacy of the video call, and [Monica] expressed appreciation for your flexibility. You then firmly stated that if the video call wasn't sufficient, they'd have to manage without you.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] frowns slightly and looks at [Bob], who is now pacing back and forth. [Monica] says, 'Alex, maybe we can try a different approach. Do you have any other suggestions?' [Bob] stops pacing and adds, 'We need something concrete. We can't afford any more delays.'",
+    "options": [
+      {
+        "text": "Let's brainstorm together to find a quick solution that works for everyone.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show willingness to collaborate, demonstrating good emotional perception and empathy while maintaining some boundaries."
+      },
+      {
+        "text": "I understand the urgency, but I think the video call is our best shot right now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge the situation but reinforce your previous suggestion, showing strong self-regulation but moderate empathy and social skills."
+      },
+      {
+        "text": "I've already extended my help as much as I can. You'll need to manage the rest.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 1,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You prioritize your personal time strongly, showing high self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

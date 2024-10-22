@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You responded by saying it was fair to ask someone else to handle it since you were on leave. The conversation continues. [Bob] sighs and says, 'I understand you're on leave, but couldn't you have at least checked in to see if it was really urgent? It put a lot of pressure on us.' You suggested brainstorming ways to handle such situations better in the future. The conversation shifts slightly as [Monica] looks thoughtful. [Monica] raises an eyebrow, 'So, how do you propose we handle these urgent tasks in the future without burdening anyone unfairly?'",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] rubs his temples and says, 'Hiring part-time help is an option, but it could be costly. Do we really need that?'",
+    "options": [
+      {
+        "text": "Maybe setting clearer guidelines on what constitutes an 'urgent' task would help.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggest improving communication and guidelines, showing empathy but indicating a need for better self-regulation and motivation."
+      },
+      {
+        "text": "Perhaps we can manage it internally for now and monitor the situation closely.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You propose an internal solution, showing good emotional perception and social skills while maintaining balance."
+      },
+      {
+        "text": "I still think hiring someone part-time is the best solution. It might cost more, but it saves us stress.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You stick to the idea of hiring part-time help, showing strong self-regulation but lower scores in emotional perception and social skills."
+      }
+    ]
+  }
+}

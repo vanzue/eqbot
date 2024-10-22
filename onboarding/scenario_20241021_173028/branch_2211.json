@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there's an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Previously, you chose to guide your colleague over the phone. Now, [Monica] and [Bob] have joined the conversation, adding their perspectives. [Monica] seems understanding, while [Bob] appears frustrated. You acknowledged the urgency but reinforced your boundaries, suggesting to stick with phone guidance. [Bob] sighed, looking increasingly frustrated, and [Monica] interjected softly, suggesting a middle ground. You proposed a quick video call to resolve the issue more efficiently. [Bob] frowned, expressing concern about potential mistakes, while [Monica] appreciated your flexibility. You agreed to set up a video call to see how it goes.",
+    "role": "[Alex]",
+    "location": "Home",
+    "description": "[Monica] glances at her phone, 'Let's start the video call now, Alex. Hopefully, it'll be quick.' [Bob] adds, 'If this doesn't work, we'll need to escalate. Can we count on you to stay on until it's resolved?'",
+    "options": [
+      {
+        "text": "Let's get on the call first and see where we stand. We can decide on the next steps after.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You focus on the immediate task at hand without committing to future steps, showing good emotional perception and a balanced approach."
+      },
+      {
+        "text": "I can stay on the call until we make some progress, but I'll need to disconnect if it drags on too long.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You set clear boundaries while offering to help, showing strong self-regulation but moderate empathy and social skills."
+      },
+      {
+        "text": "I'll join the call now, but if it doesn't work, you'll have to find another solution without me.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 2,
+          "Motivation": 1
+        },
+        "analysis": "You prioritize your personal time strongly, showing high self-regulation but lower empathy and motivation."
+      }
+    ]
+  }
+}

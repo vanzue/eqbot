@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to prioritize your time off and asked your colleague to reach out to another person. Later, you meet with [Monica] and [Bob] at a team gathering. [Monica] glances at you with a concerned expression, 'Hey [Alex], I heard you didn't help with the urgent task while you were on leave. [Bob] had to stay late to cover for you. What happened?' You responded by saying it was fair to ask someone else to handle it since you were on leave. [Bob] then sighed and said, 'I understand you're on leave, but couldn't you have at least checked in to see if it was really urgent? It put a lot of pressure on us.' You stood your ground and emphasized the importance of respecting each other's time off. The conversation continued with [Monica] and [Bob] still visibly concerned about the situation. [Monica] crossed her arms, looking a bit frustrated and said, 'It’s not just about the task, [Alex]. It’s about teamwork and support. How do you think this affects our team dynamic?' You emphasized the need for personal time off, saying everyone needs a break and we can't always be available.",
+    "role": "[Alex]",
+    "location": "Team Gathering",
+    "description": "[Bob] leans forward, looking a bit exasperated, 'So, what do you propose we do if this happens again? Do we just hope someone else is available?'",
+    "options": [
+      {
+        "text": "I think we need to set clearer expectations for emergencies. Maybe a rotating on-call system?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggest a proactive solution, showing good emotional perception and social skills while maintaining a balanced approach."
+      },
+      {
+        "text": "I understand it's frustrating, but we can't plan for every emergency. Sometimes we just have to adapt.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge the issue while emphasizing adaptability, showing strong self-regulation but less empathy and motivation."
+      },
+      {
+        "text": "Maybe we need to have a serious talk with management about increasing our staffing levels to handle such situations.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You highlight a potential systemic issue and suggest discussing it with management, showing balanced emotional perception, self-regulation, and motivation."
+      }
+    ]
+  }
+}
