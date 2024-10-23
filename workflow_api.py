@@ -187,13 +187,21 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
 
         contacts_list.append(one_contact)
 
+    # num_star
+    db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id, course_id=1)
+    if db_person_course is None:
+        num_star = 0
+    else:
+        num_star = db_person_course.result
 
     response = {
         "personal_info": {
             "name": personal_info.name,
             "tag": personal_info.tag,
             "tag_description": personal_info.tag_description,
-            "job_id": personal_info.job_id
+            "job_id": personal_info.job_id,
+            "num_diamond": personal_info.num_star,
+            "num_star": num_star
         },
         "eq_scores": {
             "score": overall_score, 
