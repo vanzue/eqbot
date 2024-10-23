@@ -42,6 +42,7 @@ async def line_webhook(request: Request):
       # Here you can add logic to reply to the message
   return JSONResponse(status_code=200, content={"message": "Message received"})
 
+
 def get_image_from_LINE(message_id: str):
   url = f'https://api-data.line.me/v2/bot/message/{message_id}/content'
 
@@ -72,7 +73,6 @@ def upload_image_to_blob(message_id: str, image_data):
         print(f"An error occurred while uploading the image: {e}")
 
 
-
 def send_message(data,replyToken):
 # Ensure the access token is valid before sending a message
   headers = {
@@ -91,6 +91,22 @@ def send_message(data,replyToken):
   }
   response = requests.post(message_url, headers=headers, data=json.dumps(data))
   return response.json()
+
+
+@router.post("/Telegram/webhook")
+async def telegram_webhook(request: Request):
+  # Read the request body as text for debugging
+  body = await request.body()
+
+  try:
+    # Parse the JSON
+    body_json = json.loads(body)
+  except json.JSONDecodeError as e:
+    print(f"JSON decode error: {e}")
+    return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
+
+  print(f"message from Telegram: {body_json}")
+  return JSONResponse(status_code=200, content={"message": "Message received"})
 
 def create_eqmaster(username, verbose=False):
     """
@@ -189,27 +205,9 @@ def create_chatbot(rolename, username, verbose=False):
 
 
 # if __name__ == "__main__":   
-username="me"
 #   ai_chatbot = create_eqmaster(username=username, verbose=True)
 #   while True:
-message = '''[
-    {
-        "userName": "me",
-        "message": "Hey Bob, how's it going?"
-    },
-    {
-        "userName": "Bob",
-        "message": "Hey! I'm doing well, thanks. How about you?"
-    },
-    {
-        "userName": "me",
-        "message": "I'm good too, just a bit busy with some work."
-    },
-    {
-        "userName": "Bob",
-        "message": "I hear you. Let me know if you need any help."
-    }
-]'''
+
 # print()
 # # if message[:5] == "对话记录：":
 # response = ai_chatbot.get_response_eqmaster(user_nick_name=username,chat_history=message)
@@ -224,4 +222,24 @@ message = '''[
 # else:
 #     print("\n无效输入，请选择1到4之间的数字。")
 
-GetEqBotResponse(message,username)
+
+# username="me"
+# message = '''[
+#     {
+#         "userName": "me",
+#         "message": "Hey Bob, how's it going?"
+#     },
+#     {
+#         "userName": "Bob",
+#         "message": "Hey! I'm doing well, thanks. How about you?"
+#     },
+#     {
+#         "userName": "me",
+#         "message": "I'm good too, just a bit busy with some work."
+#     },
+#     {
+#         "userName": "Bob",
+#         "message": "I hear you. Let me know if you need any help."
+#     }
+# ]'''
+# GetEqBotResponse(message,username)
