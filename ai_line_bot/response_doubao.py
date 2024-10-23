@@ -1,7 +1,6 @@
 import os
 from openai import OpenAI
 
-ARK_API_KEY = "a7d6f528-2dca-43db-ab3c-97bd6fae9e8b"
 client = OpenAI(
     api_key = os.environ.get("ARK_API_KEY"),
     base_url = "https://ark.cn-beijing.volces.com/api/v3",
