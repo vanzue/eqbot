@@ -22,7 +22,6 @@ def request_LLM_response(chat_history):
                     [First actionable suggestion based on the current context] 
                     [Second actionable suggestion based on the analysis of the other person's perspective of you] 
                     [Third actionable suggestion for self-improvement] 
-                    [Fourth actionable suggestion for a recommended response the user can give]
 
                     ** Standard Output Format (Do not include the word "json", and do not omit anything.) **
                     {{
@@ -45,9 +44,6 @@ def request_LLM_response(chat_history):
                             }},
                             {{
                             "point": [Third actionable suggestion for self-improvement]
-                            }},
-                            {{
-                            "point": [[Fourth actionable suggestion for a recommended response the user can give]]
                             }}
                         ]                        
                     }}
@@ -76,9 +72,6 @@ def request_LLM_response(chat_history):
                             }},
                             {{
                             "point": "This is the third actionable suggestion."
-                            }},
-                            {{
-                            "point": "This is the fourth actionable suggestion."
                             }}
                         ]
                     }}
