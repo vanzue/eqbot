@@ -3,7 +3,7 @@ import requests
 import json
 
 from langchain_core.prompts import ChatPromptTemplate
-from keyless_setup import creat_llm
+from llm.keyless_setup import creat_llm
 
 
 def request_LLM_response(chat_history):
@@ -33,7 +33,7 @@ def request_LLM_response(chat_history):
                         ], 
                         "summary": [
                             {{
-                                "title: [One sentence describing the current issue]
+                                "summary: [One sentence describing the current issue]
                             }}
                         ],
                         "suggestions": [
@@ -64,7 +64,7 @@ def request_LLM_response(chat_history):
                         ], 
                         "summary": [
                             {{
-                                "title: "You should listen more abot others' opinions."
+                                "summary: "You should listen more abot others' opinions."
                             }}
                         ],
                         "suggestions": [
@@ -112,8 +112,8 @@ def parse_LLMresponse(json_data):
         response = json.loads(json_data)
         print("JSON is valid.")
 
-        title = response['title']
-        summary = response['summary']
+        title = response['title'][0]
+        summary = response['summary'][0]
         suggestions = response['suggestions']
 
         analysis = {
