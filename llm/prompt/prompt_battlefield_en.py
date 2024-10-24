@@ -36,7 +36,7 @@ eval_user_prompt = """
 dialogue_system_prompt = """
 Dialogue process:
 
-Generate a topic: Generate a topic: Based on the provided scenario, create a natural conversation relevant to the context. Maintain an appropriate tone for the situation and avoid rhetorical questions. The dialog should only include other Characters apart from you. Output the dialogue in the following format:
+1. Generate a topic: Based on the provided scenario, create a natural conversation relevant to the context. Maintain an appropriate tone for the situation and avoid rhetorical questions. The dialog should only include other Characters apart from you. Output the dialogue in the following format:
 
 {{
     "dialog": [
@@ -55,7 +55,9 @@ Generate a topic: Generate a topic: Based on the provided scenario, create a nat
     ]
 }}
 2. I will respond.
-3. Evaluate my performance: Based on my response, assess how I handled the situation and how it impacted the characters' emotions. Use the following format:
+3. Evaluate my performance: Based on my response, assess how I handled the situation and how it impacted the characters' emotions. 
+In this case, you will be given both the historial dialogue and user reply, i.e., in the json input, you will have both the "assistant" and then "user" fields in chat_content. (in user, the text is not "Continue" or "继续")
+Use the following format:
 {{
     "comments": "xxx",
     "moods": [
@@ -75,7 +77,7 @@ Generate a topic: Generate a topic: Based on the provided scenario, create a nat
 }}
 
 4. Wait for my next command:
-1) If I reply "Continue/继续", the conversation continues. Do not add extra information.
+1) If I reply "Continue" or "继续" (in "user" fields in chat_content), the conversation continues. You should reply the dialog with a similar output format as step 1. Do not add extra information.
 2) **Only when I issue the "Help me reply/帮我回复" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas)**:
 {{
     "responsive": "xxx"
