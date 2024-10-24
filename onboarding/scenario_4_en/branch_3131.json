@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] crossed her arms and sighed, while [Bob] leaned against the wall, looking thoughtful. You mentioned that you decided to help Mark this time but asked him to handle such tasks without you while you're on leave. [Monica] shook her head, [Bob] raised an eyebrow.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I still think it's unfair of Mark to do that. What if it happens again?' [Bob]: 'Yeah, Mark should have known better. How do you plan to handle it if he asks again?'",
+    "background": "You suggest delegating the report to someone else. [Monica] frowns slightly.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] says, 'Delegating sounds good, but who can we trust to do it well on such short notice?'",
     "options": [
       {
-        "text": "Well, I'll cross that bridge when I come to it. Let's hope it doesn't happen again.",
+        "text": "Let's call Sarah; she's reliable and quick with reports.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 2
+        },
+        "analysis": "You demonstrate good social skills and emotional perception by suggesting a reliable colleague, but your motivation may be seen as lower since you're delegating the task."
+      },
+      {
+        "text": "We could split the report into sections and each take a part.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You provided an abstract and unclear response, showing moderate emotional perception and self-regulation. However, your motivation and proactive planning could be improved."
+        "analysis": "You show good self-regulation and empathy by proposing a collaborative effort, but your motivation could be questioned as you're not taking full responsibility."
       },
       {
-        "text": "If it happens again, I'll remind Mark that I'm on leave and he should respect my time off.",
+        "text": "Maybe we should handle the report ourselves to ensure it's done correctly.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You leaned toward agreement with setting clear boundaries, showing high emotional perception and self-regulation. However, your empathy towards Mark's situation was lower."
-      },
-      {
-        "text": "Honestly, if it happens again, I'll have to seriously reconsider how I handle these requests. Maybe I need to be more assertive.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "You leaned toward disagreement with a passive-aggressive undertone, showing good social skills and empathy. However, your self-regulation was lower."
+        "analysis": "You display strong self-regulation and social skills by taking responsibility, but your emotional perception is lower as you're not considering other options."
       }
     ]
   }

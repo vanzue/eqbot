@@ -1,0 +1,84 @@
+{
+  "scenes": {
+    "background": "After agreeing to take a quick look at the urgent task, you find yourself needing to communicate with [Monica] and [Bob] over a video call to discuss the details. The task is more complicated than initially thought.",
+    "role": "Monica",
+    "location": "Video Call",
+    "description": "[Monica] leans back in her chair, looking slightly frustrated, 'We really need this to be done perfectly. Can you handle it or should we look for alternatives?'",
+    "options": [
+      {
+        "text": "I'll do my best with the time I have.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You aim for a balanced response, showing good social skills but possibly lacking in motivation and self-regulation."
+      },
+      {
+        "text": "I think it's best if someone else takes over from here.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You prioritize emotional perception and empathy, but your willingness to engage further might be questioned."
+      },
+      {
+        "text": "Let's try to work through it together for a bit longer.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You show a desire to collaborate and stay motivated, although your social skill could be better."
+      }
+    ]
+  },
+  "next_scene": {
+    "background": "You suggest that someone else takes over the task. [Bob] glances at [Monica] and then back at the camera, showing slight annoyance. The tension builds as you share your thoughts.",
+    "role": "Bob",
+    "location": "Video Call",
+    "description": "[Bob] crosses his arms and says, 'So you're saying you can't handle it? What do you suggest we do now?'",
+    "options": [
+      {
+        "text": "Maybe we can break it down and assign parts to different team members.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You propose a collaborative solution, showing good emotional perception and empathy, but your own motivation appears to be lower."
+      },
+      {
+        "text": "I could guide someone else through the process if needed.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offer your assistance in a supportive role, showing good social skills but somewhat lower self-regulation and motivation."
+      },
+      {
+        "text": "Honestly, I think taking some time off has affected my ability to focus on this right now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You honestly express your current state, showing good emotional perception and empathy, but your social skill could be better."
+      }
+    ]
+  }
+}

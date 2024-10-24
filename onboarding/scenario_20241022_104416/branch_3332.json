@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You agreed to help your colleague with the urgent task for a short time and will hand it off to someone else later. After you inform Monica that you're really busy and ask her to wait until you're done, [Bob] messages you, 'Hey, Monica told me you're handling the urgent task. What's the status? We need this ASAP.'",
+    "role": "Bob",
+    "location": "Messaging App",
+    "description": "'Hey, Monica told me you're handling the urgent task. What's the status? We need this ASAP.'",
+    "options": [
+      {
+        "text": "I'm currently working on it and will update you both as soon as possible.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You reassured Bob that you're working on the task, showing good self-regulation and social skills. However, empathy could be improved as urgent needs might not be fully addressed."
+      },
+      {
+        "text": "I understand the urgency, but I'm swamped right now. Can you please check in later?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the urgency but prioritized your current workload. This shows good emotional perception and empathy, though interpersonal balance and social skills might be lacking."
+      },
+      {
+        "text": "I'll give you a quick rundown now, but I can't be pulled away for long.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offered a brief update while emphasizing the need to continue working, showing good social skills and emotional balance. However, motivation and self-regulation could be enhanced."
+      }
+    ]
+  }
+}

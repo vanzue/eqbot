@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] crossed her arms and sighed, while [Bob] leaned against the wall, looking thoughtful. [Monica] said, 'I can't believe Mark asked you to work during your leave. That's so inconsiderate.' [Bob] replied, 'Yeah, but sometimes work emergencies happen. How did you handle it, Alex?' You responded by saying you told Mark you’d help this time but asked him to handle such tasks without you in the future.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I still think it's unfair that Mark put you in that position. Do you think it was the right call?' [Bob] nodded in agreement with Monica, 'Yeah, it sounds like a tough spot to be in.'",
+    "background": "You agree to handle the report and ask for help with the financials. [Monica] responds with a suggestion.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] says, 'How about we split the task? You focus on the main report, and I'll assist with the financials?'",
     "options": [
       {
-        "text": "I guess it was a judgment call. Sometimes you just have to go with the flow.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You gave an abstract response, showing balanced emotional intelligence but not strongly committing to any particular stance."
-      },
-      {
-        "text": "Maybe, but I think it's important to set boundaries and ensure they are respected. Otherwise, it sets a bad precedent.",
+        "text": "That sounds fair. Let's get started and keep each other updated.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You leaned towards agreement with Monica's point, showing strong self-regulation and emotional perception but lower empathy."
-      },
-      {
-        "text": "Well, I did agree to help, so it's not entirely Mark's fault. But he should have known better.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You offered a passive-aggressive response, indicating a mix of empathy and social skills but lower self-regulation."
+        "analysis": "You show good emotional perception, empathy, and social skills by agreeing to the suggestion and ensuring collaboration."
+      },
+      {
+        "text": "I'm okay with that, but I'll need detailed input from you on the financials.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 5,
+          "Motivation": 3
+        },
+        "analysis": "You show strong social skills and self-regulation, but your empathy might be lacking as you impose conditions."
+      },
+      {
+        "text": "I think it would be more efficient if we work together on both parts simultaneously.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show strong self-regulation but lower emotional perception as you prefer a different approach."
       }
     ]
   }

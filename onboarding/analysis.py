@@ -3,6 +3,7 @@ import os
 import sys
 import matplotlib.pyplot as plt
 import matplotlib
+from collections import Counter
 
 # 设置支持中文的字体
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
@@ -113,17 +114,29 @@ def plot_scores_distribution(all_paths, output_folder):
     plt.savefig(output_path)  # 保存到场景文件夹
     plt.show()
 
-    # # 生成六个分布图
-    # for ability in abilities + ['平均分']:
-    #     plt.figure()
-    #     plt.hist(scores_data[ability], bins=10, alpha=0.7, color='blue')
-    #     plt.title(f"{ability} 分数分布")
-    #     plt.xlabel("得分")
-    #     plt.ylabel("频率")
-    #     plt.grid(True)
-        # output_path = os.path.join(output_folder, f"{ability}_distribution.png")
-        # plt.savefig(output_path) 
-        # plt.show()
+
+def find_lowest_dimension(path_scores):
+    """在每条路径的得分中找出得分最低的维度"""
+    # 排除 '平均分'，仅在维度内寻找最低得分
+    ability_scores = {k: v for k, v in path_scores.items() if k != '平均分'}
+    # 返回最低得分的维度名称
+    return min(ability_scores, key=ability_scores.get)
+
+def calculate_lowest_dimension_frequency(all_paths):
+    """计算每个维度作为最低得分维度的频率"""
+    lowest_dimension_counter = Counter()
+
+    for path_data in all_paths:
+        lowest_dimension = find_lowest_dimension(path_data['scores'])
+        lowest_dimension_counter[lowest_dimension] += 1
+
+    return lowest_dimension_counter
+
+def print_lowest_dimension_frequency(lowest_dimension_counter):
+    """输出每个维度作为最低得分维度的频率"""
+    print("各维度作为最低得分维度的频率：")
+    for ability, frequency in lowest_dimension_counter.items():
+        print(f"{ability}: {frequency} 次")
 
 
 def start_interaction():
@@ -132,7 +145,7 @@ def start_interaction():
     # 设置场景文件夹
     # latest_folder = "scenario_20240929_104637"
     # latest_folder = "scenario_20240929_100105"
-    latest_folder = "scenario_4_en"
+    latest_folder = "scenario_2_en"
 
     # 遍历所有分支并记录所有路径的得分
     all_paths = traverse_tree(latest_folder)
@@ -146,6 +159,9 @@ def start_interaction():
 
     # 生成分布图
     plot_scores_distribution(all_paths, resource_path(latest_folder))
+
+    lowest_dimension_counter = calculate_lowest_dimension_frequency(all_paths)
+    print_lowest_dimension_frequency(lowest_dimension_counter)
 
     print("所有路径的分数已记录在 'output_scores.txt' 文件中，分布图已生成。")
 

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. Monica expressed disbelief about Mark's request, and Bob acknowledged that work emergencies happen. You told them you helped but emphasized to Mark the importance of respecting your time off. Monica then asked if Mark at least thanked you, and Bob questioned if Mark promised not to bother you again. You responded that Mark thanked you but you made it clear that your time off should be respected. Monica questioned whether Mark would truly keep the promise, and Bob wondered if he understood the significance of your leave. You then firmly stated that if Mark doesn't respect your time off, you'll remind him again.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'Well, if it happens again, how will you handle it?' [Bob]: 'Yeah, what will you do if Mark doesn't respect your boundaries next time?'",
+    "background": "You suggest focusing on the presentation first. [Monica] raises an eyebrow.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] says, 'Are you sure that's the best approach? What if the report needs more attention?'",
     "options": [
       {
-        "text": "I'll cross that bridge when I come to it. Hopefully, it won't come to that.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You balanced your response by showing optimism while acknowledging the situation, demonstrating good social skills but average empathy and emotional perception."
-      },
-      {
-        "text": "Honestly, I might have to escalate it to our supervisor if it becomes a pattern.",
+        "text": "We can reassess after the presentation, but I'll start on the report for now.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
         },
-        "analysis": "You showed high emotional perception and empathy by acknowledging the seriousness of the situation, but your self-regulation and motivation were lower as you considered escalating the issue."
+        "analysis": "You show good emotional perception by suggesting flexibility, but social skills are lower due to potential indecision."
       },
       {
-        "text": "I'll remind him again, but if it keeps happening, I'll just ignore the messages. My time off is non-negotiable.",
+        "text": "I believe dividing tasks based on strengths will be more efficient. I'll handle the report.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You maintained strong self-regulation by setting firm boundaries, but your empathy and motivation towards the team’s urgent needs were lower."
+        "analysis": "You show strong self-regulation and social skills by sticking to your plan, but empathy could be better by considering Monica's concerns."
+      },
+      {
+        "text": "Let's focus on the presentation first and address the report together afterward.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You show good self-regulation and empathy by suggesting a logical order of tasks, but emotional perception is lower as it delays decision making."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. Monica thought it was a strong stance, and Bob was concerned about the impact on team dynamics. You explained to them that Mark seemed to understand your need for setting healthy boundaries.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'Setting boundaries is important, but do you think Mark will actually respect them next time?' [Bob]: 'Yeah, what if this happens again? Will you handle it the same way?'",
+    "background": "You're managing both tasks. [Bob] reviews the report with you.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'Can you also ensure the formatting is consistent while you work on the report?'",
     "options": [
       {
-        "text": "I hope he will respect them. If it happens again, I'll remind him of our discussion.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed good emotional perception and self-regulation by planning to remind Mark of your boundaries if the situation arises again. However, your empathy and motivation towards ensuring the team's needs are met could be improved."
-      },
-      {
-        "text": "If it happens again, I'll have to be firmer. It's crucial for everyone to respect each other's time off.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You maintained a strong stance on setting boundaries, showing good social skills. However, your empathy and self-regulation towards the team's urgent needs were lower."
-      },
-      {
-        "text": "I doubt it will happen again, but if it does, I might need to escalate to management.",
+        "text": "Sure, I can handle the formatting as well. Just keep me posted on any changes.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 2
+        },
+        "analysis": "You demonstrate good social skills and self-regulation, but your motivation might take a hit due to the added workload."
+      },
+      {
+        "text": "Maybe you can take care of the formatting while I focus on the content.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
           "Empathy": 2,
-          "Social Skill": 2,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You showed good self-regulation and motivation by considering escalation, but your empathy and social skills were lower, potentially leading to more tension."
+        "analysis": "You show strong self-regulation but might appear less empathetic and less perceptive of the overall task needs."
+      },
+      {
+        "text": "Let's split the tasks more evenly. I'll handle the report if you take care of the formatting.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show good emotional perception and empathy, but your motivation and self-regulation might suffer due to the unexpected task distribution."
       }
     ]
   }

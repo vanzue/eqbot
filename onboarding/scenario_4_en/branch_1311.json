@@ -1,23 +1,12 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned. [Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.' You acknowledged the collective impact and suggested a group discussion on handling these situations better. As you discuss the situation further with [Monica] and [Bob], [Monica] sighs, 'We need to be on the same page as a team.' [Bob] adds, 'It's about fairness and respect for everyone's time.' You decided to set some clear guidelines to prevent this from happening again.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] leans forward, 'So, Alex, how do you propose we handle this moving forward?' [Bob] chimes in, 'Yeah, what kind of guidelines are we talking about?'",
+    "background": "[Monica] taps her fingers on the table. You advocated for patience.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "Bob raises an eyebrow. 'Are we just supposed to wait and see? We need results now.'",
     "options": [
       {
-        "text": "Let's draft a team agreement on handling urgent tasks during off-hours.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed high emotional perception and empathy by suggesting a collective approach, and good social skills by proposing a structured solution, but your motivation to set personal boundaries could be enhanced."
-      },
-      {
-        "text": "We need to be strict about not contacting team members during their leave unless it's a real emergency.",
+        "text": "Results take time, but we can set short-term goals to track progress more closely.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
@@ -25,18 +14,29 @@
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You maintained good self-regulation by emphasizing the need for strict boundaries, but showed moderate empathy and motivation towards the team's concerns."
+        "analysis": "You suggest a balanced approach of patience and short-term tracking, showing good self-regulation and moderate skills in other areas."
       },
       {
-        "text": "I agree. We should define what constitutes an 'emergency' and stick to it.",
+        "text": "I get it, but maybe we need to prioritize and focus on the most critical tasks first.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 2
         },
-        "analysis": "You emphasized the need for clear definitions and showed motivation to set rules, but your empathy towards the broader concerns was lacking."
+        "analysis": "You show empathy by acknowledging the urgency and suggest prioritization, but your motivation to stick to the original plan is lower."
+      },
+      {
+        "text": "If immediate results are necessary, we might need to rethink our current strategy entirely.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 2,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 5
+        },
+        "analysis": "You suggest a radical approach, showing high motivation and social skill but lower emotional perception and self-regulation."
       }
     ]
   }

@@ -1,12 +1,12 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You then said, 'I understand the urgency. I'll help this time, but please ensure there’s a backup plan for such situations in the future.' Mark, relieved, replies, 'Thanks, Alex. I really appreciate it.' Later, your colleagues [Monica] and [Bob] also get wind of the situation. [Monica] says, 'Alex, it's really nice of you to help out during your leave.' [Bob] adds, 'But isn't it a bit unfair that you're being pulled in during your time off?' You replied, 'It's frustrating, but sometimes you just have to step up when needed.' [Monica] nods, 'I get that, but it feels like people are taking advantage of your willingness to help.' [Bob] chimes in, 'Yeah, it's like there's no respect for your personal boundaries.' You then said, 'Maybe you're right, but what can you do? It's part of the job.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] frowns, 'Still, it's not sustainable. You deserve your time off without interruptions.' [Bob] looks thoughtful, 'Maybe we should bring this up in the next team meeting.'",
+    "background": "You decided to let Monica and Bob handle the task. [Bob] seems a bit tense.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'Thanks for trusting us. But honestly, was it really necessary to stay this long?' He frowns slightly.",
     "options": [
       {
-        "text": "I suppose discussing it in a team meeting could help set better boundaries.",
+        "text": "I just wanted to ensure everything was on track before stepping back.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
@@ -14,29 +14,29 @@
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show good self-regulation and a willingness to consider solutions, but could further enhance emotional perception and empathy."
+        "analysis": "You show balanced emotional perception and self-regulation, but there could be better empathy and social skills."
       },
       {
-        "text": "Let's see how things go. Maybe it's just a one-off situation.",
+        "text": "You're right, Bob. I probably overthought it. You both got this.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You acknowledge the issue but prefer to wait and see, displaying moderate emotional perception and empathy, but lower motivation and social skills."
+        "analysis": "You show strong self-regulation by acknowledging your overthinking, but empathy and motivation might be seen as lower."
       },
       {
-        "text": "I appreciate your concern. If it happens again, I'll definitely bring it up.",
+        "text": "I felt it was necessary, but I trust you to take it from here.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "You show high emotional perception and empathy by appreciating the concern and being open to future discussions, but self-regulation could be further balanced."
+        "analysis": "You show high emotional perception and empathy, but might overextend yourself, affecting self-regulation and motivation."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned. [Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.' You replied, 'I see your point, but this was a one-time thing. Let's not blow it out of proportion.' [Monica] sighs and [Bob] rubs his temples, clearly still uneasy. [Monica] then asks, 'So, what will you do if this happens again?' [Bob] adds, 'We need a clear stance on this, Alex.' You responded by saying you’ll push back if it happens again, ensuring to stand firm on boundaries.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] raises an eyebrow and [Bob] glances at you skeptically, 'What if it happens sooner than later, Alex? We really need to have a strategy.' [Monica] nods, 'Exactly. We can't just leave things hanging.'",
+    "background": "[Monica] adjusts her glasses. You suggested putting measures in place.",
+    "role": "[Bob]",
+    "location": "Conference Room",
+    "description": "Bob leans forward, looking skeptical. 'Measures are fine, but what if things go south again?'",
     "options": [
       {
-        "text": "Let's set up a team meeting when I return to outline clear guidelines.",
+        "text": "We should prepare for that. Let’s identify potential pitfalls and create solutions.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You offer a realistic approach to managing future situations, showing moderate emotional perception and self-regulation but lower social skills."
+      },
+      {
+        "text": "I’m committed to improving our response strategy. Let’s work together to ensure it doesn’t happen.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
+          "Social Skill": 3,
+          "Motivation": 3
         },
-        "analysis": "You showed good emotional perception and empathy by suggesting a collaborative solution, and good social skills, but your motivation to take immediate action could be improved."
+        "analysis": "You show willingness to take responsibility and collaborate, demonstrating good emotional perception and empathy, but slightly lower self-regulation."
       },
       {
-        "text": "I'll make sure to address it firmly if it happens again. We can't predict everything.",
+        "text": "We should all take part in this. Clearer roles and expectations would help prevent future issues.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Self Regulation": 5,
           "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You maintained good self-regulation and reassured your stance, but showed less empathy towards the urgency of having a strategy."
-      },
-      {
-        "text": "I don't think we need to worry so much. Let's cross that bridge when we get there.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You downplayed the concern, showing good self-regulation but lacking empathy and motivation to address the broader issue proactively."
+        "analysis": "You shift some responsibility to the team, showing high self-regulation but lower empathy and emotional perception."
       }
     ]
   }

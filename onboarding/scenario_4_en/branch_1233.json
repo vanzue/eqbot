@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'. You explained your actions to Monica and Bob saying, 'I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.' Monica raised an eyebrow and said, 'But where do you draw the line, Alex?' Bob nodded in agreement, adding, 'Yeah, you can't always be the go-to person.' You responded with, 'I get it, but I think it's important to be a team player. If it becomes too much, I'll deal with it then.' Now, Monica and Bob seem more concerned. [Monica] crosses her arms and says, 'Alex, you need to think about your own well-being too.' [Bob] frowns and adds, 'We're not saying don't help, but there's got to be a limit.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] sighs and says, 'Alex, you're always putting the team first. When will you put yourself first?' [Bob] looks at you and says, 'We just don't want you to burn out. It's not worth it.'",
+    "background": "[Monica] raises an eyebrow after discussing how to define 'urgent' tasks.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "Bob shrugs, looking at you. 'We still need to handle these tasks efficiently. What if it happens again?'",
     "options": [
       {
-        "text": "I appreciate your concern. I'll make a conscious effort to balance better.",
+        "text": "We need to establish clear guidelines and ensure everyone is on the same page.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged their concerns and showed empathy, but your motivation to stick to boundaries could be improved."
-      },
-      {
-        "text": "I hear you, but I feel it's important to stay adaptable. Not every situation is the same.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "You showed good emotional perception and social skills by explaining your actions, but your self-regulation might need improvement."
+        "analysis": "You show good social skills and self-regulation by suggesting clear guidelines but may lack some motivation to engage directly."
       },
       {
-        "text": "I get your point, but sometimes being a team player means making sacrifices. If it gets too much, I'll address it.",
+        "text": "I can be available for critical tasks, but we need to define our priorities better.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+        "analysis": "You show responsibility and motivation but might compromise self-regulation and empathy by overcommitting."
+      },
+      {
+        "text": "We should train a backup team to handle urgent tasks when primary members are unavailable.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You show empathy and practicality by suggesting a backup team but may come off as less proactive and socially skilled."
       }
     ]
   }

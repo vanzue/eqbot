@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] crossed her arms and sighed, while [Bob] leaned against the wall, looking thoughtful. You explained your decision to help Mark even though you were on leave.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'Seriously, Alex? You should have just ignored his message.' [Bob]: 'Yeah, maybe you should have set a firmer boundary. What do you think now?'",
+    "background": "You suggest reviewing the changes together. [Monica] and [Bob] seem slightly frustrated.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] sighs and says, 'We really need this done quickly. Can you just handle it on your own?'",
     "options": [
       {
-        "text": "Maybe you’re right. I should have been firmer about my boundaries.",
+        "text": "I'll do my best, but I might need some guidance along the way.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
         },
-        "analysis": "You acknowledged the need for stronger boundaries, showing good self-regulation, but your empathy and motivation towards the team's urgent needs were lower."
+        "analysis": "You show good self-regulation and emotional perception by offering to handle it, but your social skills might be seen as lacking since you indicate needing guidance."
       },
       {
-        "text": "I think it was the right call to assist this time, but it's clear we need better processes to handle these emergencies.",
+        "text": "Alright, I'll take care of it. Just make sure to send me all the necessary details.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You balanced empathy and self-regulation well, showing good emotional perception and social skills by addressing the need for better processes."
-      },
-      {
-        "text": "Honestly, I don't know. Maybe it was a mistake, or maybe it wasn't. It’s a tough call.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "Your response was unclear, reflecting internal conflict and lower self-regulation and motivation."
+        "analysis": "You display high empathy and emotional perception by agreeing to handle it, but your motivation may be low as you are relying on them to send details."
+      },
+      {
+        "text": "I can take a crack at it, but if there are complications, I’ll reach out.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show strong self-regulation and social skills by taking on the task with a backup plan, but your emotional perception and empathy are lower as you anticipate needing help."
       }
     ]
   }

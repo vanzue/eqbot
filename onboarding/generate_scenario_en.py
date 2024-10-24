@@ -90,7 +90,7 @@ initial_context = ("""
                     {{
                         "scenes": {{
                             "background": "You served extra food to your colleague [Sarah], and [Sarah] asks:",
-                            "role": "[John]",
+                            "role": "[Sarah]",
                             "location": "Cafeteria",
                             "description": "'Are you feeding a pig here?'",
                             "options": [
@@ -135,10 +135,12 @@ initial_context = ("""
                     
                     SCENARIO_TYPES = [" Workplace difficulties ", "helping others fit in "," Responding to emergencies "]
                     used_scenarios = set()
+                   
                     ##Additional instructions ##
                     Please generate three answers in the scoring, mainly reflect the three different aspects of high EQ dimensions, but there should be no obvious lack of EQ, that is, for the three choices, the total score of the five dimensions of each choice should be close.
                     The score difference between different choices is widened to encourage low scores. The score values of the five dimensions of the same selection should also be separated, so that the variance is large, the distribution is more uniform, the low segment and the middle segment are more, and the high segment is less.
-
+                    The possibility of each dimension to be the lowest for each path should be almost equal.
+                   
                     Make sure to return the JSON data structure (do not start with json letters, do not omit,).
                     Make sure to return the JSON data structure (do not start with json letters, do not omit,).
                     Make sure to return the JSON data structure (do not start with json letters, do not omit,).
@@ -277,7 +279,7 @@ def recursive_dialogue(context, folder, depth=0, max_depth=5, branch_path=""):
                                 User chooses {i}. The new question should follow the previous scenario and choice, paying attention to the context transition, but please don't use the same content. If changing the scene, there should be a transition. The scenario involves two NPCs, [Monica] and [Bob], along with you. The NPCs' names appear in brackets only in the background. A conversation or story occurs between the three of you. The dialogue and scenario should not be repeated. After three rounds of conversation, the scene can shift to a new place to expand the topic. There should be conflict in the situation and dialogue, preferably with some passive-aggressiveness or an element of {scenario_type}.
                                 Provide one abstract, unclear response, one answer that leans toward agreement, and one answer that leans toward disagreement, possibly with passive-aggressive undertones. All three options should make sense in their own way, creating a dilemma when choosing. Keep it conversational and natural.
                                 """
-        new_context += "\nPlease avoid repeating previous scenarios or answers and summurize the background again by including the new interations. The description can be more varied, combined with the last round of dialogue, add some body movements.  Make sure to return the JSON data structure (do not start with json letters, do not omit,) and take it easy.\n"
+        new_context += "\nPlease avoid repeating previous scenarios or answers and the background shoule keep going with the new interations, and it can be more varied, combined with the last round of dialogue, add some body movements but don't include the original background. The description includes the words that role says and following the movements described in background. Make sure to return the JSON data structure (do not start with json letters, do not omit,) and take it easy.\n"
         # print(new_context)
 
         new_branch_path = f"{branch_path}{i}"

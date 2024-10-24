@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You agreed to help out this time but emphasized the need for better planning in the future. [Monica] and [Bob] continue the conversation in the office group chat.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'Thanks for stepping in. Do you think we should set up a meeting to discuss how to avoid this in the future?'",
+    "options": [
+      {
+        "text": "Yes, a meeting might help us outline better strategies.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You agreed to the meeting, showing good emotional perception and empathy, but motivation could be higher."
+      },
+      {
+        "text": "I'm not sure a meeting is the best solution, but we can try.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You were hesitant but agreed to the meeting, displaying good social skills and emotional balance, but empathy and self-regulation could be improved."
+      },
+      {
+        "text": "I think we need more than just a meeting; we need a complete overhaul of our planning process.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggested a more drastic solution, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

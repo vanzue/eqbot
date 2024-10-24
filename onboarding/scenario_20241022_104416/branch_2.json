@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to prioritize your own well-being and declined the urgent task. However, a few hours later, [Monica] and [Bob] start discussing the situation in the office group chat.",
+    "role": "Monica",
+    "location": "Office Group Chat",
+    "description": "'I understand you need time off, but this task is really crucial. Can't you just spare a little time for it?'",
+    "options": [
+      {
+        "text": "I get that it's important, but my time off is necessary for my well-being.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You reiterated the importance of your time off, showing good emotional perception and empathy. However, the response lacked strong social skills."
+      },
+      {
+        "text": "I could help out a bit, but I really need to maintain my break. Could we find a middle ground?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offered a compromise, displaying good social skills and emotional balance. However, motivation and self-regulation could be improved."
+      },
+      {
+        "text": "I find it difficult to believe there’s no one else who can handle this.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You expressed doubt about the urgency, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

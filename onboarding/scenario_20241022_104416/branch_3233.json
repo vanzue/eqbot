@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "After you agreed to help for a short time, you get on a call with [Monica] and [Bob] to discuss the urgent task at hand. As you're trying to understand the details, [Monica] seems frustrated and says:",
+    "role": "Monica",
+    "location": "Virtual Meeting Room",
+    "description": "'I can't believe we have to disturb you on your leave. This should've been handled earlier.'",
+    "options": [
+      {
+        "text": "It's okay, let's just focus on solving this now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You chose to stay calm and focused, showing good emotional control and social skills, but your motivation to address the underlying issue is low."
+      },
+      {
+        "text": "I understand your frustration, Monica. Let's make sure this doesn't happen again.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Monica’s feelings, showing good emotional perception and empathy. However, your approach to conflict management could be more balanced."
+      },
+      {
+        "text": "I agree, this could have been avoided with better planning.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You aligned with Monica's frustration, demonstrating good social skills and a willingness to address planning issues, but empathy and motivation could be higher."
+      }
+    ]
+  }
+}

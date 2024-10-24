@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "After agreeing to take a quick look at the urgent task while on leave, you find that the task is more complicated than initially described. As you begin to work on it, [Monica] and [Bob] start messaging you.",
+    "role": "Monica",
+    "location": "Messaging App",
+    "description": "'Hey, do you think you can finish this by the end of the day? Bob and I are swamped with other tasks.'",
+    "options": [
+      {
+        "text": "I'm really not sure if I can commit to that right now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You express uncertainty, showing balanced emotional perception and social skills, but your motivation and self-regulation could be higher."
+      },
+      {
+        "text": "I'll do my best to get it done, but I can't guarantee it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You show a willingness to help, demonstrating good self-regulation and motivation, but empathy and social skill could be improved."
+      },
+      {
+        "text": "I think it would be better if you find someone else who can dedicate more time to this task.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You prioritize effective task management and show good emotional perception and empathy, but self-regulation and social skill could be higher."
+      }
+    ]
+  }
+}

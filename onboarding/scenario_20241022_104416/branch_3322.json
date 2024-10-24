@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You asked Bob to help Monica with some of the updates while you focus on the main task. Later, during a break in the cafeteria, [Monica] approaches you with a somewhat frustrated look. [Bob] is also there, looking concerned.",
+    "role": "Monica",
+    "location": "Cafeteria",
+    "description": "'Hey, I thought you were going to handle the task yourself. Why did you ask Bob to help me instead?'",
+    "options": [
+      {
+        "text": "I thought spreading the workload would get the job done faster.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You justified your decision by focusing on efficiency, showing good emotional perception and a balanced approach to the situation."
+      },
+      {
+        "text": "I didn't want to overwhelm myself and thought Bob could assist you better.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed concern for not overwhelming yourself, showing good empathy and motivation. However, social skills could be improved as Monica might feel undervalued."
+      },
+      {
+        "text": "Honestly, I didn't think you'd mind. Was I wrong?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You took a more casual approach, asking for feedback, which shows good social skills and self-regulation. However, empathy and motivation could be higher."
+      }
+    ]
+  }
+}

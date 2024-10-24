@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. A few hours later, you find yourself discussing this situation with Monica and Bob. After explaining that everyone, including Mark, should respect personal time off, the conversation continues.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I get that, but what if Mark doesn't take that well and holds it against you later?' [Bob]: 'Yeah, you might face some backlash from the team. How do you plan to handle that?'",
+    "background": "You suggest better task allocation. [Bob] looks skeptical.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'Okay, but splitting tasks could create inconsistencies. Are we prepared for that?'",
     "options": [
       {
-        "text": "I’ll cross that bridge when I get to it. Right now, I need to focus on my time off.",
+        "text": "Let's set clear guidelines to avoid inconsistencies. I'll manage the report and keep you updated.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained clarity and self-regulation, reaffirming your boundaries. However, empathy and motivation towards team dynamics might need improvement."
-      },
-      {
-        "text": "I understand your concerns, but personal time off should be respected by everyone, including Mark.",
-        "scores": {
-          "Emotion Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You showed balanced emotional perception and social skills, but self-regulation and motivation to address team needs could be stronger."
+        "analysis": "You show good emotional perception and social skills but might struggle with motivation due to task division."
       },
       {
-        "text": "If Mark can't respect my boundaries, then maybe we need to have a more serious conversation about this.",
+        "text": "I see your point. Maybe we should all focus on the presentation first and tackle the report later.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show good self-regulation and empathy, but motivation could suffer due to changing plans."
+      },
+      {
+        "text": "We can try multitasking, but we need to communicate constantly to ensure consistency.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You maintained moderate emotional perception and self-regulation, but empathy and social skills were lower, indicating possible future tension."
+        "analysis": "You show strong self-regulation but might lack in emotional perception and social skill due to the complex approach."
       }
     ]
   }

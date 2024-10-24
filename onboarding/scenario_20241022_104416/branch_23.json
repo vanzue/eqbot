@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to express doubt about the urgency of the task. A few hours later, [Monica] and [Bob] start discussing the situation more directly in the office group chat.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'I see where you're coming from, but we really need all hands on deck. Can't you make an exception just this once?'",
+    "options": [
+      {
+        "text": "It's not that I don't want to help, but I really need this break. Maybe we can plan better next time to avoid such situations.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the issue and suggested a proactive future approach. This response shows good emotional perception and empathy, but motivation could be higher."
+      },
+      {
+        "text": "I guess I can help out a bit, but I'll need to hand it off to someone else soon.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You offered a compromise, maintaining good social skills and emotional balance, but the empathy and self-regulation could be improved."
+      },
+      {
+        "text": "Doesn't seem like there's proper planning if you're always relying on people during their time off.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You highlighted the planning issue, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

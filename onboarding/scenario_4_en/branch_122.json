@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'. You explained your actions to Monica and Bob saying, 'I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.' Now, they seem unconvinced. [Monica] raises an eyebrow and says, 'But where do you draw the line, Alex?' [Bob] nods in agreement, adding, 'Yeah, you can't always be the go-to person.' You responded with, 'I hear you, but I don't think it's that black and white. Sometimes we have to be flexible.' Now, they still look doubtful.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] crosses her arms and says, 'Flexibility is one thing, being taken advantage of is another.' [Bob] sighs, 'Well, you know how things are at the office. Are you sure this is the right approach?'",
+    "background": "[Bob] leans back in his chair, questioning how to handle critical tasks during your absence.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "Monica sighs and looks at you. 'It’s not just about one task. We need a reliable solution for these situations.'",
     "options": [
       {
-        "text": "I see your point. Maybe I need to reconsider my approach.",
+        "text": "I agree. Let’s brainstorm a plan that ensures coverage without overburdening anyone.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You acknowledged their concerns and showed empathy, but your motivation to stick to boundaries could be improved."
+        "analysis": "You show high empathy and social skills by agreeing to find a solution together, but your motivation to take immediate action is lower."
       },
       {
-        "text": "It's a tricky situation. Sometimes being a team player means making sacrifices.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed good emotional perception and social skills by explaining your actions, but your self-regulation might need improvement."
-      },
-      {
-        "text": "I understand your concerns, but I'm confident in my decision. If it becomes a problem, I'll address it then.",
+        "text": "I understand the concern. Can we assign a rotating on-call schedule for emergencies?",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggest a practical solution, showing good self-regulation and motivation, but empathy and social skills could be improved."
+      },
+      {
+        "text": "I get it, but we also need to respect personal time. Maybe we need better communication protocols.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 5,
           "Motivation": 3
         },
-        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+        "analysis": "You emphasize the importance of personal time and suggest communication improvements, showing excellent social skills but lower empathy and emotional perception."
       }
     ]
   }

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "After suggesting brainstorming a way to manage without you, [Monica] and [Bob] start to discuss potential solutions in the office group chat. [Bob] rubs his temples in frustration.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'We’ve tried brainstorming, but it’s hard without your input. Are you sure you can’t just help us out for a bit?'",
+    "options": [
+      {
+        "text": "I understand it’s difficult, but maybe try breaking the task into smaller parts?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested a practical solution, showing good emotional control and empathy. However, motivation could be improved."
+      },
+      {
+        "text": "I can assist briefly, but then you’ll have to manage the rest.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You offered limited help while emphasizing the need for delegation, showing good social skills. However, emotional perception and empathy could be higher."
+      },
+      {
+        "text": "It's really important for me to take this break. Can't someone else take this on?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You reiterated the importance of your break and suggested finding an alternative, showing good emotional perception and empathy. However, self-regulation and social skills were lacking."
+      }
+    ]
+  }
+}

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned. [Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.' You replied, 'I see your point, but this was a one-time thing. Let's not blow it out of proportion.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] sighs and [Bob] rubs his temples, clearly still uneasy. [Monica] then asks, 'So, what will you do if this happens again?' [Bob] adds, 'We need a clear stance on this, Alex.'",
+    "background": "[Bob] sighs, leaning back. You offered to discuss future improvements.",
+    "role": "[Monica]",
+    "location": "Conference Room",
+    "description": "Monica adjusts her glasses, looking concerned. 'But how can we be sure this won’t happen again?'",
     "options": [
       {
-        "text": "I'll make sure to push back if it happens again. We should all stand firm on our boundaries.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You showed good emotional perception and social skills by promising to assert boundaries in the future, but your motivation to take a firm stance now could improve."
-      },
-      {
-        "text": "If it happens again, we can discuss it as a team and find the best approach together.",
+        "text": "It's hard to say for sure, but we can definitely put measures in place.",
         "scores": {
           "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 2
+        },
+        "analysis": "You offer a realistic approach to managing future situations, showing moderate emotional perception and self-regulation but lower social skills."
+      },
+      {
+        "text": "I’ll take responsibility for better planning next time. Let's work together on a contingency plan.",
+        "scores": {
+          "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You showed empathy and willingness to collaborate, but could improve self-regulation by setting clearer boundaries yourself."
+        "analysis": "You show willingness to take responsibility and collaborate, demonstrating good emotional perception and empathy, but slightly lower self-regulation."
       },
       {
-        "text": "I don't think it's that big of a deal. Let's just see how things go.",
+        "text": "We need to set clearer expectations for everyone. This isn’t just about me.",
         "scores": {
           "Emotion Perception": 2,
-          "Self Regulation": 4,
+          "Self Regulation": 5,
           "Empathy": 2,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You showed good self-regulation by downplaying the issue, but lacked empathy and motivation to address the broader concern."
+        "analysis": "You shift some responsibility to the team, showing high self-regulation but lower empathy and emotional perception."
       }
     ]
   }

@@ -1,0 +1,84 @@
+{
+  "scenes": {
+    "background": "After responding to your colleague, you continue your leave. The next day, [Monica] and [Bob] approach you in the break room. [Monica] leads the conversation, while [Bob] stands by, seemingly supportive but silent.",
+    "role": "Monica",
+    "location": "Break Room",
+    "description": "'Hey, we noticed you didn’t help out with the task yesterday. It put a lot of pressure on the team. What’s your justification?'",
+    "options": [
+      {
+        "text": "I thought my break was important to maintain my productivity.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You defended your need for a break, showing empathy for yourself and motivation to stay productive. However, your social skills and emotional regulation could be improved."
+      },
+      {
+        "text": "I apologize if it caused any trouble. I needed that time to recharge.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed empathy and emotional perception by apologizing and explaining your need for rest. However, your motivation might come into question."
+      },
+      {
+        "text": "I understand it was tough, but my break was planned long ago.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You maintained emotional control and social skills. However, your empathy and emotional perception might seem lacking."
+      }
+    ]
+  },
+  "next_scene": {
+    "background": "After explaining your situation, [Monica] seems to be slightly dissatisfied. [Bob], who has been quiet, finally speaks up, leaning against the counter.",
+    "role": "Bob",
+    "location": "Break Room",
+    "description": "'It's just that we were counting on you. How are we supposed to manage next time?'",
+    "options": [
+      {
+        "text": "I can make sure to communicate better in the future.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You are demonstrating empathy and motivation to improve communication. However, your emotional regulation and perception might need more attention."
+      },
+      {
+        "text": "I understand. Maybe we need a better backup plan.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the need for better planning, showing good emotional perception and social skills. However, your motivation could be questioned."
+      },
+      {
+        "text": "I can help set up a system to prevent this from happening again.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You focused on a solution, showing good self-regulation and motivation. However, empathy and emotional perception appear lacking."
+      }
+    ]
+  }
+}

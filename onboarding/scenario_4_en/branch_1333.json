@@ -1,23 +1,12 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned. [Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.' You balanced the conversation by admitting the need for flexibility while promising to set boundaries in the future. [Monica] sighs, 'I just hope this doesn't become a trend, Alex. It's hard enough to balance work and personal life.' [Bob] shrugs, 'Yeah, and it feels like we're the only ones who care about this.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] looks exasperated, 'We really need to be on the same page about this, Alex.' [Bob] adds, 'It's about teamwork and fairness to everyone.'",
+    "background": "[Monica] raises an eyebrow, tapping her pen. You suggested a more comprehensive approach.",
+    "role": "[Bob]",
+    "location": "Meeting Room",
+    "description": "Bob leans forward, narrowing his eyes. 'How will a comprehensive approach fix this specific issue?'",
     "options": [
       {
-        "text": "I hear you both. Let's arrange a meeting with the team to discuss how we can handle such situations in the future.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You showed high emotional perception and empathy by acknowledging the importance of teamwork, and good social skills by suggesting a team discussion, but your motivation to assert boundaries could improve."
-      },
-      {
-        "text": "I understand your frustration, but I think we might be overthinking this. It was a one-off situation.",
+        "text": "It's about addressing the root cause. Let's identify the main issues first.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
@@ -25,18 +14,29 @@
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You maintained good self-regulation and justified your action as an exception, but showed less empathy towards the broader concern."
+        "analysis": "You emphasize the importance of understanding the underlying problems, showing good self-regulation and moderate social skills, but empathy could be improved."
       },
       {
-        "text": "I get your point. Maybe we do need to establish clearer guidelines for these kinds of requests.",
+        "text": "A comprehensive approach may not fix everything immediately, but it sets a foundation.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You balance the need for a broader strategy with realistic expectations, showing good emotional perception and social skills, but motivation could be higher."
+      },
+      {
+        "text": "We need a more integrated strategy, but specific solutions for immediate issues are crucial too.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You balanced the conversation by admitting the need for better guidelines while showing moderate scores in all dimensions."
+        "analysis": "You stress the importance of a combined approach while highlighting immediate solutions, showing high self-regulation but lower social skills."
       }
     ]
   }

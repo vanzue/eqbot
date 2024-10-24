@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded, 'I get what you're saying, but I felt it was necessary this time. I'll be more careful in the future.' [Monica] nods thoughtfully and says, 'I understand, but it's important to take care of yourself too.' [Bob] shrugs, 'Well, it's done now. Let's just hope it doesn't become a trend.' You replied, 'Yeah, let's see how it goes. Maybe it won't be a big deal.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] raises an eyebrow, 'Seriously, Alex, you need to prioritize your own well-being.' [Bob] leans against the wall, 'Yeah, what if this keeps happening? It's not fair to you.'",
+    "background": "[Bob] raises concerns about your decision affecting the team.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "Monica sighs and leans back in her chair. 'Do you really think we can rely on you for future projects?'",
     "options": [
       {
-        "text": "I get it, but let's worry about it if it happens again.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You chose to address the issue later, showing good self-regulation but lower emotional perception and empathy towards their concerns."
-      },
-      {
-        "text": "You're right, but I felt it was the right thing to do at the time.",
+        "text": "I understand your concern. Let's establish clearer communication channels so this doesn't happen again.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You acknowledged their concerns but maintained your stance, showing good emotional perception and social skills, though self-regulation could be improved."
+        "analysis": "You show strong self-regulation and emotional perception, but empathy could be improved by addressing the immediate concern more directly."
       },
       {
-        "text": "If it starts becoming a pattern, I'll make sure to address it. For now, let's not stress over it.",
+        "text": "I apologize if my absence caused issues. I can commit to being more accessible, even on leave.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show good empathy and social skills by offering to be more available, but your self-regulation might suffer from overcommitment."
+      },
+      {
+        "text": "I think this highlights the need for better planning. Perhaps we can set up a better support system for when team members are on leave.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 5,
           "Motivation": 2
         },
-        "analysis": "You chose to downplay the issue, showing moderate self-regulation but lower empathy and motivation to address their concerns."
+        "analysis": "You suggest a practical solution, showing good social skills and self-regulation, but emotional perception and motivation could be higher."
       }
     ]
   }

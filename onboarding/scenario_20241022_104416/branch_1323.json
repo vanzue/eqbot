@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help for a short time but emphasized that you would need to hand it off to someone else after that. You informed your colleagues [Monica] and [Bob] about your decision, and now you're in a video call with them discussing the situation. [Monica] previously asked if you could extend your support, but you reiterated your initial stance. [Bob] now leans back in his chair and says, 'We understand your situation, but this task is critical. Are you sure you can't make an exception for this one time?'",
+    "role": "Bob",
+    "location": "Video Call",
+    "description": "[Bob] leans back in his chair and says, 'We understand your situation, but this task is critical. Are you sure you can't make an exception for this one time?'",
+    "options": [
+      {
+        "text": "I'll help for a bit longer, but I really can't commit beyond that.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You agreed to help a bit longer, showing decent emotional control and empathy, but your motivation and emotional perception could be higher."
+      },
+      {
+        "text": "I told you I can't continue; please respect my boundaries.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You stood firm on your boundaries, showing good emotional perception and empathy, but your self-regulation and social skills may need improvement."
+      },
+      {
+        "text": "Let's discuss how to redistribute the task so it gets done without overburdening anyone.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You proposed a solution-oriented approach, showing good self-regulation and social skills, but empathy and emotional perception could be better."
+      }
+    ]
+  }
+}

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. A few hours later, you find yourself discussing this situation with Monica and Bob. After explaining that you believe Mark understood your need to set healthy boundaries, the conversation continues.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'Setting boundaries is important, but what if Mark doesn't respect them next time?' [Bob]: 'Yeah, and what if this affects your relationship with the team?'",
+    "background": "You and your colleagues decide to focus on the report first. [Monica] looks concerned.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] says, 'Focusing on the report first might indeed delay the presentation. Are we sure that's the best course?'",
     "options": [
       {
-        "text": "I guess we’ll cross that bridge when we get there. For now, I think it's essential to stick to my boundaries.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained clarity and self-regulation, reaffirming your boundaries. However, empathy and motivation towards team dynamics might need improvement."
-      },
-      {
-        "text": "I understand your concerns, but personal time off should be respected by everyone, including Mark.",
+        "text": "We should stick to the plan and finish the report first. It’s crucial.",
         "scores": {
           "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You show good self-regulation and motivation, but empathy could be improved by considering the presentation's importance."
+      },
+      {
+        "text": "Maybe we can allocate tasks better. I'll manage the report while you start on the presentation.",
+        "scores": {
+          "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You showed balanced emotional perception and social skills, but self-regulation and motivation to address team needs could be stronger."
+        "analysis": "You balance social skills and emotional perception, but motivation might be lower due to task splitting."
       },
       {
-        "text": "If Mark can't respect my boundaries, then maybe we need to have a more serious conversation about this.",
+        "text": "We might need to reconsider and prioritize the presentation. Let's discuss.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You maintained moderate emotional perception and self-regulation, but empathy and social skills were lower, indicating possible future tension."
+        "analysis": "You show strong self-regulation and empathy, but emotional perception might be lower as you shift priorities."
       }
     ]
   }

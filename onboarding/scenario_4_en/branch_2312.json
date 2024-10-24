@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You then said, 'I understand the urgency. I'll help this time, but please ensure there’s a backup plan for such situations in the future.' Mark, relieved, replies, 'Thanks, Alex. I really appreciate it.' Later, your colleagues Monica and Bob also get wind of the situation. Monica says, 'Alex, it's really nice of you to help out during your leave.' Bob adds, 'But isn't it a bit unfair that you're being pulled in during your time off?' You replied, 'Well, it's a team effort and I don't mind pitching in occasionally.' Bob looks at you, raising an eyebrow, 'But what if this happens all the time? It sets a precedent, doesn’t it?' You responded, 'Honestly, I'd rather not think about it right now. Let's just focus on getting through this task.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "Monica nods and then says, 'I get what you're saying, but we should really figure out a way to prevent this from becoming a recurring issue.' Bob adds, 'Yeah, we can't always rely on you to save the day, Alex.'",
+    "background": "You decided to involve [Bob] right away to lighten the load. [Bob] joins you both.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'Thanks for involving me. But, are we sure this is urgent enough to interrupt your leave?' He glances at [Monica].",
     "options": [
       {
-        "text": "I hear you both. Maybe we should have a meeting with the team to set some boundaries.",
+        "text": "It seems urgent enough, but let's reassess together.",
         "scores": {
-          "Emotion Perception": 4,
+          "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show high emotional perception and self-regulation by acknowledging the issue and suggesting a constructive solution, but your motivation to immediately resolve the task is slightly lower."
+        "analysis": "You show a balanced approach by involving others in the decision-making process, but emotional perception could be improved."
       },
       {
-        "text": "Let's not overthink this. I'll just handle it this time, and we'll deal with future issues as they come.",
+        "text": "I think it's urgent, so let's focus on getting it done quickly.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You prioritize the immediate task, showing high motivation, but your self-regulation is lower as you avoid addressing the concern directly."
-      },
-      {
-        "text": "I understand, but for now, let's just focus on completing this task efficiently.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 2
         },
-        "analysis": "You balance empathy and motivation well by acknowledging the concern, but you focus more on the immediate task, showing average self-regulation."
+        "analysis": "You show high empathy and motivation by prioritizing the task, but it may affect your self-regulation."
+      },
+      {
+        "text": "Maybe it's not that urgent. Let's take a step back and evaluate.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You show strong self-regulation by considering stepping back, but empathy and motivation might be seen as lower."
       }
     ]
   }

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decide to take a quick look at the task. While discussing the issue, [Monica] and [Bob] join the conversation.",
+    "role": "Bob",
+    "location": "Messaging App",
+    "description": "'I get that you're on leave, and I appreciate you looking into this. But I really think we need you to handle it fully. What do you think?' He pauses, waiting for your response.",
+    "options": [
+      {
+        "text": "I'll try my best to manage it, but I might need to ask for some help if it gets too overwhelming.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You agree to assist while leaving room for asking help if necessary. This shows good emotional control and motivation, but empathy could be improved."
+      },
+      {
+        "text": "I understand the urgency, but can we find a way to distribute the workload more evenly?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the urgency and suggest a fair distribution of work, showing good emotional perception and empathy, though social skills could be better."
+      },
+      {
+        "text": "I can help out for a bit, but I'll need someone else to take over after that.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You choose a balance between helping and setting boundaries, showing good social skills and emotional balance. However, motivation and self-regulation could be higher."
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You acknowledged the issue and suggested a proactive future approach. A few hours later, [Monica] and [Bob] start discussing the situation face-to-face in the office kitchen.",
+    "role": "Monica",
+    "location": "Office Kitchen",
+    "description": "'I get that you need your break, but it feels like you're not considering the team's needs. What if we all took time off when there was an urgent task?'",
+    "options": [
+      {
+        "text": "I understand your point, but I believe everyone deserves a break to be more productive in the long run.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You emphasized the importance of breaks for productivity, showing good emotional perception and empathy. However, it lacks strong social skills."
+      },
+      {
+        "text": "Maybe you're right, but if we planned better, we wouldn't be in this situation.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the point but shifted the focus to planning, displaying good social skills and emotional balance. Empathy and motivation could be improved."
+      },
+      {
+        "text": "It's not fair to assume I don't care about the team just because I need some time off.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You defended your need for time off, showing good emotional control and motivation, but empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

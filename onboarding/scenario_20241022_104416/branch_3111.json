@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You chose to assist despite being on leave, showing good emotional control and motivation. However, this may impact your ability to recharge effectively. You decide to quickly take a look at the task and realize it requires more effort than initially thought. After deciding to handle the task but delegate some parts, you reach out to [Bob] for support. You acknowledge the importance of both the task and your personal time, showing good emotional perception and self-regulation. [Monica] joins the video call, looking a bit frustrated.",
+    "role": "Monica",
+    "location": "Video Call",
+    "description": "[Monica] crosses her arms and says, 'I get balancing leave and work is tough, but the deadline is close. Can’t you just push through for now?'",
+    "options": [
+      {
+        "text": "I understand the urgency, but my leave is also important. Can we find a compromise?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge the situation and express the need for a balanced approach, showing good emotional perception and empathy, but motivation could be higher."
+      },
+      {
+        "text": "I’ll push through for now, but I’ll need support to make sure it’s done on time.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You agree to prioritize the task, showing good self-regulation and social skills, but emotional perception could be better."
+      },
+      {
+        "text": "I took on the task because it was urgent, but I can’t neglect my leave entirely.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You explain your stance while maintaining boundaries, showing good social skills, but empathy and emotional perception could be improved."
+      }
+    ]
+  }
+}

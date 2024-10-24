@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to offer a compromise and help out a bit while maintaining your break. [Monica] and [Bob] seem slightly relieved but still uneasy as the conversation continues. [Bob] leans back in his chair, staring at the screen.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'We appreciate your willingness to help out, but it's not fair to the rest of us who are covering multiple tasks. Can you commit to a specific time frame for your assistance?'",
+    "options": [
+      {
+        "text": "I can dedicate a couple of hours today, but I’ll need to step back after that.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You offered a specific time frame, showing good emotional control and willingness to help. However, social skills and empathy could be improved."
+      },
+      {
+        "text": "I understand the pressure you're under. How about I help out for an hour now and we reassess the situation afterward?",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed understanding and offered a flexible solution, displaying good emotional perception and empathy. However, motivation to resolve the issue fully was lower."
+      },
+      {
+        "text": "I'm already making a compromise by helping at all during my leave. Perhaps we need to discuss how to handle such tasks better in the future.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You reiterated your compromise and suggested future improvements, showing good motivation and emotional control. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

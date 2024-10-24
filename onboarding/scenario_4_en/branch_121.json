@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'. You explained your actions to Monica and Bob saying, 'I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.' Now, they seem unconvinced. [Monica] raises an eyebrow and says, 'But where do you draw the line, Alex?' [Bob] nods in agreement, adding, 'Yeah, you can't always be the go-to person.' You acknowledged their concerns and showed empathy by saying, 'I understand your point. I'll try to establish clearer boundaries going forward.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] crosses her arms and says, 'We'll see if you can stick to that, Alex.' [Bob] shrugs, adding, 'It's not just about setting boundaries. It's about respecting them too.'",
+    "background": "[Bob] leans back in his chair, suggesting a protocol for handling urgent tasks during your absence.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "Monica raises an eyebrow. 'A protocol might help, but what if no one else can handle it as effectively as you?'",
     "options": [
       {
-        "text": "You're right. I'll make sure to respect my own boundaries more seriously.",
+        "text": "We can train more people to handle such tasks. It's not just about one person.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You acknowledged their concerns and showed empathy, but your motivation to stick to boundaries could be improved."
+        "analysis": "You show empathy and a balanced approach to the situation by suggesting training, but emotional perception could be improved."
       },
       {
-        "text": "I hear you, but I think there's always room for exceptions in urgent situations.",
+        "text": "If it’s that urgent, there should be an emergency plan. I can't always be available.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 3,
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You showed good emotional perception and social skills by explaining your actions, but your self-regulation might need improvement."
+        "analysis": "You emphasize the need for an emergency plan, showing strong self-regulation but lower empathy."
       },
       {
-        "text": "I get it, but I think being flexible is also important. I'll handle it if it becomes too much.",
+        "text": "I understand your concern, but we need to distribute responsibilities better.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
         },
-        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+        "analysis": "You acknowledge the concern and suggest better responsibility distribution, showing good emotional perception and social skills."
       }
     ]
   }

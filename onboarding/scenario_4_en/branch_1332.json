@@ -1,23 +1,12 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded by justifying your decision and maintaining that if it becomes a habit, you'll address it then. Now, [Monica] frowns and [Bob] crosses his arms, looking concerned. [Monica] says, 'Alex, it's not just about setting boundaries for yourself. It affects all of us when exceptions become the norm.' [Bob] nods in agreement, 'Yeah, maybe we're being taken advantage of collectively.' You balanced the conversation by admitting the need for flexibility while promising to set boundaries in the future, showing moderate scores in all dimensions. [Monica] sighs, 'I just hope this doesn't become a trend, Alex. It's hard enough to balance work and personal life.' [Bob] shrugs, 'Yeah, and it feels like we're the only ones who care about this.' You explained that the situation was unique and unlikely to recur.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] looks at you with concern, 'So, what if something like this happens again? Are we just supposed to drop everything every time?' [Bob] adds, 'Yeah, we need a clearer approach for these situations.'",
+    "background": "[Monica] raises an eyebrow, tapping her pen. You balanced the suggestion with a broader perspective.",
+    "role": "[Bob]",
+    "location": "Meeting Room",
+    "description": "Bob leans forward, his eyes narrowing. 'Balancing perspectives is fine, but did it really address the core issue?'",
     "options": [
       {
-        "text": "I hear you. Maybe we should set up some guidelines for handling urgent tasks during leave.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged their concerns and showed empathy by suggesting a practical solution. However, your motivation to maintain strict boundaries could be improved."
-      },
-      {
-        "text": "I understand, but we can't predict every scenario. Let's not stress over hypothetical situations.",
+        "text": "It's a continuous process. Let's focus on identifying the core issues together.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
@@ -25,18 +14,29 @@
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You maintained good self-regulation and justified focusing on the present, but showed less empathy towards the broader concern."
+        "analysis": "You emphasize teamwork and continuous improvement, showing good self-regulation and moderate social skills, but empathy could be higher."
       },
       {
-        "text": "We should be adaptable but also prepared. If it happens again, we can handle it on a case-by-case basis.",
+        "text": "Addressing the core issue takes time. We need to be patient and persistent.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You highlight the importance of patience and persistence, showing good emotional perception and social skills, but motivation could be higher."
+      },
+      {
+        "text": "We're making progress, but focusing solely on the core issue might overlook other important factors.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You balanced the conversation by suggesting flexibility while being prepared, showing moderate scores in all dimensions."
+        "analysis": "You stress the need for a comprehensive approach, showing high self-regulation but lower social skills."
       }
     ]
   }

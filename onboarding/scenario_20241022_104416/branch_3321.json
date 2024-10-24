@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You told Bob that you're managing for now but will let him know if you need help. A bit later, [Monica] comes to you in person, looking a bit frustrated. She says, 'I really needed that update earlier. Why did you choose to make me wait?'",
+    "role": "Monica",
+    "location": "Office",
+    "description": "'I really needed that update earlier. Why did you choose to make me wait?'",
+    "options": [
+      {
+        "text": "I understand, Monica. I was under a lot of pressure myself. Let's take a moment to get you up to speed.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledge Monica's frustration and offer an immediate solution, showing good emotional perception and empathy. However, your motivation might be perceived as lower."
+      },
+      {
+        "text": "I had to prioritize the main task, but I can explain everything to you now.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You explain your actions while offering an update, showing good self-regulation and motivation. However, empathy might be lacking as Monica's needs were not addressed earlier."
+      },
+      {
+        "text": "I was managing a lot at that moment. Maybe next time you can check with Bob if I'm unavailable.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggest an alternative for future situations, showing good social skills. However, emotional perception and empathy could be higher."
+      }
+    ]
+  }
+}

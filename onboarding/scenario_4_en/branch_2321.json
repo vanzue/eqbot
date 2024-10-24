@@ -1,12 +1,23 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You then said, 'I understand the urgency. I'll help this time, but please ensure there’s a backup plan for such situations in the future.' Mark, relieved, replies, 'Thanks, Alex. I really appreciate it.' Later, your colleagues Monica and Bob also get wind of the situation. Monica says, 'Alex, it's really nice of you to help out during your leave.' Bob adds, 'But isn't it a bit unfair that you're being pulled in during your time off?' You responded, 'I guess it's part of the job, but it would be nice to have better boundaries.' Bob and Monica exchange glances, clearly agreeing with your sentiment. Monica then says, 'Maybe we should bring this up in the next team meeting?' Bob nods, adding, 'Yeah, it could help everyone, not just you.' You replied, 'That sounds like a good idea. Let's make sure everyone has a chance to voice their concerns.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "Monica looks thoughtful and says, 'I think it's important that we all support each other, but we also need to respect personal time.' Bob chimes in, 'Absolutely. It's all about finding the right balance. But do you think management will actually listen?'",
+    "background": "[Monica] seems unsatisfied with your decision to prioritize your rest.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'Don't worry about it, Monica. I can handle it. But are you sure you're okay with this?' He looks at you questioningly.",
     "options": [
       {
-        "text": "I'm optimistic. If we present it well, they'll understand it's for the greater good.",
+        "text": "Yes, I trust you can manage it. I'll be available if something urgent comes up.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You show strong self-regulation and trust in your colleague, but your motivation might seem lower."
+      },
+      {
+        "text": "Maybe I should stay on standby to ensure everything goes smoothly.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
@@ -14,29 +25,18 @@
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show high empathy and emotional perception by expressing optimism and teamwork, but self-regulation could be improved as you take on additional responsibility."
+        "analysis": "You show high emotional perception and empathy but may overextend yourself, affecting self-regulation."
       },
       {
-        "text": "I'm not sure, but it's worth trying. At least we've done our part.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You maintain good self-regulation by being cautious and realistic, but show moderate empathy and social skills."
-      },
-      {
-        "text": "Honestly, I'm skeptical. It might just fall on deaf ears.",
+        "text": "Monica, this isn't about fairness. Bob, you can manage. I'll be resting.",
         "scores": {
           "Emotion Perception": 2,
-          "Self Regulation": 3,
+          "Self Regulation": 5,
           "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You balance self-regulation and realistic expectations, but your social skills and empathy could be improved as you appear pessimistic."
+        "analysis": "You prioritize your rest, showing strong self-regulation, but empathy and motivation could be perceived as lower."
       }
     ]
   }

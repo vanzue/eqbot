@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You chose to acknowledge the urgency of the task and suggested discussing how to prevent such situations in the future. Hours later, [Monica] and [Bob] continue the chat, now sharing their frustrations.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'Honestly, this wouldn't have been an issue if we had better planning. But here we are, needing your help urgently. Can't you reconsider?'",
+    "options": [
+      {
+        "text": "I get that planning could have been better, but right now I need my time off to recharge. Let's make sure this doesn't happen again.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the planning issue and emphasized your need for time off, showing good emotional perception and empathy. However, motivation to resolve the immediate issue was lower."
+      },
+      {
+        "text": "I understand the urgency and I'll help as much as I can, but I still need to maintain some of my break. Can we find a better solution together?",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You offered to help more while still maintaining your break, displaying good social skills and emotional balance. However, motivation and self-regulation could be improved."
+      },
+      {
+        "text": "This sounds like poor planning on someone's part. My break is important too, and we need to address the root cause here.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You questioned the planning and emphasized your need for a break, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}

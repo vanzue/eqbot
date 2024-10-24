@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] crossed her arms and sighed, while [Bob] leaned against the wall, looking thoughtful. You mentioned that you decided to help Mark this time but asked him to handle such tasks without you while you're on leave. [Monica] shook her head, [Bob] raised an eyebrow.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I still think it's unfair of Mark to do that. What if it happens again?' [Bob]: 'Yeah, Mark should have known better. How do you plan to handle it if he asks again?'",
+    "background": "You decide to focus on the presentation first. [Bob] looks a bit frustrated.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'I understand your point, but the report is really urgent. How should we handle this?'",
     "options": [
       {
-        "text": "Well, I'll cross that bridge when I come to it. Let's hope it doesn't happen again.",
+        "text": "Let's delegate the report to someone else while we focus on the presentation.",
         "scores": {
           "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 5,
+          "Motivation": 2
+        },
+        "analysis": "You show good social skills and self-regulation by delegating, but empathy is lower as you shift the responsibility."
+      },
+      {
+        "text": "I think we should split the tasks and handle both simultaneously.",
+        "scores": {
+          "Emotion Perception": 4,
           "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You display good emotional perception and social skills, but your self-regulation is a bit affected by multitasking."
+      },
+      {
+        "text": "Let's focus on the presentation now and tackle the report later. We can manage both in sequence.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You provided an abstract and unclear response, showing moderate emotional perception and self-regulation. However, your motivation and proactive planning could be improved."
-      },
-      {
-        "text": "If it happens again, I'll remind Mark that I'm on leave and he should respect my time off.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You leaned toward agreement with setting clear boundaries, showing high emotional perception and self-regulation. However, your empathy towards Mark's situation was lower."
-      },
-      {
-        "text": "Honestly, if it happens again, I'll have to seriously reconsider how I handle these requests. Maybe I need to be more assertive.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You leaned toward disagreement with a passive-aggressive undertone, showing good social skills and empathy. However, your self-regulation was lower."
+        "analysis": "You show strong self-regulation and a clear focus, but emotional perception is lower as you delay the urgent task."
       }
     ]
   }

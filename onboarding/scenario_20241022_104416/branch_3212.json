@@ -1,0 +1,84 @@
+{
+  "scenes": {
+    "background": "After responding to your colleague, you continue your leave. The next day, [Monica] and [Bob] approach you in the break room. [Monica] leads the conversation, while [Bob] stands by, seemingly supportive but silent.",
+    "role": "Monica",
+    "location": "Break Room",
+    "description": "Monica crosses her arms and raises an eyebrow, 'Hey, we noticed you didn’t help out with the task yesterday. It put a lot of pressure on the team. What’s your justification?'",
+    "options": [
+      {
+        "text": "I thought my break was important to maintain my productivity.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You defended your need for a break, showing empathy for yourself and motivation to stay productive. However, your social skills and emotional regulation could be improved."
+      },
+      {
+        "text": "I apologize if it caused any trouble. I needed that time to recharge.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed empathy and emotional perception by apologizing and explaining your need for rest. However, your motivation might come into question."
+      },
+      {
+        "text": "I understand it was tough, but my break was planned long ago.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You maintained emotional control and social skills. However, your empathy and emotional perception might seem lacking."
+      }
+    ]
+  },
+  "next_scene": {
+    "background": "Monica sighs and looks at Bob, who nods subtly. They seem to share a silent understanding. Monica then turns back to you, her expression softening slightly.",
+    "role": "Monica",
+    "location": "Break Room",
+    "description": "Monica takes a deep breath, 'We get that you needed time off, but it really affected our schedule. How do you plan to make it up to us?'",
+    "options": [
+      {
+        "text": "I'll take on extra tasks this week to compensate.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You chose to take responsibility, showing empathy and good social skills. However, your motivation and self-regulation could be higher."
+      },
+      {
+        "text": "I can help with the next urgent task that comes up.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You offered a solution for future issues, showing good emotional perception and some empathy. However, your emotional regulation could be better."
+      },
+      {
+        "text": "Let's discuss how we can better handle such situations in the future.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You suggested a proactive approach to prevent similar issues, showing motivation and some empathy. However, your social skills and emotional perception could be improved."
+      }
+    ]
+  }
+}

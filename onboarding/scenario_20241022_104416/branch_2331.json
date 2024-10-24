@@ -1,0 +1,43 @@
+{
+  "scenes": {
+    "background": "You suggested splitting the task among multiple people. [Monica] and [Bob] discuss further in the office group chat.",
+    "role": "Bob",
+    "location": "Office Group Chat",
+    "description": "'I can try to handle a part of it, but I'm already swamped. Are you sure splitting it is the best way?'",
+    "options": [
+      {
+        "text": "Maybe it's not ideal, but it's a start. We can reassess after the initial split.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the challenge but suggested a practical approach, showing good social skills and emotional balance. Empathy and self-regulation could be improved."
+      },
+      {
+        "text": "If splitting isn't feasible, perhaps we need to escalate this to get more resources.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You proposed an alternative solution, showing good emotional control and motivation. However, empathy and emotional perception could be better."
+      },
+      {
+        "text": "I understand it's tough, but relying on one person isn't sustainable. We need a better system.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the need for a systematic approach, showing good emotional control and motivation. However, empathy and emotional perception were lacking."
+      }
+    ]
+  }
+}
