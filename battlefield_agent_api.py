@@ -6,38 +6,42 @@ from sqlalchemy.orm import Session
 import data_types
 from database import database, crud, schemas
 
-from llm.chat_battlefield import request_LLM_response, chat_eval, request_LLM_response_v2
+from llm.chat_battlefield_agent import request_LLM_response, request_LLM_response_by_eval
 
 router = APIRouter()
 
 
-@router.post("/chat/batttlefield/v2")
-def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
-    personal_id = request.person_id
-    course_id = request.course_id
+# @router.post("/chat/battlefield_agent/v2")
+# def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
+#     personal_id = request.person_id
+#     course_id = request.course_id
     
-    matching_course = crud.get_course_by_coursid(db, course_id=course_id)
-    print(matching_course.prompt)
+#     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
+#     print(matching_course.prompt)
 
-    response = request_LLM_response_v2(json.loads(request.chat_content), matching_course.prompt)
-    return response
+#     response = request_LLM_response(json.loads(request.chat_content), matching_course.prompt)
+#     return response
 
-@router.post("/chat/batttlefield")
+@router.post("/chat/battlefield_agent")
 def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
     personal_id = request.person_id
     course_id = request.course_id
-
+    lang_type = request.lang_type
+    lang_type = 'zh' if course_id == 1 else 'en'
     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
     print(matching_course.prompt)
 
-    response = request_LLM_response(json.loads(request.chat_content), matching_course.prompt)
+    response = request_LLM_response(json.loads(request.chat_content), matching_course.prompt, lang=lang_type)
     return response
 
 
-@router.post("/eval/battlefield") 
+@router.post("/eval/battlefield_agent") 
 def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
     # return chat_eval(request.chat_content)
-    eval_data = chat_eval(request.chat_content)['eval']
+    lang_type = request.lang_type
+    course_id = request.course_id
+    lang_type = 'zh' if course_id == 1 else 'en'
+    eval_data = request_LLM_response_by_eval(request.chat_content, lang=lang_type)['eval']
     course_type, course_level = crud.get_course_by_id(db, course_id=request.course_id)
     # print(course_type, course_level)
 
@@ -85,7 +89,7 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
 
 
 
-@router.get("/get_battlefield/{person_id}")
+@router.get("/get_battlefield_agent/{person_id}")
 def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
     eq_scores = crud.get_eq_scores_by_person_id(db, person_id=person_id)
 
@@ -116,8 +120,3 @@ def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
     else:
         return {"courses": person_course}
     # return {"course": person_course}
-
-@router.get("/course_exists/{person_id}")
-def course_exists(person_id: int, db: Session = Depends(database.get_db)):
-    record = crud.course_exists(db, person_id=person_id)
-    return record

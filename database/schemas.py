@@ -201,3 +201,18 @@ class CreateUserRequest(BaseModel):
     job_level: str
     gender: str
     concerns: List[str]
+
+
+class ChatHistoryBase(BaseModel):
+    chatHistory: str
+    analysis: str
+
+class ChatHistoryCreate(ChatHistoryBase):
+    userId: int
+
+class ChatHistory(ChatHistoryBase):
+    id: int
+    userId: int
+
+    class Config:
+        from_attributes = True 

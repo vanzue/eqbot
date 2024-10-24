@@ -12,3 +12,5 @@ python-multipart
 aiofiles
 azure-identity
 langchain_openai
+azure-storage-blob
+easyocr

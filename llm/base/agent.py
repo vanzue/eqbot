@@ -1,6 +1,6 @@
 import abc
 import json
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate
 
 
 class AbstractAgent(abc.ABC):
@@ -9,48 +9,38 @@ class AbstractAgent(abc.ABC):
         self.json_output = json_output
         self.functions = functions
         self.tools = tools
+        self.prompt = None
 
-    def invoke(self, input_dict=None, max_retries=3):
-        output = self.invoke_llm(input_dict, max_retries=max_retries)
-        if self.json_output:
-            return json.dumps(output, indent=2)
-        return output
-
-    def invoke_llm(self, input_dict, max_retries=3):
-        num_retries = 0
-        while num_retries < max_retries:
+    def act(self, input_dict=None, max_retries=3):
+        for attempt in range(max_retries):
             try:
-                return self.invoke_llm_once(input_dict)
+                output = self.invoke_llm_once(input_dict)
+                return json.loads(output.content) if self.json_output else output
             except Exception as e:
-                num_retries += 1
-                if num_retries >= max_retries:
+                if attempt == max_retries - 1:
                     print(f'Max {max_retries} retries reached: {e}')
-                    raise e
+                    raise
 
     def invoke_llm_once(self, input_dict):
-        agent = self.prompt | self.llm
-        output = agent.invoke(input_dict)
+        if self.prompt is None:
+            raise ValueError("Prompt is not set. Please set the prompt before invoking the LLM.")
+        output = (self.prompt | self.llm).invoke(input_dict)
         if not self.json_output:
-            return output
-        try:
-            output_json = json.loads(output.content)
-        except json.JSONDecodeError:
-            raise ValueError(f"Output content is not a valid JSON:\n{output.content}")
-        return output_json
-
+            try:
+                json.loads(output.content)
+            except json.JSONDecodeError:
+                raise ValueError(f"Output content is not a valid JSON:\n{output.content}")
+        return output
 
 class Agent(AbstractAgent):
-
     def __init__(self, name, llm, functions=None, tools=None, json_output=True, **kwargs):
         super().__init__(llm, functions, tools, json_output, **kwargs)
         self.name = name
 
     def set_prompts(self, system_prompt, task_prompt):
-        self.system_prompt = system_prompt
-        self.task_prompt = task_prompt
-        self.prompt = ChatPromptTemplate.from_messages(
-            [
-                ('system', self.system_prompt),
-                ('human', self.task_prompt),
-            ]
-        )
+        if not system_prompt or not task_prompt:
+            raise ValueError("Both system_prompt and task_prompt must be provided.")
+        self.prompt = ChatPromptTemplate.from_messages([
+            ('system', system_prompt),
+            ('human', task_prompt),
+        ])

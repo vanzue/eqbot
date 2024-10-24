@@ -154,7 +154,7 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
     min_score_idx, response = await scenario_manager.process_final_data(locale)
     
     # update personal info
-    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if locale!="en" else ["Ostriches", "Monkey", "Hedgehog", "Coyote", "Capybara"]
+    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if locale!="en" else ["Emotion Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
     tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"] if locale!="en" else ["tag_description0", "tag_description1", "tag_description2", "tag_description3", "tag_description4"]
     
     personal_info = crud.get_personal_info_by_job_id(db, job_id)
