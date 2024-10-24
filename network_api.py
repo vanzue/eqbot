@@ -176,7 +176,7 @@ async def analyze_history_from_image(user_id: int = Form(...), file: UploadFile 
 
     # request LLM analyze chat history
     analysis = retry_parse_LLMresponse(chat_history=chat_history)
-    print(analysis)
+    # print(analysis)
 
     # create it into db
     chat_data = schemas.ChatHistoryCreate(userId=user_id,
