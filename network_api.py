@@ -184,7 +184,7 @@ async def analyze_history_from_image(user_id: int = Form(...), file: UploadFile 
                                          analysis=json.dumps(analysis))
     db_chat = crud.create_chat_history(db, chat_data)
     
-    return {"chat_id": db_chat.id, "chat_history": chat_history, "analysis": analysis}
+    return {"id": db_chat.id, "chatHistory": chat_history, "analysis": analysis}
 
 
 @router.delete("/delete_chats/{chat_id}", response_model=schemas.ChatHistory)
