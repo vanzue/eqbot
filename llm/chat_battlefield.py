@@ -54,15 +54,15 @@ def request_LLM_response_by_eval(user_query, db_prompt=None):
                             {{
                                 "role": "领导",
                                 "satisfaction": "满意/不满意",
-                                "analysis": "根据聊天内容，分析领导对我的感受"
+                                "analysis": "根据聊天内容，以领导的第一人称，分析领导对我的感受"
                             }}, {{
                                 "role": "同事A",
                                 "satisfaction": "满意/不满意",
-                                "analysis": "根据聊天内容，分析同事A对我的感受"
+                                "analysis": "根据聊天内容，以同事A的第一人称，分析同事A对我的感受"
                             }}, {{
                                 "role": "同事B",
                                 "satisfaction": "满意/不满意",
-                                "analysis": "根据聊天内容，分析同事B对我的感受"
+                                "analysis": "根据聊天内容，以同事B的第一人称，分析同事B对我的感受"
                             }}
                         ],
                         "eq_tips": [
@@ -126,7 +126,7 @@ def send_to_LLM(user_prompt, db_prompt):
                         ]
                     }}
                     2. 我会做出回应。
-                    3. 根据我的表现进行评估，**标准输出格式(不要写上json字母, 也不要漏,)**：
+                    3. 根据我的表现进行评估,如果有人的心情值降低，我希望comments能针对性的提出评估,如果没有人心情降低，则给出较好的评价，**标准输出格式(不要写上json字母, 也不要漏,)**：
                     {{
                         "comments": "xxx",
                         "moods": [

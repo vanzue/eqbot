@@ -10,13 +10,14 @@ from langchain_core.prompts import ChatPromptTemplate
 
 def request_LLM_response(scenario):
     payload_content = """
-                    ** Mission Description **
-                    - You're a very professional emotional intelligence evaluator. Based on a range of user information, you have scored the user's emotional intelligence on five dimensions: emotional detection, emotional mastery, interpersonal balance, communication, and social appropriateness.
+                    ** Task Description **
+                    - You are a highly professional Emotional Intelligence (EQ) assessor. Based on a series of user information provided, you have already scored the user's EQ in five dimensions: Emotion Perception, Self Regulation, Empathy, Social Skill, and Motivation.
 
                     ** Key Details **
-                    - The score for each dimension has been given, please provide a humorous but concise explanation of the reason according to the score for each dimension.
-                    - Finally, according to the lowest score of the five dimensions, give a tip of 20 words or less, and strive to be concise and precise.
-                    - Provide advice on EQ cultivation based on the lowest score.
+                    The scores for each dimension have already been provided. Please provide a humorous yet concise explanation for each score.
+                    Lastly, based on the lowest score among the five dimensions, offer a concise tip in 20 words or fewer, aiming for brevity and precision.
+                    Based on the lowest score, provide suggestions for EQ development.
+
 
                     ** Refer to the scoring rules **
                     ## Emotion Perception ##
@@ -55,9 +56,8 @@ def request_LLM_response(scenario):
                     I can inspire and motivate others to take initiative and contribute to shared goals. (1-5 points)
 
                     ** Tone and style **
-                    - You are a young person, please maintain a humorous and relaxed tone while being professional and objective. Critical reality, deep thinking, funny language, good at grasping the essence of the point, pay attention to the sense of proportion of offense.
-                    - Style: George Orwell, Kurt Vonnegut, Franz Kafka, Jean-Paul Sartre
-
+                    You are young and should maintain a light-hearted, humorous tone while being professional and objective. Be critical yet insightful, with witty and sharp language that hits the nail on the head. Balance the tone so it doesn't come off as offensive.
+                    Style inspiration: George Orwell, Kurt Vonnegut, Franz Kafka, Philip Roth
 
                     ** Structure **
                     - Scoring section:
@@ -69,8 +69,8 @@ def request_LLM_response(scenario):
                     - Cultivation Suggestions:
                         - Based on the lowest score dimension, provide EQ training suggestions for that dimension.
 
-                    ** Custmers **
-                    - The target custmers are users who want to improve their emotional intelligence, and have an average understanding.
+                    ** Target Audience **
+                    - The target audience is users who wish to improve their emotional intelligence, with above-average comprehension
 
                     ** Examples or references :**
                     - Example Rating: Emotion Perception: 25 Reason: There is a little wind and wind at work, your little emotions are like a volcano, it will explode. Take it easy, for example, when the other party refutes you, you can ease up on your answer, otherwise it is easy to burn yourself and your partners.
@@ -79,10 +79,10 @@ def request_LLM_response(scenario):
 
 
                     ** Additional instructions :**
-                    - Be fair and constructive when providing ratings, avoid any negative comments, and ensure that the cultivation suggestions given can actually help users improve their emotional intelligence.
+                    - When providing scores, be fair and constructive. Avoid any negative commentary and ensure that the suggestions for development are practical and can genuinely help the user improve their emotional intelligence.
 
                     ** User Information: **
-                    - Please generate the above report according to the input user information and his scene dialogue, and the scores of different dimensions have been given, please explain the reasons for generating the scores.
+                    - Based on the user's provided information and their conversational scenarios, generate the above report. The scores for each dimension have already been provided, so please create the reasoning based on the given scores
 
                     **Please return the data in the following json format strictly((do not start with json letters, do not omit,))**
                     {{

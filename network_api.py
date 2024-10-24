@@ -1,12 +1,13 @@
-from fastapi import APIRouter, HTTPException, UploadFile, Depends, File
+from fastapi import APIRouter, HTTPException, UploadFile, Depends, File, Form
 from sqlalchemy.orm import Session
 import os
 import uuid
+import json
 
 import data_types
 from database import crud, database, schemas
 from datetime import datetime
-from llm.chat_eval import retry_parse_LLMresponse_with_subordinate, retry_parse_LLMresponse_with_supervisor
+from llm.network_analyze import retry_parse_LLMresponse
 from llm.image2chat import image2text
 
 
@@ -142,7 +143,7 @@ def get_contact_profile(contact_id: int, db: Session = Depends(database.get_db))
     return {"contact_profile": profile}
 
 
-@router.post("/upload_image")
+@router.post("/analyze/screenshot")
 async def upload_image(file: UploadFile = File(...)):
     if file.content_type not in ["image/jpeg", "image/png"]:
         raise HTTPException(status_code=400, detail="Invalid image format. Please upload JPEG or PNG image.")
@@ -167,4 +168,32 @@ async def upload_image(file: UploadFile = File(...)):
     
     return {"chat_history": chat_history}
 
+
+@router.post("/analyze/history")
+async def analyze_history_from_image(user_id: int = Form(...), file: UploadFile = File(...), db: Session = Depends(database.get_db)):
+    chat_history_response = await upload_image(file)
+    chat_history = chat_history_response["chat_history"]
+
+    # request LLM analyze chat history
+    analysis = retry_parse_LLMresponse(chat_history=chat_history)
+    print(analysis)
+
+    # create it into db
+    chat_data = schemas.ChatHistoryCreate(userId=user_id,
+                                         chatHistory=chat_history,
+                                         analysis=json.dumps(analysis))
+    db_chat = crud.create_chat_history(db, chat_data)
     
+    return {"chat_id": db_chat.id, "chat_history": chat_history, "analysis": analysis}
+
+
+@router.delete("/delete_chats/{chat_id}", response_model=schemas.ChatHistory)
+def delete_chat(chat_id: int, db: Session = Depends(database.get_db)):
+    chat_history = crud.delete_chat_history(db=db, chat_id=chat_id)
+    if chat_history is None:
+        raise HTTPException(status_code=404, detail="Chat history not found")
+    return chat_history
+
+@router.get("/{user_id}/analysisList")
+async def get_analysis(user_id: int, db: Session = Depends(database.get_db)):
+    return crud.get_chat_history_by_user(db, user_id=user_id)
