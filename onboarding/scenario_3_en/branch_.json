@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity.",
+    "background": "During the project meeting, Alex and Lily's work styles clash.",
     "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Everyone is looking at you to make the final decision.",
+    "location": "Conference Room",
+    "description": "Why do we need to discuss this so much? We should just act!",
     "options": [
       {
-        "text": "How about we do a bit of everything? Start with an outdoor activity, then have dinner, and end the night at a bar.",
+        "text": "I understand your urgency, but Lily's approach can help us avoid mistakes.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Alex's feelings while recognizing the value in Lily's method, showing good emotional perception and empathy."
       },
       {
-        "text": "I think a formal dinner would be a great way to celebrate our success. It will give us a chance to relax and reflect on our achievements.",
+        "text": "Let's take a quick vote to decide how to proceed.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes one suggestion over others."
+        "analysis": "You offered a compromise with a democratic approach, demonstrating good self-regulation and social skills."
       },
       {
-        "text": "Let's vote on each option and go with the majority's choice to ensure everyone feels included.",
+        "text": "We need to consider all angles before proceeding. Let's find a balance.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You promoted a balanced approach, showing solid motivation and a balanced emotional response."
       }
     ]
   }

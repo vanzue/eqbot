@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. A vote was conducted to decide, and the team chose Monica's suggestion for a fancy restaurant. Now, Monica and Bob are discussing the menu options. Monica prefers a gourmet menu with exotic dishes, while Bob prefers a simple, familiar menu. You decided to go with Monica's choice for a gourmet menu. Now, Monica and Bob are discussing the seating arrangements. Monica wants assigned seating for a more formal feel, while Bob prefers open seating for a more relaxed atmosphere. Both turn to you for the final say.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] is eagerly waiting for your decision, while [Bob] seems a bit uneasy, leaning forward with his hands on his knees.",
+    "background": "Alex looks frustrated, pacing around the room.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We really need to think this through, Alex.",
     "options": [
       {
-        "text": "Maybe we can have a mix of both assigned and open seating? This way, those who prefer formality can have it, and those who want to relax can do so too.",
+        "text": "I see your point, but too much thinking can paralyze us.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows good emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Lily's concern while emphasizing the dangers of overthinking, showing good emotional perception and empathy."
       },
       {
-        "text": "I think assigned seating will make the dinner more special and organized. Let's go with Monica's choice.",
+        "text": "Let's quickly summarize pros and cons, then decide.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
+        "analysis": "You suggested a balanced approach, demonstrating good self-regulation and social skills."
       },
       {
-        "text": "Let's vote on the seating options to ensure everyone feels included and we choose the best arrangement for the team.",
+        "text": "We don't have time for this. Let's just go ahead with the plan.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You emphasized the urgency, showing solid motivation but a balanced emotional response."
       }
     ]
   }

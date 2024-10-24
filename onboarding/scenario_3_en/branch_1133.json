@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Alex then suggests a middle ground: a team-building activity followed by dinner, saving the bar for another time. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex suggests picking a place that has a bit of both—a bistro that’s casual but still has great food. Monica and Bob still seem unsure. You then suggest going with the majority's preference to avoid any conflicts. Monica rolls her eyes and says, 'So, we’re back to square one? Great.' Bob mutters, 'This is getting exhausting.' Monica taps her foot impatiently and says, 'Alex, we need to finalize this. We can’t keep going in circles.' Bob looks at you expectantly, waiting for a decisive answer. Alex then suggests canceling the celebration if they can’t agree, which leads to further frustration.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica shakes her head and says, 'Canceling isn’t a solution, Alex. We’ve worked too hard for that.' Bob sighs and adds, 'We need to find a way to make this work.'",
+    "background": "Alex crosses his arms, clearly irritated. Lily gestures to the whiteboard.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We need to ensure our plan is foolproof. Rushing won't help.",
     "options": [
       {
-        "text": "Maybe we can break into smaller groups based on preferences. Some can go to the bar, others to the dinner, and a few for the team-building. We can all reconvene later.",
+        "text": "Alex, let's combine your decisiveness with thorough checks. Teamwork will get us there.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option shows empathy and emotional detection by considering everyone's preferences, but the motivation to unify the team is lower. It focuses on social skills but lacks a strong initiative."
+        "analysis": "You emphasized collaboration, balancing urgency and caution, showing good emotional perception and empathy."
       },
       {
-        "text": "Alright, let’s stick to one thing. An outdoor team-building activity might be the best way to celebrate our teamwork and success.",
+        "text": "Let's take a quick break and revisit this with fresh minds.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills by taking a decisive stand. However, it demonstrates lower empathy as it leans toward one suggestion over others. The motivation is moderate as it tries to end the indecision."
+        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
       },
       {
-        "text": "Honestly, I’m starting to think we’re overcomplicating this. How about we just order in some food and celebrate right here in the office?",
+        "text": "We can't afford mistakes. Lily is right; let's discuss this thoroughly.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects a balanced approach with moderate scores across all dimensions. It shows an attempt to simplify the situation, but the motivation to create a memorable celebration is low."
+        "analysis": "You backed Lily's method, advocating for thorough planning, showing a balanced emotional response."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest a themed dinner with fun activities or entertainment. Monica smiles, but Bob still seems skeptical. Monica and Bob are still discussing the details of the dinner. Monica says, 'I think a vintage theme would be delightful.' Bob, rolling his eyes, adds, 'As long as it's not boring.'",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Everyone is still debating the details of the celebration. Monica suggests, 'We should have a photo booth with vintage props.' Bob, shaking his head, says, 'I just don't see how this is going to be fun for everyone.'",
+    "background": "Alex looks around the table, visibly irritated.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "We can't ignore the risks of rushing decisions. What's your take?",
     "options": [
       {
-        "text": "Let's make sure we include some activities that everyone can enjoy, like a mix of vintage elegance with modern entertainment. How does that sound?",
+        "text": "Balancing speed with caution is key; both approaches have merit.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option balances Monica's and Bob's preferences, showing good emotional detection and empathy. It demonstrates an effort to create a memorable event for everyone."
+        "analysis": "You acknowledged the importance of both perspectives, showing good emotional perception and empathy."
       },
       {
-        "text": "I think we should keep it simple with a vintage theme and a few speeches. We don't need to overcomplicate it.",
+        "text": "We should try a hybrid approach: quick decisions when possible, thorough discussions for complex issues.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy, as it prioritizes a straightforward approach over making the event more engaging."
+        "analysis": "You offered a practical solution to combine both styles, demonstrating good self-regulation and social skills."
       },
       {
-        "text": "Maybe we should skip the theme and just focus on a simple, elegant dinner. Too many ideas might make it hectic.",
+        "text": "Risk is inevitable; sometimes we need to push forward and learn from mistakes.",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
           "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making an effort to enhance the celebration and does not consider the team's desire for a memorable event."
+        "analysis": "You emphasized the need to move forward despite risks, showing high motivation but lower empathy."
       }
     ]
   }

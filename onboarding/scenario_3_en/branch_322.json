@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest keeping it simple and elegant. Bob reluctantly nods, but his enthusiasm seems to wane. Monica smiles and says, 'That sounds perfect.' Bob mutters under his breath, 'Sure, if you like boring.'",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica looks at Bob and says, 'Maybe we can add a little something to make it less boring. What do you think, Alex?' Bob raises an eyebrow, waiting for your response.",
+    "background": "Alex and Lily continue to debate. Monica observes silently, arms folded.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Shouldn't we find a middle ground that works for everyone?",
     "options": [
       {
-        "text": "We could have a small awards ceremony to recognize everyone's hard work.",
+        "text": "That's a good idea, Monica. Finding a balance could benefit the project.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 2,
+          "Self Regulation": 3,
           "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You agreed with Monica, showing good emotional perception and social skills, but your motivation to act quickly was lower."
+      },
+      {
+        "text": "I'm not sure compromise is always the best solution. Some decisions need to be quick.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "This option shows good emotional detection and motivation by suggesting a way to make the dinner more engaging. It demonstrates empathy but lacks some self-regulation."
+        "analysis": "You gently disagreed, emphasizing the importance of swift decision-making, showing high motivation but less empathy."
       },
       {
-        "text": "Let's just stick to the dinner plan. We don't need anything extra.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "This choice shows good self-regulation but lacks empathy and social skills, as it dismisses the idea of adding anything extra to the dinner."
-      },
-      {
-        "text": "We could compromise with a short team-building game before dinner to keep it interesting.",
+        "text": "Maybe. Or we could just stick to one approach and see how it goes.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "This option shows empathy and moderate emotional detection by suggesting a compromise that considers both Monica's and Bob's perspectives."
+        "analysis": "You provided an abstract response without strong commitment, showing moderate emotional perception and empathy, but lower self-regulation."
       }
     ]
   }

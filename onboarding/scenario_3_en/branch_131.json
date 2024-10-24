@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then decides to go with Sam's idea and hit the bar, thinking it might be the easiest option. Now, the team is discussing how to proceed with the plan.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica raises an eyebrow, 'So, are we all okay with just going to the bar? What if some people aren't comfortable with that?' Bob nods, 'Yeah, maybe we should reconsider.'",
+    "background": "Alex crosses his arms, looking frustrated. Lily taps her pen on the table.",
+    "role": "You",
+    "location": "Conference Room",
+    "description": "Alex, let's combine your decisiveness with thorough checks. Teamwork will get us there.",
     "options": [
       {
-        "text": "Well, we could always offer a choice and let people decide if they want to join the bar or do something else.",
+        "text": "Monica, can you help us find a middle ground here?",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the preferences of everyone involved. It demonstrates good social skills and motivation to find a compromise."
-      },
-      {
-        "text": "I think sticking to one plan is easier; let's just go to the bar as initially decided.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes the original plan over addressing the concerns raised."
-      },
-      {
-        "text": "Maybe we should vote on it again. If the majority still wants the bar, then we go with that.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Self Regulation": 2,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You sought a third-party perspective to mediate, showing high emotional perception and empathy."
+      },
+      {
+        "text": "Bob, what's your take on this? Should we act now or wait?",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You involved another team member to gauge consensus, demonstrating good social skills and a balanced emotional response."
+      },
+      {
+        "text": "Let's table this for now and reconvene tomorrow with fresh ideas.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggested postponing the decision to allow for clearer thinking, showing strong self-regulation and motivation."
       }
     ]
   }

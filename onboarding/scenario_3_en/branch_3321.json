@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica and Bob are looking at you expectantly. You decide to skip the celebration and focus on the next project. Monica frowns and Bob looks disappointed. Monica says, 'I think we deserve a break after all our hard work.' Bob adds, 'Yeah, we need to celebrate, not just jump into more work.' You decide on a formal dinner. Everyone agrees, but the atmosphere remains a bit tense. Monica says, 'So, are we going to make reservations for the dinner, or is it just an idea?' Bob adds, 'Yeah, we need to solidify the plans if we're actually doing this.' You decide to keep the discussion open and ask for suggestions for the venue and date. Monica and Bob start sharing their ideas, but it seems they can't agree on a place. Monica prefers a fancy restaurant, while Bob suggests a cozy, more casual eatery.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica crosses her arms and says, 'I just think a fancy place would be more fitting for our achievement.' Bob responds, 'But a cozy place would make it feel more relaxed and fun.' Both are looking at you for a final decision.",
+    "background": "Monica fidgets with her notebook while Bob leans forward.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "This is taking too long. Can't we just make a decision?",
     "options": [
       {
-        "text": "Why don't we look for a place that offers the best of both worlds? A fancy restaurant with a relaxed atmosphere.",
+        "text": "I think we need to ensure all perspectives are considered before moving forward.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You highlighted the importance of considering different viewpoints, demonstrating emotional perception and empathy."
       },
       {
-        "text": "I think the fancy restaurant is a great idea. It's a special occasion, and we should celebrate in style.",
+        "text": "Let's quickly summarize everyone's main points and vote.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes one suggestion over the other."
+        "analysis": "You suggested an efficient way to proceed, showing self-regulation and social skills."
       },
       {
-        "text": "A cozy place sounds perfect. It will be more intimate and allow us to relax and enjoy each other's company.",
+        "text": "Maybe we should skip some of the less critical discussions.",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
           "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 4
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "This response shows higher motivation to create a relaxed atmosphere but lower emotional detection and empathy. Social skills are also lower due to the lack of consideration for the fancier option."
+        "analysis": "You leaned towards quick action, showing motivation but slightly less empathy and emotional perception."
       }
     ]
   }

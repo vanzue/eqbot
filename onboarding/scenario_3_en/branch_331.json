@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly. You decide to skip the celebration and focus on the next project. Monica frowns and Bob looks disappointed. You reconsider and suggest a small celebration. Monica lights up and Bob nods in agreement.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica suggests, 'How about we combine both suggestions and have a small outdoor activity followed by a dinner?' Bob adds, 'I think that sounds great, but we should keep it simple.' Everyone is waiting for your response again.",
+    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We can't just rush decisions without thinking them through!",
     "options": [
       {
-        "text": "That sounds like a reasonable compromise. Let's plan it that way.",
+        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
       },
       {
-        "text": "I'm not sure combining the two is the best idea. Maybe we should just stick with one activity to avoid overcomplicating things.",
+        "text": "Let's try to meet halfway and set a time limit for discussions.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes simplicity over inclusiveness."
+        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
       },
       {
-        "text": "If you think that's the best way to go, let's do it. But let's not get too carried away; we need to stay focused too.",
+        "text": "Sometimes we need to make quick decisions to keep the project moving.",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "This response shows higher motivation to maintain focus on work but lower emotional detection and empathy. Social skills are also lower due to the passive-aggressive undertone."
+        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
       }
     ]
   }

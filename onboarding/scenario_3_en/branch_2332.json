@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. A vote was conducted to decide, and the team chose Monica's suggestion for a fancy restaurant. Now, Monica and Bob are discussing the menu options. Monica prefers a gourmet menu with exotic dishes, while Bob prefers a simple, familiar menu. A vote was conducted to decide, and the team chose Monica's gourmet menu. Now, Monica and Bob are discussing the seating arrangements. Monica prefers assigned seating to encourage mingling, while Bob prefers open seating to allow people to choose where they feel comfortable. You decided to go with Monica's suggestion for assigned seating. Now, the discussion has moved on to whether to include a small presentation to celebrate the team's success during the dinner. Monica thinks it would be a great way to highlight everyone's hard work, while Bob feels it might be too formal and prefers just enjoying the meal without any speeches. Both turn to you for the final say.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] is leaning forward in her chair with a hopeful smile, while [Bob] is leaning back, looking a bit reserved.",
+    "background": "Alex stands up, looking frustrated.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "Alex, can we at least consider the potential risks before diving in?",
     "options": [
       {
-        "text": "Why don't we have a short presentation at the beginning, and then we can enjoy the meal? This way, we can celebrate our success without making it too formal.",
+        "text": "Sure, but we might lose valuable time debating every minor detail.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows good emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Lily's concern while stressing the importance of timely action, showing good emotional perception and empathy."
       },
       {
-        "text": "I think a small presentation will be a great way to acknowledge everyone's hard work. Let's go with Monica's suggestion.",
+        "text": "Alright, let's hear everyone's thoughts briefly and then decide.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
+        "analysis": "You proposed a middle-ground approach, demonstrating good self-regulation and social skills."
       },
       {
-        "text": "Let's vote on whether to have a presentation or not. This way, we can ensure everyone feels included in the decision.",
+        "text": "We really can't afford to waste time. Let's just go with the plan.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You emphasized the urgency, showing solid motivation but a balanced emotional response."
       }
     ]
   }

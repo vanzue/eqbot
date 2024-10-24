@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try. Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.' Alex suggests giving it a go and adjusting as needed if they feel rushed.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica frowns slightly and says, 'Adjusting as needed sounds risky. What if we can't make everyone happy?' Bob, scratching his head, mumbles, 'I still think a simple dinner would be less hassle.'",
+    "background": "[Monica] and [Bob] are at their desks, discussing the project.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "Bob, rushing might lead to mistakes. Shouldn't we take a moment to review?",
     "options": [
       {
-        "text": "I understand the concern. Maybe we should have an open discussion with everyone to see what the majority prefers.",
+        "text": "Taking a moment to review can help us avoid errors.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of both Monica and Bob. It demonstrates good social skills and motivation to reach a compromise."
-      },
-      {
-        "text": "Let's stick to the plan and be flexible. If things get too complicated, we'll adapt on the spot.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes sticking to the original plan and adapting on the fly."
+        "analysis": "You emphasized the value of reviewing, demonstrating good emotional perception and social skills."
       },
       {
-        "text": "If it's too much trouble, we might as well just go with a simple dinner to avoid any potential issues.",
+        "text": "I think we need to act quickly, but let's ensure everyone is on the same page first.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You acknowledged the need for speed while emphasizing the importance of understanding, showing balanced emotional response."
+      },
+      {
+        "text": "Rushing might cause mistakes. Let's discuss our plan again.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You stressed the need for careful planning, demonstrating strong self-regulation and motivation."
       }
     ]
   }

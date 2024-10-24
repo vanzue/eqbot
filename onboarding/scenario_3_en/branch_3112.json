@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] discussed how to proceed with the plan. You suggested a simple hike followed by a dinner at a nice restaurant. The team agreed, but now there is a discussion about the specifics. You proposed a fancy restaurant and an easy trail for the hike. The team is now considering other details.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'We need to finalize the transportation and timings. Should we all go together or meet at the hike location?' [Bob] adds, 'And what about the dinner reservations? Should we book it now or wait until the hike is over?' Everyone is waiting for your thoughts.",
+    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We can't just rush decisions without thinking them through!",
     "options": [
       {
-        "text": "Let's meet at the hike location to give everyone some flexibility. We should book the dinner reservations now to avoid any last-minute issues.",
+        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's flexibility. It also demonstrates good social skills and motivation by planning ahead."
+        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
       },
       {
-        "text": "I think it's better if we all go together to the hike. It will be more fun and organized. We can make the dinner reservations after the hike depending on how things go.",
+        "text": "Let's try to meet halfway and set a time limit for discussions.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it may not appeal to everyone who prefers flexibility."
+        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
       },
       {
-        "text": "Honestly, I think we should just carpool and decide on the dinner reservations after the hike. Let's keep things spontaneous.",
+        "text": "Sometimes we need to make quick decisions to keep the project moving.",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making a decisive call and does not show strong consideration for the team's preferences."
+        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
       }
     ]
   }

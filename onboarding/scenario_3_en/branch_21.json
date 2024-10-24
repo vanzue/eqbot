@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. They turn to you for the final say. You suggested a place that offers both fine dining and a casual section, and everyone agreed. Now, you, Monica, and Bob are discussing the menu options. Monica wants gourmet dishes, while Bob prefers more traditional comfort food. They look to you for a decision.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica raises an eyebrow, looking slightly amused, while Bob taps his fingers on the table, waiting for your input.",
+    "background": "Alex stands up from his chair, looking frustrated.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "Alex, can we at least consider the potential risks before diving in?",
     "options": [
       {
-        "text": "Maybe we can have a mix of gourmet dishes and traditional comfort food on the menu. That way, everyone can find something they like.",
+        "text": "Sure, but we might lose valuable time debating every minor detail.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Lily's concern while stressing the importance of timely action, showing good emotional perception and empathy."
       },
       {
-        "text": "I think focusing on gourmet dishes would make the dinner special and memorable. We deserve something extraordinary after all our hard work.",
+        "text": "Alright, let's hear everyone's thoughts briefly and then decide.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
+        "analysis": "You proposed a middle-ground approach, demonstrating good self-regulation and social skills."
       },
       {
-        "text": "Why don't we let everyone vote on the menu options? That way, we can ensure everyone's preferences are considered.",
+        "text": "We really can't afford to waste time. Let's just go with the plan.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You emphasized the urgency, showing solid motivation but a balanced emotional response."
       }
     ]
   }

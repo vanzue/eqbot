@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. They turn to you for the final say. You chose a fancy restaurant. Now, Monica is thrilled but Bob looks disappointed. Monica and Bob continue discussing other aspects of the dinner, such as the menu and seating arrangements. Monica suggests a gourmet menu with a seating plan, while Bob prefers a more laid-back, buffet-style dinner. Both look at you for your input. You opted for a vote on Monica's and Bob's options to ensure everyone felt included. The vote was close, but Monica's gourmet menu with a seating plan won. Bob is visibly upset, feeling his preference was overlooked. Monica is planning the seating arrangements, and Bob is starting to feel left out of the celebration planning. You decided to go ahead with the seating plan. Monica is eagerly assigning seats, while Bob is still clearly disengaged. Suddenly, the fire alarm goes off, causing panic in the office. Everyone looks at you for directions.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica and Bob freeze in their spots, looking at you for guidance. The loud alarm continues to blare.",
+    "background": "Monica leans forward, tapping her fingers on the table.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "So, are we all on the same page about sticking to the plan?",
     "options": [
       {
-        "text": "Alright everyone, let's evacuate calmly and meet at the designated assembly point outside.",
+        "text": "I think we should stay flexible and adjust if needed.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You highlighted the importance of flexibility, showing good self-regulation and social skills."
+      },
+      {
+        "text": "Yes, sticking to the plan is the best way forward.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You supported the decision to stick to the plan, showing strong motivation but a lack of emotional perception and empathy."
+      },
+      {
+        "text": "Let's review our objectives to ensure this aligns with our goals.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option demonstrates a high level of emotional detection and empathy by ensuring everyone's safety and maintaining calm during an emergency. It also shows good social skills and motivation."
-      },
-      {
-        "text": "Stay calm, sit tight. This might just be a false alarm; I'll check it out.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes personal investigation over immediate group safety."
-      },
-      {
-        "text": "Let's take a quick vote on whether we should evacuate or wait to see if it's a false alarm.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call during an emergency."
+        "analysis": "You suggested aligning actions with goals, showing good emotional perception and empathy."
       }
     ]
   }

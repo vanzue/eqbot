@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then decides to go with Sam's idea and hit the bar, thinking it might be the easiest option. Now, the team is discussing how to proceed with the plan. Monica raises an eyebrow, 'So, are we all okay with just going to the bar? What if some people aren't comfortable with that?' Bob nods, 'Yeah, maybe we should reconsider.' Alex insists on sticking to one plan for the sake of simplicity. Monica and Bob now look at you for the next step.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica leans back in her chair and sighs, 'This is getting complicated, Alex. What if someone has a better idea?' Bob frowns slightly, 'We need to finalize this soon. Any thoughts?'",
+    "background": "[Bob] sits back, arms crossed, while [Monica] looks at her notes.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "We need a clear direction, or we'll waste more time. What do you think?",
     "options": [
       {
-        "text": "Maybe we should ask everyone again. If the majority still wants the bar, we stick with it.",
+        "text": "Bob, could you provide us with a neutral perspective?",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Emotion Perception": 4,
+          "Self Regulation": 2,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You sought a third-party perspective to mediate the discussion, showing high emotional perception and empathy."
       },
       {
-        "text": "Let's just go with the bar plan. It's the simplest solution and should make most people happy.",
+        "text": "Let's quickly decide on a temporary solution and revisit this later.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You aimed for a compromise to keep things moving, demonstrating balanced emotional skills and decision-making."
+      },
+      {
+        "text": "I think Alex's approach will get us faster results. Let's go with that.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes the original plan over addressing the concerns raised."
-      },
-      {
-        "text": "We could split into smaller groups based on preferences. Those who want to go to the bar can, and the rest can choose another activity.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the preferences of everyone involved. It demonstrates good social skills and motivation to find a compromise."
+        "analysis": "You leaned towards a decisive approach, showing strong social skills but lower empathy and emotional perception."
       }
     ]
   }

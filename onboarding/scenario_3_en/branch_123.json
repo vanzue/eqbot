@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try. Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.' Alex then suggests if it's too complicated, they might as well just go with a simple dinner to avoid issues.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica looks a bit disappointed and says, 'A simple dinner might be too boring after such a big accomplishment.' Bob, on the other hand, seems relieved and nods, 'Yeah, but it's the safest option.'",
+    "background": "Alex crosses his arms, looking impatient. Lily taps her pen on the table.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "Alex, we need to ensure our plan is foolproof. Rushing won't help.",
     "options": [
       {
-        "text": "Maybe we can think of something unique that combines a bit of fun and formality?",
+        "text": "Combining your decisiveness with thorough checks could be our winning formula, Alex.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of both Monica and Bob. It demonstrates good social skills and motivation to reach a compromise."
+        "analysis": "You acknowledged Alex's urgency while emphasizing the value of careful planning, demonstrating good emotional perception and empathy."
       },
       {
-        "text": "I understand, but sometimes keeping things simple and safe is the best way to ensure everyone has a good time.",
+        "text": "A quick break might help us come back with fresh perspectives.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes sticking to the safest option and avoiding any potential complications."
-      },
-      {
-        "text": "If boring is the concern, we might as well skip the celebration altogether and just get back to work.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by considering Monica's opinion on the celebration being too boring, but shows lower motivation as it proposes an extreme solution."
+        "analysis": "You suggested taking a break to alleviate tension, showing strong self-regulation and social skills."
+      },
+      {
+        "text": "Mistakes are costly. Let's discuss the plan one more time to be sure.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You stressed the importance of careful planning, demonstrating strong self-regulation and motivation."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] discussed how to proceed with the plan. You suggested a simple hike followed by a dinner at a nice restaurant. The team agreed, but now there is a discussion about the specifics. [Monica] says, 'I think we should decide on the restaurant soon. Should we book something fancy or just a nice casual place?' [Bob] adds, 'And what about the hike? Should it be a short and easy trail or something more challenging?' You suggested going for a casual restaurant and a moderate trail that everyone can enjoy. The team accepted the idea, but further details need to be sorted out. [Monica] is now concerned about the logistics and [Bob] is worried about the weather conditions. [Monica] says, 'We should really finalize the plan soon. What if it rains on the day of the hike?' [Bob] adds, 'And what if the restaurant can’t accommodate our group size?' Everyone is looking at you for a solution.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'We should really finalize the plan soon. What if it rains on the day of the hike?' [Bob] adds, 'And what if the restaurant can’t accommodate our group size?' Everyone is looking at you for a solution.",
+    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We can't just rush decisions without thinking them through!",
     "options": [
       {
-        "text": "Let's have a backup plan in case it rains, like an indoor activity. We should also call the restaurant to confirm the reservation and ensure they can accommodate us.",
+        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering potential issues. It also demonstrates good social skills and motivation by proposing proactive solutions."
+        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
       },
       {
-        "text": "I think we should go ahead with the original plan and deal with any issues as they arise. It's impossible to plan for every contingency.",
+        "text": "Let's try to meet halfway and set a time limit for discussions.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Self Regulation": 3,
+          "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and a practical approach, but slightly lower empathy as it does not fully address the concerns raised."
+        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
       },
       {
-        "text": "Honestly, if it rains or the restaurant can’t accommodate us, we’ll just find alternatives on the spot. Sometimes over-planning ruins the fun.",
+        "text": "Sometimes we need to make quick decisions to keep the project moving.",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making a decisive plan and does not show strong consideration for the team's concerns."
+        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
       }
     ]
   }

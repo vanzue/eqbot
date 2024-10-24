@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] are now discussing how to proceed with the plan. You suggested an escape room for the outdoor activity and a semi-formal dinner, which some team members liked. [Monica] and [Bob] are still debating the final details.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'An escape room sounds fun, but I’m not sure everyone will enjoy it. Maybe something outdoorsy would be better?' [Bob] nods, 'Yeah, I’m not the biggest fan of escape rooms either. What about something like a park picnic?' Everyone is waiting for your input.",
+    "background": "Monica sighs, glancing at Bob, who looks anxious.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Are we still stuck on this? The deadline is approaching fast!",
     "options": [
       {
-        "text": "We could mix things up a bit. How about a short hike followed by a picnic? It combines outdoor fun with a relaxed vibe.",
+        "text": "Bob, I understand the urgency, but we need to ensure we don't overlook critical details.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I understand, but I think the escape room and semi-formal dinner would be a unique way to celebrate. Let's give it a try.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it might not appeal to everyone."
-      },
-      {
-        "text": "Maybe we’re overthinking this. Let's just go with a straightforward picnic in the park. It's simple and everyone can contribute.",
-        "scores": {
-          "Emotion Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects a balanced approach but shows slightly lower motivation as it suggests a simpler plan."
+        "analysis": "You acknowledged Bob's anxiety and emphasized the importance of thoroughness, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Let's focus on the key points and make a quick decision.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggested a compromise by focusing on key points, demonstrating good social skills and self-regulation."
+      },
+      {
+        "text": "We need to balance speed with precision. Let's split tasks to cover more ground quickly.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You proposed a balanced approach, showing solid motivation and a balanced emotional response."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then proposes to go with Ryan's suggestion of an outdoor team-building activity. Monica and Bob seem to be contemplating this new suggestion.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica raises an eyebrow, 'An outdoor activity, huh? Well, I guess it's better than nothing. What do you think, Bob?' Bob shrugs, 'I suppose it could be fun, but I was really looking forward to a more relaxed evening.'",
+    "background": "Alex crosses his arms, looking frustrated. Lily taps her pen on the table.",
+    "role": "You",
+    "location": "Conference Room",
+    "description": "We can't afford mistakes. Lily is right; let's discuss this thoroughly.",
     "options": [
       {
-        "text": "Let's keep our options open and see how everyone feels about it after the activity.",
+        "text": "Alex, let's combine your decisiveness with thorough checks. Teamwork will get us there.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This response is vague and non-committal, showing a balanced but somewhat indecisive emotional approach."
+        "analysis": "You emphasized collaboration, balancing urgency and caution, showing good emotional perception and empathy."
       },
       {
-        "text": "An outdoor activity is a great way to bond and celebrate our success. I'm sure everyone will enjoy it.",
+        "text": "Let's take a quick break and revisit this with fresh minds.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This option leans towards agreement, showing good self-regulation and social skills, but slightly lower empathy as it prioritizes the chosen activity."
+        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
       },
       {
-        "text": "I understand your concerns, Bob. Maybe we should reconsider and pick something more relaxing.",
+        "text": "We can't afford mistakes. Lily is right; let's discuss this thoroughly.",
         "scores": {
-          "Emotion Perception": 4,
+          "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 3
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This response shows high emotional detection and empathy, but lower social skills as it leans towards disagreement with the proposed plan."
+        "analysis": "You backed Lily's method, advocating for thorough planning, showing a balanced emotional response."
       }
     ]
   }

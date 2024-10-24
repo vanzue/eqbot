@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then decides to go with Sam's idea and hit the bar, thinking it might be the easiest option. Now, the team is discussing how to proceed with the plan. Alex proposes offering a choice and letting people decide if they want to join the bar or do something else.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] crosses her arms and looks at you skeptically, 'Alex, this feels like we're just avoiding the issue. What's the point of a team celebration if we're all doing different things?' [Bob] adds, 'Yeah, aren't we supposed to celebrate together?'",
+    "background": "Monica nods while Bob looks skeptical.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Is finding a middle ground really the best way forward?",
     "options": [
       {
-        "text": "I see your point. Maybe we should pick an activity that most people are excited about and stick to that.",
+        "text": "Yes, we need to balance both perspectives for the best outcome.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Emotion Perception": 3,
+          "Self Regulation": 2,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of Monica and Bob. It demonstrates good social skills and motivation to find a compromise."
+        "analysis": "You emphasized the importance of balance and teamwork, showing good empathy and motivation."
       },
       {
-        "text": "I understand the concern, but I think giving people options might make everyone happier. We can still come together at the bar later.",
+        "text": "I think we should focus on quick action. Delaying might cost us.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it maintains the original plan while making a slight adjustment."
+        "analysis": "You advocated for decisiveness, showing good social skills but lacking in empathy."
       },
       {
-        "text": "If it's really a problem, we could just cancel the celebration and find another way to acknowledge our success.",
+        "text": "Let's hear more from both sides before making a decision.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
         },
-        "analysis": "This option reflects a passive-aggressive approach and avoids making a decisive call, thereby showing lower motivation and empathy."
+        "analysis": "You suggested further discussion, showing strong emotional perception and a balanced emotional response."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. You chose a fancy restaurant. Now, Monica is thrilled but Bob looks disappointed. Monica and Bob continue discussing other aspects of the dinner, such as the menu and seating arrangements. Monica suggests a gourmet menu with a seating plan, while Bob prefers a more laid-back, buffet-style dinner. You chose a gourmet menu with a seating plan. Monica is enthusiastic about the decision, while Bob seems even more frustrated. Monica and Bob now argue over the dress code; Monica wants formal attire, while Bob insists on casual clothing. You chose formal attire. Monica looks pleased, while Bob slumps in his chair, visibly irritated. Monica and Bob now start debating over the entertainment for the evening. Monica wants live music, while Bob prefers a simple playlist to keep things low-key. They both turn to you for your opinion.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica sits upright, her eyes gleaming with excitement, while Bob looks down, tapping his fingers on the table.",
+    "background": "Bob crosses his arms and leans forward.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "We need a backup plan in case things go wrong. What do you think?",
     "options": [
       {
-        "text": "What if we have both? A live music performance for a bit, followed by a curated playlist to wind down.",
+        "text": "A backup plan sounds wise, but let's not overcomplicate it.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the need for a backup plan while emphasizing simplicity, showing good self-regulation and social skills."
+      },
+      {
+        "text": "Absolutely, a thorough backup plan is crucial for avoiding bigger issues.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I think live music would be a fantastic addition to our celebration. It adds a special touch to the evening.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
-      },
-      {
-        "text": "Let's vote on the entertainment options to ensure everyone is happy with the choice.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You supported the idea with a focus on thoroughness, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Honestly, we should just stick to our main plan and adapt as needed.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized sticking to the main plan, showing strong motivation but lacking in emotional perception and empathy."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. A vote was conducted to decide, and the team chose Monica's suggestion for a fancy restaurant. Now, Monica and Bob are discussing the menu options. Monica prefers a gourmet menu with exotic dishes, while Bob prefers a simple, familiar menu. A vote was conducted to decide, and the team chose Monica's gourmet menu. Now, Monica and Bob are discussing the seating arrangements. Monica prefers assigned seating to encourage mingling, while Bob prefers open seating to allow people to choose where they feel comfortable. A vote was conducted to decide, and the team chose Monica's suggestion for assigned seating. Now, Monica and Bob are discussing the entertainment options. Monica prefers a live band for a lively atmosphere, while Bob thinks a quiet background music playlist would be more appropriate. Both turn to you for the final say.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] is animatedly talking about her favorite bands, while [Bob] sits back with a skeptical look, waiting for your input.",
+    "background": "Alex looks frustrated, pacing around the room.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We really need to think this through, Alex.",
     "options": [
       {
-        "text": "How about we start with a quiet playlist during dinner and then switch to a live band for later in the evening? This way, we can have the best of both worlds.",
+        "text": "I see your point, but too much thinking can paralyze us.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows good emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Lily's concern while emphasizing the dangers of overthinking, showing good emotional perception and empathy."
       },
       {
-        "text": "I think a live band will create a memorable and lively atmosphere for our celebration. Let's go with Monica's suggestion.",
+        "text": "Let's quickly summarize pros and cons, then decide.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
+        "analysis": "You suggested a balanced approach, demonstrating good self-regulation and social skills."
       },
       {
-        "text": "Let's vote on the entertainment options to ensure everyone feels included and we choose the best option for the team.",
+        "text": "We don't have time for this. Let's just go ahead with the plan.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You emphasized the urgency, showing solid motivation but a balanced emotional response."
       }
     ]
   }

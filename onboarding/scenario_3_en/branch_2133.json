@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. They turn to you for the final say. You suggested a place that offers both fine dining and a casual section, and everyone agreed. Now, you, Monica, and Bob are discussing the menu options. Monica wants gourmet dishes, while Bob prefers more traditional comfort food. They look to you for a decision. You decided to let everyone vote on the menu options. The decision was made to have a mix of gourmet dishes and traditional comfort food. Now, Monica and Bob are discussing the seating arrangements. Monica wants assigned seating to facilitate networking, while Bob prefers a more relaxed, open seating arrangement. They turn to you for the final call. You decided to let people choose their own seats when they arrive. Now, Monica and Bob are discussing the entertainment for the evening. Monica suggests a live band to create a lively atmosphere, while Bob prefers a quiet setting with background music. They look to you for the final decision.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica taps her foot impatiently, while Bob folds his arms, waiting for your input.",
+    "background": "Monica sighs and sits back in her chair.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Maybe sticking to our original plan is not a bad idea after all. What do you think?",
     "options": [
       {
-        "text": "How about we start with some background music and later have a live band for those who want to dance?",
+        "text": "I agree, but let's just make sure we're not missing any critical details.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Bob's suggestion while emphasizing the need for thoroughness, showing good emotional perception and balanced emotional response."
       },
       {
-        "text": "I think a live band would make the evening special and memorable. Let's go with that.",
+        "text": "I'm not sure. We should consider Monica's point and weigh our options.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You proposed a reconsideration of Monica's input, demonstrating self-regulation and empathy."
+      },
+      {
+        "text": "Sticking to the plan sounds fine, but we need to be ready to adapt if things go wrong.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
-      },
-      {
-        "text": "Why don't we let everyone vote on the entertainment options when they arrive?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You agreed with Bob's suggestion but highlighted the need for flexibility, showing good social skills."
       }
     ]
   }

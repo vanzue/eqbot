@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. You chose a fancy restaurant. Now, Monica is thrilled but Bob looks disappointed. Monica and Bob continue discussing other aspects of the dinner, such as the menu and seating arrangements. Monica suggests a gourmet menu with a seating plan, while Bob prefers a more laid-back, buffet-style dinner. You chose a gourmet menu with a seating plan. Monica is enthusiastic about the decision, while Bob seems even more frustrated. Monica and Bob now argue over the dress code; Monica wants formal attire, while Bob insists on casual clothing. You suggested business casual attire. Monica nods in agreement, but Bob still seems hesitant. Monica and Bob now discuss the entertainment for the evening. Monica suggests a live band, while Bob prefers a DJ. They turn to you for a final decision.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica taps her fingers on the table with excitement, while Bob shrugs, looking down at his phone.",
+    "background": "Bob crosses his arms, looking skeptical.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Maybe we should set some priorities first. What do you think?",
     "options": [
       {
-        "text": "How about we have both a live band and a DJ? A live band can play during dinner, and a DJ can take over later in the evening.",
+        "text": "Setting priorities can help us stay focused and efficient.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggested a practical approach that emphasizes focus and efficiency, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "I agree. Prioritizing now can save us a lot of trouble later.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I think a live band would be a great way to make the evening feel special and elegant.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
-      },
-      {
-        "text": "Let's vote on whether we want a live band or a DJ to ensure everyone enjoys the evening.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You supported the idea of prioritizing, showing good emotional perception and empathy."
+      },
+      {
+        "text": "Honestly, we might be overthinking this. Just stick to the original tasks.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized sticking to the original plan, showing strong motivation but a lack of emotional perception and empathy."
       }
     ]
   }

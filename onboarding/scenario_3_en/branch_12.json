@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try.",
+    "background": "Lily leans back, frustrated, while Alex crosses his arms.",
     "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.'",
+    "location": "Conference Room",
+    "description": "Taking breaks won’t get the job done. We need action!",
     "options": [
       {
-        "text": "I see your point. Maybe we need to prioritize and focus on what will make the majority happy.",
+        "text": "A break might help us think more clearly, Alex.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of both Monica and Bob. It demonstrates good social skills and motivation to reach a compromise."
-      },
-      {
-        "text": "Let's give it a go and adjust as needed. If we feel rushed, we'll cut something out. Flexibility is key!",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes sticking to the original plan and adapting on the fly."
+        "analysis": "You suggested a break to cool down the tension, showing good emotional perception and social skills."
       },
       {
-        "text": "If it's too complicated, we might as well just go with a simple dinner to avoid issues.",
+        "text": "I agree that we need to act, but let's make sure we all understand the plan first.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You acknowledged the need for action while emphasizing the importance of understanding the plan, showing balanced emotional response."
+      },
+      {
+        "text": "Rushing might lead to mistakes we can't afford. Let's discuss the plan one more time.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You stressed the need for careful planning, demonstrating strong self-regulation and motivation."
       }
     ]
   }

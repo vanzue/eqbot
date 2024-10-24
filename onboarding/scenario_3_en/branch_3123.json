@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] are now discussing how to proceed with the plan. You suggested an escape room for the outdoor activity and a semi-formal dinner, which some team members liked. [Monica] and [Bob] are still debating the final details. You then suggested a straightforward picnic in the park, which seemed to simplify the planning. However, there is still some friction as the team tries to settle on the final arrangements.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'Okay, if we go with the picnic, what kind of food should we bring? Should we make it potluck style?' [Bob] adds, 'And what about the activities? Should we plan any games or keep it more casual?' Everyone is waiting for your input.",
+    "background": "Monica nods, but her brow is furrowed.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "I still think we need to consider the risks before splitting tasks.",
     "options": [
       {
-        "text": "Let's keep it simple and casual. Everyone can bring their favorite dish, and we can decide on games once we get there.",
+        "text": "Monica, let's prioritize the most critical tasks first to minimize risks.",
         "scores": {
-          "Emotion Perception": 4,
+          "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Monica's concern and suggested a focused approach, showing solid motivation and balanced emotional response."
       },
       {
-        "text": "How about we plan a few group games in advance? It will make the picnic more engaging and fun for everyone.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it involves more planning, which might not appeal to everyone."
-      },
-      {
-        "text": "Maybe we should just focus on the food and let the activities happen naturally. It might be simpler and less stressful.",
+        "text": "I agree, but we also need to keep the deadline in mind. Let's find a middle ground.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects a balanced approach but shows slightly lower motivation as it suggests a more laid-back plan."
+        "analysis": "You proposed a compromise, considering both the risks and the deadline, demonstrating empathy and social skills."
+      },
+      {
+        "text": "We can't afford to get bogged down in details. Let's move forward with the plan.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the need for action, showing strong motivation but slightly less empathy."
       }
     ]
   }

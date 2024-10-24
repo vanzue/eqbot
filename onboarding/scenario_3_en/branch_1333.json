@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then proposes to go with Ryan's suggestion of an outdoor team-building activity. Monica and Bob seem to be contemplating this new suggestion. Monica raises an eyebrow, 'An outdoor activity, huh? Well, I guess it's better than nothing. What do you think, Bob?' Bob shrugs, 'I suppose it could be fun, but I was really looking forward to a more relaxed evening.' Alex suggests reconsidering and picking something more relaxing. Monica and Bob exchange glances, clearly still uncertain.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica sighs and looks at you, 'So, Alex, what are we going to do? We need a decision soon.' Bob nods in agreement, but you can sense the frustration in his eyes.",
+    "background": "[Monica] leans back, looking exasperated. [Bob] frowns.",
+    "role": "You",
+    "location": "Conference Room",
+    "description": "We need to consider all angles before proceeding. Let's find a balance.",
     "options": [
       {
-        "text": "Maybe we should just go with the flow and see how things unfold.",
+        "text": "Monica, your patience is key here. Bob's attention to detail will help us succeed.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This response is abstract and non-committal, showing balanced emotional detection but lacking a clear direction."
+        "analysis": "You acknowledged both Monica's and Bob's strengths, promoting teamwork and understanding, showing good emotional perception and empathy."
       },
       {
-        "text": "You know, a relaxed evening might be just what we need after all this hard work. Let's go for the formal dinner.",
+        "text": "Let's take a quick break and revisit this with fresh minds.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This response leans toward agreement, showing good self-regulation and social skills, but slightly lower empathy as it prioritizes a single suggestion."
+        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
       },
       {
-        "text": "Honestly, I think we should stick with the outdoor activity. It’s different and could be a fun way to unwind.",
+        "text": "We can't afford mistakes. Bob is right; let's discuss this thoroughly.",
         "scores": {
-          "Emotion Perception": 4,
+          "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 3
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This response leans towards disagreement with a passive-aggressive undertone, showing high emotional detection and empathy but lower social skills."
+        "analysis": "You supported Bob's method, advocating for thorough planning and attention to detail, showing a balanced emotional response."
       }
     ]
   }

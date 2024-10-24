@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. You then proposed a picnic as a simple and inclusive option. [Monica] and [Bob] are now discussing how to proceed with the picnic plan. You suggested ordering some catering for the food and focusing on having fun. If it rains, you mentioned that you'll figure it out then. The team agrees to your suggestion, but now [Monica] and [Bob] are discussing the details.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'Okay, so what kind of catering should we order? And where will we have the picnic if it rains?' [Bob] adds, 'Yeah, and who is going to be responsible for organizing everything?' Everyone is waiting for your input.",
+    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We can't just rush decisions without thinking them through!",
     "options": [
       {
-        "text": "Let's order a variety of foods to cater to everyone's tastes. If it rains, we can use the company lounge. I'll take charge of the organization.",
+        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences and taking responsibility for organization. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "We should order something simple and easy. If it rains, we can just postpone it. Maybe someone else should take the lead on organizing.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and flexibility but slightly lower empathy and motivation as it suggests postponing the event and passing the organizational responsibility."
+        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
       },
       {
-        "text": "Honestly, it seems like too much hassle. Maybe we should just cancel the picnic and go to a restaurant instead.",
+        "text": "Let's try to meet halfway and set a time limit for discussions.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+      },
+      {
+        "text": "Sometimes we need to make quick decisions to keep the project moving.",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a lack of motivation and lower social skills as it dismisses the picnic idea and doesn't address the team's desire for a casual celebration."
+        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
       }
     ]
   }

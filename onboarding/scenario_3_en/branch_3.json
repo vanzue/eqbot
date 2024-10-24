@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' Everyone is waiting for your decision.",
+    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We can't just rush decisions without thinking them through!",
     "options": [
       {
-        "text": "How about we combine both? We can start with the outdoor activity to unwind and then have a formal dinner to celebrate our achievements.",
+        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
       },
       {
-        "text": "I understand both points of view, but I think we should stick with the formal dinner. It will be a classy way to celebrate and reflect on our success.",
+        "text": "Let's try to meet halfway and set a time limit for discussions.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes one suggestion over others."
+        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
       },
       {
-        "text": "Since we can't decide, maybe we should just skip the celebration and focus on our next project.",
+        "text": "Sometimes we need to make quick decisions to keep the project moving.",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making a decisive call and does not consider the team's desire to celebrate."
+        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
       }
     ]
   }

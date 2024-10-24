@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed.",
+    "background": "Alex leans forward, frustrated. Lily sighs.",
+    "role": "Lily",
+    "location": "Conference Room",
+    "description": "We need to ensure our plan is foolproof. Rushing won't help.",
     "options": [
       {
-        "text": "Maybe we can find a middle ground that works for everyone. How about a team-building activity followed by a dinner? We can save the bar for another time.",
+        "text": "Alex, let's combine your decisiveness with thorough checks. Teamwork will get us there.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of both Monica and Bob. It demonstrates good social skills and motivation to reach a compromise."
+        "analysis": "You emphasized collaboration, balancing urgency and caution, showing good emotional perception and empathy."
       },
       {
-        "text": "I understand it might be tight, but I think experiencing all three would be a memorable celebration. Let's give it a try!",
+        "text": "Let's take a quick break and revisit this with fresh minds.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes the original plan over addressing the concerns raised."
+        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
       },
       {
-        "text": "If it's too much trouble, maybe we should just go with the majority's preference to avoid any conflicts.",
+        "text": "We can't afford mistakes. Lily is right; let's discuss this thoroughly.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You backed Lily's method, advocating for thorough planning, showing a balanced emotional response."
       }
     ]
   }

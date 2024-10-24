@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex decides to stick to Emma's suggestion of a formal dinner to keep things simple. Monica and Bob appear to be processing this decision, with Monica tapping her foot and Bob scratching his head. Monica frowns and says, 'A formal dinner? Really, Alex? I thought we were aiming for something more exciting.' Bob adds, 'Yeah, I'm not sure everyone will be thrilled with just a dinner.' Both Monica and Bob look at you expectantly. Alex then suggests scrapping the celebration idea until a consensus is reached. Monica and Bob exchange glances, clearly dissatisfied with this resolution.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica sighs and says, 'So, Alex, are we really canceling the celebration? Everyone was looking forward to it.' Bob crosses his arms and adds, 'Yeah, this is pretty disappointing. Can't we find a way to make it work?'",
+    "background": "Bob rubs his temples while Monica glances at her phone.",
+    "role": "Bob",
+    "location": "Project Meeting Room",
+    "description": "Maybe this isn't the best time to make a decision. Let's revisit this later.",
     "options": [
       {
-        "text": "Maybe we can revisit this later when everyone has had more time to think about it. For now, let's focus on our next project.",
+        "text": "We need to decide now, Monica. Bob, let's focus on the task at hand.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This option shows good social skills by trying to buy more time, but it demonstrates lower empathy and motivation by not addressing the current disappointment."
+        "analysis": "You encouraged immediate action while maintaining focus, showing strong self-regulation and social skills but less empathy."
       },
       {
-        "text": "Alright, let's reconsider the outdoor team-building activity. It might be the most engaging option for everyone.",
+        "text": "I agree with Bob. A rushed decision might lead to mistakes.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This choice shows high emotional detection and empathy by revisiting an option that could potentially satisfy everyone. It also demonstrates good social skills and motivation to find a workable solution."
-      },
-      {
-        "text": "If you both are so against all the options, maybe you should come up with something everyone will agree on.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option shows lower empathy and motivation, as it shifts the responsibility to others in a passive-aggressive manner. It demonstrates some social skill by attempting to delegate the decision-making."
+        "analysis": "You supported taking time for a decision, balancing emotional perception and self-regulation."
+      },
+      {
+        "text": "Monica, let's take a step back and gather more information before deciding.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You proposed gathering more data, showing good empathy and a balanced emotional response."
       }
     ]
   }
