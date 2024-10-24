@@ -40,10 +40,7 @@ async def tts_endpoint(request: TTSRequest):
     try:
         audio_content = call_azure_tts(request.text, request.voice, request.style)
         # Return audio content as response
-        if audio_content.status_code == 200:
-            return Response(content=audio_content, media_type="audio/wav")
-        else:
-            raise HTTPException(status_code=audio_content.status_code, detail=audio_content.text)
+        return Response(content=audio_content, media_type="audio/wav")
     except HTTPException as e:
             raise HTTPException(status_code=400, detail="Failed to generate audio")
  
