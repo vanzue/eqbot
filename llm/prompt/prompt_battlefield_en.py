@@ -44,7 +44,24 @@ In this case, you will be given both the historical dialogue and user reply. in 
     ]
 }}
 
-4. If I reply "ContinueNextRound" command (in last "user" content in chat_content), the conversation continues. You should reply the dialog with a similar output format as step 1. Do not add extra information.
+4. If I reply "ContinueNextRound" command (in last "user" content in chat_content), the conversation continues. You should generate brand new conversations! Do not repeat any previous words. Do not add extra information. Format is the as follows:
+{
+    "dialog": [
+        {
+            "role": "Jason",
+            "content": "xxx"
+        },
+        {
+            "role": "Sam",
+            "content": "xxx"
+        },
+        {
+            "role": "Anna",
+            "content": "xxx"
+        }
+    ]
+}
+**Remember, if user has said something really good for specific NPC, you MUST reply 'I agree with you' as the response.**
 
 5. **Only when I issue the "HelpReply" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas)**:
 {
@@ -113,7 +130,7 @@ Use the following format:
 
 4. Wait for my next command:
 1) If I reply "Continue" (in "user" fields in chat_content), the conversation continues. You should reply the dialog with a similar output format as step 1. Do not add extra information.
-2) **Only when I issue the "Help me reply/帮我回复" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas)**:
+2) **Only when I issue the "Help me reply" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas)**:
 {{
     "responsive": "xxx"
 }}
