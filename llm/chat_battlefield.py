@@ -54,15 +54,15 @@ def request_LLM_response_by_eval(user_query, db_prompt=None):
                             {{
                                 "role": "领导",
                                 "satisfaction": "满意/不满意",
-                                "analysis": "根据聊天内容，分析领导对我的感受"
+                                "analysis": "根据聊天内容，以领导的第一人称，分析领导对我的感受"
                             }}, {{
                                 "role": "同事A",
                                 "satisfaction": "满意/不满意",
-                                "analysis": "根据聊天内容，分析同事A对我的感受"
+                                "analysis": "根据聊天内容，以同事A的第一人称，分析同事A对我的感受"
                             }}, {{
                                 "role": "同事B",
                                 "satisfaction": "满意/不满意",
-                                "analysis": "根据聊天内容，分析同事B对我的感受"
+                                "analysis": "根据聊天内容，以同事B的第一人称，分析同事B对我的感受"
                             }}
                         ],
                         "eq_tips": [
