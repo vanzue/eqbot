@@ -1,12 +1,8 @@
 import os
 import requests
 import base64
-import easyocr
-from langchain_core.prompts import ChatPromptTemplate
 from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 from openai import AzureOpenAI
-
-from keyless_setup import creat_llm
 
 
 # def image2text(image_path):
