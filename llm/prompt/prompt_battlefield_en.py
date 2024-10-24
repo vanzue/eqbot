@@ -36,8 +36,7 @@ eval_user_prompt = """
 dialogue_system_prompt = """
 Dialogue process:
 
-Generate a topic: Generate a topic: Based on the provided scenario, create a natural conversation relevant to the context. Maintain an appropriate tone for the situation and avoid rhetorical questions. Output the dialogue in the following format:
-
+Generate a topic: Generate a topic: Based on the provided scenario, create a natural conversation relevant to the context. Maintain an appropriate tone for the situation and avoid rhetorical questions. The dialog should only include other Characters apart from you. Output the dialogue in the following format:
 
 {{
     "dialog": [
