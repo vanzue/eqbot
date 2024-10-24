@@ -15,8 +15,27 @@ def request_LLM_response(chat_history):
                     ** Tone and Style **
                     - Professional and objective, while maintaining a polite and neutral tone.
 
+                    Your response should include:
+                    title: A concise phrase summarizing the key emotional intelligence aspect of the chat (e.g., "Responsiveness and Proactive Communication"). 
+                    summary: One sentence describing the current issue
+                    You can: 
+                    [First actionable suggestion based on the current context] 
+                    [Second actionable suggestion based on the analysis of the other person's perspective of you] 
+                    [Third actionable suggestion for self-improvement] 
+                    [Fourth actionable suggestion for a recommended response the user can give]
+
                     ** Standard Output Format (Do not include the word "json", and do not omit anything.) **
                     {{
+                        "title": [
+                            {{
+                                "title: [A concise phrase summarizing the key emotional intelligence aspect of the chat. ]
+                            }}
+                        ], 
+                        "summary": [
+                            {{
+                                "summary: [One sentence describing the current issue]
+                            }}
+                        ],
                         "suggestions": [
                             {{
                             "point": [First actionable suggestion based on the current context]
@@ -30,19 +49,24 @@ def request_LLM_response(chat_history):
                             {{
                             "point": [[Fourth actionable suggestion for a recommended response the user can give]]
                             }}
-                        ],
-                        "summary": [
-                            {{
-                                "summary: [A concise phrase summarizing the key emotional intelligence aspect of the chat (e.g., "Responsiveness and Proactive Communication"). ]
-                            }}
-                        ]
+                        ]                        
                     }}
 
                     ** Audience **
                     - The target audience is those who wish to understand how the other person perceives them.
 
                     ** Output Example **
-                    {{
+                    {{      
+                        "title": [
+                            {{
+                                "title: "Responsiveness and Proactive Communication" ]
+                            }}
+                        ], 
+                        "summary": [
+                            {{
+                                "summary: "You should listen more abot others' opinions."
+                            }}
+                        ],
                         "suggestions": [
                             {{
                             "point": "This is the first actionable suggestion."
@@ -55,11 +79,6 @@ def request_LLM_response(chat_history):
                             }},
                             {{
                             "point": "This is the fourth actionable suggestion."
-                            }}
-                        ],
-                        "summary": [
-                            {{
-                                "summary: "This is the summary of suggestions."
                             }}
                         ]
                     }}
@@ -93,10 +112,12 @@ def parse_LLMresponse(json_data):
         response = json.loads(json_data)
         print("JSON is valid.")
 
-        summary = response['summary']
+        title = response['title'][0]
+        summary = response['summary'][0]
         suggestions = response['suggestions']
 
         analysis = {
+            "title": title,
             "summary": summary,
             "suggestions": suggestions
         }
@@ -127,7 +148,7 @@ if __name__ == "__main__":
     chat_history2 = [{"role": "colleague", "content": "亲爱的你干什么去了？"}, {"role": "user", "content": "在处理点事情。"}, {"role": "colleague", "content": "说嘛，咋俩谁跟谁。"}, {"role": "user", "content": "在忙，待会儿聊。"}, {"role": "colleague", "content": "你不会是去面试了吧？"}]
 
     # response = retry_parse_LLMresponse_with_subordinate(personal_name="test", contact_name="test_contact", chat_history=chat_history1)
-    analysis = retry_parse_LLMresponse(personal_name="test", contact_name="test_contact", chat_history=chat_history2)
+    analysis = retry_parse_LLMresponse(chat_history=chat_history2)
     print(analysis)
 
     # response = parse_LLMresponse_from_supervisor(response)
