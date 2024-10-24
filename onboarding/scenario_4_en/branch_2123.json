@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark then replied, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You agreed to help, asking Mark to send you the details. Now, you're working through the task and manage to complete it, but you feel a bit frustrated as your time off was interrupted. You inform Mark that the task is completed. He responds with, 'Thanks, Alex. I knew I could count on you. By the way, Monica and Bob were discussing this issue earlier, and they think it might be good if you could join their call later to explain your approach.' You declined to join the call, stating that you are on leave and cannot join the call. Mark then responded, 'I understand, but Monica and Bob are not too happy. They think it would have been more responsible to explain your approach directly.' Monica messages you privately: 'Alex, we really needed your input on the call. Bob was quite frustrated. Can you at least send a detailed email explaining your approach?' You answered by suggesting a follow-up session once you're back. Monica then responds, 'Okay, but this isn't the first time you've left us hanging during critical moments.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "Bob joins the conversation: 'Yes, Alex, it's really becoming a pattern. We need to know if we can rely on you or if we should find alternatives.'",
+    "background": "You decided to help with the urgent task as you are on annual leave. [Monica] and [Bob] join the conversation.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "'It’s great you’re helping, but don’t you think it’s unfair on your break?' She tilts her head, looking concerned.",
     "options": [
       {
-        "text": "I'm sorry you feel that way. Let's discuss this further when I'm back.",
+        "text": "I see what you mean, but I think we can manage this together.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show high empathy and emotional perception by acknowledging her point, but your motivation to address the urgency could be higher."
+      },
+      {
+        "text": "I get it, but we all have to make sacrifices sometimes.",
         "scores": {
           "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You maintain emotional control and motivation, but empathy and social skill could be enhanced."
+      },
+      {
+        "text": "Maybe, but I think we can handle this if we focus.",
+        "scores": {
+          "Emotion Perception": 2,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "You acknowledged their concerns and showed empathy, but didn't immediately resolve the tension, indicating a need for better self-regulation and motivation."
-      },
-      {
-        "text": "I understand your frustration. I'll make sure to be more available in the future.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed high empathy and emotional perception by promising better availability, but compromised your self-regulation as you took on more responsibility during your leave."
-      },
-      {
-        "text": "This seems like an exaggeration. I've always been there when it truly mattered.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained good self-regulation and set boundaries, but showed less empathy and emotional perception towards your colleagues' concerns."
+        "analysis": "You show good emotional regulation and empathy, but emotional perception could be better."
       }
     ]
   }

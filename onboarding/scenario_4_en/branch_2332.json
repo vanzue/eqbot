@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You then said, 'I understand the urgency. I'll help this time, but please ensure there’s a backup plan for such situations in the future.' Mark, relieved, replies, 'Thanks, Alex. I really appreciate it.' Later, your colleagues [Monica] and [Bob] also get wind of the situation. [Monica] says, 'Alex, it's really nice of you to help out during your leave.' [Bob] adds, 'But isn't it a bit unfair that you're being pulled in during your time off?' You replied, 'I don't mind helping, but there should be some kind of appreciation or compensation for such efforts.' [Monica] nods, 'I get that, but it feels like people are taking advantage of your willingness to help.' [Bob] chimes in, 'Yeah, it's like there's no respect for your personal boundaries.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] looks at you with concern, 'Do you think it will be any different next time?' [Bob] frowns, 'Or will they just keep expecting the same?'",
+    "background": "You decided to make sure the task is done right. [Bob] looks slightly annoyed.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'I get it, but do you really think this is the best use of your leave?' He raises an eyebrow.",
     "options": [
       {
-        "text": "I'm not sure. Maybe we should discuss setting clearer boundaries.",
+        "text": "You're right. Maybe I should step back and let you handle it.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show good self-regulation by considering stepping back, but empathy is lower as you leave the task to your colleague."
+      },
+      {
+        "text": "I understand your concern, but I want to see this through to the end.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good self-regulation and empathy by proposing a discussion on boundaries, but the motivation score is lower as it lacks immediate proactive action."
+        "analysis": "You show high emotional perception and empathy by staying involved, but it might affect your self-regulation and motivation."
       },
       {
-        "text": "If it happens again, I'll definitely need to address it more firmly.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You balance emotional perception and motivation well, showing a willingness to address issues in the future, but empathy is slightly lower as it focuses more on personal concerns."
-      },
-      {
-        "text": "It's hard to say. We'll just have to wait and see.",
+        "text": "I'll stay a while longer, but let's figure out a way to speed things up.",
         "scores": {
           "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 3
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 2
         },
-        "analysis": "You show moderate self-regulation, but the response is somewhat passive and lacks clarity, resulting in lower scores for empathy and social skill."
+        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception and motivation could be improved."
       }
     ]
   }

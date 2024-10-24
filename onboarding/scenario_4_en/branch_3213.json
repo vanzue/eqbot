@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. A few hours later, you find yourself discussing this situation with Monica and Bob. After explaining that you believe Mark understood your need to set healthy boundaries, the conversation continues. You mentioned that if Mark can't respect your boundaries, then maybe a more serious conversation would be needed.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'So, are you planning to talk to Mark again about boundaries?' [Bob]: 'Yeah, it's tricky. How will you address it if he doesn't change?'",
+    "background": "You suggest reconsidering priorities. [Bob] looks thoughtful.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'Reconsidering priorities might be wise, but it could also complicate things. What's your take?'",
     "options": [
       {
-        "text": "I think it depends on the situation. We’ll have to see how things unfold.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed good emotional perception and self-regulation by taking a wait-and-see approach, although your empathy and social skills could be more proactive."
-      },
-      {
-        "text": "I’ll explain again why personal time off is important and hope he understands.",
+        "text": "It's worth discussing further to ensure we're on the same page.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show good empathy and self-regulation, but your motivation might be lower as you seek further discussion."
+      },
+      {
+        "text": "I think sticking to our initial plan is more efficient.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You displayed balanced emotional perception and social skills, showing a willingness to address the issue with empathy and patience."
+        "analysis": "You show strong self-regulation and social skills, but emotional perception might be lower as you prioritize efficiency."
       },
       {
-        "text": "If Mark doesn’t get it, then maybe it’s time to involve HR.",
+        "text": "Maybe we should split tasks to cover both the report and presentation.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 4
+          "Social Skill": 5,
+          "Motivation": 3
         },
-        "analysis": "You showed strong motivation to resolve the issue but lower empathy and social skills, indicating a more confrontational approach."
+        "analysis": "You show high social skills and emotional perception, but empathy could be seen as lacking by not fully considering the complexity."
       }
     ]
   }

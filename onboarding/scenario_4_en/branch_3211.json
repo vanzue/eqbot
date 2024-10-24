@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. A few hours later, you find yourself discussing this situation with Monica and Bob. After explaining that you believe Mark understood your need to set healthy boundaries, Monica expressed concerns about what would happen if Mark doesn't respect them next time, while Bob mentioned potential issues with team relationships. You reiterated the importance of sticking to your boundaries, believing that you can deal with future issues as they arise. Now, the conversation continues.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I get sticking to your boundaries, but what if it happens again? How will you handle it?' [Bob]: 'And what about the team's perception? They might think you're not a team player.'",
+    "background": "You and your colleagues decide to stick to the plan and finish the report first. [Bob] looks skeptical.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'Is it really wise to focus solely on the report? The presentation is equally important.'",
     "options": [
       {
-        "text": "Honestly, I’ll handle it on a case-by-case basis. It's tricky, but I think it’s essential to prioritize self-care.",
+        "text": "We have to prioritize. The report is urgent, and we can manage the presentation afterward.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You show strong self-regulation and motivation by sticking to your priorities, but you could show more empathy by acknowledging the presentation's importance."
+      },
+      {
+        "text": "You might be right. Let's split tasks better; I'll handle the report while you both start on the presentation.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You showed good emotion perception and self-regulation by handling situations as they come, but lower social skills and empathy might make team dynamics challenging."
-      },
-      {
-        "text": "I understand the concerns, but I believe clear communication is key. If the team knows my stance, they will respect it.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You demonstrated strong self-regulation and social skills by emphasizing the importance of communication, but motivation towards team needs could be improved."
+        "analysis": "You balance social skills and emotional perception well, but your motivation might be lower as you split tasks."
       },
       {
-        "text": "If it keeps happening, maybe I need to have a deeper discussion with Mark about respecting boundaries.",
+        "text": "Perhaps we should reconsider our approach. Let's discuss and find a balance between the report and presentation.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You maintained moderate emotional perception and self-regulation, but lower empathy and social skills might lead to future tension in team dynamics."
+        "analysis": "You show good empathy and self-regulation by being open to discussion, but your emotional perception might be lower as you reconsider the plan."
       }
     ]
   }

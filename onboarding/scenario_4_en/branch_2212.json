@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You agreed to help and asked Mark to send you the details. After reviewing the task details, you realize it's more extensive than you initially thought. Mark messages again, 'Alex, any update on the task? We really need it done ASAP.' You replied, 'Mark, this is taking longer than expected. Can you get someone to help with parts of it?' Mark responds, 'I understand, but we really need your expertise to ensure it's done correctly. Can you please push through and finish it?'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "You sit back, contemplating Mark's request as you realize the strain it's putting on your time off. [Monica] messages you: 'Hey Alex, I heard you're working on something urgent even though you're on leave. Is everything alright?'",
+    "background": "You decided to help with the urgent task. [Monica] and [Bob] join the conversation.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'I appreciate your commitment, but are you sure this won't affect your well-being?' He frowns, leaning on the desk.",
     "options": [
       {
-        "text": "I'm managing, but it's quite overwhelming. Thanks for checking in.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and emotional perception by acknowledging Monica's concern, but your self-regulation could be improved as you continue to work during your leave."
-      },
-      {
-        "text": "I'm handling it, but honestly, it's a bit much. Could use some support.",
+        "text": "I'm confident I can manage. Let's focus on getting this done.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained good self-regulation by expressing the need for support, but showed less empathy and motivation towards the task."
-      },
-      {
-        "text": "I'm working on it, but I wish there was a better way to handle these situations.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You balanced empathy and self-regulation well, and communicated your concerns clearly, showing good social skills."
+        "analysis": "You show a balanced approach by agreeing to help, but your emotional perception and empathy could be better."
+      },
+      {
+        "text": "To be honest, it's a bit overwhelming, but I'll push through it.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You show high emotional perception and empathy by acknowledging your feelings, but it may affect your social skills."
+      },
+      {
+        "text": "I'm considering it, but maybe we can find another solution.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show good self-regulation and social skills by suggesting an alternative, but emotional perception could improve."
       }
     ]
   }

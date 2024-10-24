@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark then replied, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You agreed to help, asking Mark to send you the details. Now, you're working through the task and manage to complete it, but you feel a bit frustrated as your time off was interrupted. You inform Mark that the task is completed. He responds with, 'Thanks, Alex. I knew I could count on you. By the way, Monica and Bob were discussing this issue earlier, and they think it might be good if you could join their call later to explain your approach.' You replied, 'I understand the importance, but I need to rest. Can we schedule a follow-up session once I'm back?' Mark replies, 'That sounds reasonable. I'll let them know. Take care!' A few days later, back at work, you find yourself in a meeting with Monica and Bob. During the meeting, Monica says, 'Alex, we really appreciated your help last week. How do you manage to stay so calm under pressure?' You answered, 'Well, sometimes you just have to put your feelings aside and get the job done, even if it means sacrificing personal time.'",
-    "role": "Alex",
-    "location": "Meeting Room",
-    "description": "[Monica] nods thoughtfully and [Bob] chimes in, 'I still think we need a better system to avoid such situations. Your thoughts, Alex?'",
+    "background": "You agreed to help a bit longer and started working on the urgent task. [Monica] and [Bob] are still involved.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "'I appreciate your dedication, but maybe you should seriously consider taking a break. This isn't your responsibility alone.' She leans back, crossing her arms.",
     "options": [
       {
-        "text": "I agree. We should definitely look into creating a more robust backup plan.",
+        "text": "You make a good point. I need to set some boundaries.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed empathy and good emotional perception by agreeing with Bob and suggesting a practical solution, while maintaining good self-regulation."
-      },
-      {
-        "text": "It's not that simple. Sometimes unexpected things just happen, and we need to deal with them as they come.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 3,
+          "Emotion Perception": 4,
+          "Self Regulation": 5,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You provided a realistic perspective, showing a balanced approach across emotional intelligence dimensions, although your emotional perception could be improved."
+        "analysis": "You display excellent self-regulation and emotional perception by recognizing the need for boundaries, but empathy could be higher as you step away."
       },
       {
-        "text": "Honestly, I think we need to delegate tasks more efficiently to avoid over-reliance on a few individuals.",
+        "text": "I understand, Monica, but I feel it's important to see this through.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 4
+          "Emotion Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 2
         },
-        "analysis": "You showed high emotional perception and motivation by emphasizing the need for better task delegation, but indicated a lower level of empathy and self-regulation."
+        "analysis": "You show high empathy and social skill by acknowledging Monica's concern but staying involved, which might impact your self-regulation."
+      },
+      {
+        "text": "Thanks, Monica. I'll help out a bit longer, but let's outline what needs to be done.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 3
+        },
+        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception could be better."
       }
     ]
   }

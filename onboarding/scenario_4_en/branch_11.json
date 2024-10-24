@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded, 'I get what you're saying, but I felt it was necessary this time. I'll be more careful in the future.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] nods thoughtfully and says, 'I understand, but it's important to take care of yourself too.' [Bob] shrugs, 'Well, it's done now. Let's just hope it doesn't become a trend.'",
+    "background": "[Monica] frowns as [Alex] mentions your decision to finish your leave.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "Bob raises an eyebrow. 'Did you think about how this decision affects the rest of the team?'",
     "options": [
       {
-        "text": "Yeah, let's see how it goes. Maybe it won't be a big deal.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You chose a neutral response, showing good self-regulation but lower emotional perception and empathy towards their concerns."
-      },
-      {
-        "text": "I agree, but sometimes you just have to do what feels right in the moment.",
+        "text": "I did consider it, but balancing work and personal life is important. Let's ensure we have a contingency plan next time.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 2,
+          "Self Regulation": 5,
           "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged their point but maintained your stance, showing good emotional perception and social skills, though self-regulation could be improved."
-      },
-      {
-        "text": "If it becomes a problem, I'll address it then. For now, let's not worry too much.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You chose to downplay the issue, showing moderate self-regulation but lower empathy and motivation to address their concerns."
+        "analysis": "You show good emotional perception and self-regulation but could improve empathy and motivation by considering the team's immediate needs."
+      },
+      {
+        "text": "I apologize if it caused any inconvenience. I can offer some guidance remotely if needed.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show empathy and offer support, which highlights your social skills, but the motivation to directly resolve the issue is lower."
+      },
+      {
+        "text": "I see your point. Let's discuss how we can better communicate and plan for such urgent tasks in the future.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the impact on the team and suggest improving communication, showing good social skills and empathy, but emotional perception could be better."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You agreed to help and asked Mark to send you the details. After reviewing the task details, you realize it's more extensive than you initially thought. Mark messages again, 'Alex, any update on the task? We really need it done ASAP.' You responded, 'I'm working on it. It's quite detailed, so it might take a bit longer than expected.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "Mark replies, 'I appreciate it, Alex. Can you give me an estimated time of completion?'",
+    "background": "You decided to let [Monica] and [Bob] handle the urgent task.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'Monica and I can manage, but if you change your mind, just let us know.' He gives you a reassuring nod.",
     "options": [
       {
-        "text": "It's hard to say exactly. I'll do my best to get it done soon.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and emotional perception by updating Mark on the task, but your self-regulation could be improved as you continue to work during your leave."
-      },
-      {
-        "text": "Mark, I'm really trying, but this is taking longer than anticipated. Can you get someone to assist?",
+        "text": "Thanks, Bob. I'll disengage and trust you both.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Self Regulation": 5,
           "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained good self-regulation by asking for assistance, but showed less empathy and motivation towards the task."
-      },
-      {
-        "text": "I'll keep working on it, but please ensure such tasks are better allocated in the future.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You balanced empathy and self-regulation well, and communicated your availability clearly, showing good social skills."
+        "analysis": "You show strong self-regulation by stepping back, but empathy and emotional perception could be improved."
+      },
+      {
+        "text": "I appreciate it, but I want to stay involved to ensure everything goes smoothly.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show high empathy and emotional perception by wanting to stay involved, but it may affect your self-regulation."
+      },
+      {
+        "text": "Alright, I'll help for a bit longer, but let's coordinate the specifics first.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 3
+        },
+        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception could be improved."
       }
     ]
   }

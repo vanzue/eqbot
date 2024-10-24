@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. Monica expressed disbelief about Mark's request, and Bob acknowledged that work emergencies happen. You told them you helped but emphasized to Mark the importance of respecting your time off. Monica then asked if Mark at least thanked you, and Bob questioned if Mark promised not to bother you again. You responded saying that you think Mark got the message this time and hoped it sticks.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'That's good to hear, but will he really keep that promise?' [Bob]: 'Yeah, I wonder if he understands how important your leave is.' [Monica]: 'Sometimes I feel like we all need to be clearer with our boundaries, don't you think?'",
+    "background": "You agreed to start on the report first. [Bob] glances at his watch.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'Time's running short. Maybe we should reconsider the task division.'",
     "options": [
       {
-        "text": "Absolutely, setting boundaries is crucial for maintaining work-life balance.",
+        "text": "Let's stick to the plan and adjust if necessary.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 3,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You showed good self-regulation and understanding of the need for boundaries, but your motivation and social skills could be slightly improved."
+        "analysis": "You show good self-regulation by sticking to the plan but may lack empathy by not considering the urgency."
       },
       {
-        "text": "I agree, but sometimes it feels like no one really respects them.",
+        "text": "You're right, Bob. Let's reassign tasks to better manage our time.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You exhibited high emotional perception and empathy by expressing your feelings, but your self-regulation and motivation were lower as you seemed frustrated."
+        "analysis": "You show high empathy and emotional perception by agreeing to reassess the tasks but may affect self-regulation."
       },
       {
-        "text": "Maybe, but we also need to be flexible sometimes.",
+        "text": "How about we tackle the most critical parts of each task first?",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Self Regulation": 2,
+          "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You balanced your response by showing flexibility and good social skills, though your empathy and emotional perception could be improved."
+        "analysis": "You balance social skills and motivation well by suggesting a focused approach, though self-regulation might be lower."
       }
     ]
   }

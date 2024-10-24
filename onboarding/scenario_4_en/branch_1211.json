@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'. You explained your actions to Monica and Bob saying, 'I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.' Now, they seem unconvinced. [Monica] raises an eyebrow and says, 'But where do you draw the line, Alex?' [Bob] nods in agreement, adding, 'Yeah, you can't always be the go-to person.' You acknowledged their concerns and showed empathy by saying, 'I understand your point. I'll try to establish clearer boundaries going forward.' [Monica] crosses her arms and says, 'We'll see if you can stick to that, Alex.' [Bob] shrugs, adding, 'It's not just about setting boundaries. It's about respecting them too.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] looks skeptical, and [Bob] gives you a knowing look. [Monica] then says, 'Look, Alex, we're just trying to look out for you. You deserve your time off as much as anyone else.' [Bob] chimes in, 'Yeah, maybe you should think about how this affects you in the long run.'",
+    "background": "[Monica] raises an eyebrow, questioning your suggestion to train more people.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "Bob adjusts his glasses. 'Training sounds good, but how do we ensure the quality of their work?'",
     "options": [
       {
-        "text": "I appreciate your concern. I'll definitely take it into account and be more mindful of my time off.",
+        "text": "We can implement a mentorship program to guide them through the process.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 3
+        },
+        "analysis": "You show good social skills and self-regulation by suggesting a mentorship program, but emotional perception could be improved."
+      },
+      {
+        "text": "Quality is important, but we need to trust our team's abilities and give them room to grow.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "You showed good emotional perception and empathy by acknowledging their concerns and promising to be more mindful."
+        "analysis": "You show empathy and emotional perception by emphasizing trust in the team, but the motivation to enforce quality control is lower."
       },
       {
-        "text": "I get where you're coming from, but sometimes we all have to make sacrifices. It's part of being a team player.",
+        "text": "We can set up regular reviews and feedback sessions to maintain high standards.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You showed social skills by emphasizing teamwork, but your self-regulation could be improved as you downplayed the need for boundaries."
-      },
-      {
-        "text": "Thanks for the advice, but I think it's important to remain flexible. If this becomes a regular issue, I'll address it then.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
           "Empathy": 2,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+        "analysis": "You focus on maintaining high standards through regular reviews, showing strong self-regulation but lower empathy."
       }
     ]
   }

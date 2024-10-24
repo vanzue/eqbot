@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] says, 'That’s a strong stance, Alex. Did he react badly?' [Bob] adds, 'I’d be worried about how that might affect team dynamics in the future. Did you consider that?' You responded that you think Mark understood where you were coming from and that it’s about setting healthy boundaries. Now the conversation continues.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'Setting boundaries is important, but do you think Mark will respect them in the future?' [Bob]: 'Yeah, sometimes people say they understand, but their actions say otherwise. What will you do if Mark ignores your boundaries again?'",
+    "background": "Monica prepares her notes. You decide to look up trends quickly.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'The trends data is taking too long. Should we just focus on the slides?'",
     "options": [
       {
-        "text": "I’ll remind him of our conversation and reinforce the importance of respecting personal time.",
+        "text": "We can manage both if we split the tasks. I'll keep looking up trends while you work on the slides.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
+          "Empathy": 2,
+          "Social Skill": 5,
+          "Motivation": 3
         },
-        "analysis": "You showed good emotional perception and social skills by planning to reinforce boundaries, but your empathy and motivation towards addressing the team's needs might need improvement."
+        "analysis": "You show high social skills and emotional perception by suggesting a split-task approach, but you may overextend yourself, affecting self-regulation and empathy."
       },
       {
-        "text": "Honestly, I’ll deal with it when it happens. Sometimes it’s better to address issues as they arise.",
+        "text": "You're right, let's focus on polishing the slides first. We can add the trends later if we have time.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You exhibit strong self-regulation and a focus on immediate tasks, but your motivation to dive deep into the trends is limited."
+      },
+      {
+        "text": "I'm almost done with the trends. Let's incorporate them now to make our presentation more impactful.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "Your response shows a balanced approach to handling future issues, though your emotional perception and empathy could be improved."
-      },
-      {
-        "text": "If he ignores my boundaries again, I might need to escalate it to HR. It’s not fair to be treated this way.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You showed moderate emotional perception and self-regulation, but empathy and social skills were lower, possibly leading to tension in team dynamics."
+        "analysis": "You show empathy and determination by wanting to include the trends immediately, but your emotional perception is slightly lower due to potential time constraints."
       }
     ]
   }

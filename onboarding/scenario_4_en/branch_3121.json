@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] crossed her arms and sighed, while [Bob] leaned against the wall, looking thoughtful.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I can't believe Mark asked you to work during your leave. That's so inconsiderate.' [Bob]: 'Yeah, but sometimes work emergencies happen. How did you handle it, Alex?'",
+    "background": "You decide to get more details before incorporating changes. [Monica] and [Bob] are still working on the presentation.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] says, 'We need the report by end of day. Can you speed up the process?'",
     "options": [
       {
-        "text": "I told Mark I’d help this time but asked him to handle such tasks without me in the future.",
+        "text": "I'll do my best to get it done quickly, but I need clarity on the changes.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You showed good emotional perception and social skills by addressing the situation clearly and setting boundaries, although your empathy and self-regulation could be slightly improved."
+        "analysis": "You show good emotional perception and empathy by trying to meet the deadline but may struggle with social skills due to the need for additional information."
       },
       {
-        "text": "I told him I'm on leave and he needs to respect that. It's not my job to be available 24/7.",
+        "text": "I understand the urgency, but rushing might compromise the quality. Can we extend the deadline?",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "You maintained strong self-regulation by setting clear boundaries, but your empathy and motivation towards the team’s urgent needs were lower."
+        "analysis": "You prioritize quality and self-regulation, but empathy is lower as you suggest extending the deadline despite the urgency."
       },
       {
-        "text": "I said I’d take a look at it now, and he should send me the details.",
+        "text": "I'll speed up the process, but you and Bob need to handle any issues that arise from rushing.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
         },
-        "analysis": "You showed high empathy and emotional perception by agreeing to help, but your self-regulation was low as you interrupted your time off."
+        "analysis": "You agree to speed up the process, showing strong self-regulation and motivation, but lower emotional perception and social skills as you delegate responsibility for potential issues."
       }
     ]
   }

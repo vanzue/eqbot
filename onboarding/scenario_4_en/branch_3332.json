@@ -1,23 +1,12 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. [Monica]: 'I can't believe Mark asked you to work during your leave. That's so inconsiderate.' [Bob]: 'Yeah, but sometimes work emergencies happen. How did you handle it, Alex?' You: 'I told Mark I’d help this time but asked him to handle such tasks without me in the future.' [Monica]: 'Did Mark at least thank you?' [Bob]: 'And did he promise not to bother you again?' You: 'He did appreciate my help, but it seemed like he didn't fully get the message.' [Monica]: 'So, what will you do if this happens again?' [Bob]: 'Yeah, what’s your plan for next time?' You: 'I'll probably just ignore the message next time.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'Ignoring the message might lead to bigger issues later, don't you think?' [Bob]: 'Yeah, what if it escalates and affects the team?'",
+    "background": "You acknowledged Monica's urgency. [Bob] listens quietly.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'If we're deciding quickly, should I take a lead on the report?'",
     "options": [
       {
-        "text": "I suppose I need to have a stern conversation with Mark about respecting my time.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed good social skills and self-regulation by planning to address the issue head-on, but your empathy could be improved."
-      },
-      {
-        "text": "Maybe I should set up an automatic out-of-office reply to handle such situations.",
+        "text": "That sounds good, Bob. I'll assist you if needed.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
@@ -25,18 +14,29 @@
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You displayed strong self-regulation and a practical approach, but your motivation to directly resolve the issue was lower."
+        "analysis": "You show good self-regulation and social skills by supporting Bob's initiative, but motivation and emotional perception could be higher."
       },
       {
-        "text": "If it happens again, I'll help but make sure to escalate the issue to our manager.",
+        "text": "Sure, Bob. Just let me know what you need from me.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 2,
+          "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You showed high empathy and emotional perception by considering to help again and escalate the issue, but your self-regulation and social skills were lower."
+        "analysis": "You demonstrate high empathy and emotional perception by offering support, but your social skills could be better by being more proactive."
+      },
+      {
+        "text": "Actually, I think it's better if we all focus on our strengths. I can handle the report.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You show strong motivation and social skills by taking responsibility, but empathy and emotional perception could be improved."
       }
     ]
   }

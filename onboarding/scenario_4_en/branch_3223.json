@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to inform Mark that you are on leave and he needs to respect that, highlighting that it is not your job to be available 24/7. Now, a few hours later, you find yourself discussing this situation with Monica and Bob.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'That’s a strong stance, Alex. Did he react badly?' [Bob]: 'I’d be worried about how that might affect team dynamics in the future. Did you consider that?'",
+    "background": "You decide to polish the slides first. [Bob] seems uneasy.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] says, 'It's just that market trends could really strengthen our case. Are you sure we can skip them?'",
     "options": [
       {
-        "text": "I think Mark understood where I was coming from. It’s about setting healthy boundaries.",
+        "text": "Let's focus on nailing the presentation first, then we can add the trends if time permits.",
         "scores": {
-          "Emotion Perception": 4,
+          "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrated good emotion perception and self-regulation by setting boundaries, but your empathy and motivation towards addressing the team's needs might need improvement."
-      },
-      {
-        "text": "I suppose it could impact team dynamics, but everyone needs to respect personal time off.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "Your response shows a balance between emotional perception and social skills, but self-regulation and motivation towards team needs are somewhat lacking."
-      },
-      {
-        "text": "Mark didn’t seem too happy, but I can’t always be on call. It’s unreasonable.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
           "Empathy": 2,
-          "Social Skill": 2,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You showed moderate emotion perception and self-regulation, but empathy and social skills were lower, possibly leading to tension in team dynamics."
+        "analysis": "You show good self-regulation and social skills by focusing on the immediate task, but empathy is lower as you dismiss Bob's concern."
+      },
+      {
+        "text": "You're right, the trends are important. I'll start gathering the data now.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 2
+        },
+        "analysis": "You demonstrate high emotional perception and social skills by agreeing with Bob, but may struggle with self-regulation and motivation."
+      },
+      {
+        "text": "Maybe we can split tasks. I'll polish the slides while you look up the trends.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show strong self-regulation and social skills by suggesting a compromise, but your emotional perception is lower as you delegate Bob's concern."
       }
     ]
   }

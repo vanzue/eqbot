@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You then said, 'I understand the urgency. I'll help this time, but please ensure there’s a backup plan for such situations in the future.' Mark, relieved, replies, 'Thanks, Alex. I really appreciate it.' Later, your colleagues Monica and Bob also get wind of the situation. Monica says, 'Alex, it's really nice of you to help out during your leave.' Bob adds, 'But isn't it a bit unfair that you're being pulled in during your time off?' You responded, 'I guess it's part of the job, but it would be nice to have better boundaries.' Bob and Monica exchange glances, clearly agreeing with your sentiment. Monica then says, 'Maybe we should bring this up in the next team meeting?' Bob nods, adding, 'Yeah, it could help everyone, not just you.' You replied, 'I'm not sure if that will make a difference, but I guess it's worth a try.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "Bob sighs and says, 'Well, we won't know until we try. What if we all go together and present our case?' Monica adds, 'Yeah, strength in numbers, right?'",
+    "background": "You decided to stay and help with the urgent task. [Monica] and [Bob] discuss the next steps.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'Great, you’re staying. But how do we divide the tasks? Should we split evenly or differently?' He scratches his head.",
     "options": [
       {
-        "text": "Alright, let's do it. We'll have a better chance if we all speak up.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show high empathy and emotional perception by agreeing to a collective approach, but self-regulation could be improved as you take on additional responsibility."
-      },
-      {
-        "text": "I'm still hesitant, but if you both think it's a good idea, I'll join in.",
+        "text": "Let's divide the tasks evenly to keep it fair.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show good social skills and self-regulation by suggesting a fair division, but emotional perception and empathy could be slightly more nuanced."
+      },
+      {
+        "text": "I think I should handle the more complex parts since I’m already here.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You maintain good self-regulation by being cautious, but show less empathy and motivation towards the team effort."
+        "analysis": "You demonstrate high emotional perception and empathy by taking on more responsibility, but it might affect your self-regulation and motivation."
       },
       {
-        "text": "Honestly, I'm skeptical. It might just backfire and make things worse.",
+        "text": "Maybe it's better if Bob handles the major tasks. I can assist with smaller ones.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You balance empathy and self-regulation, but your social skills could be improved as you come off as slightly pessimistic."
+        "analysis": "You show good self-regulation and a balanced approach, but there's room for better emotional perception and empathy."
       }
     ]
   }

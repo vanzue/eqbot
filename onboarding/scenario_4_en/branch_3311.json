@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. Monica expressed her disbelief at Mark’s request, and you explained how you handled it, noting that Mark was grateful but you hope he learned to respect your boundaries. Bob then questioned what you would do if the situation recurred, and you answered that you would cross that bridge when you come to it, hoping it doesn’t happen.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I hope it doesn't happen again, but sometimes people don't get the message.' [Bob]: 'Yeah, it might be tricky handling it if it occurs again.' [Monica]: 'Do you think you handled it well enough this time?'",
+    "background": "You assure Monica that you'll tackle the report after the presentation.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "[Bob] sighs and says, 'This is getting complicated. How do you propose we wrap this up quickly?'",
     "options": [
       {
-        "text": "I think I did the best I could under the circumstances.",
+        "text": "Let's divide the remaining tasks equally and push through together.",
+        "scores": {
+          "Emotion Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show good emotional perception and empathy by suggesting a fair division of labor, but motivation might be affected by the workload."
+      },
+      {
+        "text": "We should focus on one task at a time. Let's finish the presentation first.",
         "scores": {
           "Emotion Perception": 4,
+          "Self Regulation": 5,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You show strong self-regulation and emotional perception by prioritizing tasks, but empathy might be seen as lacking by not considering others' workloads."
+      },
+      {
+        "text": "Maybe we should re-evaluate our priorities and see if we can delegate some tasks.",
+        "scores": {
+          "Emotion Perception": 2,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You showed good emotional perception and social skills by recognizing the complexity of the situation, though your empathy and self-regulation could be slightly improved."
-      },
-      {
-        "text": "Maybe I should have been firmer, but it's hard to say.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained strong self-regulation and showed some self-reflection, but your empathy and motivation were lower as you second-guessed your actions."
-      },
-      {
-        "text": "Honestly, I feel like Mark should have known better. It's frustrating.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed high empathy and emotional perception by acknowledging your frustration, but your self-regulation was lower as you expressed irritation."
+        "analysis": "You show good social skills by suggesting delegation, but emotional perception and self-regulation could be better as it might delay progress."
       }
     ]
   }

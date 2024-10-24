@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob. [Monica] crossed her arms and sighed, while [Bob] leaned against the wall, looking thoughtful. You mentioned that you decided to help Mark this time but asked him to handle such tasks without you while you're on leave. [Monica] shook her head, [Bob] raised an eyebrow. You stated that if it happens again, you'll remind Mark that you're on leave and he should respect your time off. [Monica] rubbed her temples, while [Bob] nodded slowly.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'I hope Mark understands that. But what if he doesn't respect your boundary?' [Bob]: 'Yeah, he might still reach out. What's your plan if it happens again?'",
+    "background": "You decide to split the tasks. [Monica] seems slightly concerned.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] says, 'Splitting tasks sounds good, but I’m worried about the report quality. What do you think?'",
     "options": [
       {
-        "text": "I'll just have to handle it when it comes up again. Let's hope for the best.",
+        "text": "We can do a quality check together after we complete our parts.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You provided an abstract and unclear response, showing moderate emotional perception and self-regulation. However, your motivation and proactive planning could be improved."
+        "analysis": "You show empathy and emotional perception by suggesting a collaborative quality check, but your motivation might seem lower due to the added workload."
       },
       {
-        "text": "If it happens again, I'll reiterate that I'm on leave and he should respect my time off.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You leaned toward agreement with setting clear boundaries, showing high emotional perception and self-regulation. However, your empathy towards Mark's situation was lower."
-      },
-      {
-        "text": "Honestly, if it happens again, I'll have to seriously reconsider how I handle these requests. Maybe I need to be more assertive.",
+        "text": "I’ll take care of the report quality. Just focus on your part.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 5,
+          "Motivation": 3
+        },
+        "analysis": "You demonstrate good social skills and self-regulation by taking responsibility, but empathy is lower as you may come off as dismissive."
+      },
+      {
+        "text": "Maybe we should reconsider our approach to ensure high quality for both tasks.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You leaned toward disagreement with a passive-aggressive undertone, showing good social skills and empathy. However, your self-regulation was lower."
+        "analysis": "You show strong self-regulation and social skills by suggesting a reevaluation, but your emotional perception is lower as it delays action."
       }
     ]
   }

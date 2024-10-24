@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'. You explained your actions to Monica and Bob saying, 'I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.' Monica raised an eyebrow and said, 'But where do you draw the line, Alex?' Bob nodded in agreement, adding, 'Yeah, you can't always be the go-to person.' You responded with, 'I get it, but I think it's important to be a team player. If it becomes too much, I'll deal with it then.' Monica crossed her arms and said, 'Alex, you need to think about your own well-being too.' Bob frowned and added, 'We're not saying don't help, but there's got to be a limit.' You acknowledged their concerns and showed empathy, saying, 'I see your point. Maybe I should take a step back and reassess how I handle these situations.' Now, they seem to be considering your perspective but still have some doubts.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] leans forward and says, 'Alex, you can't keep putting yourself last.' [Bob] adds, 'We just don't want you to get burnt out.'",
+    "background": "[Monica] raises an eyebrow after discussing your availability during breaks.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "Bob leans forward. 'Do you think a rotation system will actually solve our problems?'",
     "options": [
       {
-        "text": "I understand. I’ll make sure to set clearer boundaries and prioritize my well-being.",
+        "text": "It's a start. We can refine it as we go based on feedback.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
+          "Empathy": 3,
+          "Social Skill": 5,
+          "Motivation": 2
         },
-        "analysis": "You acknowledged their concerns and showed empathy and self-regulation, but your motivation to stick to boundaries could be more assertive."
+        "analysis": "You show good social skills by proposing a flexible solution but may lack some motivation to directly engage with the situation."
       },
       {
-        "text": "I hear you, but sometimes it's not that simple. Each situation requires a different approach.",
+        "text": "I believe so. It ensures no one is overloaded and we always have coverage.",
         "scores": {
           "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed good emotional perception and social skills by explaining your actions, but your self-regulation might need improvement."
-      },
-      {
-        "text": "I get it, but being a team player sometimes means making sacrifices. I'll address it if it becomes a problem.",
-        "scores": {
-          "Emotion Perception": 3,
           "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+        "analysis": "You demonstrate responsibility and motivation but might compromise your self-regulation and empathy by overcommitting."
+      },
+      {
+        "text": "It could, but we still need a clear definition of what constitutes 'urgent'.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You show empathy by seeking clarity but may come off as less proactive and socially skilled."
       }
     ]
   }

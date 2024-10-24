@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?' You responded, 'I get what you're saying, but I felt it was necessary this time. I'll be more careful in the future.' [Monica] nods thoughtfully and says, 'I understand, but it's important to take care of yourself too.' [Bob] shrugs, 'Well, it's done now. Let's just hope it doesn't become a trend.' You replied, 'I agree, but sometimes you just have to do what feels right in the moment.' [Monica] looks at you, concerned, 'But Alex, if you keep doing this, they might start taking advantage of your kindness.' [Bob] adds, 'Yeah, and what about your own mental health?' You responded, 'I appreciate your concern, but I think it's manageable. If it becomes a pattern, I'll address it then.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] raises an eyebrow and says, 'Alex, it's your time off. What if this keeps happening?' [Bob] nods in agreement, 'Yeah, you deserve a break without being disturbed.'",
+    "background": "[Monica] sighs after your suggestion to have a better plan.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "Bob leans back in his chair. 'So, what exactly is your plan for next time? Do you have something concrete?'",
     "options": [
       {
-        "text": "Maybe you're right. I'll have to be firmer about my boundaries.",
+        "text": "We should draft a clear contingency plan and ensure everyone knows their roles.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 2,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "You acknowledged their concerns and showed high empathy and self-regulation, but lacked some social skills in handling the situation effectively."
+        "analysis": "You show good self-regulation and motivation by suggesting a concrete plan, but social skill and empathy could be improved by considering others' input."
       },
       {
-        "text": "I understand your concerns, but sometimes it's hard to say no when something urgent comes up.",
+        "text": "I think having a more flexible schedule and better communication channels would help.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You balanced acknowledging their concerns with your own stance, showing good emotional perception and social skills, but your motivation to set strong boundaries was lower."
+        "analysis": "You show good emotional perception and empathy by suggesting flexibility, but motivation to specify concrete steps is lower."
       },
       {
-        "text": "I get what you're saying, but I think it's a one-time thing. If it becomes a problem, I'll deal with it then.",
+        "text": "I’m open to suggestions. What do you think would work best?",
         "scores": {
           "Emotion Perception": 2,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You chose to downplay the issue, showing moderate self-regulation and motivation, but lower empathy and emotional perception towards their concerns."
+        "analysis": "You demonstrate empathy and social skills by inviting input from others, but your emotional perception and self-regulation could be better."
       }
     ]
   }

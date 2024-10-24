@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You decided to help Mark with the urgent task despite being on leave. You've now finished the task and informed Mark about it. Later, [Monica] and [Bob] hear about this and have some thoughts. [Monica] comments, 'I can't believe you agreed to work on your leave, Alex. Don't you think you need to set better boundaries?' while [Bob] adds, 'Yeah, you're always the one stepping in. What if they start expecting it all the time?'. You explained your actions to Monica and Bob saying, 'I know, but sometimes exceptions have to be made. I just hope they don't take it for granted.' Now, they seem unconvinced. [Monica] raises an eyebrow and says, 'But where do you draw the line, Alex?' [Bob] nods in agreement, adding, 'Yeah, you can't always be the go-to person.' You responded with, 'I hear you, but I don't think it's that black and white. Sometimes we have to be flexible.' Now, they still look doubtful. [Monica] crosses her arms and says, 'Flexibility is one thing, being taken advantage of is another.' [Bob] sighs, 'Well, you know how things are at the office. Are you sure this is the right approach?'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica] looks at you seriously, 'Do you think they would do the same for you?' [Bob] adds, 'It's worth thinking about how your actions are perceived.'",
+    "background": "[Monica] sighs and looks at you, discussing the need for reliable solutions.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "Bob shakes his head. 'We can't always rely on last-minute fixes. What’s your take on this?'",
     "options": [
       {
-        "text": "Maybe you're right. I'll need to think more about how I approach these situations.",
+        "text": "We need to have a clear emergency protocol. Let's get everyone’s input on this.",
         "scores": {
           "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
+          "Empathy": 5,
+          "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You acknowledged their concerns and showed empathy, but your motivation to stick to boundaries and social skills could be improved."
+        "analysis": "You show high empathy and social skills by involving everyone in the solution, but the motivation to take immediate action is lower."
       },
       {
-        "text": "I think it's about balance. Helping out doesn't always mean being taken advantage of.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed a balanced view of the situation, demonstrating good emotional perception and social skills, but your self-regulation and empathy could be improved."
-      },
-      {
-        "text": "I understand your concerns, but I trust my judgment in these matters. I'll deal with any problems if they arise.",
+        "text": "I understand the urgency. Maybe we can assign a rotating on-call schedule for such emergencies.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You suggest a practical solution, showing good self-regulation and motivation, but empathy and social skills could be improved."
+      },
+      {
+        "text": "I get it, but we also need to respect personal time. Better communication protocols might help.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 5,
           "Motivation": 3
         },
-        "analysis": "You justified your decision and maintained good self-regulation, but showed less empathy towards the concern of setting boundaries."
+        "analysis": "You emphasize the importance of personal time and suggest communication improvements, showing excellent social skills but lower empathy and emotional perception."
       }
     ]
   }

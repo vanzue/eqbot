@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You replied, 'I understand the urgency. I'll help this time, but please ensure there’s a backup plan for such situations in the future.' Mark persists, 'I understand you need your time off, but this really can't wait. It’s a critical issue and could affect the whole project if not resolved immediately.' You responded, 'Mark, I'm really on leave for a reason. Please find someone else to handle this.' Mark hesitates, 'I really appreciate you taking this on, but we need to ensure this doesn't happen again.' Monica and Bob join the conversation.",
-    "role": "Alex",
-    "location": "Home",
-    "description": "Mark, looking frustrated, says, 'Monica, Bob, do you think it's fair for Alex to refuse helping when it's so urgent?'",
+    "background": "You decided to handle the task yourself. [Bob] looks concerned, while [Monica] continues typing.",
+    "role": "[Bob]",
+    "location": "Home Office",
+    "description": "'Are you sure you want to take it all on? It looks overwhelming.' He sighs, leaning back in his chair.",
     "options": [
       {
-        "text": "I understand the urgency, but it's important for everyone to respect each other's time off. Let's discuss a better plan for future emergencies.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed high emotional perception and self-regulation by standing firm on your decision while suggesting a future plan, but displayed less empathy towards the immediate issue."
-      },
-      {
-        "text": "I guess I can help this time, but we really need to find a sustainable solution.",
+        "text": "I've got it under control, Bob. Don't worry.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You showed empathy and willingness to help, but your self-regulation could be improved as you compromised your time off."
+        "analysis": "You show confidence and self-regulation, but may lack empathy by not addressing Bob's concerns."
       },
       {
-        "text": "I'm on leave, and it's important to prioritize personal time. Someone else should handle this.",
+        "text": "Honestly, it is a lot, but I think I can manage.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You maintained strong self-regulation and set clear boundaries, but showed less empathy and emotional perception towards the urgency of the task."
+        "analysis": "You acknowledge the workload, showing high empathy and emotional perception, but it may affect your self-regulation and social skills."
+      },
+      {
+        "text": "It's challenging, but I prefer handling it myself to avoid delays.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 5,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show good self-regulation and social skills by preferring to handle the task, but emotional perception could be improved."
       }
     ]
   }

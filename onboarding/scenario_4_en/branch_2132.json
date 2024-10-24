@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark then replied, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You agreed to help, asking Mark to send you the details. Now, you're working through the task and manage to complete it, but you feel a bit frustrated as your time off was interrupted. You inform Mark that the task is completed. He responds with, 'Thanks, Alex. I knew I could count on you. By the way, Monica and Bob were discussing this issue earlier, and they think it might be good if you could join their call later to explain your approach.' You replied, 'I understand the importance, but I need to rest. Can we schedule a follow-up session once I'm back?' Mark replies, 'That sounds reasonable. I'll let them know. Take care!' A few days later, back at work, you find yourself in a meeting with Monica and Bob. During the meeting, Monica says, 'Alex, we really appreciated your help last week. How do you manage to stay so calm under pressure?' You responded, 'Honestly, it can be tough. But I try to focus on the task at hand and not let emotions get in the way.'",
-    "role": "Alex",
-    "location": "Office",
-    "description": "Bob nods and adds, 'That's impressive, Alex. By the way, we have another tight deadline coming up. Do you think you could take the lead on this one as well?'",
+    "background": "You decided to stay involved in the task. [Monica] and [Bob] are discussing the next steps.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "'I think we can handle this more efficiently if we divide the work. What do you think?' She looks at you thoughtfully.",
     "options": [
       {
-        "text": "Let's discuss the details and see what needs to be done.",
+        "text": "Sure, let's split the tasks and tackle them individually.",
         "scores": {
-          "Emotion Perception": 3,
+          "Emotion Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 2,
+          "Social Skill": 5,
           "Motivation": 3
         },
-        "analysis": "You showed balanced emotional intelligence by agreeing to discuss the task details, indicating good social skills and a willingness to help."
+        "analysis": "You show good emotional perception and social skills by agreeing to divide tasks, but empathy is lower as you focus on efficiency."
       },
       {
-        "text": "I think it might be better if someone else takes the lead this time.",
+        "text": "I agree. I'll handle my part, but we should communicate frequently to stay aligned.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained good self-regulation by setting boundaries, but showed less empathy and motivation towards the team's needs."
-      },
-      {
-        "text": "If it's really urgent, I can step in again, but we should find a long-term solution for these situations.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You demonstrated high emotional perception and empathy by offering to help, but your self-regulation could be improved as you continue to compromise your time off."
+        "analysis": "You show balanced emotional skills by agreeing to split tasks while emphasizing communication, but emotional perception could be better."
+      },
+      {
+        "text": "I think it might be better if we work together on each part to ensure accuracy.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 2,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You show high empathy and social skills by suggesting collaboration, but self-regulation and emotional perception are lower as you may overextend."
       }
     ]
   }

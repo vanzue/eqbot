@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. You decided to help your colleague Mark this time but asked him to handle such tasks without you while you are on leave. Now, a few hours later, you find yourself discussing this situation with Monica and Bob over a video call. [Monica]: 'I can't believe Mark asked you to work during your leave. That's so inconsiderate.' [Bob]: 'Yeah, but sometimes work emergencies happen. How did you handle it, Alex?' You: 'I told Mark I’d help this time but asked him to handle such tasks without me in the future.' [Monica]: 'Did Mark at least thank you?' [Bob]: 'And did he promise not to bother you again?' You: 'He did appreciate my help, but it seemed like he didn't fully get the message.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "[Monica]: 'So, what will you do if this happens again?' [Bob]: 'Yeah, what’s your plan for next time?'",
+    "background": "You suggested reviewing the presentation first. [Monica] seems a bit impatient.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "[Monica] says, 'We don't have much time. Can we just decide on the report now?'",
     "options": [
       {
-        "text": "I guess I'll have to remind him more firmly about my boundaries.",
+        "text": "Let's sort out the presentation first, then we can tackle the report.",
         "scores": {
           "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed balanced emotional perception and self-regulation, with good social skills by planning to reassert your boundaries."
-      },
-      {
-        "text": "I'll probably just ignore the message next time.",
-        "scores": {
-          "Emotion Perception": 2,
           "Self Regulation": 4,
           "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "You displayed strong self-regulation by considering to ignore the message, but lacked empathy and social skills."
-      },
-      {
-        "text": "I might help again, but I'll make it clear it's the last time.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You showed high empathy and emotional perception by considering to help again, but your self-regulation was lower."
+        "analysis": "You show good self-regulation by sticking to your plan, but empathy could improve by addressing Monica's urgency."
+      },
+      {
+        "text": "I understand the urgency. Let's quickly decide on the report and then move to the presentation.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You show strong emotional perception and empathy by acknowledging Monica's concern, but self-regulation and motivation might suffer due to changing focus."
+      },
+      {
+        "text": "We could split our attention. I'll start on the report while you both continue on the presentation.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You show high motivation by offering to multitask, but emotional perception and social skills could be improved by considering the overall team dynamics."
       }
     ]
   }

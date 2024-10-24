@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task. Your colleague, Mark, messages: 'Hey Alex, I really need your help with this urgent task. Can you help me out?' You responded, 'Mark, I'm currently on leave. Can you ask someone else, or can it wait until I return?' Mark replies, 'I understand you're off, but there's really no one else who can handle this as well as you. It's quite critical.' You then said, 'I understand the urgency. I'll help this time, but please ensure there’s a backup plan for such situations in the future.' Mark, relieved, replies, 'Thanks, Alex. I really appreciate it.' Later, your colleagues Monica and Bob also get wind of the situation. Monica says, 'Alex, it's really nice of you to help out during your leave.' Bob adds, 'But isn't it a bit unfair that you're being pulled in during your time off?' You replied, 'Well, it's a team effort and I don't mind pitching in occasionally.'",
-    "role": "Alex",
-    "location": "Home",
-    "description": "Bob looks at you, raising an eyebrow, 'But what if this happens all the time? It sets a precedent, doesn’t it?'",
+    "background": "You decided to manage for now and focus on the task. [Monica] looks slightly relieved.",
+    "role": "[Monica]",
+    "location": "Home Office",
+    "description": "'Great, let's get started then. Do you think we need to involve [Bob] more?' She raises an eyebrow.",
     "options": [
       {
-        "text": "I suppose that's a valid concern. Maybe we need to discuss this with management.",
+        "text": "Maybe, but let's see how far we can get first.",
         "scores": {
           "Emotion Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show good self-regulation and social skills by suggesting a constructive approach, but your motivation to resolve the immediate issue is lower."
-      },
-      {
-        "text": "Honestly, I'd rather not think about it right now. Let's just focus on getting through this task.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You prioritize the immediate task, showing high motivation, but your self-regulation is lower as you avoid addressing the concern directly."
-      },
-      {
-        "text": "If it becomes a problem, I'll address it then. For now, let's just get this done.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show good emotional perception by acknowledging the potential issue, but your self-regulation and empathy are balanced as you focus on the task at hand."
+        "analysis": "You show a balanced approach, focusing on the task at hand while considering future needs. Could improve on emotional perception."
+      },
+      {
+        "text": "Yes, let's bring [Bob] in right away to lighten the load.",
+        "scores": {
+          "Emotion Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You show high empathy and social skills by involving others, but it may affect your self-regulation and motivation."
+      },
+      {
+        "text": "No, I think we can handle it ourselves for now.",
+        "scores": {
+          "Emotion Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You show good self-regulation by taking charge, but empathy and emotional perception could be improved."
       }
     ]
   }
