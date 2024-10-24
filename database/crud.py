@@ -345,3 +345,23 @@ def get_subordinate_analysis_by_contact_id(db: Session, contact_id: str):
 
 def get_supervisor_analysis_by_contact_id(db: Session, contact_id: str):
     return db.query(models.SupervisorAnalysis).filter(models.SupervisorAnalysis.contact_id == contact_id).first()
+
+# Chat History
+def create_chat_history(db: Session, chat: schemas.ChatHistoryCreate):
+    db_chat = models.ChatHistory(userId=chat.userId, chatHistory=chat.chatHistory, analysis=chat.analysis)
+    db.add(db_chat)
+    db.commit()
+    db.refresh(db_chat)
+    return db_chat
+
+# CRUD 操作：获取用户的聊天记录
+def get_chat_history_by_user(db: Session, user_id: int):
+    return db.query(models.ChatHistory).filter(models.ChatHistory.userId == user_id).all()
+
+def delete_chat_history(db: Session, chat_id: int):
+    chat_history = db.query(models.ChatHistory).filter(models.ChatHistory.id == chat_id).first()
+    if chat_history:
+        db.delete(chat_history)
+        db.commit()
+        return chat_history
+    return None

@@ -21,6 +21,7 @@ class PersonalInfo(Base):
     contacts = relationship("Contact", back_populates="person")
     chat_records = relationship("ChatRecords", back_populates="person")
     courses = relationship("PersonalInfoCourses", back_populates="person")
+    chat_histories = relationship("ChatHistory", back_populates="person")
 
 # EQScore Table
 class EQScore(Base):
@@ -141,3 +142,15 @@ class SupervisorAnalysis(Base):
 
     # 关系定义：关联领导信息
     contact = relationship("Contact", back_populates="supervisor_analysis")
+
+
+class ChatHistory(Base):
+    __tablename__ = 'ChatHistory'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    userId = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
+    chatHistory = Column(UnicodeText, nullable=False)  # 存储聊天记录
+    analysis = Column(UnicodeText, nullable=False)  # 存储分析信息
+
+    # 定义与 User 表的关系
+    person = relationship("PersonalInfo", back_populates="chat_histories")
