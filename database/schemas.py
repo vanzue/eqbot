@@ -205,6 +205,7 @@ class CreateUserRequest(BaseModel):
 
 class ChatHistoryBase(BaseModel):
     chatHistory: str
+    summary: str
     analysis: str
 
 class ChatHistoryCreate(ChatHistoryBase):

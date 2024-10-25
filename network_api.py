@@ -8,7 +8,7 @@ import data_types
 from database import crud, database, schemas
 from datetime import datetime
 from llm.network_analyze import retry_parse_LLMresponse
-from llm.image2chat import image2text
+from llm.image2chat import image2text, parse_chatHistory, get_image2text
 
 
 router = APIRouter()
@@ -153,38 +153,57 @@ async def upload_image(file: UploadFile = File(...)):
     temp_filepath = os.path.join("temp_images", temp_filename)
     os.makedirs("temp_images", exist_ok=True)
 
-    try:
-        # download locally
-        with open(temp_filepath, "wb") as f:
+    with open(temp_filepath, "wb") as f:
             f.write(await file.read())
 
-        chat_history = image2text(image_path=temp_filepath)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Image processing failed: {e}")
-    finally:
-        # delete after process
-        if os.path.exists(temp_filepath):
-            os.remove(temp_filepath)
+    # json_data = image2text(image_path=temp_filepath)
+    # res = parse_chatHistory(json_data)
+    res = get_image2text(image_path=temp_filepath)
+    chat_history = res['chat_history']
+    chat_summary = res['summary']
     
-    return {"chat_history": chat_history}
+    return {"chat_history": chat_history, 'summary': chat_summary}
 
 
 @router.post("/analyze/history")
 async def analyze_history_from_image(user_id: int = Form(...), file: UploadFile = File(...), db: Session = Depends(database.get_db)):
     chat_history_response = await upload_image(file)
     chat_history = chat_history_response["chat_history"]
+    summary1 = chat_history_response["summary"]
 
     # request LLM analyze chat history
     analysis = retry_parse_LLMresponse(chat_history=chat_history)
     # print(analysis)
 
     # create it into db
+    print(summary1)
     chat_data = schemas.ChatHistoryCreate(userId=user_id,
-                                         chatHistory=chat_history,
-                                         analysis=json.dumps(analysis))
+                                         chatHistory=json.dumps(chat_history, ensure_ascii=False),
+                                         summary = str(summary1),
+                                         analysis=json.dumps(analysis, ensure_ascii=False))
+    print(chat_data)
     db_chat = crud.create_chat_history(db, chat_data)
     
-    return {"id": db_chat.id, "chatHistory": chat_history, "analysis": analysis}
+    return {"id": db_chat.id, "chatHistory": chat_history, "summary": summary1, "analysis": analysis}
+
+
+# @router.post("/analyze/history/bot")
+# async def analyze_history_from_image(user_id: int, chat_history: str, db: Session = Depends(database.get_db)):
+#     # chat_history_response = await upload_image(file)
+#     # chat_history = chat_history_response["chat_history"]
+
+#     # request LLM analyze chat history
+#     analysis = retry_parse_LLMresponse(chat_history=chat_history)
+#     # print(analysis)
+
+#     # create it into db
+#     chat_data = schemas.ChatHistoryCreate(userId=user_id,
+#                                          chatHistory=json.dumps(chat_history, ensure_ascii=False),
+#                                          summary = summary,
+#                                          analysis=json.dumps(analysis))
+#     db_chat = crud.create_chat_history(db, chat_data)
+    
+#     return {"id": db_chat.id, "chatHistory": chat_history, "analysis": analysis}
 
 
 @router.delete("/delete_chats/{chat_id}", response_model=schemas.ChatHistory)

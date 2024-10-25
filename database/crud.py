@@ -348,7 +348,7 @@ def get_supervisor_analysis_by_contact_id(db: Session, contact_id: str):
 
 # Chat History
 def create_chat_history(db: Session, chat: schemas.ChatHistoryCreate):
-    db_chat = models.ChatHistory(userId=chat.userId, chatHistory=chat.chatHistory, analysis=chat.analysis)
+    db_chat = models.ChatHistory(userId=chat.userId, chatHistory=chat.chatHistory, summary=chat.summary, analysis=chat.analysis)
     db.add(db_chat)
     db.commit()
     db.refresh(db_chat)

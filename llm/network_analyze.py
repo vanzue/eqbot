@@ -21,6 +21,7 @@ def request_LLM_response(chat_history):
                     [First actionable suggestion based on the current context] 
                     [Second actionable suggestion based on the analysis of the other person's perspective of you] 
                     [Third actionable suggestion for self-improvement] 
+                    [Fourth actionable suggestion for a recommended response the user can give]
 
                     ** Standard Output Format (Do not include the word "json", and do not omit anything.) **
                     {{
@@ -36,16 +37,16 @@ def request_LLM_response(chat_history):
                         ],
                         "suggestions": [
                             {{
-                            "point": [First actionable suggestion based on the current context]
+                            "point": [First actionable suggestion based on the current context. If possible, please include the name mentioned in chat history]
                             }},
                             {{
-                            "point": [Second actionable suggestion based on the analysis of the other person's perspective of you]
+                            "point": [Second actionable suggestion based on the analysis of the other person's perspective of you. If possible, please include the name mentioned in chat history]
                             }},
                             {{
-                            "point": [Third actionable suggestion for self-improvement]
+                            "point": [Third actionable suggestion for self-improvement. If possible, please include the name mentioned in chat history]
                             }},
                             {{
-                            "point": [[Fourth actionable suggestion for a recommended response the user can give]]
+                            "point": [Fourth actionable suggestion for a recommended response the user can give. If possible, please include the name mentioned in chat history]
                             }}
                         ]                        
                     }}
@@ -57,20 +58,20 @@ def request_LLM_response(chat_history):
                     {{      
                         "title": [
                             {{
-                                "title: "Responsiveness and Proactive Communication" ]
+                                "title: "Clarity and Timely Communication" ]
                             }}
                         ], 
                         "summary": [
                             {{
-                                "summary: "You should listen more abot others' opinions."
+                                "summary: "This issue is that while tasks are agreed upon, there's littlw proactive communication on progress or delays causing missed calls and potential misunderstandings."
                             }}
                         ],
                         "suggestions": [
                             {{
-                            "point": "This is the first actionable suggestion."
+                            "point": "Provide status updates regularly, even if incomplete, to manage expections."
                             }},
                             {{
-                            "point": "This is the second actionable suggestion."
+                            "point": "Address missed calls promptly to avoid the other party feeling ignored or anxious."
                             }},
                             {{
                             "point": "This is the third actionable suggestion."
