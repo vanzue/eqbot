@@ -117,10 +117,10 @@ initial_context = ("""
         问题和回答都是对话的形式。打分可以区分度稍微大一点。
         background尽量不要出现重复性的语句，但是逻辑上需要连贯。
                    
-        职场场合：会议室
+        职场场合：电梯间
         性别：男性
         职位等级：新人
-        前置背景：你想要和同事处理好关系，给他们留下一个初始的好印象
+        前置背景：你在电梯间偶遇老板，想要老板记住你
 
         # Add these variables at the top of the file, after the imports
         SCENARIO_TYPES = ["职场刁难", "帮助别人融入", "应对突发状况"]

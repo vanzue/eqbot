@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-abilities = ["Emotion Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
+abilities = ["Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """

@@ -27,7 +27,7 @@ def image2text(image_path):
     system_prompt = """
         **Task Description**
         - You're an image recognition expert. You will receive a screenshot of my chat with someone else. You need to extract our conversation.
-        - You're also an expert of summary. Please summurize the given chat history by less than 10 words.
+        - You're also an expert of summary. Please summurize the given chat history by less than 10 words and give out the most uegent dimension that need to be improved among Perception, Self Regulation, Empathy, Social Skill and Motivation.
 
         **Main Details**
         - Message has to inlcude:
@@ -43,8 +43,8 @@ def image2text(image_path):
                 {{"user": "me", "message": [message content]}}, 
                 {{"user": [peer name], "message": [message content]}}
             ],
-            "summary": [summary of the chat above]
-            ]
+            "summary": [summary of the chat above],
+            "low_dim" : [the most uegent dimension that need to be improved]
         }}    
 
         ** Extra Instructions **
@@ -80,10 +80,12 @@ def parse_chatHistory(json_data):
 
         chat_history = response['chat']
         summary = response['summary']
+        low_dim = response['low_dim']
 
         analysis = {
             "chat_history": chat_history,
-            "summary": summary
+            "summary": summary,
+            "low_dim": low_dim
         }
         # print(analysis)
         return analysis

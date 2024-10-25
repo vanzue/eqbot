@@ -207,6 +207,7 @@ class ChatHistoryBase(BaseModel):
     chatHistory: str
     summary: str
     analysis: str
+    low_dim: str
 
 class ChatHistoryCreate(ChatHistoryBase):
     userId: int

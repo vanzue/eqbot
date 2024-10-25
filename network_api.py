@@ -161,30 +161,33 @@ async def upload_image(file: UploadFile = File(...)):
     res = get_image2text(image_path=temp_filepath)
     chat_history = res['chat_history']
     chat_summary = res['summary']
+    low_dim = res['low_dim']
     
-    return {"chat_history": chat_history, 'summary': chat_summary}
+    return {"chat_history": chat_history, 'summary': chat_summary, 'low_dim': low_dim}
 
 
 @router.post("/analyze/history")
 async def analyze_history_from_image(user_id: int = Form(...), file: UploadFile = File(...), db: Session = Depends(database.get_db)):
     chat_history_response = await upload_image(file)
     chat_history = chat_history_response["chat_history"]
-    summary1 = chat_history_response["summary"]
+    summary = chat_history_response["summary"]
+    low_dim = chat_history_response["low_dim"]
 
     # request LLM analyze chat history
     analysis = retry_parse_LLMresponse(chat_history=chat_history)
     # print(analysis)
 
     # create it into db
-    print(summary1)
+    # print(summary1)
     chat_data = schemas.ChatHistoryCreate(userId=user_id,
                                          chatHistory=json.dumps(chat_history, ensure_ascii=False),
-                                         summary = str(summary1),
-                                         analysis=json.dumps(analysis, ensure_ascii=False))
-    print(chat_data)
+                                         summary = summary,
+                                         analysis=json.dumps(analysis, ensure_ascii=False),
+                                         low_dim=low_dim)
+    # print(chat_data)
     db_chat = crud.create_chat_history(db, chat_data)
     
-    return {"id": db_chat.id, "chatHistory": chat_history, "summary": summary1, "analysis": analysis}
+    return {"id": db_chat.id, "chatHistory": chat_history, "summary": summary, "analysis": analysis}
 
 
 # @router.post("/analyze/history/bot")

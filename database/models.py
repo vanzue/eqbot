@@ -151,6 +151,7 @@ class ChatHistory(Base):
     userId = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
     chatHistory = Column(UnicodeText, nullable=False)  # 存储聊天记录
     summary = Column(UnicodeText, nullable=False) # 存储聊天记录总结
+    low_dim = Column(UnicodeText, nullable=False)
     analysis = Column(UnicodeText, nullable=False)  # 存储分析信息
 
     # 定义与 User 表的关系
