@@ -44,7 +44,7 @@ class ScenarioManager:
             "沟通表达力": 0,
             "社交得体度": 0
         } if locale!="en" else{
-            "Emotion Perception": 0,
+            "Perception": 0,
             "Self Regulation": 0,
             "Empathy": 0,
             "Social Skill": 0,
