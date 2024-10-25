@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then proposes to go with Ryan's suggestion of an outdoor team-building activity. Monica and Bob seem to be contemplating this new suggestion.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica raises an eyebrow, 'An outdoor activity, huh? Well, I guess it's better than nothing. What do you think, Bob?' Bob shrugs, 'I suppose it could be fun, but I was really looking forward to a more relaxed evening.'",
+    "background": "Monica and Bob are still discussing celebration plans.",
+    "role": "Monica",
+    "location": "Meeting Room",
+    "description": "Monica sighs and says, 'Formal dinners are so stiff and boring.'",
     "options": [
       {
-        "text": "Let's keep our options open and see how everyone feels about it after the activity.",
+        "text": "Formal dinners can be elegant and memorable. Let's give it a try.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You showed confidence in the idea, displaying good self-regulation and motivation, but perception and empathy were moderate."
+      },
+      {
+        "text": "Maybe we can incorporate some fun elements to make the dinner more lively.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "This response is vague and non-committal, showing a balanced but somewhat indecisive emotional approach."
+        "analysis": "You acknowledged the concern and proposed a compromise, showing good perception and empathy, but social skill and self-regulation were moderate."
       },
       {
-        "text": "An outdoor activity is a great way to bond and celebrate our success. I'm sure everyone will enjoy it.",
+        "text": "Formal dinners might not be everyone's cup of tea; let's consider more options.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This option leans towards agreement, showing good self-regulation and social skills, but slightly lower empathy as it prioritizes the chosen activity."
-      },
-      {
-        "text": "I understand your concerns, Bob. Maybe we should reconsider and pick something more relaxing.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "This response shows high emotional detection and empathy, but lower social skills as it leans towards disagreement with the proposed plan."
+        "analysis": "You showed good social skill by considering other options, but perception, empathy, and self-regulation were moderate."
       }
     ]
   }

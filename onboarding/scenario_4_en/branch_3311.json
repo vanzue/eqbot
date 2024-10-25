@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You assure Monica that you'll tackle the report after the presentation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] sighs and says, 'This is getting complicated. How do you propose we wrap this up quickly?'",
+    "background": "[Monica] rubs her temples in frustration while [Bob] stares at the screen intensely.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'We need a bit more clarity. Can you walk us through just one more example?'",
     "options": [
       {
-        "text": "Let's divide the remaining tasks equally and push through together.",
+        "text": "Alright, I'll walk you through one more example, but let's make it quick.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You demonstrated strong empathy and perception by agreeing to help, though your self-regulation and motivation to maintain your leave were slightly lower."
+      },
+      {
+        "text": "I think you can handle this yourselves if you review the previous guidelines carefully.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good emotional perception and empathy by suggesting a fair division of labor, but motivation might be affected by the workload."
+        "analysis": "You encouraged self-reliance and showed good self-regulation, but your empathy and motivation to help were lower."
       },
       {
-        "text": "We should focus on one task at a time. Let's finish the presentation first.",
+        "text": "I'll give you a quick example, but I must get back to my leave soon.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 5,
-          "Empathy": 2,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show strong self-regulation and emotional perception by prioritizing tasks, but empathy might be seen as lacking by not considering others' workloads."
-      },
-      {
-        "text": "Maybe we should re-evaluate our priorities and see if we can delegate some tasks.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good social skills by suggesting delegation, but emotional perception and self-regulation could be better as it might delay progress."
+        "analysis": "You balanced your willingness to help with your need for time off, showing good perception and empathy, though your self-regulation was slightly lower."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. [Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvenes in the meeting room. [Monica] starts to speak up but is interrupted by [Alex] who says, 'We don't have time for this. We need to decide now.' [Lily] looks visibly upset. You tried to steer the conversation back to the main goal. Now, [Bob] and [Monica] exchange skeptical looks, while [Alex] seems impatient.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] leans back in his chair and says, 'Honestly, this whole process seems overcomplicated.' [Monica] nods in agreement while [Alex] taps his foot impatiently. [Lily] remains silent, looking down at her notes.",
+    "background": "Monica nods but looks at Bob, who seems uneasy.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'I just don't want us to miss an important detail. We should be cautious.'",
     "options": [
       {
-        "text": "Let's simplify our approach. Monica, Bob, do you have specific suggestions on how we can streamline this?",
+        "text": "Bob, your attention to detail is crucial. Let's focus on key points quickly.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You acknowledged the team's frustration and invited specific suggestions, showing good emotional perception and empathy."
+        "analysis": "You recognize Bob's concern and value his meticulousness while encouraging a more efficient approach."
       },
       {
-        "text": "I understand your concerns, Bob. Alex, maybe we can adjust the timeline a bit to accommodate more thorough discussions?",
+        "text": "I agree with Monica. We need to start immediately, even if some details are overlooked.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Bob's concerns and suggested a compromise on the timeline, showing good self-regulation and social skills."
-      },
-      {
-        "text": "We need to stay on track and focus on our primary objectives. Let's not get bogged down in the details.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You tried to steer the conversation back to the main goal, demonstrating good social skills and motivation."
+        "analysis": "You side with Monica, showing decisiveness and motivation but risking lower empathy for Bob's concern."
+      },
+      {
+        "text": "Well, it's your call, Bob. We'll follow your lead on this.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You defer to Bob, demonstrating empathy and self-regulation, but potentially slowing progress."
       }
     ]
   }

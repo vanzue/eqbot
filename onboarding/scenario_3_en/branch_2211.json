@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. They turn to you for the final say. You chose a fancy restaurant. Now, Monica is thrilled but Bob looks disappointed. Monica and Bob continue discussing other aspects of the dinner, such as the menu and seating arrangements. Monica suggests a gourmet menu with a seating plan, while Bob prefers a more laid-back, buffet-style dinner. You suggested a mix of both options, which Monica and Bob somewhat accepted. Now, the discussion has shifted to the entertainment for the evening. Monica wants a live band to create an elegant atmosphere, while Bob thinks a simple playlist will suffice. Both look at you for the final decision. You decided to have a live band for the first part of the evening and then switch to a playlist for a more relaxed vibe. Now, the topic has shifted to the dress code. Monica wants everyone to dress formally, while Bob thinks a casual dress code is more appropriate.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica is adjusting her jacket, looking quite enthusiastic, while Bob is leaning back in his chair, looking a bit uneasy.",
+    "background": "[Monica] and [Bob] are discussing the formal dinner idea. [Monica] looks concerned.",
+    "role": "[Monica]",
+    "location": "Break Room",
+    "description": "'Do you think everyone would be comfortable with a formal dinner?'",
     "options": [
       {
-        "text": "How about we have a smart-casual dress code? This way, everyone can feel comfortable but still look nice.",
+        "text": "A formal dinner can be a great way to celebrate our success.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I think a formal dress code would add a special touch to our celebration. It will make the evening feel more distinguished.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
+        "analysis": "You acknowledged the formality of the dinner, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Let's vote on whether to have a formal or casual dress code to ensure everyone feels included and we choose the best option for the team.",
+        "text": "We should consider if everyone is comfortable with a formal setting.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You showed empathy and self-regulation by considering everyone's comfort, but social skill and perception were moderate."
+      },
+      {
+        "text": "Maybe we can find a less formal venue that still feels special.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You suggested a compromise, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] raises an eyebrow after discussing your availability during breaks.",
-    "role": "[Bob]",
+    "background": "[Monica] leans back in her chair, looking relieved. [Bob] nods, somewhat appeased.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob leans forward. 'Do you think a rotation system will actually solve our problems?'",
+    "description": "'Alright, let's brainstorm some solutions and delegate tasks accordingly.'",
     "options": [
       {
-        "text": "It's a start. We can refine it as we go based on feedback.",
+        "text": "Great idea, Monica. Let’s list out the tasks and see who can take what.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You show good social skills by proposing a flexible solution but may lack some motivation to directly engage with the situation."
-      },
-      {
-        "text": "I believe so. It ensures no one is overloaded and we always have coverage.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You demonstrate responsibility and motivation but might compromise your self-regulation and empathy by overcommitting."
+        "analysis": "You supported Monica's suggestion and took a proactive approach to organizing tasks, demonstrating strong perception, social skills, and motivation."
       },
       {
-        "text": "It could, but we still need a clear definition of what constitutes 'urgent'.",
+        "text": "Monica, do you think we need more resources to handle these tasks?",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 2,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show empathy by seeking clarity but may come off as less proactive and socially skilled."
+        "analysis": "You considered the possibility of needing additional resources, showing high empathy but moderate engagement and motivation."
+      },
+      {
+        "text": "Bob, are you okay with this plan? We need everyone on board.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You ensured Bob's agreement to the plan, showing good self-regulation but lower empathy and motivation to resolve the issue immediately."
       }
     ]
   }

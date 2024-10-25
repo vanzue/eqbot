@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. Now, [Bob] raised his voice saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nodded in agreement. You suggested listing all ideas and voting on the best approach. [Monica] crossed her arms and added, 'I just think we're overcomplicating things,' while [Bob] shrugged and said, 'Whatever, let's just get this over with.' You acknowledged Bob's frustration and emphasized the need to finalize the approach quickly. [Bob] then leaned back in his chair, looking skeptical, while [Monica] tapped her pen impatiently.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] leans back in his chair, looking skeptical, while [Monica] taps her pen impatiently.",
+    "background": "Monica looks frustrated but listens intently.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'I get it, but let's not rush into mistakes.'",
     "options": [
       {
-        "text": "I know this is tough, but let's keep our eye on the goal. What's our next actionable step?",
+        "text": "Maybe we can break the project into phases to balance speed and detail.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You encouraged the team to stay focused on the goal and suggested taking the next actionable step, showing good self-regulation and motivation."
-      },
-      {
-        "text": "Monica, Bob, I appreciate your patience. Let's wrap this up by summarizing our key points and get everyone’s final thoughts.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You acknowledged their patience and suggested wrapping up the discussion by summarizing key points, showing good emotional perception and empathy."
+        "analysis": "You offer a solution that values both speed and thoroughness, showing strong perception and empathy."
       },
       {
-        "text": "I think we're almost there. Let’s finalize our decision so we can move forward.",
+        "text": "Bob, sometimes quick decisions can be beneficial. Let's trust the team.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You support a quicker approach, displaying good self-regulation and social skills in handling the disagreement."
+      },
+      {
+        "text": "It's critical to take our time with planning to avoid potential risks.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You expressed confidence that the team is close to a decision and urged them to finalize it, showing good self-regulation and motivation."
+        "analysis": "You emphasize the importance of thorough planning, reflecting strong motivation and social skills."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] adjusts her glasses. You suggested putting measures in place.",
-    "role": "[Bob]",
+    "background": "[Monica] looks relieved but [Bob] still seems agitated, tapping his foot.",
+    "role": "[Monica]",
     "location": "Conference Room",
-    "description": "Bob leans forward, looking skeptical. 'Measures are fine, but what if things go south again?'",
+    "description": "'Thanks for your input. So, should we schedule another meeting to go over the details?'",
     "options": [
       {
-        "text": "We should prepare for that. Let’s identify potential pitfalls and create solutions.",
+        "text": "I think that's a good idea. Let's make sure we have all the necessary information first.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 2,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You offer a realistic approach to managing future situations, showing moderate emotional perception and self-regulation but lower social skills."
+        "analysis": "You supported the idea of another meeting with a focus on preparation, showing good perception and self-regulation, but the emotional impact on others was not deeply addressed."
       },
       {
-        "text": "I’m committed to improving our response strategy. Let’s work together to ensure it doesn’t happen.",
+        "text": "Monica, maybe you can outline what needs to be addressed before we meet again.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show willingness to take responsibility and collaborate, demonstrating good emotional perception and empathy, but slightly lower self-regulation."
+        "analysis": "You directed the task of outlining details to Monica, showing empathy and social skills, but your perception of the broader problem could be stronger."
       },
       {
-        "text": "We should all take part in this. Clearer roles and expectations would help prevent future issues.",
+        "text": "Bob, do you think a meeting will resolve this, or should we take a different approach?",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
+          "Social Skill": 4,
+          "Motivation": 2
         },
-        "analysis": "You shift some responsibility to the team, showing high self-regulation but lower empathy and emotional perception."
+        "analysis": "You asked for Bob's opinion, showing good social skill, but your empathy and motivation to immediately resolve the issue were lower."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] looks slightly frustrated, [Bob] folds his arms.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'I still think we should get the report done too. What do you think, Monica?'",
+    "background": "[Monica] sighs and rubs her temples while [Bob] looks at you during the video call.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'We really need your expertise on this. What should we do next?'",
     "options": [
       {
-        "text": "Let's finish the presentation first and then see how much time we have left for the report.",
+        "text": "I can provide some more detailed guidance, but let's keep it short.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show good self-regulation and social skills by suggesting a logical order, but empathy towards Monica's concern is lower."
+        "analysis": "You balanced your willingness to assist with the need to maintain your leave, showing good perception and empathy, though your self-regulation and motivation were slightly lower."
       },
       {
-        "text": "We could split our focus, but it might be less effective. What's your take on it, Monica?",
+        "text": "I think you both can handle this. Just follow the guidelines carefully.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good emotional perception and empathy by involving Monica, but self-regulation might be lower due to potential divided focus."
+        "analysis": "You encouraged independent problem-solving, demonstrating strong self-regulation, but your empathy and motivation to assist were lower."
       },
       {
-        "text": "If we can all agree on our priorities, we can move forward efficiently. Let's focus on what's immediate.",
+        "text": "Let me help you for a few more minutes, but I really need to get back to my leave.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show strong self-regulation by emphasizing prioritization, but emotional perception is lower as it might oversimplify the situation."
+        "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
       }
     ]
   }

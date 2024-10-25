@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. Monica and Bob exchange glances, clearly uneasy with the ongoing tension. The team meeting progresses, but the tension lingers in the air.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Monica and Bob shift uncomfortably in their seats, occasionally glancing at Alex and Lily. Everyone's waiting for a resolution.'",
+    "background": "Bob leans back, sighing deeply, looking frustrated.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "'Alex, your rush doesn't account for potential pitfalls. Can't we be more thorough?'",
     "options": [
       {
-        "text": "I see that both approaches have their merits. How about we create a timeline that allows for quick actions initially, followed by thorough reviews?",
+        "text": "Alex, Bob has a point. Maybe we should balance speed with caution.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a balanced approach that respects both quick actions and thorough reviews, showing good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, can we try to incorporate Lily's thorough method into our planning phase to ensure we cover all bases?",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You suggested integrating both approaches during the planning phase, showing strong self-regulation and social skills."
+        "analysis": "You acknowledge Bob’s concern while still addressing Alex's urgency, showing good self-regulation and social skill."
       },
       {
-        "text": "It seems we need a more strategic approach. How about we brainstorm a plan that balances both quick actions and in-depth discussions?",
+        "text": "Bob, I get your point, but Alex's approach could save us time. Let's compromise.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You encouraged a strategic brainstorming session, demonstrating good social skills and motivation to resolve the conflict."
+        "analysis": "You propose a middle ground, showing empathy towards both viewpoints and motivation to keep the project moving."
+      },
+      {
+        "text": "Bob, sometimes quick decisions are necessary. We can't always afford to be thorough.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You emphasize the need for quick decisions, showing good perception of the situation but lower empathy towards Bob’s concerns."
       }
     ]
   }

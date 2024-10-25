@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You agreed to start on the report first. [Bob] glances at his watch.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'Time's running short. Maybe we should reconsider the task division.'",
+    "background": "[Monica] and [Bob] are now preparing to implement the solutions you suggested during the video call.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'Thanks for your help. But what if we encounter more issues? Will you be available?'",
     "options": [
       {
-        "text": "Let's stick to the plan and adjust if necessary.",
+        "text": "I'll be available for a short while, but then I really need to disconnect.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You are showing empathy and willingness to help, but still maintaining some personal boundaries and self-regulation."
+      },
+      {
+        "text": "I hope you can manage from here. Please try to solve it independently.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show good self-regulation by sticking to the plan but may lack empathy by not considering the urgency."
+        "analysis": "You are setting clear boundaries for your time off, showing strong self-regulation, but your empathy and motivation could be perceived as lower."
       },
       {
-        "text": "You're right, Bob. Let's reassign tasks to better manage our time.",
+        "text": "I might not be available later. You'll need to rely on your own skills.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 3,
+          "Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 2,
           "Motivation": 2
         },
-        "analysis": "You show high empathy and emotional perception by agreeing to reassess the tasks but may affect self-regulation."
-      },
-      {
-        "text": "How about we tackle the most critical parts of each task first?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You balance social skills and motivation well by suggesting a focused approach, though self-regulation might be lower."
+        "analysis": "You are emphasizing the need for personal time, showing strong self-regulation but lower perception, empathy, and motivation to help."
       }
     ]
   }

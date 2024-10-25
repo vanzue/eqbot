@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily started a detailed analysis but was interrupted by Alex, leading you to ask Lily to quickly outline her main points. After Lily's brief summary, Alex muttered under his breath, 'This is still taking too long,' while Lily looked visibly upset. You proposed setting a timer to keep discussions efficient and allotted Lily two more minutes. As the timer ran out, Alex tapped his watch impatiently while Lily looked flustered. You addressed Alex's impatience firmly and urged Lily to conclude quickly. Now, as Lily tries to finish up, Alex looks even more annoyed, and Lily appears on the verge of tears.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex crosses his arms and looks away, while Lily's voice wavers as she tries to make her final point.'",
+    "background": "You lean forward, noticing Monica's worried expression.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'If we keep switching strategies, how can we ensure consistency?'",
     "options": [
       {
-        "text": "Alex, your body language is not helping the situation. Let's all take a deep breath and listen to Lily's final thoughts.",
+        "text": "Consistency is important, but we also need to adapt when necessary.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You balance the need for consistency with the necessity for adaptation, demonstrating good perception, empathy, and social skills."
+      },
+      {
+        "text": "Maybe we should stick to one strategy and see it through before making changes.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You emphasize sticking to a single strategy for consistency, showing good self-regulation and motivation but less empathy and perception."
+      },
+      {
+        "text": "Switching strategies might be confusing, but it can also be a sign of growth.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You addressed Alex's negative body language while encouraging the team to remain calm and listen, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, if you can't stay patient, maybe you should step out for a moment. Lily, please wrap this up quickly.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a firm solution for Alex's impatience while urging Lily to finish, showing strong self-regulation and social skills."
-      },
-      {
-        "text": "Clearly, this isn't working. Let's reschedule the meeting and come back with a clearer mindset. Lily, can you finalize your points by then?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed rescheduling the meeting to reduce tension and allow Lily more time, demonstrating good social skills and motivation to maintain productivity."
+        "analysis": "You highlight the potential benefits of changing strategies, showing empathy and motivation but slightly less self-regulation and perception."
       }
     ]
   }

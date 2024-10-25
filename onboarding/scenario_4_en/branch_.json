@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You are on annual leave, enjoying some time off. A colleague messages you about an urgent task.",
-    "role": "[Alex]",
+    "background": "You are on annual leave, enjoying some well-deserved time off. A colleague messages you privately about an urgent task.",
+    "role": "Colleague",
     "location": "Home",
-    "description": "'Hey, sorry to bother you, but we have an urgent task that needs your immediate attention.'",
+    "description": "‘Hey, I’m really sorry to bother you during your leave, but we have an urgent task that needs immediate attention. Can you help?’",
     "options": [
       {
-        "text": "I understand the urgency, but I'll need to finish my leave. Can someone else handle it?",
+        "text": "I'm currently on leave, but let me see if I can quickly assist you.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "You show good self-regulation by prioritizing your leave, but empathy could be improved by considering the urgency."
+        "analysis": "You acknowledged your leave but showed willingness to help, demonstrating good empathy and perception, though your self-regulation could be stronger."
       },
       {
-        "text": "I'll help with the task, but I'll need some support to get it done quickly.",
+        "text": "I'm really sorry, but I need to respect my time off. Can you find someone else?",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show high empathy and emotional perception by agreeing to help but may overextend yourself, affecting self-regulation."
+        "analysis": "You prioritized your time off, showing strong self-regulation, but your empathy and motivation to help were lower."
       },
       {
-        "text": "I can spare a few hours to help out. Let's coordinate the details.",
+        "text": "I can help for a short while, but I can't commit fully. Let's try to solve it quickly.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 5,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception could be better."
+        "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
       }
     ]
   }

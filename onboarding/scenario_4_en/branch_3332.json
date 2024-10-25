@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You acknowledged Monica's urgency. [Bob] listens quietly.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'If we're deciding quickly, should I take a lead on the report?'",
+    "background": "[Monica] sighs deeply, rubbing her temples as she looks at her screen, while [Bob] checks his phone.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'We really need someone to handle the client side. Can you take that on?'",
     "options": [
       {
-        "text": "That sounds good, Bob. I'll assist you if needed.",
+        "text": "I can manage the client side, but I'll need help with other tasks.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed strong perception and empathy by offering to help with the client side, but your self-regulation and motivation to maintain your leave were slightly lower."
+      },
+      {
+        "text": "I'll provide some guidance, but you both need to handle the bulk of it.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 3,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good self-regulation and social skills by supporting Bob's initiative, but motivation and emotional perception could be higher."
+        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your empathy and motivation were lower."
       },
       {
-        "text": "Sure, Bob. Just let me know what you need from me.",
+        "text": "I can't take on the client side right now. Please manage it according to the plan.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You demonstrate high empathy and emotional perception by offering support, but your social skills could be better by being more proactive."
-      },
-      {
-        "text": "Actually, I think it's better if we all focus on our strengths. I can handle the report.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
+          "Perception": 2,
+          "Self Regulation": 4,
           "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 4
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You show strong motivation and social skills by taking responsibility, but empathy and emotional perception could be improved."
+        "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
       }
     ]
   }

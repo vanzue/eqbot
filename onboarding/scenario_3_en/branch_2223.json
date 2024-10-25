@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. You chose a fancy restaurant. Now, Monica is thrilled but Bob looks disappointed. Monica and Bob continue discussing other aspects of the dinner, such as the menu and seating arrangements. Monica suggests a gourmet menu with a seating plan, while Bob prefers a more laid-back, buffet-style dinner. You chose a gourmet menu with a seating plan. Monica is enthusiastic about the decision, while Bob seems even more frustrated. Monica and Bob now argue over the dress code; Monica wants formal attire, while Bob insists on casual clothing. You suggested voting on the dress code. Monica and Bob now come back with the results; the majority voted for business casual. Monica looks satisfied, but Bob still seems a bit uneasy. Now, they are arguing over the entertainment for the evening. Monica wants a live band, while Bob thinks a DJ would be more fun. Both look to you for the final decision.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica is tapping her foot impatiently, while Bob is staring at the floor, looking frustrated.",
+    "background": "[Monica] looks thoughtful after [Bob]'s suggestion.",
+    "role": "[Monica]",
+    "location": "Break Room",
+    "description": "'A less formal venue could work, but it might not feel as special.'",
     "options": [
       {
-        "text": "How about we have both a live band and a DJ at different times during the evening?",
+        "text": "Special moments are about the people, not the place.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I think a live band would add a touch of class to the evening and make it more memorable.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
+        "analysis": "You emphasized the importance of people over the venue, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Let's vote on the entertainment to ensure everyone is comfortable and enjoys the evening.",
+        "text": "Let's aim for a balance between special and comfortable.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You suggested finding a balance, showing empathy and self-regulation, but social skill and perception were moderate."
+      },
+      {
+        "text": "A less formal venue can still be memorable if planned well.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You proposed focusing on planning, showing empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

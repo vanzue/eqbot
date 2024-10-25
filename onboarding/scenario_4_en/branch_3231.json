@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You're managing both tasks. [Bob] reviews the report with you.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'Can you also ensure the formatting is consistent while you work on the report?'",
+    "background": "[Monica] and [Bob] review your feedback. [Monica] looks relieved, but [Bob] still seems concerned.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'Thanks for the feedback. Can you stay on call in case we need more help?'",
     "options": [
       {
-        "text": "Sure, I can handle the formatting as well. Just keep me posted on any changes.",
+        "text": "I can stay on call for a bit longer. Let's get this sorted out.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrate good social skills and self-regulation, but your motivation might take a hit due to the added workload."
-      },
-      {
-        "text": "Maybe you can take care of the formatting while I focus on the content.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
+          "Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show strong self-regulation but might appear less empathetic and less perceptive of the overall task needs."
+        "analysis": "You showed a willingness to continue helping, demonstrating strong empathy and social skills, but your self-regulation was lower."
       },
       {
-        "text": "Let's split the tasks more evenly. I'll handle the report if you take care of the formatting.",
+        "text": "I'm sorry, but I need to log off now. I trust you can handle it from here.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
+          "Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good emotional perception and empathy, but your motivation and self-regulation might suffer due to the unexpected task distribution."
+        "analysis": "You maintained your boundaries, showing strong self-regulation, but your empathy and motivation to help were lower."
+      },
+      {
+        "text": "I can stay on call for a few more minutes, but I'll need to log off soon.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
       }
     ]
   }

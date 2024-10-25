@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. You then proposed a picnic as a simple and inclusive option. [Monica] and [Bob] are now discussing how to proceed with the picnic plan.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'A picnic sounds nice, but what if it rains? We need a backup plan.' [Bob] adds, 'And what kind of food should everyone bring? We need to make sure we have a variety.' Everyone is waiting for your input.",
+    "background": "[Monica] sighs and glances at [Bob] with a hint of frustration.",
+    "role": "[Monica]",
+    "location": "Meeting Room",
+    "description": "'Simplifying things might be easier, but we could be missing out on a more inclusive experience.'",
     "options": [
       {
-        "text": "Let's make a checklist and assign different types of food to each person. As for the rain, we can have the picnic in an indoor space if needed.",
+        "text": "True, inclusivity is important. Let's brainstorm a hybrid plan.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences and planning for contingencies. It also demonstrates good organizational skills and motivation."
+        "analysis": "You acknowledged the importance of inclusivity and suggested a collaborative approach, showing good perception, empathy, and social skills."
       },
       {
-        "text": "We could just order some catering for the food and focus on having fun. If it rains, we'll figure it out then.",
+        "text": "I understand, but we need to be practical. A simpler plan might work best.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "This choice shows good self-regulation and flexibility, but slightly lower empathy as it might not address everyone's concerns thoroughly."
+        "analysis": "You focused on practicality and simplicity, showing good self-regulation and motivation, but empathy and social skills were moderate."
       },
       {
-        "text": "Honestly, we should just stick to a restaurant. It's easier and we won't have to worry about the weather or coordinating food.",
+        "text": "Inclusivity is great, but isn't simplicity more efficient?",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a practical approach but shows lower motivation and empathy as it dismisses the picnic idea and doesn't address the team's desire for a casual celebration."
+        "analysis": "You questioned the balance between inclusivity and efficiency, showing good empathy and motivation, but social skills and perception were lower."
       }
     ]
   }

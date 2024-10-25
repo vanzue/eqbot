@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested taking a step back and hearing each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Now, there is a tension-filled silence in the room as both Alex and Lily look at you expectantly. You suggested allocating specific times for both approaches. Alex and Lily exchanged looks, and Alex nodded, though reluctantly. Lily appeared thoughtful, yet uncertain.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily look at you, waiting for your next move, while the tension in the room is palpable. Alex breaks the silence, saying, 'I just think we need to be more decisive.' Lily adds, 'And I believe thorough analysis is crucial to avoid mistakes.'",
+    "background": "Monica leans back and sighs, looking at both of you.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'Maybe we should just stick to one approach to avoid confusion.'",
     "options": [
       {
-        "text": "I understand both of your points. Let's start by listing immediate actions and potential risks. Then we'll prioritize them together.",
+        "text": "We could try integrating both approaches to see what works best.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You aimed to mediate the conflict by asking both parties to focus on critical points, showing good emotional perception and empathy."
+        "analysis": "You show high empathy by considering both viewpoints and suggesting a balanced solution, promoting teamwork and respect."
       },
       {
-        "text": "Alex, your decisiveness is important, but we also need Lily's detailed analysis to ensure we're not overlooking anything crucial. How about we split the tasks accordingly?",
+        "text": "I see your point, Monica. Perhaps sticking to one method might streamline our process.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged both perspectives and suggested a more structured division of tasks, demonstrating strong self-regulation and social skills."
+        "analysis": "You acknowledge Monica's concern and suggest a focused approach, showing good self-regulation and social skill."
       },
       {
-        "text": "This conflict highlights our need for a balanced strategy. Let's brainstorm a hybrid approach that combines quick decision-making with thorough analysis.",
+        "text": "Switching to a single method may save time, but we risk losing valuable input.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You proposed a collaborative solution, demonstrating good social skills and motivation to resolve the conflict."
+        "analysis": "You highlight the potential drawbacks of a single approach, showing motivation to find a comprehensive solution that includes diverse perspectives."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest a themed dinner with fun activities or entertainment. Monica smiles, but Bob still seems skeptical.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica and Bob are still discussing the details of the dinner. Monica says, 'I think a vintage theme would be delightful.' Bob, rolling his eyes, adds, 'As long as it's not boring.'",
+    "background": "[Monica] nods thoughtfully at [Bob].",
+    "role": "[Monica]",
+    "location": "Conference Room",
+    "description": "'A bar might not be the best idea for everyone. Maybe we should think of alternatives.'",
     "options": [
       {
-        "text": "Let's focus on making it a memorable night for everyone. How about a mix of vintage elegance with some modern entertainment?",
+        "text": "How about we make a list of suggestions and vote on it?",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option balances Monica's and Bob's preferences, showing good emotional detection and empathy. It demonstrates an effort to create a memorable event for everyone."
-      },
-      {
-        "text": "I think a vintage theme with a few speeches and a nice meal should be enough. We don't need to complicate things.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy, as it prioritizes a straightforward approach over making the event more engaging."
+        "analysis": "You proposed a democratic approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
       },
       {
-        "text": "Maybe we should skip the theme and just focus on a simple, elegant dinner. Too many ideas might make it hectic.",
+        "text": "We could consider a quieter venue for those who might not enjoy a bar.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making an effort to enhance the celebration and does not consider the team's desire for a memorable event."
+        "analysis": "You suggested an alternative considering others' preferences, showing good self-regulation and motivation, but empathy and social skills were moderate."
+      },
+      {
+        "text": "A bar isn't suitable for everyone. We need to come up with a different plan.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skills and perception were lower."
       }
     ]
   }

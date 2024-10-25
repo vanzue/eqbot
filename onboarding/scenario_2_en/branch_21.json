@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions.'",
+    "background": "Monica fidgets with her pen, looking uneasy.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "'Maybe we should consider a different approach to avoid these conflicts in the future?'",
     "options": [
       {
-        "text": "I understand both of you are passionate about your methods. Let's try to find a middle ground where we can act quickly but also ensure thorough consideration.",
+        "text": "Let's brainstorm some strategies to improve our collaboration.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You acknowledged both perspectives and aimed for a balanced approach, demonstrating good emotional perception and empathy."
+        "analysis": "You address the issue by suggesting a collaborative solution, showing empathy and social skills."
       },
       {
-        "text": "Alex, your quick decisions are valuable, but we should not overlook Lily's thorough approach. Let's aim for a strategy that includes both quick actions and detailed discussions.",
+        "text": "I agree, Monica. We need to find a way to align our work styles for better efficiency.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged both perspectives and aimed for a balanced approach, showing strong self-regulation and social skills."
+        "analysis": "You acknowledge the need for alignment, showing good self-regulation and social skills."
       },
       {
-        "text": "This conflict indicates a need for a new strategy. How about we brainstorm together to combine quick decisions with detailed discussions?",
+        "text": "Conflicts are inevitable. We just need to deal with them as they come.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You proposed a collaborative solution, demonstrating good social skills and motivation to resolve the conflict."
+        "analysis": "You downplay the need for change, showing good perception but lower empathy towards Monica's concerns."
       }
     ]
   }

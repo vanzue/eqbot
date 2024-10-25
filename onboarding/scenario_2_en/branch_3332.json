@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, [Monica] and [Bob] further escalated the situation with their body language and comments. You encouraged the team to stay focused and motivated, but tension still lingers. [Monica] glared at [Bob] and said, 'This is why nothing ever gets done.' [Bob] retorted, 'Well, maybe if we didn't overthink everything...' You suggested agreeing to disagree and moving forward, but the tension remains. You then asked everyone to list out what they think is the main issue.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] looks frustrated and says, 'The main issue is that we never stick to a plan.' [Bob] shakes his head and adds, 'And we waste too much time discussing every little detail.'",
+    "background": "Monica nods slightly, considering your point.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'Alright, let's make sure we don't overlook any details then.'",
     "options": [
       {
-        "text": "I see we have different priorities. Let's try to find a middle ground where we can balance planning and action.",
+        "text": "Absolutely, Bob. Let's double-check everything before moving forward.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You recognized the differing priorities and suggested a balanced approach, demonstrating strong emotional perception, self-regulation, and empathy."
-      },
-      {
-        "text": "Monica, Bob, it sounds like we need clearer guidelines. Perhaps we should define specific steps and timelines to follow.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You proposed setting clear guidelines and timelines, showing good self-regulation and motivation to create structure."
-      },
-      {
-        "text": "If we continue to argue, we won't achieve anything. Let's decide on one approach for this project and see how it goes.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You aimed to end the disagreement quickly by suggesting a trial approach, showing good social skills and moderate scores in other areas."
+        "analysis": "You support Bob's cautious approach, showing good social skills and self-regulation, but lacking strong empathy and perception."
+      },
+      {
+        "text": "We should be thorough, but let's set a deadline for this review.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You balance thoroughness with efficiency by suggesting a deadline, showing good perception and empathy, but your motivation to move forward is slightly reduced."
+      },
+      {
+        "text": "I agree, but we can't afford to get bogged down in details forever.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledge the need for thoroughness but emphasize the importance of efficiency, demonstrating social skill and motivation to keep things moving."
       }
     ]
   }

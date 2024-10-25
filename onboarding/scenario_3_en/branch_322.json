@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest keeping it simple and elegant. Bob reluctantly nods, but his enthusiasm seems to wane. Monica smiles and says, 'That sounds perfect.' Bob mutters under his breath, 'Sure, if you like boring.'",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica looks at Bob and says, 'Maybe we can add a little something to make it less boring. What do you think, Alex?' Bob raises an eyebrow, waiting for your response.",
+    "background": "[Monica] sighs and looks at you.",
+    "role": "[You]",
+    "location": "Conference Room",
+    "description": "'It seems like we're all having different opinions on this.'",
     "options": [
       {
-        "text": "We could have a small awards ceremony to recognize everyone's hard work.",
+        "text": "Why don't we take a vote and go with the majority?",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows good emotional detection and motivation by suggesting a way to make the dinner more engaging. It demonstrates empathy but lacks some self-regulation."
-      },
-      {
-        "text": "Let's just stick to the dinner plan. We don't need anything extra.",
-        "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation but lacks empathy and social skills, as it dismisses the idea of adding anything extra to the dinner."
+        "analysis": "You suggested a democratic approach, showing good self-regulation and social skills, but perception and empathy were moderate."
       },
       {
-        "text": "We could compromise with a short team-building game before dinner to keep it interesting.",
+        "text": "Maybe we should consider mixing elements from each suggestion.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "This option shows empathy and moderate emotional detection by suggesting a compromise that considers both Monica's and Bob's perspectives."
+        "analysis": "You tried to find a compromise, showing good perception and empathy, but self-regulation and social skills were moderate."
+      },
+      {
+        "text": "I think we need to find an alternative that works for everyone.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You aimed for inclusivity, showing good empathy and motivation, but social skills and perception were lower."
       }
     ]
   }

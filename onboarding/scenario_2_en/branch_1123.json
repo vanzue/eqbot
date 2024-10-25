@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested taking a step back and hearing each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You acknowledged Alex's need for speed while ensuring Lily's voice is heard. Lily wrapped up her points, but Alex seemed unconvinced. You asked Lily to finish quickly so you could move on. Alex muttered under his breath, 'Finally,' while Lily looked slightly annoyed.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex mutters, 'Finally,' while Lily looks slightly annoyed and says, 'I just want us to make the best decision.'",
+    "background": "Monica rubs her temples, looking stressed.",
+    "role": "You",
+    "location": "Conference Room",
+    "description": "You say, 'Maybe we should just take a break and come back with fresh perspectives.'",
     "options": [
       {
-        "text": "Everyone, let's focus on our common goal. Alex, can you suggest how we can quickly move forward with Lily’s insights?",
+        "text": "Let's see if taking a break helps us think more clearly and come to an agreement.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 4,
+          "Self Regulation": 5,
           "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You demonstrate high self-regulation and empathy, suggesting a break to reduce stress and improve decision-making."
+      },
+      {
+        "text": "I think we're wasting too much time. We need to decide now.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You tried to unify the team by focusing on common goals and encouraging collaboration, showing strong emotional perception and empathy."
+        "analysis": "You emphasize the need for immediate action, showing motivation but lacking empathy for others' stress."
       },
       {
-        "text": "Alex, I know you're eager to proceed, but dismissing Lily's input won't help. Let's find a middle ground and move forward.",
+        "text": "Why don't we list the pros and cons quickly and then decide?",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 5,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged Alex's urgency while emphasizing the importance of valuing team members’ contributions, showcasing good self-regulation and social skills."
-      },
-      {
-        "text": "Lily, let's wrap this up. Alex, please be patient a bit longer; we're almost done.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You aimed for efficiency by asking Lily to wrap up quickly while asking Alex for patience, showing good social skills and motivation to keep the meeting on track."
+        "analysis": "You suggest a practical approach to balance both viewpoints, showing strong perception and social skills."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex decides to stick to Emma's suggestion of a formal dinner to keep things simple. Monica and Bob appear to be processing this decision, with Monica tapping her foot and Bob scratching his head. Monica frowns and says, 'A formal dinner? Really, Alex? I thought we were aiming for something more exciting.' Bob adds, 'Yeah, I'm not sure everyone will be thrilled with just a dinner.' Both Monica and Bob look at you expectantly. Alex suggests making the formal dinner more enjoyable by adding fun activities or a surprise element. Monica and Bob still seem uncertain, exchanging skeptical glances.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica raises an eyebrow and asks, 'What kind of fun activities or surprises are you thinking of, Alex?' Bob looks curious but still somewhat doubtful.",
+    "background": "Monica, Bob, and you keep discussing ideas.",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "Bob folds his arms and says, 'We really should consider everyone's preferences.'",
     "options": [
       {
-        "text": "We could have a themed dinner with costumes, games, and maybe even some awards to make it more engaging.",
+        "text": "True, it's important to take everyone's opinions into account.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "This option shows creativity and a high level of emotional detection by trying to make the formal dinner more engaging. It demonstrates good social skills and motivation to keep everyone entertained."
+        "analysis": "You acknowledged the importance of considering everyone's opinions, showing good empathy, but perception and self-regulation were moderate."
       },
       {
-        "text": "Honestly, I'm not sure. I just thought it might be a way to make dinner less boring.",
+        "text": "I get that, but we need to finalize something soon.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You showed urgency in finalizing plans, displaying good perception and motivation. However, empathy was lower."
+      },
+      {
+        "text": "I think we should decide on the most popular option and move forward.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows moderate emotional detection and self-regulation but may come across as indecisive and lacking in empathy as it doesn't provide a clear plan."
-      },
-      {
-        "text": "You know what, if you both think it's a bad idea, let's just cancel the dinner and think of something else.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option shows a high level of self-regulation by staying calm but demonstrates lower empathy and motivation as it suggests abandoning the plan without offering a constructive alternative."
+        "analysis": "You suggested moving forward with the majority choice, showing good social skills but moderate empathy and perception."
       }
     ]
   }

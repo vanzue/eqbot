@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives and proposed a collaborative solution. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. Monica and Bob exchange uneasy glances as the tension builds.'",
+    "background": "Monica crosses her arms, looking between you and Bob.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "'I agree with Alex. Sometimes we have to take risks to move forward. Why can't you see that?'",
     "options": [
       {
-        "text": "I see both methods have their merits. Monica and Bob, what are your thoughts on how we can blend these approaches?",
+        "text": "Every approach has its merits. What if we assess the risks quickly and then decide?",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You involved other team members in the discussion, showing good emotional perception and empathy, while promoting a collaborative environment."
-      },
-      {
-        "text": "Alex, we understand your urgency, but Lily's points are also valid. Can't we find a solution that respects both views?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You reinforced the importance of both perspectives and aimed for a balanced approach, demonstrating strong self-regulation and social skills."
+        "analysis": "You acknowledge both viewpoints, showing good perception and social skill while trying to keep the project moving."
       },
       {
-        "text": "This ongoing conflict suggests we need a different strategy. How about we brainstorm together to combine quick decisions with detailed discussions?",
+        "text": "Monica, Bob's cautious approach might save us from potential problems. It's worth considering.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You show empathy for Bob's cautious approach while maintaining a balanced view of the situation."
+      },
+      {
+        "text": "We can't always play it safe. Sometimes, quick action is necessary, even if there's a risk.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You proposed a collaborative solution, showing good social skills and motivation to resolve the conflict."
+        "analysis": "You emphasize the need for quick decisions, showing higher motivation but lower empathy towards Bob’s concerns."
       }
     ]
   }

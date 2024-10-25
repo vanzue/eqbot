@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decided to handle the task yourself. [Bob] looks concerned, while [Monica] continues typing.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'Are you sure you want to take it all on? It looks overwhelming.' He sighs, leaning back in his chair.",
+    "background": "(Monica) raises an eyebrow. (Bob) uncrosses his arms and looks at you.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "'So, what's the plan? Are you going to help us or stick to your break?'",
     "options": [
       {
-        "text": "I've got it under control, Bob. Don't worry.",
+        "text": "I understand the urgency, but I need to recharge. Let's find a temporary fix.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show confidence and self-regulation, but may lack empathy by not addressing Bob's concerns."
-      },
-      {
-        "text": "Honestly, it is a lot, but I think I can manage.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You acknowledge the workload, showing high empathy and emotional perception, but it may affect your self-regulation and social skills."
+        "analysis": "You acknowledged the urgency and proposed a short-term solution, showing balanced perception and empathy, though your motivation and self-regulation could be higher."
       },
       {
-        "text": "It's challenging, but I prefer handling it myself to avoid delays.",
+        "text": "I can't extend my help right now. We need to better delegate tasks in the future.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You show good self-regulation and social skills by preferring to handle the task, but emotional perception could be improved."
+        "analysis": "You stood firm on your boundaries and suggested future improvements, demonstrating strong self-regulation but lower empathy and motivation to help immediately."
+      },
+      {
+        "text": "It's frustrating to always be the fallback. We definitely need a better system.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
       }
     ]
   }

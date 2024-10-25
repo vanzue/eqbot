@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. [Bob] raised his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nodded in agreement. You emphasized the importance of being thorough to avoid mistakes. Then [Monica] frowned and said, 'But we can't afford to waste time either.' You acknowledged Monica's concern and proposed prioritizing tasks. Now, during the meeting, [Bob] leans forward and says, 'Okay, let's prioritize, but we also need to ensure we're not compromising on quality.'",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] leans forward and says, 'Okay, let's prioritize, but we also need to ensure we're not compromising on quality.'",
+    "background": "Monica looks at Bob, then back at you.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'Isn't this taking too long? We have deadlines.'",
     "options": [
       {
-        "text": "That's a good point, Bob. Let's create a checklist to ensure quality while we tackle the critical tasks.",
+        "text": "We need to cover all details to ensure the project's success.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You emphasize the importance of detailed planning, showing good self-regulation and social skills."
+      },
+      {
+        "text": "I understand the deadlines, but a thorough plan helps avoid future issues.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the urgency but stress the need for a detailed plan, showing empathy and perception."
+      },
+      {
+        "text": "Maybe we can find a middle ground where we move quickly but also carefully.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged Bob's point and proposed a practical solution to ensure quality, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Balancing speed and quality is crucial. Let's assign specific roles to each member to ensure both aspects are covered.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You highlighted the importance of balance and proposed role assignments to ensure both speed and quality, showing strong motivation and self-regulation."
-      },
-      {
-        "text": "I understand the concern, but focusing too much on quality might delay us. Let's push forward with caution but not overanalyze.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized the need to avoid delays by pushing forward with caution, demonstrating good self-regulation and motivation."
+        "analysis": "You suggest a compromise, balancing the need for speed with careful planning, showing empathy and social skills."
       }
     ]
   }

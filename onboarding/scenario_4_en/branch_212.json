@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decided to help with the urgent task as you are on annual leave. [Monica] and [Bob] join the conversation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'Alright, let's get this sorted then. But honestly, the timing couldn't be worse.' He frowns, checking his watch.",
+    "background": "(Bob) throws his hands up in frustration. (Monica) looks at you expectantly.",
+    "role": "Bob",
+    "location": "Office",
+    "description": "‘How are we supposed to prioritize when everything is urgent?’",
     "options": [
       {
-        "text": "I know, Bob. Let's tackle this quickly so we can all get back to our plans.",
+        "text": "We can list all tasks and rank them based on immediate impact.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy and emotional perception, but the motivation to address the urgency could be higher."
-      },
-      {
-        "text": "Well, life happens. Let's just get it done.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You maintain emotional control and motivation, but empathy and social skill could be enhanced."
-      },
-      {
-        "text": "I agree, Bob. Timing is off, but we'll manage.",
-        "scores": {
-          "Emotion Perception": 2,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You show good emotional regulation and empathy, but emotional perception could be better."
+        "analysis": "You proposed a methodical approach, showing high perception and empathy, but your self-regulation could be stronger."
+      },
+      {
+        "text": "I understand everything feels urgent, but let’s focus on the biggest issues first.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the urgency but emphasized prioritizing the biggest issues, showing strong self-regulation but less empathy."
+      },
+      {
+        "text": "Maybe if you managed your time better, everything wouldn’t seem so urgent.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "Your response was passive-aggressive, showing low empathy and self-regulation, potentially straining team dynamics."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try. Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.' Alex acknowledges their concerns and suggests prioritizing what will make the majority happy. Monica looks puzzled and says, 'How do we even decide what the majority wants? And what if we still can't agree?' Bob shrugs, looking increasingly frustrated. Alex proposes creating a quick survey to gather everyone's preferences and then decide based on that.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica leans back in her chair and says, 'A survey sounds like a good idea, but what if people don't respond? Bob looks at his watch and mutters, 'We don't have all day for this.'",
+    "background": "You, Monica, and Bob are discussing the celebration planning.",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "Bob sighs and says, 'But a formal dinner seems too stiff.'",
     "options": [
       {
-        "text": "We can set a short deadline for the survey responses to keep things moving.",
+        "text": "Formal dinners can be elegant and memorable.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the need for timely decisions. It demonstrates good social skills and motivation to keep the process efficient."
-      },
-      {
-        "text": "If the survey doesn't work, we should just make an executive decision.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes a quick resolution over thorough consensus."
+        "analysis": "You acknowledged the suggestion, showing good self-regulation, but empathy, perception, and social skills were only moderate."
       },
       {
-        "text": "Honestly, if it's this hard to decide, maybe we should just celebrate in the office with some snacks and drinks.",
+        "text": "Let's try to balance between fun and formality.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's difficulty in making a decision, but shows lower motivation as it avoids a more elaborate celebration."
+        "analysis": "You showed empathy and perception by considering a balance, but motivation and self-regulation were moderate."
+      },
+      {
+        "text": "A formal dinner might not be the best for everyone, let's think of other options.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You showed good social skill and motivation by considering other options, but empathy, perception, and self-regulation were moderate."
       }
     ]
   }

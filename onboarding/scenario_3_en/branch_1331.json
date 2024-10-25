@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then proposes to go with Ryan's suggestion of an outdoor team-building activity. Monica and Bob seem to be contemplating this new suggestion. Monica raises an eyebrow, 'An outdoor activity, huh? Well, I guess it's better than nothing. What do you think, Bob?' Bob shrugs, 'I suppose it could be fun, but I was really looking forward to a more relaxed evening.' Alex proposes to keep options open and see how everyone feels about it after the activity.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica frowns slightly, 'So, Alex, are we really going to leave everything up in the air? It doesn't sound very organized.' Bob nods, 'Yeah, we need a bit more certainty here.'",
+    "background": "Monica, Bob, and you continue discussing the celebration plans.",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "Bob frowns slightly and says, 'But not everyone enjoys formal dinners. It can be uncomfortable for some.'",
     "options": [
       {
-        "text": "Let's solidify the plan and stick to the outdoor activity. We can always plan a relaxed dinner another day.",
+        "text": "Formal dinners can be enjoyable if we add some fun activities.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option demonstrates good self-regulation and motivation but shows lower empathy as it commits to one activity without addressing all concerns."
-      },
-      {
-        "text": "I see your point. Maybe we should decide on the dinner now and keep the outdoor activity as an optional add-on.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This response shows high emotional detection and empathy by considering both sides, but lower motivation as it appears less decisive."
-      },
-      {
-        "text": "How about we just go with the bar idea? It might simplify things and still be fun.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "This choice shows good social skills but lower motivation and empathy as it shifts the plan again without fully resolving the initial concerns."
+        "analysis": "You acknowledged the concern and proposed a compromise, showing good perception and social skills, but empathy and self-regulation were moderate."
+      },
+      {
+        "text": "Maybe we can have a mix of formal and informal elements to suit everyone.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and self-regulation by considering everyone's preferences, but perception and social skill were moderate."
+      },
+      {
+        "text": "Formal dinners might not work for everyone, so let's think of other options too.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the concern, showing good empathy, but perception, self-regulation, and social skill were moderate."
       }
     ]
   }

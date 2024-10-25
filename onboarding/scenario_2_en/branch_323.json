@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. [Bob] raised his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nodded in agreement. You emphasized the importance of being thorough to avoid mistakes. Now, [Monica] frowns and says, 'But we can't afford to waste time either.'",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] frowns and says, 'But we can't afford to waste time either.'",
+    "background": "Monica shakes her head, looking at her watch.",
+    "role": "You",
+    "location": "Conference Room",
+    "description": "You say, 'Let's not rush into things without considering all aspects.'",
     "options": [
       {
-        "text": "I see your point, Monica. Let's identify the most critical tasks and tackle them first.",
+        "text": "We need to ensure every detail is covered, even if it takes more time.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You emphasize the importance of detailed planning, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "I see the urgency, but a thorough plan will help us avoid future problems.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge the urgency but stress the need for a detailed plan, showing empathy and perception."
+      },
+      {
+        "text": "Maybe we can find a middle ground where we move quickly but also carefully.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged Monica's concern and proposed prioritizing tasks, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "We need to balance speed and thoroughness. Let's make quick decisions on simpler tasks and take our time on complex ones.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the need for balance and proposed a method to address both quick and thorough approaches, showing strong motivation and self-regulation."
-      },
-      {
-        "text": "I understand the urgency, but rushing might lead to errors. Let's make sure we do it right the first time.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized the importance of avoiding errors by taking a thorough approach, showing good self-regulation and motivation."
+        "analysis": "You suggest a compromise, balancing the need for speed with careful planning, showing empathy and social skills."
       }
     ]
   }

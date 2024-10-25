@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest keeping it simple and elegant. Bob reluctantly nods, but his enthusiasm seems to wane. Monica smiles and says, 'That sounds perfect.' Bob mutters under his breath, 'Sure, if you like boring.' You propose a short team-building game before dinner to keep it interesting. Bob's mood lifts slightly but he still looks unconvinced. Monica claps her hands and says, 'That's a great idea!'",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Bob smirks and says, 'Alright, but it better be a fun game. Any suggestions?' Monica looks at you expectantly.",
+    "background": "[Bob] crosses his arms and looks frustrated.",
+    "role": "[Monica]",
+    "location": "Conference Room",
+    "description": "'I just don't see us agreeing on anything at this rate.'",
     "options": [
       {
-        "text": "How about a quick trivia game related to our project?",
+        "text": "Maybe we need to take a step back and reassess our options.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by suggesting an engaging activity related to the team's accomplishments. It demonstrates good social skills and motivation."
-      },
-      {
-        "text": "Let's just have a simple icebreaker game to start the dinner.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it opts for a straightforward approach."
+        "analysis": "You suggested a calm and rational approach, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Why not skip the game and go straight to dinner? We're all tired.",
+        "text": "I think we should stick to our original suggestions and vote.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a lack of motivation and lower social skills by dismissing the idea of adding anything extra to the dinner."
+        "analysis": "You advocated for a democratic resolution, showing good self-regulation and motivation, but empathy and social skill were moderate."
+      },
+      {
+        "text": "If we can't agree, maybe we should just cancel the celebration.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed frustration with the lack of consensus, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

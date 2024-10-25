@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Alex then suggests a middle ground: a team-building activity followed by dinner, saving the bar for another time. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex suggests picking a place that has a bit of both—a bistro that’s casual but still has great food. Monica and Bob still seem unsure. You then suggest going with the majority's preference to avoid any conflicts. Monica rolls her eyes and says, 'So, we’re back to square one? Great.' Bob mutters, 'This is getting exhausting.' Alex then decides to go with a formal dinner. Monica and Bob still seem to be in a tense mood, with Monica tapping her foot impatiently and Bob looking annoyed.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica sighs and says, 'Alex, are you sure a formal dinner is the best choice for everyone?' Bob shakes his head slightly, clearly not in agreement.",
+    "background": "Bob crosses his arms and says, 'Fine, no bar. But what's the plan then?'",
+    "role": "You",
+    "location": "Meeting Room",
+    "description": "Let's explore Ryan's idea of an outdoor activity.",
     "options": [
       {
-        "text": "I understand there's still some hesitation. Maybe we can do a quick round of feedback from the team and see if everyone is on board with this decision.",
+        "text": "We can plan a variety of activities to suit everyone's interests.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences again. It demonstrates good social skills and motivation to ensure team consensus."
+        "analysis": "You showed a balanced emotional intelligence by proposing diverse activities, but self-regulation was lower."
       },
       {
-        "text": "I believe a formal dinner will be a good way to celebrate our hard work and achievements. Let's stick to it.",
+        "text": "An outdoor activity can be refreshing, and we can ensure it's not too strenuous.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills by taking a decisive stand, but it demonstrates lower empathy as it leans toward one suggestion over others. The motivation is moderate as it tries to end the indecision."
-      },
-      {
-        "text": "If this is too stressful, maybe we should consider simplifying the plan. How about just having a casual get-together at a colleague's place?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by considering the stress involved but shows lower social skills and motivation as it opts for a simpler, less celebratory solution."
+        "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy was lower."
+      },
+      {
+        "text": "Perhaps a mix of outdoor and indoor activities would cater to everyone's preferences.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and consideration by proposing a mix of activities, but social skill was lower."
       }
     ]
   }

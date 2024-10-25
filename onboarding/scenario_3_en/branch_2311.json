@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. A vote was conducted to decide, and the team chose Monica's suggestion for a fancy restaurant. Now, Monica and Bob are discussing the menu options. Monica prefers a gourmet menu with exotic dishes, while Bob prefers a simple, familiar menu. You suggested a mix of gourmet and familiar dishes, and everyone agreed. However, now Monica and Bob are discussing the seating arrangement. Monica wants a formal seating plan, while Bob prefers a more relaxed, free-seating arrangement. You suggested a mix of both formal and free seating, and everyone agreed. Now, as the event is approaching, Monica and Bob are discussing the dress code. Monica insists on a formal dress code to match the fancy restaurant, while Bob thinks a smart-casual approach would be more appropriate. They look to you for the final decision.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] is standing with her arms crossed, looking determined, while [Bob] is leaning against the wall, looking relaxed but clearly waiting for your input.",
+    "background": "Ryan suggests an outdoor activity. Emma looks skeptical.",
+    "role": "Emma",
+    "location": "Break Room",
+    "description": "'An outdoor activity sounds exhausting.'",
     "options": [
       {
-        "text": "How about we give people the option to dress formally or smart-casual? This way, everyone can feel comfortable and still look great.",
+        "text": "Outdoor activities can be refreshing and fun.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows good emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I think a formal dress code will complement the fancy restaurant and make the evening special. Let's go with Monica's choice.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
+        "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Let's vote on the dress code options to ensure everyone feels included and we choose the best option for the team.",
+        "text": "Let's find an activity that suits everyone's energy levels.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You showed empathy and self-regulation by considering everyone's energy levels, but social skill and perception were moderate."
+      },
+      {
+        "text": "Maybe we can plan shorter outdoor activities to avoid exhaustion.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed your opinion calmly, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

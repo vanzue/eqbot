@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You've been working on the urgent task despite being on leave. [Bob] and [Monica] are present.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'You've been pushing hard. Are you sure you're okay with this pace?' He leans forward, looking concerned.",
+    "background": "(Monica) frowns, tapping her pen on the desk. (Bob) leans against the wall, arms crossed.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "'If you really can't help, do you have any suggestions for how we can manage this?'",
     "options": [
       {
-        "text": "It's tough, but I'll manage if we can stay focused.",
+        "text": "I can suggest a few strategies that might help. Let's brainstorm together.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the challenge but remain focused, showing good self-regulation and social skills. Emotional perception could improve."
-      },
-      {
-        "text": "Honestly, it's been overwhelming, but let's get it done.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 2,
+          "Empathy": 3,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show high emotional perception and empathy by admitting your feelings, but it may negatively impact social skills and self-regulation."
+        "analysis": "You offered to help by suggesting strategies, demonstrating good perception and balanced empathy, social skills, and motivation, though your self-regulation could be stronger."
       },
       {
-        "text": "I think we should explore other options to handle this better.",
+        "text": "I'm really sorry, but I need this break. Is there someone else who can step in?",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You stood firm on needing your break, showing strong self-regulation but lower empathy and motivation to help."
+      },
+      {
+        "text": "This situation is repeating. We should consider long-term solutions, perhaps more training for the team.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show good self-regulation and social skills by suggesting alternatives, but emotional perception could improve."
+        "analysis": "You suggested long-term solutions, showing balanced social skills and perception, though your empathy and self-regulation could be stronger."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction. You acknowledged both perspectives and aimed for a balanced approach. Now, Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. You suggested brainstorming together to combine quick decisions with detailed discussions.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] and [Bob] exchange glances as Alex and Lily resume their debate. Alex leans forward, emphasizing the need for immediate action, while Lily remains calm, advocating for a thorough analysis. You sense the room's tension rising again.",
+    "background": "Monica shifts uncomfortably in her chair, looking at both of you.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'Compromise sounds good, but how do we ensure it's fair?'",
     "options": [
       {
-        "text": "I see both sides are still very passionate. Maybe we need to take a short break and come back with fresh perspectives.",
+        "text": "Let's have a neutral party help us mediate the discussion.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You suggested a break, showing good emotional perception and self-regulation, aiming to reduce tension and allow for a more productive discussion later."
+        "analysis": "You suggest involving an unbiased third party, showing good self-regulation and social skills."
       },
       {
-        "text": "Alex, your urgency is noted, but Lily's thoroughness ensures we don't miss anything critical. A balance is essential for the project's success.",
+        "text": "We can set clear guidelines on what each of us is willing to compromise on.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both sides' contributions, showing empathy and good social skills, but the emotional control could be improved."
-      },
-      {
-        "text": "It seems we need a mediator to help. [Monica], can you facilitate this discussion to find a compromise?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You involved another team member to mediate, showing good social skills and motivation, but emotional perception and self-regulation could be better."
+        "analysis": "You propose a structured approach to ensure fairness, demonstrating empathy and motivation for resolution."
+      },
+      {
+        "text": "Fairness is subjective. We should focus on what benefits the project most.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You prioritize the project's success over individual fairness, showing good perception but lower empathy."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Now, there is a tension-filled silence in the room as both Alex and Lily look at you expectantly. You asked both to highlight key areas of importance. Alex and Lily did as you requested, though Alex seemed slightly impatient, while Lily was more methodical. However, they still seem to be at an impasse. You suggested dividing tasks based on each person's strengths, but the tension remains.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex leans back in his chair, crossing his arms, while Lily looks at her notes and then at you, waiting for your next move.'",
+    "background": "Monica sighs and looks at you and Bob.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'I still feel uneasy about moving forward so soon. What if something goes wrong?'",
     "options": [
       {
-        "text": "Let's gather everyone's input on how to best utilize both quick decision-making and thorough analysis. Any ideas?",
+        "text": "We can build in checkpoints after each milestone to review our progress.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You encouraged collaboration by inviting the team to suggest ways to combine both approaches, demonstrating strong emotional perception and empathy."
+        "analysis": "You show empathy by addressing Monica's concerns and suggest a balanced approach with built-in review points, demonstrating good perception and motivation."
       },
       {
-        "text": "Alex, your impatience isn't helping. We need to value Lily's thorough approach as well. Let's figure out a balanced plan.",
+        "text": "While I understand your concern, we need to trust our initial planning and move forward.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You addressed Alex's impatience and emphasized the importance of Lily’s thoroughness, showing strong self-regulation and social skills."
-      },
-      {
-        "text": "Maybe it's time to rethink our strategy. How about a hybrid plan that allows for quick decisions followed by detailed analysis?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You proposed a hybrid approach to combine both methods, demonstrating good social skills and motivation to resolve the conflict."
+        "analysis": "You acknowledge Monica's unease but emphasize the importance of progress, showing good self-regulation and motivation to maintain momentum."
+      },
+      {
+        "text": "I think we might be overthinking this. Let's take a leap of faith.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You challenge the cautious approach, suggesting that sometimes risks are necessary, showing high motivation but less empathy and social skill."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You responded to Bob's comment on the timing. [Monica] looks concerned.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "'I appreciate the effort, but should we really be doing this now?' She folds her arms, glancing between you and Bob.",
+    "background": "(Monica) taps her pen on the desk, looking tired. (Bob) sighs deeply and glances at you.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "‘We need to make a decision quickly. Can you commit to helping us out for just a day?’",
     "options": [
       {
-        "text": "Let's just dive in and get it over with.",
+        "text": "I'm really on leave, but let's discuss what could be done in a few hours.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "You exhibit emotional control and motivation, but empathy and social skills could be improved."
+        "analysis": "You acknowledged your leave but showed willingness to help in a limited capacity, demonstrating good perception and empathy, though your self-regulation could be stronger."
       },
       {
-        "text": "Maybe you're right. We could reschedule if it's not truly urgent.",
+        "text": "I need to stick to my leave, but maybe you can break down the task and see what's truly urgent.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You emphasized your need for leave while suggesting a practical solution, showing strong self-regulation but less empathy."
+      },
+      {
+        "text": "It's not fair to ask me to cut my leave short. You need to find another way.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show high empathy and emotional perception, but the motivation to address the urgency could be higher."
-      },
-      {
-        "text": "Well, if you both think it's manageable, let's proceed cautiously.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good social skills and empathy, but emotional perception could be better."
+        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might negatively impact team dynamics."
       }
     ]
   }

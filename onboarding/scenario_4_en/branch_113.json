@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Bob] raises an eyebrow as [Monica] mentions improving communication for urgent tasks.",
-    "role": "[Monica]",
+    "background": "[Bob] leans against the desk, arms crossed, while [Monica] organizes some papers.",
+    "role": "[Bob]",
     "location": "Office",
-    "description": "Monica taps her pen on the table. 'Improving communication is fine, but what about the workload? Can we rely on you in the future?'",
+    "description": "'So, are we going to address this issue now or keep pushing it off?'",
     "options": [
       {
-        "text": "I believe we can find a balance. Let's discuss distributing tasks more evenly.",
+        "text": "Let's take a step back and review our priorities to address this properly.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You show empathy and self-regulation by suggesting a balanced approach, but motivation to take immediate action is lower."
+        "analysis": "You suggested a methodical approach to de-escalate the situation, showing good perception and balanced emotional regulation."
       },
       {
-        "text": "I understand your concern. I'll make sure to be more available in future urgent situations.",
+        "text": "Bob, it seems like you're really concerned. Monica, can you provide an update?",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show good emotional perception and social skills by offering reassurance, but self-regulation could be improved."
-      },
-      {
-        "text": "I see the issue. Perhaps we can hire additional help for peak times.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You suggest a practical solution, showing good social skills and motivation, but emotional perception could be better."
+        "analysis": "You acknowledged Bob's concerns and directed the conversation to Monica, demonstrating empathy and social skills."
+      },
+      {
+        "text": "Bob, maybe this isn't the right time for this discussion.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggested postponing the discussion to avoid conflict, showing social skill but lower empathy and motivation to resolve the issue immediately."
       }
     ]
   }

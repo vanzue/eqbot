@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try. Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.' Alex then suggests if it's too complicated, they might as well just go with a simple dinner to avoid issues. Monica looks a bit disappointed and says, 'A simple dinner might be too boring after such a big accomplishment.' Bob, on the other hand, seems relieved and nods, 'Yeah, but it's the safest option.' Alex then suggests keeping things simple and safe is the best way to ensure everyone has a good time.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica raises an eyebrow and says, 'Sure, but safe doesn't always mean fun. Bob here might be okay with it, but I think we deserve something more exciting.' Bob shrugs and says, 'Well, maybe a simple dinner is just what we need to decompress.'",
+    "background": "Bob looks disappointed and sighs.",
+    "role": "Bob",
+    "location": "Break Room",
+    "description": "'I just thought mixing activities might have been interesting.'",
     "options": [
       {
-        "text": "Let’s think outside the box and come up with an idea that’s both safe and exciting.",
+        "text": "I see your point. Maybe we can discuss more to find a balance.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of both Monica and Bob. It demonstrates good social skills and motivation to reach a compromise."
-      },
-      {
-        "text": "I get it, but maybe we should just play it safe this time and focus on relaxing.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes sticking to the safest option and avoiding any potential complications."
+        "analysis": "You acknowledged Bob's disappointment and showed good perception and social skills by suggesting further discussion. Empathy and self-regulation were moderate."
       },
       {
-        "text": "If we’re already debating so much, maybe we should just skip the celebration altogether.",
+        "text": "Let's brainstorm other ideas that might work better.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed self-regulation by proposing to brainstorm more ideas but were less empathetic and socially skilled."
+      },
+      {
+        "text": "I understand, but let's keep it simple for now.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "This option reflects empathy and emotional detection by considering Monica's opinion on needing something exciting, but shows lower motivation as it proposes an extreme solution."
+        "analysis": "You showed social skills by trying to simplify the plan but lacked motivation and empathy."
       }
     ]
   }

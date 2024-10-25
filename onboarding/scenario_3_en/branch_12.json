@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.'",
+    "background": "You, Monica, and Bob are discussing the celebration planning.",
+    "role": "Monica",
+    "location": "Meeting Room",
+    "description": "Monica rolls her eyes and says, 'A bar party will just be a noisy mess.'",
     "options": [
       {
-        "text": "I see your point. Maybe we need to prioritize and focus on what will make the majority happy.",
+        "text": "Bars can be fun; let's try to make it enjoyable for everyone.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of both Monica and Bob. It demonstrates good social skills and motivation to reach a compromise."
-      },
-      {
-        "text": "Let's give it a go and adjust as needed. If we feel rushed, we'll cut something out. Flexibility is key!",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes sticking to the original plan and adapting on the fly."
+        "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "If it's too complicated, we might as well just go with a simple dinner to avoid issues.",
+        "text": "Maybe we can find a quieter bar with a nice atmosphere.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
+        "analysis": "You showed empathy and consideration by proposing a compromise, but perception and social skill were moderate."
+      },
+      {
+        "text": "Bars might not be everyone's favorite, so let's consider other options too.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
       }
     ]
   }

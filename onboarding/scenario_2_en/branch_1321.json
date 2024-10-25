@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily then started a detailed analysis, but Alex interrupted impatiently, leading you to ask Lily to quickly outline her main points. After Lily's summary, Alex muttered under his breath, to which you responded by asking Alex to respect the process and Lily to wrap up quickly. Now, after Lily wrapped up, Alex rolled his eyes and muttered again, 'This is why we never get anything done on time.' You aimed to maintain a constructive atmosphere and shift the focus towards actionable steps. Now, Alex and Lily are still visibly tense.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily remain tense as the meeting progresses, with Alex tapping his pen impatiently and Lily looking down at her notes, avoiding eye contact.'",
+    "background": "Monica leans forward, tapping her pen on the table.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'Okay, we have a strategy now. How do we ensure everyone follows it?'",
     "options": [
       {
-        "text": "Let's take a brief pause to clear the air. Alex, can you share your main concerns? Lily, please be ready to address them directly.",
+        "text": "Let's hold a team meeting to explain the strategy and its importance.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggest clear communication and understanding to ensure adherence, showing good perception and empathy."
+      },
+      {
+        "text": "Maybe we should implement a tracking system to monitor adherence.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You prioritize accountability and structure, showing good self-regulation and motivation, but slightly lower empathy."
+      },
+      {
+        "text": "We need to trust that everyone will follow the strategy without micromanaging.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You tried to defuse the tension and refocus the meeting by encouraging open communication, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, we understand your urgency, but let's not rush to conclusions. Lily, could you highlight the most critical points quickly?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Alex's impatience but emphasized the need for thorough analysis, showcasing strong self-regulation and social skills."
-      },
-      {
-        "text": "It seems like we're going in circles. Alex, can you propose a more efficient plan? Lily, ensure it covers all necessary details.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You suggested a new approach that involves both team members, demonstrating good social skills and motivation to find an efficient solution."
+        "analysis": "You emphasize trust and autonomy, showing good empathy and motivation but slightly lower perception and self-regulation."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decide to help out for a few hours. [Monica] and [Bob] join the discussion.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'I appreciate you stepping in. Can you handle the report while Bob and I work on the presentation?'",
+    "background": "[Monica] and [Bob] are discussing the task in the office while you are on leave, and you decide to join the discussion via video call.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "'We really need your expertise on this. Can you quickly guide us through the process?'",
     "options": [
       {
-        "text": "Sure, I can manage the report. Just keep me updated on any changes.",
+        "text": "Sure, I can guide you through it. Let's get this done together.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You demonstrated strong empathy and social skills by offering to help, but your self-regulation and motivation to maintain your leave were slightly lower."
+      },
+      {
+        "text": "I'm on leave, but I can give you some pointers quickly.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good emotional perception and empathy, but may struggle with motivation due to the unexpected task."
+        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
       },
       {
-        "text": "I can help with the report, but I'll need some assistance from you both to ensure it's done right.",
+        "text": "I think you can handle this without me. Try to follow the guidelines I left.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 2,
+          "Self Regulation": 4,
           "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You balance your social skills and motivation well, but your empathy could be seen as lacking by not fully taking on the task independently."
-      },
-      {
-        "text": "I think it would be more effective if we all focus on the presentation and tackle the report afterwards.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show strong self-regulation and social skills, but your emotional perception is lower as you shift the task priorities."
+        "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
       }
     ]
   }

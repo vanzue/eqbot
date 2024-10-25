@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] sighs deeply as [Bob] raises an eyebrow at your offer for a video call.",
-    "role": "[Bob]",
+    "background": "[Monica] leans back in her chair, looking thoughtful while [Bob] checks his watch.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob leans back in his chair. 'So, is this video call a one-time thing or a new norm?'",
+    "description": "'Okay, we have a plan, but can we ensure it won't happen again?'",
     "options": [
       {
-        "text": "Let's see how it goes this time and decide if it's effective.",
+        "text": "We should review our processes after this and make necessary improvements.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You balance the suggestion with a trial approach, showing good self-regulation and social skills but lower empathy."
-      },
-      {
-        "text": "If video calls work well, we can make it a more regular solution.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You show high motivation and emotional perception by being open to new solutions, but self-regulation could be improved."
+        "analysis": "You focused on future improvements, showing strong perception and motivation, though your empathy and self-regulation were balanced."
       },
       {
-        "text": "We should focus on in-person solutions. Video calls should be a last resort.",
+        "text": "Let's schedule a debriefing meeting to discuss what went wrong and how to fix it.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You prioritize in-person interactions, showing good empathy but lower emotional perception and motivation to adapt."
+        "analysis": "You suggested a structured approach to address the issue, demonstrating high empathy and social skills, but lower motivation."
+      },
+      {
+        "text": "Mistakes happen. Let's focus on completing the current tasks first.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized immediate action over retrospective analysis, showing high motivation and social skills but lower empathy and self-regulation."
       }
     ]
   }

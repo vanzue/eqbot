@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decide to focus on the presentation first. [Bob] looks a bit frustrated.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'I understand your point, but the report is really urgent. How should we handle this?'",
+    "background": "[Monica] and [Bob] are in the office, and you are guiding them via video call from home.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'We followed your guidelines, but we're stuck on this part. Can you take a closer look?'",
     "options": [
       {
-        "text": "Let's delegate the report to someone else while we focus on the presentation.",
+        "text": "Let me take a quick look and see if I can spot the issue.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You show good social skills and self-regulation by delegating, but empathy is lower as you shift the responsibility."
-      },
-      {
-        "text": "I think we should split the tasks and handle both simultaneously.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You display good emotional perception and social skills, but your self-regulation is a bit affected by multitasking."
+        "analysis": "You offer to help by directly addressing the problem, showing strong perception and social skills, but your self-regulation is slightly lower."
       },
       {
-        "text": "Let's focus on the presentation now and tackle the report later. We can manage both in sequence.",
+        "text": "I think you can manage if you revisit the steps carefully.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show strong self-regulation and a clear focus, but emotional perception is lower as you delay the urgent task."
+        "analysis": "You encourage independence and demonstrate strong self-regulation, but your empathy and motivation to assist are lower."
+      },
+      {
+        "text": "I'm on leave, but let's try to solve this together quickly.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You balance your time off with helping, showing good empathy and social skills, but your motivation and self-regulation are not particularly high."
       }
     ]
   }

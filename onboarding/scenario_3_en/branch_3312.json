@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly. You decide to skip the celebration and focus on the next project. Monica frowns and Bob looks disappointed. You reconsider and suggest a small celebration. Monica lights up and Bob nods in agreement. Monica suggests combining both suggestions and having a small outdoor activity followed by a dinner. You express doubts about combining both activities, prioritizing simplicity. Monica and Bob exchange glances.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'I understand wanting to keep things simple, but I feel like we deserve a bit more than just one activity.' [Bob] adds, 'Yeah, it's not every day we complete such a big project. Maybe we should go all out just this once.' Everyone is waiting for your response.",
+    "background": "[Bob] shrugs while looking at [Monica] and you.",
+    "role": "You",
+    "location": "Break Room",
+    "description": "'Explaining the decision process might help, but what if people are still unhappy?'",
     "options": [
       {
-        "text": "I see your points. Let's plan a small outdoor activity and a simple dinner. Nothing too extravagant.",
+        "text": "We'll handle it case by case and address concerns individually.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering Monica and Bob's feelings while also maintaining a sense of simplicity. It reflects good social skills and motivation."
+        "analysis": "You showed understanding of individual concerns, demonstrating good perception and empathy but moderate social skills and self-regulation."
       },
       {
-        "text": "I think we should stick to one activity. Let's go with a simple dinner to keep things manageable.",
+        "text": "If we listen to feedback and make adjustments, it could work out.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills by making a decisive call. However, empathy is lower as it prioritizes simplicity over inclusiveness."
+        "analysis": "You suggested a flexible approach by considering feedback, showing good self-regulation and social skills but moderate perception and empathy."
       },
       {
-        "text": "If you both feel that strongly, we can go all out. But remember, we need to stay focused on our next goals too.",
+        "text": "We can't always please everyone, but we should remain transparent.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 2,
-          "Social Skill": 2,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "This response shows higher motivation to maintain focus on work but lower emotional detection and empathy. Social skills are also lower due to the passive-aggressive undertone."
+        "analysis": "You emphasized transparency despite potential dissatisfaction, showing good social skills and motivation but lower empathy."
       }
     ]
   }

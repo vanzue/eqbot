@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Bob] leans back in his chair. You suggested a better communication strategy.",
-    "role": "[Monica]",
+    "background": "[Bob] sighs and rubs his temples, while [Monica] glances at you for support.",
+    "role": "[Bob]",
     "location": "Office",
-    "description": "Monica taps her fingers on the table. 'Do you really think a strategy will fix this? We're still struggling.'",
+    "description": "'So, what do you suggest we do now? We can't just keep making the same mistakes.'",
     "options": [
       {
-        "text": "Strategies can take time to show results. Let's give it a chance and monitor closely.",
+        "text": "We need a fresh perspective. Maybe we should get feedback from the team.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You suggested involving the team for new ideas, showing good perception and empathy, but your motivation is not particularly high."
+      },
+      {
+        "text": "Let's take a break and come back with clear minds. We're too stressed to think straight right now.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You advocate for patience and thorough monitoring, showing good emotional perception and self-regulation, but motivation is slightly lower."
+        "analysis": "You suggested taking a break to regain clarity, showing strong self-regulation, but your motivation to address the issue immediately is lower."
       },
       {
-        "text": "I understand your concern. Maybe we need to tweak our approach and be more flexible.",
+        "text": "Monica, I think Bob needs us to step up our game. Can you suggest something?",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show empathy and social skills by acknowledging the concern and suggesting adaptability, but your motivation to stick to the original plan is lower."
-      },
-      {
-        "text": "If the strategy isn't working, we might need to consider a more radical change.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 2,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You suggest a more drastic approach, showing high motivation and social skill, but emotional perception and self-regulation are lower."
+        "analysis": "You acknowledged Bob's need for action and prompted Monica for input, showing balanced empathy and social skills."
       }
     ]
   }

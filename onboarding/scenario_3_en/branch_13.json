@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica sighs, 'So, Alex, what's the final call? We need to decide now.' Bob looks at you, his eyebrows raised in expectation.",
+    "background": "Monica, Bob, and you continue discussing celebration ideas.",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "Bob leans back and says, 'I think the outdoor activity will be too tiring for some people.'",
     "options": [
       {
-        "text": "Well, we could just go with Sam's idea and hit the bar. It might be the easiest option.",
+        "text": "Maybe we can find a compromise that includes some rest breaks.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "This option shows good social skills but lower empathy as it doesn't account for the preferences of everyone involved."
+        "analysis": "You acknowledged the concern and proposed a solution, showing good social skill and self-regulation, but empathy and perception were moderate."
       },
       {
-        "text": "Let's stick to Emma's suggestion and have a formal dinner. It's a safe bet and everyone can relax and enjoy.",
+        "text": "An outdoor activity can be rejuvenating; let's try to make it enjoyable.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and maintains a calm demeanor, but it may come across as dismissive of other suggestions."
-      },
-      {
-        "text": "How about we go for the outdoor team-building activity Ryan suggested? It will be fun and different.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "This option shows high emotional detection and empathy, aiming to provide a unique experience that could be enjoyable for everyone."
+        "analysis": "You showed confidence in the idea, displaying good perception and motivation, but empathy was lower."
+      },
+      {
+        "text": "Maybe an indoor activity would be more suitable for everyone.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy by acknowledging the concern, but self-regulation and social skill were moderate."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you suggested brainstorming together to combine quick decisions with detailed discussions. Now, [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, still showing signs of tension, continue discussing their approaches. Monica and Bob exchange glances, clearly uneasy with the ongoing tension.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, despite the previous attempt to find a middle ground, are still struggling to agree. Alex is visibly frustrated, tapping his pen on the table, while Lily is folding her arms, looking defensive.'",
+    "background": "Bob rubs his temples, looking exasperated.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "'Prioritizing quick wins could backfire. What if we miss something crucial?'",
     "options": [
       {
-        "text": "How about we take a short break and come back with fresh perspectives? Sometimes stepping away can help us see things more clearly.",
+        "text": "We should weigh the risks accordingly. Let's list potential pitfalls.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested taking a break to defuse the tension, showing good emotional perception and self-regulation."
-      },
-      {
-        "text": "Alex, your frustration is understandable, but let's also recognize Lily's need for thorough discussion. Can we try to find a compromise that respects both approaches?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both perspectives again and aimed for a balanced approach, demonstrating empathy and social skills."
-      },
-      {
-        "text": "This ongoing conflict suggests that we might need to revisit our project strategy. Maybe we can allocate specific tasks to suit each of your strengths?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge Bob's concern and propose a balanced approach, showing good self-regulation and social skills."
+      },
+      {
+        "text": "I understand your worry, Bob, but we need to keep moving. Let's address issues as they arise.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You proposed a practical solution by leveraging individual strengths, showing good motivation and social skills."
+        "analysis": "You emphasize the need to progress while showing empathy towards Bob's concern, indicating motivation and balance."
+      },
+      {
+        "text": "Sometimes we need to take calculated risks. Overthinking can lead to paralysis.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You highlight the need for quick decision-making, showing good perception of the urgency but lower empathy towards thoroughness."
       }
     ]
   }

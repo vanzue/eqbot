@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested taking a step back and hearing each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You acknowledged Alex's need for speed while ensuring Lily's voice is heard. Lily wrapped up her points, but Alex seemed unconvinced. You then reinforced the importance of considering different perspectives, demonstrating strong emotional perception and empathy. Alex rolled his eyes and muttered under his breath, 'This is a waste of time,' while Lily looked at you expectantly.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex throws his hands up in frustration and says, 'We need to move forward, this is ridiculous,' while Lily takes a deep breath, visibly trying to stay calm.'",
+    "background": "Bob sighs again, rubbing his temples in frustration.",
+    "role": "You",
+    "location": "Conference Room",
+    "description": "You say, 'Let's consider both perspectives carefully to find a solution that satisfies everyone.'",
     "options": [
       {
-        "text": "Alex, I understand your urgency, but we have to make an informed decision. Let's take a moment to summarize our key points.",
+        "text": "We should analyze the potential risks and benefits of each approach before deciding.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You emphasized the need for a balanced approach, showing good emotional perception and empathy while aiming for an informed decision."
+        "analysis": "You show a high level of empathy and perception by advocating for a thorough analysis that respects both viewpoints."
       },
       {
-        "text": "Alex, I get that you want to move quickly, but dismissing Lily's input doesn't help. Let's value her insights and then decide.",
+        "text": "I understand it's challenging, but we need a decision soon to keep things moving.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged Alex's urgency while stressing the importance of valuing team members' contributions, demonstrating strong self-regulation and social skills."
+        "analysis": "You acknowledge the difficulty but emphasize the urgency of making a decision, showing good self-regulation and social skills."
       },
       {
-        "text": "Lily, let's finish up quickly so we can move on. Alex, please be patient; we're almost done.",
+        "text": "If we can't agree, maybe it's best to have a quick vote and move forward based on majority.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You aimed for efficiency by asking Lily to wrap up quickly, showing good social skills and motivation to keep the meeting on track."
+        "analysis": "You propose a democratic solution, showing empathy and motivation to move forward while ensuring all voices are considered."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asked Lily to quickly finish up so the team could move on. Lily summarized her points, but Alex seemed dissatisfied, rolling his eyes and muttering under his breath. You emphasized the need to make a decision promptly, asking Lily to wrap things up quickly. Lily looked disappointed but complied, and Alex still seemed frustrated.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "Alex crosses his arms and says, 'This is a waste of time. We need to act, not talk.' Lily looks frustrated but doesn't respond.",
+    "background": "Monica glances at her watch, looking concerned.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'We're running out of time. We need to wrap this up.'",
     "options": [
       {
-        "text": "Alex, let's find a middle ground. Lily, can you give us a brief action plan based on your analysis?",
+        "text": "I hear you, Bob. Let's summarize our key points quickly.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You sought a compromise by asking Lily to provide a concise action plan, demonstrating good emotional perception and empathy."
+        "analysis": "You show empathy by acknowledging Bob's concern and aim to quickly summarize, demonstrating good social skills and emotional perception."
       },
       {
-        "text": "Alright, Alex, let's move forward with your plan. Lily, we'll take your insights into consideration for adjustments later.",
+        "text": "Agreed, but let's ensure we cover all critical aspects before concluding.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You opted to proceed with Alex's approach while acknowledging Lily's input for future adjustments, showing strong self-regulation and social skills."
+        "analysis": "You balance the need for thorough coverage with time constraints, showing good self-regulation and social skills."
       },
       {
-        "text": "Lily, let's wrap this up quickly. We need to make a decision and start executing.",
+        "text": "We can always extend the meeting if necessary. Rushing might lead to errors.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the need to make a decision promptly, showing good social skills and motivation to keep the project moving."
+        "analysis": "You suggest extending the meeting to ensure thorough discussion, showing empathy and motivation to avoid mistakes."
       }
     ]
   }

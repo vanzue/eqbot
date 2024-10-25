@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] are now discussing how to proceed with the plan. You suggested an escape room for the outdoor activity and a semi-formal dinner, which some team members liked. [Monica] and [Bob] are still debating the final details. You then suggested a straightforward picnic in the park, which seemed to simplify the planning. However, there is still some friction as the team tries to settle on the final arrangements.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'Okay, if we go with the picnic, what kind of food should we bring? Should we make it potluck style?' [Bob] adds, 'And what about the activities? Should we plan any games or keep it more casual?' Everyone is waiting for your input.",
+    "background": "[Bob] sighs and leans back in his chair.",
+    "role": "[Bob]",
+    "location": "Meeting Room",
+    "description": "'Sticking to one plan might be boring for some of us.'",
     "options": [
       {
-        "text": "Let's keep it simple and casual. Everyone can bring their favorite dish, and we can decide on games once we get there.",
+        "text": "We can always add a fun twist to the plan to keep it interesting.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
+        "analysis": "You suggested an innovative solution, showing good perception and social skills, though empathy and self-regulation were moderate."
       },
       {
-        "text": "How about we plan a few group games in advance? It will make the picnic more engaging and fun for everyone.",
+        "text": "It's true, but having a clear plan can help us avoid confusion.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it involves more planning, which might not appeal to everyone."
+        "analysis": "You acknowledged the concern but emphasized the benefits of having a clear plan, showing good empathy and self-regulation, though social skill and perception were moderate."
       },
       {
-        "text": "Maybe we should just focus on the food and let the activities happen naturally. It might be simpler and less stressful.",
+        "text": "If we try to please everyone, we might end up not pleasing anyone.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
         },
-        "analysis": "This option reflects a balanced approach but shows slightly lower motivation as it suggests a more laid-back plan."
+        "analysis": "You pointed out the potential downside of trying to please everyone, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

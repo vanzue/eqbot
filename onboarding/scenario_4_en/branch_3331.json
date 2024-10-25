@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You suggested sorting out the presentation first. [Bob] looks at you thoughtfully.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'Do you think we can really manage both tasks efficiently this way?'",
+    "background": "[Monica] and [Bob] exchange glances, then return their attention to the screen as you allocate more time for the task.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'We appreciate it. Can you also join our meeting later to discuss the next steps?'",
     "options": [
       {
-        "text": "It's possible if we stay focused and communicate well.",
+        "text": "Sure, I can join the meeting. Let's make the most of this session.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You show good emotional perception and social skills, but your motivation might be lower as you try to balance both tasks."
+        "analysis": "You showed strong empathy and willingness to collaborate by committing to the meeting, but your self-regulation and motivation to maintain your leave were slightly lower."
       },
       {
-        "text": "We should focus on one task at a time to ensure quality.",
+        "text": "I can join briefly, but I won't be able to stay for the entire meeting.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "You show strong self-regulation and a balanced approach, but your emotional perception could be improved by considering the urgency."
+        "analysis": "You balanced your time off with a willingness to help by agreeing to join briefly, showing good self-regulation, but your motivation and empathy were not particularly high."
       },
       {
-        "text": "I'm not sure, but I'm willing to give it a try.",
+        "text": "It's better if you handle this without my full involvement. Follow the guidelines.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
+          "Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You show high empathy and motivation but might struggle with self-regulation and social skills due to the uncertainty."
+        "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
       }
     ]
   }
