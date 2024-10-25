@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] are in the office, and you are on a video call with them.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'Alright, thanks for the quick run-through. What if we encounter an unexpected issue?'",
-    "options": [
-      {
-        "text": "You know the drill. Just keep me posted if anything major comes up.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained a balance between helping and respecting your leave, showing good self-regulation, though your motivation and empathy were lower."
-      },
-      {
-        "text": "I'll stay on standby in case you need further assistance.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed strong empathy and social skills by offering to stay available, though your self-regulation and motivation to stick to your leave were slightly lower."
-      },
-      {
-        "text": "I trust you both can handle it. You've got this under control.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You expressed confidence in their abilities, maintaining strong self-regulation, but your perception, empathy, and motivation to assist were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are in the office, and you are on a video call with them.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'Alright, thanks for the quick run-through. What if we encounter an unexpected issue?'",
+        "options": [
+            {
+                "text": "You know the drill. Just keep me posted if anything major comes up.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained a balance between helping and respecting your leave, showing good self-regulation, though your motivation and empathy were lower."
+            },
+            {
+                "text": "I'll stay on standby in case you need further assistance.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed strong empathy and social skills by offering to stay available, though your self-regulation and motivation to stick to your leave were slightly lower."
+            },
+            {
+                "text": "I trust you both can handle it. You've got this under control.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You expressed confidence in their abilities, maintaining strong self-regulation, but your perception, empathy, and motivation to assist were lower."
+            }
+        ]
+    }
 }

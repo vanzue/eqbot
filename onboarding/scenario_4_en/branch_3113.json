@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] looks puzzled while [Monica] tries to reassure him.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'I appreciate your trust, but what if we encounter another issue? Can we count on you again?'",
-    "options": [
-      {
-        "text": "Let's cross that bridge when we come to it. For now, let's focus on the task at hand.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You focused on the immediate problem, showing good perception and empathy, though your self-regulation and social skill could be stronger."
-      },
-      {
-        "text": "I understand your concern, but I'm on leave. We'll need to find another solution if more issues arise.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the concern and set boundaries, showing good self-regulation but lower motivation and empathy."
-      },
-      {
-        "text": "I'm confident you can handle any issues without my constant involvement. Trust your skills.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You encouraged independence, showing strong self-regulation but lower empathy, perception, and motivation to help."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks puzzled while Monica tries to reassure him.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'I appreciate your trust, but what if we encounter another issue? Can we count on you again?'",
+        "options": [
+            {
+                "text": "Let's cross that bridge when we come to it. For now, let's focus on the task at hand.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You focused on the immediate problem, showing good perception and empathy, though your self-regulation and social skill could be stronger."
+            },
+            {
+                "text": "I understand your concern, but I'm on leave. We'll need to find another solution if more issues arise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the concern and set boundaries, showing good self-regulation but lower motivation and empathy."
+            },
+            {
+                "text": "I'm confident you can handle any issues without my constant involvement. Trust your skills.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You encouraged independence, showing strong self-regulation but lower empathy, perception, and motivation to help."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob raises an eyebrow and looks at you.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "'So, how do we actually align our approaches?'",
-    "options": [
-      {
-        "text": "Maybe we should establish clear guidelines everyone agrees on.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest creating guidelines, showing good perception and social skills, but lower empathy."
-      },
-      {
-        "text": "I think we need a workshop to understand each other's working styles better.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You propose a workshop, showing good self-regulation and empathy towards improving team dynamics."
-      },
-      {
-        "text": "Why don't we just let each person take responsibility for their own tasks?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a more independent approach, showing a balanced view but potentially lower social skills in fostering teamwork."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob raises an eyebrow and looks at you.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'So, how do we actually align our approaches?'",
+        "options": [
+            {
+                "text": "Maybe we should establish clear guidelines everyone agrees on.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest creating guidelines, showing good perception and social skills, but lower empathy."
+            },
+            {
+                "text": "I think we need a workshop to understand each other's working styles better.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a workshop, showing good self-regulation and empathy towards improving team dynamics."
+            },
+            {
+                "text": "Why don't we just let each person take responsibility for their own tasks?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a more independent approach, showing a balanced view but potentially lower social skills in fostering teamwork."
+            }
+        ]
+    }
 }

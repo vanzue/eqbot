@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] and [Monica] are reviewing your brief feedback in the office. [Monica] seems frustrated.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Your review was helpful, but we still need more details. Can you elaborate on this?'",
-    "options": [
-      {
-        "text": "I can provide more details, but please understand I'm still on leave.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and willingness to help while reminding them of your leave, but your self-regulation and motivation to maintain your boundaries were slightly lower."
-      },
-      {
-        "text": "I'll give you a quick explanation, but I need to get back to my leave.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
-      },
-      {
-        "text": "I think the current feedback should be enough. Try to work with what you have.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob and Monica are reviewing your brief feedback in the office. Monica seems frustrated.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Your review was helpful, but we still need more details. Can you elaborate on this?'",
+        "options": [
+            {
+                "text": "I can provide more details, but please understand I'm still on leave.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and willingness to help while reminding them of your leave, but your self-regulation and motivation to maintain your boundaries were slightly lower."
+            },
+            {
+                "text": "I'll give you a quick explanation, but I need to get back to my leave.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+            },
+            {
+                "text": "I think the current feedback should be enough. Try to work with what you have.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

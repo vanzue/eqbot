@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob nods and glances at you for support. Monica looks exasperated.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob sighs and says, 'Should we just vote on this?'",
-    "options": [
-      {
-        "text": "A vote might be a fair way to decide.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a democratic approach, showing good perception and social skills, but empathy and self-regulation were moderate."
-      },
-      {
-        "text": "Maybe we can take some more time to discuss before deciding.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and self-regulation by suggesting more discussion, but perception and social skill were moderate."
-      },
-      {
-        "text": "A vote might be premature; let's explore other options first.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the need for more options, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob nods and glances at you for support. Monica looks exasperated.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob sighs and says, 'Should we just vote on this?'",
+        "options": [
+            {
+                "text": "A vote might be a fair way to decide.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a democratic approach, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Maybe we can take some more time to discuss before deciding.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation by suggesting more discussion, but perception and social skill were moderate."
+            },
+            {
+                "text": "A vote might be premature; let's explore other options first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the need for more options, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
 }

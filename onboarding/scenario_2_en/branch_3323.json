@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica sighs and crosses her arms, looking at the clock.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'I feel like we're going in circles. We need to make a decision.'",
-    "options": [
-      {
-        "text": "Let's wrap this up quickly and refine details later.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You advocate for a quick decision while allowing room for refinement, showing social skill and motivation."
-      },
-      {
-        "text": "I agree, Bob. Let's summarize our points and decide.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need to conclude the discussion promptly, showing perception and motivation to move forward."
-      },
-      {
-        "text": "Rushing will lead to mistakes. Let's take a moment to ensure we get it right.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You stress the importance of thorough decision-making to avoid errors, showing empathy and self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and crosses her arms, looking at the clock.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'I feel like we're going in circles. We need to make a decision.'",
+        "options": [
+            {
+                "text": "Let's wrap this up quickly and refine details later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You advocate for a quick decision while allowing room for refinement, showing social skill and motivation."
+            },
+            {
+                "text": "I agree, Bob. Let's summarize our points and decide.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need to conclude the discussion promptly, showing perception and motivation to move forward."
+            },
+            {
+                "text": "Rushing will lead to mistakes. Let's take a moment to ensure we get it right.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You stress the importance of thorough decision-making to avoid errors, showing empathy and self-regulation."
+            }
+        ]
+    }
 }

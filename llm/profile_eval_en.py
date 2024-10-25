@@ -78,7 +78,7 @@ def request_LLM_response(scenario):
                     - The target audience is users who wish to improve their emotional intelligence, with above-average comprehension
 
                     ** Examples or references :**
-                    - Example Rating: Emotion Perception: 25 Reason: There is a little wind and wind at work, your little emotions are like a volcano, it will explode. Take it easy, for example, when the other party refutes you, you can ease up on your answer, otherwise it is easy to burn yourself and your partners.
+                    - Example Rating: Perception: 25 Reason: In the workplace, even the sightest setback can disturb your thoughts. You need to be more cautious, or you might easily 'burn' yourself and your colleagues.
                     - Example tip: Impulse is the devil, learn to calm down to control the game.
                     Your emotional stability ability is low, and you need to improve this ability most at present. You are prone to large emotional fluctuations due to small setbacks in work or different opinions of others, which will affect work efficiency and interpersonal relationships. Don't be a hedgehog when someone is talking, listen attentively, don't interrupt, don't contradict, nod your head, and make eye contact to show respect. Deal with conflict calmly and rationally. Listen to the other person before you express yourself. When you stab someone, put painkillers on the blade.
 
@@ -93,32 +93,32 @@ def request_LLM_response(scenario):
                     {{
                         "1. Perception": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "2. Self Regulation": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "3. Empathy": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "4. Social Skill": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "5. Motivation": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "6. Tips": {{
                             "Tips": [Provide a short tip, 20 words or less]
                         }},
                         "7. Cultivation Suggestions": {{
-                            "Suggestions": [Provide detailed practice suggestions for the lowest scoring dimensions]
+                            "Suggestions": [Provide detailed analysis by including both pros and cons that show in senes and also consists content in scenes. Make some suggestions]
                         }},
                         "8. Summary of Cultivation Suggestions": {{
-                            "Summary of Suggestions": [Summarize the suggestions based on cultivation suggestions into one sentence, within 20 words]
+                            "Summary of Suggestions": [Summarize the suggestions based on cultivation suggestions into one sentence, like a title]
                         }},
                         "9. Overall Suggestion": {{
                             "Overall Suggestion": [According to the user's situation, give a comprehensive evaluation and good wishes to the user]

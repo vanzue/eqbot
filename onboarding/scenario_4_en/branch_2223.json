@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) stands up, looking determined. (Bob) turns to you with frustration evident in his eyes.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "'We all need to step up. Are you really not going to help us out?'",
-    "options": [
-      {
-        "text": "I get that it's a tough situation, but we need to distribute the workload better.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the issue but suggested a better workload distribution, showing strong perception but lower empathy and motivation."
-      },
-      {
-        "text": "I’ll help out, but only for a short time. We should discuss a long-term solution later.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You offered brief help and proposed discussing a solution later, demonstrating balanced empathy and social skills, though moderate motivation and self-regulation."
-      },
-      {
-        "text": "This isn't fair. I need my break too. We need a better system in place.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica stands up, looking determined. Bob turns to you with frustration evident in his eyes.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We all need to step up. Are you really not going to help us out?'",
+        "options": [
+            {
+                "text": "I get that it's a tough situation, but we need to distribute the workload better.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the issue but suggested a better workload distribution, showing strong perception but lower empathy and motivation."
+            },
+            {
+                "text": "I’ll help out, but only for a short time. We should discuss a long-term solution later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered brief help and proposed discussing a solution later, demonstrating balanced empathy and social skills, though moderate motivation and self-regulation."
+            },
+            {
+                "text": "This isn't fair. I need my break too. We need a better system in place.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob reluctantly agrees, and [Monica] looks relieved that the project can now proceed.",
-    "role": "You",
-    "location": "Conference Room",
-    "description": "You say, 'Alright, let's get started then. Any last thoughts?'",
-    "options": [
-      {
-        "text": "We'll address any issues as they come up. Let's move forward.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You demonstrate self-regulation and motivation by encouraging the team to proceed while being open to addressing issues dynamically."
-      },
-      {
-        "text": "Let's take a moment to quickly list any potential concerns before we dive in.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show perception and empathy by suggesting a quick overview of potential concerns, ensuring that everyone feels heard before proceeding."
-      },
-      {
-        "text": "I think we've discussed enough. Starting now will give us more time to adapt.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of starting promptly, showing good self-regulation and motivation, but with a bit less empathy for lingering concerns."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob reluctantly agrees, and Monica looks relieved that the project can now proceed.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, 'Alright, let's get started then. Any last thoughts?'",
+        "options": [
+            {
+                "text": "We'll address any issues as they come up. Let's move forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You demonstrate self-regulation and motivation by encouraging the team to proceed while being open to addressing issues dynamically."
+            },
+            {
+                "text": "Let's take a moment to quickly list any potential concerns before we dive in.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You show perception and empathy by suggesting a quick overview of potential concerns, ensuring that everyone feels heard before proceeding."
+            },
+            {
+                "text": "I think we've discussed enough. Starting now will give us more time to adapt.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of starting promptly, showing good self-regulation and motivation, but with a bit less empathy for lingering concerns."
+            }
+        ]
+    }
 }

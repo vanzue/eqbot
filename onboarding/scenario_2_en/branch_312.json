@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "During the meeting, after acknowledging Monica's urgency, [Bob] looks concerned.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'I'm still worried that we're rushing things and might miss important details.'",
-    "options": [
-      {
-        "text": "It's a valid concern, Bob. Let's ensure all critical points are discussed quickly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge Bob's worry while keeping the conversation focused, showing empathy, perception, and social skill."
-      },
-      {
-        "text": "We need to balance speed and thoroughness. Let's focus on key areas and decide.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need for balance, demonstrating good self-regulation and motivation to move forward."
-      },
-      {
-        "text": "If we delay too much, we might miss our deadline. Let's prioritize and move on.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You push for prioritization to meet deadlines, showing motivation and social skill in managing the team's concerns."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "During the meeting, after acknowledging Monica's urgency, Bob looks concerned.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'I'm still worried that we're rushing things and might miss important details.'",
+        "options": [
+            {
+                "text": "It's a valid concern, Bob. Let's ensure all critical points are discussed quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob's worry while keeping the conversation focused, showing empathy, perception, and social skill."
+            },
+            {
+                "text": "We need to balance speed and thoroughness. Let's focus on key areas and decide.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for balance, demonstrating good self-regulation and motivation to move forward."
+            },
+            {
+                "text": "If we delay too much, we might miss our deadline. Let's prioritize and move on.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You push for prioritization to meet deadlines, showing motivation and social skill in managing the team's concerns."
+            }
+        ]
+    }
 }

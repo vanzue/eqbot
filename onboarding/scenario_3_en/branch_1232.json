@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob looks disappointed and sighs.",
-    "role": "Bob",
-    "location": "Break Room",
-    "description": "'I just thought mixing activities might have been interesting.'",
-    "options": [
-      {
-        "text": "I see your point. Maybe we can discuss more to find a balance.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Bob's disappointment and showed good perception and social skills by suggesting further discussion. Empathy and self-regulation were moderate."
-      },
-      {
-        "text": "Let's brainstorm other ideas that might work better.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed self-regulation by proposing to brainstorm more ideas but were less empathetic and socially skilled."
-      },
-      {
-        "text": "I understand, but let's keep it simple for now.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You showed social skills by trying to simplify the plan but lacked motivation and empathy."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks disappointed and sighs.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "'I just thought mixing activities might have been interesting.'",
+        "options": [
+            {
+                "text": "I see your point. Maybe we can discuss more to find a balance.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Bob's disappointment and showed good perception and social skills by suggesting further discussion. Empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Let's brainstorm other ideas that might work better.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed self-regulation by proposing to brainstorm more ideas but were less empathetic and socially skilled."
+            },
+            {
+                "text": "I understand, but let's keep it simple for now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You showed social skills by trying to simplify the plan but lacked motivation and empathy."
+            }
+        ]
+    }
 }

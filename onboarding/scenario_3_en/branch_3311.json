@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] leans back in his chair, looking thoughtful.",
-    "role": "You",
-    "location": "Break Room",
-    "description": "'We could have a discussion to ensure everyone's concerns are heard.'",
-    "options": [
-      {
-        "text": "Let's schedule a meeting where everyone can voice their opinions.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a meeting to hear everyone out, showing good perception and empathy but moderate social skills and self-regulation."
-      },
-      {
-        "text": "Maybe we can do a quick survey to get everyone's input.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You proposed a practical solution to gather input, showing good self-regulation and social skills but moderate perception and empathy."
-      },
-      {
-        "text": "It's important to address everyone's concerns individually.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You stressed the importance of addressing concerns individually, showing good empathy and motivation but lower social skills and perception."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob leans back in his chair, looking thoughtful.",
+        "role": "You",
+        "location": "Break Room",
+        "description": "'We could have a discussion to ensure everyone's concerns are heard.'",
+        "options": [
+            {
+                "text": "Let's schedule a meeting where everyone can voice their opinions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a meeting to hear everyone out, showing good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "Maybe we can do a quick survey to get everyone's input.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a practical solution to gather input, showing good self-regulation and social skills but moderate perception and empathy."
+            },
+            {
+                "text": "It's important to address everyone's concerns individually.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You stressed the importance of addressing concerns individually, showing good empathy and motivation but lower social skills and perception."
+            }
+        ]
+    }
 }

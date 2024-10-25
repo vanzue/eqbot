@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) frowns, tapping her pen on the desk. (Bob) leans against the wall, arms crossed.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "'If you really can't help, do you have any suggestions for how we can manage this?'",
-    "options": [
-      {
-        "text": "I can suggest a few strategies that might help. Let's brainstorm together.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You offered to help by suggesting strategies, demonstrating good perception and balanced empathy, social skills, and motivation, though your self-regulation could be stronger."
-      },
-      {
-        "text": "I'm really sorry, but I need this break. Is there someone else who can step in?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You stood firm on needing your break, showing strong self-regulation but lower empathy and motivation to help."
-      },
-      {
-        "text": "This situation is repeating. We should consider long-term solutions, perhaps more training for the team.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested long-term solutions, showing balanced social skills and perception, though your empathy and self-regulation could be stronger."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica frowns, tapping her pen on the desk. Bob leans against the wall, arms crossed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'If you really can't help, do you have any suggestions for how we can manage this?'",
+        "options": [
+            {
+                "text": "I can suggest a few strategies that might help. Let's brainstorm together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered to help by suggesting strategies, demonstrating good perception and balanced empathy, social skills, and motivation, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I'm really sorry, but I need this break. Is there someone else who can step in?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You stood firm on needing your break, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "This situation is repeating. We should consider long-term solutions, perhaps more training for the team.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested long-term solutions, showing balanced social skills and perception, though your empathy and self-regulation could be stronger."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica furrows her brow, looking at you with concern.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'Taking risks is fine, but we need a plan. Why can't we find a middle ground?'",
-    "options": [
-      {
-        "text": "A middle ground sounds reasonable. Let's outline the risks and then decide.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good perception and social skill by considering both viewpoints and suggesting a balanced approach."
-      },
-      {
-        "text": "Monica, we can't always find a perfect middle ground. Sometimes we need to act decisively.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need for quick action, showing higher motivation but lower empathy towards Monica's concerns."
-      },
-      {
-        "text": "It's true, Monica. Planning helps us avoid mistakes. Let's take a bit more time.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You validate Monica's cautious approach, showing empathy and self-regulation while maintaining a balanced perspective."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica furrows her brow, looking at you with concern.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Taking risks is fine, but we need a plan. Why can't we find a middle ground?'",
+        "options": [
+            {
+                "text": "A middle ground sounds reasonable. Let's outline the risks and then decide.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show good perception and social skill by considering both viewpoints and suggesting a balanced approach."
+            },
+            {
+                "text": "Monica, we can't always find a perfect middle ground. Sometimes we need to act decisively.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for quick action, showing higher motivation but lower empathy towards Monica's concerns."
+            },
+            {
+                "text": "It's true, Monica. Planning helps us avoid mistakes. Let's take a bit more time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You validate Monica's cautious approach, showing empathy and self-regulation while maintaining a balanced perspective."
+            }
+        ]
+    }
 }

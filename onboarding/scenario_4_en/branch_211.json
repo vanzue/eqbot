@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Bob) crosses his arms and frowns, while (Monica) looks at the clock anxiously.",
-    "role": "Bob",
-    "location": "Office",
-    "description": "‘We are running out of time. Can you just make a quick decision already?’",
-    "options": [
-      {
-        "text": "Let's assign the most critical parts to the team members who are available.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You took a proactive approach to delegate tasks, showing good perception and empathy, though your self-regulation could be stronger."
-      },
-      {
-        "text": "I understand the urgency, but maybe you can handle the key elements, and I'll review them later.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the urgency but emphasized your need for leave, showing strong self-regulation but lower empathy and motivation."
-      },
-      {
-        "text": "You should be able to manage this without my input. It’s part of your role.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which could negatively impact team dynamics."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob crosses his arms and frowns, while Monica looks at the clock anxiously.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "‘We are running out of time. Can you just make a quick decision already?’",
+        "options": [
+            {
+                "text": "Let's assign the most critical parts to the team members who are available.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You took a proactive approach to delegate tasks, showing good perception and empathy, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I understand the urgency, but maybe you can handle the key elements, and I'll review them later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the urgency but emphasized your need for leave, showing strong self-regulation but lower empathy and motivation."
+            },
+            {
+                "text": "You should be able to manage this without my input. It’s part of your role.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which could negatively impact team dynamics."
+            }
+        ]
+    }
 }

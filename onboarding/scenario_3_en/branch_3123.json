@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] sighs and leans back in his chair.",
-    "role": "[Bob]",
-    "location": "Meeting Room",
-    "description": "'Sticking to one plan might be boring for some of us.'",
-    "options": [
-      {
-        "text": "We can always add a fun twist to the plan to keep it interesting.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested an innovative solution, showing good perception and social skills, though empathy and self-regulation were moderate."
-      },
-      {
-        "text": "It's true, but having a clear plan can help us avoid confusion.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the concern but emphasized the benefits of having a clear plan, showing good empathy and self-regulation, though social skill and perception were moderate."
-      },
-      {
-        "text": "If we try to please everyone, we might end up not pleasing anyone.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You pointed out the potential downside of trying to please everyone, showing good empathy and motivation, but social skill and perception were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs and leans back in his chair.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "'Sticking to one plan might be boring for some of us.'",
+        "options": [
+            {
+                "text": "We can always add a fun twist to the plan to keep it interesting.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested an innovative solution, showing good perception and social skills, though empathy and self-regulation were moderate."
+            },
+            {
+                "text": "It's true, but having a clear plan can help us avoid confusion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern but emphasized the benefits of having a clear plan, showing good empathy and self-regulation, though social skill and perception were moderate."
+            },
+            {
+                "text": "If we try to please everyone, we might end up not pleasing anyone.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You pointed out the potential downside of trying to please everyone, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
 }

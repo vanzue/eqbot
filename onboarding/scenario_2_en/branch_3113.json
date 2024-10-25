@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica nods slightly but still looks concerned.",
-    "role": "You",
-    "location": "Conference Room",
-    "description": "You say, 'We need to find a way to stay on schedule without compromising quality.'",
-    "options": [
-      {
-        "text": "Let's assign specific tasks to each person to ensure we're efficient and thorough.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You propose a structured approach, demonstrating good perception, empathy, and motivation while maintaining focus on efficiency."
-      },
-      {
-        "text": "I agree with Monica; we should start now but keep a close eye on the quality.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You lean towards Monica's urgency, showing good self-regulation and social skills while ensuring quality is monitored."
-      },
-      {
-        "text": "I think we need more time to discuss; rushing could lead to more problems.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You emphasize the need for thorough discussion, showing empathy for potential issues but risking a slower pace."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods slightly but still looks concerned.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, 'We need to find a way to stay on schedule without compromising quality.'",
+        "options": [
+            {
+                "text": "Let's assign specific tasks to each person to ensure we're efficient and thorough.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a structured approach, demonstrating good perception, empathy, and motivation while maintaining focus on efficiency."
+            },
+            {
+                "text": "I agree with Monica; we should start now but keep a close eye on the quality.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You lean towards Monica's urgency, showing good self-regulation and social skills while ensuring quality is monitored."
+            },
+            {
+                "text": "I think we need more time to discuss; rushing could lead to more problems.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the need for thorough discussion, showing empathy for potential issues but risking a slower pace."
+            }
+        ]
+    }
 }

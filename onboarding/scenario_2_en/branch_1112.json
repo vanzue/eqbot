@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob sighs, leaning back in his chair.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'We can't ignore the urgency, but we need a well-thought plan.'",
-    "options": [
-      {
-        "text": "How about a quick brainstorming session to balance speed and thoroughness?",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You propose a solution that considers both urgency and thoroughness, showing good social skills and empathy."
-      },
-      {
-        "text": "I agree, Monica. A well-thought plan is critical to avoid future issues.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You validate Monica's concern, showing good self-regulation and social skill."
-      },
-      {
-        "text": "We need to move fast. Let's decide now and refine the plan as we go.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need for quick decisions, showing motivation and a willingness to adapt."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs, leaning back in his chair.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We can't ignore the urgency, but we need a well-thought plan.'",
+        "options": [
+            {
+                "text": "How about a quick brainstorming session to balance speed and thoroughness?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a solution that considers both urgency and thoroughness, showing good social skills and empathy."
+            },
+            {
+                "text": "I agree, Monica. A well-thought plan is critical to avoid future issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You validate Monica's concern, showing good self-regulation and social skill."
+            },
+            {
+                "text": "We need to move fast. Let's decide now and refine the plan as we go.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for quick decisions, showing motivation and a willingness to adapt."
+            }
+        ]
+    }
 }

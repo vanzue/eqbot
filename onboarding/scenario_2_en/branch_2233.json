@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica folds her arms, looking stern.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'Calculated risks are important, but how do we ensure we're not missing anything critical?'",
-    "options": [
-      {
-        "text": "Let's create a checklist of essential items to ensure nothing is overlooked.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You propose a methodical approach to balance the need for speed with thoroughness, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I see your concern, Monica. We should have periodic reviews to catch any missed details.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledge Monica's worry and suggest a balanced approach, showing empathy and maintaining motivation."
-      },
-      {
-        "text": "Sometimes we have to trust our instincts and move forward quickly. Overthinking can lead to delays.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of quick decision-making, showing good perception of the urgency but lower empathy towards thoroughness."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica folds her arms, looking stern.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Calculated risks are important, but how do we ensure we're not missing anything critical?'",
+        "options": [
+            {
+                "text": "Let's create a checklist of essential items to ensure nothing is overlooked.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a methodical approach to balance the need for speed with thoroughness, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I see your concern, Monica. We should have periodic reviews to catch any missed details.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Monica's worry and suggest a balanced approach, showing empathy and maintaining motivation."
+            },
+            {
+                "text": "Sometimes we have to trust our instincts and move forward quickly. Overthinking can lead to delays.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of quick decision-making, showing good perception of the urgency but lower empathy towards thoroughness."
+            }
+        ]
+    }
 }

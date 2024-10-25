@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) taps her pen on the table, looking at you expectantly. (Bob) sighs and shakes his head.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "‘Alright, we’ve regrouped. What’s our next step?’",
-    "options": [
-      {
-        "text": "We should identify the key priorities and allocate resources accordingly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You took a strategic approach, showing good perception and empathy, but self-regulation could be stronger."
-      },
-      {
-        "text": "I think it’s best if we delegate the less critical tasks and focus on the urgent ones.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a practical solution while emphasizing efficiency, showing strong self-regulation but less empathy."
-      },
-      {
-        "text": "Why not handle this yourselves? It’s part of your job description.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially affecting team dynamics."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica taps her pen on the table, looking at you expectantly. Bob sighs and shakes his head.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "‘Alright, we’ve regrouped. What’s our next step?’",
+        "options": [
+            {
+                "text": "We should identify the key priorities and allocate resources accordingly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You took a strategic approach, showing good perception and empathy, but self-regulation could be stronger."
+            },
+            {
+                "text": "I think it’s best if we delegate the less critical tasks and focus on the urgent ones.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical solution while emphasizing efficiency, showing strong self-regulation but less empathy."
+            },
+            {
+                "text": "Why not handle this yourselves? It’s part of your job description.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially affecting team dynamics."
+            }
+        ]
+    }
 }

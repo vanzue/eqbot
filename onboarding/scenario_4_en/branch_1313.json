@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] nods slightly, then turns to you, looking for some direction.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'You've always been good at solving these issues. What do you think we should do next?'",
-    "options": [
-      {
-        "text": "We should have a team meeting to brainstorm ideas and find a solution together.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a collective approach, showing good perception and empathy, but your motivation for immediate action is average."
-      },
-      {
-        "text": "I think we need to delegate tasks more efficiently. Maybe that's where we went wrong.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested improving task delegation, showing balanced empathy and social skills, but your perception of the broader issue could be stronger."
-      },
-      {
-        "text": "It might be best to pause and reassess our goals. We're missing something fundamental.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You suggested reassessing the goals, showing strong perception and self-regulation, but your motivation to address the issue immediately is lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods slightly, then turns to you, looking for some direction.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'You've always been good at solving these issues. What do you think we should do next?'",
+        "options": [
+            {
+                "text": "We should have a team meeting to brainstorm ideas and find a solution together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a collective approach, showing good perception and empathy, but your motivation for immediate action is average."
+            },
+            {
+                "text": "I think we need to delegate tasks more efficiently. Maybe that's where we went wrong.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested improving task delegation, showing balanced empathy and social skills, but your perception of the broader issue could be stronger."
+            },
+            {
+                "text": "It might be best to pause and reassess our goals. We're missing something fundamental.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested reassessing the goals, showing strong perception and self-regulation, but your motivation to address the issue immediately is lower."
+            }
+        ]
+    }
 }

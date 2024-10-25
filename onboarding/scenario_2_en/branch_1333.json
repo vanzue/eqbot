@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica leans forward, her eyes narrowing slightly.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'So, how do we move forward without stepping on each other's toes?'",
-    "options": [
-      {
-        "text": "Let's set clear roles and responsibilities to avoid overlap.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest defining roles clearly, showing good perception, empathy, and social skills."
-      },
-      {
-        "text": "We need a unified approach. Let's decide on one method and stick with it.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggest a single approach, showing good self-regulation and motivation but less empathy and perception."
-      },
-      {
-        "text": "Why don't we rotate leadership roles based on project phases?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You propose rotating leadership roles, showing empathy, social skills, and motivation but less perception and self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica leans forward, her eyes narrowing slightly.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'So, how do we move forward without stepping on each other's toes?'",
+        "options": [
+            {
+                "text": "Let's set clear roles and responsibilities to avoid overlap.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest defining roles clearly, showing good perception, empathy, and social skills."
+            },
+            {
+                "text": "We need a unified approach. Let's decide on one method and stick with it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest a single approach, showing good self-regulation and motivation but less empathy and perception."
+            },
+            {
+                "text": "Why don't we rotate leadership roles based on project phases?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose rotating leadership roles, showing empathy, social skills, and motivation but less perception and self-regulation."
+            }
+        ]
+    }
 }

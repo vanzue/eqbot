@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] takes a deep breath while [Bob] continues to look frustrated.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Alright, let’s get some feedback from the team. But what if the suggestions are just as ineffective?'",
-    "options": [
-      {
-        "text": "We should still try. Any input is better than none.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You encouraged trying for feedback, showing good perception and empathy, although your motivation to explore alternatives was moderate."
-      },
-      {
-        "text": "If we think the feedback is not useful, we can filter it and focus on actionable items.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a practical approach to filter feedback, demonstrating balanced empathy and social skills, but the perception and self-regulation were moderate."
-      },
-      {
-        "text": "I think we need to trust the team’s judgment and at least give their suggestions a try.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized trusting the team and trying their suggestions, showing strong empathy and motivation, but the perception and self-regulation were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica takes a deep breath while Bob continues to look frustrated.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Alright, let’s get some feedback from the team. But what if the suggestions are just as ineffective?'",
+        "options": [
+            {
+                "text": "We should still try. Any input is better than none.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You encouraged trying for feedback, showing good perception and empathy, although your motivation to explore alternatives was moderate."
+            },
+            {
+                "text": "If we think the feedback is not useful, we can filter it and focus on actionable items.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical approach to filter feedback, demonstrating balanced empathy and social skills, but the perception and self-regulation were moderate."
+            },
+            {
+                "text": "I think we need to trust the team’s judgment and at least give their suggestions a try.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized trusting the team and trying their suggestions, showing strong empathy and motivation, but the perception and self-regulation were moderate."
+            }
+        ]
+    }
 }

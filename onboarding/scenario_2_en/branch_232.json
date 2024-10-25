@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob leans in, looking determined. Monica shifts uncomfortably.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'Bob, maybe you're being too cautious. We can't progress if we're always doubting.'",
-    "options": [
-      {
-        "text": "Bob, Monica has a point. Maybe a bit of risk could benefit us this time.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You recognize both perspectives, showing balanced social skills and motivation to find a middle ground."
-      },
-      {
-        "text": "Monica, Bob is just trying to avoid potential pitfalls. We should at least consider his concerns.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You empathize with Bob's cautious approach, showing understanding and a balanced view of the situation."
-      },
-      {
-        "text": "Let's not rush into decisions. Taking a bit more time could save us from bigger issues.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of caution, showing good self-regulation and perception of potential risks."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob leans in, looking determined. Monica shifts uncomfortably.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Bob, maybe you're being too cautious. We can't progress if we're always doubting.'",
+        "options": [
+            {
+                "text": "Bob, Monica has a point. Maybe a bit of risk could benefit us this time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You recognize both perspectives, showing balanced social skills and motivation to find a middle ground."
+            },
+            {
+                "text": "Monica, Bob is just trying to avoid potential pitfalls. We should at least consider his concerns.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You empathize with Bob's cautious approach, showing understanding and a balanced view of the situation."
+            },
+            {
+                "text": "Let's not rush into decisions. Taking a bit more time could save us from bigger issues.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of caution, showing good self-regulation and perception of potential risks."
+            }
+        ]
+    }
 }

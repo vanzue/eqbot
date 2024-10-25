@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica looks at Bob with raised eyebrows.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'Bob, we can't just sit and analyze forever. We need to take action at some point.'",
-    "options": [
-      {
-        "text": "Bob, Monica is right about needing to act. Let's find a middle ground.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show empathy towards both sides and aim for a balanced approach, demonstrating good social skills and motivation."
-      },
-      {
-        "text": "Monica, Bob's caution is valid. Rushing could lead to mistakes.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You emphasize the importance of caution, showing good perception and self-regulation but lower motivation to take immediate action."
-      },
-      {
-        "text": "We need to move forward, but we can't ignore potential risks entirely.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You recognize the need to progress while considering risks, showing balanced perception and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks at Bob with raised eyebrows.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Bob, we can't just sit and analyze forever. We need to take action at some point.'",
+        "options": [
+            {
+                "text": "Bob, Monica is right about needing to act. Let's find a middle ground.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy towards both sides and aim for a balanced approach, demonstrating good social skills and motivation."
+            },
+            {
+                "text": "Monica, Bob's caution is valid. Rushing could lead to mistakes.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You emphasize the importance of caution, showing good perception and self-regulation but lower motivation to take immediate action."
+            },
+            {
+                "text": "We need to move forward, but we can't ignore potential risks entirely.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You recognize the need to progress while considering risks, showing balanced perception and motivation."
+            }
+        ]
+    }
 }

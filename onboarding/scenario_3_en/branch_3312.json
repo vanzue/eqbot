@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] shrugs while looking at [Monica] and you.",
-    "role": "You",
-    "location": "Break Room",
-    "description": "'Explaining the decision process might help, but what if people are still unhappy?'",
-    "options": [
-      {
-        "text": "We'll handle it case by case and address concerns individually.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed understanding of individual concerns, demonstrating good perception and empathy but moderate social skills and self-regulation."
-      },
-      {
-        "text": "If we listen to feedback and make adjustments, it could work out.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a flexible approach by considering feedback, showing good self-regulation and social skills but moderate perception and empathy."
-      },
-      {
-        "text": "We can't always please everyone, but we should remain transparent.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized transparency despite potential dissatisfaction, showing good social skills and motivation but lower empathy."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob shrugs while looking at Monica and you.",
+        "role": "You",
+        "location": "Break Room",
+        "description": "'Explaining the decision process might help, but what if people are still unhappy?'",
+        "options": [
+            {
+                "text": "We'll handle it case by case and address concerns individually.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed understanding of individual concerns, demonstrating good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "If we listen to feedback and make adjustments, it could work out.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a flexible approach by considering feedback, showing good self-regulation and social skills but moderate perception and empathy."
+            },
+            {
+                "text": "We can't always please everyone, but we should remain transparent.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized transparency despite potential dissatisfaction, showing good social skills and motivation but lower empathy."
+            }
+        ]
+    }
 }

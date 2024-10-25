@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica furrows her brow, glancing between you and Bob.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'I don't understand why we can't find a way to be both quick and thorough. Is that too much to ask?'",
-    "options": [
-      {
-        "text": "Maybe we can outline a plan that addresses both speed and thoroughness?",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You propose a balanced approach, showing good perception and empathy while trying to address both concerns."
-      },
-      {
-        "text": "Monica, finding the perfect balance is challenging, but we should aim for it.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the difficulty of the situation, showing good self-regulation and social skills while aiming for a balanced approach."
-      },
-      {
-        "text": "Honestly, it might be unrealistic to expect both. We might have to prioritize one.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You highlight the difficulty of achieving both goals simultaneously, showing higher motivation but lower empathy towards Monica’s concerns."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica furrows her brow, glancing between you and Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'I don't understand why we can't find a way to be both quick and thorough. Is that too much to ask?'",
+        "options": [
+            {
+                "text": "Maybe we can outline a plan that addresses both speed and thoroughness?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach, showing good perception and empathy while trying to address both concerns."
+            },
+            {
+                "text": "Monica, finding the perfect balance is challenging, but we should aim for it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the difficulty of the situation, showing good self-regulation and social skills while aiming for a balanced approach."
+            },
+            {
+                "text": "Honestly, it might be unrealistic to expect both. We might have to prioritize one.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the difficulty of achieving both goals simultaneously, showing higher motivation but lower empathy towards Monica’s concerns."
+            }
+        ]
+    }
 }

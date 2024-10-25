@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob rubs his temples, looking exasperated.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "'Prioritizing quick wins could backfire. What if we miss something crucial?'",
-    "options": [
-      {
-        "text": "We should weigh the risks accordingly. Let's list potential pitfalls.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge Bob's concern and propose a balanced approach, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I understand your worry, Bob, but we need to keep moving. Let's address issues as they arise.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need to progress while showing empathy towards Bob's concern, indicating motivation and balance."
-      },
-      {
-        "text": "Sometimes we need to take calculated risks. Overthinking can lead to paralysis.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You highlight the need for quick decision-making, showing good perception of the urgency but lower empathy towards thoroughness."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob rubs his temples, looking exasperated.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'Prioritizing quick wins could backfire. What if we miss something crucial?'",
+        "options": [
+            {
+                "text": "We should weigh the risks accordingly. Let's list potential pitfalls.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob's concern and propose a balanced approach, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I understand your worry, Bob, but we need to keep moving. Let's address issues as they arise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need to progress while showing empathy towards Bob's concern, indicating motivation and balance."
+            },
+            {
+                "text": "Sometimes we need to take calculated risks. Overthinking can lead to paralysis.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the need for quick decision-making, showing good perception of the urgency but lower empathy towards thoroughness."
+            }
+        ]
+    }
 }

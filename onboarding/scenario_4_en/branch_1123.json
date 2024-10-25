@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] frowns and starts gathering documents, while [Bob] checks his phone anxiously.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'We need to coordinate our efforts. Who is taking the lead on this?'",
-    "options": [
-      {
-        "text": "Let's divide the leadership based on our strengths and collaborate efficiently.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You proposed a balanced approach by leveraging everyone's strengths, showing good perception and social skills, but a moderate level of empathy and self-regulation."
-      },
-      {
-        "text": "Monica, you have the most experience here. Can you lead us while we support you?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Monica's expertise and suggested she lead, showing high empathy and social skills, but lower motivation to take the lead yourself."
-      },
-      {
-        "text": "We can't waste time deciding. I'll take the lead, and let's get started immediately.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You took immediate action and assumed leadership, showing high motivation and social skills, but lower empathy and self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica frowns and starts gathering documents, while Bob checks his phone anxiously.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We need to coordinate our efforts. Who is taking the lead on this?'",
+        "options": [
+            {
+                "text": "Let's divide the leadership based on our strengths and collaborate efficiently.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a balanced approach by leveraging everyone's strengths, showing good perception and social skills, but a moderate level of empathy and self-regulation."
+            },
+            {
+                "text": "Monica, you have the most experience here. Can you lead us while we support you?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged Monica's expertise and suggested she lead, showing high empathy and social skills, but lower motivation to take the lead yourself."
+            },
+            {
+                "text": "We can't waste time deciding. I'll take the lead, and let's get started immediately.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You took immediate action and assumed leadership, showing high motivation and social skills, but lower empathy and self-regulation."
+            }
+        ]
+    }
 }

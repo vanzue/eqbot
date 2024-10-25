@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica raises an eyebrow at your suggestion.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'While a detailed plan is essential, we might be overdoing it. Thoughts?'",
-    "options": [
-      {
-        "text": "We need to ensure we’re thorough, but I’m open to simplifying where it makes sense.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the necessity of being thorough while showing willingness to simplify, demonstrating empathy and perception."
-      },
-      {
-        "text": "I think sticking to a detailed plan is crucial; skipping steps could cause issues later.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You emphasize the importance of detailed planning, showing good self-regulation and social skills."
-      },
-      {
-        "text": "A detailed plan is important, but we can identify and simplify non-essential parts later.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You propose a methodical approach, reflecting good motivation and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica raises an eyebrow at your suggestion.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'While a detailed plan is essential, we might be overdoing it. Thoughts?'",
+        "options": [
+            {
+                "text": "We need to ensure we’re thorough, but I’m open to simplifying where it makes sense.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the necessity of being thorough while showing willingness to simplify, demonstrating empathy and perception."
+            },
+            {
+                "text": "I think sticking to a detailed plan is crucial; skipping steps could cause issues later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You emphasize the importance of detailed planning, showing good self-regulation and social skills."
+            },
+            {
+                "text": "A detailed plan is important, but we can identify and simplify non-essential parts later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a methodical approach, reflecting good motivation and social skills."
+            }
+        ]
+    }
 }

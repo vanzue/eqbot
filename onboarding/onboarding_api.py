@@ -30,7 +30,7 @@ class ScenarioManager:
         # self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
         # self.scenario_id_en = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename_en))
         if locale == "en":
-            self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(0, len(self.filename_en))
+            self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(1, len(self.filename_en))
         else:
             self.scenario_id = scenario_id if scenario_id is not None and scenario_id < len(self.filename) else random.randrange(0, len(self.filename))
 
@@ -105,7 +105,7 @@ class ScenarioManager:
         
         for key in self.scores:
             avg_score = self.scores[key] / self.choice_count
-            scaled_score = min(max(round(avg_score * 20), 0), 100)
+            scaled_score = min(max(round(avg_score * 4), 0), 20)
             self.scores[key] = scaled_score
 
         min_score = min(self.scores.values())

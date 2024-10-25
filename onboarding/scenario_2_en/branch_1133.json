@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica glances at her watch, looking concerned.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'We're running out of time. We need to wrap this up.'",
-    "options": [
-      {
-        "text": "I hear you, Bob. Let's summarize our key points quickly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show empathy by acknowledging Bob's concern and aim to quickly summarize, demonstrating good social skills and emotional perception."
-      },
-      {
-        "text": "Agreed, but let's ensure we cover all critical aspects before concluding.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You balance the need for thorough coverage with time constraints, showing good self-regulation and social skills."
-      },
-      {
-        "text": "We can always extend the meeting if necessary. Rushing might lead to errors.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggest extending the meeting to ensure thorough discussion, showing empathy and motivation to avoid mistakes."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica glances at her watch, looking concerned.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'We're running out of time. We need to wrap this up.'",
+        "options": [
+            {
+                "text": "I hear you, Bob. Let's summarize our key points quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by acknowledging Bob's concern and aim to quickly summarize, demonstrating good social skills and emotional perception."
+            },
+            {
+                "text": "Agreed, but let's ensure we cover all critical aspects before concluding.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You balance the need for thorough coverage with time constraints, showing good self-regulation and social skills."
+            },
+            {
+                "text": "We can always extend the meeting if necessary. Rushing might lead to errors.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest extending the meeting to ensure thorough discussion, showing empathy and motivation to avoid mistakes."
+            }
+        ]
+    }
 }

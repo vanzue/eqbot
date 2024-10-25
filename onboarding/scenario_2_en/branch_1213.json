@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob sighs and shakes his head slightly.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'Taking risks sounds great, but what if it backfires on us?'",
-    "options": [
-      {
-        "text": "Every decision has risks, but we can mitigate them with a solid plan.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show a balanced approach by acknowledging the risks and suggesting a method to handle them, demonstrating good self-regulation and social skill."
-      },
-      {
-        "text": "I understand your concern, Bob, but sometimes we need to take calculated risks for greater rewards.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You empathize with Bob's concerns but emphasize the importance of taking risks, showing motivation and a willingness to balance caution with ambition."
-      },
-      {
-        "text": "If we keep avoiding risks, we'll never achieve anything significant.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 5
-        },
-        "analysis": "You highlight the necessity of taking risks to achieve success, showing high motivation but less empathy and social skill."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs and shakes his head slightly.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'Taking risks sounds great, but what if it backfires on us?'",
+        "options": [
+            {
+                "text": "Every decision has risks, but we can mitigate them with a solid plan.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show a balanced approach by acknowledging the risks and suggesting a method to handle them, demonstrating good self-regulation and social skill."
+            },
+            {
+                "text": "I understand your concern, Bob, but sometimes we need to take calculated risks for greater rewards.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You empathize with Bob's concerns but emphasize the importance of taking risks, showing motivation and a willingness to balance caution with ambition."
+            },
+            {
+                "text": "If we keep avoiding risks, we'll never achieve anything significant.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 5
+                },
+                "analysis": "You highlight the necessity of taking risks to achieve success, showing high motivation but less empathy and social skill."
+            }
+        ]
+    }
 }

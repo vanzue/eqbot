@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You, Monica, and Bob are discussing the celebration planning.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob sighs and says, 'But a formal dinner seems too stiff.'",
-    "options": [
-      {
-        "text": "Formal dinners can be elegant and memorable.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the suggestion, showing good self-regulation, but empathy, perception, and social skills were only moderate."
-      },
-      {
-        "text": "Let's try to balance between fun and formality.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed empathy and perception by considering a balance, but motivation and self-regulation were moderate."
-      },
-      {
-        "text": "A formal dinner might not be the best for everyone, let's think of other options.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You showed good social skill and motivation by considering other options, but empathy, perception, and self-regulation were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "You, Monica, and Bob are discussing the celebration planning.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob sighs and says, 'But a formal dinner seems too stiff.'",
+        "options": [
+            {
+                "text": "Formal dinners can be elegant and memorable.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the suggestion, showing good self-regulation, but empathy, perception, and social skills were only moderate."
+            },
+            {
+                "text": "Let's try to balance between fun and formality.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed empathy and perception by considering a balance, but motivation and self-regulation were moderate."
+            },
+            {
+                "text": "A formal dinner might not be the best for everyone, let's think of other options.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You showed good social skill and motivation by considering other options, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
 }

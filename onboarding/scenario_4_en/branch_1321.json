@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] looks relieved but [Bob] still seems agitated, tapping his foot.",
-    "role": "[Monica]",
-    "location": "Conference Room",
-    "description": "'Thanks for your input. So, should we schedule another meeting to go over the details?'",
-    "options": [
-      {
-        "text": "I think that's a good idea. Let's make sure we have all the necessary information first.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You supported the idea of another meeting with a focus on preparation, showing good perception and self-regulation, but the emotional impact on others was not deeply addressed."
-      },
-      {
-        "text": "Monica, maybe you can outline what needs to be addressed before we meet again.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You directed the task of outlining details to Monica, showing empathy and social skills, but your perception of the broader problem could be stronger."
-      },
-      {
-        "text": "Bob, do you think a meeting will resolve this, or should we take a different approach?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You asked for Bob's opinion, showing good social skill, but your empathy and motivation to immediately resolve the issue were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks relieved but Bob still seems agitated, tapping his foot.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Thanks for your input. So, should we schedule another meeting to go over the details?'",
+        "options": [
+            {
+                "text": "I think that's a good idea. Let's make sure we have all the necessary information first.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You supported the idea of another meeting with a focus on preparation, showing good perception and self-regulation, but the emotional impact on others was not deeply addressed."
+            },
+            {
+                "text": "Monica, maybe you can outline what needs to be addressed before we meet again.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You directed the task of outlining details to Monica, showing empathy and social skills, but your perception of the broader problem could be stronger."
+            },
+            {
+                "text": "Bob, do you think a meeting will resolve this, or should we take a different approach?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You asked for Bob's opinion, showing good social skill, but your empathy and motivation to immediately resolve the issue were lower."
+            }
+        ]
+    }
 }

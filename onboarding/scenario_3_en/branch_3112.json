@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] nods thoughtfully while glancing at [Monica].",
-    "role": "[Monica]",
-    "location": "Meeting Room",
-    "description": "'Making everyone happy sounds ideal, but is it realistic?'",
-    "options": [
-      {
-        "text": "It's a challenge, but with cooperation, we can achieve it.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the difficulty but emphasized teamwork and cooperation, showing good perception and empathy, but self-regulation and social skills were moderate."
-      },
-      {
-        "text": "We need to be realistic about what we can achieve.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You grounded the conversation in realism, showing good self-regulation and motivation, but empathy and social skills were moderate."
-      },
-      {
-        "text": "Maybe I'm being too optimistic. We should focus on what's feasible.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You reconsidered your stance, showing good empathy and motivation, but social skill and perception were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob nods thoughtfully while glancing at Monica.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "'Making everyone happy sounds ideal, but is it realistic?'",
+        "options": [
+            {
+                "text": "It's a challenge, but with cooperation, we can achieve it.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the difficulty but emphasized teamwork and cooperation, showing good perception and empathy, but self-regulation and social skills were moderate."
+            },
+            {
+                "text": "We need to be realistic about what we can achieve.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You grounded the conversation in realism, showing good self-regulation and motivation, but empathy and social skills were moderate."
+            },
+            {
+                "text": "Maybe I'm being too optimistic. We should focus on what's feasible.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You reconsidered your stance, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
 }

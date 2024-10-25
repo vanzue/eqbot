@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica seems slightly more relaxed but still apprehensive.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'I think we need more data before making a final decision.'",
-    "options": [
-      {
-        "text": "Let's gather the necessary data quickly to avoid further delays.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledge Bob's point and show motivation to resolve the issue quickly while maintaining good self-regulation."
-      },
-      {
-        "text": "We understand the importance of data, but let's make a decision based on what we have.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You balance the need for thoroughness with the urgency to proceed, demonstrating empathy and perception."
-      },
-      {
-        "text": "If we keep waiting for more data, we'll miss our deadlines. We have to decide now.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of deadlines and push for a quick decision, showing social skill and motivation to move forward."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica seems slightly more relaxed but still apprehensive.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'I think we need more data before making a final decision.'",
+        "options": [
+            {
+                "text": "Let's gather the necessary data quickly to avoid further delays.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Bob's point and show motivation to resolve the issue quickly while maintaining good self-regulation."
+            },
+            {
+                "text": "We understand the importance of data, but let's make a decision based on what we have.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You balance the need for thoroughness with the urgency to proceed, demonstrating empathy and perception."
+            },
+            {
+                "text": "If we keep waiting for more data, we'll miss our deadlines. We have to decide now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of deadlines and push for a quick decision, showing social skill and motivation to move forward."
+            }
+        ]
+    }
 }

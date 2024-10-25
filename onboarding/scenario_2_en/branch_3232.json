@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica sighs and checks her notes.",
-    "role": "Alex",
-    "location": "Conference Room",
-    "description": "Alex says, 'We really can't afford to delay this project any longer.'",
-    "options": [
-      {
-        "text": "I get your point, but let's not rush and miss crucial details.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge Alex's urgency but emphasize the importance of detailed planning, showing empathy and perception."
-      },
-      {
-        "text": "How about we set smaller milestones to ensure we're on track?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a practical approach to balance speed and thoroughness, demonstrating good self-regulation and social skills."
-      },
-      {
-        "text": "Rushing might lead to mistakes that could delay us even more.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You stress the potential negative consequences of rushing, reflecting good motivation and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and checks her notes.",
+        "role": "Alex",
+        "location": "Conference Room",
+        "description": "Alex says, 'We really can't afford to delay this project any longer.'",
+        "options": [
+            {
+                "text": "I get your point, but let's not rush and miss crucial details.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Alex's urgency but emphasize the importance of detailed planning, showing empathy and perception."
+            },
+            {
+                "text": "How about we set smaller milestones to ensure we're on track?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a practical approach to balance speed and thoroughness, demonstrating good self-regulation and social skills."
+            },
+            {
+                "text": "Rushing might lead to mistakes that could delay us even more.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You stress the potential negative consequences of rushing, reflecting good motivation and social skills."
+            }
+        ]
+    }
 }

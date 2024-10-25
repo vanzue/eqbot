@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) sighs and sits down, rubbing her temples. (Bob) stops pacing.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "'We've tried everyone else. You're our last hope. Can you really not spare a bit more time?'",
-    "options": [
-      {
-        "text": "I can manage a little more, but let's keep it brief.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You offered to extend your help slightly, showing empathy and perception, but your motivation and self-regulation could be stronger."
-      },
-      {
-        "text": "I can’t extend my help further. Maybe it's time to delegate differently.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the situation but stood firm on your boundaries, demonstrating strong self-regulation but lower empathy and motivation to help."
-      },
-      {
-        "text": "It's frustrating that this always falls on me. We need a better plan.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and might strain your relationship with colleagues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and sits down, rubbing her temples. Bob stops pacing.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We've tried everyone else. You're our last hope. Can you really not spare a bit more time?'",
+        "options": [
+            {
+                "text": "I can manage a little more, but let's keep it brief.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered to extend your help slightly, showing empathy and perception, but your motivation and self-regulation could be stronger."
+            },
+            {
+                "text": "I can’t extend my help further. Maybe it's time to delegate differently.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the situation but stood firm on your boundaries, demonstrating strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "It's frustrating that this always falls on me. We need a better plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob pinches the bridge of his nose, looking stressed.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "'Alex, making a quick decision might backfire. Can we rethink our approach?'",
-    "options": [
-      {
-        "text": "Let's brainstorm a few solutions and then decide on the best one quickly.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a balanced approach, showing good self-regulation and social skill, while aiming to quickly reach a decision."
-      },
-      {
-        "text": "Alex has a point about speed. Let's make a quick decision and adjust as we go.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You side with Alex's urgency, showing high motivation and perception but lower empathy for Bob's concern for thoroughness."
-      },
-      {
-        "text": "Rushing could lead to mistakes, Alex. Can we afford those risks?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the risks of rushing, showing empathy for Bob's concerns and motivation to ensure a careful approach."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob pinches the bridge of his nose, looking stressed.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'Alex, making a quick decision might backfire. Can we rethink our approach?'",
+        "options": [
+            {
+                "text": "Let's brainstorm a few solutions and then decide on the best one quickly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a balanced approach, showing good self-regulation and social skill, while aiming to quickly reach a decision."
+            },
+            {
+                "text": "Alex has a point about speed. Let's make a quick decision and adjust as we go.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You side with Alex's urgency, showing high motivation and perception but lower empathy for Bob's concern for thoroughness."
+            },
+            {
+                "text": "Rushing could lead to mistakes, Alex. Can we afford those risks?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the risks of rushing, showing empathy for Bob's concerns and motivation to ensure a careful approach."
+            }
+        ]
+    }
 }

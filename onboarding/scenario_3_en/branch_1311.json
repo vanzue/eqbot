@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica, Bob, and you are still discussing the celebration ideas.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob scratches his head and says, 'A bar party might be too wild for some of us.'",
-    "options": [
-      {
-        "text": "Bars can be fun if we plan it well; let's make it enjoyable for everyone.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy and self-regulation were moderate."
-      },
-      {
-        "text": "Maybe we can find a quieter bar with a nice atmosphere.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and consideration by proposing a compromise, but perception and social skill were moderate."
-      },
-      {
-        "text": "Bars might not be everyone's favorite, so let's consider other options too.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica, Bob, and you are still discussing the celebration ideas.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob scratches his head and says, 'A bar party might be too wild for some of us.'",
+        "options": [
+            {
+                "text": "Bars can be fun if we plan it well; let's make it enjoyable for everyone.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Maybe we can find a quieter bar with a nice atmosphere.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and consideration by proposing a compromise, but perception and social skill were moderate."
+            },
+            {
+                "text": "Bars might not be everyone's favorite, so let's consider other options too.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
 }

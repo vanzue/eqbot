@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] takes a deep breath and sits back down, trying to compose herself. [Bob] leans against the desk, looking irritated.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Maybe we do need to rethink our process. What do you both think?'",
-    "options": [
-      {
-        "text": "It's a good idea. Let's have a brainstorming session later.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a collaborative solution, showing good self-regulation and motivation, though perception and empathy were moderate."
-      },
-      {
-        "text": "We need to stick to the plan. Changing now would cause more confusion.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You focused on maintaining the current plan, demonstrating strong social skills but lower empathy and motivation to adapt."
-      },
-      {
-        "text": "I'm not sure. Maybe we need more input before deciding.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You suggested seeking more input, showing good perception but lower motivation and self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica takes a deep breath and sits back down, trying to compose herself. Bob leans against the desk, looking irritated.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Maybe we do need to rethink our process. What do you both think?'",
+        "options": [
+            {
+                "text": "It's a good idea. Let's have a brainstorming session later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a collaborative solution, showing good self-regulation and motivation, though perception and empathy were moderate."
+            },
+            {
+                "text": "We need to stick to the plan. Changing now would cause more confusion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You focused on maintaining the current plan, demonstrating strong social skills but lower empathy and motivation to adapt."
+            },
+            {
+                "text": "I'm not sure. Maybe we need more input before deciding.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested seeking more input, showing good perception but lower motivation and self-regulation."
+            }
+        ]
+    }
 }

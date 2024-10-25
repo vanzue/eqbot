@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica and Bob are now seated, looking at you expectantly.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'So, what's the plan now?'",
-    "options": [
-      {
-        "text": "We'll proceed with a balanced approach, considering both speed and thoroughness.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You aim for a balanced approach, demonstrating good self-regulation and social skills, but the perception and empathy are moderate."
-      },
-      {
-        "text": "Let's focus on getting the key points right first, then we can refine the details.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You suggest prioritizing key points first, showing motivation and social skill, but lacking in perception and empathy."
-      },
-      {
-        "text": "We need to ensure everything is perfect before moving forward.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You emphasize thoroughness, showing good perception and empathy, but your motivation to proceed quickly is somewhat reduced."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are now seated, looking at you expectantly.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'So, what's the plan now?'",
+        "options": [
+            {
+                "text": "We'll proceed with a balanced approach, considering both speed and thoroughness.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You aim for a balanced approach, demonstrating good self-regulation and social skills, but the perception and empathy are moderate."
+            },
+            {
+                "text": "Let's focus on getting the key points right first, then we can refine the details.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest prioritizing key points first, showing motivation and social skill, but lacking in perception and empathy."
+            },
+            {
+                "text": "We need to ensure everything is perfect before moving forward.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize thoroughness, showing good perception and empathy, but your motivation to proceed quickly is somewhat reduced."
+            }
+        ]
+    }
 }

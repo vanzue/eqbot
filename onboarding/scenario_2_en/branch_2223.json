@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob looks at the clock, shaking his head in frustration.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "'We can't afford mistakes, but dragging this out isn't helping either.'",
-    "options": [
-      {
-        "text": "We need to find a balance. Can we set a deadline for this discussion?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You propose setting a deadline to balance thorough discussion and timely decision-making, showing good self-regulation and social skill."
-      },
-      {
-        "text": "I hear you, Bob. But we need to finalize something now and tweak it later if needed.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need to finalize a decision quickly, showing high motivation and perception but lower empathy for Bob's cautious approach."
-      },
-      {
-        "text": "Bob, rushing might lead to mistakes. We need to be thorough, even if it takes more time.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You stress the importance of being thorough, showing empathy and motivation for a careful approach."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks at the clock, shaking his head in frustration.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'We can't afford mistakes, but dragging this out isn't helping either.'",
+        "options": [
+            {
+                "text": "We need to find a balance. Can we set a deadline for this discussion?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose setting a deadline to balance thorough discussion and timely decision-making, showing good self-regulation and social skill."
+            },
+            {
+                "text": "I hear you, Bob. But we need to finalize something now and tweak it later if needed.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need to finalize a decision quickly, showing high motivation and perception but lower empathy for Bob's cautious approach."
+            },
+            {
+                "text": "Bob, rushing might lead to mistakes. We need to be thorough, even if it takes more time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You stress the importance of being thorough, showing empathy and motivation for a careful approach."
+            }
+        ]
+    }
 }

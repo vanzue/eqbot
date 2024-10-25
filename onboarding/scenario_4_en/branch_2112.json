@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) flips through some papers, visibly worried. (Bob) taps his foot impatiently.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "‘Alright, but we really need to get this done. Any last thoughts before we proceed?’",
-    "options": [
-      {
-        "text": "Let's assign tasks based on each team member's strengths.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a constructive approach, showcasing strong perception and empathy, though your self-regulation could be a bit stronger."
-      },
-      {
-        "text": "I think you and Bob can handle it. Just prioritize the most critical tasks.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a practical solution while maintaining your stance on leave, showing strong self-regulation but lower empathy."
-      },
-      {
-        "text": "Monica, you're overthinking it. Bob can manage the task. It's his responsibility.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might negatively impact team dynamics."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica flips through some papers, visibly worried. Bob taps his foot impatiently.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "‘Alright, but we really need to get this done. Any last thoughts before we proceed?’",
+        "options": [
+            {
+                "text": "Let's assign tasks based on each team member's strengths.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You proposed a constructive approach, showcasing strong perception and empathy, though your self-regulation could be a bit stronger."
+            },
+            {
+                "text": "I think you and Bob can handle it. Just prioritize the most critical tasks.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical solution while maintaining your stance on leave, showing strong self-regulation but lower empathy."
+            },
+            {
+                "text": "Monica, you're overthinking it. Bob can manage the task. It's his responsibility.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might negatively impact team dynamics."
+            }
+        ]
+    }
 }

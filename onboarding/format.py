@@ -71,6 +71,9 @@ import json
 def remove_brackets(text):
     return text.replace("[", "").replace("]", "")
 
+def remove_brackets2(text):
+    return text.replace("(", "").replace(")", "")
+
 # 删除编号的函数
 def remove_numbering(text):
     return text.lstrip("1234567890.")
@@ -89,7 +92,11 @@ def process_file(file_path):
         data['scenes']['background'] = remove_brackets(data['scenes'].get('background', ''))
         data['scenes']['role'] = remove_brackets(data['scenes'].get('role', ''))
         data['scenes']['description'] = remove_brackets(data['scenes'].get('description', ''))
-        
+
+        data['scenes']['background'] = remove_brackets2(data['scenes'].get('background', ''))
+        data['scenes']['role'] = remove_brackets2(data['scenes'].get('role', ''))
+        data['scenes']['description'] = remove_brackets2(data['scenes'].get('description', ''))
+
         for option in data['scenes'].get('options', []):
             option['text'] = remove_numbering(option.get('text', ''))
 
@@ -111,7 +118,7 @@ def process_folder(folder_path):
 # process_file("D:\\VSCode_Porgrams\\eqbot\\onboarding\\scenario_1\\branch_.json")
 
 # 设定目标文件夹路径
-folder_path = r'D:\\VSCode_Porgrams\\eqbot\\onboarding\\scenario_10'  # 修改为你的文件夹路径
+folder_path = r'D:\\VSCode_Porgrams\\eqbot\\onboarding\\scenario_2_en'  # 修改为你的文件夹路径
 
 # 开始处理文件夹中的所有 JSON 文件
 process_folder(folder_path)

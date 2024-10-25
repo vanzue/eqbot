@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) runs her fingers through her hair, visibly frustrated. (Bob) leans against the wall, arms crossed.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "'If we don't finish this, it will reflect poorly on all of us. Are you sure you can't stay a bit longer?'",
-    "options": [
-      {
-        "text": "I get how important this is. Let's push through and finish it quickly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the collective responsibility and offered to help more, showing good empathy and perception, though your self-regulation could be stronger."
-      },
-      {
-        "text": "I understand, but I need to respect my boundaries. There must be another way.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You stood firm on needing to respect your boundaries, showing strong self-regulation but lower empathy and motivation to help."
-      },
-      {
-        "text": "It's frustrating that this always falls on me. We need a better system.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially straining relationships with your colleagues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica runs her fingers through her hair, visibly frustrated. Bob leans against the wall, arms crossed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'If we don't finish this, it will reflect poorly on all of us. Are you sure you can't stay a bit longer?'",
+        "options": [
+            {
+                "text": "I get how important this is. Let's push through and finish it quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the collective responsibility and offered to help more, showing good empathy and perception, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I understand, but I need to respect my boundaries. There must be another way.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You stood firm on needing to respect your boundaries, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "It's frustrating that this always falls on me. We need a better system.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially straining relationships with your colleagues."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] are discussing the task while you are on leave, and you decide to join the discussion via a quick text message.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Can you at least review this document quickly? We’re really stuck.'",
-    "options": [
-      {
-        "text": "I can take a quick look and give you some feedback.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and willingness to help, but your self-regulation and motivation to maintain your leave were slightly lower."
-      },
-      {
-        "text": "I’m on leave, but I can give you a brief review.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
-      },
-      {
-        "text": "I think you can manage this without me. Follow the guidelines I left.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are discussing the task while you are on leave, and you decide to join the discussion via a quick text message.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Can you at least review this document quickly? We’re really stuck.'",
+        "options": [
+            {
+                "text": "I can take a quick look and give you some feedback.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and willingness to help, but your self-regulation and motivation to maintain your leave were slightly lower."
+            },
+            {
+                "text": "I’m on leave, but I can give you a brief review.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+            },
+            {
+                "text": "I think you can manage this without me. Follow the guidelines I left.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

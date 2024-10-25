@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] glances at [Bob], who looks exasperated after reading your message.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'This is really important. Are you absolutely sure you can't help us out just this once?'",
-    "options": [
-      {
-        "text": "I'll briefly assist, but I can't commit to a full review.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You offered partial help, displaying a balanced approach but no strong inclination toward any specific emotional intelligence dimension."
-      },
-      {
-        "text": "I understand the urgency, but I need to respect my leave. You'll have to manage.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained your boundaries, showing strong self-regulation, but lower empathy and motivation to assist."
-      },
-      {
-        "text": "Alright, I'll take a quick look and give you my thoughts.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You decided to help despite being on leave, demonstrating strong empathy and social skills but lower self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica glances at Bob, who looks exasperated after reading your message.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'This is really important. Are you absolutely sure you can't help us out just this once?'",
+        "options": [
+            {
+                "text": "I'll briefly assist, but I can't commit to a full review.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered partial help, displaying a balanced approach but no strong inclination toward any specific emotional intelligence dimension."
+            },
+            {
+                "text": "I understand the urgency, but I need to respect my leave. You'll have to manage.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries, showing strong self-regulation, but lower empathy and motivation to assist."
+            },
+            {
+                "text": "Alright, I'll take a quick look and give you my thoughts.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You decided to help despite being on leave, demonstrating strong empathy and social skills but lower self-regulation."
+            }
+        ]
+    }
 }

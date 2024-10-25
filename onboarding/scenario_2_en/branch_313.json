@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica nods but looks at Bob, who seems uneasy.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'I just don't want us to miss an important detail. We should be cautious.'",
-    "options": [
-      {
-        "text": "Bob, your attention to detail is crucial. Let's focus on key points quickly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You recognize Bob's concern and value his meticulousness while encouraging a more efficient approach."
-      },
-      {
-        "text": "I agree with Monica. We need to start immediately, even if some details are overlooked.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You side with Monica, showing decisiveness and motivation but risking lower empathy for Bob's concern."
-      },
-      {
-        "text": "Well, it's your call, Bob. We'll follow your lead on this.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You defer to Bob, demonstrating empathy and self-regulation, but potentially slowing progress."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods but looks at Bob, who seems uneasy.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'I just don't want us to miss an important detail. We should be cautious.'",
+        "options": [
+            {
+                "text": "Bob, your attention to detail is crucial. Let's focus on key points quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize Bob's concern and value his meticulousness while encouraging a more efficient approach."
+            },
+            {
+                "text": "I agree with Monica. We need to start immediately, even if some details are overlooked.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You side with Monica, showing decisiveness and motivation but risking lower empathy for Bob's concern."
+            },
+            {
+                "text": "Well, it's your call, Bob. We'll follow your lead on this.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You defer to Bob, demonstrating empathy and self-regulation, but potentially slowing progress."
+            }
+        ]
+    }
 }

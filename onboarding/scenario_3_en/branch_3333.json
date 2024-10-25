@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] rubs his temples and glances at [Monica].",
-    "role": "Bob",
-    "location": "Break Room",
-    "description": "'Maybe we should just do nothing and skip the celebration.'",
-    "options": [
-      {
-        "text": "Skipping the celebration seems extreme, but maybe we need a break.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You considered the idea but acknowledged the need for rest, showing good empathy and motivation, but lower social skills."
-      },
-      {
-        "text": "Doing nothing might save us the hassle, but it could also demotivate the team.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You pointed out the potential downsides of skipping the celebration, showing good perception and balanced emotional control."
-      },
-      {
-        "text": "That's not fair to everyone who contributed. We should find a way to celebrate.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You disagreed with skipping the celebration, stressing the importance of recognizing contributions, showing good self-regulation and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob rubs his temples and glances at Monica.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "'Maybe we should just do nothing and skip the celebration.'",
+        "options": [
+            {
+                "text": "Skipping the celebration seems extreme, but maybe we need a break.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You considered the idea but acknowledged the need for rest, showing good empathy and motivation, but lower social skills."
+            },
+            {
+                "text": "Doing nothing might save us the hassle, but it could also demotivate the team.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You pointed out the potential downsides of skipping the celebration, showing good perception and balanced emotional control."
+            },
+            {
+                "text": "That's not fair to everyone who contributed. We should find a way to celebrate.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You disagreed with skipping the celebration, stressing the importance of recognizing contributions, showing good self-regulation and social skills."
+            }
+        ]
+    }
 }

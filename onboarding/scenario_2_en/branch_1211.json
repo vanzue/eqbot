@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica nods but still looks uncertain. Bob glances at you, waiting.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'Even with a review, I'm worried we might miss critical details.'",
-    "options": [
-      {
-        "text": "We can create a checklist to ensure we cover all bases during the review.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show empathy and good social skills by suggesting a practical solution that addresses Bob's concern while keeping the project on track."
-      },
-      {
-        "text": "I understand your worry, Bob, but we have to trust our process and move forward.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledge Bob's concern but emphasize the need for progress, showing good self-regulation and motivation."
-      },
-      {
-        "text": "Maybe we're overthinking this. Sometimes, quick decisions lead to innovative solutions.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You challenge the cautious approach, highlighting the potential benefits of quick decisions, showing motivation but less empathy and social skill."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods but still looks uncertain. Bob glances at you, waiting.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'Even with a review, I'm worried we might miss critical details.'",
+        "options": [
+            {
+                "text": "We can create a checklist to ensure we cover all bases during the review.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy and good social skills by suggesting a practical solution that addresses Bob's concern while keeping the project on track."
+            },
+            {
+                "text": "I understand your worry, Bob, but we have to trust our process and move forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Bob's concern but emphasize the need for progress, showing good self-regulation and motivation."
+            },
+            {
+                "text": "Maybe we're overthinking this. Sometimes, quick decisions lead to innovative solutions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You challenge the cautious approach, highlighting the potential benefits of quick decisions, showing motivation but less empathy and social skill."
+            }
+        ]
+    }
 }

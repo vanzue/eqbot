@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) crosses her arms, looking at you with a raised eyebrow. (Bob) shakes his head slightly.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "‘So, you think it's all on us now? What do you suggest we do next?’",
-    "options": [
-      {
-        "text": "Let's call a quick team meeting to brainstorm solutions.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a collaborative approach, showing high perception and empathy, though your self-regulation could be stronger."
-      },
-      {
-        "text": "Maybe you can handle it yourselves. I need to focus on my leave.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You emphasized your need for leave, showing strong self-regulation but lower empathy and motivation to help."
-      },
-      {
-        "text": "If you can't handle it, maybe we need to rethink your roles.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was passive-aggressive, showing low empathy and self-regulation, potentially straining team dynamics."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica crosses her arms, looking at you with a raised eyebrow. Bob shakes his head slightly.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "‘So, you think it's all on us now? What do you suggest we do next?’",
+        "options": [
+            {
+                "text": "Let's call a quick team meeting to brainstorm solutions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You proposed a collaborative approach, showing high perception and empathy, though your self-regulation could be stronger."
+            },
+            {
+                "text": "Maybe you can handle it yourselves. I need to focus on my leave.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You emphasized your need for leave, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "If you can't handle it, maybe we need to rethink your roles.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was passive-aggressive, showing low empathy and self-regulation, potentially straining team dynamics."
+            }
+        ]
+    }
 }

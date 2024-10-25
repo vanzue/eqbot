@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] leans back in her chair, looking relieved. [Bob] nods, somewhat appeased.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Alright, let's brainstorm some solutions and delegate tasks accordingly.'",
-    "options": [
-      {
-        "text": "Great idea, Monica. Let’s list out the tasks and see who can take what.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You supported Monica's suggestion and took a proactive approach to organizing tasks, demonstrating strong perception, social skills, and motivation."
-      },
-      {
-        "text": "Monica, do you think we need more resources to handle these tasks?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You considered the possibility of needing additional resources, showing high empathy but moderate engagement and motivation."
-      },
-      {
-        "text": "Bob, are you okay with this plan? We need everyone on board.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You ensured Bob's agreement to the plan, showing good self-regulation but lower empathy and motivation to resolve the issue immediately."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica leans back in her chair, looking relieved. Bob nods, somewhat appeased.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Alright, let's brainstorm some solutions and delegate tasks accordingly.'",
+        "options": [
+            {
+                "text": "Great idea, Monica. Let’s list out the tasks and see who can take what.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You supported Monica's suggestion and took a proactive approach to organizing tasks, demonstrating strong perception, social skills, and motivation."
+            },
+            {
+                "text": "Monica, do you think we need more resources to handle these tasks?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You considered the possibility of needing additional resources, showing high empathy but moderate engagement and motivation."
+            },
+            {
+                "text": "Bob, are you okay with this plan? We need everyone on board.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You ensured Bob's agreement to the plan, showing good self-regulation but lower empathy and motivation to resolve the issue immediately."
+            }
+        ]
+    }
 }

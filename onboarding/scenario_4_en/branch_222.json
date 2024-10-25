@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Bob) looks frustrated, crossing his arms. (Monica) looks at you with a pleading expression.",
-    "role": "Bob",
-    "location": "Office",
-    "description": "'I don't think you understand how critical this is. Are you really going to leave us hanging?'",
-    "options": [
-      {
-        "text": "I understand the urgency, but my leave is essential for me to recharge. Let's find another solution.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the urgency but emphasized your need for rest, showing strong self-regulation but lower empathy and motivation to help."
-      },
-      {
-        "text": "Alright, I'll help out, but I can only spare an hour.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You offered limited help, showing balanced empathy and social skills, though your motivation and self-regulation were moderate."
-      },
-      {
-        "text": "This constant reliance on me isn't sustainable. We need to rethink our approach to handling emergencies.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks frustrated, crossing his arms. Monica looks at you with a pleading expression.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'I don't think you understand how critical this is. Are you really going to leave us hanging?'",
+        "options": [
+            {
+                "text": "I understand the urgency, but my leave is essential for me to recharge. Let's find another solution.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the urgency but emphasized your need for rest, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "Alright, I'll help out, but I can only spare an hour.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered limited help, showing balanced empathy and social skills, though your motivation and self-regulation were moderate."
+            },
+            {
+                "text": "This constant reliance on me isn't sustainable. We need to rethink our approach to handling emergencies.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

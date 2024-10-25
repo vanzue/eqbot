@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob sighs and leans back in his chair, visibly annoyed.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'Finding a middle ground seems impossible with such different approaches.'",
-    "options": [
-      {
-        "text": "Maybe we should consider the benefits of both methods to find a compromise.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show empathy by valuing both perspectives and suggest a balanced approach to reach a resolution."
-      },
-      {
-        "text": "I understand the challenge, but we need to act fast to stay on track.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the difficulty but emphasize the importance of timely action, showing good self-regulation and social skill."
-      },
-      {
-        "text": "If we can't agree, maybe we should just vote and go with the majority.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You propose a democratic solution, showing empathy and motivation to move forward while ensuring all voices are considered."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs and leans back in his chair, visibly annoyed.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'Finding a middle ground seems impossible with such different approaches.'",
+        "options": [
+            {
+                "text": "Maybe we should consider the benefits of both methods to find a compromise.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by valuing both perspectives and suggest a balanced approach to reach a resolution."
+            },
+            {
+                "text": "I understand the challenge, but we need to act fast to stay on track.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the difficulty but emphasize the importance of timely action, showing good self-regulation and social skill."
+            },
+            {
+                "text": "If we can't agree, maybe we should just vote and go with the majority.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a democratic solution, showing empathy and motivation to move forward while ensuring all voices are considered."
+            }
+        ]
+    }
 }

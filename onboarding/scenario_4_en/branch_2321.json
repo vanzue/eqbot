@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Bob) rubs his temples while (Monica) looks up from her screen, visibly frustrated.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "'It feels like we’re always scrambling. Maybe we should have a serious talk about our team’s efficiency.'",
-    "options": [
-      {
-        "text": "We could analyze our workflow and identify the bottlenecks. That might help.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a practical approach to solve the issue, showing good perception and social skills, though your self-regulation could be stronger."
-      },
-      {
-        "text": "I agree, but I think we need more than just a talk. We might need more manpower.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the problem but expressed skepticism about just having a talk, showing strong self-regulation but lower empathy and motivation."
-      },
-      {
-        "text": "If everyone was more proactive, we wouldn’t be in this mess all the time.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "Your response was somewhat passive-aggressive, indicating lower empathy and self-regulation, and it might strain relationships with colleagues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob rubs his temples while Monica looks up from her screen, visibly frustrated.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'It feels like we’re always scrambling. Maybe we should have a serious talk about our team’s efficiency.'",
+        "options": [
+            {
+                "text": "We could analyze our workflow and identify the bottlenecks. That might help.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical approach to solve the issue, showing good perception and social skills, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I agree, but I think we need more than just a talk. We might need more manpower.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the problem but expressed skepticism about just having a talk, showing strong self-regulation but lower empathy and motivation."
+            },
+            {
+                "text": "If everyone was more proactive, we wouldn’t be in this mess all the time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "Your response was somewhat passive-aggressive, indicating lower empathy and self-regulation, and it might strain relationships with colleagues."
+            }
+        ]
+    }
 }

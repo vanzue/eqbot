@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob leans forward, frowning as he looks at Monica.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "'How do you think we should handle these constant disagreements?'",
-    "options": [
-      {
-        "text": "We need to establish clear guidelines for decision-making to reduce conflicts.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a structured approach, showing good self-regulation and social skills while acknowledging the need for clearer processes."
-      },
-      {
-        "text": "Bob, maybe we just need to accept that some conflict is inevitable and manage it better.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledge the inevitability of conflict and suggest better management, showing good perception and motivation but lower empathy."
-      },
-      {
-        "text": "Perhaps we should focus on understanding each other's work styles and finding common ground.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize empathy by suggesting an understanding of different work styles, showing good motivation to find common ground."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob leans forward, frowning as he looks at Monica.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'How do you think we should handle these constant disagreements?'",
+        "options": [
+            {
+                "text": "We need to establish clear guidelines for decision-making to reduce conflicts.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a structured approach, showing good self-regulation and social skills while acknowledging the need for clearer processes."
+            },
+            {
+                "text": "Bob, maybe we just need to accept that some conflict is inevitable and manage it better.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge the inevitability of conflict and suggest better management, showing good perception and motivation but lower empathy."
+            },
+            {
+                "text": "Perhaps we should focus on understanding each other's work styles and finding common ground.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize empathy by suggesting an understanding of different work styles, showing good motivation to find common ground."
+            }
+        ]
+    }
 }

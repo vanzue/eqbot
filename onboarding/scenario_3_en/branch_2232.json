@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] and [Monica] are discussing the celebration. [Monica] looks thoughtful.",
-    "role": "[Monica]",
-    "location": "Conference Room",
-    "description": "'Should we ask everyone for their input on the celebration?'",
-    "options": [
-      {
-        "text": "Getting everyone's input could lead to a decision that satisfies most.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and perception by considering everyone's input, but social skill and motivation were moderate."
-      },
-      {
-        "text": "It's better to decide quickly to avoid further delays.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized the need for a quick decision, showing good self-regulation and motivation, but empathy and social skill were lower."
-      },
-      {
-        "text": "Let's make a decision and trust that everyone will adapt.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested making a decision confidently, showing good social skills, but empathy was lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob and Monica are discussing the celebration. Monica looks thoughtful.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Should we ask everyone for their input on the celebration?'",
+        "options": [
+            {
+                "text": "Getting everyone's input could lead to a decision that satisfies most.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and perception by considering everyone's input, but social skill and motivation were moderate."
+            },
+            {
+                "text": "It's better to decide quickly to avoid further delays.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized the need for a quick decision, showing good self-regulation and motivation, but empathy and social skill were lower."
+            },
+            {
+                "text": "Let's make a decision and trust that everyone will adapt.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested making a decision confidently, showing good social skills, but empathy was lower."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica looks at Bob, then back at you.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'Isn't this taking too long? We have deadlines.'",
-    "options": [
-      {
-        "text": "We need to cover all details to ensure the project's success.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You emphasize the importance of detailed planning, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I understand the deadlines, but a thorough plan helps avoid future issues.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the urgency but stress the need for a detailed plan, showing empathy and perception."
-      },
-      {
-        "text": "Maybe we can find a middle ground where we move quickly but also carefully.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a compromise, balancing the need for speed with careful planning, showing empathy and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks at Bob, then back at you.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'Isn't this taking too long? We have deadlines.'",
+        "options": [
+            {
+                "text": "We need to cover all details to ensure the project's success.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of detailed planning, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I understand the deadlines, but a thorough plan helps avoid future issues.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the urgency but stress the need for a detailed plan, showing empathy and perception."
+            },
+            {
+                "text": "Maybe we can find a middle ground where we move quickly but also carefully.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a compromise, balancing the need for speed with careful planning, showing empathy and social skills."
+            }
+        ]
+    }
 }

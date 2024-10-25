@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] nods thoughtfully at [Bob].",
-    "role": "[Monica]",
-    "location": "Conference Room",
-    "description": "'A bar might not be the best idea for everyone. Maybe we should think of alternatives.'",
-    "options": [
-      {
-        "text": "How about we make a list of suggestions and vote on it?",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You proposed a democratic approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
-      },
-      {
-        "text": "We could consider a quieter venue for those who might not enjoy a bar.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggested an alternative considering others' preferences, showing good self-regulation and motivation, but empathy and social skills were moderate."
-      },
-      {
-        "text": "A bar isn't suitable for everyone. We need to come up with a different plan.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skills and perception were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods thoughtfully at Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'A bar might not be the best idea for everyone. Maybe we should think of alternatives.'",
+        "options": [
+            {
+                "text": "How about we make a list of suggestions and vote on it?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a democratic approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "We could consider a quieter venue for those who might not enjoy a bar.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested an alternative considering others' preferences, showing good self-regulation and motivation, but empathy and social skills were moderate."
+            },
+            {
+                "text": "A bar isn't suitable for everyone. We need to come up with a different plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skills and perception were lower."
+            }
+        ]
+    }
 }

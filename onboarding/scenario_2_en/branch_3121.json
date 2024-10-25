@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "During the meeting, [Monica] looks impatient, and [Bob] seems conflicted.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'We really can't afford any more delays. Can we finalize this?'",
-    "options": [
-      {
-        "text": "We need to make sure we haven't missed any critical details before moving on.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You show empathy towards Bob's thorough approach while emphasizing the importance of checking details, demonstrating balanced perception and motivation."
-      },
-      {
-        "text": "I agree, Monica. Let's wrap this up quickly and move forward.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You align with Monica's urgency, showing good self-regulation and perception, but slightly lower empathy towards Bob's concern."
-      },
-      {
-        "text": "Perhaps we can delegate some tasks to expedite the process without compromising quality.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You propose a solution that balances speed and thoroughness, demonstrating empathy, social skill, and balanced perception."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "During the meeting, Monica looks impatient, and Bob seems conflicted.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We really can't afford any more delays. Can we finalize this?'",
+        "options": [
+            {
+                "text": "We need to make sure we haven't missed any critical details before moving on.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You show empathy towards Bob's thorough approach while emphasizing the importance of checking details, demonstrating balanced perception and motivation."
+            },
+            {
+                "text": "I agree, Monica. Let's wrap this up quickly and move forward.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You align with Monica's urgency, showing good self-regulation and perception, but slightly lower empathy towards Bob's concern."
+            },
+            {
+                "text": "Perhaps we can delegate some tasks to expedite the process without compromising quality.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a solution that balances speed and thoroughness, demonstrating empathy, social skill, and balanced perception."
+            }
+        ]
+    }
 }

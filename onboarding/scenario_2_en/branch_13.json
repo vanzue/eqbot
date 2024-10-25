@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica sits back, sighing as she glances between you and Bob.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'We need to find a balance. How do you propose we handle this?'",
-    "options": [
-      {
-        "text": "Let's establish a protocol that allows for quick decisions while ensuring thorough discussions.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You propose a balanced approach that respects both quick decisions and thorough discussions, showing good perception, empathy, and social skills."
-      },
-      {
-        "text": "I think we need to prioritize one approach over the other to avoid conflicts.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggest prioritizing one approach, showing good self-regulation and motivation but less empathy and social skills."
-      },
-      {
-        "text": "Let's just stick to making decisions quickly and address issues as they arise.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You lean towards a quick decision-making approach, showing good social skills and motivation but less empathy and perception."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sits back, sighing as she glances between you and Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We need to find a balance. How do you propose we handle this?'",
+        "options": [
+            {
+                "text": "Let's establish a protocol that allows for quick decisions while ensuring thorough discussions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a balanced approach that respects both quick decisions and thorough discussions, showing good perception, empathy, and social skills."
+            },
+            {
+                "text": "I think we need to prioritize one approach over the other to avoid conflicts.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest prioritizing one approach, showing good self-regulation and motivation but less empathy and social skills."
+            },
+            {
+                "text": "Let's just stick to making decisions quickly and address issues as they arise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You lean towards a quick decision-making approach, showing good social skills and motivation but less empathy and perception."
+            }
+        ]
+    }
 }

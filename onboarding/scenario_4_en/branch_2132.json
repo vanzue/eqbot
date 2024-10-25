@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Monica) looks at her phone, seemingly annoyed. (Bob) taps his foot impatiently.",
-    "role": "Bob",
-    "location": "Office",
-    "description": "‘We’ve prioritized the tasks, but we still need your input. What do you suggest?’",
-    "options": [
-      {
-        "text": "Let's schedule a quick call to discuss the most critical points.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You offered a collaborative approach to manage the situation, showing good perception and empathy, though your self-regulation could be stronger."
-      },
-      {
-        "text": "I appreciate the effort, but I really need to stick to my leave. Is there another way?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged their efforts but stood firm on your need for leave, showing strong self-regulation but lower empathy and motivation."
-      },
-      {
-        "text": "I think you should manage this internally. It’s part of your responsibilities.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain team relationships."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks at her phone, seemingly annoyed. Bob taps his foot impatiently.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "‘We’ve prioritized the tasks, but we still need your input. What do you suggest?’",
+        "options": [
+            {
+                "text": "Let's schedule a quick call to discuss the most critical points.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You offered a collaborative approach to manage the situation, showing good perception and empathy, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I appreciate the effort, but I really need to stick to my leave. Is there another way?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged their efforts but stood firm on your need for leave, showing strong self-regulation but lower empathy and motivation."
+            },
+            {
+                "text": "I think you should manage this internally. It’s part of your responsibilities.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain team relationships."
+            }
+        ]
+    }
 }

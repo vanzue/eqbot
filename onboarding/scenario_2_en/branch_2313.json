@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica raises an eyebrow, looking at you and Bob.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'I get that we need to be cautious, but can't we speed things up a bit?'",
-    "options": [
-      {
-        "text": "We could try to be more efficient without compromising on quality.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You propose a balanced approach, showing good perception and self-regulation, while maintaining empathy towards both viewpoints."
-      },
-      {
-        "text": "Maybe we can streamline some steps to accommodate both speed and caution.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a compromise, showing empathy and social skill by trying to meet both needs."
-      },
-      {
-        "text": "Speeding things up might increase the risk of errors. Are we ready for that?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the potential risks of rushing, showing higher motivation but lower empathy towards Monica’s urgency."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica raises an eyebrow, looking at you and Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'I get that we need to be cautious, but can't we speed things up a bit?'",
+        "options": [
+            {
+                "text": "We could try to be more efficient without compromising on quality.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach, showing good perception and self-regulation, while maintaining empathy towards both viewpoints."
+            },
+            {
+                "text": "Maybe we can streamline some steps to accommodate both speed and caution.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a compromise, showing empathy and social skill by trying to meet both needs."
+            },
+            {
+                "text": "Speeding things up might increase the risk of errors. Are we ready for that?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the potential risks of rushing, showing higher motivation but lower empathy towards Monica’s urgency."
+            }
+        ]
+    }
 }

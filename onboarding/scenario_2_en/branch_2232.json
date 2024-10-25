@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica taps her pen on the table, looking at both of you.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'Should we then proceed with Alex's approach and handle issues as they come?'",
-    "options": [
-      {
-        "text": "Let's sketch out a quick contingency plan just in case.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a balanced approach by preparing for potential issues, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I think that's the best course of action, Monica. We can adjust as needed.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You agree with Monica's suggestion while showing readiness to adapt, indicating empathy and motivation."
-      },
-      {
-        "text": "I still believe a detailed plan might save us from future headaches.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of thorough planning, showing good perception of potential issues but lower empathy towards the need for quick action."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica taps her pen on the table, looking at both of you.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Should we then proceed with Alex's approach and handle issues as they come?'",
+        "options": [
+            {
+                "text": "Let's sketch out a quick contingency plan just in case.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a balanced approach by preparing for potential issues, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I think that's the best course of action, Monica. We can adjust as needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You agree with Monica's suggestion while showing readiness to adapt, indicating empathy and motivation."
+            },
+            {
+                "text": "I still believe a detailed plan might save us from future headaches.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of thorough planning, showing good perception of potential issues but lower empathy towards the need for quick action."
+            }
+        ]
+    }
 }
