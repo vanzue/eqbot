@@ -30,7 +30,7 @@ class ScenarioManager:
         # self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
         # self.scenario_id_en = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename_en))
         if locale == "en":
-            self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(0, len(self.filename_en))
+            self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(1, len(self.filename_en))
         else:
             self.scenario_id = scenario_id if scenario_id is not None and scenario_id < len(self.filename) else random.randrange(0, len(self.filename))
 
