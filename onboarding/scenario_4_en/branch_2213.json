@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) nods and looks at you expectantly. (Bob) sighs and sits down.",
+        "background": "Monica nods and looks at you expectantly. Bob sighs and sits down.",
         "role": "Monica",
         "location": "Office",
         "description": "'I understand your frustration, but we're in this together. Can we count on you for a bit more?'",

@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) raises an eyebrow. (Bob) uncrosses his arms and looks at you.",
+        "background": "Monica raises an eyebrow. Bob uncrosses his arms and looks at you.",
         "role": "Monica",
         "location": "Office",
         "description": "'So, what's the plan? Are you going to help us or stick to your break?'",

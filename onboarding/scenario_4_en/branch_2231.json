@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) sighs, sitting down with a defeated look. (Monica) looks at you with a mix of hope and frustration.",
+        "background": "Bob sighs, sitting down with a defeated look. Monica looks at you with a mix of hope and frustration.",
         "role": "Monica",
         "location": "Office",
         "description": "'We really appreciate your effort, but this keeps happening. How can we rely on you more consistently?'",

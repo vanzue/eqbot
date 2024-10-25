@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) nods at Bob's suggestion. (Bob) leans back in his chair, looking at both of you.",
+        "background": "Monica nods at Bob's suggestion. Bob leans back in his chair, looking at both of you.",
         "role": "Monica",
         "location": "Office",
         "description": "'Do you think it's feasible to start implementing this new system immediately?'",

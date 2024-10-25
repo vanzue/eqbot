@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) taps her pen on the table, visibly frustrated. (Bob) looks at you expectantly.",
+        "background": "Monica taps her pen on the table, visibly frustrated. Bob looks at you expectantly.",
         "role": "Monica",
         "location": "Office",
         "description": "'This isn't just about planning better. We need your help now. Are you really going to leave us hanging?'",

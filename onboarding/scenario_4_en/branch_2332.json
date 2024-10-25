@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) glances at you with a concerned look. (Bob) is typing something furiously on his laptop.",
+        "background": "Monica glances at you with a concerned look. Bob is typing something furiously on his laptop.",
         "role": "Bob",
         "location": "Office",
         "description": "'I just don't see how we can get this done without more help. What are we supposed to do now?'",

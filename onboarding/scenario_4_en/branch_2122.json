@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) taps her pen on the desk, looking tired. (Bob) sighs deeply and glances at you.",
+        "background": "Monica taps her pen on the desk, looking tired. Bob sighs deeply and glances at you.",
         "role": "Monica",
         "location": "Office",
         "description": "‘We need to make a decision quickly. Can you commit to helping us out for just a day?’",

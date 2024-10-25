@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) sighs and looks at (Monica) for support.",
+        "background": "Bob sighs and looks at Monica for support.",
         "role": "Monica",
         "location": "Office",
         "description": "'Maybe we should address how we handle these tasks going forward. What do you think?'",

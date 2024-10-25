@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) shakes his head while (Monica) crosses her arms, looking displeased.",
+        "background": "Bob shakes his head while Monica crosses her arms, looking displeased.",
         "role": "Bob",
         "location": "Office",
         "description": "'If we can't rely on each other, how do we expect to get anything done?'",

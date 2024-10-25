@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) nods thoughtfully while (Bob) looks hopeful.",
+        "background": "Monica nods thoughtfully while Bob looks hopeful.",
         "role": "Bob",
         "location": "Office",
         "description": "'So, what's our next step to implement this structured approach?'",

@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) frowns and crosses his arms. (Monica) looks at you expectantly.",
+        "background": "Bob frowns and crosses his arms. Monica looks at you expectantly.",
         "role": "Bob",
         "location": "Office",
         "description": "'You always say we need a plan, but nothing changes. Are you going to help or not?'",

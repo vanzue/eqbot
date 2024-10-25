@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) looks frustrated, crossing his arms. (Monica) looks at you with a pleading expression.",
+        "background": "Bob looks frustrated, crossing his arms. Monica looks at you with a pleading expression.",
         "role": "Bob",
         "location": "Office",
         "description": "'I don't think you understand how critical this is. Are you really going to leave us hanging?'",

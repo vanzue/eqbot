@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) sighs deeply, clearly frustrated. (Monica) looks at you expectantly.",
+        "background": "Bob sighs deeply, clearly frustrated. Monica looks at you expectantly.",
         "role": "Bob",
         "location": "Office",
         "description": "‘Do you really think that's fair? We're all struggling, and we could use your support.’",

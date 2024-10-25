@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) taps her pen on the table, looking at you expectantly. (Bob) sighs and shakes his head.",
+        "background": "Monica taps her pen on the table, looking at you expectantly. Bob sighs and shakes his head.",
         "role": "Monica",
         "location": "Office",
         "description": "‘Alright, we’ve regrouped. What’s our next step?’",

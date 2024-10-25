@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) looks up from her notes, glancing at you. (Bob) is still typing on his laptop.",
+        "background": "Monica looks up from her notes, glancing at you. Bob is still typing on his laptop.",
         "role": "Monica",
         "location": "Office",
         "description": "'So, if more clarity on roles is needed, how should we start addressing that?'",

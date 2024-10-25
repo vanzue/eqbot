@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) throws his hands up in frustration. (Monica) looks at you expectantly.",
+        "background": "Bob throws his hands up in frustration. Monica looks at you expectantly.",
         "role": "Bob",
         "location": "Office",
         "description": "‘How are we supposed to prioritize when everything is urgent?’",

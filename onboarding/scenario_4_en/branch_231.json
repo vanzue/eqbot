@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Bob) stops typing and glances at you. (Monica) looks thoughtful, tapping her pen.",
+        "background": "Bob stops typing and glances at you. Monica looks thoughtful, tapping her pen.",
         "role": "Bob",
         "location": "Office",
         "description": "'How do you think we should prioritize tasks to avoid these last-minute emergencies?'",

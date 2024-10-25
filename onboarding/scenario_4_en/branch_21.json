@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "(Monica) sighs heavily and rubs her temples. (Bob) glances at you with frustration.",
+        "background": "Monica sighs heavily and rubs her temples. Bob glances at you with frustration.",
         "role": "Monica",
         "location": "Office",
         "description": "‘Okay, I get it, but we really need to figure this out. Any suggestions?’",
