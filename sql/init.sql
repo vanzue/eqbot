@@ -53,7 +53,7 @@ CREATE TABLE ChatRecords (
 );
 
 -- 创建 ReplyState 表
-IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='ReplyState' AND xtype='U')
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='HighEqReplyState' AND xtype='U')
 CREATE TABLE ReplyState (
     product VARCHAR(100),
     userId VARCHAR(100),

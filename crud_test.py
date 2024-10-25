@@ -1,5 +1,6 @@
 import os
-import pyodbc, struct
+import pyodbc
+import struct
 from database import crud, models, schemas
 from azure import identity
 from azure.identity import DefaultAzureCredential
@@ -7,6 +8,7 @@ from sqlalchemy import create_engine, event, text, MetaData
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 
@@ -16,6 +18,7 @@ database = os.getenv('DATABASE_NAME')
 
 SQL_COPT_SS_ACCESS_TOKEN = 1256  # As defined in msodbcsql.h
 
+
 def inject_azure_credential(credential, engine, token_url='https://database.windows.net/'):
     @event.listens_for(engine, 'do_connect')
     def do_connect(dialect, conn_rec, cargs, cparams):
@@ -24,6 +27,7 @@ def inject_azure_credential(credential, engine, token_url='https://database.wind
         attrs_before = cparams.setdefault('attrs_before', {})
         attrs_before[SQL_COPT_SS_ACCESS_TOKEN] = bytes(token_struct)
         return dialect.connect(*cargs, **cparams)
+
 
 # Use DefaultAzureCredential or any other Azure credentials
 creds = DefaultAzureCredential()
@@ -55,20 +59,20 @@ def main():
 
     try:
         # Create PersonalInfo
-        issues = ["沟通不畅", "团队合作"]
-        concerns = ", ".join(issues)
+        # issues = ["沟通不畅", "团队合作"]
+        # concerns = ", ".join(issues)
 
-        personal_info_data = schemas.PersonalInfoCreate(
-                                name="Jay Park11", 
-                                gender="male",
-                                tag=None, 
-                                tag_description="黑猫",
-                                job_level="Junior", 
-                                issues=concerns,
-                                job_id="ba94c32e-aa33-4c5d-8cda-effb8c9fda90"
-                                )
-        personal_info = crud.create_personal_info(db, personal_info_data)
-        print(f"Created PersonalInfo: {personal_info.id}")
+        # personal_info_data = schemas.PersonalInfoCreate(
+        #                         name="Jay Park11",
+        #                         gender="male",
+        #                         tag=None,
+        #                         tag_description="黑猫",
+        #                         job_level="Junior",
+        #                         issues=concerns,
+        #                         job_id="ba94c32e-aa33-4c5d-8cda-effb8c9fda90"
+        #                         )
+        # personal_info = crud.create_personal_info(db, personal_info_data)
+        # print(f"Created PersonalInfo: {personal_info.id}")
 
         # Update PersonalInfo
         # personal_info = crud.get_personal_info_by_job_id(db, "d508fc86-948c-42a4-8b98-c415d9f3c5e3")
@@ -173,8 +177,28 @@ def main():
         #             )
         # crud.create_subordinate_analysis(db, analysis)
 
+        messages = [
+            {"userName": "Alice", "message": "Hello!"},
+            {"userName": "Bob", "message": "How are you?"},
+            {"userName": "Charlie", "message": "Good morning!"}
+        ]
+
+        state = schemas.ReplyStateCreate(
+            product="Wechat",
+            userId="user123",
+            stage2_output=json.dumps(messages),
+            stage_number=2
+        )
+
+        crud.create_reply_state(db, state)
+
+        retrieved_state = crud.get_reply_state_by_product_and_user(
+            db, "Wechat", "user123")
+        print(f"Retrieved ReplyState: {retrieved_state}")
+
     finally:
         db.close()
+
 
 if __name__ == "__main__":
     main()
