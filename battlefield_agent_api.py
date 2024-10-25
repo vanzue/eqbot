@@ -42,8 +42,10 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
     lang_type = request.lang_type
     course_id = request.course_id
     lang_type = 'zh' if course_id == 1 else 'en'
-    eval_data = request_LLM_response_by_eval(
-        request.chat_content, lang=lang_type)['eval']
+    eval_result = request_LLM_response_by_eval(
+        request.chat_content, lang=lang_type)
+    eval_data = eval_result['eval']
+    tips = eval_result['eq_tips']
     course_type, course_level = crud.get_course_by_id(
         db, course_id=request.course_id)
     # print(course_type, course_level)
@@ -92,7 +94,9 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
                                                      comment2=eval_data[1]['analysis'] if len(
                                                          eval_data) > 1 else None,
                                                      comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None)
-    return {"db_course": db_course}
+
+    response = {**vars(db_course), "tips": tips}
+    return {"db_course": response}
 
 
 @router.get("/get_battlefield_agent/{person_id}")
