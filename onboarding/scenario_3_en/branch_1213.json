@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try. Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.' Alex acknowledges their concerns and suggests prioritizing what will make the majority happy. Monica looks puzzled and says, 'How do we even decide what the majority wants? And what if we still can't agree?' Bob shrugs, looking increasingly frustrated. Alex suggests postponing the celebration until everyone can agree.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Bob frowns and says, 'Postponing might just kill the excitement. What if we never agree?' Monica looks at Bob and then back at you, saying, 'We need to decide something now or it will drag on forever.'",
-    "options": [
-      {
-        "text": "Maybe we can all take a short break and come back with fresh ideas.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's need for a break to clear their minds. It demonstrates good social skills and motivation to reach a fair conclusion."
-      },
-      {
-        "text": "Alright, let's just go with the first suggestion that gets enough support. We can't make everyone happy.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes efficiency over thorough consensus."
-      },
-      {
-        "text": "If deciding is this hard, maybe we should cancel the celebration altogether.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's difficulty in making a decision, but shows lower motivation as it avoids resolving the issue promptly."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "You, Monica, and Bob are exploring other celebration options. Monica frowns and crosses her arms.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "Monica says, 'Outdoor activities can be tiring for some.'",
+        "options": [
+            {
+                "text": "We can plan shorter activities to accommodate everyone.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed empathy and self-regulation by considering everyone's comfort, but social skill and motivation were moderate."
+            },
+            {
+                "text": "Let's choose an activity that has both relaxing and active options.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Outdoor activities might not be for everyone, let's brainstorm other fun ideas.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You showed good social skill and motivation by considering other options, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
 }

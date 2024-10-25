@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You insisted on dividing tasks based on strengths. [Bob] shifts uncomfortably.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'But what if the presentation suffers without your input?'",
-    "options": [
-      {
-        "text": "I'll make sure to review the presentation after finishing the report.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show good emotional perception by offering a compromise, but social skills are lower as it may lead to fragmented work."
-      },
-      {
-        "text": "I trust you both to handle the presentation. I'll focus on the report.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrate strong self-regulation and social skills by trusting your colleagues, but empathy could be improved by considering their concerns."
-      },
-      {
-        "text": "Let's all take a few minutes to outline the presentation together before I dive into the report.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and empathy by suggesting a joint effort initially, but emotional perception is lower as it delays task completion."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and Bob rubs his temples, both visibly stressed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We tried revisiting the steps, but it's still not working. What should we do?'",
+        "options": [
+            {
+                "text": "I understand your frustration. Let me log in and help resolve this quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed empathy and willingness to help, demonstrating good perception. However, your self-regulation to maintain your leave was slightly lower."
+            },
+            {
+                "text": "I'm confident you can figure it out. Maybe take a short break and come back to it?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries, showing good self-regulation, but your empathy and motivation to assist were lower."
+            },
+            {
+                "text": "I'm on leave. You need to handle this on your own.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 2,
+                    "Motivation": 2
+                },
+                "analysis": "You emphasized your need for personal time off, exhibiting strong self-regulation, but your perception, empathy, and motivation were notably lower."
+            }
+        ]
+    }
 }

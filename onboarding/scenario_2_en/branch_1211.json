@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Now, there is a tension-filled silence in the room as both Alex and Lily look at you expectantly. You asked both to highlight key areas of importance. Alex and Lily did as you requested, though Alex seemed slightly impatient, while Lily was more methodical. However, they still seem to be at an impasse. You encouraged collaboration by inviting suggestions for a combined strategy. Alex and Lily exchanged glances, but there was still visible tension as each waited for the other to speak first.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex's foot taps restlessly under the table, and Lily sighs softly while looking at her notes, expecting your next move.'",
-    "options": [
-      {
-        "text": "Let's outline a concrete plan that integrates both quick actions and detailed analysis. How about we set specific milestones?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You aimed to combine both approaches by suggesting specific milestones, showing strong emotional perception and empathy."
-      },
-      {
-        "text": "Alex, your urgency is valid, but we need Lily's thorough analysis to ensure success. Can we agree to prioritize immediate actions while keeping detailed checks?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You validated both perspectives and proposed a balanced approach, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "Perhaps we can develop a hybrid strategy that allows for quick initial steps followed by thorough evaluations. What's your take?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You suggested a hybrid strategy to incorporate both methods, showing good social skills and motivation to resolve the conflict."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods but still looks uncertain. Bob glances at you, waiting.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'Even with a review, I'm worried we might miss critical details.'",
+        "options": [
+            {
+                "text": "We can create a checklist to ensure we cover all bases during the review.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy and good social skills by suggesting a practical solution that addresses Bob's concern while keeping the project on track."
+            },
+            {
+                "text": "I understand your worry, Bob, but we have to trust our process and move forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Bob's concern but emphasize the need for progress, showing good self-regulation and motivation."
+            },
+            {
+                "text": "Maybe we're overthinking this. Sometimes, quick decisions lead to innovative solutions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You challenge the cautious approach, highlighting the potential benefits of quick decisions, showing motivation but less empathy and social skill."
+            }
+        ]
+    }
 }

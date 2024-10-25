@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, [Monica] and [Bob] further escalated the situation with their body language and comments. You encouraged the team to stay focused and motivated, but tension still lingers. [Monica] glared at [Bob] and said, 'This is why nothing ever gets done.' [Bob] retorted, 'Well, maybe if we didn't overthink everything...' You suggested agreeing to disagree and moving forward, but the tension remains.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] rolls her eyes and says, 'This is pointless. We're just going in circles.' [Bob] sighs and adds, 'Maybe we need a new approach entirely.'",
-    "options": [
-      {
-        "text": "It seems like we're stuck. Maybe we should consider bringing in an external consultant for a fresh perspective.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggested an external solution, showing good motivation but moderate scores in other areas as it may not address the immediate emotional tension."
-      },
-      {
-        "text": "Monica, Bob, let's take a moment to list out what each of us thinks is the main issue here.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You aimed to address the core issues by encouraging open discussion, showing strong emotional perception, self-regulation, and empathy."
-      },
-      {
-        "text": "Alright, if we can't agree on the approach, let's at least agree on the end goal and work backwards from there.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You tried to refocus the team on the end goal, showing good self-regulation and social skills while maintaining moderate emotional perception and empathy."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and crosses her arms.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We’re going to regret it if we rush this and make mistakes.'",
+        "options": [
+            {
+                "text": "We can always correct issues later. Right now, speed is crucial.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of speed and demonstrate motivation to proceed quickly, showing social skills but lacking in empathy and perception."
+            },
+            {
+                "text": "You might be right, Monica. Let's spend a bit more time to get things right.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You agree with Monica’s concerns, showing good perception and empathy, but your motivation to move forward is somewhat reduced."
+            },
+            {
+                "text": "I understand the risk, but we need to find a balance between thoroughness and efficiency.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge both sides of the argument, demonstrating self-regulation and social skill but lacking strong perception and empathy."
+            }
+        ]
+    }
 }

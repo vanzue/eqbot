@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to help with the urgent task. [Monica] and [Bob] join the conversation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'I know you’re helping, but do you think this is the best use of your time off?' He raises an eyebrow, looking skeptical.",
-    "options": [
-      {
-        "text": "I see your point, Bob. Maybe I should step back for now.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and emotional perception by considering Bob's concern, but empathy is lower as you decide to step back."
-      },
-      {
-        "text": "I get it, but I feel responsible to see this through.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy and social skills by acknowledging Bob's concern but staying involved, which may affect your self-regulation."
-      },
-      {
-        "text": "Thanks, Bob. I'll help out a bit longer, but let's clarify what needs to be done.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception could be better."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob runs his hand through his hair, clearly frustrated. Monica crosses her arms, looking at you.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "‘That was a bit harsh. We are all trying our best here. Can we find a middle ground?’",
+        "options": [
+            {
+                "text": "I apologize if it came off that way. Let's discuss how we can tackle this together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the harshness and offered to collaborate, showing good perception and empathy, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I understand, maybe you can prioritize the tasks and handle the most urgent ones first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical solution while acknowledging the situation, showing strong self-regulation but less empathy."
+            },
+            {
+                "text": "Honestly, I think this should be managed internally. It’s part of your roles.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might impact team dynamics negatively."
+            }
+        ]
+    }
 }

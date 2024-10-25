@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to help with the urgent task as you are on annual leave. [Monica] and [Bob] join the conversation.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "'Thanks for pitching in! But, why not take a break anyway? This seems manageable.' She smiles, glancing at [Bob].",
-    "options": [
-      {
-        "text": "You're right, Monica. I'll let you two handle it from here.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation by stepping back, but empathy is lower as you leave the task to your colleagues."
-      },
-      {
-        "text": "I appreciate that, but I want to ensure everything goes smoothly.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy and emotional perception by staying involved, but it may affect your self-regulation."
-      },
-      {
-        "text": "I'll help a bit longer, but let's coordinate the specifics first.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception could be better."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica leans against the desk, looking a bit stressed. Bob is pacing back and forth.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "‘I can't believe you aren't helping. We are all swamped here. What are we supposed to do now?’",
+        "options": [
+            {
+                "text": "I understand it's tough, but I really need this break. Let's find another solution.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the difficulty but stood firm on your need for rest, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "I'll see if I can step in briefly and help, but I can't stay long.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered partial help, showcasing balanced empathy and social skills, though your motivation and self-regulation were moderate."
+            },
+            {
+                "text": "I can't believe you can't handle this on your own. Maybe it's time to rethink your approach.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

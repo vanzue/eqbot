@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly. You decide to skip the celebration and focus on the next project. Monica frowns and Bob looks disappointed. Monica says, 'I think we deserve a break after all our hard work.' Bob adds, 'Yeah, we need to celebrate, not just jump into more work.' You then choose to go for the outdoor activity but remind them to stay focused afterward. Monica and Bob seem to reluctantly agree. The next day, during a coffee break, [Monica] and [Bob] continue to discuss the celebration plans. You suggest enjoying the outdoor activity first and then see how everyone feels. [Monica] and [Bob] seem to accept this, but [Monica] still appears doubtful.",
-    "role": "Alex",
-    "location": "Office Break Room",
-    "description": "[Monica] says, 'What if the outdoor activity doesn't turn out as expected?' [Bob] adds, 'Yeah, what if it's too tiring and we end up not enjoying it?' They both look at you for reassurance.",
-    "options": [
-      {
-        "text": "Let's keep an open mind and give it a try. If it doesn't work out, we can always plan a dinner later.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "This response reflects a neutral stance, showing moderate levels of emotional detection, self-regulation, empathy, and social skills. Motivation is average as it postpones the decision."
-      },
-      {
-        "text": "I understand your concerns, but let's stay positive. The outdoor activity will be a great way to bond and unwind.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This option shows good emotional detection and self-regulation by making a decisive call. Social skills are demonstrated well, but empathy is lower as it prioritizes one suggestion over others."
-      },
-      {
-        "text": "If neither of you are confident, maybe we should just go with the formal dinner to avoid any disappointment.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "This response shows higher motivation to avoid disappointment but lower emotional detection and empathy. Social skills are also lower due to the passive-aggressive undertone."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob shifts uncomfortably and glances at Monica.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "'Maybe we should just let the manager decide.'",
+        "options": [
+            {
+                "text": "That could work, but it might make some people feel left out.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the suggestion but pointed out a potential downside, showing good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "Letting the manager decide seems like the easiest way out.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You agreed with the suggestion, recognizing its simplicity, showing good self-regulation and social skills, but empathy was lower."
+            },
+            {
+                "text": "It might solve the issue for now, but it could create more problems later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You pointed out potential future issues with the suggestion, showing good perception and motivation but lower social skills."
+            }
+        ]
+    }
 }

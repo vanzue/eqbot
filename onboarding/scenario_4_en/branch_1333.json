@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] raises an eyebrow, tapping her pen. You suggested a more comprehensive approach.",
-    "role": "[Bob]",
-    "location": "Meeting Room",
-    "description": "Bob leans forward, narrowing his eyes. 'How will a comprehensive approach fix this specific issue?'",
-    "options": [
-      {
-        "text": "It's about addressing the root cause. Let's identify the main issues first.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You emphasize the importance of understanding the underlying problems, showing good self-regulation and moderate social skills, but empathy could be improved."
-      },
-      {
-        "text": "A comprehensive approach may not fix everything immediately, but it sets a foundation.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You balance the need for a broader strategy with realistic expectations, showing good emotional perception and social skills, but motivation could be higher."
-      },
-      {
-        "text": "We need a more integrated strategy, but specific solutions for immediate issues are crucial too.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You stress the importance of a combined approach while highlighting immediate solutions, showing high self-regulation but lower social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica glances at you with a concerned expression while Bob checks his calendar.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'So, when should we schedule this meeting? We need to resolve this quickly.'",
+        "options": [
+            {
+                "text": "Let's meet tomorrow morning. We need to act fast.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested an immediate meeting, showing a high level of urgency and motivation but potentially lower self-regulation."
+            },
+            {
+                "text": "How about we take some time to gather our thoughts and meet in the afternoon?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a more considered approach, showing good self-regulation and balanced perception, though the urgency is less emphasized."
+            },
+            {
+                "text": "We should have a preliminary discussion over email first and then decide the meeting time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested starting with an email discussion, showing good social skills but potentially lower empathy and immediate motivation."
+            }
+        ]
+    }
 }

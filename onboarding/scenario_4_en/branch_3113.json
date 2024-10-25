@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] discuss task delegation.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'Since you're focusing on the report, can you also draft the email to the client?'",
-    "options": [
-      {
-        "text": "Sure, I'll draft the email. Just let me know the key points.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show good social skills and self-regulation, but your motivation could be higher for task completion."
-      },
-      {
-        "text": "I can draft the email, but I'll need some input from both of you to make sure it's accurate.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You balance social skills and emotional perception well, but empathy might be seen as lacking by not fully taking on the task independently."
-      },
-      {
-        "text": "I think it would be better if one of you drafts the email while I focus on the report.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show strong self-regulation and social skills, but your emotional perception is lower as you shift the task priorities."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks puzzled while Monica tries to reassure him.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'I appreciate your trust, but what if we encounter another issue? Can we count on you again?'",
+        "options": [
+            {
+                "text": "Let's cross that bridge when we come to it. For now, let's focus on the task at hand.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You focused on the immediate problem, showing good perception and empathy, though your self-regulation and social skill could be stronger."
+            },
+            {
+                "text": "I understand your concern, but I'm on leave. We'll need to find another solution if more issues arise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the concern and set boundaries, showing good self-regulation but lower motivation and empathy."
+            },
+            {
+                "text": "I'm confident you can handle any issues without my constant involvement. Trust your skills.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You encouraged independence, showing strong self-regulation but lower empathy, perception, and motivation to help."
+            }
+        ]
+    }
 }

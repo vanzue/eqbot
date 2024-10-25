@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. [Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvenes in the meeting room. [Monica] starts to speak up but is interrupted by [Alex] who says, 'We don't have time for this. We need to decide now.' [Lily] looks visibly upset. You acknowledged both Alex's urgency and Lily's feelings, showing good self-regulation and social skills. After addressing their concerns, the discussion continues. [Monica] tries to speak again, but Alex cuts her off, saying, 'We need action, not more talk.' [Bob] shakes his head in frustration. You managed the discussion by giving everyone a chance to speak. After Alex’s interruption, Monica looks visibly upset and is about to speak when [Bob] interrupts, saying 'We’re wasting time again.'",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] looks at you with frustration, while [Bob] taps his fingers impatiently. Alex is still pushing for quick action.",
-    "options": [
-      {
-        "text": "It's clear that tensions are high. Monica, take a moment to share your thoughts. Bob, please be patient.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You addressed the high tension and facilitated Monica's input, demonstrating strong emotional perception and empathy."
-      },
-      {
-        "text": "Monica, let's hear what you have to say. Bob, I understand your impatience, but we need to be thorough.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You balanced the need for thoroughness with the urgency, showing good social skills and motivation."
-      },
-      {
-        "text": "We need to move forward. Monica, please be concise. Bob, we need your input too.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You encouraged concise communication and balanced input, demonstrating good social skills and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks thoughtful while Monica frowns.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'If we keep debating, we'll never get started on the project.'",
+        "options": [
+            {
+                "text": "You're right, Monica. Let's focus on the most important issues and move forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You agree with Monica's urgency, showing good self-regulation and motivation while trying to keep the discussion productive."
+            },
+            {
+                "text": "We need to ensure we're not overlooking any critical details. A bit more discussion won’t hurt.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of thoroughness, showing empathy and perception, but acknowledge the need to balance time."
+            },
+            {
+                "text": "We should avoid rushing. Otherwise, we might create bigger problems down the line.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You express caution against rushing, showing social skill in addressing Monica's concerns while maintaining balance in the discussion."
+            }
+        ]
+    }
 }

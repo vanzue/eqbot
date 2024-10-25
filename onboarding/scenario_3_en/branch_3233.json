@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest, 'If it's going to be a formal dinner, maybe we should just focus on the food and skip any extra activities.' Bob frowns slightly and Monica looks thoughtful. Monica says, 'We should definitely have some toasts and speeches to celebrate our achievements.' Bob rolls his eyes and mutters, 'Great, just what we need, more talking.'",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Everyone looks at you to steer the conversation.",
-    "options": [
-      {
-        "text": "How about we meet halfway? Let's have a few short speeches and then enjoy the dinner.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's perspectives. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "A few speeches wouldn't hurt. It gives us a chance to reflect on our hard work.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
-      },
-      {
-        "text": "Maybe we should skip the speeches and just enjoy a quiet dinner together.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making an effort to include Monica's suggestion and does not consider the team's desire for a celebratory atmosphere."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs while crossing her arms.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'So, what do you suggest we do then?'",
+        "options": [
+            {
+                "text": "Maybe we should take a vote to see what the majority prefers.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a democratic approach, showing good self-regulation and social skills, but perception, empathy, and motivation were moderate."
+            },
+            {
+                "text": "I think a compromise might be the best route. How about a mix of activities?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a balanced solution, showing good perception and empathy, but social skill, self-regulation, and motivation were moderate."
+            },
+            {
+                "text": "Honestly, this is becoming too complicated. Maybe we should just cancel the celebration.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed frustration and proposed canceling, showing high motivation to resolve the issue but lower empathy and social skills."
+            }
+        ]
+    }
 }

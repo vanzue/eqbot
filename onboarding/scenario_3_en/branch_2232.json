@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. They turn to you for the final say. You chose a fancy restaurant. Now, Monica is thrilled but Bob looks disappointed. Monica and Bob continue discussing other aspects of the dinner, such as the menu and seating arrangements. Monica suggests a gourmet menu with a seating plan, while Bob prefers a more laid-back, buffet-style dinner. Both look at you for your input. You opted for a vote on Monica's and Bob's options to ensure everyone felt included. The vote was close, but Monica's gourmet menu with a seating plan won. Bob is visibly upset, feeling his preference was overlooked. Monica is planning the seating arrangements, and Bob is starting to feel left out of the celebration planning. You decided to go ahead with the seating plan. Monica is eagerly assigning seats, while Bob is still clearly disengaged. Suddenly, the fire alarm goes off, causing panic in the office. Everyone looks at you for directions.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica and Bob freeze in their spots, looking at you for guidance. The loud alarm continues to blare.",
-    "options": [
-      {
-        "text": "Alright everyone, let's evacuate calmly and meet at the designated assembly point outside.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option demonstrates a high level of emotional detection and empathy by ensuring everyone's safety and maintaining calm during an emergency. It also shows good social skills and motivation."
-      },
-      {
-        "text": "Stay calm, sit tight. This might just be a false alarm; I'll check it out.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes personal investigation over immediate group safety."
-      },
-      {
-        "text": "Let's take a quick vote on whether we should evacuate or wait to see if it's a false alarm.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call during an emergency."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob and Monica are discussing the celebration. Monica looks thoughtful.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Should we ask everyone for their input on the celebration?'",
+        "options": [
+            {
+                "text": "Getting everyone's input could lead to a decision that satisfies most.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and perception by considering everyone's input, but social skill and motivation were moderate."
+            },
+            {
+                "text": "It's better to decide quickly to avoid further delays.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized the need for a quick decision, showing good self-regulation and motivation, but empathy and social skill were lower."
+            },
+            {
+                "text": "Let's make a decision and trust that everyone will adapt.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested making a decision confidently, showing good social skills, but empathy was lower."
+            }
+        ]
+    }
 }

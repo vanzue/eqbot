@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] raises an eyebrow, questioning the effectiveness of others handling urgent tasks.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "Bob rubs his chin thoughtfully. 'Even with distributed responsibilities, we need a real backup for critical tasks. What's the plan?'",
-    "options": [
-      {
-        "text": "We need to identify key people and ensure they are trained for such situations.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You address the need for training and preparation, showing good social skills and self-regulation, but emotional perception could be stronger."
-      },
-      {
-        "text": "I get it, but let's be realistic. We need a better system that doesn't rely on one person.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You recognize the issue and suggest a systemic solution, showing good emotional perception, but empathy is lower."
-      },
-      {
-        "text": "We should draft a comprehensive emergency plan, ensuring everyone knows their roles.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need for a clear plan and show strong self-regulation and motivation, but emotional perception is lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica flips through her notes, looking flustered. Bob taps his foot impatiently.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We need to prioritize this, but I'm not sure where to start. Any suggestions?'",
+        "options": [
+            {
+                "text": "Let's break it down into smaller tasks and tackle them one by one.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a structured approach, showing good perception and social skills, but your self-regulation could be stronger."
+            },
+            {
+                "text": "Monica, can you outline the most critical issues first?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You asked Monica to prioritize the issues, demonstrating empathy, but the overall engagement and motivation to resolve the issue were moderate."
+            },
+            {
+                "text": "We don't have time to overthink this. Bob, start with what you think is most urgent.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You aimed to keep the discussion focused and efficient, demonstrating strong self-regulation, but lower empathy and motivation to address the problem collaboratively."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] raises an eyebrow after discussing the availability for urgent tasks.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "Bob glances at you, tapping his pen. 'Are you sure you can handle urgent tasks during your breaks? What if it becomes too much?'",
-    "options": [
-      {
-        "text": "I think we should assess each situation individually to avoid overcommitting.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good self-regulation and emotional perception by suggesting a balanced approach, but the motivation to directly engage with the issue is lower."
-      },
-      {
-        "text": "I'll set boundaries but remain available for truly critical tasks.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You demonstrate responsibility and motivation but might compromise your self-regulation and empathy by overcommitting."
-      },
-      {
-        "text": "Maybe we need to redefine what constitutes an 'urgent' task.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show empathy by seeking clarity but may come off as less proactive and socially skilled."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica shifts in her chair, visibly anxious. Bob leans against the desk, arms crossed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Reassessing the timeline sounds reasonable, but we need everyone's input to make it work.'",
+        "options": [
+            {
+                "text": "Let's gather everyone's feedback and create a new plan together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You encouraged a collaborative approach to problem-solving, showing strong social skills and perception, though your self-regulation and empathy were moderate."
+            },
+            {
+                "text": "Monica, what specific issues do you think need the most attention?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You focused on understanding Monica's perspective and specific challenges, showing high empathy but moderate overall engagement and motivation."
+            },
+            {
+                "text": "Bob, maybe we should let Monica handle it and check in later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested stepping back to avoid immediate conflict, showing strong self-regulation but lower empathy and motivation to address the issue now."
+            }
+        ]
+    }
 }

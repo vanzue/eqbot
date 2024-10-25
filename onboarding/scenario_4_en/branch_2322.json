@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to stay and help with the urgent task. [Monica] and [Bob] discuss the next steps.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'Great, you’re staying. But how do we divide the tasks? Should we split evenly or differently?' He scratches his head.",
-    "options": [
-      {
-        "text": "Let's divide the tasks evenly to keep it fair.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good social skills and self-regulation by suggesting a fair division, but emotional perception and empathy could be slightly more nuanced."
-      },
-      {
-        "text": "I think I should handle the more complex parts since I’m already here.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrate high emotional perception and empathy by taking on more responsibility, but it might affect your self-regulation and motivation."
-      },
-      {
-        "text": "Maybe it's better if Bob handles the major tasks. I can assist with smaller ones.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good self-regulation and a balanced approach, but there's room for better emotional perception and empathy."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica leans back in her chair, looking tired. Bob checks his watch frequently.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'We can't keep going like this. Something's got to give. How are we going to handle this?'",
+        "options": [
+            {
+                "text": "We might need to reassess our priorities and focus on what's most urgent.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested a constructive approach, showing good perception and social skills, though your motivation to help was lower."
+            },
+            {
+                "text": "I think we need to communicate better and delegate tasks more efficiently.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You focused on communication and delegation, showing strong self-regulation, but your empathy was lower."
+            },
+            {
+                "text": "It's frustrating, but we have to deal with it. Maybe we need to work harder.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, but your motivation was high."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly. You decide to skip the celebration and focus on the next project. Monica frowns and Bob looks disappointed. You reconsider and suggest a small celebration. Monica lights up and Bob nods in agreement.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica suggests, 'How about we combine both suggestions and have a small outdoor activity followed by a dinner?' Bob adds, 'I think that sounds great, but we should keep it simple.' Everyone is waiting for your response again.",
-    "options": [
-      {
-        "text": "That sounds like a reasonable compromise. Let's plan it that way.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I'm not sure combining the two is the best idea. Maybe we should just stick with one activity to avoid overcomplicating things.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes simplicity over inclusiveness."
-      },
-      {
-        "text": "If you think that's the best way to go, let's do it. But let's not get too carried away; we need to stay focused too.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "This response shows higher motivation to maintain focus on work but lower emotional detection and empathy. Social skills are also lower due to the passive-aggressive undertone."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs as she looks at Bob and you.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "'What if people end up unhappy with the majority decision?'",
+        "options": [
+            {
+                "text": "We could have a discussion to ensure everyone's concerns are heard.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a discussion to address concerns, showing good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "If we explain the decision process, people might be more accepting.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You proposed explaining the decision process to gain acceptance, showing good self-regulation and motivation but moderate perception and empathy."
+            },
+            {
+                "text": "Sometimes, we can't please everyone. We just have to move forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the difficulty of pleasing everyone and suggested moving forward, showing good social skills and motivation but lower empathy."
+            }
+        ]
+    }
 }

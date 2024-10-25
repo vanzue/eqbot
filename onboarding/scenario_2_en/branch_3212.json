@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. Now, [Bob] raises his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nods in agreement. You addressed the need for clarity and invited Monica to share her perspective. Monica then expressed her concerns, 'I just feel like we're not considering all the details we should.' You suggested setting a time limit for discussing each detail to balance thoroughness and efficiency.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] looks skeptical, tapping his pen on the table. [Monica] glances at her notes, then looks up and says, 'I just hope we don't miss anything important.'",
-    "options": [
-      {
-        "text": "Let's trust the process we agreed on. If we miss something, we'll address it as we go.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized the importance of trusting the agreed process, showing good self-regulation and motivation."
-      },
-      {
-        "text": "Monica, focus on the key points for now. Bob, be ready to jump in if anything crucial is missed.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You directed Monica to focus on key points and asked Bob to monitor for missing details, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "We can't get bogged down. Let's move forward and deal with details as they come up.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested moving forward and handling details as they arise, showing strong self-regulation and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica frowns at your suggestion. Bob glances at his watch.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'We do need to make sure we aren't missing anything, though.'",
+        "options": [
+            {
+                "text": "I think we can find a middle ground that addresses everyone's concerns.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You aim to balance the different perspectives, showing empathy and perception in resolving the conflict."
+            },
+            {
+                "text": "Bob, I understand, but overplanning can be just as risky.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You lean towards a more streamlined approach, showing good self-regulation and social skills in addressing the concern."
+            },
+            {
+                "text": "Let's finalize the detailed plan first and then simplify where possible.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a methodical approach, reflecting good motivation and social skills in balancing planning and simplification."
+            }
+        ]
+    }
 }

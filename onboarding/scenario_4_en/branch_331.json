@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You suggested focusing on the presentation first. [Bob] nods in agreement.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] raises an eyebrow and says, 'So, are we ignoring the report completely now?'",
-    "options": [
-      {
-        "text": "Not at all, Monica. Let's get the presentation done first and tackle the report right after.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good emotional perception and empathy by addressing Monica's concern, but motivation might be affected by the additional workload."
-      },
-      {
-        "text": "I thought we agreed on focusing on the presentation. The report can wait.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and social skills by reaffirming the decision, but empathy is lower as it dismisses Monica's concern."
-      },
-      {
-        "text": "Maybe we should re-evaluate and see if there's a way to manage both simultaneously.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show good empathy and self-regulation by suggesting a balanced approach, but emotional perception could be better as it might confuse the focus."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs and looks frustrated while Monica frowns at the screen during the video call.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'We tried the guidelines again, but we're stuck. Can you give us more specific advice?'",
+        "options": [
+            {
+                "text": "I'll give you a more detailed step-by-step guide. Let's work through it together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and social skill by offering to provide detailed help, but your self-regulation and motivation to maintain your leave were slightly lower."
+            },
+            {
+                "text": "I think you both have the capability to figure it out. Try to think outside the box.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You encouraged independent problem-solving, showing good self-regulation, but your empathy and motivation were lower."
+            },
+            {
+                "text": "I can help a bit more, but I need to get back to my leave soon. Let's make it quick.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You balanced your willingness to help with your need for time off, showing good perception and empathy, though your self-regulation was slightly lower."
+            }
+        ]
+    }
 }

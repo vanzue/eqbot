@@ -20,7 +20,8 @@ def request_LLM_response(scenario):
 
 
                     ** Refer to the scoring rules **
-                    ## Emotion Perception ##
+                    ## Perception ##
+                    description: The ostrich reflects avoidance, symbolizing difficulty in recognizing and perceiving emotions.
                     I can quickly notice changes in my own emotions. (1-5 points)
                     I can easily detect subtle changes in other people's emotions. (1-5 points)
                     I am good at analyzing the reasons behind others' emotions. (1-5 points)
@@ -28,6 +29,7 @@ def request_LLM_response(scenario):
                     I can judge others' emotional needs based on the situation. (1-5 points)
                     
                     ## Self Regulation ##
+                    description: The monkey represents impulsiveness, symbolizing difficulty in controlling emotions and behaviors
                     I can stay calm and control my reactions when I’m emotionally agitated. (1-5 points)
                     I can quickly stabilize my emotions when facing sudden events. (1-5 points)
                     I can release negative emotions in an effective way without affecting others. (1-5 points)
@@ -35,6 +37,7 @@ def request_LLM_response(scenario):
                     I can adapt to emotional changes and quickly regain emotional stability. (1-5 points)
                     
                     ## Empathy ##
+                    description: The hedgehog reflects self-defense, symbolizing difficulty in empathizing with and responding to others' emotions.
                     I can easily understand and share the feelings of others. (1-5 points)
                     I can put myself in other people's shoes and respond appropriately to their emotions. (1-5 points)
                     I can recognize and validate others' emotional states, even when they are unspoken. (1-5 points)
@@ -42,6 +45,7 @@ def request_LLM_response(scenario):
                     I can show compassion and concern for others' well-being in both personal and professional relationships. (1-5 points)
                     
                     ## Social Skill ##
+                    description: The coyote reflects independence, symbolizing challenges in building social connections and teamwork.
                     I can present myself appropriately in social situations and follow etiquette norms. (1-5 points)
                     I can adjust my words and actions according to the situation and people, maintaining politeness and respect. (1-5 points)
                     When interaction is needed, I can quickly judge how to appropriately engage in conversation. (1-5 points)
@@ -49,6 +53,7 @@ def request_LLM_response(scenario):
                     I am good at maintaining and enhancing my personal image, avoiding making social faux pas. (1-5 points)
                    
                     ## Motivation ##
+                    description: The capybara reflects a laid-back nature, symbolizing challenges in maintaining drive and motivation.
                     I can maintain a high level of energy and enthusiasm in achieving my goals. (1-5 points)
                     I am proactive in seeking out opportunities for personal or professional growth. (1-5 points)
                     I can stay motivated and focused even when faced with setbacks or challenges. (1-5 points)
@@ -73,7 +78,7 @@ def request_LLM_response(scenario):
                     - The target audience is users who wish to improve their emotional intelligence, with above-average comprehension
 
                     ** Examples or references :**
-                    - Example Rating: Emotion Perception: 25 Reason: There is a little wind and wind at work, your little emotions are like a volcano, it will explode. Take it easy, for example, when the other party refutes you, you can ease up on your answer, otherwise it is easy to burn yourself and your partners.
+                    - Example Rating: Perception: 25 Reason: In the workplace, even the sightest setback can disturb your thoughts. You need to be more cautious, or you might easily 'burn' yourself and your colleagues.
                     - Example tip: Impulse is the devil, learn to calm down to control the game.
                     Your emotional stability ability is low, and you need to improve this ability most at present. You are prone to large emotional fluctuations due to small setbacks in work or different opinions of others, which will affect work efficiency and interpersonal relationships. Don't be a hedgehog when someone is talking, listen attentively, don't interrupt, don't contradict, nod your head, and make eye contact to show respect. Deal with conflict calmly and rationally. Listen to the other person before you express yourself. When you stab someone, put painkillers on the blade.
 
@@ -86,34 +91,34 @@ def request_LLM_response(scenario):
 
                     **Please return the data in the following json format strictly((do not start with json letters, do not omit,))**
                     {{
-                        "1. Emotion Perception": {{
+                        "1. Perception": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "2. Self Regulation": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "3. Empathy": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "4. Social Skill": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "5. Motivation": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, around 50 words]
                         }},
                         "6. Tips": {{
                             "Tips": [Provide a short tip, 20 words or less]
                         }},
                         "7. Cultivation Suggestions": {{
-                            "Suggestions": [Provide detailed practice suggestions for the lowest scoring dimensions]
+                            "Suggestions": [Provide detailed analysis by including both pros and cons that show in senes and also consists content in scenes. Make some suggestions]
                         }},
                         "8. Summary of Cultivation Suggestions": {{
-                            "Summary of Suggestions": [Summarize the suggestions based on cultivation suggestions into one sentence, within 20 words]
+                            "Summary of Suggestions": [Summarize the suggestions based on cultivation suggestions into one sentence, like a title]
                         }},
                         "9. Overall Suggestion": {{
                             "Overall Suggestion": [According to the user's situation, give a comprehensive evaluation and good wishes to the user]
@@ -150,8 +155,8 @@ def parse_LLMresponse(json_data):
         response = json.loads(json_data)
         print("JSON is valid.")
 
-        dimension1_score = response['1. Emotion Perception']['Score']
-        dimension1_detail = response['1. Emotion Perception']['Reason']
+        dimension1_score = response['1. Perception']['Score']
+        dimension1_detail = response['1. Perception']['Reason']
 
         dimension2_score = response['2. Self Regulation']['Score']
         dimension2_detail = response['2. Self Regulation']['Reason']

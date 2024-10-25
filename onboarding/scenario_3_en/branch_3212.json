@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest a themed dinner with fun activities or entertainment. Monica smiles, but Bob still seems skeptical. Monica and Bob are still discussing the details of the dinner. Monica says, 'I think a vintage theme would be delightful.' Bob, rolling his eyes, adds, 'As long as it's not boring.' You decide to keep it simple and elegant with a nice meal and some speeches. Monica nods in agreement, but Bob's expression remains unchanged.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Bob looks around the room and says, 'Well, if we're sticking to this plan, we should at least make sure it's memorable. Any final touches?' Monica, seemingly satisfied, says, 'Yes, let's make it something to remember.'",
-    "options": [
-      {
-        "text": "Let's focus on the speeches and make sure everyone has a chance to share their thoughts and experiences.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This option shows good empathy and social skills by ensuring everyone feels included. It also demonstrates emotional detection by acknowledging the importance of reflections."
-      },
-      {
-        "text": "Maybe we can add a small award ceremony to recognize everyone's hard work.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This choice highlights motivation and emotional detection by proposing a way to celebrate individual contributions. It shows empathy but could be seen as adding complexity."
-      },
-      {
-        "text": "I think a simple toast to everyone's efforts would be enough. Let's not overcomplicate things.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects good self-regulation and a straightforward approach, but it shows lower empathy and motivation as it avoids adding special touches to the event."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob leans back in his chair, glancing at Monica.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'A quieter venue sounds more inclusive. But won't that be boring for some?'",
+        "options": [
+            {
+                "text": "We could find a middle ground that accommodates both preferences.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a balanced solution, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "True, it might be boring. Maybe we can add some fun elements.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the potential downside but suggested a compromise, showing good self-regulation and motivation."
+            },
+            {
+                "text": "Not everyone enjoys loud places. We should prioritize inclusivity.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized inclusivity, showing good empathy and motivation, but social skills and perception were lower."
+            }
+        ]
+    }
 }

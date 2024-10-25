@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You offered to multitask. [Bob] looks concerned.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'I worry splitting tasks might reduce our overall efficiency. What do you think?'",
-    "options": [
-      {
-        "text": "Maybe you're right. Let's focus on one task at a time.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show good emotional perception by considering Bob's concern, but social skills could be better as it doesn't address the urgency directly."
-      },
-      {
-        "text": "I think we can handle both tasks if we stay organized. Let's give it a try.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show strong self-regulation and social skills by proposing a structured approach, but empathy could be better by acknowledging Bob's worry more directly."
-      },
-      {
-        "text": "We need to adapt. I'll manage the report while you both finalize the presentation.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You show high motivation and empathy by taking on the report, but emotional perception could improve by considering Bob's efficiency concern."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs heavily while Bob looks stressed, tapping his pen on the desk.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Bob is right. This is escalating quickly. Are you sure we can't convince you to get more involved?'",
+        "options": [
+            {
+                "text": "Let's find a middle ground. I'll be available for key decisions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed empathy and willingness to support while maintaining some boundaries, demonstrating good perception and motivation."
+            },
+            {
+                "text": "Honestly, I can't take on more right now. You need to lead this.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained strong self-regulation by setting clear boundaries, but your empathy and motivation to help were lower."
+            },
+            {
+                "text": "I'll help where I can, but you need to manage most of it.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered some assistance, showing balanced empathy and social skills, but your perception and self-regulation were not particularly high."
+            }
+        ]
+    }
 }

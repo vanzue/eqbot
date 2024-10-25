@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. You encouraged the team to stay focused and motivated, but tension still lingers. [Monica] glares at [Bob] and says, 'This is why nothing ever gets done.' [Bob] retorts, 'Well, maybe if we didn't overthink everything...'",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "The tension in the room is palpable. [Monica] glares at [Bob] and says, 'This is why nothing ever gets done.' [Bob] retorts, 'Well, maybe if we didn't overthink everything...'",
-    "options": [
-      {
-        "text": "Let's try to see things from each other's perspective and find common ground.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You encouraged mutual understanding and collaboration, showing strong emotional perception, self-regulation, empathy, and social skills."
-      },
-      {
-        "text": "Monica, Bob, let's focus on the task at hand and put aside personal differences for now.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized staying on task and managing emotions, demonstrating excellent self-regulation and motivation."
-      },
-      {
-        "text": "If we keep arguing, we'll never get anything done. Let's agree to disagree and move forward.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You aimed to de-escalate the conflict by encouraging compromise, showing good social skills and moderate emotional perception."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "After a few more minutes of discussion, Monica taps her foot impatiently.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We really can't afford to delay any further. What's the plan?'",
+        "options": [
+            {
+                "text": "We're almost done, Monica. Just a few more minutes, please.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Monica's urgency but ask for a bit more time, showing empathy and motivation to ensure thorough planning."
+            },
+            {
+                "text": "I understand the urgency. Let's make a quick decision now and refine it as we go.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You balance the need for speed with the understanding that details can be refined later, showing good perception and social skills."
+            },
+            {
+                "text": "If we rush now, we might make mistakes. Let's finish this discussion properly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of a thorough discussion to avoid mistakes, showing good self-regulation and a balanced approach."
+            }
+        ]
+    }
 }

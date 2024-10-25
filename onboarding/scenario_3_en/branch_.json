@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Everyone is looking at you to make the final decision.",
-    "options": [
-      {
-        "text": "How about we do a bit of everything? Start with an outdoor activity, then have dinner, and end the night at a bar.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I think a formal dinner would be a great way to celebrate our success. It will give us a chance to relax and reflect on our achievements.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes one suggestion over others."
-      },
-      {
-        "text": "Let's vote on each option and go with the majority's choice to ensure everyone feels included.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Ryan proposes an outdoor activity. Emma responds:",
+        "role": "Emma",
+        "location": "Break Room",
+        "description": "'An outdoor activity sounds exhausting.'",
+        "options": [
+            {
+                "text": "Outdoor activities can be refreshing and fun.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Let's find an activity that suits everyone's energy levels.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation by considering everyone's energy levels, but social skill and perception were moderate."
+            },
+            {
+                "text": "Maybe we can plan shorter outdoor activities to avoid exhaustion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed your opinion calmly, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
 }

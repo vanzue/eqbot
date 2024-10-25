@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] taps her fingers on the table. You advocated for patience.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "Bob raises an eyebrow. 'Are we just supposed to wait and see? We need results now.'",
-    "options": [
-      {
-        "text": "Results take time, but we can set short-term goals to track progress more closely.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a balanced approach of patience and short-term tracking, showing good self-regulation and moderate skills in other areas."
-      },
-      {
-        "text": "I get it, but maybe we need to prioritize and focus on the most critical tasks first.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "You show empathy by acknowledging the urgency and suggest prioritization, but your motivation to stick to the original plan is lower."
-      },
-      {
-        "text": "If immediate results are necessary, we might need to rethink our current strategy entirely.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 2,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 5
-        },
-        "analysis": "You suggest a radical approach, showing high motivation and social skill but lower emotional perception and self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica takes a deep breath while Bob continues to look frustrated.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Alright, let’s get some feedback from the team. But what if the suggestions are just as ineffective?'",
+        "options": [
+            {
+                "text": "We should still try. Any input is better than none.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You encouraged trying for feedback, showing good perception and empathy, although your motivation to explore alternatives was moderate."
+            },
+            {
+                "text": "If we think the feedback is not useful, we can filter it and focus on actionable items.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical approach to filter feedback, demonstrating balanced empathy and social skills, but the perception and self-regulation were moderate."
+            },
+            {
+                "text": "I think we need to trust the team’s judgment and at least give their suggestions a try.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized trusting the team and trying their suggestions, showing strong empathy and motivation, but the perception and self-regulation were moderate."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Then, you proposed a hybrid approach to combine both quick decision-making and thorough analysis. Now, Alex and Lily are trying to understand how this hybrid approach will be implemented, and both look at you expectantly. You suggested having quick decision-making sessions followed by thorough review meetings. Alex and Lily are still not fully convinced and continue to express doubt.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily look at you, still expressing doubts about how the hybrid approach will actually work in practice.'",
-    "options": [
-      {
-        "text": "Let's define specific roles: Alex, you'll lead the initial decision-making process, and Lily, you'll ensure every decision is thoroughly vetted. Does that address your concerns?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You provided a clear division of responsibilities, showing good emotional perception and empathy while attempting to address their concerns."
-      },
-      {
-        "text": "How about we test this hybrid approach on a smaller task first and then review the outcome to see if any adjustments are needed?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a trial run to evaluate the hybrid approach, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "We need to move forward with this project. Let's implement the hybrid approach as planned and address any issues as they arise.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized the need to move forward, showing good social skills and motivation to keep the project on track."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "You see Bob sighing and rubbing his temples.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'At this rate, we're going to miss our deadline.'",
+        "options": [
+            {
+                "text": "Let's prioritize the tasks and focus on the most critical ones first.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by acknowledging the deadline concern and suggest a prioritization approach to balance urgency and thoroughness."
+            },
+            {
+                "text": "I understand your concern, Bob. Maybe a quick review can help us stay on track.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize Bob's worry while proposing a balanced approach, showing good self-regulation and social skill."
+            },
+            {
+                "text": "We can't afford to be overly cautious. We need to keep moving.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of progress, showing motivation and a willingness to take calculated risks, while acknowledging the need for some level of caution."
+            }
+        ]
+    }
 }

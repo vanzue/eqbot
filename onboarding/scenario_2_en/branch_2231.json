@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you suggested taking a short break to come back with fresh perspectives. Now, [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, still showing signs of tension, continue discussing their approaches. Monica and Bob exchange glances, clearly uneasy with the ongoing tension. Alex is tapping his pen on the table, while Lily is folding her arms, looking defensive.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Despite the short break, Alex and Lily are still struggling to agree. Alex's frustration is apparent, and Lily remains defensive. Monica and Bob look on, clearly uncomfortable.'",
-    "options": [
-      {
-        "text": "I appreciate the passion both of you bring. Monica, Bob, why don’t you share your thoughts on how we can move forward?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You involved Monica and Bob to gain fresh perspectives and diffuse the tension, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, I understand your frustration, but can we consider Lily's points to avoid missing any critical details?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Alex's frustration while emphasizing the need to consider Lily's thorough approach, showing empathy and strong social skills."
-      },
-      {
-        "text": "This back-and-forth isn't helping. Maybe we should assign roles based on each of your strengths to avoid further conflicts?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You suggested assigning roles based on strengths to avoid further conflicts, showing good motivation and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica glances at you, raising an eyebrow.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Listing potential pitfalls is fine, but it might slow us down. What’s your take?'",
+        "options": [
+            {
+                "text": "We could list the major risks only and proceed quickly with the minor ones.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach, maintaining pace while acknowledging potential risks, showing good self-regulation and social skills."
+            },
+            {
+                "text": "Monica, we need to be thorough to avoid mistakes. It’s worth the time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of thoroughness, showing empathy towards risk management and motivation to ensure quality."
+            },
+            {
+                "text": "Addressing potential issues as they come up could save us more time.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight a more agile approach, showing good perception of the urgency but lower empathy towards thorough planning."
+            }
+        ]
+    }
 }

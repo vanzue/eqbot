@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You proposed to vote on each option and go with the majority's choice to ensure everyone feels included. The team agreed, and a vote was conducted. The result was a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] were looking at you expectantly. You suggested combining both, starting with the outdoor activity to unwind and then having a formal dinner to celebrate your achievements. The team seemed to like the idea, but there was still some tension. [Monica] and [Bob] discussed how to proceed with the plan. You suggested a simple hike followed by a dinner at a nice restaurant. The team agreed, but now there is a discussion about the specifics. [Monica] says, 'I think we should decide on the restaurant soon. Should we book something fancy or just a nice casual place?' [Bob] adds, 'And what about the hike? Should it be a short and easy trail or something more challenging?' You decided to leave the decision to the team. Now, [Monica] and [Bob] are discussing the details again and looking for your input.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "[Monica] says, 'We really need to finalize the details soon. Time is running out.' [Bob] looks at you and says, 'Yeah, Alex, we need to get this sorted. What do you think?' They both await your response.",
-    "options": [
-      {
-        "text": "Let's go with a moderate trail and a casual restaurant. It seems like a good balance for everyone.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's comfort. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "How about we aim for a more challenging trail and a fancy restaurant? It can be a special celebration.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it may not appeal to everyone who prefers something less intense."
-      },
-      {
-        "text": "Honestly, just pick whatever you both think is best. I'm fine with anything.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making a decisive call and does not show strong consideration for the team's preferences."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob taps his pen on the table and looks at Monica.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "'Sticking to one idea might oversimplify things. How will we ensure everyone feels included?'",
+        "options": [
+            {
+                "text": "We can rotate the activities so everyone gets a chance to enjoy their preferred type.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a balanced approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "Maybe we should just make a decision and not worry too much about everyone's preferences.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You leaned towards decisiveness, showing good self-regulation and motivation, but empathy and perception were lower."
+            },
+            {
+                "text": "We could send out a poll to see what the majority prefers.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a democratic approach, showing good social skills, but perception, empathy, and self-regulation were moderate."
+            }
+        ]
+    }
 }

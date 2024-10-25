@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] questions your reliability for future projects.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "Bob scratches his head. 'So, if we plan better, how can we ensure everyone is on the same page?'",
-    "options": [
-      {
-        "text": "We can schedule regular check-ins and clarify roles to avoid last-minute confusion.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You suggest a practical approach to improve communication and planning. This shows good empathy and self-regulation, but motivation and social skills could be higher."
-      },
-      {
-        "text": "I think a shared calendar and better documentation would help everyone stay updated.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You propose a concrete solution to improve coordination, demonstrating good social skills and emotional perception. However, empathy could be improved."
-      },
-      {
-        "text": "Maybe we need a dedicated point person to handle urgent tasks when someone is unavailable.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggest a backup plan to handle urgent tasks, showing strong self-regulation and social skills. Emotional perception and motivation could be higher."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica shifts nervously in her seat, glancing at Bob who now stands with his arms crossed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Bob, it's not just my responsibility. We all agreed to share the workload.'",
+        "options": [
+            {
+                "text": "Everyone, let's take a step back and calmly discuss how we can better manage this project.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You tried to calm the situation and promote a collaborative approach, demonstrating strong perception and self-regulation."
+            },
+            {
+                "text": "Monica, I understand your frustration. Bob, can we redistribute some tasks to help Monica out?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Monica's frustration and sought to reallocate work, demonstrating empathy and social skills."
+            },
+            {
+                "text": "Monica, maybe we need to set up a meeting to clarify everyone's responsibilities.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested a structured approach to address the issue, showing social skill but lower empathy and motivation."
+            }
+        ]
+    }
 }

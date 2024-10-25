@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] sent you the updated details for the report.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'We need to ensure this report is flawless. Can you double-check everything before we submit it?'",
-    "options": [
-      {
-        "text": "I'll review it thoroughly, but please highlight any critical sections.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and emotional perception, but social skills might be seen as lacking since you ask for highlights instead of taking full initiative."
-      },
-      {
-        "text": "Of course, I'll make sure it's perfect. Just send me any final comments.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You display high empathy and emotional perception by readily agreeing to review it thoroughly, but motivation might be low as you rely on their final comments."
-      },
-      {
-        "text": "I can try, but it might be better if we review it together once more.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and social skills by suggesting a collaborative review, but emotional perception and empathy are lower as you hesitate to take immediate action."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob and Monica are frustrated, discussing the task while you join via video call.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'We followed your summary, but we are stuck on one part. Can you walk us through this step?'",
+        "options": [
+            {
+                "text": "Let's go through it step-by-step together quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed a willingness to help and strong empathy, but self-regulation could be improved."
+            },
+            {
+                "text": "I'll quickly explain, but after this, try to handle the rest yourselves.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed a balance between helping and setting boundaries, demonstrating good self-regulation."
+            },
+            {
+                "text": "I believe you both can manage it. Check the detailed guidelines I sent.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries, showing strong self-regulation, but perception, empathy, and motivation were lower."
+            }
+        ]
+    }
 }

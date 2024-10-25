@@ -30,7 +30,7 @@ class ScenarioManager:
         # self.scenario_id = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename))
         # self.scenario_id_en = scenario_id if scenario_id is not None else random.randrange(0, len(self.filename_en))
         if locale == "en":
-            self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(0, len(self.filename_en))
+            self.scenario_id_en = scenario_id if scenario_id is not None and scenario_id < len(self.filename_en) else random.randrange(1, len(self.filename_en))
         else:
             self.scenario_id = scenario_id if scenario_id is not None and scenario_id < len(self.filename) else random.randrange(0, len(self.filename))
 
@@ -44,7 +44,7 @@ class ScenarioManager:
             "沟通表达力": 0,
             "社交得体度": 0
         } if locale!="en" else{
-            "Emotion Perception": 0,
+            "Perception": 0,
             "Self Regulation": 0,
             "Empathy": 0,
             "Social Skill": 0,
@@ -105,7 +105,7 @@ class ScenarioManager:
         
         for key in self.scores:
             avg_score = self.scores[key] / self.choice_count
-            scaled_score = min(max(round(avg_score * 20), 0), 100)
+            scaled_score = min(max(round(avg_score * 4), 0), 20)
             self.scores[key] = scaled_score
 
         min_score = min(self.scores.values())
@@ -154,7 +154,7 @@ async def background_process_data(scenario_manager: ScenarioManager, job_id: str
     min_score_idx, response = await scenario_manager.process_final_data(locale)
     
     # update personal info
-    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if locale!="en" else ["Emotion Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
+    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if locale!="en" else ["Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
     tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"] if locale!="en" else ["tag_description0", "tag_description1", "tag_description2", "tag_description3", "tag_description4"]
     
     personal_info = crud.get_personal_info_by_job_id(db, job_id)

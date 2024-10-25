@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You suggested delegating but expressed concern about complications. [Monica] and [Bob] join the conversation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'I see your point. Maybe we can split the tasks more clearly?' He leans back, crossing his arms.",
-    "options": [
-      {
-        "text": "That might work, Bob. Let's outline the tasks together.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show a balanced approach by agreeing to collaborate, demonstrating good social skills and self-regulation."
-      },
-      {
-        "text": "I think it's better if I handle the key parts myself.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show high empathy and emotional perception by taking on the main tasks, but it may impact your self-regulation and social skills."
-      },
-      {
-        "text": "Splitting tasks sounds smart, but I'm worried about coordination issues.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You demonstrate good self-regulation and social skills by considering task division, but emotional perception could be improved."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica taps her pen on the table, visibly frustrated. Bob looks at you expectantly.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'This isn't just about planning better. We need your help now. Are you really going to leave us hanging?'",
+        "options": [
+            {
+                "text": "I understand the urgency. Let's try to quickly tackle this together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the urgency and showed willingness to help, demonstrating good empathy and perception, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I can't help right now. Maybe it's time we consider better long-term solutions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You stood firm on your boundaries and suggested a long-term improvement, showcasing strong self-regulation but lower empathy and motivation to help immediately."
+            },
+            {
+                "text": "It's not fair to expect me to drop everything. We need to distribute tasks better.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

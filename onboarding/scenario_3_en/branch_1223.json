@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try. Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.' Alex suggests giving it a go and adjusting as needed if they feel rushed. Monica frowns slightly and says, 'Adjusting as needed sounds risky. What if we can't make everyone happy?' Bob, scratching his head, mumbles, 'I still think a simple dinner would be less hassle.' Alex suggests going with a simple dinner to avoid any potential issues.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica rolls her eyes and says, 'A simple dinner does sound less complicated, but really, is that the best we can do to celebrate such a huge success?' Bob chimes in, 'I think we should keep it simple. We've worked hard and deserve to just relax without any added stress.'",
-    "options": [
-      {
-        "text": "I see what you mean, Monica. Maybe we can add a special toast or a small ceremony at the dinner to make it feel more celebratory.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering the concerns of both Monica and Bob. It demonstrates good social skills and motivation to reach a compromise."
-      },
-      {
-        "text": "We should just go with the simple dinner and enjoy each other's company. We can always plan something bigger for another occasion.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes sticking to the simpler plan and deferring a bigger celebration."
-      },
-      {
-        "text": "If we can't agree on something more elaborate, maybe a simple dinner is indeed the way to go.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob nods and glances at you for support. Monica looks exasperated.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob sighs and says, 'Should we just vote on this?'",
+        "options": [
+            {
+                "text": "A vote might be a fair way to decide.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a democratic approach, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Maybe we can take some more time to discuss before deciding.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation by suggesting more discussion, but perception and social skill were moderate."
+            },
+            {
+                "text": "A vote might be premature; let's explore other options first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the need for more options, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
 }

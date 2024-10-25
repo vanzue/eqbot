@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives and proposed a collaborative solution. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, still showing signs of tension, continue discussing their approaches. Monica and Bob exchange uneasy glances as the tension builds.'",
-    "options": [
-      {
-        "text": "I see both methods have their merits. Monica and Bob, what are your thoughts on how we can blend these approaches?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You involved other team members in the discussion, showing good emotional perception and empathy, while promoting a collaborative environment."
-      },
-      {
-        "text": "Alex, we understand your urgency, but Lily's points are also valid. Can't we find a solution that respects both views?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You reinforced the importance of both perspectives and aimed for a balanced approach, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "This ongoing conflict suggests we need a different strategy. How about we brainstorm together to combine quick decisions with detailed discussions?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a collaborative solution, showing good social skills and motivation to resolve the conflict."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica leans forward, frowning slightly.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Why can't we just find a method that suits both of you? This constant back and forth is exhausting.'",
+        "options": [
+            {
+                "text": "We could blend both methods and adjust as needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a balanced approach, demonstrating good self-regulation and social skills while maintaining motivation."
+            },
+            {
+                "text": "Let's focus on the common goal and adapt our processes accordingly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the end goal, showing good perception and social skills, while encouraging adaptability."
+            },
+            {
+                "text": "Finding a middle path is key, but we can't afford to slow down too much.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the need for quick decisions, showing higher motivation but lower empathy towards the cautious approach."
+            }
+        ]
+    }
 }

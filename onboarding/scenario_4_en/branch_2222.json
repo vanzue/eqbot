@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to help with the urgent task. [Monica] and [Bob] join the conversation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'I appreciate your honesty. Do you think we'll finish on time?' He leans forward, looking concerned.",
-    "options": [
-      {
-        "text": "It's hard to say, but let's keep pushing forward.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the uncertainty but remain focused, showing good social skills and self-regulation. Emotional perception and empathy could be improved."
-      },
-      {
-        "text": "Honestly, I'm not sure, but I'll do my best.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show high emotional perception and empathy by expressing uncertainty, but it may affect your self-regulation and social skills."
-      },
-      {
-        "text": "I'm considering other options. Maybe we need to rethink our approach.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and social skills by suggesting an alternative, but emotional perception could improve."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica frowns and looks at her phone. Bob leans against the wall, sighing.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We've tried everything. We really need your help. Can you spare just a little more time?'",
+        "options": [
+            {
+                "text": "I can step in for a bit longer, but let's set a clear end time.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered to extend your help slightly, showing empathy and perception, but your motivation and self-regulation could be stronger."
+            },
+            {
+                "text": "I understand the situation, but I need to prioritize my time off.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the urgency but emphasized your need for rest, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "This constant reliance on me is not sustainable. We need a better plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

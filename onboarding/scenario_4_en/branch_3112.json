@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You agree to handle the report and ask for help with the financials. [Monica] responds with a suggestion.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'How about we split the task? You focus on the main report, and I'll assist with the financials?'",
-    "options": [
-      {
-        "text": "That sounds fair. Let's get started and keep each other updated.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good emotional perception, empathy, and social skills by agreeing to the suggestion and ensuring collaboration."
-      },
-      {
-        "text": "I'm okay with that, but I'll need detailed input from you on the financials.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You show strong social skills and self-regulation, but your empathy might be lacking as you impose conditions."
-      },
-      {
-        "text": "I think it would be more efficient if we work together on both parts simultaneously.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show strong self-regulation but lower emotional perception as you prefer a different approach."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks relieved while Bob checks some documents over the video call.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'We managed to make some progress. But what if this happens again while you're on leave?'",
+        "options": [
+            {
+                "text": "Let's set up a system so you can handle such tasks independently next time.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You focused on preventing future issues, showing good perception and empathy, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I understand your concern. Maybe we can assign a backup while I'm away.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the concern and suggested a compromise, showing good self-regulation but lower motivation and empathy."
+            },
+            {
+                "text": "I believe you'll handle it well. Just trust the process.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You encouraged self-sufficiency, showing strong self-regulation but lower empathy, perception, and motivation to help."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you suggested leveraging individual strengths by allocating specific tasks to suit each person's approach. Now, [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, despite the new strategy, continue to show signs of tension. Alex is leaning forward, speaking in a raised voice, while Lily is sitting back, looking frustrated.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, despite the attempt to allocate tasks according to strengths, are still not seeing eye to eye. Monica and Bob appear concerned, occasionally exchanging uneasy glances.'",
-    "options": [
-      {
-        "text": "Perhaps we need more clarity on how to execute our tasks. Let's revisit our project plan and ensure everyone is on the same page.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggested further clarification to ensure alignment, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, your urgency is noted, but we should respect Lily's need for thorough planning. Can we find a way to balance both without compromising the project?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both perspectives again and aimed for balance, showing empathy and strong social skills."
-      },
-      {
-        "text": "This persistent conflict suggests we might need to rethink our team dynamics. Maybe we can introduce new processes to help streamline our decision-making?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed revisiting team dynamics and processes, showing motivation and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica folds her arms, looking stern.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'Calculated risks are important, but how do we ensure we're not missing anything critical?'",
+        "options": [
+            {
+                "text": "Let's create a checklist of essential items to ensure nothing is overlooked.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a methodical approach to balance the need for speed with thoroughness, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I see your concern, Monica. We should have periodic reviews to catch any missed details.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Monica's worry and suggest a balanced approach, showing empathy and maintaining motivation."
+            },
+            {
+                "text": "Sometimes we have to trust our instincts and move forward quickly. Overthinking can lead to delays.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of quick decision-making, showing good perception of the urgency but lower empathy towards thoroughness."
+            }
+        ]
+    }
 }

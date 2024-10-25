@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to help with the urgent task. [Monica] and [Bob] join the conversation.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "'Thanks for your honesty earlier. How are you holding up?' She leans back, looking thoughtful.",
-    "options": [
-      {
-        "text": "It's been a challenge, but I'll manage as long as we stay on track.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show a balanced approach by acknowledging the challenge but remaining focused. Emotional perception and empathy could be improved."
-      },
-      {
-        "text": "Honestly, I'm feeling pretty overwhelmed, but let's just get it done.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show high emotional perception and empathy by admitting your feelings, but it may negatively impact social skills and self-regulation."
-      },
-      {
-        "text": "I'm considering other options, maybe we can find a better way to handle this.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and social skills by suggesting alternatives, but emotional perception could improve."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks frustrated, crossing his arms. Monica looks at you with a pleading expression.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'I don't think you understand how critical this is. Are you really going to leave us hanging?'",
+        "options": [
+            {
+                "text": "I understand the urgency, but my leave is essential for me to recharge. Let's find another solution.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the urgency but emphasized your need for rest, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "Alright, I'll help out, but I can only spare an hour.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered limited help, showing balanced empathy and social skills, though your motivation and self-regulation were moderate."
+            },
+            {
+                "text": "This constant reliance on me isn't sustainable. We need to rethink our approach to handling emergencies.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

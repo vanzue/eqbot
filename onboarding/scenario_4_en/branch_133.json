@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] sighs, leaning back in his chair. You suggested delegating tasks more effectively.",
-    "role": "[Monica]",
-    "location": "Meeting Room",
-    "description": "Monica raises an eyebrow, tapping her pen. 'Do you think delegating tasks will solve everything?'",
-    "options": [
-      {
-        "text": "It's a start. Let's evaluate how we can distribute responsibilities more effectively.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the suggestion's potential, showing good self-regulation and moderate social skills, but empathy could be improved."
-      },
-      {
-        "text": "Delegating tasks isn't the only solution, but it's a step in the right direction.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You balance the suggestion with a broader perspective, showing good emotional perception and social skills, but motivation could be higher."
-      },
-      {
-        "text": "We need a more comprehensive approach, but delegating tasks is essential.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You stress the importance of delegation while hinting at a larger strategy, showing high self-regulation but lower social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob nods and moves to his computer, while Monica starts organizing papers on her desk.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'Alright, let's figure out a better plan. Any ideas on where we should start?'",
+        "options": [
+            {
+                "text": "How about we outline the key issues first and then brainstorm solutions?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a structured approach to problem-solving, showing good perception and self-regulation, though it could be more emotionally engaging."
+            },
+            {
+                "text": "Monica, since you’ve been handling this, can you lead us through the main points?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You encouraged Monica to take the lead, showing empathy and social skills, though your perception of the overall problem might need more depth."
+            },
+            {
+                "text": "I think we should schedule a dedicated meeting to discuss this in detail.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested postponing the discussion for a more focused meeting, showing social skill but lower empathy and immediate motivation."
+            }
+        ]
+    }
 }

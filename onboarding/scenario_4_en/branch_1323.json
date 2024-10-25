@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] adjusts her glasses, looking concerned. You suggested clearer expectations for everyone.",
-    "role": "[Bob]",
-    "location": "Conference Room",
-    "description": "Bob raises an eyebrow. 'Are you saying we didn't do our part?'",
-    "options": [
-      {
-        "text": "No, that's not what I meant. We all could improve our communication.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You clarify your statement, showing good social skills and emotional perception, but moderate empathy and self-regulation."
-      },
-      {
-        "text": "I think we all need to reflect on how we can work better as a team.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You emphasize teamwork, showing high empathy and self-regulation but lower motivation to take individual responsibility."
-      },
-      {
-        "text": "I believe clearer roles and responsibilities would help avoid such situations.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You propose a logical solution, demonstrating high self-regulation but lower empathy and emotional perception."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica is looking at her phone with a worried expression. Bob is rubbing his temples, clearly stressed out.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "'We have another issue with the client. This needs immediate attention. What should we do?'",
+        "options": [
+            {
+                "text": "Let's take a moment to assess the situation and come up with a plan.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a calm and reflective approach, showing good perception and self-regulation, though the emotional impact on others was not deeply addressed."
+            },
+            {
+                "text": "Monica, could you provide more details on the issue? We need to understand it fully.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You directed the conversation towards Monica and asked for specifics, demonstrating empathy and social skills, but the perception of the broader problem could be stronger."
+            },
+            {
+                "text": "Bob, maybe we should discuss this later and come up with a better plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested postponing the discussion to avoid immediate conflict, showing good social skill but lower empathy and motivation to resolve the issue now."
+            }
+        ]
+    }
 }

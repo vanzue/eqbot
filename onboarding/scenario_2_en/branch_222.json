@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. Monica and Bob exchange glances, clearly uneasy with the ongoing tension.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. Monica and Bob exchange glances, clearly uneasy with the ongoing tension.'",
-    "options": [
-      {
-        "text": "I understand both of you are passionate about your methods. Let's try to find a middle ground where we can act quickly but also ensure thorough consideration.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged both perspectives and aimed for a balanced approach, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, your quick decisions are valuable, but we should not overlook Lily's thorough approach. Let's aim for a strategy that includes both quick actions and detailed discussions.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both perspectives and aimed for a balanced approach, showing strong self-regulation and social skills."
-      },
-      {
-        "text": "This conflict indicates a need for a new strategy. How about we brainstorm together to combine quick decisions with detailed discussions?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a collaborative solution, demonstrating good social skills and motivation to resolve the conflict."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Alex taps his fingers on the table, visibly impatient.",
+        "role": "Alex",
+        "location": "Conference Room",
+        "description": "'This discussion is dragging. We need a decision now.'",
+        "options": [
+            {
+                "text": "How about we list the pros and cons quickly, then decide?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a quick evaluation to balance speed and thoroughness, showing good self-regulation and social skill."
+            },
+            {
+                "text": "I agree, Alex. Let's make a quick decision and adjust if needed.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You support the need for a quick decision, showing high motivation and perception but lower empathy for thorough discussion."
+            },
+            {
+                "text": "Rushing might lead to mistakes, Alex. Can we afford that?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the risks of rushing, showing empathy and motivation for a careful approach."
+            }
+        ]
+    }
 }

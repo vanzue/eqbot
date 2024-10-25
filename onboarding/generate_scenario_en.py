@@ -51,7 +51,7 @@ initial_context = ("""
                     ## Emotional Intelligence Scoring Rules ##
                     Based on Self-Analysis Dimensions, here are some popular assessment questions. These questions cover the five core aspects of emotional detection/reading, emotional control, interpersonal balance, communication and expression, and social appropriateness, aiming to assess an individual's emotional intelligence level.
                     
-                    ## Emotion Perception ##
+                    ## Perception ##
                     I can quickly notice changes in my own emotions. (1-5 points)
                     I can easily detect subtle changes in other people's emotions. (1-5 points)
                     I am good at analyzing the reasons behind others' emotions. (1-5 points)
@@ -86,7 +86,46 @@ initial_context = ("""
                     I can set clear and attainable goals for myself and work persistently towards them. (1-5 points)
                     I can inspire and motivate others to take initiative and contribute to shared goals. (1-5 points)
 
-                    Please return the data in the following json format strictly:
+                    ** Standard Output Format **
+                   {{
+                        "scenes": {{
+                            "background": [based on the previous interactions but keep it shorter than 30 words],
+                            "role": "[name]",
+                            "location": [location],
+                            "description": [someone says something],
+                            "options": [
+                                {{
+                                    "text": [choice1],
+                                    "scores": {{"Perception": [integer between 1 to 5],
+                                                "Self Regulation": [integer between 1 to 5],
+                                                "Empathy": [integer between 1 to 5],
+                                                "Social Skill": [integer between 1 to 5],
+                                                "Motivation": [integer between 1 to 5]}},
+                                    "analysis": [analysis based on choice1]
+                                }},
+                                {{
+                                    "text": [choice2],
+                                    "scores": {{"Perception": [integer between 1 to 5],
+                                                "Self Regulation": [integer between 1 to 5],
+                                                "Empathy": [integer between 1 to 5],
+                                                "Social Skill": [integer between 1 to 5],
+                                                "Motivation": [integer between 1 to 5]}},
+                                    "analysis": [analysis based on choice2]
+                                }},
+                                {{
+                                    "text": [choice3],
+                                    "scores": {{"Perception": [integer between 1 to 5],
+                                                "Self Regulation": [integer between 1 to 5],
+                                                "Empathy": [integer between 1 to 5],
+                                                "Social Skill": [integer between 1 to 5],
+                                                "Motivation": [integer between 1 to 5]}},
+                                    "analysis": [analysis based on choice3]
+                                }}
+                            ]
+                        }}
+                    }}
+                   
+                   ** Output Example **
                     {{
                         "scenes": {{
                             "background": "You served extra food to your colleague [Sarah], and [Sarah] asks:",
@@ -96,7 +135,7 @@ initial_context = ("""
                             "options": [
                                 {{
                                     "text": "Haha, I just wanted to make sure you're full.",
-                                    "scores": {{"Emotion Perception": 4,
+                                    "scores": {{"Perception": 4,
                                                 "Self Regulation": 3,
                                                 "Empathy": 4,
                                                 "Social Skill": 3,
@@ -104,8 +143,8 @@ initial_context = ("""
                                     "analysis": "You used humor to diffuse the awkwardness, showing good emotional detection and interpersonal balance skills."
                                 }},
                                 {{
-                                    "text": "I won’t allow you to insult yourself like that.",
-                                    "scores": {{"Emotion Perception": 2,
+                                    "text": "I won't allow you to insult yourself like that.",
+                                    "scores": {{"Perception": 2,
                                                 "Self Regulation": 3,
                                                 "Empathy": 2,
                                                 "Social Skill": 3,
@@ -114,7 +153,7 @@ initial_context = ("""
                                 }},
                                 {{
                                     "text": "Sorry, I gave you too much.",
-                                    "scores": {{"Emotion Perception": 3,
+                                    "scores": {{"Perception": 3,
                                                 "Self Regulation": 4,
                                                 "Empathy": 2,
                                                 "Social Skill": 3,
@@ -128,10 +167,11 @@ initial_context = ("""
                     Please generate a json format for questions and answers about [job level][gender] in the [workplace] scenario based on the above format.
 
                     Both questions and answers are conversational. The ratings can make a little more of a difference.
-                    The background should not contain repetitive statements, but should be logically coherent.
+                    The background should not contain repetitive statements, but should be logically coherent. Please keep it in mind.
 
                     You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task.
-                    ## Don't repeat the tedious background each time, just display it the front of the scenario
+                    # The backgrounds of each scenario are high based on the previous interactions but keep it shorter than 30 words.
+                    # The character who is going to say something should always change in the adjacent interactions.
                     
                     SCENARIO_TYPES = [" Workplace difficulties ", "helping others fit in "," Responding to emergencies "]
                     used_scenarios = set()
@@ -149,7 +189,7 @@ initial_context = ("""
 
 llm = creat_llm()
 
-def generate_next_question(context, branch_number, max_retries=5):
+def generate_next_question(context, branch_number, max_retries=10):
     for attempt in range(max_retries):
         try:
             # response = requests.post(ENDPOINT, headers=headers, json=payload)
@@ -190,7 +230,7 @@ def validate_json_structure(json_data):
     scenes_required_keys = ['background', 'role', 'location', 'description', 'options']
     option_required_keys = ['text', 'scores', 'analysis']
     # emotion perception, emotion perception, interpersonal balance, communication skills, and social skills
-    ability_keys = ["Emotion Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
+    ability_keys = ["Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
 
     if not all(key in json_data for key in required_keys):
         return False
@@ -276,8 +316,15 @@ def recursive_dialogue(context, folder, depth=0, max_depth=5, branch_path=""):
         new_context = context + f"""
                                 The system generates a question and options in the same format:
                                 {new_scenario}
-                                User chooses {i}. The new question should follow the previous scenario and choice, paying attention to the context transition, but please don't use the same content. If changing the scene, there should be a transition. The scenario involves two NPCs, [Monica] and [Bob], along with you. The NPCs' names appear in brackets only in the background. A conversation or story occurs between the three of you. The dialogue and scenario should not be repeated. After three rounds of conversation, the scene can shift to a new place to expand the topic. There should be conflict in the situation and dialogue, preferably with some passive-aggressiveness or an element of {scenario_type}.
+                                User chooses {i}. The new question should follow the previous scenario and choice, paying attention to the context transition, but please don't use the same content. 
+                                If changing the scene, there should be a transition. The scenario involves two NPCs, [Monica] and [Bob], along with you. The NPCs' names appear in brackets only in the background. 
+                                A conversation or story occurs between the three of you. 
+                                
+                                The dialogue, scenario and background should not be repeated. There should be conflict in the situation and dialogue, preferably with some passive-aggressiveness or an element of {scenario_type}.
                                 Provide one abstract, unclear response, one answer that leans toward agreement, and one answer that leans toward disagreement, possibly with passive-aggressive undertones. All three options should make sense in their own way, creating a dilemma when choosing. Keep it conversational and natural.
+                                
+                                Don't repeat the tedious background each time and the backgrounds of each scenario are high based on the previous interactions but keep it shorter than 30 words.
+                                Don't ask the same persion to say in the adjacent scenes and keep the output format. Make sure to return the given Standard Output Format and do not generate inside other containers like ```json```!
                                 """
         new_context += "\nPlease avoid repeating previous scenarios or answers and the background shoule keep going with the new interations, and it can be more varied, combined with the last round of dialogue, add some body movements but don't include the original background. The description includes the words that role says and following the movements described in background. Make sure to return the JSON data structure (do not start with json letters, do not omit,) and take it easy.\n"
         # print(new_context)

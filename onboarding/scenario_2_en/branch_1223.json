@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested taking a step back and hearing each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Then, there was a tension-filled silence in the room as both Alex and Lily looked at you expectantly. You suggested allocating specific times for both approaches. Alex and Lily exchanged looks, and Alex nodded, though reluctantly. Lily appeared thoughtful, yet uncertain. You proposed a collaborative solution, suggesting a hybrid approach combining quick decision-making with thorough analysis. Alex and Lily both seemed to consider your suggestion.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily are still visibly tense, though they seem more open to a combined approach. Alex leans back in his chair, arms crossed, while Lily taps her pen on the table, deep in thought. The atmosphere is still thick with unresolved tension.'",
-    "options": [
-      {
-        "text": "Perhaps we need to set clearer roles for each task. Alex, you can lead the decision-making process, and Lily, you can focus on the detailed analysis.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You aimed to mediate the conflict by giving clear roles based on their strengths, showing good emotional perception and empathy."
-      },
-      {
-        "text": "I understand both of your points. Let's start by listing immediate actions and potential risks. Then we'll prioritize them together.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both perspectives and suggested prioritizing tasks together, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "This conflict highlights our need for a balanced strategy. Let's brainstorm a hybrid approach that combines quick decision-making with thorough analysis.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a collaborative solution, demonstrating good social skills and motivation to resolve the conflict."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob rubs his temples, clearly stressed.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'This project is behind schedule because of endless discussions.'",
+        "options": [
+            {
+                "text": "Perhaps we need a more structured approach to balance discussions and action.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by acknowledging Bob's frustration and suggest a balanced approach to improve efficiency."
+            },
+            {
+                "text": "I understand your frustration, Bob. Maybe we could set strict time limits for discussions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize Bob's concern and propose a practical solution, showing good self-regulation and social skill."
+            },
+            {
+                "text": "Focusing solely on speed might lead to errors. We need to find a middle ground.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of thoroughness while acknowledging the need for efficiency, showing empathy and motivation."
+            }
+        ]
+    }
 }

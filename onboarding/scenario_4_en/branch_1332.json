@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] raises an eyebrow, tapping her pen. You balanced the suggestion with a broader perspective.",
-    "role": "[Bob]",
-    "location": "Meeting Room",
-    "description": "Bob leans forward, his eyes narrowing. 'Balancing perspectives is fine, but did it really address the core issue?'",
-    "options": [
-      {
-        "text": "It's a continuous process. Let's focus on identifying the core issues together.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You emphasize teamwork and continuous improvement, showing good self-regulation and moderate social skills, but empathy could be higher."
-      },
-      {
-        "text": "Addressing the core issue takes time. We need to be patient and persistent.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You highlight the importance of patience and persistence, showing good emotional perception and social skills, but motivation could be higher."
-      },
-      {
-        "text": "We're making progress, but focusing solely on the core issue might overlook other important factors.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You stress the need for a comprehensive approach, showing high self-regulation but lower social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica adjusts her glasses while Bob leans back in his chair, arms crossed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Alright, I can walk us through the main points. But we need to decide on a strategy moving forward.'",
+        "options": [
+            {
+                "text": "Maybe we should outline our main objectives first and then dive into details.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a structured approach to the discussion, showing good perception and self-regulation, though it could be more emotionally engaging."
+            },
+            {
+                "text": "I agree. Monica, can you start with the critical points?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You supported Monica taking the lead, demonstrating empathy and social skills, though the overall perception of the problem might need more depth."
+            },
+            {
+                "text": "I think we should take a step back and have a dedicated meeting for this.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You proposed postponing the discussion for a more focused meeting, showing good social skill but lower empathy and immediate motivation."
+            }
+        ]
+    }
 }

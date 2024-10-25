@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You agreed to help a bit longer and started working on the urgent task. [Monica] and [Bob] are still involved.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "'I appreciate your dedication, but maybe you should seriously consider taking a break. This isn't your responsibility alone.' She leans back, crossing her arms.",
-    "options": [
-      {
-        "text": "You make a good point. I need to set some boundaries.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You display excellent self-regulation and emotional perception by recognizing the need for boundaries, but empathy could be higher as you step away."
-      },
-      {
-        "text": "I understand, Monica, but I feel it's important to see this through.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy and social skill by acknowledging Monica's concern but staying involved, which might impact your self-regulation."
-      },
-      {
-        "text": "Thanks, Monica. I'll help out a bit longer, but let's outline what needs to be done.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception could be better."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs deeply, clearly frustrated. Monica looks at you expectantly.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "‘Do you really think that's fair? We're all struggling, and we could use your support.’",
+        "options": [
+            {
+                "text": "I understand the pressure, but we need to manage our workload better.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the pressure and suggested better workload management, showing good perception and motivation, though empathy and self-regulation could be stronger."
+            },
+            {
+                "text": "I get it. How about we find a temporary solution until I return?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the issue and suggested a temporary solution, showing strong self-regulation but less empathy."
+            },
+            {
+                "text": "Honestly, this is something that should be within your capacity to manage.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might impact team dynamics negatively."
+            }
+        ]
+    }
 }

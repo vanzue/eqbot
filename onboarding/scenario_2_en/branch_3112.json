@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. [Monica] crossed her arms and sighed, while [Bob] rolled his eyes and muttered, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvened in the meeting room. [Monica] started to speak up but was interrupted by [Alex] who said, 'We don't have time for this. We need to decide now.' [Lily] looked visibly upset. You facilitated open communication, showing good emotional perception and empathy. [Monica] begins to explain her perspective, but [Bob] interjects with a sarcastic remark, 'Oh great, another debate.' You encouraged Monica to continue while addressing Bob's sarcasm, showing good empathy and social skills. Monica continues her explanation, but Bob's body language remains dismissive.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] continues to explain her perspective, [Lily] nods in agreement, while [Alex] looks at you expectantly.",
-    "options": [
-      {
-        "text": "I think we need to find a middle ground. Monica, could you suggest a compromise that addresses both perspectives?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You facilitated a compromise, showing strong emotional perception and empathy."
-      },
-      {
-        "text": "Bob, it seems you have a different view. Let's hear your thoughts constructively.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Bob's dissent and encouraged constructive input, demonstrating good self-regulation and social skills."
-      },
-      {
-        "text": "Alex, we've heard Monica's perspective. Now, could you briefly summarize your main points?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You aimed to balance the discussion by giving attention to Alex's points, showing good social skills and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs, crossing her arms.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, 'Monica, balancing speed and thoroughness is crucial for success.'",
+        "options": [
+            {
+                "text": "We should set clear priorities to move efficiently without compromising quality.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of setting priorities, showing good self-regulation and social skills while maintaining a balanced approach."
+            },
+            {
+                "text": "I agree that we need to act quickly, but a thorough plan will save us from future problems.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the need for speed but stress the importance of planning, demonstrating empathy and perception."
+            },
+            {
+                "text": "Monica, rushing could lead to errors. A bit more discussion ensures we get it right.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You stress the importance of caution and thoroughness, showing empathy for potential outcomes but risking a slower pace."
+            }
+        ]
+    }
 }

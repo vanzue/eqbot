@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily started a detailed analysis but was interrupted by Alex, leading you to ask Lily to quickly outline her main points. After Lily's brief summary, Alex muttered under his breath, 'This is still taking too long,' while Lily looked visibly upset. You proposed setting a timer to keep discussions efficient and allotted Lily two more minutes. Now, as the timer runs out, Alex looks at his watch impatiently and Lily seems flustered.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex taps his watch impatiently while Lily glances nervously at her notes.'",
-    "options": [
-      {
-        "text": "Alex, your impatience is noted, but let's give Lily the floor for one more minute. Lily, please wrap up.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged Alex's impatience while giving Lily a final chance to complete her points, showing good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, if you're not willing to listen, we'll need to find another solution. Lily, please finish up quickly.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You addressed Alex's impatience firmly while urging Lily to conclude, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "This isn't working. Let's take a break and come back with fresh perspectives. Lily, finalize your points during the break.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a break to ease the tension and allow Lily to finalize her points, showing good social skills and motivation to maintain productivity."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob throws his hands up in frustration.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'We can't keep changing our approach every time. It's confusing.'",
+        "options": [
+            {
+                "text": "Let's establish a consistent strategy and stick to it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest a consistent strategy, showing good self-regulation and motivation but less empathy and perception."
+            },
+            {
+                "text": "We need to adapt our approach based on the situation. Flexibility is key.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You advocate for flexibility, showing good perception, empathy, and social skills but slightly less motivation."
+            },
+            {
+                "text": "Changing strategies is part of growth. Let's review what's working and adjust as needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest a review and adjustment approach, showing empathy and motivation but less perception and self-regulation."
+            }
+        ]
+    }
 }

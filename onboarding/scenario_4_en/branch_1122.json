@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] sighs deeply about remote guidance.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "Bob taps his pen on the desk. 'Do you think just promising to be available next time is enough?'",
-    "options": [
-      {
-        "text": "I understand your frustration. Let's create a clear protocol for handling urgent tasks in my absence.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show good emotional perception and empathy by acknowledging the frustration and suggesting a solution, but the motivation to directly address the current issue is lower."
-      },
-      {
-        "text": "I see where you're coming from. I'll make sure to be reachable for critical issues, even during my leave.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show good self-regulation and social skills by promising to be more available, but the motivation to address the current situation is lower."
-      },
-      {
-        "text": "I get it. We need to find a balance that works for everyone. Let's discuss this in detail later.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You recognize the issue and suggest finding a balance, showing good social skills, but immediate emotional perception and empathy could be better."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica takes a deep breath and nods slightly as Bob resumes his pacing.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Alright, so what’s the first step? How do we divide these tasks?'",
+        "options": [
+            {
+                "text": "Let's write down all tasks and assign them based on everyone's strengths.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a structured approach focusing on individual strengths, showing good perception and social skills, though your empathy and motivation were balanced."
+            },
+            {
+                "text": "Maybe we can each take a task and regroup after an hour to see the progress.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You proposed a time-boxed approach to managing tasks, showing strong self-regulation and motivation, with balanced empathy and social skills."
+            },
+            {
+                "text": "Why not just divide the tasks equally and work independently?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a straightforward division of labor, showing strong social skills but lower self-regulation and empathy."
+            }
+        ]
+    }
 }

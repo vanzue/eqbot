@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily then started a detailed analysis, but Alex interrupted impatiently, leading you to ask Lily to quickly outline her main points. Now, after Lily's brief summary, Alex seems dissatisfied and mutters under his breath.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex mutters under his breath, 'This is still taking too long,' while Lily looks visibly upset.'",
-    "options": [
-      {
-        "text": "Alex, if you have a specific concern, please share it openly. Lily, let's ensure we address Alex's priorities.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You encouraged open communication and tried to balance both perspectives, showcasing good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, I understand your frustration, but let's respect the process. Lily, can you wrap up quickly so we can move on?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Alex's frustration but emphasized the importance of the process, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "This meeting is dragging. Let's set a timer for discussions to keep things efficient. Lily, you have two more minutes.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a structured solution to keep discussions efficient, showing good social skills and motivation to maintain productivity."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sits back, sighing as she glances between you and Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We need to find a balance. How do you propose we handle this?'",
+        "options": [
+            {
+                "text": "Let's establish a protocol that allows for quick decisions while ensuring thorough discussions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a balanced approach that respects both quick decisions and thorough discussions, showing good perception, empathy, and social skills."
+            },
+            {
+                "text": "I think we need to prioritize one approach over the other to avoid conflicts.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest prioritizing one approach, showing good self-regulation and motivation but less empathy and social skills."
+            },
+            {
+                "text": "Let's just stick to making decisions quickly and address issues as they arise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You lean towards a quick decision-making approach, showing good social skills and motivation but less empathy and perception."
+            }
+        ]
+    }
 }

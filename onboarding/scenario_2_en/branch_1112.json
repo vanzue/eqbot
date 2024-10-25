@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You acknowledged Alex's urgency but ensured Lily's voice was heard. Lily finished her points and Alex finally noted his point, but still looked dissatisfied. The team now needs to decide the next steps.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex leans back in his chair and sighs, 'Alright, let's vote and move on.' Lily looks at you for direction with a concerned expression.'",
-    "options": [
-      {
-        "text": "Let's take a moment to reflect on both perspectives before we vote. Alex, Lily, any final thoughts?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You encouraged a reflective pause before making a decision, showing strong emotional perception and empathy."
-      },
-      {
-        "text": "I appreciate both your inputs. Let's vote and then discuss how to implement the decision effectively.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both perspectives and moved towards a decision, demonstrating good self-regulation and social skills."
-      },
-      {
-        "text": "Let's vote now based on the information we have, and we'll address any concerns in the implementation phase.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You aimed for efficiency by suggesting a vote, demonstrating good social skills and motivation to keep the meeting on track."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs, leaning back in his chair.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We can't ignore the urgency, but we need a well-thought plan.'",
+        "options": [
+            {
+                "text": "How about a quick brainstorming session to balance speed and thoroughness?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a solution that considers both urgency and thoroughness, showing good social skills and empathy."
+            },
+            {
+                "text": "I agree, Monica. A well-thought plan is critical to avoid future issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You validate Monica's concern, showing good self-regulation and social skill."
+            },
+            {
+                "text": "We need to move fast. Let's decide now and refine the plan as we go.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for quick decisions, showing motivation and a willingness to adapt."
+            }
+        ]
+    }
 }

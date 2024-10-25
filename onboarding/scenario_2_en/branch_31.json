@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. [Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvenes in the meeting room.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] starts to speak up but is interrupted by [Alex] who says, 'We don't have time for this. We need to decide now.' [Lily] looks visibly upset.",
-    "options": [
-      {
-        "text": "Let's try to understand each other's concerns. Monica, please go ahead.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You facilitated open communication, showing good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, we value your sense of urgency, but it's important to hear everyone out. Lily, you seem upset, do you want to share your thoughts?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both Alex's urgency and Lily's feelings, showing good self-regulation and social skills."
-      },
-      {
-        "text": "This meeting is getting off track. Let's refocus on our primary objective and find a solution.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You tried to steer the conversation back to the main goal, demonstrating good social skills and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "During the meeting, after agreeing to a brief discussion, Monica enters the room.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'What's the hold-up here? We need to start the project soon.'",
+        "options": [
+            {
+                "text": "We're just finishing up our discussion to ensure we cover all bases.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You maintain a calm and respectful tone while explaining the situation to Monica, showing good self-regulation and social skill."
+            },
+            {
+                "text": "I understand your concern, Monica, but a thorough discussion now may save us time later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Monica's urgency but emphasize the value of a detailed discussion, demonstrating empathy and perception."
+            },
+            {
+                "text": "We're trying to find a balance between Alex's need for speed and Bob's need for thoroughness.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the differing perspectives in the team and strive for a balanced approach, showing empathy and motivation."
+            }
+        ]
+    }
 }

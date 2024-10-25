@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to stay a bit longer to ensure everything goes smoothly. [Monica] and [Bob] discuss the task.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "'Bob, we should prioritize the client presentation first. Don't you agree?' She looks at you for confirmation.",
-    "options": [
-      {
-        "text": "I think we need to delegate tasks better. Let's discuss this further.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You show good social skills by suggesting better task delegation, but motivation and emotional perception could be improved."
-      },
-      {
-        "text": "Yes, the client presentation should be our top priority. Let's focus on that.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy and emotional perception by agreeing to prioritize the client presentation, but it may affect your self-regulation."
-      },
-      {
-        "text": "I'm not sure that's the best approach. We should balance all tasks equally.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You balance your time off with work demands, showing good social skills and self-regulation, but emotional perception could be better."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica flips through some papers, visibly worried. Bob taps his foot impatiently.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "‘Alright, but we really need to get this done. Any last thoughts before we proceed?’",
+        "options": [
+            {
+                "text": "Let's assign tasks based on each team member's strengths.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You proposed a constructive approach, showcasing strong perception and empathy, though your self-regulation could be a bit stronger."
+            },
+            {
+                "text": "I think you and Bob can handle it. Just prioritize the most critical tasks.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical solution while maintaining your stance on leave, showing strong self-regulation but lower empathy."
+            },
+            {
+                "text": "Monica, you're overthinking it. Bob can manage the task. It's his responsibility.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might negatively impact team dynamics."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to help a bit longer. [Bob] joins in.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'I think we need to set a clear timeline. How long can you stay?' He nervously taps his pen.",
-    "options": [
-      {
-        "text": "I'll stay until the end of the day, but I need to disconnect after that.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You set a clear boundary, showing good self-regulation, but your empathy could be better."
-      },
-      {
-        "text": "I'm fine with staying longer if needed. Let's push through together.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy and emotional perception by offering to stay longer, but it may impact your self-regulation."
-      },
-      {
-        "text": "I can't commit to a specific time. Let's see how it goes.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation by not committing to a specific time, but emotional perception could improve."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods and looks at you expectantly. Bob sighs and sits down.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'I understand your frustration, but we're in this together. Can we count on you for a bit more?'",
+        "options": [
+            {
+                "text": "I get it, let's see what we can accomplish quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the situation and offered to help more, showing good empathy and perception, but your self-regulation and motivation could be stronger."
+            },
+            {
+                "text": "I really need to stick to my break. Maybe we can redistribute the tasks?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You stood firm on needing your break, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "It's not fair that this always falls on me. We need a better plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially straining relationships with your colleagues."
+            }
+        ]
+    }
 }

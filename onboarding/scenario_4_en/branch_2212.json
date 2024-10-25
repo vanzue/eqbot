@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to help with the urgent task. [Monica] and [Bob] join the conversation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'I appreciate your commitment, but are you sure this won't affect your well-being?' He frowns, leaning on the desk.",
-    "options": [
-      {
-        "text": "I'm confident I can manage. Let's focus on getting this done.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show a balanced approach by agreeing to help, but your emotional perception and empathy could be better."
-      },
-      {
-        "text": "To be honest, it's a bit overwhelming, but I'll push through it.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show high emotional perception and empathy by acknowledging your feelings, but it may affect your social skills."
-      },
-      {
-        "text": "I'm considering it, but maybe we can find another solution.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and social skills by suggesting an alternative, but emotional perception could improve."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and crosses her arms. Bob looks at you with hope.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We really need everyone to pitch in. Can you reconsider and stay a bit longer?'",
+        "options": [
+            {
+                "text": "I can extend my help for a bit more, but this should be the last time.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered to help more, showing good empathy and perception, but your self-regulation and motivation could be stronger."
+            },
+            {
+                "text": "I really need to stick to my break. Let’s look at redistributing the tasks.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You stood firm on needing your break, showing strong self-regulation but lower empathy and motivation to help."
+            },
+            {
+                "text": "It's frustrating that this always falls on me. We need better planning.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially straining relationships with your colleagues."
+            }
+        ]
+    }
 }

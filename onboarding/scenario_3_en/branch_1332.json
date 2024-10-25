@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. After considering their input, Alex suggests going with the majority's preference to avoid any conflicts. Monica and Bob now seem to be waiting for a more concrete plan. Alex then proposes to go with Ryan's suggestion of an outdoor team-building activity. Monica and Bob seem to be contemplating this new suggestion. Monica raises an eyebrow, 'An outdoor activity, huh? Well, I guess it's better than nothing. What do you think, Bob?' Bob shrugs, 'I suppose it could be fun, but I was really looking forward to a more relaxed evening.' Alex then agrees, stating the outdoor activity is a great way to bond and celebrate success.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica taps her fingers on the table, 'Alright, Alex, if we're doing this, we need a plan. How exactly will this outdoor activity work?' Bob looks at you, still skeptical.",
-    "options": [
-      {
-        "text": "Let's leave some room for spontaneity. We can plan the general outline but adapt as we go along.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "This response is vague and non-committal, showing a balanced but somewhat indecisive emotional approach."
-      },
-      {
-        "text": "An outdoor activity is a great way to bond and celebrate our success. I'm sure everyone will enjoy it.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This option leans towards agreement, showing good self-regulation and social skills, but slightly lower empathy as it prioritizes the chosen activity."
-      },
-      {
-        "text": "I understand your concerns, Bob. Maybe we should reconsider and pick something more relaxing.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "This response shows high emotional detection and empathy, but lower social skills as it leans towards disagreement with the proposed plan."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica, Bob, and you continue discussing celebration plans.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob shrugs and says, 'How about a mix of activities to please everyone?'",
+        "options": [
+            {
+                "text": "A mix sounds good. Let's list activities and vote.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and social skill by proposing a democratic approach, but perception, self-regulation, and motivation were moderate."
+            },
+            {
+                "text": "A mix can be chaotic. Let's stick to one type.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good perception and self-regulation by considering potential issues, but empathy was lower."
+            },
+            {
+                "text": "A mix might work. Let's discuss the possible logistics.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the suggestion and showed good social skill and motivation, but perception, empathy, and self-regulation were moderate."
+            }
+        ]
+    }
 }

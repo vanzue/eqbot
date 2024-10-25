@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You suggested a formal dinner, and everyone agreed to go with it, but now Monica and Bob are discussing the specifics of the dinner. Monica wants a fancy restaurant, while Bob thinks a casual place would be more comfortable. They turn to you for the final say. You suggested a place that offers both fine dining and a casual section, and everyone agreed. Now, you, Monica, and Bob are discussing the menu options. Monica wants gourmet dishes, while Bob prefers more traditional comfort food. They look to you for a decision. You suggested a mixed menu with both gourmet dishes and traditional comfort food, and everyone agreed. Now, Monica and Bob are discussing the seating arrangement. Monica wants a quiet corner for more intimate conversations, while Bob prefers a central table for a more communal atmosphere. You suggested reserving both a quiet corner and a central table, and everyone agreed. Now, Monica and Bob are discussing the entertainment for the evening. Monica suggests a live band to create a lively atmosphere, while Bob thinks a playlist of everyone's favorite songs would be more inclusive. They look to you for the final decision.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica is leaning forward with a smile, while Bob is texting on his phone, waiting for your input.",
-    "options": [
-      {
-        "text": "How about we start with a playlist of everyone's favorite songs and see how the evening goes? If people want, we can arrange a live band later.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I think having a live band would create a special and memorable atmosphere for our celebration.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes Monica's suggestion over Bob's."
-      },
-      {
-        "text": "Let's vote on the entertainment options to ensure everyone feels included and we make the best choice for the team.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by including everyone's opinion, but shows lower motivation as it avoids making a decisive call."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Sam suggests going to a bar for a lively party, and Monica frowns.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "'I don't think a bar is a good idea.'",
+        "options": [
+            {
+                "text": "Bars can be fun if we pick one with a good atmosphere.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the suggestion and made it more appealing, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Let's consider everyone's preferences before deciding.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation by considering everyone's preferences, but social skill and perception were moderate."
+            },
+            {
+                "text": "Maybe we should find a quieter spot if that's more comfortable.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested an alternative calmly, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
 }

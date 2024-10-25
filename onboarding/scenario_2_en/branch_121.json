@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Now, there is a tension-filled silence in the room as both Alex and Lily look at you expectantly. You asked both to highlight key areas of importance. Alex and Lily did as you requested, though Alex seemed slightly impatient, while Lily was more methodical. However, they still seem to be at an impasse.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex taps his fingers on the table, glancing at his watch, while Lily looks at her notes, waiting for your next move.'",
-    "options": [
-      {
-        "text": "Let's take a moment to consider how we can blend both approaches to achieve our goals effectively. Any suggestions on a combined strategy?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You encouraged collaboration by inviting suggestions for a combined strategy, demonstrating strong emotional perception and empathy."
-      },
-      {
-        "text": "Alex, your sense of urgency is important, but Lily's thoroughness is equally crucial. Let's divide tasks based on these strengths.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged both perspectives and suggested a division of labor, showing strong self-regulation and social skills."
-      },
-      {
-        "text": "Maybe we can come up with a phased plan that allows for quick initial actions followed by detailed analysis. Thoughts?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a phased approach to incorporate both methods, demonstrating good social skills and motivation to resolve the conflict."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica furrows her brow and shifts in her seat.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'This middle ground approach still feels rushed to me. What if we're missing something important?'",
+        "options": [
+            {
+                "text": "We can set aside some time for a quick review to ensure everything's covered.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy and social skill by suggesting a balanced approach, addressing Monica's concerns while keeping the project on track."
+            },
+            {
+                "text": "I understand the concern, but we can't delay any further. Let's move forward and adjust if needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Monica's concern but emphasize the need for progress, showing motivation and a willingness to adapt."
+            },
+            {
+                "text": "Maybe we're being too cautious. A little risk might lead to better results.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You challenge the cautious approach, highlighting the potential benefits of taking risks, showing motivation but less empathy and social skill."
+            }
+        ]
+    }
 }

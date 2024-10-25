@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. [Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvenes in the meeting room. [Monica] starts to speak up but is interrupted by [Alex] who says, 'We don't have time for this. We need to decide now.' [Lily] looks visibly upset. You acknowledged both Alex's urgency and Lily's feelings, showing good self-regulation and social skills. After addressing their concerns, the discussion continues. You emphasized the importance of respecting everyone's input, showing good emotional perception and empathy. The discussion continues.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] tries to speak again, but [Alex] cuts her off, saying, 'We need action, not more talk.' [Bob] shakes his head in frustration. [Monica] begins to speak, but [Alex] interrupts again, saying, 'Enough with the talking. We need results.'",
-    "options": [
-      {
-        "text": "Monica, I believe you have a valuable perspective. Please continue.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You reinforced the importance of hearing everyone's input, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, I understand your urgency, but we need to let Monica finish her point. Bob, any thoughts on this?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You balanced the need for urgency with the importance of hearing everyone out, showcasing strong self-regulation and social skills."
-      },
-      {
-        "text": "Let's focus on actionable steps. Monica, go ahead with your suggestions.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You directed the conversation towards actionable steps while ensuring Monica has a chance to speak, displaying good social skills and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "During the meeting, Monica looks impatient, and Bob seems conflicted.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We really can't afford any more delays. Can we finalize this?'",
+        "options": [
+            {
+                "text": "We need to make sure we haven't missed any critical details before moving on.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You show empathy towards Bob's thorough approach while emphasizing the importance of checking details, demonstrating balanced perception and motivation."
+            },
+            {
+                "text": "I agree, Monica. Let's wrap this up quickly and move forward.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You align with Monica's urgency, showing good self-regulation and perception, but slightly lower empathy towards Bob's concern."
+            },
+            {
+                "text": "Perhaps we can delegate some tasks to expedite the process without compromising quality.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a solution that balances speed and thoroughness, demonstrating empathy, social skill, and balanced perception."
+            }
+        ]
+    }
 }

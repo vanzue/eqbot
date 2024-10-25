@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex insists that experiencing all three would be a memorable celebration and suggests giving it a try. Monica sighs and says, 'Alright, but what if we end up rushing through everything and no one enjoys any of it?' Bob adds, 'Yeah, and some of us might not even want to go to a bar.' Alex acknowledges their concerns and suggests prioritizing what will make the majority happy. Monica looks puzzled and says, 'How do we even decide what the majority wants? And what if we still can't agree?' Bob shrugs, looking increasingly frustrated. Alex proposes going with the first suggestion that gets enough support.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica raises an eyebrow and says, 'So we're just going to pick the first thing that a few people like? That doesn't seem fair.' Bob, with a hint of sarcasm, adds, 'Yeah, great way to make everyone feel included.'",
-    "options": [
-      {
-        "text": "We need to be practical. Let's go with the first suggestion that gets enough support and keep it simple.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice demonstrates good self-regulation and social skills but slightly lower empathy as it prioritizes efficiency over ensuring everyone's inclusion."
-      },
-      {
-        "text": "Alright, let's reconsider. Maybe we can have a brief discussion with the whole team to find a balanced solution.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's concerns. It demonstrates good social skills and motivation to reach a fair decision."
-      },
-      {
-        "text": "If we can't agree now, maybe it's best to delay the celebration until we can all come to a consensus.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by considering the difficulty in making a decision but shows lower motivation as it postpones resolving the issue."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are discussing the celebration planning.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "Monica says, 'Balancing between fun and formality sounds tricky.'",
+        "options": [
+            {
+                "text": "We can make it work if we plan well.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the challenge and showed good social skill, but perception, self-regulation, empathy, and motivation were moderate."
+            },
+            {
+                "text": "It's possible with a mix of activities.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good perception and empathy by suggesting a mix of activities, but social skill and self-regulation were lower."
+            },
+            {
+                "text": "Maybe we should focus on one clear theme.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested focusing on one theme, showing good motivation, but other dimensions were moderate."
+            }
+        ]
+    }
 }

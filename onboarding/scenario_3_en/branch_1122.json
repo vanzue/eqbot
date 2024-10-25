@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Alex then suggests a middle ground: a team-building activity followed by dinner, saving the bar for another time. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex then suggests a fancy restaurant for dinner, but Monica raises an eyebrow and says, 'Even with your compromise, we still need to decide on the dinner venue. Bob prefers a fancy restaurant, but I think a casual place would be more relaxed.' Bob sighs, clearly frustrated. Alex agrees with Bob, suggesting a fancy restaurant for the celebration.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica frowns slightly and says, 'I just think a casual place would put everyone at ease. Bob, why is it so important for you to have a fancy dinner?' Bob shrugs, looking a bit defensive. After a moment of silence, Monica adds, 'And what about the team-building activity? Do we even have time for that?'",
-    "options": [
-      {
-        "text": "Let's not rush into any decisions. Maybe we can list the pros and cons of each option before making up our minds.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering both Monica's and Bob's preferences. It demonstrates good social skills and motivation to find a balanced solution."
-      },
-      {
-        "text": "I see your point, Monica, but maybe celebrating our success in a fancy way will make it feel more special. Let's give it a shot!",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills but slightly lower empathy as it prioritizes one preference over the other."
-      },
-      {
-        "text": "If it’s going to be this difficult to decide, maybe we should just pick the simplest option and go with a casual place to avoid any hassles.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's opinion, but shows lower motivation as it avoids making a decisive call."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "You, Monica, and Bob are discussing the celebration planning.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob sighs and says, 'Maybe we should just cancel the whole thing.'",
+        "options": [
+            {
+                "text": "Cancelling isn't the best idea. Let's find a compromise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed good self-regulation and empathy by suggesting finding a compromise, but motivation was lower."
+            },
+            {
+                "text": "Cancelling might be too drastic. We can come up with a better plan.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern and proposed an alternative, showing good perception but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "If we're really divided, cancelling might be the best option.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed willingness to adapt and consider another idea, showing good motivation but empathy and self-regulation were lower."
+            }
+        ]
+    }
 }

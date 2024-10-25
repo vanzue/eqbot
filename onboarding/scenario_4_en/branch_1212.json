@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] raises an eyebrow, questioning the protocol's effectiveness.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "Bob shrugs. 'If you can't always be available, shouldn't we hire more staff to cover such gaps?'",
-    "options": [
-      {
-        "text": "Hiring more staff could work, but we need to ensure they are properly trained.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You agree with the suggestion and emphasize the importance of training, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I agree, but we should also focus on improving our current team's skills.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show empathy and emotional perception by focusing on skill improvement, but motivation to hire is lower."
-      },
-      {
-        "text": "Hiring more staff is not always feasible. We need a more sustainable solution.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You prioritize sustainability and show strong self-regulation, but empathy and emotional perception could be improved."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica starts explaining the unexpected issues. Bob listens, still visibly upset.",
+        "role": "You",
+        "location": "Office",
+        "description": "'Monica, can you walk us through the steps you took? Maybe we missed something.'",
+        "options": [
+            {
+                "text": "Bob, do you think there's a specific point we need to focus on?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You shifted the focus back to Bob, acknowledging his emotions and involving him in the problem-solving process, showing good perception and social skills."
+            },
+            {
+                "text": "Monica, could you also highlight any support you might need from us?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You asked Monica to identify her needs, showing empathy, but overall engagement and motivation to resolve the issue collaboratively were moderate."
+            },
+            {
+                "text": "Let's focus on actionable items. We can't afford to waste time. Monica, summarize quickly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You aimed to keep the discussion efficient, demonstrating strong self-regulation, but lower empathy and motivation to address the problem collaboratively."
+            }
+        ]
+    }
 }

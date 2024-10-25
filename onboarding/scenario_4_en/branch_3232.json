@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You suggest [Monica] focuses on the data while you handle the report. [Bob] chimes in.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'If Monica handles the data, we might miss some key points. Are you sure about this?'",
-    "options": [
-      {
-        "text": "I trust Monica's ability to manage the data. Let's proceed with this plan.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good emotional perception and empathy by trusting your colleague, but your motivation might be lower due to divided focus."
-      },
-      {
-        "text": "Maybe you're right. Let's reassess and find a better approach.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrate good social skills and self-regulation by being open to reassessment, but empathy and motivation might suffer."
-      },
-      {
-        "text": "We should stick to the initial plan. I'll double-check Monica's work if needed.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and social skills but might appear less empathetic and perceptive of potential issues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica glances at Bob, who looks exasperated after reading your message.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'This is really important. Are you absolutely sure you can't help us out just this once?'",
+        "options": [
+            {
+                "text": "I'll briefly assist, but I can't commit to a full review.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered partial help, displaying a balanced approach but no strong inclination toward any specific emotional intelligence dimension."
+            },
+            {
+                "text": "I understand the urgency, but I need to respect my leave. You'll have to manage.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries, showing strong self-regulation, but lower empathy and motivation to assist."
+            },
+            {
+                "text": "Alright, I'll take a quick look and give you my thoughts.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You decided to help despite being on leave, demonstrating strong empathy and social skills but lower self-regulation."
+            }
+        ]
+    }
 }

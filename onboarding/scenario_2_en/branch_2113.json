@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction. Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. You suggested brainstorming together to combine quick decisions with detailed discussions. The team starts brainstorming, but Alex and Lily begin to get defensive about their ideas.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, still showing signs of tension, start getting defensive about their ideas during the brainstorming session.'",
-    "options": [
-      {
-        "text": "Let's pause for a moment and reflect on what we want to achieve as a team. How can we blend our strengths for the best outcome?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You encouraged the team to reflect on their shared goals, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex and Lily, your ideas are both valuable, but let's not forget the importance of team cohesion. We need a strategy that benefits us all.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the value of both perspectives while emphasizing team cohesion, showing strong self-regulation and social skills."
-      },
-      {
-        "text": "This defensiveness isn't helping. We need to find a compromise that incorporates both quick actions and thorough planning.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You addressed the defensiveness directly and proposed a compromise, demonstrating good social skills and motivation to resolve the conflict."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob leans back, sighing deeply, looking frustrated.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'Alex, your rush doesn't account for potential pitfalls. Can't we be more thorough?'",
+        "options": [
+            {
+                "text": "Alex, Bob has a point. Maybe we should balance speed with caution.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob’s concern while still addressing Alex's urgency, showing good self-regulation and social skill."
+            },
+            {
+                "text": "Bob, I get your point, but Alex's approach could save us time. Let's compromise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a middle ground, showing empathy towards both viewpoints and motivation to keep the project moving."
+            },
+            {
+                "text": "Bob, sometimes quick decisions are necessary. We can't always afford to be thorough.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for quick decisions, showing good perception of the situation but lower empathy towards Bob’s concerns."
+            }
+        ]
+    }
 }

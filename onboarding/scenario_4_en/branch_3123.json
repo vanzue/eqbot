@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You suggest reviewing the changes together. [Monica] and [Bob] seem slightly frustrated.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] sighs and says, 'We really need this done quickly. Can you just handle it on your own?'",
-    "options": [
-      {
-        "text": "I'll do my best, but I might need some guidance along the way.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and emotional perception by offering to handle it, but your social skills might be seen as lacking since you indicate needing guidance."
-      },
-      {
-        "text": "Alright, I'll take care of it. Just make sure to send me all the necessary details.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You display high empathy and emotional perception by agreeing to handle it, but your motivation may be low as you are relying on them to send details."
-      },
-      {
-        "text": "I can take a crack at it, but if there are complications, I’ll reach out.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and social skills by taking on the task with a backup plan, but your emotional perception and empathy are lower as you anticipate needing help."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are discussing the task in the office while you join the discussion via video call.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'We need your expertise, but we respect your leave. Can you just give us a brief overview?'",
+        "options": [
+            {
+                "text": "I can spare a few minutes to go over the essentials.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed willingness to help despite being on leave, demonstrating good perception and empathy. However, your self-regulation could be stronger."
+            },
+            {
+                "text": "I'll send you a quick summary and you can reach out if you have more questions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced helping with maintaining your boundaries, showing good self-regulation and perception. However, motivation and empathy were lower."
+            },
+            {
+                "text": "I'm sure you both can manage it. Just follow the instructions I left.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries, showing strong self-regulation. However, perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

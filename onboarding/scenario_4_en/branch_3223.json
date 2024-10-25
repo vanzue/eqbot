@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decide to polish the slides first. [Bob] seems uneasy.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'It's just that market trends could really strengthen our case. Are you sure we can skip them?'",
-    "options": [
-      {
-        "text": "Let's focus on nailing the presentation first, then we can add the trends if time permits.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and social skills by focusing on the immediate task, but empathy is lower as you dismiss Bob's concern."
-      },
-      {
-        "text": "You're right, the trends are important. I'll start gathering the data now.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrate high emotional perception and social skills by agreeing with Bob, but may struggle with self-regulation and motivation."
-      },
-      {
-        "text": "Maybe we can split tasks. I'll polish the slides while you look up the trends.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and social skills by suggesting a compromise, but your emotional perception is lower as you delegate Bob's concern."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are trying to work with your previous feedback, but they seem stuck again.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'We appreciate the feedback, but we're still hitting roadblocks. Can you help us troubleshoot?'",
+        "options": [
+            {
+                "text": "I'll help you troubleshoot, but I'll need to keep it brief.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered to help while reminding them of your need for brevity, showing good perception and empathy but slightly lower self-regulation and motivation."
+            },
+            {
+                "text": "I can provide a quick overview of potential solutions, but I can't stay long.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+            },
+            {
+                "text": "I've given you enough to work with. Try to solve it based on the feedback.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

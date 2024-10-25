@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You suggest delegating the report to someone else. [Monica] frowns slightly.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'Delegating sounds good, but who can we trust to do it well on such short notice?'",
-    "options": [
-      {
-        "text": "Let's call Sarah; she's reliable and quick with reports.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrate good social skills and emotional perception by suggesting a reliable colleague, but your motivation may be seen as lower since you're delegating the task."
-      },
-      {
-        "text": "We could split the report into sections and each take a part.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good self-regulation and empathy by proposing a collaborative effort, but your motivation could be questioned as you're not taking full responsibility."
-      },
-      {
-        "text": "Maybe we should handle the report ourselves to ensure it's done correctly.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You display strong self-regulation and social skills by taking responsibility, but your emotional perception is lower as you're not considering other options."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are still in the office, and you are troubleshooting via video call from home.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'Even with your help, we can't seem to figure this out. Are you sure we’re doing it right?'",
+        "options": [
+            {
+                "text": "Let's take a step back and review everything from the beginning.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You show strong perception and empathy, offering thorough assistance, but your motivation to maintain your leave drops."
+            },
+            {
+                "text": "Try to troubleshoot step by step and let me know where you get stuck.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You encourage them to find the solution independently, demonstrating good self-regulation and balanced empathy, though the motivation is moderate."
+            },
+            {
+                "text": "You should be able to handle this if you follow the instructions carefully.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintain boundaries and encourage self-reliance, showing strong self-regulation but lower empathy and motivation."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. Alex suggests a bit of everything: starting with an outdoor activity, then having dinner, and ending the night at a bar. Monica and Bob have been discussing this, and you notice some tension as they approach you. Alex then suggests a middle ground: a team-building activity followed by dinner, saving the bar for another time. Monica crosses her arms and says, 'Alex, do you really think we can fit all that in one evening? And Bob here thinks we should just stick to one thing.' Bob nods in agreement, looking a bit annoyed. Alex suggests a compromise with a bistro that’s casual but still has great food. Monica raises an eyebrow and says, 'Even with your compromise, we still need to decide on the dinner venue. Bob prefers a fancy restaurant, but I think a casual place would be more relaxed.' Bob sighs, clearly frustrated. Alex suggests focusing on practicality rather than trying to please everyone. Monica leans back in her chair, looking at you expectantly, while Bob frowns and says, 'I just don’t see how we can make everyone happy with this plan.'",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica taps her finger on the table and says, 'Maybe we should just scrap the whole plan and go back to square one.' Bob nods, adding, 'Or perhaps we can just let everyone do their own thing.'",
-    "options": [
-      {
-        "text": "Let's not be too hasty. We have a good plan; we just need to fine-tune it a bit. How about we take a short break and come back with fresh ideas?",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "This response shows a high level of emotional detection and empathy by suggesting a break to reconsider the plan. It demonstrates good social skills and motivation to find a balanced solution."
-      },
-      {
-        "text": "I think starting over might be the best approach. It could give us a chance to come up with a plan that works for everyone.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This choice shows good self-regulation and emotional perception, but demonstrates lower motivation as it suggests scrapping the current plan entirely."
-      },
-      {
-        "text": "If everyone doing their own thing is what it takes to avoid conflicts, maybe that’s what we should do.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects empathy and emotional detection by considering everyone's preference to avoid conflicts, but shows lower motivation as it avoids making a cohesive plan."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and says, 'I just don't see why we can't have a simple dinner.'",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob crosses his arms and says, 'A dinner won't be memorable enough for our hard work.'",
+        "options": [
+            {
+                "text": "A dinner might be low-key, but it can still be special if we plan it right.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You showed empathy and social skill by acknowledging the suggestion and proposing a way to make it special, but motivation was lower."
+            },
+            {
+                "text": "Let's think about how we can combine a dinner with some fun activities.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good perception and social skill by suggesting a compromise, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Maybe a dinner isn't exciting enough for everyone after such hard work.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
 }

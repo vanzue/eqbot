@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You and your colleagues decide to focus on the report first. [Monica] looks concerned.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'Focusing on the report first might indeed delay the presentation. Are we sure that's the best course?'",
-    "options": [
-      {
-        "text": "We should stick to the plan and finish the report first. It’s crucial.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You show good self-regulation and motivation, but empathy could be improved by considering the presentation's importance."
-      },
-      {
-        "text": "Maybe we can allocate tasks better. I'll manage the report while you start on the presentation.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You balance social skills and emotional perception, but motivation might be lower due to task splitting."
-      },
-      {
-        "text": "We might need to reconsider and prioritize the presentation. Let's discuss.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and empathy, but emotional perception might be lower as you shift priorities."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are discussing the task in the office while you are on leave, and you decide to join the discussion via video call.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'We really need your expertise on this. Can you quickly guide us through the process?'",
+        "options": [
+            {
+                "text": "Sure, I can guide you through it. Let's get this done together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You demonstrated strong empathy and social skills by offering to help, but your self-regulation and motivation to maintain your leave were slightly lower."
+            },
+            {
+                "text": "I'm on leave, but I can give you some pointers quickly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+            },
+            {
+                "text": "I think you can handle this without me. Try to follow the guidelines I left.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

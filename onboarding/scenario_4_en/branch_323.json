@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decide to multitask. [Monica] reviews the presentation draft.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'The draft looks fine, but can you double-check the data while working on the report?'",
-    "options": [
-      {
-        "text": "Sure, I can manage both. Just give me a bit more time.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
-        },
-        "analysis": "You demonstrate good social skills and self-regulation, but your motivation might take a hit due to the added workload."
-      },
-      {
-        "text": "I think checking the data should be your focus while I finish the report.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation but might appear less empathetic and less perceptive of the overall task needs."
-      },
-      {
-        "text": "Maybe we can split the tasks more evenly. I'll handle the report if you take care of the data.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good emotional perception and empathy, but your motivation and self-regulation might suffer due to the unexpected task distribution."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks frustrated as he reads your message while Monica sighs.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'I understand you're on leave, but we really could use your input. What's your final call?'",
+        "options": [
+            {
+                "text": "Alright, I'll review it briefly and give you my thoughts.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You decided to help despite being on leave, showing strong empathy and social skills, but lower self-regulation."
+            },
+            {
+                "text": "I can't, I'm on leave. You'll have to manage without me.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries, showing strong self-regulation, but your empathy and motivation to help were lower."
+            },
+            {
+                "text": "Let me quickly review it, but I won't be able to deep dive.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
+            }
+        ]
+    }
 }

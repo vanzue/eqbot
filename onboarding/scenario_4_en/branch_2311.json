@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to see how far you and [Monica] can get before involving [Bob].",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'Hey, I noticed you two are handling the task. Need any help? I'm available.' He stands up, looking ready.",
-    "options": [
-      {
-        "text": "Thanks, Bob. We might need your help soon, but let's try a bit more on our own first.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show a balanced approach by acknowledging Bob's offer while focusing on the task, but could improve emotional perception."
-      },
-      {
-        "text": "Actually, Bob, your help would be great right now. Let's tackle this together.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy and social skills by involving Bob immediately, but it may affect your self-regulation and motivation."
-      },
-      {
-        "text": "No, Bob. We have it under control for now. Let's not disrupt our flow.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation by keeping the current setup, but empathy and emotional perception could be improved."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods at Bob's suggestion. Bob leans back in his chair, looking at both of you.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Do you think it's feasible to start implementing this new system immediately?'",
+        "options": [
+            {
+                "text": "Yes, we can start with a pilot phase to see how it works.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a practical approach, showing good perception and social skills, though your motivation and self-regulation were moderate."
+            },
+            {
+                "text": "I think we need more time to plan it out properly before jumping in.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You expressed caution and the need for thorough planning, showing strong self-regulation but lower empathy and motivation."
+            },
+            {
+                "text": "Honestly, rushing into this might cause more confusion. We need a proper strategy first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might create tension with colleagues."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' You decide that a formal dinner would be a great way to celebrate. Monica looks pleased, but Bob seems disappointed and crosses his arms. Bob sighs and says, 'Well, if we're doing a formal dinner, I guess we should at least make it interesting. Any ideas?' Monica nods eagerly and adds, 'Yes, let's make it special.' You suggest keeping it simple and elegant. Bob reluctantly nods, but his enthusiasm seems to wane. Monica smiles and says, 'That sounds perfect.' Bob mutters under his breath, 'Sure, if you like boring.' Monica looks at Bob and says, 'Maybe we can add a little something to make it less boring. What do you think, Alex?' You decide to stick to the dinner plan without any extra activities. Monica seems satisfied, but Bob remains visibly disappointed, glancing at his watch frequently.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Bob finally speaks up, 'You know, Alex, sometimes it feels like our input doesn't really matter. What's the point of asking if the decision's already made?' Monica looks at you, concerned.",
-    "options": [
-      {
-        "text": "I hear you, Bob. Let's discuss this further and find a way to incorporate more team feedback in future plans.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This response shows high emotional detection and empathy by acknowledging Bob's feelings and suggesting a constructive way to address them. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I understand your frustration, Bob, but we did vote and the majority preferred the formal dinner.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "This response shows good self-regulation and emotional detection but lacks social skill as it doesn't fully address Bob's concern about feeling unheard."
-      },
-      {
-        "text": "If you're not happy with how things are done here, maybe you should take some time to reflect on whether this team is the right fit for you.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "This response lacks empathy and social skill, and could be perceived as dismissive and insensitive, potentially escalating the conflict."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and looks at Bob after considering mixing elements from each suggestion.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'Mixing elements? That sounds complicated and might not please anyone.'",
+        "options": [
+            {
+                "text": "Maybe we can simplify it by picking just the best parts of each idea.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You tried to address the complexity by simplifying, showing good perception and empathy, but self-regulation and social skills were moderate."
+            },
+            {
+                "text": "We could give it a try and see if everyone is happy with the result.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a trial approach, showing good self-regulation and social skills, but perception and empathy were moderate."
+            },
+            {
+                "text": "Compromise is always tricky, but it's worth the effort to keep everyone satisfied.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the difficulty, showing good empathy and motivation, but social skills and perception were lower."
+            }
+        ]
+    }
 }

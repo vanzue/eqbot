@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity. You propose to vote on each option and go with the majority's choice to ensure everyone feels included. The team agrees, and a vote is conducted. The result is a tie between the formal dinner and the outdoor team-building activity. [Monica] and [Bob] are looking at you expectantly.",
-    "role": "Alex",
-    "location": "Office Conference Room",
-    "description": "Monica says, 'I think the formal dinner would be more appropriate given the hard work we've put in.' Bob counters, 'But we deserve to have some fun and relax, an outdoor activity sounds perfect.' Everyone is waiting for your decision.",
-    "options": [
-      {
-        "text": "How about we combine both? We can start with the outdoor activity to unwind and then have a formal dinner to celebrate our achievements.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "This option shows a high level of emotional detection and empathy by considering everyone's preferences. It also demonstrates good social skills and motivation."
-      },
-      {
-        "text": "I understand both points of view, but I think we should stick with the formal dinner. It will be a classy way to celebrate and reflect on our success.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "This choice shows good self-regulation and social skills, but slightly lower empathy as it prioritizes one suggestion over others."
-      },
-      {
-        "text": "Since we can't decide, maybe we should just skip the celebration and focus on our next project.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "This option reflects a lack of motivation and lower social skills, as it avoids making a decisive call and does not consider the team's desire to celebrate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Emma frowns slightly while looking at Ryan.",
+        "role": "Ryan",
+        "location": "Break Room",
+        "description": "'I think an outdoor activity would be a great way to bond and relax.'",
+        "options": [
+            {
+                "text": "Why not combine both? We could start with a dinner and then head outdoors.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You tried to find a middle ground, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "I guess some people might find it exhausting, but it could be worth a try.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the potential downside but expressed tentative support, showing good self-regulation and motivation, but empathy and social skill were moderate."
+            },
+            {
+                "text": "An outdoor activity doesn't sound appealing to everyone. Maybe we should reconsider.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] raises an eyebrow, tapping her pen. You suggested evaluating how to distribute responsibilities more effectively.",
-    "role": "[Bob]",
-    "location": "Meeting Room",
-    "description": "Bob leans forward, resting his elbows on the table. 'How do you propose we start with this evaluation?'",
-    "options": [
-      {
-        "text": "We should begin by identifying key tasks and matching them with team members' strengths.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a practical approach, showing good self-regulation and moderate social skills, but empathy could be improved."
-      },
-      {
-        "text": "Let's set a meeting with the team to discuss everyone's current workload and capabilities.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "You show high empathy by involving the team in the discussion, but self-regulation and motivation could be improved."
-      },
-      {
-        "text": "We need to gather data on past project performances to see where we can make improvements.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You stress the importance of data-driven decisions, showing high self-regulation but lower social skills and emotional perception."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica stands up, holding a stack of papers, while Bob looks at you expectantly.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Okay, so what are the key issues that we need to address first?'",
+        "options": [
+            {
+                "text": "Let's list the top three problems and prioritize them.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a methodical approach to address the issues, showing good perception and self-regulation, but the emotional engagement could be better."
+            },
+            {
+                "text": "Monica, why don't you start by telling us what you think the main issues are?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You encouraged Monica to share her perspective, demonstrating empathy and social skills, though your perception of the overall problem might need more depth."
+            },
+            {
+                "text": "I think we should each identify one major issue and then discuss them together.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested a collaborative approach but with less immediate empathy and motivation, showing good social skill."
+            }
+        ]
+    }
 }
