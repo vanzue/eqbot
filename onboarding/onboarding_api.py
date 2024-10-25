@@ -105,7 +105,7 @@ class ScenarioManager:
         
         for key in self.scores:
             avg_score = self.scores[key] / self.choice_count
-            scaled_score = min(max(round(avg_score * 20), 0), 100)
+            scaled_score = min(max(round(avg_score * 4), 0), 20)
             self.scores[key] = scaled_score
 
         min_score = min(self.scores.values())

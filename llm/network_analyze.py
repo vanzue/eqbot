@@ -10,7 +10,6 @@ def request_LLM_response(chat_history):
     system_prompt = """
                     ** Task Description **
                     You are a relationship analysis expert. You will receive a chat histry between me and a peer. You are required to analyze the chat content from the input screenshot and provide an emotional intelligence improvement suggestion tailored to the conversation. Your response should include: 
-                    
 
                     ** Tone and Style **
                     - Professional and objective, while maintaining a polite and neutral tone.
@@ -44,6 +43,9 @@ def request_LLM_response(chat_history):
                             }},
                             {{
                             "point": [Third actionable suggestion for self-improvement]
+                            }},
+                            {{
+                            "point": [[Fourth actionable suggestion for a recommended response the user can give]]
                             }}
                         ]                        
                     }}
@@ -72,6 +74,9 @@ def request_LLM_response(chat_history):
                             }},
                             {{
                             "point": "This is the third actionable suggestion."
+                            }},
+                            {{
+                            "point": "This is the fourth actionable suggestion."
                             }}
                         ]
                     }}

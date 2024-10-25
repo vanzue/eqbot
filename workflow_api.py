@@ -167,7 +167,7 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
               eq_scores.dimension3_score, 
               eq_scores.dimension4_score, 
               eq_scores.dimension5_score]
-    overall_score = helper.calculate_average(*scores)
+    overall_score = sum(scores)
     
     # network
     contacts = crud.get_contacts_by_person_name(db, personal_info.name)

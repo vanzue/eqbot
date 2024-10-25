@@ -93,23 +93,23 @@ def request_LLM_response(scenario):
                     {{
                         "1. Perception": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, about 30 words]
                         }},
                         "2. Self Regulation": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, about 30 words]
                         }},
                         "3. Empathy": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, about 30 words]
                         }},
                         "4. Social Skill": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, about 30 words]
                         }},
                         "5. Motivation": {{
                             "Score": [Score],
-                            "Reason": [Based on the actual conversation content, briefly explain the reasons]
+                            "Reason": [Based on the actual conversation content, briefly explain the reasons, about 30 words]
                         }},
                         "6. Tips": {{
                             "Tips": [Provide a short tip, 20 words or less]
