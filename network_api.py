@@ -155,13 +155,17 @@ async def upload_image(file: UploadFile = File(...)):
 
     with open(temp_filepath, "wb") as f:
             f.write(await file.read())
-
-    # json_data = image2text(image_path=temp_filepath)
-    # res = parse_chatHistory(json_data)
-    res = get_image2text(image_path=temp_filepath)
-    chat_history = res['chat_history']
-    chat_summary = res['summary']
-    low_dim = res['low_dim']
+    try:
+        # json_data = image2text(image_path=temp_filepath)
+        # res = parse_chatHistory(json_data)
+        res = get_image2text(image_path=temp_filepath)
+        chat_history = res['chat_history']
+        chat_summary = res['summary']
+        low_dim = res['low_dim']
+    finally:
+        # Delete the temporary file after processing
+        if os.path.exists(temp_filepath):
+            os.remove(temp_filepath)
     
     return {"chat_history": chat_history, 'summary': chat_summary, 'low_dim': low_dim}
 
