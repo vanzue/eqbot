@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] are in the office, and you are guiding them via video call from home.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'We followed your guidelines, but we're stuck on this part. Can you take a closer look?'",
-    "options": [
-      {
-        "text": "Let me take a quick look and see if I can spot the issue.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You offer to help by directly addressing the problem, showing strong perception and social skills, but your self-regulation is slightly lower."
-      },
-      {
-        "text": "I think you can manage if you revisit the steps carefully.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You encourage independence and demonstrate strong self-regulation, but your empathy and motivation to assist are lower."
-      },
-      {
-        "text": "I'm on leave, but let's try to solve this together quickly.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You balance your time off with helping, showing good empathy and social skills, but your motivation and self-regulation are not particularly high."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are in the office, and you are guiding them via video call from home.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We followed your guidelines, but we're stuck on this part. Can you take a closer look?'",
+        "options": [
+            {
+                "text": "Let me take a quick look and see if I can spot the issue.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offer to help by directly addressing the problem, showing strong perception and social skills, but your self-regulation is slightly lower."
+            },
+            {
+                "text": "I think you can manage if you revisit the steps carefully.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You encourage independence and demonstrate strong self-regulation, but your empathy and motivation to assist are lower."
+            },
+            {
+                "text": "I'm on leave, but let's try to solve this together quickly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You balance your time off with helping, showing good empathy and social skills, but your motivation and self-regulation are not particularly high."
+            }
+        ]
+    }
 }

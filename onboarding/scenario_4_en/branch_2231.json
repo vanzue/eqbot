@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Bob) sighs, sitting down with a defeated look. (Monica) looks at you with a mix of hope and frustration.",
-    "role": "Monica",
-    "location": "Office",
-    "description": "'We really appreciate your effort, but this keeps happening. How can we rely on you more consistently?'",
-    "options": [
-      {
-        "text": "I understand. Let's work on a more sustainable plan together.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the issue and offered to collaborate on a solution, showing empathy and perception while maintaining good social skills."
-      },
-      {
-        "text": "I'll do my best, but you also need to manage better to avoid these recurring issues.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You stood firm on boundaries and suggested improvements, showcasing strong self-regulation but lower empathy and motivation to help immediately."
-      },
-      {
-        "text": "It's frustrating for me too. Maybe if there were clearer guidelines, this wouldn't happen.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "(Bob) sighs, sitting down with a defeated look. (Monica) looks at you with a mix of hope and frustration.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We really appreciate your effort, but this keeps happening. How can we rely on you more consistently?'",
+        "options": [
+            {
+                "text": "I understand. Let's work on a more sustainable plan together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the issue and offered to collaborate on a solution, showing empathy and perception while maintaining good social skills."
+            },
+            {
+                "text": "I'll do my best, but you also need to manage better to avoid these recurring issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You stood firm on boundaries and suggested improvements, showcasing strong self-regulation but lower empathy and motivation to help immediately."
+            },
+            {
+                "text": "It's frustrating for me too. Maybe if there were clearer guidelines, this wouldn't happen.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] sighs and rubs his temples, while [Monica] glances at you for support.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'So, what do you suggest we do now? We can't just keep making the same mistakes.'",
-    "options": [
-      {
-        "text": "We need a fresh perspective. Maybe we should get feedback from the team.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested involving the team for new ideas, showing good perception and empathy, but your motivation is not particularly high."
-      },
-      {
-        "text": "Let's take a break and come back with clear minds. We're too stressed to think straight right now.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You suggested taking a break to regain clarity, showing strong self-regulation, but your motivation to address the issue immediately is lower."
-      },
-      {
-        "text": "Monica, I think Bob needs us to step up our game. Can you suggest something?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Bob's need for action and prompted Monica for input, showing balanced empathy and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs and rubs his temples, while Monica glances at you for support.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'So, what do you suggest we do now? We can't just keep making the same mistakes.'",
+        "options": [
+            {
+                "text": "We need a fresh perspective. Maybe we should get feedback from the team.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested involving the team for new ideas, showing good perception and empathy, but your motivation is not particularly high."
+            },
+            {
+                "text": "Let's take a break and come back with clear minds. We're too stressed to think straight right now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested taking a break to regain clarity, showing strong self-regulation, but your motivation to address the issue immediately is lower."
+            },
+            {
+                "text": "Monica, I think Bob needs us to step up our game. Can you suggest something?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Bob's need for action and prompted Monica for input, showing balanced empathy and social skills."
+            }
+        ]
+    }
 }

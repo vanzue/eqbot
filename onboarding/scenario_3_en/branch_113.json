@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica nods slightly, [Bob] joins the conversation.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob crosses his arms and says, 'Fine, no bar. But what's the plan then?'",
-    "options": [
-      {
-        "text": "We could consider Emma's suggestion of a formal dinner.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the previous suggestion, showing balanced emotional intelligence, but motivation and self-regulation were moderate."
-      },
-      {
-        "text": "Let's explore Ryan's idea of an outdoor activity.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You showed motivation and enthusiasm, but empathy and perception were moderate."
-      },
-      {
-        "text": "How about a combination of both: a dinner followed by a short outdoor activity?",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You proposed a compromise, showing good perception and social skills, but self-regulation and motivation were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods slightly, Bob joins the conversation.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob crosses his arms and says, 'Fine, no bar. But what's the plan then?'",
+        "options": [
+            {
+                "text": "We could consider Emma's suggestion of a formal dinner.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the previous suggestion, showing balanced emotional intelligence, but motivation and self-regulation were moderate."
+            },
+            {
+                "text": "Let's explore Ryan's idea of an outdoor activity.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed motivation and enthusiasm, but empathy and perception were moderate."
+            },
+            {
+                "text": "How about a combination of both: a dinner followed by a short outdoor activity?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You proposed a compromise, showing good perception and social skills, but self-regulation and motivation were lower."
+            }
+        ]
+    }
 }

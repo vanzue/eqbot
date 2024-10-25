@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "During the meeting, Bob frowns and crosses his arms, clearly frustrated.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'Rushing decisions without thinking them through will just lead to mistakes.'",
-    "options": [
-      {
-        "text": "Let's take a moment to weigh the pros and cons before moving forward.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show empathy by acknowledging Bob's need for thoroughness and encourage balanced decision-making."
-      },
-      {
-        "text": "I see your point, but sometimes speed is essential to stay competitive.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You recognize the need for quick decisions while validating Bob's concern, showing good self-regulation and social skill."
-      },
-      {
-        "text": "We can't afford to waste time on endless discussions. Let's set a deadline.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You propose a compromise, showing empathy and motivation to move forward while ensuring all voices are heard."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "During the meeting, Bob frowns and crosses his arms, clearly frustrated.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'Rushing decisions without thinking them through will just lead to mistakes.'",
+        "options": [
+            {
+                "text": "Let's take a moment to weigh the pros and cons before moving forward.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by acknowledging Bob's need for thoroughness and encourage balanced decision-making."
+            },
+            {
+                "text": "I see your point, but sometimes speed is essential to stay competitive.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize the need for quick decisions while validating Bob's concern, showing good self-regulation and social skill."
+            },
+            {
+                "text": "We can't afford to waste time on endless discussions. Let's set a deadline.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a compromise, showing empathy and motivation to move forward while ensuring all voices are heard."
+            }
+        ]
+    }
 }

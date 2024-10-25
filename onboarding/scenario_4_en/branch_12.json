@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] stops typing and looks up, her face turning red. [Bob] crosses his arms, waiting for an answer.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'I was handling it, but there were unexpected issues. We need to discuss this together.'",
-    "options": [
-      {
-        "text": "Let's all sit down and go through the issues one by one.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a collaborative approach to address the issues, showing good social skills and perception, though self-regulation could be stronger."
-      },
-      {
-        "text": "Monica, do you need more support to handle these issues?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You offered to understand Monica's situation better, showing high empathy, but the overall engagement and motivation to resolve the issue were moderate."
-      },
-      {
-        "text": "Bob, it's clear Monica is stressed. Can we discuss this later?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You suggested deferring the discussion to avoid immediate conflict, demonstrating strong self-regulation but lower empathy and motivation to address the problem now."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica stops typing and looks up, her face turning red. Bob crosses his arms, waiting for an answer.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'I was handling it, but there were unexpected issues. We need to discuss this together.'",
+        "options": [
+            {
+                "text": "Let's all sit down and go through the issues one by one.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a collaborative approach to address the issues, showing good social skills and perception, though self-regulation could be stronger."
+            },
+            {
+                "text": "Monica, do you need more support to handle these issues?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered to understand Monica's situation better, showing high empathy, but the overall engagement and motivation to resolve the issue were moderate."
+            },
+            {
+                "text": "Bob, it's clear Monica is stressed. Can we discuss this later?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested deferring the discussion to avoid immediate conflict, demonstrating strong self-regulation but lower empathy and motivation to address the problem now."
+            }
+        ]
+    }
 }

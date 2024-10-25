@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica looks at the clock, visibly anxious.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'We really need to wrap this up soon. We can't afford to go over time.'",
-    "options": [
-      {
-        "text": "Time is important, but so is making the right decision. Let's quickly summarize our points.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show high empathy and social skills by acknowledging Monica's concern and suggesting a balanced summary to save time while making informed decisions."
-      },
-      {
-        "text": "I understand the urgency, Monica. Maybe we can speed up the discussions and focus on key points.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You recognize Monica's time concern and suggest a focused approach to speed up the process, showing good self-regulation and social skills."
-      },
-      {
-        "text": "We can't afford to rush this. Important decisions take time, even if we have to extend the meeting.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need for thorough decision-making, showing motivation to ensure quality outcomes, while acknowledging the time constraints."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks at the clock, visibly anxious.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'We really need to wrap this up soon. We can't afford to go over time.'",
+        "options": [
+            {
+                "text": "Time is important, but so is making the right decision. Let's quickly summarize our points.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show high empathy and social skills by acknowledging Monica's concern and suggesting a balanced summary to save time while making informed decisions."
+            },
+            {
+                "text": "I understand the urgency, Monica. Maybe we can speed up the discussions and focus on key points.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize Monica's time concern and suggest a focused approach to speed up the process, showing good self-regulation and social skills."
+            },
+            {
+                "text": "We can't afford to rush this. Important decisions take time, even if we have to extend the meeting.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for thorough decision-making, showing motivation to ensure quality outcomes, while acknowledging the time constraints."
+            }
+        ]
+    }
 }

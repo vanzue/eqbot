@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] shifts nervously in her seat, glancing at [Bob] who now stands with his arms crossed.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Bob, it's not just my responsibility. We all agreed to share the workload.'",
-    "options": [
-      {
-        "text": "Everyone, let's take a step back and calmly discuss how we can better manage this project.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You tried to calm the situation and promote a collaborative approach, demonstrating strong perception and self-regulation."
-      },
-      {
-        "text": "Monica, I understand your frustration. Bob, can we redistribute some tasks to help Monica out?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Monica's frustration and sought to reallocate work, demonstrating empathy and social skills."
-      },
-      {
-        "text": "Monica, maybe we need to set up a meeting to clarify everyone's responsibilities.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested a structured approach to address the issue, showing social skill but lower empathy and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica shifts nervously in her seat, glancing at Bob who now stands with his arms crossed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Bob, it's not just my responsibility. We all agreed to share the workload.'",
+        "options": [
+            {
+                "text": "Everyone, let's take a step back and calmly discuss how we can better manage this project.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You tried to calm the situation and promote a collaborative approach, demonstrating strong perception and self-regulation."
+            },
+            {
+                "text": "Monica, I understand your frustration. Bob, can we redistribute some tasks to help Monica out?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Monica's frustration and sought to reallocate work, demonstrating empathy and social skills."
+            },
+            {
+                "text": "Monica, maybe we need to set up a meeting to clarify everyone's responsibilities.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested a structured approach to address the issue, showing social skill but lower empathy and motivation."
+            }
+        ]
+    }
 }

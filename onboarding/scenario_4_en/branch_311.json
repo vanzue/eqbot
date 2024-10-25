@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] looks frustrated while [Bob] listens intently to your guidance over the video call.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Thanks for your help, but this is really your responsibility. How do you plan to manage it?'",
-    "options": [
-      {
-        "text": "Let's focus on solving the problem first. We can discuss responsibilities later.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You prioritized resolving the issue, showing good perception and empathy, though your self-regulation could be stronger."
-      },
-      {
-        "text": "I understand your frustration, but I'm on leave. Can we find a middle ground?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the frustration and sought a compromise, showing good self-regulation but lower motivation and empathy."
-      },
-      {
-        "text": "I believe this can be handled without my constant involvement. You've got this!",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You encouraged self-sufficiency, showing strong self-regulation but lower empathy, perception, and motivation to help."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks frustrated while Bob listens intently to your guidance over the video call.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Thanks for your help, but this is really your responsibility. How do you plan to manage it?'",
+        "options": [
+            {
+                "text": "Let's focus on solving the problem first. We can discuss responsibilities later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You prioritized resolving the issue, showing good perception and empathy, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I understand your frustration, but I'm on leave. Can we find a middle ground?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the frustration and sought a compromise, showing good self-regulation but lower motivation and empathy."
+            },
+            {
+                "text": "I believe this can be handled without my constant involvement. You've got this!",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You encouraged self-sufficiency, showing strong self-regulation but lower empathy, perception, and motivation to help."
+            }
+        ]
+    }
 }

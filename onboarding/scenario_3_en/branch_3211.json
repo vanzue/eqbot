@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] scratches his head and looks at [Monica].",
-    "role": "[Bob]",
-    "location": "Conference Room",
-    "description": "'So, what about a mix of suggestions? Should we start drafting a list?'",
-    "options": [
-      {
-        "text": "Sure, let's gather everyone's ideas and vote.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You encouraged a collaborative approach, showing good perception, empathy, and social skills, while self-regulation and motivation were moderate."
-      },
-      {
-        "text": "Maybe we should consider more low-key options first.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggested focusing on quieter activities, showing good self-regulation and motivation, but empathy and social skills were moderate."
-      },
-      {
-        "text": "I think we need to reconsider our options entirely.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You expressed a need to rethink the plans, showing good empathy and motivation, while social skills and perception were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob scratches his head and looks at Monica.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'So, what about a mix of suggestions? Should we start drafting a list?'",
+        "options": [
+            {
+                "text": "Sure, let's gather everyone's ideas and vote.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You encouraged a collaborative approach, showing good perception, empathy, and social skills, while self-regulation and motivation were moderate."
+            },
+            {
+                "text": "Maybe we should consider more low-key options first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested focusing on quieter activities, showing good self-regulation and motivation, but empathy and social skills were moderate."
+            },
+            {
+                "text": "I think we need to reconsider our options entirely.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed a need to rethink the plans, showing good empathy and motivation, while social skills and perception were lower."
+            }
+        ]
+    }
 }

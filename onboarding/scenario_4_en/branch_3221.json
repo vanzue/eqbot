@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] and [Monica] are discussing your detailed feedback. [Bob] seems unsure.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'Thanks for the details. However, we might need your direct intervention. Can you join us for a bit?'",
-    "options": [
-      {
-        "text": "I can join briefly, but please understand my leave is still important.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You demonstrated empathy and willingness to help, but reminded them of your leave, showing balanced skills but slightly lower self-regulation and motivation."
-      },
-      {
-        "text": "I'll join quickly to help, but need to return to my leave soon.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
-      },
-      {
-        "text": "I trust you both can handle this without me. Use the feedback I provided.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob and Monica are discussing your detailed feedback. Bob seems unsure.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'Thanks for the details. However, we might need your direct intervention. Can you join us for a bit?'",
+        "options": [
+            {
+                "text": "I can join briefly, but please understand my leave is still important.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You demonstrated empathy and willingness to help, but reminded them of your leave, showing balanced skills but slightly lower self-regulation and motivation."
+            },
+            {
+                "text": "I'll join quickly to help, but need to return to my leave soon.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+            },
+            {
+                "text": "I trust you both can handle this without me. Use the feedback I provided.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

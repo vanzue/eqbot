@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica adjusts her glasses, looking at both Alex and Bob.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "'We need to find a middle ground. How can we proceed without wasting time or missing details?'",
-    "options": [
-      {
-        "text": "Maybe we could divide tasks based on our strengths and then come together for a quick review.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest leveraging individual strengths, showing good self-regulation and social skill by aiming for a balanced approach."
-      },
-      {
-        "text": "I think Alex's approach is more practical, but we should still discuss potential risks briefly.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You lean towards Alex's method while acknowledging the importance of a brief discussion, showing empathy and motivation."
-      },
-      {
-        "text": "Honestly, thoroughness is critical, but we can't afford delays. Let's prioritize quick wins.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the need for quick results, showing good perception of the urgency but lower empathy towards the need for thoroughness."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica adjusts her glasses, looking at both Alex and Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "'We need to find a middle ground. How can we proceed without wasting time or missing details?'",
+        "options": [
+            {
+                "text": "Maybe we could divide tasks based on our strengths and then come together for a quick review.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest leveraging individual strengths, showing good self-regulation and social skill by aiming for a balanced approach."
+            },
+            {
+                "text": "I think Alex's approach is more practical, but we should still discuss potential risks briefly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You lean towards Alex's method while acknowledging the importance of a brief discussion, showing empathy and motivation."
+            },
+            {
+                "text": "Honestly, thoroughness is critical, but we can't afford delays. Let's prioritize quick wins.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for quick results, showing good perception of the urgency but lower empathy towards the need for thoroughness."
+            }
+        ]
+    }
 }

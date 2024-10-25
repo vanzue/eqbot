@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob leans back and says, 'We should just take a vote and decide.'",
-    "role": "You",
-    "location": "Meeting Room",
-    "description": "Is a vote really the best way to handle this?",
-    "options": [
-      {
-        "text": "Maybe we should first discuss what everyone values in a celebration.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed good perception and empathy by suggesting a discussion, but motivation was lower."
-      },
-      {
-        "text": "A vote could work, but let's make sure everyone feels heard first.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You demonstrated self-regulation and balanced consideration, but perception and empathy were moderate."
-      },
-      {
-        "text": "Voting might leave some people unhappy. Should we explore more options?",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the potential issue with voting, showing good perception and social skill, but self-regulation was lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob leans back and says, 'We should just take a vote and decide.'",
+        "role": "You",
+        "location": "Meeting Room",
+        "description": "Is a vote really the best way to handle this?",
+        "options": [
+            {
+                "text": "Maybe we should first discuss what everyone values in a celebration.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed good perception and empathy by suggesting a discussion, but motivation was lower."
+            },
+            {
+                "text": "A vote could work, but let's make sure everyone feels heard first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You demonstrated self-regulation and balanced consideration, but perception and empathy were moderate."
+            },
+            {
+                "text": "Voting might leave some people unhappy. Should we explore more options?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the potential issue with voting, showing good perception and social skill, but self-regulation was lower."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "In the meeting, Monica taps her pen on the table, looking uneasy.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'I think we're getting sidetracked with all this back and forth.'",
-    "options": [
-      {
-        "text": "Let's focus on our main objectives and avoid unnecessary discussions.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You aim to bring the discussion back on track, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I agree, but hearing everyone's input is crucial to avoid future conflicts.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the importance of everyone's input, showing high empathy and willingness to prevent future issues."
-      },
-      {
-        "text": "Maybe we can set a time limit for discussions to keep things moving.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You propose a practical solution to manage time effectively, displaying good social skills and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "In the meeting, Monica taps her pen on the table, looking uneasy.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'I think we're getting sidetracked with all this back and forth.'",
+        "options": [
+            {
+                "text": "Let's focus on our main objectives and avoid unnecessary discussions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You aim to bring the discussion back on track, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I agree, but hearing everyone's input is crucial to avoid future conflicts.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the importance of everyone's input, showing high empathy and willingness to prevent future issues."
+            },
+            {
+                "text": "Maybe we can set a time limit for discussions to keep things moving.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a practical solution to manage time effectively, displaying good social skills and motivation."
+            }
+        ]
+    }
 }

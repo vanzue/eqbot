@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You, Monica, and Bob are debating celebration plans.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob sighs and says, 'An indoor activity might be safer given the weather forecast.'",
-    "options": [
-      {
-        "text": "Indoor activities can be cozy and fun. Let's explore that.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the concern, showing good social skills, but empathy, perception, and self-regulation were moderate."
-      },
-      {
-        "text": "Weather can change, but indoor activities are safer. Let's consider it.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You showed confidence in the idea, displaying good perception and motivation. However, empathy was lower."
-      },
-      {
-        "text": "But outdoor activities have their own charm. Maybe we can plan for both.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy by considering both options, but self-regulation and social skill were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "You, Monica, and Bob are debating celebration plans.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob sighs and says, 'An indoor activity might be safer given the weather forecast.'",
+        "options": [
+            {
+                "text": "Indoor activities can be cozy and fun. Let's explore that.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern, showing good social skills, but empathy, perception, and self-regulation were moderate."
+            },
+            {
+                "text": "Weather can change, but indoor activities are safer. Let's consider it.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed confidence in the idea, displaying good perception and motivation. However, empathy was lower."
+            },
+            {
+                "text": "But outdoor activities have their own charm. Maybe we can plan for both.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy by considering both options, but self-regulation and social skill were moderate."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "During the meeting, after agreeing to a brief discussion, [Monica] enters the room.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'What's the hold-up here? We need to start the project soon.'",
-    "options": [
-      {
-        "text": "We're just finishing up our discussion to ensure we cover all bases.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You maintain a calm and respectful tone while explaining the situation to Monica, showing good self-regulation and social skill."
-      },
-      {
-        "text": "I understand your concern, Monica, but a thorough discussion now may save us time later.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge Monica's urgency but emphasize the value of a detailed discussion, demonstrating empathy and perception."
-      },
-      {
-        "text": "We're trying to find a balance between Alex's need for speed and Bob's need for thoroughness.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You highlight the differing perspectives in the team and strive for a balanced approach, showing empathy and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "During the meeting, after agreeing to a brief discussion, Monica enters the room.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'What's the hold-up here? We need to start the project soon.'",
+        "options": [
+            {
+                "text": "We're just finishing up our discussion to ensure we cover all bases.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You maintain a calm and respectful tone while explaining the situation to Monica, showing good self-regulation and social skill."
+            },
+            {
+                "text": "I understand your concern, Monica, but a thorough discussion now may save us time later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Monica's urgency but emphasize the value of a detailed discussion, demonstrating empathy and perception."
+            },
+            {
+                "text": "We're trying to find a balance between Alex's need for speed and Bob's need for thoroughness.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the differing perspectives in the team and strive for a balanced approach, showing empathy and motivation."
+            }
+        ]
+    }
 }

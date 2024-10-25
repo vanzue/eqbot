@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] sighs loudly, rubbing her temples, while [Bob] leans against the file cabinet, looking irritated.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'We keep talking but nothing gets done. What's the plan now?'",
-    "options": [
-      {
-        "text": "Let's break this down into smaller tasks and assign responsibilities.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a practical approach to tackle the issue, showing strong perception and balanced emotional regulation."
-      },
-      {
-        "text": "Monica, you're right. Bob, can you start with the first task?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Monica's frustration and directed the conversation to Bob, demonstrating empathy and social skills."
-      },
-      {
-        "text": "Maybe it's best if we revisit this later when everyone is less stressed.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested postponing the discussion to avoid conflict, showing social skill but lower empathy and motivation to resolve the issue immediately."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs loudly, rubbing her temples, while Bob leans against the file cabinet, looking irritated.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We keep talking but nothing gets done. What's the plan now?'",
+        "options": [
+            {
+                "text": "Let's break this down into smaller tasks and assign responsibilities.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a practical approach to tackle the issue, showing strong perception and balanced emotional regulation."
+            },
+            {
+                "text": "Monica, you're right. Bob, can you start with the first task?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Monica's frustration and directed the conversation to Bob, demonstrating empathy and social skills."
+            },
+            {
+                "text": "Maybe it's best if we revisit this later when everyone is less stressed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested postponing the discussion to avoid conflict, showing social skill but lower empathy and motivation to resolve the issue immediately."
+            }
+        ]
+    }
 }

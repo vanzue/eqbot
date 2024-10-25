@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Sam suggests going to a bar for a lively party, and Monica frowns.",
-    "role": "Monica",
-    "location": "Meeting Room",
-    "description": "'I don't think a bar is a good idea.'",
-    "options": [
-      {
-        "text": "Bars can be fun if we pick one with a good atmosphere.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the suggestion and made it more appealing, showing good perception and social skills, but empathy and self-regulation were moderate."
-      },
-      {
-        "text": "Let's consider everyone's preferences before deciding.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and self-regulation by considering everyone's preferences, but social skill and perception were moderate."
-      },
-      {
-        "text": "Maybe we should find a quieter spot if that's more comfortable.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You suggested an alternative calmly, showing good empathy and motivation, but social skill and perception were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Sam suggests going to a bar for a lively party, and Monica frowns.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "'I don't think a bar is a good idea.'",
+        "options": [
+            {
+                "text": "Bars can be fun if we pick one with a good atmosphere.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the suggestion and made it more appealing, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Let's consider everyone's preferences before deciding.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation by considering everyone's preferences, but social skill and perception were moderate."
+            },
+            {
+                "text": "Maybe we should find a quieter spot if that's more comfortable.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested an alternative calmly, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
 }

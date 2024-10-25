@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica, Bob, and you keep discussing ideas.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob folds his arms and says, 'We really should consider everyone's preferences.'",
-    "options": [
-      {
-        "text": "True, it's important to take everyone's opinions into account.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the importance of considering everyone's opinions, showing good empathy, but perception and self-regulation were moderate."
-      },
-      {
-        "text": "I get that, but we need to finalize something soon.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You showed urgency in finalizing plans, displaying good perception and motivation. However, empathy was lower."
-      },
-      {
-        "text": "I think we should decide on the most popular option and move forward.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggested moving forward with the majority choice, showing good social skills but moderate empathy and perception."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica, Bob, and you keep discussing ideas.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob folds his arms and says, 'We really should consider everyone's preferences.'",
+        "options": [
+            {
+                "text": "True, it's important to take everyone's opinions into account.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the importance of considering everyone's opinions, showing good empathy, but perception and self-regulation were moderate."
+            },
+            {
+                "text": "I get that, but we need to finalize something soon.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed urgency in finalizing plans, displaying good perception and motivation. However, empathy was lower."
+            },
+            {
+                "text": "I think we should decide on the most popular option and move forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested moving forward with the majority choice, showing good social skills but moderate empathy and perception."
+            }
+        ]
+    }
 }

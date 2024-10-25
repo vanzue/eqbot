@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Bob) frowns and crosses his arms. (Monica) looks at you expectantly.",
-    "role": "Bob",
-    "location": "Office",
-    "description": "'You always say we need a plan, but nothing changes. Are you going to help or not?'",
-    "options": [
-      {
-        "text": "I get your frustration. Let's discuss a better plan once I finish this urgent task.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Bob's frustration and offered a future solution, demonstrating empathy and perception, though your motivation and self-regulation could be stronger."
-      },
-      {
-        "text": "I can't help right now. We should really rethink our approach to avoid this in the future.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You stood firm on your boundaries and suggested a future improvement, showcasing strong self-regulation but lower empathy and motivation to help immediately."
-      },
-      {
-        "text": "It's always the same story. Maybe if you planned better, we wouldn't be in this mess.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "(Bob) frowns and crosses his arms. (Monica) looks at you expectantly.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'You always say we need a plan, but nothing changes. Are you going to help or not?'",
+        "options": [
+            {
+                "text": "I get your frustration. Let's discuss a better plan once I finish this urgent task.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Bob's frustration and offered a future solution, demonstrating empathy and perception, though your motivation and self-regulation could be stronger."
+            },
+            {
+                "text": "I can't help right now. We should really rethink our approach to avoid this in the future.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You stood firm on your boundaries and suggested a future improvement, showcasing strong self-regulation but lower empathy and motivation to help immediately."
+            },
+            {
+                "text": "It's always the same story. Maybe if you planned better, we wouldn't be in this mess.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
+            }
+        ]
+    }
 }

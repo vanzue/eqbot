@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica looks frustrated and crosses her arms.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'I understand the need for speed, but this project's complexity requires careful planning.'",
-    "options": [
-      {
-        "text": "Perhaps we can allocate some tasks to move faster while ensuring detailed planning.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a balanced approach, showing empathy and perception by valuing both speed and thorough planning."
-      },
-      {
-        "text": "Bob, maybe a quick decision isn't as risky as it seems.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You lean towards supporting Alex's perspective, showing good self-regulation and social skills in handling the disagreement."
-      },
-      {
-        "text": "It's crucial to avoid hasty decisions; let's prioritize a detailed plan.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of thorough planning, reflecting good motivation and social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica looks frustrated and crosses her arms.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'I understand the need for speed, but this project's complexity requires careful planning.'",
+        "options": [
+            {
+                "text": "Perhaps we can allocate some tasks to move faster while ensuring detailed planning.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a balanced approach, showing empathy and perception by valuing both speed and thorough planning."
+            },
+            {
+                "text": "Bob, maybe a quick decision isn't as risky as it seems.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You lean towards supporting Alex's perspective, showing good self-regulation and social skills in handling the disagreement."
+            },
+            {
+                "text": "It's crucial to avoid hasty decisions; let's prioritize a detailed plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of thorough planning, reflecting good motivation and social skills."
+            }
+        ]
+    }
 }

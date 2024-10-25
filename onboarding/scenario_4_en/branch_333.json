@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] looks frustrated, pacing around the office as [Monica] types away at her computer.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'This is getting out of hand. We need more than just a quick check-in from you. Can you commit some more time?'",
-    "options": [
-      {
-        "text": "I understand the urgency. I can allocate more time, but only for this task.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed strong empathy and social skills by offering more time, but your self-regulation and motivation to maintain your leave were slightly lower."
-      },
-      {
-        "text": "I can only help intermittently. You need to handle most of it.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
-      },
-      {
-        "text": "I think you both need to manage this without my full involvement. Follow the plan.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks frustrated, pacing around the office as Monica types away at her computer.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'This is getting out of hand. We need more than just a quick check-in from you. Can you commit some more time?'",
+        "options": [
+            {
+                "text": "I understand the urgency. I can allocate more time, but only for this task.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed strong empathy and social skills by offering more time, but your self-regulation and motivation to maintain your leave were slightly lower."
+            },
+            {
+                "text": "I can only help intermittently. You need to handle most of it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+            },
+            {
+                "text": "I think you both need to manage this without my full involvement. Follow the plan.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

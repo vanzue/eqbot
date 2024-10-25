@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "(Bob) sighs deeply, clearly frustrated. (Monica) looks at you expectantly.",
-    "role": "Bob",
-    "location": "Office",
-    "description": "‘Do you really think that's fair? We're all struggling, and we could use your support.’",
-    "options": [
-      {
-        "text": "I understand the pressure, but we need to manage our workload better.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the pressure and suggested better workload management, showing good perception and motivation, though empathy and self-regulation could be stronger."
-      },
-      {
-        "text": "I get it. How about we find a temporary solution until I return?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the issue and suggested a temporary solution, showing strong self-regulation but less empathy."
-      },
-      {
-        "text": "Honestly, this is something that should be within your capacity to manage.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 1,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might impact team dynamics negatively."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "(Bob) sighs deeply, clearly frustrated. (Monica) looks at you expectantly.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "‘Do you really think that's fair? We're all struggling, and we could use your support.’",
+        "options": [
+            {
+                "text": "I understand the pressure, but we need to manage our workload better.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the pressure and suggested better workload management, showing good perception and motivation, though empathy and self-regulation could be stronger."
+            },
+            {
+                "text": "I get it. How about we find a temporary solution until I return?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the issue and suggested a temporary solution, showing strong self-regulation but less empathy."
+            },
+            {
+                "text": "Honestly, this is something that should be within your capacity to manage.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 1,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might impact team dynamics negatively."
+            }
+        ]
+    }
 }

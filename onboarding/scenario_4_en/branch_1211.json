@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] sighs deeply and begins speaking, while [Monica] nods slowly, taking notes.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'So, the first issue is the incomplete specifications from the client. Monica, were you aware of this?'",
-    "options": [
-      {
-        "text": "I think this needs to be addressed collectively. Monica, what do you think?",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You focused on collective problem-solving, showing good perception and social skills, though self-regulation was moderate."
-      },
-      {
-        "text": "Monica, can you explain why the specifications were incomplete?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You asked Monica for clarification, showing empathy but with moderate overall engagement and motivation."
-      },
-      {
-        "text": "This is a critical issue, and we need to confront it directly. Monica, please clarify.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You aimed to address the issue directly, demonstrating strong self-regulation but lower empathy and motivation for collaborative resolution."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs deeply and begins speaking, while Monica nods slowly, taking notes.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'So, the first issue is the incomplete specifications from the client. Monica, were you aware of this?'",
+        "options": [
+            {
+                "text": "I think this needs to be addressed collectively. Monica, what do you think?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You focused on collective problem-solving, showing good perception and social skills, though self-regulation was moderate."
+            },
+            {
+                "text": "Monica, can you explain why the specifications were incomplete?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You asked Monica for clarification, showing empathy but with moderate overall engagement and motivation."
+            },
+            {
+                "text": "This is a critical issue, and we need to confront it directly. Monica, please clarify.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You aimed to address the issue directly, demonstrating strong self-regulation but lower empathy and motivation for collaborative resolution."
+            }
+        ]
+    }
 }

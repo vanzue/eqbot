@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob rubs his temples, clearly stressed.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "'Aligning our work styles is easier said than done. What's the next step?'",
-    "options": [
-      {
-        "text": "Let's set up a meeting to create a detailed plan for collaboration.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You propose a structured approach to address the issue, showing good self-regulation, empathy, and motivation for a solution."
-      },
-      {
-        "text": "Maybe we should just focus on our individual tasks and minimize overlap.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggest reducing interaction as a way to avoid conflict, showing good perception but lower empathy towards the need for collaboration."
-      },
-      {
-        "text": "I think we need to discuss our priorities and see where we can compromise.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You propose a balanced approach, showing good social skills and a moderate level of empathy and self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob rubs his temples, clearly stressed.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "'Aligning our work styles is easier said than done. What's the next step?'",
+        "options": [
+            {
+                "text": "Let's set up a meeting to create a detailed plan for collaboration.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a structured approach to address the issue, showing good self-regulation, empathy, and motivation for a solution."
+            },
+            {
+                "text": "Maybe we should just focus on our individual tasks and minimize overlap.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest reducing interaction as a way to avoid conflict, showing good perception but lower empathy towards the need for collaboration."
+            },
+            {
+                "text": "I think we need to discuss our priorities and see where we can compromise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach, showing good social skills and a moderate level of empathy and self-regulation."
+            }
+        ]
+    }
 }

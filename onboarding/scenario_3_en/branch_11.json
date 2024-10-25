@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica rolls her eyes and says, 'A bar party will just be a noisy mess.'",
-    "role": "You",
-    "location": "Meeting Room",
-    "description": "Bars can be fun; let's try to make it enjoyable for everyone.",
-    "options": [
-      {
-        "text": "I think with the right planning, a bar can be fun and not too noisy.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You showed good perception and social skill by acknowledging the concern and proposing a solution, but motivation was lower."
-      },
-      {
-        "text": "Why don't we find a bar with a quieter atmosphere?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and consideration by proposing a compromise, but self-regulation was lower."
-      },
-      {
-        "text": "If noise is a concern, maybe a bar isn't the best option.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the concern, showing good perception and social skill, but empathy was lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica rolls her eyes and says, 'A bar party will just be a noisy mess.'",
+        "role": "You",
+        "location": "Meeting Room",
+        "description": "Bars can be fun; let's try to make it enjoyable for everyone.",
+        "options": [
+            {
+                "text": "I think with the right planning, a bar can be fun and not too noisy.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You showed good perception and social skill by acknowledging the concern and proposing a solution, but motivation was lower."
+            },
+            {
+                "text": "Why don't we find a bar with a quieter atmosphere?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and consideration by proposing a compromise, but self-regulation was lower."
+            },
+            {
+                "text": "If noise is a concern, maybe a bar isn't the best option.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern, showing good perception and social skill, but empathy was lower."
+            }
+        ]
+    }
 }

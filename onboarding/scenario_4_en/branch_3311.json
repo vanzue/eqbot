@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] rubs her temples in frustration while [Bob] stares at the screen intensely.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'We need a bit more clarity. Can you walk us through just one more example?'",
-    "options": [
-      {
-        "text": "Alright, I'll walk you through one more example, but let's make it quick.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You demonstrated strong empathy and perception by agreeing to help, though your self-regulation and motivation to maintain your leave were slightly lower."
-      },
-      {
-        "text": "I think you can handle this yourselves if you review the previous guidelines carefully.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You encouraged self-reliance and showed good self-regulation, but your empathy and motivation to help were lower."
-      },
-      {
-        "text": "I'll give you a quick example, but I must get back to my leave soon.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You balanced your willingness to help with your need for time off, showing good perception and empathy, though your self-regulation was slightly lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica rubs her temples in frustration while Bob stares at the screen intensely.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We need a bit more clarity. Can you walk us through just one more example?'",
+        "options": [
+            {
+                "text": "Alright, I'll walk you through one more example, but let's make it quick.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You demonstrated strong empathy and perception by agreeing to help, though your self-regulation and motivation to maintain your leave were slightly lower."
+            },
+            {
+                "text": "I think you can handle this yourselves if you review the previous guidelines carefully.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You encouraged self-reliance and showed good self-regulation, but your empathy and motivation to help were lower."
+            },
+            {
+                "text": "I'll give you a quick example, but I must get back to my leave soon.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You balanced your willingness to help with your need for time off, showing good perception and empathy, though your self-regulation was slightly lower."
+            }
+        ]
+    }
 }

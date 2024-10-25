@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica nods slightly but still looks concerned.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'Okay, but we can't delay much longer. What's the plan?'",
-    "options": [
-      {
-        "text": "Let's summarize our key points and make a decision quickly.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You aim to address Monica's urgency while ensuring everyone's input is considered, showing good self-regulation and motivation."
-      },
-      {
-        "text": "We need a few more minutes to finalize things, but we'll be quick.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the need for thorough discussion while committing to a swift resolution, demonstrating empathy and perception."
-      },
-      {
-        "text": "If we keep discussing, we'll miss the deadline. Let's decide now.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of deadlines and push for a quick decision, showing social skill and motivation to move forward."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods slightly but still looks concerned.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'Okay, but we can't delay much longer. What's the plan?'",
+        "options": [
+            {
+                "text": "Let's summarize our key points and make a decision quickly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You aim to address Monica's urgency while ensuring everyone's input is considered, showing good self-regulation and motivation."
+            },
+            {
+                "text": "We need a few more minutes to finalize things, but we'll be quick.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the need for thorough discussion while committing to a swift resolution, demonstrating empathy and perception."
+            },
+            {
+                "text": "If we keep discussing, we'll miss the deadline. Let's decide now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of deadlines and push for a quick decision, showing social skill and motivation to move forward."
+            }
+        ]
+    }
 }

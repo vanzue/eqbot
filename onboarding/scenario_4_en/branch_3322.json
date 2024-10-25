@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] sighs and [Bob] rubs his temples, both visibly stressed.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'We tried revisiting the steps, but it's still not working. What should we do?'",
-    "options": [
-      {
-        "text": "I understand your frustration. Let me log in and help resolve this quickly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You showed empathy and willingness to help, demonstrating good perception. However, your self-regulation to maintain your leave was slightly lower."
-      },
-      {
-        "text": "I'm confident you can figure it out. Maybe take a short break and come back to it?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained your boundaries, showing good self-regulation, but your empathy and motivation to assist were lower."
-      },
-      {
-        "text": "I'm on leave. You need to handle this on your own.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "You emphasized your need for personal time off, exhibiting strong self-regulation, but your perception, empathy, and motivation were notably lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and Bob rubs his temples, both visibly stressed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We tried revisiting the steps, but it's still not working. What should we do?'",
+        "options": [
+            {
+                "text": "I understand your frustration. Let me log in and help resolve this quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed empathy and willingness to help, demonstrating good perception. However, your self-regulation to maintain your leave was slightly lower."
+            },
+            {
+                "text": "I'm confident you can figure it out. Maybe take a short break and come back to it?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries, showing good self-regulation, but your empathy and motivation to assist were lower."
+            },
+            {
+                "text": "I'm on leave. You need to handle this on your own.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 2,
+                    "Motivation": 2
+                },
+                "analysis": "You emphasized your need for personal time off, exhibiting strong self-regulation, but your perception, empathy, and motivation were notably lower."
+            }
+        ]
+    }
 }

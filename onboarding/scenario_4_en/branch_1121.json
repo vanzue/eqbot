@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] leans back in her chair, looking thoughtful while [Bob] checks his watch.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'Okay, we have a plan, but can we ensure it won't happen again?'",
-    "options": [
-      {
-        "text": "We should review our processes after this and make necessary improvements.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You focused on future improvements, showing strong perception and motivation, though your empathy and self-regulation were balanced."
-      },
-      {
-        "text": "Let's schedule a debriefing meeting to discuss what went wrong and how to fix it.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested a structured approach to address the issue, demonstrating high empathy and social skills, but lower motivation."
-      },
-      {
-        "text": "Mistakes happen. Let's focus on completing the current tasks first.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized immediate action over retrospective analysis, showing high motivation and social skills but lower empathy and self-regulation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica leans back in her chair, looking thoughtful while Bob checks his watch.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'Okay, we have a plan, but can we ensure it won't happen again?'",
+        "options": [
+            {
+                "text": "We should review our processes after this and make necessary improvements.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You focused on future improvements, showing strong perception and motivation, though your empathy and self-regulation were balanced."
+            },
+            {
+                "text": "Let's schedule a debriefing meeting to discuss what went wrong and how to fix it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested a structured approach to address the issue, demonstrating high empathy and social skills, but lower motivation."
+            },
+            {
+                "text": "Mistakes happen. Let's focus on completing the current tasks first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized immediate action over retrospective analysis, showing high motivation and social skills but lower empathy and self-regulation."
+            }
+        ]
+    }
 }

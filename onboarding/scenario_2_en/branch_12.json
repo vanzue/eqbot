@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob looks at you with concern, leaning forward slightly.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'I just think we need to be more careful with these decisions.'",
-    "options": [
-      {
-        "text": "Perhaps we can find a middle ground that addresses both speed and thoroughness.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show high empathy by seeking a compromise that respects both perspectives, maintaining social harmony and balanced decision-making."
-      },
-      {
-        "text": "I appreciate your caution, Bob. Maybe a quick review can help us stay on track while being thorough.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You recognize Bob's need for careful planning while suggesting a balanced approach, showing good self-regulation and social skill."
-      },
-      {
-        "text": "We can't afford to be overly cautious. We need to keep moving.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the importance of progress, showing motivation and a willingness to take calculated risks, while acknowledging the need for some level of caution."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks at you with concern, leaning forward slightly.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'I just think we need to be more careful with these decisions.'",
+        "options": [
+            {
+                "text": "Perhaps we can find a middle ground that addresses both speed and thoroughness.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show high empathy by seeking a compromise that respects both perspectives, maintaining social harmony and balanced decision-making."
+            },
+            {
+                "text": "I appreciate your caution, Bob. Maybe a quick review can help us stay on track while being thorough.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize Bob's need for careful planning while suggesting a balanced approach, showing good self-regulation and social skill."
+            },
+            {
+                "text": "We can't afford to be overly cautious. We need to keep moving.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of progress, showing motivation and a willingness to take calculated risks, while acknowledging the need for some level of caution."
+            }
+        ]
+    }
 }

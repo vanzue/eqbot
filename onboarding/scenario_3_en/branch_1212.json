@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] are discussing the celebration planning.",
-    "role": "Monica",
-    "location": "Break Room",
-    "description": "Monica says, 'Balancing between fun and formality sounds tricky.'",
-    "options": [
-      {
-        "text": "We can make it work if we plan well.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the challenge and showed good social skill, but perception, self-regulation, empathy, and motivation were moderate."
-      },
-      {
-        "text": "It's possible with a mix of activities.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You showed good perception and empathy by suggesting a mix of activities, but social skill and self-regulation were lower."
-      },
-      {
-        "text": "Maybe we should focus on one clear theme.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggested focusing on one theme, showing good motivation, but other dimensions were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are discussing the celebration planning.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "Monica says, 'Balancing between fun and formality sounds tricky.'",
+        "options": [
+            {
+                "text": "We can make it work if we plan well.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the challenge and showed good social skill, but perception, self-regulation, empathy, and motivation were moderate."
+            },
+            {
+                "text": "It's possible with a mix of activities.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good perception and empathy by suggesting a mix of activities, but social skill and self-regulation were lower."
+            },
+            {
+                "text": "Maybe we should focus on one clear theme.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested focusing on one theme, showing good motivation, but other dimensions were moderate."
+            }
+        ]
+    }
 }

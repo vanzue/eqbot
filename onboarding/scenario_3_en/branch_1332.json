@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica, Bob, and you continue discussing celebration plans.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob shrugs and says, 'How about a mix of activities to please everyone?'",
-    "options": [
-      {
-        "text": "A mix sounds good. Let's list activities and vote.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and social skill by proposing a democratic approach, but perception, self-regulation, and motivation were moderate."
-      },
-      {
-        "text": "A mix can be chaotic. Let's stick to one type.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed good perception and self-regulation by considering potential issues, but empathy was lower."
-      },
-      {
-        "text": "A mix might work. Let's discuss the possible logistics.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the suggestion and showed good social skill and motivation, but perception, empathy, and self-regulation were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica, Bob, and you continue discussing celebration plans.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob shrugs and says, 'How about a mix of activities to please everyone?'",
+        "options": [
+            {
+                "text": "A mix sounds good. Let's list activities and vote.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and social skill by proposing a democratic approach, but perception, self-regulation, and motivation were moderate."
+            },
+            {
+                "text": "A mix can be chaotic. Let's stick to one type.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good perception and self-regulation by considering potential issues, but empathy was lower."
+            },
+            {
+                "text": "A mix might work. Let's discuss the possible logistics.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the suggestion and showed good social skill and motivation, but perception, empathy, and self-regulation were moderate."
+            }
+        ]
+    }
 }

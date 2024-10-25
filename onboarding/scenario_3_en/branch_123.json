@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob looks thoughtful and then speaks up.",
-    "role": "Bob",
-    "location": "Break Room",
-    "description": "'What about a mix of activities? A bar and then some outdoor adventure?'",
-    "options": [
-      {
-        "text": "That could work. Mixing activities might keep everyone happy.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged Bob's suggestion and showed empathy and perception by considering everyone's preferences. Your self-regulation and social skills were moderate."
-      },
-      {
-        "text": "I'm not sure if combining both will be practical.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed self-regulation and practicality by questioning the feasibility but were less empathetic and socially skilled."
-      },
-      {
-        "text": "Why complicate it? Let's just stick to one plan.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed social skills by trying to simplify the plan but lacked self-regulation and empathy."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks thoughtful and then speaks up.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "'What about a mix of activities? A bar and then some outdoor adventure?'",
+        "options": [
+            {
+                "text": "That could work. Mixing activities might keep everyone happy.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged Bob's suggestion and showed empathy and perception by considering everyone's preferences. Your self-regulation and social skills were moderate."
+            },
+            {
+                "text": "I'm not sure if combining both will be practical.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed self-regulation and practicality by questioning the feasibility but were less empathetic and socially skilled."
+            },
+            {
+                "text": "Why complicate it? Let's just stick to one plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed social skills by trying to simplify the plan but lacked self-regulation and empathy."
+            }
+        ]
+    }
 }

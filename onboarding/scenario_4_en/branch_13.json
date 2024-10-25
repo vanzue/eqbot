@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] nervously fidgets with her pen while [Bob] leans against the desk, arms crossed.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'You know, I really did try my best. Maybe we need to rethink our approach here?'",
-    "options": [
-      {
-        "text": "Maybe we should take a step back and re-evaluate our strategies.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a calm and reflective approach, showing good perception and self-regulation, though the emotional impact on others was not deeply addressed."
-      },
-      {
-        "text": "It’s clear things aren’t working. Monica, can you pinpoint where it went wrong?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the issue and sought specifics from Monica, showing empathy and social skills, but the perception of the broader problem could be stronger."
-      },
-      {
-        "text": "I think we need to discuss this later and come up with a better plan.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested postponing the discussion to avoid immediate conflict, showing good social skill but lower empathy and motivation to resolve the issue now."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nervously fidgets with her pen while Bob leans against the desk, arms crossed.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'You know, I really did try my best. Maybe we need to rethink our approach here?'",
+        "options": [
+            {
+                "text": "Maybe we should take a step back and re-evaluate our strategies.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a calm and reflective approach, showing good perception and self-regulation, though the emotional impact on others was not deeply addressed."
+            },
+            {
+                "text": "It’s clear things aren’t working. Monica, can you pinpoint where it went wrong?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the issue and sought specifics from Monica, showing empathy and social skills, but the perception of the broader problem could be stronger."
+            },
+            {
+                "text": "I think we need to discuss this later and come up with a better plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested postponing the discussion to avoid immediate conflict, showing good social skill but lower empathy and motivation to resolve the issue now."
+            }
+        ]
+    }
 }

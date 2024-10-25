@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica nods thoughtfully, while Bob still looks unconvinced.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'But what if we miss something important by not discussing it thoroughly?'",
-    "options": [
-      {
-        "text": "We can always revisit topics if needed. Let's move forward for now.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You aim to keep the meeting moving while leaving room for future discussions, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I understand your concern, but we need to balance thoroughness with efficiency.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledge Bob's point while emphasizing the importance of efficiency, showing empathy and balanced decision-making."
-      },
-      {
-        "text": "If it's crucial, we can schedule a separate meeting to dive deeper into those points.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You propose a practical solution to manage important topics separately, showing good social skills and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica nods thoughtfully, while Bob still looks unconvinced.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'But what if we miss something important by not discussing it thoroughly?'",
+        "options": [
+            {
+                "text": "We can always revisit topics if needed. Let's move forward for now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You aim to keep the meeting moving while leaving room for future discussions, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I understand your concern, but we need to balance thoroughness with efficiency.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Bob's point while emphasizing the importance of efficiency, showing empathy and balanced decision-making."
+            },
+            {
+                "text": "If it's crucial, we can schedule a separate meeting to dive deeper into those points.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a practical solution to manage important topics separately, showing good social skills and motivation."
+            }
+        ]
+    }
 }

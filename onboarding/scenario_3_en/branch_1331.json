@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica, Bob, and you continue discussing the celebration plans.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob frowns slightly and says, 'But not everyone enjoys formal dinners. It can be uncomfortable for some.'",
-    "options": [
-      {
-        "text": "Formal dinners can be enjoyable if we add some fun activities.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the concern and proposed a compromise, showing good perception and social skills, but empathy and self-regulation were moderate."
-      },
-      {
-        "text": "Maybe we can have a mix of formal and informal elements to suit everyone.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and self-regulation by considering everyone's preferences, but perception and social skill were moderate."
-      },
-      {
-        "text": "Formal dinners might not work for everyone, so let's think of other options too.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the concern, showing good empathy, but perception, self-regulation, and social skill were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica, Bob, and you continue discussing the celebration plans.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob frowns slightly and says, 'But not everyone enjoys formal dinners. It can be uncomfortable for some.'",
+        "options": [
+            {
+                "text": "Formal dinners can be enjoyable if we add some fun activities.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern and proposed a compromise, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Maybe we can have a mix of formal and informal elements to suit everyone.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation by considering everyone's preferences, but perception and social skill were moderate."
+            },
+            {
+                "text": "Formal dinners might not work for everyone, so let's think of other options too.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern, showing good empathy, but perception, self-regulation, and social skill were moderate."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] leans against the desk, arms crossed, while [Monica] organizes some papers.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'So, are we going to address this issue now or keep pushing it off?'",
-    "options": [
-      {
-        "text": "Let's take a step back and review our priorities to address this properly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You suggested a methodical approach to de-escalate the situation, showing good perception and balanced emotional regulation."
-      },
-      {
-        "text": "Bob, it seems like you're really concerned. Monica, can you provide an update?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Bob's concerns and directed the conversation to Monica, demonstrating empathy and social skills."
-      },
-      {
-        "text": "Bob, maybe this isn't the right time for this discussion.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested postponing the discussion to avoid conflict, showing social skill but lower empathy and motivation to resolve the issue immediately."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob leans against the desk, arms crossed, while Monica organizes some papers.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'So, are we going to address this issue now or keep pushing it off?'",
+        "options": [
+            {
+                "text": "Let's take a step back and review our priorities to address this properly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a methodical approach to de-escalate the situation, showing good perception and balanced emotional regulation."
+            },
+            {
+                "text": "Bob, it seems like you're really concerned. Monica, can you provide an update?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Bob's concerns and directed the conversation to Monica, demonstrating empathy and social skills."
+            },
+            {
+                "text": "Bob, maybe this isn't the right time for this discussion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested postponing the discussion to avoid conflict, showing social skill but lower empathy and motivation to resolve the issue immediately."
+            }
+        ]
+    }
 }

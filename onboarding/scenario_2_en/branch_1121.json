@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob sighs again, rubbing his temples in frustration.",
-    "role": "You",
-    "location": "Conference Room",
-    "description": "You say, 'Let's consider both perspectives carefully to find a solution that satisfies everyone.'",
-    "options": [
-      {
-        "text": "We should analyze the potential risks and benefits of each approach before deciding.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show a high level of empathy and perception by advocating for a thorough analysis that respects both viewpoints."
-      },
-      {
-        "text": "I understand it's challenging, but we need a decision soon to keep things moving.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge the difficulty but emphasize the urgency of making a decision, showing good self-regulation and social skills."
-      },
-      {
-        "text": "If we can't agree, maybe it's best to have a quick vote and move forward based on majority.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You propose a democratic solution, showing empathy and motivation to move forward while ensuring all voices are considered."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs again, rubbing his temples in frustration.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, 'Let's consider both perspectives carefully to find a solution that satisfies everyone.'",
+        "options": [
+            {
+                "text": "We should analyze the potential risks and benefits of each approach before deciding.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show a high level of empathy and perception by advocating for a thorough analysis that respects both viewpoints."
+            },
+            {
+                "text": "I understand it's challenging, but we need a decision soon to keep things moving.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the difficulty but emphasize the urgency of making a decision, showing good self-regulation and social skills."
+            },
+            {
+                "text": "If we can't agree, maybe it's best to have a quick vote and move forward based on majority.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a democratic solution, showing empathy and motivation to move forward while ensuring all voices are considered."
+            }
+        ]
+    }
 }

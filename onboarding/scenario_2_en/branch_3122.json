@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob looks thoughtful while [Monica] frowns.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Monica says, 'If we keep debating, we'll never get started on the project.'",
-    "options": [
-      {
-        "text": "You're right, Monica. Let's focus on the most important issues and move forward.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You agree with Monica's urgency, showing good self-regulation and motivation while trying to keep the discussion productive."
-      },
-      {
-        "text": "We need to ensure we're not overlooking any critical details. A bit more discussion won’t hurt.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You emphasize the importance of thoroughness, showing empathy and perception, but acknowledge the need to balance time."
-      },
-      {
-        "text": "We should avoid rushing. Otherwise, we might create bigger problems down the line.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You express caution against rushing, showing social skill in addressing Monica's concerns while maintaining balance in the discussion."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob looks thoughtful while Monica frowns.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, 'If we keep debating, we'll never get started on the project.'",
+        "options": [
+            {
+                "text": "You're right, Monica. Let's focus on the most important issues and move forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You agree with Monica's urgency, showing good self-regulation and motivation while trying to keep the discussion productive."
+            },
+            {
+                "text": "We need to ensure we're not overlooking any critical details. A bit more discussion won’t hurt.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of thoroughness, showing empathy and perception, but acknowledge the need to balance time."
+            },
+            {
+                "text": "We should avoid rushing. Otherwise, we might create bigger problems down the line.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You express caution against rushing, showing social skill in addressing Monica's concerns while maintaining balance in the discussion."
+            }
+        ]
+    }
 }

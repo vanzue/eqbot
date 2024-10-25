@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica agrees to find a quieter spot. Bob chimes in with a cautious tone.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "'But what if we end up splitting the group?'",
-    "options": [
-      {
-        "text": "If we communicate well, we can make sure everyone stays together.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy and self-regulation by considering everyone's cohesion, but social skill and perception were moderate."
-      },
-      {
-        "text": "Maybe splitting up isn't a bad idea if it means everyone enjoys themselves.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You suggested an alternative calmly, showing good empathy and motivation, but social skill and perception were lower."
-      },
-      {
-        "text": "Let's plan an activity that ensures we stay together.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the concern and suggested a unifying activity, showing good perception and social skills, but empathy and self-regulation were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica agrees to find a quieter spot. Bob chimes in with a cautious tone.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "'But what if we end up splitting the group?'",
+        "options": [
+            {
+                "text": "If we communicate well, we can make sure everyone stays together.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation by considering everyone's cohesion, but social skill and perception were moderate."
+            },
+            {
+                "text": "Maybe splitting up isn't a bad idea if it means everyone enjoys themselves.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested an alternative calmly, showing good empathy and motivation, but social skill and perception were lower."
+            },
+            {
+                "text": "Let's plan an activity that ensures we stay together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern and suggested a unifying activity, showing good perception and social skills, but empathy and self-regulation were moderate."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica, Bob, and you are still discussing celebration ideas.",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "Bob raises an eyebrow and says, 'A relaxed formal venue? Is that even a thing?'",
-    "options": [
-      {
-        "text": "We can find a place that blends formality with a relaxed vibe.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You demonstrated good perception and social skill by proposing a balanced solution, but empathy and self-regulation were moderate."
-      },
-      {
-        "text": "We could look for a casual restaurant that still feels special.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed empathy by considering everyone's preferences, but perception and social skill were moderate."
-      },
-      {
-        "text": "Maybe a formal venue isn't the best idea; let's think of other options.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica, Bob, and you are still discussing celebration ideas.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob raises an eyebrow and says, 'A relaxed formal venue? Is that even a thing?'",
+        "options": [
+            {
+                "text": "We can find a place that blends formality with a relaxed vibe.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You demonstrated good perception and social skill by proposing a balanced solution, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "We could look for a casual restaurant that still feels special.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy by considering everyone's preferences, but perception and social skill were moderate."
+            },
+            {
+                "text": "Maybe a formal venue isn't the best idea; let's think of other options.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
 }

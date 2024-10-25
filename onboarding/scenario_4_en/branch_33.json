@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You decided to join the discussion via video call, while [Monica] and [Bob] are in the office.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'We can't seem to make progress without your input. How should we proceed?'",
-    "options": [
-      {
-        "text": "Can you please try to follow the guidelines I left once more?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You showed good self-regulation by maintaining your boundaries, but your empathy and motivation to help were lower."
-      },
-      {
-        "text": "I think you both can handle it without me. Let’s touch base later.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You maintained strong self-regulation and social skills, but your perception, empathy, and motivation were lower."
-      },
-      {
-        "text": "I can help for a bit, but I need to get back to my leave soon.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You balanced your willingness to help with your need for time off, showing good perception and motivation, though your self-regulation was slightly lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "You decided to join the discussion via video call, while Monica and Bob are in the office.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We can't seem to make progress without your input. How should we proceed?'",
+        "options": [
+            {
+                "text": "Can you please try to follow the guidelines I left once more?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good self-regulation by maintaining your boundaries, but your empathy and motivation to help were lower."
+            },
+            {
+                "text": "I think you both can handle it without me. Let’s touch base later.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained strong self-regulation and social skills, but your perception, empathy, and motivation were lower."
+            },
+            {
+                "text": "I can help for a bit, but I need to get back to my leave soon.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You balanced your willingness to help with your need for time off, showing good perception and motivation, though your self-regulation was slightly lower."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] are still in the office, and you are troubleshooting via video call from home.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'Even with your help, we can't seem to figure this out. Are you sure we’re doing it right?'",
-    "options": [
-      {
-        "text": "Let's take a step back and review everything from the beginning.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show strong perception and empathy, offering thorough assistance, but your motivation to maintain your leave drops."
-      },
-      {
-        "text": "Try to troubleshoot step by step and let me know where you get stuck.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You encourage them to find the solution independently, demonstrating good self-regulation and balanced empathy, though the motivation is moderate."
-      },
-      {
-        "text": "You should be able to handle this if you follow the instructions carefully.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintain boundaries and encourage self-reliance, showing strong self-regulation but lower empathy and motivation."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob are still in the office, and you are troubleshooting via video call from home.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'Even with your help, we can't seem to figure this out. Are you sure we’re doing it right?'",
+        "options": [
+            {
+                "text": "Let's take a step back and review everything from the beginning.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You show strong perception and empathy, offering thorough assistance, but your motivation to maintain your leave drops."
+            },
+            {
+                "text": "Try to troubleshoot step by step and let me know where you get stuck.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You encourage them to find the solution independently, demonstrating good self-regulation and balanced empathy, though the motivation is moderate."
+            },
+            {
+                "text": "You should be able to handle this if you follow the instructions carefully.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintain boundaries and encourage self-reliance, showing strong self-regulation but lower empathy and motivation."
+            }
+        ]
+    }
 }

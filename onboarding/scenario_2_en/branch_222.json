@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Alex taps his fingers on the table, visibly impatient.",
-    "role": "Alex",
-    "location": "Conference Room",
-    "description": "'This discussion is dragging. We need a decision now.'",
-    "options": [
-      {
-        "text": "How about we list the pros and cons quickly, then decide?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a quick evaluation to balance speed and thoroughness, showing good self-regulation and social skill."
-      },
-      {
-        "text": "I agree, Alex. Let's make a quick decision and adjust if needed.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You support the need for a quick decision, showing high motivation and perception but lower empathy for thorough discussion."
-      },
-      {
-        "text": "Rushing might lead to mistakes, Alex. Can we afford that?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasize the risks of rushing, showing empathy and motivation for a careful approach."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Alex taps his fingers on the table, visibly impatient.",
+        "role": "Alex",
+        "location": "Conference Room",
+        "description": "'This discussion is dragging. We need a decision now.'",
+        "options": [
+            {
+                "text": "How about we list the pros and cons quickly, then decide?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a quick evaluation to balance speed and thoroughness, showing good self-regulation and social skill."
+            },
+            {
+                "text": "I agree, Alex. Let's make a quick decision and adjust if needed.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You support the need for a quick decision, showing high motivation and perception but lower empathy for thorough discussion."
+            },
+            {
+                "text": "Rushing might lead to mistakes, Alex. Can we afford that?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the risks of rushing, showing empathy and motivation for a careful approach."
+            }
+        ]
+    }
 }

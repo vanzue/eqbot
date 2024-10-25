@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Bob raises an eyebrow and looks at Monica.",
-    "role": "Bob",
-    "location": "Break Room",
-    "description": "'I think we should consider everyone's feelings before making a decision.'",
-    "options": [
-      {
-        "text": "True, but sometimes we have to make tough decisions.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged the importance of considering feelings but pointed out the need for tough decisions, showing good perception and motivation but lower social skills."
-      },
-      {
-        "text": "Absolutely, let's make sure everyone's voice is heard.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You agreed with Bob's statement, emphasizing empathy and self-regulation, but social skill and perception were moderate."
-      },
-      {
-        "text": "Considering everyone's feelings might make it hard to reach a decision.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You pointed out a potential difficulty in considering everyone's feelings, showing good perception and motivation but lower social skills."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob raises an eyebrow and looks at Monica.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "'I think we should consider everyone's feelings before making a decision.'",
+        "options": [
+            {
+                "text": "True, but sometimes we have to make tough decisions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the importance of considering feelings but pointed out the need for tough decisions, showing good perception and motivation but lower social skills."
+            },
+            {
+                "text": "Absolutely, let's make sure everyone's voice is heard.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You agreed with Bob's statement, emphasizing empathy and self-regulation, but social skill and perception were moderate."
+            },
+            {
+                "text": "Considering everyone's feelings might make it hard to reach a decision.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You pointed out a potential difficulty in considering everyone's feelings, showing good perception and motivation but lower social skills."
+            }
+        ]
+    }
 }

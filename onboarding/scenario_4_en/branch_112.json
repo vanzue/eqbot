@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Bob] sighs and leans against the wall, while [Monica] rubs her temples.",
-    "role": "[Bob]",
-    "location": "Office",
-    "description": "'Redistributing tasks is fine, but we need to act fast. What’s the plan?'",
-    "options": [
-      {
-        "text": "Let's quickly list out the remaining tasks and assign them based on availability.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You aimed for a practical solution, demonstrating good perception and motivation, though your empathy and self-regulation were balanced."
-      },
-      {
-        "text": "I suggest Monica takes a break while Bob and I handle the urgent tasks for now.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You prioritized Monica's well-being and suggested a temporary redistribution of tasks, showing high empathy and social skills."
-      },
-      {
-        "text": "We should all work together right now and figure out the details later.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized immediate action and teamwork, showing high motivation and social skills but lower self-regulation and empathy."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Bob sighs and leans against the wall, while Monica rubs her temples.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "'Redistributing tasks is fine, but we need to act fast. What’s the plan?'",
+        "options": [
+            {
+                "text": "Let's quickly list out the remaining tasks and assign them based on availability.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You aimed for a practical solution, demonstrating good perception and motivation, though your empathy and self-regulation were balanced."
+            },
+            {
+                "text": "I suggest Monica takes a break while Bob and I handle the urgent tasks for now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You prioritized Monica's well-being and suggested a temporary redistribution of tasks, showing high empathy and social skills."
+            },
+            {
+                "text": "We should all work together right now and figure out the details later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized immediate action and teamwork, showing high motivation and social skills but lower self-regulation and empathy."
+            }
+        ]
+    }
 }

@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] sighs and looks at [Bob] with frustration.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'I agree, but we can't sacrifice thoroughness for speed.'",
-    "options": [
-      {
-        "text": "Let's try to find a balance and ensure we cover all critical points swiftly.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show high empathy by seeking a compromise that respects both perspectives, maintaining social harmony and balanced decision-making."
-      },
-      {
-        "text": "I understand the need for thoroughness, but we must keep our deadlines in mind.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledge Bob's concern while emphasizing the importance of meeting deadlines, showing good self-regulation and social skill."
-      },
-      {
-        "text": "We can't afford to get bogged down in details. Let's make a decision and move on.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You stress the importance of progress, showing motivation and a willingness to take calculated risks, while acknowledging the need for some level of caution."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and looks at Bob with frustration.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'I agree, but we can't sacrifice thoroughness for speed.'",
+        "options": [
+            {
+                "text": "Let's try to find a balance and ensure we cover all critical points swiftly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show high empathy by seeking a compromise that respects both perspectives, maintaining social harmony and balanced decision-making."
+            },
+            {
+                "text": "I understand the need for thoroughness, but we must keep our deadlines in mind.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob's concern while emphasizing the importance of meeting deadlines, showing good self-regulation and social skill."
+            },
+            {
+                "text": "We can't afford to get bogged down in details. Let's make a decision and move on.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You stress the importance of progress, showing motivation and a willingness to take calculated risks, while acknowledging the need for some level of caution."
+            }
+        ]
+    }
 }

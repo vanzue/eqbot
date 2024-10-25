@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] sighs and glances at [Bob] with a hint of frustration.",
-    "role": "[Monica]",
-    "location": "Meeting Room",
-    "description": "'Simplifying things might be easier, but we could be missing out on a more inclusive experience.'",
-    "options": [
-      {
-        "text": "True, inclusivity is important. Let's brainstorm a hybrid plan.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the importance of inclusivity and suggested a collaborative approach, showing good perception, empathy, and social skills."
-      },
-      {
-        "text": "I understand, but we need to be practical. A simpler plan might work best.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You focused on practicality and simplicity, showing good self-regulation and motivation, but empathy and social skills were moderate."
-      },
-      {
-        "text": "Inclusivity is great, but isn't simplicity more efficient?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You questioned the balance between inclusivity and efficiency, showing good empathy and motivation, but social skills and perception were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica sighs and glances at Bob with a hint of frustration.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "'Simplifying things might be easier, but we could be missing out on a more inclusive experience.'",
+        "options": [
+            {
+                "text": "True, inclusivity is important. Let's brainstorm a hybrid plan.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the importance of inclusivity and suggested a collaborative approach, showing good perception, empathy, and social skills."
+            },
+            {
+                "text": "I understand, but we need to be practical. A simpler plan might work best.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You focused on practicality and simplicity, showing good self-regulation and motivation, but empathy and social skills were moderate."
+            },
+            {
+                "text": "Inclusivity is great, but isn't simplicity more efficient?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You questioned the balance between inclusivity and efficiency, showing good empathy and motivation, but social skills and perception were lower."
+            }
+        ]
+    }
 }

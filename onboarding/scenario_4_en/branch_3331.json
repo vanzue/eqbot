@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] and [Bob] exchange glances, then return their attention to the screen as you allocate more time for the task.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'We appreciate it. Can you also join our meeting later to discuss the next steps?'",
-    "options": [
-      {
-        "text": "Sure, I can join the meeting. Let's make the most of this session.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You showed strong empathy and willingness to collaborate by committing to the meeting, but your self-regulation and motivation to maintain your leave were slightly lower."
-      },
-      {
-        "text": "I can join briefly, but I won't be able to stay for the entire meeting.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You balanced your time off with a willingness to help by agreeing to join briefly, showing good self-regulation, but your motivation and empathy were not particularly high."
-      },
-      {
-        "text": "It's better if you handle this without my full involvement. Follow the guidelines.",
-        "scores": {
-          "Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica and Bob exchange glances, then return their attention to the screen as you allocate more time for the task.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'We appreciate it. Can you also join our meeting later to discuss the next steps?'",
+        "options": [
+            {
+                "text": "Sure, I can join the meeting. Let's make the most of this session.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed strong empathy and willingness to collaborate by committing to the meeting, but your self-regulation and motivation to maintain your leave were slightly lower."
+            },
+            {
+                "text": "I can join briefly, but I won't be able to stay for the entire meeting.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced your time off with a willingness to help by agreeing to join briefly, showing good self-regulation, but your motivation and empathy were not particularly high."
+            },
+            {
+                "text": "It's better if you handle this without my full involvement. Follow the guidelines.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+            }
+        ]
+    }
 }

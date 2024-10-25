@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica taps her pen on the table and says, 'Still, a vote might rush things.'",
-    "role": "Bob",
-    "location": "Meeting Room",
-    "description": "We could end up dragging this out forever.",
-    "options": [
-      {
-        "text": "Let's aim for a quick but fair decision.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You demonstrated self-regulation and balanced consideration, but perception and empathy were moderate."
-      },
-      {
-        "text": "We should consider the importance of everyone's input.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You showed good perception and empathy by emphasizing the value of input, but motivation and self-regulation were lower."
-      },
-      {
-        "text": "Dragging it out isn't ideal, but everyone should feel their opinion matters.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the concern while showing good social skills, but motivation was lower."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica taps her pen on the table and says, 'Still, a vote might rush things.'",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "We could end up dragging this out forever.",
+        "options": [
+            {
+                "text": "Let's aim for a quick but fair decision.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You demonstrated self-regulation and balanced consideration, but perception and empathy were moderate."
+            },
+            {
+                "text": "We should consider the importance of everyone's input.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed good perception and empathy by emphasizing the value of input, but motivation and self-regulation were lower."
+            },
+            {
+                "text": "Dragging it out isn't ideal, but everyone should feel their opinion matters.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the concern while showing good social skills, but motivation was lower."
+            }
+        ]
+    }
 }

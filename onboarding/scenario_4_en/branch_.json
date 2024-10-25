@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "You are on annual leave, enjoying some well-deserved time off. A colleague messages you privately about an urgent task.",
-    "role": "Colleague",
-    "location": "Home",
-    "description": "‘Hey, I’m really sorry to bother you during your leave, but we have an urgent task that needs immediate attention. Can you help?’",
-    "options": [
-      {
-        "text": "I'm currently on leave, but let me see if I can quickly assist you.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged your leave but showed willingness to help, demonstrating good empathy and perception, though your self-regulation could be stronger."
-      },
-      {
-        "text": "I'm really sorry, but I need to respect my time off. Can you find someone else?",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You prioritized your time off, showing strong self-regulation, but your empathy and motivation to help were lower."
-      },
-      {
-        "text": "I can help for a short while, but I can't commit fully. Let's try to solve it quickly.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "You are on annual leave, enjoying some well-deserved time off. A colleague messages you privately about an urgent task.",
+        "role": "Colleague",
+        "location": "Home",
+        "description": "‘Hey, I’m really sorry to bother you during your leave, but we have an urgent task that needs immediate attention. Can you help?’",
+        "options": [
+            {
+                "text": "I'm currently on leave, but let me see if I can quickly assist you.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged your leave but showed willingness to help, demonstrating good empathy and perception, though your self-regulation could be stronger."
+            },
+            {
+                "text": "I'm really sorry, but I need to respect my time off. Can you find someone else?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You prioritized your time off, showing strong self-regulation, but your empathy and motivation to help were lower."
+            },
+            {
+                "text": "I can help for a short while, but I can't commit fully. Let's try to solve it quickly.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
+            }
+        ]
+    }
 }

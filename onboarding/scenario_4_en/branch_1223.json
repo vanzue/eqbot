@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "[Monica] takes a deep breath, trying to calm herself. [Bob] leans against the desk, waiting for a solution.",
-    "role": "[Monica]",
-    "location": "Office",
-    "description": "'I need a bit more time to sort through these issues. Can we reconvene later?'",
-    "options": [
-      {
-        "text": "Sure, let's set a time to meet later and discuss the details.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You agreed to give Monica more time, showing good self-regulation while maintaining empathy and social skills."
-      },
-      {
-        "text": "We really need to handle this now. Can you manage with some support?",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You insisted on an immediate solution, showing strong perception and empathy, but your self-regulation was lower as you pushed for urgency."
-      },
-      {
-        "text": "Bob, maybe we can give Monica some space to work through this.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested giving Monica space, showing good social skills and self-regulation, but lower empathy and motivation to resolve the issue now."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica takes a deep breath, trying to calm herself. Bob leans against the desk, waiting for a solution.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "'I need a bit more time to sort through these issues. Can we reconvene later?'",
+        "options": [
+            {
+                "text": "Sure, let's set a time to meet later and discuss the details.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You agreed to give Monica more time, showing good self-regulation while maintaining empathy and social skills."
+            },
+            {
+                "text": "We really need to handle this now. Can you manage with some support?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You insisted on an immediate solution, showing strong perception and empathy, but your self-regulation was lower as you pushed for urgency."
+            },
+            {
+                "text": "Bob, maybe we can give Monica some space to work through this.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested giving Monica space, showing good social skills and self-regulation, but lower empathy and motivation to resolve the issue now."
+            }
+        ]
+    }
 }

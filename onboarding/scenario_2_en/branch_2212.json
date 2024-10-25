@@ -1,43 +1,43 @@
 {
-  "scenes": {
-    "background": "Monica frowns slightly, looking concerned.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Bob says, 'Taking more time to plan might be safer, but are we risking delays?'",
-    "options": [
-      {
-        "text": "We could prioritize critical tasks first and then refine the plan as we go.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You suggest a flexible approach by prioritizing key tasks first and refining the plan later, showing good self-regulation and social skills."
-      },
-      {
-        "text": "I agree, Bob, but let's ensure we identify and mitigate risks upfront to avoid future issues.",
-        "scores": {
-          "Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledge Bob's concern and propose a balanced approach to manage risks, showing empathy and motivation to ensure project success."
-      },
-      {
-        "text": "Bob, being overly cautious might slow us down. Let's focus on getting things done efficiently.",
-        "scores": {
-          "Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You stress the importance of efficiency, showing good perception of the urgency but lower empathy towards the need for thoroughness."
-      }
-    ]
-  }
+    "scenes": {
+        "background": "Monica frowns slightly, looking concerned.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, 'Taking more time to plan might be safer, but are we risking delays?'",
+        "options": [
+            {
+                "text": "We could prioritize critical tasks first and then refine the plan as we go.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a flexible approach by prioritizing key tasks first and refining the plan later, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I agree, Bob, but let's ensure we identify and mitigate risks upfront to avoid future issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Bob's concern and propose a balanced approach to manage risks, showing empathy and motivation to ensure project success."
+            },
+            {
+                "text": "Bob, being overly cautious might slow us down. Let's focus on getting things done efficiently.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You stress the importance of efficiency, showing good perception of the urgency but lower empathy towards the need for thoroughness."
+            }
+        ]
+    }
 }
