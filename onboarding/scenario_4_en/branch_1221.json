@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] sighs and looks at you, discussing the need for a reliable solution for urgent tasks.",
-    "role": "[Bob]",
+    "background": "[Monica] takes a deep breath, trying to calm herself. [Bob] looks at you expectantly.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob rubs his temples. 'We need immediate steps to ensure this doesn’t happen again. What’s your plan?'",
+    "description": "'Alright, let's outline the key issues so we can tackle them effectively.'",
     "options": [
       {
-        "text": "Let's establish a clear emergency protocol and assign specific roles for quick responses.",
+        "text": "Let's break down the problems and assign tasks based on everyone's strengths.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You propose a structured approach, showing good self-regulation and social skills, but emotional perception and empathy could be improved."
+        "analysis": "You suggested a structured approach, showing good perception and social skills. However, your self-regulation could be stronger."
       },
       {
-        "text": "I can draft a detailed plan for handling emergencies and ensure everyone knows their responsibilities.",
+        "text": "Monica, do you feel you have the support you need to manage these tasks?",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 4
-        },
-        "analysis": "You take the initiative to create a detailed plan, showing high motivation and social skills, but empathy and self-regulation are lower."
-      },
-      {
-        "text": "I understand the urgency. Maybe we need to delegate tasks better to avoid such situations.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed high empathy by checking in with Monica but your overall engagement and motivation to resolve the issue were moderate."
+      },
+      {
+        "text": "Bob, maybe we should give Monica some time to regroup before we jump into solutions.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good emotional perception and empathy by considering task delegation but need to improve on motivation and self-regulation."
+        "analysis": "You suggested deferring the discussion to avoid immediate conflict, demonstrating strong self-regulation but lower empathy and motivation to address the problem now."
       }
     ]
   }

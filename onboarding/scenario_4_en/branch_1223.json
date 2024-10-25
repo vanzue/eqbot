@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] sighs, noting the importance of reliable solutions for urgent tasks.",
-    "role": "[Bob]",
+    "background": "[Monica] takes a deep breath, trying to calm herself. [Bob] leans against the desk, waiting for a solution.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob leans forward, tapping his pen. 'So, how do we ensure everyone’s on the same page and minimize disruptions?'",
+    "description": "'I need a bit more time to sort through these issues. Can we reconvene later?'",
     "options": [
       {
-        "text": "Let’s have a weekly meeting to align on priorities and potential risks.",
+        "text": "Sure, let's set a time to meet later and discuss the details.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good emotional perception and empathy by suggesting proactive alignment, but your immediate motivation is lower."
-      },
-      {
-        "text": "We could establish a shared calendar where everyone can list their availability and critical tasks.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You offer a practical solution with moderate self-regulation and social skills, but empathy and motivation could be enhanced."
+        "analysis": "You agreed to give Monica more time, showing good self-regulation while maintaining empathy and social skills."
       },
       {
-        "text": "Maybe we need to trust each other’s judgment more and allow for flexible problem-solving.",
+        "text": "We really need to handle this now. Can you manage with some support?",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 5,
+          "Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You emphasize trust and flexibility, showing excellent social skills but lower empathy and emotional perception."
+        "analysis": "You insisted on an immediate solution, showing strong perception and empathy, but your self-regulation was lower as you pushed for urgency."
+      },
+      {
+        "text": "Bob, maybe we can give Monica some space to work through this.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggested giving Monica space, showing good social skills and self-regulation, but lower empathy and motivation to resolve the issue now."
       }
     ]
   }

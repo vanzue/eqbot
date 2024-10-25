@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex looks around the table, visibly irritated.",
-    "role": "Monica",
+    "background": "[Bob] scratches his head and looks at [Monica].",
+    "role": "[Bob]",
     "location": "Conference Room",
-    "description": "We can't ignore the risks of rushing decisions. What's your take?",
+    "description": "'So, what about a mix of suggestions? Should we start drafting a list?'",
     "options": [
       {
-        "text": "Balancing speed with caution is key; both approaches have merit.",
+        "text": "Sure, let's gather everyone's ideas and vote.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You acknowledged the importance of both perspectives, showing good emotional perception and empathy."
+        "analysis": "You encouraged a collaborative approach, showing good perception, empathy, and social skills, while self-regulation and motivation were moderate."
       },
       {
-        "text": "We should try a hybrid approach: quick decisions when possible, thorough discussions for complex issues.",
+        "text": "Maybe we should consider more low-key options first.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You offered a practical solution to combine both styles, demonstrating good self-regulation and social skills."
-      },
-      {
-        "text": "Risk is inevitable; sometimes we need to push forward and learn from mistakes.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the need to move forward despite risks, showing high motivation but lower empathy."
+        "analysis": "You suggested focusing on quieter activities, showing good self-regulation and motivation, but empathy and social skills were moderate."
+      },
+      {
+        "text": "I think we need to reconsider our options entirely.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed a need to rethink the plans, showing good empathy and motivation, while social skills and perception were lower."
       }
     ]
   }

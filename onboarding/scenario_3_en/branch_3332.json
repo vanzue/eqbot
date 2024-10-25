@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "background": "[Bob] leans back in his chair, arms crossed.",
+    "role": "Bob",
+    "location": "Break Room",
+    "description": "'Sure, voting is fair, but what if some people still aren't happy?'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "We can always have a backup plan to address any strong objections.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You acknowledged the potential issue and suggested a proactive solution, showing good perception and empathy but moderate social skills and self-regulation."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "It's impossible to make everyone happy, but at least voting gives everyone a voice.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You recognized the fairness of voting, showing good self-regulation and social skills, but empathy was lower."
+      },
+      {
+        "text": "If people are strongly against certain options, we might need to rethink our approach.",
+        "scores": {
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You pointed out a potential flaw in the voting process, showing good perception and motivation but lower social skills."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] sighs and leans back in her chair, questioning your reliability.",
-    "role": "[Bob]",
+    "background": "[Monica] looks up, clearly agitated. [Bob] is tapping his foot impatiently.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob leans forward. 'If you're more accessible, doesn't that defeat the purpose of your leave?'",
+    "description": "'I thought we all agreed to share the workload. Why am I the only one doing this?'",
     "options": [
       {
-        "text": "I think balancing availability and rest is crucial. Let's find a middle ground.",
+        "text": "Let's discuss calmly and figure out how we can better share the tasks.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You show moderate emotional perception and self-regulation while attempting to balance work and personal life, but empathy and social skills could be better."
+        "analysis": "You aimed to diffuse the tension and promote a collaborative approach, showing good perception and self-regulation."
       },
       {
-        "text": "You're right. Maybe I should just delegate better next time.",
+        "text": "Monica, it seems you’re overwhelmed. Bob, can we redistribute some tasks?",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledge the concern and suggest better delegation, showing good empathy and social skills, but emotional perception and motivation are lower."
-      },
-      {
-        "text": "I understand. I'll make sure to set clear boundaries so I can focus on my leave but still be reachable for critical tasks.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show strong self-regulation and emotional perception by setting clear boundaries, but empathy could be improved."
+        "analysis": "You acknowledged Monica's frustration and sought to reallocate work, demonstrating empathy and social skills."
+      },
+      {
+        "text": "Monica, maybe we need to have a meeting to clarify everyone's responsibilities.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggested a structured approach to address the issue, showing social skill but lower empathy and motivation."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. Now, during the meeting, [Monica] and [Bob] further escalate the situation with their body language and comments. [Monica] crosses her arms and sighs, while [Bob] rolls his eyes and mutters, 'This is going nowhere.' You recognized the rising tension and suggested a break to allow everyone to cool down. After the break, the team reconvenes in the meeting room. [Monica] starts to speak up but is interrupted by [Alex] who says, 'We don't have time for this. We need to decide now.' [Lily] looks visibly upset. You tried to steer the conversation back to the main goal. Now, [Bob] and [Monica] exchange skeptical looks, while [Alex] seems impatient. [Bob] leans back in his chair and says, 'Honestly, this whole process seems overcomplicated.' [Monica] nods in agreement while [Alex] taps his foot impatiently. [Lily] remains silent, looking down at her notes. You tried to steer the conversation back to the main goal. Now, [Monica] and [Bob] exchange skeptical looks, while [Alex] seems impatient. [Lily] remains silent, looking down at her notes.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] leans forward and says, 'We need to decide if we're sticking to the original plan or changing it. This indecision is wasting time.' [Monica] nods in agreement, while [Alex] looks at you expectantly. [Lily] bites her lip, clearly stressed.",
+    "background": "[Monica] and [Bob] exchange a look, clearly uneasy about the decision.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'Are we really letting Bob's caution dictate our pace?'",
     "options": [
       {
-        "text": "Let's take a moment to list the pros and cons of both approaches. This might help us reach a consensus.",
+        "text": "Monica, Bob's caution helps us avoid potential pitfalls. Let's balance speed with thoroughness.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You suggested a structured way to address the issue, showing good emotional perception and empathy."
+        "analysis": "You recognize both Monica's and Bob's perspectives, aiming for a balanced approach that values caution and efficiency."
       },
       {
-        "text": "Bob, Monica, your concerns are valid. Alex, perhaps we can find a middle ground that addresses both speed and thoroughness?",
+        "text": "Bob's caution is valid, but we also need to be decisive. Let's set a clear deadline.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged the concerns and suggested a compromise, showing good self-regulation and social skills."
-      },
-      {
-        "text": "We need to stay focused and make a decision. Let's adhere to our primary objectives without getting sidetracked.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You tried to steer the conversation back to the main goal, demonstrating good social skills and motivation."
+        "analysis": "You acknowledge Bob's caution but emphasize the need for decisiveness, demonstrating motivation and social skill."
+      },
+      {
+        "text": "Well, if Bob thinks it's necessary, let's proceed with his approach.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You defer to Bob's judgment, showing empathy and self-regulation, but potentially slowing the project's pace."
       }
     ]
   }

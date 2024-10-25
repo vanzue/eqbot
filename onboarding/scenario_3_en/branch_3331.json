@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "background": "[Bob] shifts uncomfortably and glances at [Monica].",
+    "role": "[Monica]",
+    "location": "Break Room",
+    "description": "'Maybe we should just let the manager decide.'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "That could work, but it might make some people feel left out.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You acknowledged the suggestion but pointed out a potential downside, showing good perception and empathy but moderate social skills and self-regulation."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "Letting the manager decide seems like the easiest way out.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You agreed with the suggestion, recognizing its simplicity, showing good self-regulation and social skills, but empathy was lower."
+      },
+      {
+        "text": "It might solve the issue for now, but it could create more problems later.",
+        "scores": {
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You pointed out potential future issues with the suggestion, showing good perception and motivation but lower social skills."
       }
     ]
   }

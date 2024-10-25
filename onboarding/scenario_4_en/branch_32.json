@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decide to help with the report, but you'll need support. [Bob] speaks up.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'We can assist, but that might delay the presentation. Are you sure it's the best approach?'",
+    "background": "[Monica] and [Bob] are discussing the task while you are on leave, and you decide to join the discussion via a quick text message.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'Can you at least review this document quickly? We’re really stuck.'",
     "options": [
       {
-        "text": "Let's focus on the report first; we can handle the presentation after.",
+        "text": "I can take a quick look and give you some feedback.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show strong self-regulation and social skills, but emotional perception is lower as you prioritize the report."
-      },
-      {
-        "text": "I agree, we should prioritize the presentation and deal with the report afterward.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 5,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You balance your social skills and motivation well, but your empathy could be seen as lacking by not fully taking on the report."
+        "analysis": "You showed empathy and willingness to help, but your self-regulation and motivation to maintain your leave were slightly lower."
       },
       {
-        "text": "Maybe we can multitask; I'll start on the report while you work on the presentation.",
+        "text": "I’m on leave, but I can give you a brief review.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good emotional perception and empathy, but may struggle with motivation due to the unexpected task."
+        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+      },
+      {
+        "text": "I think you can manage this without me. Follow the guidelines I left.",
+        "scores": {
+          "Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
       }
     ]
   }

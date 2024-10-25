@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex and Lily continue to debate. Monica observes silently, arms folded.",
-    "role": "Monica",
+    "background": "[Monica] sighs and looks at you.",
+    "role": "[You]",
     "location": "Conference Room",
-    "description": "Shouldn't we find a middle ground that works for everyone?",
+    "description": "'It seems like we're all having different opinions on this.'",
     "options": [
       {
-        "text": "That's a good idea, Monica. Finding a balance could benefit the project.",
+        "text": "Why don't we take a vote and go with the majority?",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You agreed with Monica, showing good emotional perception and social skills, but your motivation to act quickly was lower."
-      },
-      {
-        "text": "I'm not sure compromise is always the best solution. Some decisions need to be quick.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You gently disagreed, emphasizing the importance of swift decision-making, showing high motivation but less empathy."
-      },
-      {
-        "text": "Maybe. Or we could just stick to one approach and see how it goes.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You provided an abstract response without strong commitment, showing moderate emotional perception and empathy, but lower self-regulation."
+        "analysis": "You suggested a democratic approach, showing good self-regulation and social skills, but perception and empathy were moderate."
+      },
+      {
+        "text": "Maybe we should consider mixing elements from each suggestion.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You tried to find a compromise, showing good perception and empathy, but self-regulation and social skills were moderate."
+      },
+      {
+        "text": "I think we need to find an alternative that works for everyone.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You aimed for inclusivity, showing good empathy and motivation, but social skills and perception were lower."
       }
     ]
   }

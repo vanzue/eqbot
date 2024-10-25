@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex sighs, looking at the clock. Lily taps her pen on the table.",
-    "role": "Alex",
-    "location": "Conference Room",
-    "description": "Can we speed this up? We're wasting time.",
+    "background": "Bob raises an eyebrow and looks at Monica.",
+    "role": "Bob",
+    "location": "Break Room",
+    "description": "'I think we should consider everyone's feelings before making a decision.'",
     "options": [
       {
-        "text": "I get that we’re in a hurry, but rushing might cause mistakes.",
+        "text": "True, but sometimes we have to make tough decisions.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 2,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You recognized the urgency but emphasized the importance of thoroughness, showing good emotional perception and empathy."
+        "analysis": "You acknowledged the importance of considering feelings but pointed out the need for tough decisions, showing good perception and motivation but lower social skills."
       },
       {
-        "text": "How about we list out key points quickly, then decide?",
+        "text": "Absolutely, let's make sure everyone's voice is heard.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested a streamlined approach, demonstrating self-regulation and social skills."
-      },
-      {
-        "text": "Maybe some things are just not worth discussing in detail.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You leaned towards quick action, showing motivation but slightly less empathy and emotional perception."
+        "analysis": "You agreed with Bob's statement, emphasizing empathy and self-regulation, but social skill and perception were moderate."
+      },
+      {
+        "text": "Considering everyone's feelings might make it hard to reach a decision.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You pointed out a potential difficulty in considering everyone's feelings, showing good perception and motivation but lower social skills."
       }
     ]
   }

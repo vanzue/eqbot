@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica glances at Bob, who is deep in thought.",
+    "background": "Monica, Bob, and you continue discussing celebration plans.",
     "role": "Bob",
-    "location": "Break Room",
-    "description": "We need to come up with a plan that suits everyone. Any ideas?",
+    "location": "Meeting Room",
+    "description": "Bob shrugs and says, 'How about a mix of activities to please everyone?'",
     "options": [
       {
-        "text": "Why don't we list out everyone's strengths and assign tasks accordingly?",
+        "text": "A mix sounds good. Let's list activities and vote.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and social skill by proposing a democratic approach, but perception, self-regulation, and motivation were moderate."
+      },
+      {
+        "text": "A mix can be chaotic. Let's stick to one type.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You focus on leveraging individual strengths, showing good emotional perception and empathy."
+        "analysis": "You showed good perception and self-regulation by considering potential issues, but empathy was lower."
       },
       {
-        "text": "Let's just divide the work equally and get on with it.",
+        "text": "A mix might work. Let's discuss the possible logistics.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggest an equal division of work, emphasizing efficiency, showing moderate self-regulation and motivation."
-      },
-      {
-        "text": "Maybe we should discuss our preferences first to avoid conflicts later.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "You propose discussing preferences to avoid future issues, showing balanced emotional perception and social skills."
+        "analysis": "You acknowledged the suggestion and showed good social skill and motivation, but perception, empathy, and self-regulation were moderate."
       }
     ]
   }

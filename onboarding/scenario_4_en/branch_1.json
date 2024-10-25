@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Alex] messages you about the urgent task. You decide to finish your leave and suggest someone else to handle it.",
-    "role": "[Monica]",
+    "background": "[Bob] is pacing around the office, looking stressed. [Monica] sits at her desk, typing quickly.",
+    "role": "[Bob]",
     "location": "Office",
-    "description": "Monica frowns, crossing her arms. 'Why did you decide to leave it to someone else? We really needed your help.'",
+    "description": "‘Can someone explain why this project is delayed? Monica, were you supposed to handle this?’",
     "options": [
       {
-        "text": "I understand it’s urgent, but I needed to prioritize my well-being. Can we discuss a backup plan for future situations?",
+        "text": "Let's not point fingers. We should focus on resolving the issue.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good self-regulation and emotional perception by explaining your need to prioritize your leave, but empathy could be improved."
-      },
-      {
-        "text": "I’m sorry I couldn’t help this time. If you need any advice on handling the task, I can provide some guidance remotely.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You offer remote support, showing moderate empathy and social skills, but the motivation to directly handle the task is lower."
-      },
-      {
-        "text": "I see that this was important. Next time, please let me know earlier so I can plan better.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You acknowledge the importance of the task and suggest better communication for the future, showing good empathy but lower emotional perception."
+        "analysis": "You tried to de-escalate the situation by focusing on a solution rather than assigning blame, showing strong perception and self-regulation."
+      },
+      {
+        "text": "Monica, it seems Bob is upset. Could you give us an update?",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Bob's emotions and directed the conversation back to Monica, demonstrating empathy and social skills."
+      },
+      {
+        "text": "Bob, maybe we should discuss this privately later.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You suggested taking the conversation offline to avoid public conflict, showing social skill but lower empathy and motivation to immediately resolve the issue."
       }
     ]
   }

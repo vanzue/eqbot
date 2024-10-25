@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Bob] frowns, leaning back in his chair. [Monica] looks at the clock.",
+    "background": "You, Monica, and Bob are debating celebration plans.",
     "role": "Bob",
-    "location": "Project Meeting Room",
-    "description": "Why are we delaying so much? This is wasting our time!",
+    "location": "Meeting Room",
+    "description": "Bob sighs and says, 'An indoor activity might be safer given the weather forecast.'",
     "options": [
       {
-        "text": "Monica, let's respect the process to ensure we don't miss any details.",
+        "text": "Indoor activities can be cozy and fun. Let's explore that.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You emphasized the importance of thoroughness, showing strong self-regulation and social skills, but less empathy towards Bob's frustration."
+        "analysis": "You acknowledged the concern, showing good social skills, but empathy, perception, and self-regulation were moderate."
       },
       {
-        "text": "I understand your concern, Bob. Let's try to speed up without compromising quality.",
+        "text": "Weather can change, but indoor activities are safer. Let's consider it.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Bob's frustration and aimed for a balanced approach, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Maybe we're overcomplicating things. Why not decide on a simpler solution?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You suggested a simpler approach, showing good motivation to resolve quickly but less self-regulation and empathy."
+        "analysis": "You showed confidence in the idea, displaying good perception and motivation. However, empathy was lower."
+      },
+      {
+        "text": "But outdoor activities have their own charm. Maybe we can plan for both.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy by considering both options, but self-regulation and social skill were moderate."
       }
     ]
   }

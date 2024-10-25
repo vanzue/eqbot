@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. Now, [Bob] raises his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nods in agreement. You addressed the need for clarity and invited Monica to share her perspective. Monica then expresses her concerns, 'I just feel like we're not considering all the details we should.'",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] expresses her concerns, 'I just feel like we're not considering all the details we should.' [Bob] looks annoyed and mutters, 'We don't have time for every single detail.'",
+    "background": "Bob nods and begins outlining a plan. [Monica] sighs loudly.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'I still think we're overcomplicating this. Can we simplify?'",
     "options": [
       {
-        "text": "Monica, I understand your concern. Let's prioritize the most crucial details first. Bob, can you help identify those?",
+        "text": "We can simplify some parts while ensuring the key details are well-planned.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You acknowledged Monica's concerns and involved Bob in identifying crucial details, showing good emotional perception and empathy."
+        "analysis": "You acknowledge Monica's concern and propose a balanced approach, showing empathy and perception."
       },
       {
-        "text": "I hear both of you. How about we set a time limit for discussing each detail? That way, we can be thorough but also efficient.",
+        "text": "Simplifying too much could lead to missed details that are crucial.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 2
         },
-        "analysis": "You suggested a balanced approach to manage time and thoroughness, showing strong self-regulation and social skills."
+        "analysis": "You emphasize the importance of thorough planning, showing good self-regulation and social skills."
       },
       {
-        "text": "I understand the frustration, but we must find a middle ground. Let's list down all details and quickly decide which ones need more attention.",
+        "text": "Let's prioritize a detailed plan and then see where we can simplify later.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You proposed a practical way to address both perspectives, showing good social skills and motivation."
+        "analysis": "You propose a methodical approach, reflecting good motivation and social skills."
       }
     ]
   }

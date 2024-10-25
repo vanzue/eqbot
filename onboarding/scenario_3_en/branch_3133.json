@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "background": "[Bob] leans back, arms crossed, looking at [Monica].",
+    "role": "[Bob]",
+    "location": "Meeting Room",
+    "description": "'Efficiency is key, but we shouldn't ignore inclusivity.'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "Inclusivity is essential, but we need to balance it with efficiency.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
+        "analysis": "You acknowledged both values, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
+        "text": "Balancing both is challenging, but we can find a compromise.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You emphasized the difficulty but proposed a compromise, showing good empathy and self-regulation, but social skill and perception were moderate."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "Prioritizing efficiency might be more practical in this situation.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You leaned towards efficiency while acknowledging inclusivity, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

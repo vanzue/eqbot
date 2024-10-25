@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Then, you proposed a hybrid approach to combine both quick decision-making and thorough analysis. You suggested a clear division of tasks based on each person's strengths, and both seemed to agree. Later in the day, while working on their respective tasks, Alex and Lily start to show signs of frustration again.",
-    "role": "Team Leader",
-    "location": "Office Workspace",
-    "description": "'Alex slams his mouse in frustration while Lily sighs deeply and rubs her temples.'",
+    "background": "Monica nods, but Bob seems unconvinced, leaning back in his chair.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'I still think we're rushing things.'",
     "options": [
       {
-        "text": "It seems like there's still some tension. Can we discuss what's bothering both of you?",
+        "text": "What if we take a quick break and come back with fresh perspectives?",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You acknowledged the ongoing tension and invited an open discussion, showing good emotional perception and empathy."
+        "analysis": "You show empathy and perception by acknowledging Bob's concern and suggesting a break to refresh minds, fostering balanced decision-making."
       },
       {
-        "text": "Alex, Lily, let's try to understand each other's challenges. Can we talk about how to better support one another?",
+        "text": "I get that, but we do need to keep momentum. Maybe just a brief review?",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You encouraged mutual understanding and support, demonstrating strong self-regulation and social skills."
+        "analysis": "You recognize Bob's need for caution while emphasizing the importance of progress, showing good self-regulation and social skills."
       },
       {
-        "text": "It looks like the hybrid approach isn't working as smoothly as expected. Should we reconsider our strategy?",
+        "text": "We really can't afford delays. Let's finalize decisions now.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You suggested reassessing the strategy, showing good social skills and motivation to find a better solution."
+        "analysis": "You emphasize urgency and motivation to keep moving forward, showing a willingness to take calculated risks while acknowledging the need for some caution."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. [Bob] raised his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nodded in agreement. You addressed the need for clarity and invited Monica to share her perspective. Monica then expressed her concerns, 'I just feel like we're not considering all the details we should.' [Bob] looked annoyed and muttered, 'We don't have time for every single detail.' You acknowledged Monica's concerns and involved Bob in identifying crucial details. Now, [Bob] shrugs and says, 'Fine, let's get this over with,' while [Monica] seems a bit more relieved but still hesitant.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] shrugs and says, 'Fine, let's get this over with,' while [Monica] seems a bit more relieved but still hesitant.",
+    "background": "Monica nods and reluctantly agrees. [Bob] raises an eyebrow.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'Isn't it better to stick with a detailed plan and do it right?'",
     "options": [
       {
-        "text": "Alright, let's break this down. Monica, can you list the top three details you think are most important? Bob, let's see if we can address those quickly.",
+        "text": "We can follow the detailed plan and adjust as we go.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You continued to facilitate the discussion by breaking down the task and prioritizing crucial details, demonstrating good emotional perception and empathy."
+        "analysis": "You suggest a flexible approach, showing empathy and perception by acknowledging the need for both planning and adaptability."
       },
       {
-        "text": "I think we should focus on getting a draft ready first. We can refine the details later. What do you both think?",
+        "text": "A detailed plan is indeed crucial, but we can also be open to simplifying if needed.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You suggested a pragmatic approach to move forward quickly, showing strong self-regulation and social skills."
+        "analysis": "You emphasize the importance of thorough planning while being open to adjustments, showing good self-regulation and social skills."
       },
       {
-        "text": "This is clearly frustrating for everyone. Maybe we should revisit our approach and find a better way to balance both perspectives.",
+        "text": "Let's stick with the detailed plan for now and see if we need to simplify later.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You acknowledged the ongoing frustration and proposed a reassessment of the approach, showing good social skills and motivation."
+        "analysis": "You propose a methodical approach, reflecting good motivation and social skills."
       }
     ]
   }

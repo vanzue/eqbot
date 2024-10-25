@@ -51,7 +51,7 @@ initial_context = ("""
                     ## Emotional Intelligence Scoring Rules ##
                     Based on Self-Analysis Dimensions, here are some popular assessment questions. These questions cover the five core aspects of emotional detection/reading, emotional control, interpersonal balance, communication and expression, and social appropriateness, aiming to assess an individual's emotional intelligence level.
                     
-                    ## Emotion Perception ##
+                    ## Perception ##
                     I can quickly notice changes in my own emotions. (1-5 points)
                     I can easily detect subtle changes in other people's emotions. (1-5 points)
                     I am good at analyzing the reasons behind others' emotions. (1-5 points)
@@ -96,7 +96,7 @@ initial_context = ("""
                             "options": [
                                 {{
                                     "text": [choice1],
-                                    "scores": {{"Emotion Perception": [integer between 1 to 5],
+                                    "scores": {{"Perception": [integer between 1 to 5],
                                                 "Self Regulation": [integer between 1 to 5],
                                                 "Empathy": [integer between 1 to 5],
                                                 "Social Skill": [integer between 1 to 5],
@@ -105,7 +105,7 @@ initial_context = ("""
                                 }},
                                 {{
                                     "text": [choice2],
-                                    "scores": {{"Emotion Perception": [integer between 1 to 5],
+                                    "scores": {{"Perception": [integer between 1 to 5],
                                                 "Self Regulation": [integer between 1 to 5],
                                                 "Empathy": [integer between 1 to 5],
                                                 "Social Skill": [integer between 1 to 5],
@@ -114,7 +114,7 @@ initial_context = ("""
                                 }},
                                 {{
                                     "text": [choice3],
-                                    "scores": {{"Emotion Perception": [integer between 1 to 5],
+                                    "scores": {{"Perception": [integer between 1 to 5],
                                                 "Self Regulation": [integer between 1 to 5],
                                                 "Empathy": [integer between 1 to 5],
                                                 "Social Skill": [integer between 1 to 5],
@@ -135,7 +135,7 @@ initial_context = ("""
                             "options": [
                                 {{
                                     "text": "Haha, I just wanted to make sure you're full.",
-                                    "scores": {{"Emotion Perception": 4,
+                                    "scores": {{"Perception": 4,
                                                 "Self Regulation": 3,
                                                 "Empathy": 4,
                                                 "Social Skill": 3,
@@ -143,8 +143,8 @@ initial_context = ("""
                                     "analysis": "You used humor to diffuse the awkwardness, showing good emotional detection and interpersonal balance skills."
                                 }},
                                 {{
-                                    "text": "I won’t allow you to insult yourself like that.",
-                                    "scores": {{"Emotion Perception": 2,
+                                    "text": "I won't allow you to insult yourself like that.",
+                                    "scores": {{"Perception": 2,
                                                 "Self Regulation": 3,
                                                 "Empathy": 2,
                                                 "Social Skill": 3,
@@ -153,7 +153,7 @@ initial_context = ("""
                                 }},
                                 {{
                                     "text": "Sorry, I gave you too much.",
-                                    "scores": {{"Emotion Perception": 3,
+                                    "scores": {{"Perception": 3,
                                                 "Self Regulation": 4,
                                                 "Empathy": 2,
                                                 "Social Skill": 3,
@@ -169,7 +169,7 @@ initial_context = ("""
                     Both questions and answers are conversational. The ratings can make a little more of a difference.
                     The background should not contain repetitive statements, but should be logically coherent. Please keep it in mind.
 
-                    In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict.
+                    You are on annual leave, enjoying some well-deserved time off to recharge. However, during your time away, a colleague messages you privately, saying there’s an urgent task that needs immediate attention. The request creates a dilemma as you try to balance respecting your time off while feeling the pressure to help with the urgent task.
                     # The backgrounds of each scenario are high based on the previous interactions but keep it shorter than 30 words.
                     # The character who is going to say something should always change in the adjacent interactions.
                     
@@ -230,7 +230,7 @@ def validate_json_structure(json_data):
     scenes_required_keys = ['background', 'role', 'location', 'description', 'options']
     option_required_keys = ['text', 'scores', 'analysis']
     # emotion perception, emotion perception, interpersonal balance, communication skills, and social skills
-    ability_keys = ["Emotion Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
+    ability_keys = ["Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
 
     if not all(key in json_data for key in required_keys):
         return False

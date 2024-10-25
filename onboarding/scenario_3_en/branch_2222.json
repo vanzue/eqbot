@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Bob crosses his arms and leans forward.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "We need a backup plan in case things go wrong. What do you think?",
+    "background": "[Monica] and [Bob] discuss the celebration. [Bob] looks uncertain.",
+    "role": "[Bob]",
+    "location": "Break Room",
+    "description": "'I'm not sure if everyone will enjoy a formal dinner.'",
     "options": [
       {
-        "text": "A backup plan sounds wise, but let's not overcomplicate it.",
+        "text": "A formal dinner can be a great way to celebrate our success.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You acknowledged the need for a backup plan while emphasizing simplicity, showing good self-regulation and social skills."
+        "analysis": "You acknowledged the formality of the dinner, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Absolutely, a thorough backup plan is crucial for avoiding bigger issues.",
+        "text": "We should consider if everyone is comfortable with a formal setting.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You supported the idea with a focus on thoroughness, showing good emotional perception and empathy."
+        "analysis": "You showed empathy and self-regulation by considering everyone's comfort, but social skill and perception were moderate."
       },
       {
-        "text": "Honestly, we should just stick to our main plan and adapt as needed.",
+        "text": "Maybe we can find a less formal venue that still feels special.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized sticking to the main plan, showing strong motivation but lacking in emotional perception and empathy."
+        "analysis": "You suggested a compromise, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

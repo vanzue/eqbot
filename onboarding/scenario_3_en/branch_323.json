@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
+    "background": "[Monica] glances at [you] with a skeptical look.",
+    "role": "[you]",
     "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "description": "'I think we should come up with a different idea for celebrating.'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "How about we brainstorm and find something that suits everyone?",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You proposed a collaborative approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "I guess a different idea might work better. Any suggestions?",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You acknowledged the need for a new idea and sought input, showing good self-regulation and motivation, but empathy and social skill were moderate."
+      },
+      {
+        "text": "Maybe none of these ideas are suitable. Let's rethink the plan.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed a need for a new plan calmly, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

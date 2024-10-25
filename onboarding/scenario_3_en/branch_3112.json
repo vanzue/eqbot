@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "background": "[Bob] nods thoughtfully while glancing at [Monica].",
+    "role": "[Monica]",
+    "location": "Meeting Room",
+    "description": "'Making everyone happy sounds ideal, but is it realistic?'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "It's a challenge, but with cooperation, we can achieve it.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You acknowledged the difficulty but emphasized teamwork and cooperation, showing good perception and empathy, but self-regulation and social skills were moderate."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "We need to be realistic about what we can achieve.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You grounded the conversation in realism, showing good self-regulation and motivation, but empathy and social skills were moderate."
+      },
+      {
+        "text": "Maybe I'm being too optimistic. We should focus on what's feasible.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You reconsidered your stance, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

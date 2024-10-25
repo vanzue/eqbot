@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] questions your reliability after [Bob] raised concerns.",
-    "role": "[Bob]",
+    "background": "[Monica] stands up, arms crossed, while [Bob] frowns and looks at his watch.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob leans forward, tapping his pen. 'So, what's your plan to avoid this in the future?'",
+    "description": "'We need to solve this now. Bob, can you handle the client call?'",
     "options": [
       {
-        "text": "We can set up a rotating schedule to ensure coverage during leaves. How does that sound?",
+        "text": "I'll handle the call. Let's make sure we have all the information first.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You took responsibility for the call and suggested preparation, demonstrating good self-regulation and social skills."
+      },
+      {
+        "text": "Monica, it's better if you do it since you have more details on this.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged Monica's expertise, showing strong perception and empathy, but your willingness to take immediate action was lower."
+      },
+      {
+        "text": "I think we should wait until we have a clearer plan before calling.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You show good emotional perception and social skills by proposing a solution, but your motivation to take immediate action is lower."
-      },
-      {
-        "text": "I can arrange to be available for critical tasks even when on leave.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 5,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You show high empathy and motivation by offering to be available, but this might affect your self-regulation and personal time."
-      },
-      {
-        "text": "I think we need better planning and communication to prevent such last-minute requests.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You suggest improving planning and communication, showing strong social skills and self-regulation, but empathy and emotional perception could be better."
+        "analysis": "You suggested delaying the call to avoid mistakes, showing good social skills but lower empathy and motivation to resolve the issue immediately."
       }
     ]
   }

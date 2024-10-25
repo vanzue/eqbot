@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Bob] sits back, arms crossed, while [Monica] looks at her notes.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "We need a clear direction, or we'll waste more time. What do you think?",
+    "background": "Monica, Bob, and you are still discussing celebration ideas.",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "Bob raises an eyebrow and says, 'A relaxed formal venue? Is that even a thing?'",
     "options": [
       {
-        "text": "Bob, could you provide us with a neutral perspective?",
+        "text": "We can find a place that blends formality with a relaxed vibe.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You sought a third-party perspective to mediate the discussion, showing high emotional perception and empathy."
-      },
-      {
-        "text": "Let's quickly decide on a temporary solution and revisit this later.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You aimed for a compromise to keep things moving, demonstrating balanced emotional skills and decision-making."
-      },
-      {
-        "text": "I think Alex's approach will get us faster results. Let's go with that.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You leaned towards a decisive approach, showing strong social skills but lower empathy and emotional perception."
+        "analysis": "You demonstrated good perception and social skill by proposing a balanced solution, but empathy and self-regulation were moderate."
+      },
+      {
+        "text": "We could look for a casual restaurant that still feels special.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy by considering everyone's preferences, but perception and social skill were moderate."
+      },
+      {
+        "text": "Maybe a formal venue isn't the best idea; let's think of other options.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decide to help with the report. [Monica] and [Bob] are working on the presentation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'Monica and I have made some changes. Can you incorporate them into the report?'",
+    "background": "[Monica] and [Bob] are discussing the task in the office while you join the discussion via video call.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'I understand you’re on leave, but could you quickly run through the main points with us?'",
     "options": [
       {
-        "text": "I'll need more details on the changes before I can incorporate them.",
+        "text": "I can spare a few minutes to go over the essentials.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and emotional perception, but your social skills might be seen as lacking since you ask for more details rather than taking initiative."
-      },
-      {
-        "text": "Sure, I'll get right on it. Just send me the updated details.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You display high empathy and emotional perception by readily agreeing to incorporate the changes, but your motivation may be low as you are relying on their updates."
-      },
-      {
-        "text": "I can try, but it might be better if we review the changes together first.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show strong self-regulation and social skills by suggesting a collaborative review, but emotional perception and empathy are lower as you hesitate to take immediate action."
+        "analysis": "You showed willingness to help despite being on leave, demonstrating good perception and empathy. However, your self-regulation could be stronger."
+      },
+      {
+        "text": "I’ll send you a quick summary and you can reach out if you have more questions.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You balanced helping with maintaining your boundaries, showing good self-regulation and perception. However, motivation and empathy were lower."
+      },
+      {
+        "text": "I'm sure you both can manage it. Just follow the instructions I left.",
+        "scores": {
+          "Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You maintained your boundaries, showing strong self-regulation. However, perception, empathy, and motivation to help were lower."
       }
     ]
   }

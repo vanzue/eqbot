@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested taking a step back and hearing each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You addressed Alex's concerns while emphasizing the importance of listening. Now, there is a tension-filled silence in the room as both Alex and Lily look at you expectantly. You suggested allocating specific times for both approaches. Alex and Lily exchanged looks, and Alex nodded, though reluctantly. Lily appeared thoughtful, yet uncertain. Alex expressed his need for decisiveness, while Lily emphasized the importance of thorough analysis.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily look at you, waiting for your next move, while the tension in the room is palpable. Alex breaks the silence, saying, 'I just think we need to be more decisive.' Lily adds, 'And I believe thorough analysis is crucial to avoid mistakes.''",
+    "background": "Monica looks at the clock, visibly anxious.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'We really need to wrap this up soon. We can't afford to go over time.'",
     "options": [
       {
-        "text": "I understand both of your points. Let's start by listing immediate actions and potential risks. Then we'll prioritize them together.",
+        "text": "Time is important, but so is making the right decision. Let's quickly summarize our points.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You aimed to mediate the conflict by asking both parties to focus on critical points, showing good emotional perception and empathy."
+        "analysis": "You show high empathy and social skills by acknowledging Monica's concern and suggesting a balanced summary to save time while making informed decisions."
       },
       {
-        "text": "Alex, your decisiveness is important, but we also need Lily's detailed analysis to ensure we're not overlooking anything crucial. How about we split the tasks accordingly?",
+        "text": "I understand the urgency, Monica. Maybe we can speed up the discussions and focus on key points.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged both perspectives and suggested a more structured division of tasks, demonstrating strong self-regulation and social skills."
+        "analysis": "You recognize Monica's time concern and suggest a focused approach to speed up the process, showing good self-regulation and social skills."
       },
       {
-        "text": "This conflict highlights our need for a balanced strategy. Let's brainstorm a hybrid approach that combines quick decision-making with thorough analysis.",
+        "text": "We can't afford to rush this. Important decisions take time, even if we have to extend the meeting.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You proposed a collaborative solution, demonstrating good social skills and motivation to resolve the conflict."
+        "analysis": "You emphasize the need for thorough decision-making, showing motivation to ensure quality outcomes, while acknowledging the time constraints."
       }
     ]
   }

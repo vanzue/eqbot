@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily start arguing about the best approach to take for an important task.'",
+    "background": "In a project meeting, Alex and Bob's different work styles clash.",
+    "role": "Alex",
+    "location": "Conference Room",
+    "description": "Alex says, 'We need to decide quickly and move forward. Why are we wasting time?'",
     "options": [
       {
-        "text": "Let's take a step back and hear each other out. Alex, why don't you go first and then we'll hear Lily's perspective?",
+        "text": "Let's take a moment to hear Bob's thoughts; it might offer valuable insights.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You mediated the conflict by encouraging both sides to express their views, demonstrating good emotional perception and empathy."
+        "analysis": "You show a high level of empathy by valuing Bob's perspective and encourage a balanced discussion, maintaining social harmony."
       },
       {
-        "text": "Alex, I understand your need for quick action, but let's also consider Lily's approach to ensure we don't miss any crucial details.",
+        "text": "I understand the urgency, Alex, but thorough discussion can prevent future issues.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged both perspectives and aimed for a balanced approach, showing strong self-regulation and social skills."
+        "analysis": "You recognize both the need for quick decisions and the importance of thorough planning, showing good self-regulation and social skill."
       },
       {
-        "text": "This conflict shows we need a better strategy. Let's brainstorm a combined approach that leverages both quick decisions and thorough discussions.",
+        "text": "Let's agree on a timeline for a decision after a brief discussion.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You proposed a collaborative solution, demonstrating good social skills and motivation to resolve the conflict."
+        "analysis": "You propose a compromise, showing empathy and motivation to move forward while ensuring all voices are heard."
       }
     ]
   }

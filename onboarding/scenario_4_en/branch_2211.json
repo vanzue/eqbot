@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decided to let [Monica] and [Bob] handle the urgent task.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'Monica and I can manage, but if you change your mind, just let us know.' He gives you a reassuring nod.",
+    "background": "(Monica) runs her fingers through her hair, visibly frustrated. (Bob) leans against the wall, arms crossed.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "'If we don't finish this, it will reflect poorly on all of us. Are you sure you can't stay a bit longer?'",
     "options": [
       {
-        "text": "Thanks, Bob. I'll disengage and trust you both.",
+        "text": "I get how important this is. Let's push through and finish it quickly.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 4
         },
-        "analysis": "You show strong self-regulation by stepping back, but empathy and emotional perception could be improved."
+        "analysis": "You acknowledged the collective responsibility and offered to help more, showing good empathy and perception, though your self-regulation could be stronger."
       },
       {
-        "text": "I appreciate it, but I want to stay involved to ensure everything goes smoothly.",
+        "text": "I understand, but I need to respect my boundaries. There must be another way.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show high empathy and emotional perception by wanting to stay involved, but it may affect your self-regulation."
+        "analysis": "You stood firm on needing to respect your boundaries, showing strong self-regulation but lower empathy and motivation to help."
       },
       {
-        "text": "Alright, I'll help for a bit longer, but let's coordinate the specifics first.",
+        "text": "It's frustrating that this always falls on me. We need a better system.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 3
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You balance your time off with work demands, showing good social skills, but emotional perception could be improved."
+        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially straining relationships with your colleagues."
       }
     ]
   }

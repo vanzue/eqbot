@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica fidgets with her notebook while Bob leans forward.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "This is taking too long. Can't we just make a decision?",
+    "background": "[Bob] shrugs and looks at [Monica] and [you].",
+    "role": "Bob",
+    "location": "Break Room",
+    "description": "'I guess we could try to come up with a compromise, but it might not be easy.'",
     "options": [
       {
-        "text": "I think we need to ensure all perspectives are considered before moving forward.",
+        "text": "Let's brainstorm and see if we can find a middle ground that works for everyone.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You suggested a collaborative approach to find a compromise, showing good perception and empathy but moderate social skills and self-regulation."
+      },
+      {
+        "text": "Compromises can be tough, but I'm sure we can manage if we all pitch in.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You expressed optimism and confidence in managing a compromise, showing good self-regulation and social skills but moderate empathy and perception."
+      },
+      {
+        "text": "If everyone's too stubborn, finding a compromise might be impossible.",
+        "scores": {
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 2,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You highlighted the importance of considering different viewpoints, demonstrating emotional perception and empathy."
-      },
-      {
-        "text": "Let's quickly summarize everyone's main points and vote.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested an efficient way to proceed, showing self-regulation and social skills."
-      },
-      {
-        "text": "Maybe we should skip some of the less critical discussions.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You leaned towards quick action, showing motivation but slightly less empathy and emotional perception."
+        "analysis": "You pointed out a potential difficulty in reaching a compromise, showing good perception and motivation but lower social skills."
       }
     ]
   }

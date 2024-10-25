@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica looks uncertain, Bob seems ready to jump in.",
-    "role": "Bob",
+    "background": "[Bob] crosses his arms and looks frustrated.",
+    "role": "[Monica]",
     "location": "Conference Room",
-    "description": "So, what’s the next step then? We’re kind of stuck.",
+    "description": "'I just don't see us agreeing on anything at this rate.'",
     "options": [
       {
-        "text": "Let's revisit our goals and see if we can align our approaches.",
+        "text": "Maybe we need to take a step back and reassess our options.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You suggested a reflective approach to find common ground, showing good emotional perception and social skills."
+        "analysis": "You suggested a calm and rational approach, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "We should probably make a decision quickly to avoid wasting more time.",
+        "text": "I think we should stick to our original suggestions and vote.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the need for swift decision-making, showing high motivation but less empathy."
+        "analysis": "You advocated for a democratic resolution, showing good self-regulation and motivation, but empathy and social skill were moderate."
       },
       {
-        "text": "Maybe we just need to take a break and come back with fresh perspectives.",
+        "text": "If we can't agree, maybe we should just cancel the celebration.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
           "Social Skill": 2,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You suggested a break to gain new perspectives, showing moderate emotional perception and empathy, but lower self-regulation."
+        "analysis": "You expressed frustration with the lack of consensus, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

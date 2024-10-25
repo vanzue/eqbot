@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you encouraged mutual understanding and collaboration, emphasizing seeing things from each other's perspective to find common ground. You then fostered appreciation and empathy between team members by suggesting they list one thing they appreciate about the other's approach. However, the tension still lingers. [Monica] leans back in her chair with a sigh, while [Bob] drums his fingers on the table, visibly annoyed.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Monica] leans back in her chair with a sigh, while [Bob] drums his fingers on the table, visibly annoyed.",
+    "background": "Monica seems slightly more relaxed but still apprehensive.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'I think we need more data before making a final decision.'",
     "options": [
       {
-        "text": "I can see we're having trouble aligning. Let's each take a moment to write down what we think the key priorities are for this project.",
+        "text": "Let's gather the necessary data quickly to avoid further delays.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You aimed to refocus the team by identifying key priorities, demonstrating good emotional perception and self-regulation."
+        "analysis": "You acknowledge Bob's point and show motivation to resolve the issue quickly while maintaining good self-regulation."
       },
       {
-        "text": "Monica, Bob, let's try to understand each other's frustrations. How about we each share one thing we find challenging about the other's approach?",
+        "text": "We understand the importance of data, but let's make a decision based on what we have.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You tried to foster understanding and empathy between team members, showing strong empathy and motivation."
+        "analysis": "You balance the need for thoroughness with the urgency to proceed, demonstrating empathy and perception."
       },
       {
-        "text": "If this goes on, we might need to rethink our whole strategy and approach.",
+        "text": "If we keep waiting for more data, we'll miss our deadlines. We have to decide now.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You suggested a more drastic approach to resolving the conflict, showing good social skills and moderate emotional perception."
+        "analysis": "You emphasize the importance of deadlines and push for a quick decision, showing social skill and motivation to move forward."
       }
     ]
   }

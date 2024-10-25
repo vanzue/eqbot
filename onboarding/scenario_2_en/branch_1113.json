@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested to take a step back and hear each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You reinforced the importance of listening and respecting each team member's input, asking Alex to respect the process and allowing Lily to continue. Lily finishes her points, but Alex still looks dissatisfied, crossing his arms and leaning back in his chair. You focused on moving forward by summarizing key points and suggesting a quick decision based on the discussion. Alex and Lily seem to have reached a temporary understanding, but the tension is still palpable. Bob, another team member, raises a concern about the deadline, adding to the stress.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Bob says, 'If we don't decide soon, we'll miss the deadline.' Alex and Lily look at each other, unsure of how to proceed.'",
+    "background": "Bob nods, slightly relaxing his posture, while Monica scribbles notes.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'Shouldn't we at least ensure everyone understands the plan before moving forward?'",
     "options": [
       {
-        "text": "Let's focus on actionable steps. Bob, what are your suggestions to meet the deadline effectively?",
+        "text": "Absolutely, a quick review can help clear any doubts.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Empathy": 5,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You shifted the focus to practical solutions and empowered Bob to contribute, demonstrating good emotional perception and empathy."
+        "analysis": "You show empathy by taking Monica's concern seriously and encourage clarity, promoting balanced decision-making."
       },
       {
-        "text": "We need to make a decision now. Alex, can you and Lily quickly summarize your main points?",
+        "text": "I get your point, but we need to keep moving to stay on schedule.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You emphasized the urgency while ensuring both Alex and Lily's points are heard, showcasing strong self-regulation and social skills."
+        "analysis": "You acknowledge Monica's concern while emphasizing the need to stay on track, showing good self-regulation and social skill."
       },
       {
-        "text": "Bob's right. Let's quickly decide based on what we've discussed so far and move forward.",
+        "text": "We can't afford to keep rehashing details, let's proceed as planned.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You aimed to expedite the decision-making process, demonstrating good social skills and motivation to keep the project on track."
+        "analysis": "You suggest moving forward without further discussion, showing motivation to proceed but risking potential misunderstandings."
       }
     ]
   }

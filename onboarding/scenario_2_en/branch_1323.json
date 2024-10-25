@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily then started a detailed analysis, but Alex interrupted impatiently, leading you to ask Lily to quickly outline her main points. After Lily's summary, Alex muttered under his breath, to which you responded by asking Alex to respect the process and Lily to wrap up quickly. Now, after Lily wrapped up, Alex rolled his eyes and muttered again. You suggested Alex propose a faster method that still includes Lily's thoroughness. Alex reluctantly agreed and proposed a new method while Lily looked skeptical.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Lily exchanges a skeptical glance with you while Alex explains his proposed method.'",
+    "background": "Bob rubs his temples, looking frustrated, while Monica taps her pen on the table.",
+    "role": "Monica",
+    "location": "Conference Room",
+    "description": "Monica says, 'How do we manage with this constant back and forth?'",
     "options": [
       {
-        "text": "Lily, let's give Alex's method a try and see if it can work for us.",
+        "text": "Perhaps we need to establish clearer guidelines to streamline our decision-making.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You encouraged openness to new methods, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Alex, while your method might be faster, let's ensure it doesn't compromise the quality of our work. Lily, what do you think?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged the need for speed but emphasized quality, showcasing strong self-regulation and social skills."
+        "analysis": "You suggest a structured approach, showing good perception and empathy while maintaining social harmony."
       },
       {
-        "text": "Maybe we need to find a middle ground. Alex, can you adjust your method to incorporate some of Lily's thoroughness?",
+        "text": "I think sticking to a more flexible strategy could help us adapt better.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 4
+        },
+        "analysis": "You lean towards adaptability, showing good self-regulation and motivation, but less empathy and social skills."
+      },
+      {
+        "text": "We should just pick one method and stick to it, even if it's not perfect.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You aimed for a compromise that involves both team members, demonstrating good social skills and motivation to find an efficient solution."
+        "analysis": "You suggest a decisive approach, showing good social skills and motivation, but less perception and empathy."
       }
     ]
   }

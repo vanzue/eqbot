@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex looks frustrated, while Lily fidgets with a pen.",
-    "role": "Alex",
-    "location": "Conference Room",
-    "description": "We can't afford any mistakes. We need to act now!",
+    "background": "You, Monica, and Bob are exploring other celebration options. Monica frowns and crosses her arms.",
+    "role": "Monica",
+    "location": "Meeting Room",
+    "description": "Monica says, 'Outdoor activities can be tiring for some.'",
     "options": [
       {
-        "text": "I see your point, Alex, but rushing might lead to errors. Let's find a balance.",
+        "text": "We can plan shorter activities to accommodate everyone.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You acknowledged Alex's urgency while emphasizing caution, showing good emotional perception and motivation."
-      },
-      {
-        "text": "Maybe we can take a quick break to clear our heads and then decide.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You suggested a break to ease the tension, demonstrating strong self-regulation and social skills."
+        "analysis": "You showed empathy and self-regulation by considering everyone's comfort, but social skill and motivation were moderate."
       },
       {
-        "text": "Lily, sometimes quick decisions are necessary. Let's act and adjust as needed.",
+        "text": "Let's choose an activity that has both relaxing and active options.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You highlighted the necessity of quick decisions, showing balanced emotional response and solid social skills."
+        "analysis": "You acknowledged the concern, showing good perception and social skills, but empathy and self-regulation were moderate."
+      },
+      {
+        "text": "Outdoor activities might not be for everyone, let's brainstorm other fun ideas.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You showed good social skill and motivation by considering other options, but empathy, perception, and self-regulation were moderate."
       }
     ]
   }

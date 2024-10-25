@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Lily pinches the bridge of her nose, Alex taps his foot impatiently.",
-    "role": "Lily",
+    "background": "[Bob] leans back in his chair, glancing at [Monica].",
+    "role": "[Monica]",
     "location": "Conference Room",
-    "description": "Setting a timeframe is fine, but it feels like we're rushing everything.",
+    "description": "'A quieter venue sounds more inclusive. But won't that be boring for some?'",
     "options": [
       {
-        "text": "I understand, but time constraints are sometimes necessary to keep us on track.",
+        "text": "We could find a middle ground that accommodates both preferences.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Lily's concern while emphasizing the importance of deadlines, showing good emotional perception and motivation."
-      },
-      {
-        "text": "Let's find a way to balance thorough discussions with timely action.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You suggested a balanced approach, demonstrating empathy and solid emotional perception."
+        "analysis": "You proposed a balanced solution, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
       },
       {
-        "text": "Maybe we're overthinking; quick decisions can also be effective.",
+        "text": "True, it might be boring. Maybe we can add some fun elements.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the need for quick action, showing high motivation but lower empathy."
+        "analysis": "You acknowledged the potential downside but suggested a compromise, showing good self-regulation and motivation."
+      },
+      {
+        "text": "Not everyone enjoys loud places. We should prioritize inclusivity.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized inclusivity, showing good empathy and motivation, but social skills and perception were lower."
       }
     ]
   }

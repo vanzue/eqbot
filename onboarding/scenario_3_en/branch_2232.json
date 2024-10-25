@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica leans forward, tapping her fingers on the table.",
-    "role": "Monica",
+    "background": "[Bob] and [Monica] are discussing the celebration. [Monica] looks thoughtful.",
+    "role": "[Monica]",
     "location": "Conference Room",
-    "description": "So, are we all on the same page about sticking to the plan?",
+    "description": "'Should we ask everyone for their input on the celebration?'",
     "options": [
       {
-        "text": "I think we should stay flexible and adjust if needed.",
+        "text": "Getting everyone's input could lead to a decision that satisfies most.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You highlighted the importance of flexibility, showing good self-regulation and social skills."
-      },
-      {
-        "text": "Yes, sticking to the plan is the best way forward.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You supported the decision to stick to the plan, showing strong motivation but a lack of emotional perception and empathy."
-      },
-      {
-        "text": "Let's review our objectives to ensure this aligns with our goals.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You suggested aligning actions with goals, showing good emotional perception and empathy."
+        "analysis": "You showed empathy and perception by considering everyone's input, but social skill and motivation were moderate."
+      },
+      {
+        "text": "It's better to decide quickly to avoid further delays.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You emphasized the need for a quick decision, showing good self-regulation and motivation, but empathy and social skill were lower."
+      },
+      {
+        "text": "Let's make a decision and trust that everyone will adapt.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested making a decision confidently, showing good social skills, but empathy was lower."
       }
     ]
   }

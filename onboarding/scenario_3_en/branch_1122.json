@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica and Bob exchange worried looks as the discussion intensifies.",
+    "background": "You, Monica, and Bob are discussing the celebration planning.",
     "role": "Bob",
-    "location": "Conference Room",
-    "description": "Taking a break won't solve the fundamental differences in our approach.",
+    "location": "Meeting Room",
+    "description": "Bob sighs and says, 'Maybe we should just cancel the whole thing.'",
     "options": [
       {
-        "text": "Monica, Bob, let's find a middle ground that incorporates both perspectives.",
+        "text": "Cancelling isn't the best idea. Let's find a compromise.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You aimed for a compromise, showing good emotional perception and empathy, though lacking strong motivation."
+        "analysis": "You showed good self-regulation and empathy by suggesting finding a compromise, but motivation was lower."
       },
       {
-        "text": "Maybe we should consider splitting tasks based on our strengths to move forward efficiently.",
+        "text": "Cancelling might be too drastic. We can come up with a better plan.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested task division to leverage strengths, demonstrating self-regulation and social skills, but empathy was lower."
-      },
-      {
-        "text": "We need to address these differences head-on; avoiding them won't help.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the concern and proposed an alternative, showing good perception but empathy and self-regulation were moderate."
+      },
+      {
+        "text": "If we're really divided, cancelling might be the best option.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 2,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You advocated for addressing the issue directly, showing balanced emotional response and strong motivation."
+        "analysis": "You showed willingness to adapt and consider another idea, showing good motivation but empathy and self-regulation were lower."
       }
     ]
   }

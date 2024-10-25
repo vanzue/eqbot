@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica looks stressed, tapping her pen on the table.",
+    "background": "Bob nods and glances at you for support. Monica looks exasperated.",
     "role": "Bob",
-    "location": "Office",
-    "description": "We can't afford another delay. We need to move forward!",
+    "location": "Meeting Room",
+    "description": "Bob sighs and says, 'Should we just vote on this?'",
     "options": [
       {
-        "text": "I understand the urgency, but rushing might lead to mistakes.",
+        "text": "A vote might be a fair way to decide.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged the urgency but cautioned against rushing, showing good emotional perception and a balanced approach."
-      },
-      {
-        "text": "Let's make sure everyone knows their tasks well to avoid any errors.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You emphasized clarity and preparation, showing a balanced emotional response and good social skills."
+        "analysis": "You suggested a democratic approach, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "I agree, we need to act quickly, but let's review our plan one more time.",
+        "text": "Maybe we can take some more time to discuss before deciding.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and self-regulation by suggesting more discussion, but perception and social skill were moderate."
+      },
+      {
+        "text": "A vote might be premature; let's explore other options first.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 2,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You agreed on the need for quick action but suggested a final review, showing strong self-regulation and motivation."
+        "analysis": "You acknowledged the need for more options, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
       }
     ]
   }

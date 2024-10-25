@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You considered other options for the urgent task. [Bob] joins the conversation.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'I get your point, but we need a decision. What’s your final call?' He crosses his arms, looking serious.",
+    "background": "(Monica) stands up, looking determined. (Bob) turns to you with frustration evident in his eyes.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "'We all need to step up. Are you really not going to help us out?'",
     "options": [
       {
-        "text": "Let's find a workaround that doesn't require me to break my leave.",
+        "text": "I get that it's a tough situation, but we need to distribute the workload better.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You acknowledged the issue but suggested a better workload distribution, showing strong perception but lower empathy and motivation."
+      },
+      {
+        "text": "I’ll help out, but only for a short time. We should discuss a long-term solution later.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show good self-regulation and social skills by suggesting alternatives while maintaining your boundaries. Emotional perception could be better."
+        "analysis": "You offered brief help and proposed discussing a solution later, demonstrating balanced empathy and social skills, though moderate motivation and self-regulation."
       },
       {
-        "text": "Alright, I'll help finish the task. Just let me know what needs to be done.",
+        "text": "This isn't fair. I need my break too. We need a better system in place.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 5,
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show high empathy and emotional perception by agreeing to help but may overextend yourself, affecting self-regulation."
-      },
-      {
-        "text": "I’m not sure if I can handle this right now. Maybe we should seek additional help.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You show good social skills and self-regulation by considering additional help, but emotional perception and empathy could be improved."
+        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, and it might strain your relationship with colleagues."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Bob] sits back down, looking unsure. [Monica] frowns.",
+    "background": "Monica, Bob, and you keep discussing ideas.",
     "role": "Bob",
-    "location": "Project Meeting Room",
-    "description": "Do we really have enough information to make this call?",
+    "location": "Meeting Room",
+    "description": "Bob folds his arms and says, 'We really should consider everyone's preferences.'",
     "options": [
       {
-        "text": "We can make an educated guess with the data we have.",
+        "text": "True, it's important to take everyone's opinions into account.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
         },
-        "analysis": "You encouraged a decision based on available data, showing good social skills but less self-regulation and motivation."
+        "analysis": "You acknowledged the importance of considering everyone's opinions, showing good empathy, but perception and self-regulation were moderate."
       },
       {
-        "text": "Let's gather more details to ensure we're making the best decision.",
+        "text": "I get that, but we need to finalize something soon.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You advocated for thorough data collection, showing good emotional perception and self-regulation."
-      },
-      {
-        "text": "We don't have all the answers, but sometimes we need to take a leap of faith.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You suggested moving forward despite uncertainties, demonstrating solid motivation and balanced emotional response."
+        "analysis": "You showed urgency in finalizing plans, displaying good perception and motivation. However, empathy was lower."
+      },
+      {
+        "text": "I think we should decide on the most popular option and move forward.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested moving forward with the majority choice, showing good social skills but moderate empathy and perception."
       }
     ]
   }

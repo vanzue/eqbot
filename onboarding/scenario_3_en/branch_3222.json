@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex and Lily continue to debate. Monica observes silently, arms folded.",
-    "role": "Monica",
+    "background": "[Monica] sighs and looks at [Bob] after considering mixing elements from each suggestion.",
+    "role": "[Bob]",
     "location": "Conference Room",
-    "description": "Shouldn't we find a middle ground that works for everyone?",
+    "description": "'Mixing elements? That sounds complicated and might not please anyone.'",
     "options": [
       {
-        "text": "That's a good idea, Monica. Finding a balance could benefit the project.",
+        "text": "Maybe we can simplify it by picking just the best parts of each idea.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You agreed with Monica, showing good emotional perception and social skills, but your motivation to act quickly was lower."
-      },
-      {
-        "text": "I'm not sure compromise is always the best solution. Some decisions need to be quick.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You gently disagreed, emphasizing the importance of swift decision-making, showing high motivation but less empathy."
-      },
-      {
-        "text": "Maybe. Or we could just stick to one approach and see how it goes.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You provided an abstract response without strong commitment, showing moderate emotional perception and empathy, but lower self-regulation."
+        "analysis": "You tried to address the complexity by simplifying, showing good perception and empathy, but self-regulation and social skills were moderate."
+      },
+      {
+        "text": "We could give it a try and see if everyone is happy with the result.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested a trial approach, showing good self-regulation and social skills, but perception and empathy were moderate."
+      },
+      {
+        "text": "Compromise is always tricky, but it's worth the effort to keep everyone satisfied.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the difficulty, showing good empathy and motivation, but social skills and perception were lower."
       }
     ]
   }

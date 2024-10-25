@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Bob] raises concerns about your decision affecting the team.",
-    "role": "[Monica]",
+    "background": "[Bob] is pacing around the office, looking stressed. [Monica] sits at her desk, typing quickly.",
+    "role": "[Bob]",
     "location": "Office",
-    "description": "Monica sighs and leans back in her chair. 'Do you really think we can rely on you for future projects?'",
+    "description": "‘Can someone explain why this project is delayed? Monica, were you supposed to handle this?’",
     "options": [
       {
-        "text": "I understand your concern. Let's establish clearer communication channels so this doesn't happen again.",
+        "text": "Let's not point fingers. We should focus on resolving the issue.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 5,
-          "Empathy": 2,
+          "Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show strong self-regulation and emotional perception, but empathy could be improved by addressing the immediate concern more directly."
+        "analysis": "You tried to de-escalate the situation by focusing on a solution rather than assigning blame, showing strong perception and self-regulation."
       },
       {
-        "text": "I apologize if my absence caused issues. I can commit to being more accessible, even on leave.",
+        "text": "Monica, it seems Bob is upset. Could you give us an update?",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show good empathy and social skills by offering to be more available, but your self-regulation might suffer from overcommitment."
+        "analysis": "You acknowledged Bob's emotions and directed the conversation back to Monica, demonstrating empathy and social skills."
       },
       {
-        "text": "I think this highlights the need for better planning. Perhaps we can set up a better support system for when team members are on leave.",
+        "text": "Bob, maybe we should discuss this privately later.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 5,
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You suggest a practical solution, showing good social skills and self-regulation, but emotional perception and motivation could be higher."
+        "analysis": "You suggested taking the conversation offline to avoid public conflict, showing social skill but lower empathy and motivation to immediately resolve the issue."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles led to a conflict. You intervened and suggested a combined approach that leverages both quick decisions and thorough discussions. Lily then started a detailed analysis, but Alex interrupted impatiently, leading you to ask Lily to quickly outline her main points. After Lily's brief summary, Alex seemed dissatisfied and muttered under his breath. You encouraged open communication and tried to balance both perspectives, asking Alex to share his specific concerns and Lily to ensure addressing Alex's priorities. Now, Lily looks frustrated as Alex continues to push his point forcefully with folded arms, showing visible impatience.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex insists, 'We need to act now or we'll miss the opportunity!' while Lily rolls her eyes and sighs heavily.'",
+    "background": "Bob leans forward, rubbing his temples as he looks at you and Monica.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'We need immediate action. How can we ensure quick yet effective decisions?'",
     "options": [
       {
-        "text": "Lily, let's consider Alex's sense of urgency. Alex, could you outline the immediate risks you're seeing?",
+        "text": "We should implement a system where quick decisions are made, but with room for later revisions.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You attempted to bridge the gap by addressing Alex's concerns directly and validating Lily's approach, demonstrating good emotional perception and empathy."
+        "analysis": "You suggest a flexible approach that addresses the need for speed while allowing for adjustments, showing good perception and empathy."
       },
       {
-        "text": "Alex, rushing might lead to mistakes. Lily, provide your final thoughts so we can make an informed decision.",
+        "text": "I agree, Bob. We need to act fast and deal with any issues as they come up.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You highlighted the importance of careful decision-making while keeping the discussion focused, showing strong self-regulation and social skills."
+        "analysis": "You support Bob's urgency, showing good self-regulation and social skills, but less empathy and perception."
       },
       {
-        "text": "Let's not waste more time. Alex, make your point quickly. Lily, we need to wrap this up.",
+        "text": "Rushing might lead to mistakes. Let's carefully consider our options first.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You pushed for efficiency by asking for concise points from both sides, demonstrating good social skills and motivation to maintain productivity."
+        "analysis": "You propose a more cautious approach, showing empathy and motivation, but less emphasis on self-regulation and perception."
       }
     ]
   }

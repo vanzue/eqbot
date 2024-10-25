@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex and Lily have paused their debate. Monica looks thoughtful.",
-    "role": "Alex",
+    "background": "[Monica] leans back in her chair, tapping her pen.",
+    "role": "[Bob]",
     "location": "Conference Room",
-    "description": "So, are we all agreeing to find a middle ground?",
+    "description": "'Alright, let's put it to a vote. Who's in favor of the bar idea?'",
     "options": [
       {
-        "text": "Yes, a balanced approach should work best for everyone.",
+        "text": "Maybe we should first discuss the pros and cons of each option.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You agreed with Alex, showing good emotional perception and social skills, but your motivation and self-regulation were moderate."
+        "analysis": "You suggested a more thorough discussion, showing good self-regulation and social skills, but perception and empathy were moderate."
       },
       {
-        "text": "I still think a quicker decision might benefit us more.",
+        "text": "I think a bar could be fun, but let's hear everyone's thoughts first.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
+          "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You gently disagreed, emphasizing the importance of swift decision-making, showing high motivation but less empathy."
-      },
-      {
-        "text": "Maybe. Or we could just try different approaches and see which works.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 2,
-          "Empathy": 3,
-          "Social Skill": 2,
           "Motivation": 3
         },
-        "analysis": "You provided an abstract response without strong commitment, showing moderate emotional perception and empathy, but lower self-regulation."
+        "analysis": "You acknowledged the bar idea while remaining open to other opinions, showing good perception and empathy, but self-regulation and social skills were moderate."
+      },
+      {
+        "text": "A bar might not be the best idea for everyone. Let's consider other options.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

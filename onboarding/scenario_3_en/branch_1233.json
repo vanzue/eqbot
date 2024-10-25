@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex crosses his arms, looking impatient. Lily taps her pen on the table.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "Alex, we need to ensure our plan is foolproof. Rushing won't help.",
+    "background": "Bob looks at you and Monica while scratching his head.",
+    "role": "Bob",
+    "location": "Break Room",
+    "description": "'Sticking to one plan might be easier, but it could be boring for some.'",
     "options": [
       {
-        "text": "Combining your decisiveness with thorough checks could be our winning formula, Alex.",
+        "text": "Let's try to find a balance that accommodates everyone's preferences.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "You acknowledged Alex's urgency while emphasizing the value of careful planning, demonstrating good emotional perception and empathy."
+        "analysis": "You acknowledged Bob's concern, showing good perception and empathy. Your self-regulation and social skills were moderate."
       },
       {
-        "text": "A quick break might help us come back with fresh perspectives.",
+        "text": "Maybe, but sticking to one plan will ensure we avoid any complications.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested taking a break to alleviate tension, showing strong self-regulation and social skills."
-      },
-      {
-        "text": "Mistakes are costly. Let's discuss the plan one more time to be sure.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 2,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You stressed the importance of careful planning, demonstrating strong self-regulation and motivation."
+        "analysis": "You showed self-regulation and practicality by considering simplicity, but empathy and social skills were moderate."
+      },
+      {
+        "text": "It's true, but it might be worth the effort to mix things up a bit.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested adding some variety, showing good social skill, but your self-regulation and empathy were lower."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans forward, frustrated. Lily sighs.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We need to ensure our plan is foolproof. Rushing won't help.",
+    "background": "Bob leans back and says, 'We should just take a vote and decide.'",
+    "role": "You",
+    "location": "Meeting Room",
+    "description": "Is a vote really the best way to handle this?",
     "options": [
       {
-        "text": "Alex, let's combine your decisiveness with thorough checks. Teamwork will get us there.",
+        "text": "Maybe we should first discuss what everyone values in a celebration.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You emphasized collaboration, balancing urgency and caution, showing good emotional perception and empathy."
+        "analysis": "You showed good perception and empathy by suggesting a discussion, but motivation was lower."
       },
       {
-        "text": "Let's take a quick break and revisit this with fresh minds.",
+        "text": "A vote could work, but let's make sure everyone feels heard first.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "We can't afford mistakes. Lily is right; let's discuss this thoroughly.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You backed Lily's method, advocating for thorough planning, showing a balanced emotional response."
+        "analysis": "You demonstrated self-regulation and balanced consideration, but perception and empathy were moderate."
+      },
+      {
+        "text": "Voting might leave some people unhappy. Should we explore more options?",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the potential issue with voting, showing good perception and social skill, but self-regulation was lower."
       }
     ]
   }

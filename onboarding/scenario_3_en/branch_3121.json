@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica rubs her temples, clearly stressed.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "How are we going to meet the deadline like this?",
+    "background": "[Bob] leans back in his chair, crossing his arms.",
+    "role": "[Bob]",
+    "location": "Meeting Room",
+    "description": "'Balancing everyone’s preferences might lead to more confusion.'",
     "options": [
       {
-        "text": "Monica, I get it. Let's prioritize the most urgent tasks first.",
+        "text": "We can create a poll to see which option is preferred by most.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Monica's stress and suggested a practical approach, showing good emotional perception and empathy."
-      },
-      {
-        "text": "We need to streamline our process. Let's cut down on unnecessary discussions.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
+          "Empathy": 4,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a more efficient approach, demonstrating good social skills and self-regulation."
+        "analysis": "You proposed a democratic approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
       },
       {
-        "text": "Balancing urgency with thoroughness is key. We can delegate tasks to move faster.",
+        "text": "It’s true, but we need to consider everyone’s feelings to avoid dissatisfaction.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
           "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You highlighted the importance of inclusivity, showing good empathy and self-regulation, but social skill and perception were moderate."
+      },
+      {
+        "text": "Maybe we should go with the majority’s choice to keep it simple.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You suggested a balanced approach, showing solid motivation and a balanced emotional response."
+        "analysis": "You suggested a pragmatic approach, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

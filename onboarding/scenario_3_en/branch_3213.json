@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Lily looks visibly upset while Alex taps his pen impatiently.",
-    "role": "Lily",
+    "background": "[Bob] taps his pen on the table and glances at [Monica].",
+    "role": "[You]",
     "location": "Conference Room",
-    "description": "This isn't just about speed, Alex. We need to be thorough!",
+    "description": "'It seems like we should consider a different plan altogether.'",
     "options": [
       {
-        "text": "Let's balance speed with thoroughness to meet both our needs.",
+        "text": "Let's gather everyone's suggestions and vote on the best one.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You proposed a democratic approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+      },
+      {
+        "text": "Maybe a quieter venue would suit everyone better.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You proposed a balanced approach, showing good self-regulation and understanding of both perspectives."
-      },
-      {
-        "text": "I agree we need to be thorough, but some decisions can be made faster.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You acknowledged the importance of thoroughness but emphasized the need for quick decisions, showing high motivation."
+        "analysis": "You suggested an alternative considering others' preferences, showing good self-regulation and motivation, but empathy and social skills were moderate."
       },
       {
-        "text": "We should take our time to ensure quality decisions.",
+        "text": "A bar isn’t suitable for everyone. We need to come up with a different plan.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Social Skill": 2,
+          "Motivation": 4
         },
-        "analysis": "You supported a thorough approach, showing empathy and solid emotional perception."
+        "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skills and perception were lower."
       }
     ]
   }

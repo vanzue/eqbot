@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
+    "background": "[Monica] sighs while crossing her arms.",
+    "role": "[Monica]",
     "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "description": "'So, what do you suggest we do then?'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "Maybe we should take a vote to see what the majority prefers.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
+        "analysis": "You proposed a democratic approach, showing good self-regulation and social skills, but perception, empathy, and motivation were moderate."
       },
       {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
+        "text": "I think a compromise might be the best route. How about a mix of activities?",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You suggested a balanced solution, showing good perception and empathy, but social skill, self-regulation, and motivation were moderate."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "Honestly, this is becoming too complicated. Maybe we should just cancel the celebration.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
+          "Empathy": 2,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You expressed frustration and proposed canceling, showing high motivation to resolve the issue but lower empathy and social skills."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. [Bob] raised his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nodded in agreement. You emphasized the importance of being thorough to avoid mistakes. [Monica] then frowned and said, 'But we can't afford to waste time either.' You responded by suggesting balancing speed and thoroughness. Now, [Bob] looks unconvinced and says, 'But how do we actually implement that balance?'",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] looks unconvinced and says, 'But how do we actually implement that balance?'",
+    "background": "Monica sighs and checks her notes.",
+    "role": "Alex",
+    "location": "Conference Room",
+    "description": "Alex says, 'We really can't afford to delay this project any longer.'",
     "options": [
       {
-        "text": "Let's outline a clear plan with deadlines for each part of the project, balancing quick decisions for simple tasks and detailed discussions for complex ones.",
+        "text": "I get your point, but let's not rush and miss crucial details.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledge Alex's urgency but emphasize the importance of detailed planning, showing empathy and perception."
+      },
+      {
+        "text": "How about we set smaller milestones to ensure we're on track?",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You proposed a structured approach to balance both work styles, showing good emotional perception and empathy."
+        "analysis": "You suggest a practical approach to balance speed and thoroughness, demonstrating good self-regulation and social skills."
       },
       {
-        "text": "We can set milestones to track our progress and adjust our approach as needed. This way, we can stay flexible and efficient.",
+        "text": "Rushing might lead to mistakes that could delay us even more.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You proposed setting milestones to balance flexibility and efficiency, showing strong motivation and self-regulation."
-      },
-      {
-        "text": "It's important to stay adaptable. Let's ensure we have regular check-ins to monitor our progress and make adjustments.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You emphasized adaptability and regular check-ins, demonstrating good self-regulation and motivation."
+        "analysis": "You stress the potential negative consequences of rushing, reflecting good motivation and social skills."
       }
     ]
   }

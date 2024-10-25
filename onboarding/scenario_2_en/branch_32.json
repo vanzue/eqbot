@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you proposed a combined approach that leverages both quick decisions and thorough discussions. During the meeting, [Monica] and [Bob] further escalated the situation with their body language and comments. You then acknowledged their frustration and invited their input. Now, [Bob] raises his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nods in agreement.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "[Bob] raises his voice, saying, 'We need a clear direction, this back and forth is wasting time,' while [Monica] nods in agreement.",
+    "background": "Monica looks frustrated and crosses her arms.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'I understand the need for speed, but this project's complexity requires careful planning.'",
     "options": [
       {
-        "text": "Bob, I understand the need for a clear direction. Let's focus on one thing at a time. Monica, can you provide your perspective first?",
+        "text": "Perhaps we can allocate some tasks to move faster while ensuring detailed planning.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 4,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You addressed the need for clarity and invited Monica to share her perspective, demonstrating good emotional perception and empathy."
+        "analysis": "You suggest a balanced approach, showing empathy and perception by valuing both speed and thorough planning."
       },
       {
-        "text": "I agree, we need to be more decisive. Let's quickly list all ideas and vote on the best approach.",
+        "text": "Bob, maybe a quick decision isn't as risky as it seems.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
+          "Social Skill": 4,
+          "Motivation": 2
         },
-        "analysis": "You acknowledged the need for decisiveness and proposed a voting method to move forward, showing strong motivation and self-regulation."
+        "analysis": "You lean towards supporting Alex's perspective, showing good self-regulation and social skills in handling the disagreement."
       },
       {
-        "text": "I understand everyone's frustration, but we need to be thorough to avoid mistakes. Let's take a step back and ensure we cover all bases.",
+        "text": "It's crucial to avoid hasty decisions; let's prioritize a detailed plan.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of being thorough to avoid mistakes, showing good self-regulation and motivation."
+        "analysis": "You emphasize the importance of thorough planning, reflecting good motivation and social skills."
       }
     ]
   }

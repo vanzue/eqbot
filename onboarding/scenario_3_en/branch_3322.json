@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex sighs, looking at the clock. Lily taps her pen on the table.",
-    "role": "Alex",
-    "location": "Conference Room",
-    "description": "Can we speed this up? We're wasting time.",
+    "background": "[Bob] looks at [Monica] and you, raising an eyebrow.",
+    "role": "Bob",
+    "location": "Break Room",
+    "description": "'Do you think Emma and Sam will ever agree on anything?'",
     "options": [
       {
-        "text": "I get that we’re in a hurry, but rushing might cause mistakes.",
+        "text": "They might not agree, but we can find a solution that works for everyone.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You acknowledged the disagreement and suggested a collaborative solution, showing good perception and empathy but moderate social skills and self-regulation."
+      },
+      {
+        "text": "They both have strong opinions, but we'll figure it out.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You expressed optimism and confidence in resolving the issue, showing good self-regulation and social skills but moderate empathy and perception."
+      },
+      {
+        "text": "It's unlikely given their differences, but we have to try.",
+        "scores": {
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 2,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You recognized the urgency but emphasized the importance of thoroughness, showing good emotional perception and empathy."
-      },
-      {
-        "text": "How about we list out key points quickly, then decide?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You suggested a streamlined approach, demonstrating self-regulation and social skills."
-      },
-      {
-        "text": "Maybe some things are just not worth discussing in detail.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You leaned towards quick action, showing motivation but slightly less empathy and emotional perception."
+        "analysis": "You pointed out the difficulty in reaching a consensus, showing good perception and motivation but lower social skills."
       }
     ]
   }

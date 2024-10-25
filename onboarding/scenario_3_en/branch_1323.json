@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Bob rubs his temples while Monica glances at her phone.",
-    "role": "Bob",
-    "location": "Project Meeting Room",
-    "description": "Maybe this isn't the best time to make a decision. Let's revisit this later.",
+    "background": "Monica, Bob, and you are still in the meeting room discussing ideas.",
+    "role": "Monica",
+    "location": "Meeting Room",
+    "description": "Monica crosses her arms and says, 'Honestly, I don't think an outdoor activity is the best idea.'",
     "options": [
       {
-        "text": "We need to decide now, Monica. Bob, let's focus on the task at hand.",
+        "text": "It's one option, but maybe we need to consider all suggestions equally.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You encouraged immediate action while maintaining focus, showing strong self-regulation and social skills but less empathy."
+        "analysis": "You acknowledged the suggestion, displaying good social skill but moderate perception and self-regulation. Empathy was lower."
       },
       {
-        "text": "I agree with Bob. A rushed decision might lead to mistakes.",
+        "text": "Outdoor activities can be a great way to bond; let's give it a shot.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 2,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 4
         },
-        "analysis": "You supported taking time for a decision, balancing emotional perception and self-regulation."
+        "analysis": "You showed confidence in the idea, demonstrating good perception and motivation. However, empathy was lower."
       },
       {
-        "text": "Monica, let's take a step back and gather more information before deciding.",
+        "text": "Maybe you're right; we should think about an indoor activity instead.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed gathering more data, showing good empathy and a balanced emotional response."
+        "analysis": "You showed empathy by acknowledging the concern, but self-regulation and social skill were moderate."
       }
     ]
   }

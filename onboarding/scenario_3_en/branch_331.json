@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "background": "[Monica] sighs as she looks at [Bob] and you.",
+    "role": "Monica",
+    "location": "Break Room",
+    "description": "'What if people end up unhappy with the majority decision?'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "We could have a discussion to ensure everyone's concerns are heard.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
-      },
-      {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You suggested a discussion to address concerns, showing good perception and empathy but moderate social skills and self-regulation."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "If we explain the decision process, people might be more accepting.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You proposed explaining the decision process to gain acceptance, showing good self-regulation and motivation but moderate perception and empathy."
+      },
+      {
+        "text": "Sometimes, we can't please everyone. We just have to move forward.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 4
+        },
+        "analysis": "You acknowledged the difficulty of pleasing everyone and suggested moving forward, showing good social skills and motivation but lower empathy."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. You intervened and suggested taking a step back and hearing each other out, where Alex would go first and then Lily would share her perspective. After Alex presented his points with a sense of urgency, Lily started to share her detailed analysis, but Alex interrupted impatiently. You then asserted control over the situation, ensuring fairness by asking Alex to respect Lily's turn. Lily continued her detailed explanation, but Alex appeared visibly frustrated, tapping his fingers on the table. You acknowledged Alex's need for speed while ensuring Lily's voice is heard. Lily wrapped up her points, but Alex seemed unconvinced. Alex rolled his eyes and muttered under his breath, 'This is a waste of time,' while Lily looked at you expectantly. You then acknowledged Alex's eagerness to move forward but emphasized the importance of valuing team members' contributions.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex crosses his arms and leans back in his chair, still looking unimpressed. Lily looks at her notes and prepares to respond, but hesitates, sensing the tension.'",
+    "background": "[Monica] sighs and looks at both of you, frustration evident.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "Bob says, 'This constant back and forth is wasting valuable time.'",
     "options": [
       {
-        "text": "Alex, I see you're still concerned. How about we take a quick vote to see if we should proceed with Lily's suggestion?",
+        "text": "Let's try to understand what's really causing this conflict and address it directly.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
+          "Empathy": 5,
           "Social Skill": 4,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You aimed to involve the team in decision-making, showing good social skills and motivation to move forward collaboratively."
+        "analysis": "You show empathy by trying to understand the root cause of the conflict and suggest addressing it directly, promoting a balanced resolution."
       },
       {
-        "text": "Lily, let's wrap up your points quickly so we can address Alex's concerns. Alex, please be patient a bit longer.",
+        "text": "I get that it's frustrating, Bob, but finding a balanced approach will benefit us in the long run.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You tried to balance the discussion by asking Lily to summarize quickly while asking Alex to be patient, showing good social skills and motivation."
+        "analysis": "You acknowledge Bob's frustration and emphasize the importance of a balanced approach, showing good self-regulation and social skill."
       },
       {
-        "text": "Let's take a short break to clear our heads and come back with fresh perspectives. We'll decide then.",
+        "text": "If this continues, we'll never finish on time. Let's make a decision and move on.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 3
+          "Motivation": 4
         },
-        "analysis": "You suggested a break to reduce tension and allow for reflection, demonstrating strong emotional perception and empathy."
+        "analysis": "You suggest making a quick decision to move forward, showing empathy for the need to complete tasks but also emphasizing the importance of action."
       }
     ]
   }

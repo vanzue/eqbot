@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] leans back, looking exasperated. [Bob] frowns.",
-    "role": "You",
-    "location": "Conference Room",
-    "description": "We need to consider all angles before proceeding. Let's find a balance.",
+    "background": "You, Monica, and Bob continue discussing celebration plans.",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "Bob crosses his arms and says, 'What about a mix of activities? A little bit of everything.'",
     "options": [
       {
-        "text": "Monica, your patience is key here. Bob's attention to detail will help us succeed.",
+        "text": "That sounds like a fair way to include everyone's preferences.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You acknowledged both Monica's and Bob's strengths, promoting teamwork and understanding, showing good emotional perception and empathy."
+        "analysis": "You acknowledged Bob's suggestion, showing good perception and empathy, but self-regulation and motivation were moderate."
       },
       {
-        "text": "Let's take a quick break and revisit this with fresh minds.",
+        "text": "A mix might be chaotic; let's stick to one idea.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 2,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
+        "analysis": "You showed confidence in having a single plan, displaying good social skill, but empathy was lower."
       },
       {
-        "text": "We can't afford mistakes. Bob is right; let's discuss this thoroughly.",
+        "text": "We could try a mix, but it may be tough to organize.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 3
         },
-        "analysis": "You supported Bob's method, advocating for thorough planning and attention to detail, showing a balanced emotional response."
+        "analysis": "You acknowledged the suggestion and proposed a cautious approach, showing good self-regulation, but perception and empathy were moderate."
       }
     ]
   }

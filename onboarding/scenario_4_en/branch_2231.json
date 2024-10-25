@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You agreed to delegate tasks. [Bob] and [Monica] continue discussing the plan.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'Alright, who do you think can handle the most critical part? I'm thinking of [James].' He leans back in his chair, looking skeptical.",
+    "background": "(Bob) sighs, sitting down with a defeated look. (Monica) looks at you with a mix of hope and frustration.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "'We really appreciate your effort, but this keeps happening. How can we rely on you more consistently?'",
     "options": [
       {
-        "text": "James sounds good, but let's also consider [Anna] for backup.",
+        "text": "I understand. Let's work on a more sustainable plan together.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show a balanced approach by suggesting additional support, demonstrating good social skills and self-regulation."
-      },
-      {
-        "text": "James can handle it alone. We don't need anyone else.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You show confidence in James but lack empathy and social skills by not considering other team members."
-      },
-      {
-        "text": "I'm not sure about James. Maybe [Anna] would be a better fit.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 2,
+          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You demonstrate good emotional perception and empathy by suggesting an alternative, but it may affect social skills."
+        "analysis": "You acknowledged the issue and offered to collaborate on a solution, showing empathy and perception while maintaining good social skills."
+      },
+      {
+        "text": "I'll do my best, but you also need to manage better to avoid these recurring issues.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You stood firm on boundaries and suggested improvements, showcasing strong self-regulation but lower empathy and motivation to help immediately."
+      },
+      {
+        "text": "It's frustrating for me too. Maybe if there were clearer guidelines, this wouldn't happen.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
       }
     ]
   }

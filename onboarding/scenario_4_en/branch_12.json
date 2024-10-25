@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] frowns and crosses her arms, questioning your decision to not handle the urgent task.",
-    "role": "[Bob]",
+    "background": "[Monica] stops typing and looks up, her face turning red. [Bob] crosses his arms, waiting for an answer.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob leans back in his chair. 'I get that you needed a break, but the task was critical. How do we handle this next time?'",
+    "description": "'I was handling it, but there were unexpected issues. We need to discuss this together.'",
     "options": [
       {
-        "text": "We can create a protocol for such situations, ensuring someone is always on standby.",
+        "text": "Let's all sit down and go through the issues one by one.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show good self-regulation and emotional perception by suggesting a solution, but the motivation to directly engage with the issue is lower."
-      },
-      {
-        "text": "I’m really sorry for not being there. Let's discuss how we can prevent this in the future.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You show empathy and a willingness to address the issue, but the motivation to directly handle the task is lower."
-      },
-      {
-        "text": "I understand it was critical, but my break was necessary. We need to improve our communication.",
-        "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You balance your need for a break with the urgency of the task, showing good social skills but lower empathy."
+        "analysis": "You suggested a collaborative approach to address the issues, showing good social skills and perception, though self-regulation could be stronger."
+      },
+      {
+        "text": "Monica, do you need more support to handle these issues?",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You offered to understand Monica's situation better, showing high empathy, but the overall engagement and motivation to resolve the issue were moderate."
+      },
+      {
+        "text": "Bob, it's clear Monica is stressed. Can we discuss this later?",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You suggested deferring the discussion to avoid immediate conflict, demonstrating strong self-regulation but lower empathy and motivation to address the problem now."
       }
     ]
   }

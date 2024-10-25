@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You agree to try your best with the financials. [Monica] initiates a new discussion.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'Thanks for taking on the extra task. Do you think we should involve the finance team for a quick review?'",
+    "background": "[Monica] and [Bob] are now in a heated discussion as you try to guide them.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "'We really appreciate your input, but this is taking too long. Can you just take over?'",
     "options": [
       {
-        "text": "It might be a good idea to get their input to ensure accuracy.",
+        "text": "I understand the urgency. Let's wrap this up quickly together.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 5,
-          "Motivation": 2
+          "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You show good emotional perception and social skills by suggesting collaboration, but your self-regulation might be impacted by adding more layers of review."
+        "analysis": "You acknowledged the urgency and offered to expedite the process, showing strong empathy and social skills, though your self-regulation could be better."
       },
       {
-        "text": "I'm confident in handling it alone, but if you think it's necessary, we can involve them.",
+        "text": "I get it, but I'm on leave. Let's find a way for you to handle this.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "You balanced acknowledging the urgency with maintaining your boundaries, showing good self-regulation but lower motivation and empathy."
+      },
+      {
+        "text": "I believe you both are capable of handling this efficiently. Trust yourselves.",
+        "scores": {
+          "Perception": 2,
           "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 3,
-          "Motivation": 4
+          "Motivation": 2
         },
-        "analysis": "You show good self-regulation and motivation, but your empathy could be improved by being more open to seeking help."
-      },
-      {
-        "text": "Involving them might slow us down. Let's stick to our plan and review it ourselves.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and a balanced approach, but your emotional perception is lower as you prioritize speed over collaboration."
+        "analysis": "You encouraged self-reliance, showing strong self-regulation but lower empathy, perception, and motivation."
       }
     ]
   }

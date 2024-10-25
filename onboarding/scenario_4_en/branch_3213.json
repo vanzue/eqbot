@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You suggest reconsidering priorities. [Bob] looks thoughtful.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "[Bob] says, 'Reconsidering priorities might be wise, but it could also complicate things. What's your take?'",
+    "background": "[Monica] and [Bob] are discussing the task while you are on leave, and you decide to join the discussion via a quick text message.",
+    "role": "[Monica]",
+    "location": "Office",
+    "description": "'Can you at least review this document quickly? We’re really stuck.'",
     "options": [
       {
-        "text": "It's worth discussing further to ensure we're on the same page.",
+        "text": "I can take a quick look and give you some feedback.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and willingness to help, but your self-regulation and motivation to maintain your leave were slightly lower."
+      },
+      {
+        "text": "I’m on leave, but I can give you a brief review.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show good empathy and self-regulation, but your motivation might be lower as you seek further discussion."
+        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
       },
       {
-        "text": "I think sticking to our initial plan is more efficient.",
+        "text": "I think you can manage this without me. Follow the guidelines I left.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 3
-        },
-        "analysis": "You show strong self-regulation and social skills, but emotional perception might be lower as you prioritize efficiency."
-      },
-      {
-        "text": "Maybe we should split tasks to cover both the report and presentation.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 2,
+          "Self Regulation": 4,
           "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 3
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You show high social skills and emotional perception, but empathy could be seen as lacking by not fully considering the complexity."
+        "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Bob crosses his arms and frowns.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "We need to address this fast, but not recklessly. Any suggestions?",
+    "background": "[Monica] looks thoughtful after [Bob]'s suggestion.",
+    "role": "[Monica]",
+    "location": "Break Room",
+    "description": "'A less formal venue could work, but it might not feel as special.'",
     "options": [
       {
-        "text": "Let's identify the critical issues and tackle them first.",
+        "text": "Special moments are about the people, not the place.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a focused approach, demonstrating good self-regulation and social skills by suggesting prioritization."
+        "analysis": "You emphasized the importance of people over the venue, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Taking a moment to analyze might save us from bigger problems later.",
+        "text": "Let's aim for a balance between special and comfortable.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You advocated for a more thoughtful approach, showing good emotional perception and empathy."
+        "analysis": "You suggested finding a balance, showing empathy and self-regulation, but social skill and perception were moderate."
       },
       {
-        "text": "We're overthinking this. Let's just stick to the original plan.",
+        "text": "A less formal venue can still be memorable if planned well.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized urgency and sticking to the plan, showing strong motivation but lacking in emotional perception and empathy."
+        "analysis": "You proposed focusing on planning, showing empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans forward, frustrated. Lily sighs.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We need to ensure our plan is foolproof. Rushing won't help.",
+    "background": "Monica taps her pen on the table and says, 'Still, a vote might rush things.'",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "We could end up dragging this out forever.",
     "options": [
       {
-        "text": "Alex, let's combine your decisiveness with thorough checks. Teamwork will get us there.",
+        "text": "Let's aim for a quick but fair decision.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You demonstrated self-regulation and balanced consideration, but perception and empathy were moderate."
+      },
+      {
+        "text": "We should consider the importance of everyone's input.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 2,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You emphasized collaboration, balancing urgency and caution, showing good emotional perception and empathy."
+        "analysis": "You showed good perception and empathy by emphasizing the value of input, but motivation and self-regulation were lower."
       },
       {
-        "text": "Let's take a quick break and revisit this with fresh minds.",
+        "text": "Dragging it out isn't ideal, but everyone should feel their opinion matters.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "We can't afford mistakes. Lily is right; let's discuss this thoroughly.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You backed Lily's method, advocating for thorough planning, showing a balanced emotional response."
+        "analysis": "You acknowledged the concern while showing good social skills, but motivation was lower."
       }
     ]
   }

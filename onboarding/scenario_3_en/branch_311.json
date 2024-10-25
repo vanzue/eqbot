@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans back, arms crossed. Lily looks frustrated.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We can't just rush decisions without thinking them through!",
+    "background": "[Monica] leans back in her chair, crossing her arms.",
+    "role": "[You]",
+    "location": "Meeting Room",
+    "description": "'We could have a structured plan to keep things organized.'",
     "options": [
       {
-        "text": "I see your point, Lily, but quick action can sometimes be beneficial too.",
+        "text": "Let's create a detailed schedule to ensure everything runs smoothly.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You acknowledged Lily's concerns while suggesting a balance, demonstrating good emotional perception and empathy."
+        "analysis": "You offered a practical solution to maintain order, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "Let's try to meet halfway and set a time limit for discussions.",
+        "text": "It's about making everyone happy. We'll figure it out together.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a compromise that addresses both styles, showing empathy and social skills."
+        "analysis": "You focused on inclusivity and teamwork, showing good empathy and self-regulation, but social skill and perception were moderate."
       },
       {
-        "text": "Sometimes we need to make quick decisions to keep the project moving.",
+        "text": "Maybe it's too complicated. We should choose one idea and stick to it.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of quick action, showing motivation but slightly less empathy."
+        "analysis": "You suggested simplifying the plan, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

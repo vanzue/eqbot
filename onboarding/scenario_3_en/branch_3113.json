@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica frowns, Bob looks confused.",
-    "role": "Monica",
-    "location": "Conference Room",
-    "description": "Why are we still debating? We need a decision now!",
+    "background": "[Bob] taps his pen on the table and looks at [Monica].",
+    "role": "[Monica]",
+    "location": "Meeting Room",
+    "description": "'Sticking to one idea might oversimplify things. How will we ensure everyone feels included?'",
     "options": [
       {
-        "text": "Monica, let's consider all viewpoints before rushing.",
+        "text": "We can rotate the activities so everyone gets a chance to enjoy their preferred type.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
+          "Empathy": 4,
+          "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You acknowledged the urgency but stressed the importance of considering all perspectives, showcasing good emotional perception and self-regulation."
+        "analysis": "You suggested a balanced approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
       },
       {
-        "text": "I agree, let's just make a decision and move forward.",
+        "text": "Maybe we should just make a decision and not worry too much about everyone's preferences.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You prioritized quick decision-making, showing strong motivation but less empathy and emotional perception."
+        "analysis": "You leaned towards decisiveness, showing good self-regulation and motivation, but empathy and perception were lower."
       },
       {
-        "text": "Why not split tasks and reconvene later?",
+        "text": "We could send out a poll to see what the majority prefers.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 2
+          "Social Skill": 4,
+          "Motivation": 3
         },
-        "analysis": "You proposed a practical solution to divide tasks, showing good self-regulation and balanced emotional perception."
+        "analysis": "You suggested a democratic approach, showing good social skills, but perception, empathy, and self-regulation were moderate."
       }
     ]
   }

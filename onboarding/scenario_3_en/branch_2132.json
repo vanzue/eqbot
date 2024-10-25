@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica nods, leaning back in her chair.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "We can't keep delaying. What's our final decision?",
+    "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity.",
+    "role": "Sam",
+    "location": "Break Room",
+    "description": "'How about we just go to the bar? It's the easiest option.'",
     "options": [
       {
-        "text": "We need more input before rushing into action.",
+        "text": "The bar could be fun, but maybe we could also consider other options to make sure everyone is happy.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You emphasized the need for thorough consideration, showing strong emotional perception and balanced empathy."
-      },
-      {
-        "text": "Let's quickly gather final thoughts and then proceed.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
+          "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You proposed a compromise, demonstrating good self-regulation and social skills while maintaining a balance."
+        "analysis": "You recognized the usefulness of Sam's suggestion while also showing empathy by considering the preferences of the entire team."
       },
       {
-        "text": "We already have enough information. Let's move forward.",
+        "text": "A bar might be fun, but let's think about what everyone might enjoy.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and self-regulation, considering everyone's preferences, but social skill and perception were moderate."
+      },
+      {
+        "text": "I think we should aim for something more inclusive than a bar.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of taking action, showing strong motivation and balanced emotional control."
+        "analysis": "You expressed your opinion calmly, showing good social skill and motivation, but empathy and perception were lower."
       }
     ]
   }

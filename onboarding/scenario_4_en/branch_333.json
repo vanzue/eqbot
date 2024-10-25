@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You suggested reviewing the presentation first. [Monica] seems a bit impatient.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "[Monica] says, 'We don't have much time. Can we just decide on the report now?'",
+    "background": "[Bob] looks frustrated, pacing around the office as [Monica] types away at her computer.",
+    "role": "[Bob]",
+    "location": "Office",
+    "description": "'This is getting out of hand. We need more than just a quick check-in from you. Can you commit some more time?'",
     "options": [
       {
-        "text": "Let's sort out the presentation first, then we can tackle the report.",
+        "text": "I understand the urgency. I can allocate more time, but only for this task.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation by sticking to your plan, but empathy could improve by addressing Monica's urgency."
-      },
-      {
-        "text": "I understand the urgency. Let's quickly decide on the report and then move to the presentation.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed strong empathy and social skills by offering more time, but your self-regulation and motivation to maintain your leave were slightly lower."
+      },
+      {
+        "text": "I can only help intermittently. You need to handle most of it.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You show strong emotional perception and empathy by acknowledging Monica's concern, but self-regulation and motivation might suffer due to changing focus."
+        "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
       },
       {
-        "text": "We could split our attention. I'll start on the report while you both continue on the presentation.",
+        "text": "I think you both need to manage this without my full involvement. Follow the plan.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 4
+          "Perception": 2,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You show high motivation by offering to multitask, but emotional perception and social skills could be improved by considering the overall team dynamics."
+        "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
       }
     ]
   }

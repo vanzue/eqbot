@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica folds her arms, looking concerned.",
-    "role": "Monica",
+    "background": "[Bob] and [Monica] are discussing the celebration plans. [Monica] looks thoughtful.",
+    "role": "[Bob]",
     "location": "Conference Room",
-    "description": "If we take too long, we might miss our deadline. What do you think?",
+    "description": "'Do you think an outdoor activity will be fun for everyone?'",
     "options": [
       {
-        "text": "We can manage our time better if we focus on the key tasks first.",
+        "text": "Outdoor activities can be refreshing and fun.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You emphasized efficient time management while acknowledging the urgency, showing good self-regulation and social skills."
+        "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy and self-regulation were moderate."
       },
       {
-        "text": "I agree, we should prioritize speed to meet the deadline, but not at the expense of quality.",
+        "text": "Let's find an activity that suits everyone's energy levels.",
         "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 4,
           "Social Skill": 3,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You supported the urgency while stressing the importance of quality, showing good emotional perception and empathy."
+        "analysis": "You showed empathy and self-regulation by considering everyone's energy levels, but social skill and perception were moderate."
       },
       {
-        "text": "Honestly, the deadline is tight, but we need to ensure everything is done right.",
+        "text": "Maybe we can plan shorter outdoor activities to avoid exhaustion.",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of meeting the deadline, showing strong motivation but a lack of emotional perception and empathy."
+        "analysis": "You expressed your opinion calmly, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

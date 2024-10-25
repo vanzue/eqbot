@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] taps her fingers on the table. You suggested a more radical change.",
-    "role": "[Bob]",
+    "background": "[Monica] nods slightly, then turns to you, looking for some direction.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob raises an eyebrow, leaning forward. 'Do you think such a drastic change is really necessary?'",
+    "description": "'You've always been good at solving these issues. What do you think we should do next?'",
     "options": [
       {
-        "text": "It depends on our goals. Maybe we need to redefine what success looks like.",
+        "text": "We should have a team meeting to brainstorm ideas and find a solution together.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You offer a balanced perspective, showing good empathy and moderate scores in other areas, suggesting a need to reassess goals."
+        "analysis": "You suggested a collective approach, showing good perception and empathy, but your motivation for immediate action is average."
       },
       {
-        "text": "I believe it is. Sometimes, sticking with the same approach can lead to stagnation.",
+        "text": "I think we need to delegate tasks more efficiently. Maybe that's where we went wrong.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 2,
-          "Motivation": 4
-        },
-        "analysis": "You advocate for change with high motivation and self-regulation but lower emotional perception and social skills."
-      },
-      {
-        "text": "Maybe not, but we should at least be open to exploring new ideas.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 2,
+          "Perception": 3,
+          "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You suggested improving task delegation, showing balanced empathy and social skills, but your perception of the broader issue could be stronger."
+      },
+      {
+        "text": "It might be best to pause and reassess our goals. We're missing something fundamental.",
+        "scores": {
+          "Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 3,
+          "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You suggest openness to new ideas, showing good emotional perception and social skills but lower self-regulation and motivation."
+        "analysis": "You suggested reassessing the goals, showing strong perception and self-regulation, but your motivation to address the issue immediately is lower."
       }
     ]
   }

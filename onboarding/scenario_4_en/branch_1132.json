@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] taps her pen on the table as [Bob] listens.",
-    "role": "[Bob]",
+    "background": "[Monica] looks up from her papers, a bit exasperated, while [Bob] leans back in his chair, arms crossed.",
+    "role": "[Monica]",
     "location": "Office",
-    "description": "Bob leans back in his chair. 'It’s great you’ll be more available, but are you sure you can manage the extra stress?'",
+    "description": "'Bob, I know you're concerned, but I'm handling it. Can we trust each other to do our parts?'",
     "options": [
       {
-        "text": "I appreciate your concern. I'll make sure to manage my workload efficiently.",
+        "text": "Trust is important, Monica. Let's all agree on what needs to be done next.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
-          "Empathy": 2,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You show good self-regulation and motivation by assuring efficient workload management, but empathy could be improved."
-      },
-      {
-        "text": "I might need some support, but I’m confident I can handle it.",
-        "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You show good emotional perception and social skills by acknowledging the need for support, but self-regulation could be better."
+        "analysis": "You emphasized the importance of trust and collaboration, showing good social skills and perception, though your self-regulation could be stronger."
       },
       {
-        "text": "Perhaps we should re-evaluate the current workload distribution to avoid any stress.",
+        "text": "Monica, maybe Bob just needs some reassurance. Can you give a quick update?",
         "scores": {
-          "Emotion Perception": 2,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You show good empathy and social skills by suggesting a re-evaluation of workload, but emotional perception could be improved."
+        "analysis": "You acknowledged Monica's efforts while addressing Bob's concerns, demonstrating empathy and social skills."
+      },
+      {
+        "text": "Monica, if you're handling it, why is Bob still worried?",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 2,
+          "Social Skill": 4,
+          "Motivation": 2
+        },
+        "analysis": "You challenged Monica's statement, potentially creating tension but showing social skill in addressing underlying issues."
       }
     ]
   }

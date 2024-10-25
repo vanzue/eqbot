@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "In a project team, colleague Alex prefers a direct work style, making quick decisions and taking action immediately. Colleague Lily, however, likes to carefully think things through and only make decisions after thorough discussions. During a project meeting, their differing work styles lead to a conflict. Previously, you suggested considering both perspectives and proposed a collaborative solution. Now, Alex and Lily seem calmer but still tense. [Monica] and [Bob] are also present, observing the interaction.",
-    "role": "Team Leader",
-    "location": "Project Meeting Room",
-    "description": "'Alex and Lily, still showing signs of tension, continue discussing their approaches. Alex insists on quick action, while Lily continues to emphasize thorough discussions. Monica and Bob exchange uneasy glances as the tension builds.'",
+    "background": "Monica sighs, glancing at Bob with frustration.",
+    "role": "Bob",
+    "location": "Conference Room",
+    "description": "'Every time we rush, we end up with mistakes. Can't we be more careful?'",
     "options": [
       {
-        "text": "I see both methods have their merits. Monica and Bob, what are your thoughts on how we can blend these approaches?",
+        "text": "Let's not get stuck in a loop of overthinking. Quick decisions can drive progress.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
-          "Empathy": 4,
+          "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You involved other team members in the discussion, showing good emotional perception and empathy, while promoting a collaborative environment."
+        "analysis": "You emphasize the need for quick decisions, showing higher motivation but lower empathy towards Bob's concerns."
       },
       {
-        "text": "Alex, we understand your urgency, but Lily's points are also valid. Can't we find a solution that respects both views?",
+        "text": "Bob, I see your point. Maybe we can find a way to speed up while minimizing errors?",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You demonstrate understanding of Bob's caution and propose a balanced approach, showing good perception and empathy."
+      },
+      {
+        "text": "It's important to be diligent, but we can't afford to be overly cautious. Let's find a middle ground.",
+        "scores": {
+          "Perception": 3,
           "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You reinforced the importance of both perspectives and aimed for a balanced approach, demonstrating strong self-regulation and social skills."
-      },
-      {
-        "text": "This ongoing conflict suggests we need a different strategy. How about we brainstorm together to combine quick decisions with detailed discussions?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
-          "Social Skill": 4,
-          "Motivation": 4
-        },
-        "analysis": "You proposed a collaborative solution, showing good social skills and motivation to resolve the conflict."
+        "analysis": "You recognize the need for a balanced approach, showing good self-regulation and social skills."
       }
     ]
   }

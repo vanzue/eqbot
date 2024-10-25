@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Lily looks at Alex, her brows furrowing.",
-    "role": "Alex",
+    "background": "[Bob] looks around the room, then at [Monica].",
+    "role": "[Monica]",
     "location": "Conference Room",
-    "description": "We need to move faster, Lily. This is slowing us down!",
+    "description": "'So, what are we going to do then?'",
     "options": [
       {
-        "text": "I understand, Alex, but we need to ensure we don’t miss any critical details.",
+        "text": "Let's try to come up with a unique idea that everyone will enjoy.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 2,
-          "Motivation": 2
-        },
-        "analysis": "You acknowledged Alex's urgency while emphasizing the importance of thoroughness, showing good emotional perception and empathy."
-      },
-      {
-        "text": "Why don’t we assign specific tasks and then regroup quickly?",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
+          "Motivation": 3
         },
-        "analysis": "You proposed a solution that addresses both needs, demonstrating good social skills and a balanced emotional response."
+        "analysis": "You proposed a collaborative approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
       },
       {
-        "text": "We can’t afford to rush and make mistakes, Alex. We need to be cautious.",
+        "text": "I guess we could think of something new. Any thoughts?",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 3,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You emphasized the importance of caution, showing strong motivation and self-regulation but slightly less emotional perception."
+        "analysis": "You acknowledged the need for a new idea and sought input, showing good self-regulation and motivation, but empathy and social skill were moderate."
+      },
+      {
+        "text": "Maybe none of these ideas fit. Let's rethink everything.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed a need for a new plan calmly, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

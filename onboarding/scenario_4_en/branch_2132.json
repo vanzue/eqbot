@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "You decided to stay involved in the task. [Monica] and [Bob] are discussing the next steps.",
-    "role": "[Monica]",
-    "location": "Home Office",
-    "description": "'I think we can handle this more efficiently if we divide the work. What do you think?' She looks at you thoughtfully.",
+    "background": "(Monica) looks at her phone, seemingly annoyed. (Bob) taps his foot impatiently.",
+    "role": "Bob",
+    "location": "Office",
+    "description": "‘We’ve prioritized the tasks, but we still need your input. What do you suggest?’",
     "options": [
       {
-        "text": "Sure, let's split the tasks and tackle them individually.",
+        "text": "Let's schedule a quick call to discuss the most critical points.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
-          "Empathy": 2,
-          "Social Skill": 5,
-          "Motivation": 3
-        },
-        "analysis": "You show good emotional perception and social skills by agreeing to divide tasks, but empathy is lower as you focus on efficiency."
-      },
-      {
-        "text": "I agree. I'll handle my part, but we should communicate frequently to stay aligned.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
+          "Empathy": 4,
           "Social Skill": 3,
           "Motivation": 4
         },
-        "analysis": "You show balanced emotional skills by agreeing to split tasks while emphasizing communication, but emotional perception could be better."
+        "analysis": "You offered a collaborative approach to manage the situation, showing good perception and empathy, though your self-regulation could be stronger."
       },
       {
-        "text": "I think it might be better if we work together on each part to ensure accuracy.",
+        "text": "I appreciate the effort, but I really need to stick to my leave. Is there another way?",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 2,
-          "Empathy": 5,
-          "Social Skill": 4,
-          "Motivation": 3
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 2,
+          "Social Skill": 3,
+          "Motivation": 2
         },
-        "analysis": "You show high empathy and social skills by suggesting collaboration, but self-regulation and emotional perception are lower as you may overextend."
+        "analysis": "You acknowledged their efforts but stood firm on your need for leave, showing strong self-regulation but lower empathy and motivation."
+      },
+      {
+        "text": "I think you should manage this internally. It’s part of your responsibilities.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
+          "Social Skill": 3,
+          "Motivation": 2
+        },
+        "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain team relationships."
       }
     ]
   }

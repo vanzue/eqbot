@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "[Monica] seems unsatisfied with your decision to prioritize your rest.",
-    "role": "[Bob]",
-    "location": "Home Office",
-    "description": "'Don't worry about it, Monica. I can handle it. But are you sure you're okay with this?' He looks at you questioningly.",
+    "background": "(Bob) rubs his temples while (Monica) looks up from her screen, visibly frustrated.",
+    "role": "Monica",
+    "location": "Office",
+    "description": "'It feels like we’re always scrambling. Maybe we should have a serious talk about our team’s efficiency.'",
     "options": [
       {
-        "text": "Yes, I trust you can manage it. I'll be available if something urgent comes up.",
+        "text": "We could analyze our workflow and identify the bottlenecks. That might help.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 5,
+          "Perception": 4,
+          "Self Regulation": 2,
           "Empathy": 3,
           "Social Skill": 4,
-          "Motivation": 2
-        },
-        "analysis": "You show strong self-regulation and trust in your colleague, but your motivation might seem lower."
-      },
-      {
-        "text": "Maybe I should stay on standby to ensure everything goes smoothly.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
           "Motivation": 3
         },
-        "analysis": "You show high emotional perception and empathy but may overextend yourself, affecting self-regulation."
+        "analysis": "You suggested a practical approach to solve the issue, showing good perception and social skills, though your self-regulation could be stronger."
       },
       {
-        "text": "Monica, this isn't about fairness. Bob, you can manage. I'll be resting.",
+        "text": "I agree, but I think we need more than just a talk. We might need more manpower.",
         "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 5,
+          "Perception": 3,
+          "Self Regulation": 4,
           "Empathy": 2,
           "Social Skill": 3,
           "Motivation": 2
         },
-        "analysis": "You prioritize your rest, showing strong self-regulation, but empathy and motivation could be perceived as lower."
+        "analysis": "You acknowledged the problem but expressed skepticism about just having a talk, showing strong self-regulation but lower empathy and motivation."
+      },
+      {
+        "text": "If everyone was more proactive, we wouldn’t be in this mess all the time.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 1,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "Your response was somewhat passive-aggressive, indicating lower empathy and self-regulation, and it might strain relationships with colleagues."
       }
     ]
   }

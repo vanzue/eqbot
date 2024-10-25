@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Alex leans forward, frustrated. Lily sighs.",
-    "role": "Lily",
-    "location": "Conference Room",
-    "description": "We need to ensure our plan is foolproof. Rushing won't help.",
+    "background": "Monica sighs and says, 'I just don't see why we can't have a simple dinner.'",
+    "role": "Bob",
+    "location": "Meeting Room",
+    "description": "Bob crosses his arms and says, 'A dinner won't be memorable enough for our hard work.'",
     "options": [
       {
-        "text": "Alex, let's combine your decisiveness with thorough checks. Teamwork will get us there.",
+        "text": "A dinner might be low-key, but it can still be special if we plan it right.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 3,
           "Self Regulation": 3,
           "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You emphasized collaboration, balancing urgency and caution, showing good emotional perception and empathy."
-      },
-      {
-        "text": "Let's take a quick break and revisit this with fresh minds.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 2
         },
-        "analysis": "You suggested a constructive pause, demonstrating strong self-regulation and social skills."
+        "analysis": "You showed empathy and social skill by acknowledging the suggestion and proposing a way to make it special, but motivation was lower."
       },
       {
-        "text": "We can't afford mistakes. Lily is right; let's discuss this thoroughly.",
+        "text": "Let's think about how we can combine a dinner with some fun activities.",
         "scores": {
-          "Emotion Perception": 3,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
+          "Social Skill": 4,
+          "Motivation": 3
+        },
+        "analysis": "You showed good perception and social skill by suggesting a compromise, but empathy and self-regulation were moderate."
+      },
+      {
+        "text": "Maybe a dinner isn't exciting enough for everyone after such hard work.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 2,
+          "Empathy": 3,
+          "Social Skill": 4,
           "Motivation": 4
         },
-        "analysis": "You backed Lily's method, advocating for thorough planning, showing a balanced emotional response."
+        "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
       }
     ]
   }

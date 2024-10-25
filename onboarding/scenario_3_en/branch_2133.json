@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica sighs and sits back in her chair.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Maybe sticking to our original plan is not a bad idea after all. What do you think?",
+    "background": "Ryan suggests an outdoor activity, and Emma looks skeptical.",
+    "role": "Emma",
+    "location": "Break Room",
+    "description": "'An outdoor activity sounds exhausting.'",
     "options": [
       {
-        "text": "I agree, but let's just make sure we're not missing any critical details.",
+        "text": "Outdoor activities can be refreshing and fun.",
         "scores": {
-          "Emotion Perception": 4,
+          "Perception": 4,
           "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 3
-        },
-        "analysis": "You acknowledged Bob's suggestion while emphasizing the need for thoroughness, showing good emotional perception and balanced emotional response."
-      },
-      {
-        "text": "I'm not sure. We should consider Monica's point and weigh our options.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
-          "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You proposed a reconsideration of Monica's input, demonstrating self-regulation and empathy."
-      },
-      {
-        "text": "Sticking to the plan sounds fine, but we need to be ready to adapt if things go wrong.",
-        "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 3,
-          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You agreed with Bob's suggestion but highlighted the need for flexibility, showing good social skills."
+        "analysis": "You acknowledged the suggestion, showing good perception and social skills, but empathy and self-regulation were moderate."
+      },
+      {
+        "text": "Let's find an activity that suits everyone's energy levels.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and self-regulation by considering everyone's energy levels, but social skill and perception were moderate."
+      },
+      {
+        "text": "Maybe we can plan shorter outdoor activities to avoid exhaustion.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You expressed your opinion calmly, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }

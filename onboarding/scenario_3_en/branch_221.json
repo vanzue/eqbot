@@ -1,42 +1,42 @@
 {
   "scenes": {
-    "background": "Monica nods thoughtfully, looking at Alex and Lily.",
-    "role": "Bob",
-    "location": "Conference Room",
-    "description": "Alright, but what if we miss something important by moving too fast?",
+    "background": "[Monica] and [Bob] are discussing the celebration. [Bob] looks uncertain.",
+    "role": "[Bob]",
+    "location": "Break Room",
+    "description": "'I'm not sure if everyone will enjoy a formal dinner.'",
     "options": [
       {
-        "text": "We can always adjust as we go. Let’s not get bogged down.",
+        "text": "A formal dinner can be a great way to celebrate our success.",
         "scores": {
-          "Emotion Perception": 3,
-          "Self Regulation": 4,
+          "Perception": 4,
+          "Self Regulation": 3,
           "Empathy": 3,
-          "Social Skill": 3,
-          "Motivation": 4
-        },
-        "analysis": "You suggested a flexible approach, showing good self-regulation and motivation, but moderate emotional perception and empathy."
-      },
-      {
-        "text": "Taking a bit more time now can prevent future issues.",
-        "scores": {
-          "Emotion Perception": 4,
-          "Self Regulation": 3,
-          "Empathy": 4,
-          "Social Skill": 3,
-          "Motivation": 2
-        },
-        "analysis": "You emphasized the importance of thoroughness, showing good emotional perception and empathy, but lower motivation."
-      },
-      {
-        "text": "Honestly, we need to move fast. We can’t afford to overthink.",
-        "scores": {
-          "Emotion Perception": 2,
-          "Self Regulation": 3,
-          "Empathy": 2,
           "Social Skill": 4,
           "Motivation": 3
         },
-        "analysis": "You stressed the need for speed, showing strong social skills, but lower emotional perception and empathy."
+        "analysis": "You acknowledged the formality of the dinner, showing good perception and social skills, but empathy and self-regulation were moderate."
+      },
+      {
+        "text": "We should consider if everyone is comfortable with a formal setting.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 4,
+          "Empathy": 4,
+          "Social Skill": 3,
+          "Motivation": 3
+        },
+        "analysis": "You showed empathy and self-regulation by considering everyone's comfort, but social skill and perception were moderate."
+      },
+      {
+        "text": "Maybe we can find a less formal venue that still feels special.",
+        "scores": {
+          "Perception": 3,
+          "Self Regulation": 3,
+          "Empathy": 4,
+          "Social Skill": 2,
+          "Motivation": 4
+        },
+        "analysis": "You suggested a compromise, showing good empathy and motivation, but social skill and perception were lower."
       }
     ]
   }
