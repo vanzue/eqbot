@@ -81,7 +81,7 @@ In this case, you will be given both the historical dialogue and user reply. in 
 
 4. If I reply "ContinueNextRound" command (in last "user" content in chat_content), the conversation continues. 
 You should ignore the keyword and react to user's content on behalf of npc based on npc persona. Do not add extra information. 
-If user performs really good EQ or raise any great opinion, Reply this: 'I agree with you'.  
+If user performs good EQ or satisfy someone, DO REMEMBER!! Reply 'I agree with you' for the NPC's content. 
 Format is the as follows:
 {{
     "dialog": [
