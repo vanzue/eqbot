@@ -20,7 +20,8 @@ def request_LLM_response(scenario):
 
 
                     ** Refer to the scoring rules **
-                    ## Emotion Perception ##
+                    ## Perception ##
+                    description: The ostrich reflects avoidance, symbolizing difficulty in recognizing and perceiving emotions.
                     I can quickly notice changes in my own emotions. (1-5 points)
                     I can easily detect subtle changes in other people's emotions. (1-5 points)
                     I am good at analyzing the reasons behind others' emotions. (1-5 points)
@@ -28,6 +29,7 @@ def request_LLM_response(scenario):
                     I can judge others' emotional needs based on the situation. (1-5 points)
                     
                     ## Self Regulation ##
+                    description: The monkey represents impulsiveness, symbolizing difficulty in controlling emotions and behaviors
                     I can stay calm and control my reactions when I’m emotionally agitated. (1-5 points)
                     I can quickly stabilize my emotions when facing sudden events. (1-5 points)
                     I can release negative emotions in an effective way without affecting others. (1-5 points)
@@ -35,6 +37,7 @@ def request_LLM_response(scenario):
                     I can adapt to emotional changes and quickly regain emotional stability. (1-5 points)
                     
                     ## Empathy ##
+                    description: The hedgehog reflects self-defense, symbolizing difficulty in empathizing with and responding to others' emotions.
                     I can easily understand and share the feelings of others. (1-5 points)
                     I can put myself in other people's shoes and respond appropriately to their emotions. (1-5 points)
                     I can recognize and validate others' emotional states, even when they are unspoken. (1-5 points)
@@ -42,6 +45,7 @@ def request_LLM_response(scenario):
                     I can show compassion and concern for others' well-being in both personal and professional relationships. (1-5 points)
                     
                     ## Social Skill ##
+                    description: The coyote reflects independence, symbolizing challenges in building social connections and teamwork.
                     I can present myself appropriately in social situations and follow etiquette norms. (1-5 points)
                     I can adjust my words and actions according to the situation and people, maintaining politeness and respect. (1-5 points)
                     When interaction is needed, I can quickly judge how to appropriately engage in conversation. (1-5 points)
@@ -49,6 +53,7 @@ def request_LLM_response(scenario):
                     I am good at maintaining and enhancing my personal image, avoiding making social faux pas. (1-5 points)
                    
                     ## Motivation ##
+                    description: The capybara reflects a laid-back nature, symbolizing challenges in maintaining drive and motivation.
                     I can maintain a high level of energy and enthusiasm in achieving my goals. (1-5 points)
                     I am proactive in seeking out opportunities for personal or professional growth. (1-5 points)
                     I can stay motivated and focused even when faced with setbacks or challenges. (1-5 points)
@@ -86,7 +91,7 @@ def request_LLM_response(scenario):
 
                     **Please return the data in the following json format strictly((do not start with json letters, do not omit,))**
                     {{
-                        "1. Emotion Perception": {{
+                        "1. Perception": {{
                             "Score": [Score],
                             "Reason": [Based on the actual conversation content, briefly explain the reasons]
                         }},
@@ -150,8 +155,8 @@ def parse_LLMresponse(json_data):
         response = json.loads(json_data)
         print("JSON is valid.")
 
-        dimension1_score = response['1. Emotion Perception']['Score']
-        dimension1_detail = response['1. Emotion Perception']['Reason']
+        dimension1_score = response['1. Perception']['Score']
+        dimension1_detail = response['1. Perception']['Reason']
 
         dimension2_score = response['2. Self Regulation']['Score']
         dimension2_detail = response['2. Self Regulation']['Reason']
