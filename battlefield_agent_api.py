@@ -29,7 +29,7 @@ def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depen
     lang_type = request.lang_type
     lang_type = 'zh' if course_id == 1 else 'en'
     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
-    print(matching_course.prompt)
+    # print(matching_course.prompt)
 
     response = request_LLM_response(json.loads(
         request.chat_content), matching_course.prompt, lang=lang_type)

@@ -49,6 +49,7 @@ app.include_router(file_router)
 app.include_router(thirdparty_router)
 app.include_router(text_to_voice_router)
 
+
 def verify_signature(request: SignatureVerifyModel, i):
     if not sToken or not sEncodingAESKey or not sCorpID:
         return ""
@@ -85,7 +86,8 @@ def verify_signature(request: SignatureVerifyModel, i):
 
 @app.get('/')
 async def root():
-    return RedirectResponse(url='/redocs')
+    return RedirectResponse(url='/ping')
+
 
 @app.get('/ping')
 async def ping():
