@@ -7,7 +7,7 @@ import os
 import json
 import uuid
 
-from tts_sample import synthesize_speech
+from tts_sample import get_wav_data, synthesize_speech
 
 router = APIRouter()
 # Define request model
@@ -42,9 +42,14 @@ def azure_openai_tts(text, voice, style):
 def call_azure_tts(text, voice, style):
     # Replace with your actual endpoint and key from the screenshot
     response = synthesize_speech(text, voice, style)
-    return  upload_image_to_blob(bytes(response))
+    if response is not None:
+        wav_data = get_wav_data(response)
+        return upload_audio_to_blob(wav_data)
+    else:
+        print("Error in synthesizing speech.")
+        return None
     
-def upload_image_to_blob(audio_data):
+def upload_audio_to_blob(audio_data):
     try:
         job_id = str(uuid.uuid4())
         BLOB_URL = f"{AZURE_STORAGE_CONNECTION_STRING}{CONTAINER_NAME}/{job_id}.wav?{SAS_TOKEN}"

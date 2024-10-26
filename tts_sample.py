@@ -1,3 +1,4 @@
+import io
 import os
 import azure.cognitiveservices.speech as speechsdk
 import dotenv
@@ -69,24 +70,30 @@ def synthesize_speech(text: str, voice_name: str = "en-US-AvaMultilingualNeural"
     print("Error happened generating voice.")
     return None
 
-
-def save_audio_to_wav(audio_data: bytearray, filename: str = "output.wav"):
+def get_wav_data(audio_data: bytearray) -> bytes:
     """
-    Save the given audio data as a .wav file.
+    Get the WAV data as bytes from the given audio data.
 
     Parameters:
     - audio_data (bytearray): The synthesized audio data.
-    - filename (str): The filename for the .wav file.
+
+    Returns:
+    - bytes: The WAV data as bytes.
     """
-    with wave.open(filename, 'wb') as wf:
-        wf.setnchannels(1)  # Mono channel
-        wf.setsampwidth(2)  # Sample width in bytes (16-bit)
-        wf.setframerate(24000)  # Sample rate
-        wf.writeframes(audio_data)
+    with io.BytesIO() as wav_io:
+        with wave.open(wav_io, 'wb') as wf:
+            wf.setnchannels(1)  # Mono channel
+            wf.setsampwidth(2)  # Sample width in bytes (16-bit)
+            wf.setframerate(24000)  # Sample rate
+            wf.writeframes(audio_data)
+        wav_data = wav_io.getvalue()
+    return wav_data
 
 # Example usage of the function
 if __name__ == "__main__":
     # Example text and blob details
     text_input = "I'm really angry at this situation. I need to calm down and think clearly."
     result = synthesize_speech(text_input)
-    save_audio_to_wav(result)
+    wavdata = get_wav_data(result)
+    with open("audio.wav", "wb") as audio_file:
+        audio_file.write(wavdata)
