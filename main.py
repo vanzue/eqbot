@@ -23,6 +23,7 @@ from dotenv import load_dotenv
 from data_types import SignatureVerifyModel
 
 import uvicorn
+from fastapi.responses import RedirectResponse
 import urllib.parse
 
 load_dotenv()
@@ -65,22 +66,26 @@ def verify_signature(request: SignatureVerifyModel, i):
         return echo_str
 
 
-@app.get('/')
-@app.post('/')
-def wechat_message(
-    msg_signature: str,
-    timestamp: str,
-    nonce: str,
-    echostr: str
-):
-    print("company_wechat begin to verify signature")
-    echo_str = verify_signature(
-        SignatureVerifyModel(msg_signature=msg_signature,
-                             timestamp=timestamp, nonce=nonce, echostr=echostr),
-        0)
-    print("company_wechat")
-    return echo_str
+# @app.get('/')
+# @app.post('/')
+# def wechat_message(
+#     msg_signature: str,
+#     timestamp: str,
+#     nonce: str,
+#     echostr: str
+# ):
+#     print("company_wechat begin to verify signature")
+#     echo_str = verify_signature(
+#         SignatureVerifyModel(msg_signature=msg_signature,
+#                              timestamp=timestamp, nonce=nonce, echostr=echostr),
+#         0)
+#     print("company_wechat")
+#     return echo_str
 
+
+@app.get('/')
+async def root():
+    return RedirectResponse(url='/redocs')
 
 @app.get('/ping')
 async def ping():
