@@ -18,14 +18,22 @@ def detect_language(text):
         except json.JSONDecodeError:
             raise ValueError(
                 "Invalid format: text is a string but cannot be parsed as JSON.")
-
-    if not isinstance(text, list):
-        raise TypeError("Expected a list of dictionaries for text.")
+    
+    # Check if text is a dictionary with 'chat' field or a list
+    if isinstance(text, dict) and 'chat' in text:
+        chat_entries = text['chat']
+    elif isinstance(text, list):
+        chat_entries = text
+    else:
+        raise TypeError("Expected either a dictionary with a 'chat' field or a list of dictionaries.")
+    
+    if not isinstance(chat_entries, list):
+        raise TypeError("The 'chat' field should be a list of dictionaries.")
 
     chinese_pattern = re.compile(r'[\u4e00-\u9fff]')
 
-    for entry in text:
-        message = entry['message']
+    for entry in chat_entries:
+        message = entry.get('message', '')
         if chinese_pattern.search(message):
             return 'zh'
 

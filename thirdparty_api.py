@@ -53,7 +53,7 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
                 retrieved_state = crud.get_reply_state_by_product_and_user(
                     db, "Line", body_json['destination'])
                 if retrieved_state and retrieved_state.stage_number == 3:
-                    crud.update_reply_state(db, schemas.ReplyStateBase(
+                    crud.update_reply_state(db, "LINE", body_json['destination'], schemas.ReplyStateBase(
                         product="Line",
                         userId=body_json['destination'],
                         stage2_output=json.dumps(message),
@@ -147,7 +147,7 @@ def get_response_from_image(IMAGE_PATH, user_id, replyToken, db: Session):
             stage2_output=json.dumps(chat_history),
             stage_number=1
         )
-        crud.update_reply_state(db, state)
+        crud.update_reply_state(db, "LINE", user_id, state)
 
     retrieved_state = crud.get_reply_state_by_product_and_user(
         db, "Line", user_id)
@@ -160,7 +160,7 @@ def get_response_from_image(IMAGE_PATH, user_id, replyToken, db: Session):
         stage2_output=json.dumps(chat_history),
         stage_number=eqmaster.current_stage
     )
-    crud.update_reply_state(db, state)
+    crud.update_reply_state(db, "LINE", user_id, state)
     send_message(response, replyToken)
 
 
