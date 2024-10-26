@@ -4,6 +4,8 @@ from .database import Base
 from sqlalchemy.types import Unicode, UnicodeText
 
 # PersonalInfo Table
+
+
 class PersonalInfo(Base):
     __tablename__ = 'PersonalInfo'
 
@@ -24,6 +26,8 @@ class PersonalInfo(Base):
     chat_histories = relationship("ChatHistory", back_populates="person")
 
 # EQScore Table
+
+
 class EQScore(Base):
     __tablename__ = 'EQScore'
 
@@ -48,6 +52,8 @@ class EQScore(Base):
     person = relationship("PersonalInfo", back_populates="eq_scores")
 
 # InternalTags Table
+
+
 class InternalTags(Base):
     __tablename__ = 'InternalTags'
 
@@ -56,6 +62,8 @@ class InternalTags(Base):
     tag_description = Column(Text)
 
 # Courses Table
+
+
 class Courses(Base):
     __tablename__ = 'Courses'
 
@@ -84,6 +92,8 @@ class PersonalInfoCourses(Base):
     # course = relationship("Courses", back_populates="personal_info_courses")
 
 # Contact Table
+
+
 class Contact(Base):
     __tablename__ = 'Contact'
 
@@ -95,10 +105,14 @@ class Contact(Base):
 
     person = relationship("PersonalInfo", back_populates="contacts")
     chat_records = relationship("ChatRecords", back_populates="contact")
-    subordinate_analysis = relationship("SubordinateAnalysis", back_populates="contact", uselist=False)  # 一对一关系
-    supervisor_analysis = relationship("SupervisorAnalysis", back_populates="contact", uselist=False)  # 一对一关系
+    subordinate_analysis = relationship(
+        "SubordinateAnalysis", back_populates="contact", uselist=False)  # 一对一关系
+    supervisor_analysis = relationship(
+        "SupervisorAnalysis", back_populates="contact", uselist=False)  # 一对一关系
 
 # ChatRecords Table
+
+
 class ChatRecords(Base):
     __tablename__ = 'ChatRecords'
 
@@ -112,6 +126,8 @@ class ChatRecords(Base):
     contact = relationship("Contact", back_populates="chat_records")
 
 # Subordinate Analysis
+
+
 class SubordinateAnalysis(Base):
     __tablename__ = 'subordinate_analysis'
 
@@ -146,7 +162,7 @@ class SupervisorAnalysis(Base):
 
 class ChatHistory(Base):
     __tablename__ = 'ChatHistory'
-    
+
     id = Column(Integer, primary_key=True, autoincrement=True)
     userId = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
     chatHistory = Column(UnicodeText, nullable=False)  # 存储聊天记录
@@ -156,3 +172,14 @@ class ChatHistory(Base):
 
     # 定义与 User 表的关系
     person = relationship("PersonalInfo", back_populates="chat_histories")
+
+    # ReplyState Table
+
+
+class ReplyState(Base):
+    __tablename__ = 'HighEqReplyState'
+
+    product = Column(Unicode(100), primary_key=True)
+    userId = Column(Unicode(100), primary_key=True)
+    stage2_output = Column(UnicodeText)
+    stage_number = Column(Integer)

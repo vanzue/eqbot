@@ -51,3 +51,13 @@ CREATE TABLE ChatRecords (
     FOREIGN KEY (person_id) REFERENCES PersonalInfo(id),
     FOREIGN KEY (contact_id) REFERENCES Contact(id)
 );
+
+-- 创建 ReplyState 表
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='HighEqReplyState' AND xtype='U')
+CREATE TABLE ReplyState (
+    product VARCHAR(100),
+    userId VARCHAR(100),
+    stage2_output TEXT,
+    stage_number INT,
+    PRIMARY KEY (product, userId)
+);

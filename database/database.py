@@ -1,5 +1,6 @@
 import os
-import pyodbc, struct
+import pyodbc
+import struct
 from azure import identity
 from azure.identity import DefaultAzureCredential
 from sqlalchemy import create_engine, event, text, MetaData
@@ -15,6 +16,7 @@ database = os.getenv('DATABASE_NAME')
 
 SQL_COPT_SS_ACCESS_TOKEN = 1256  # As defined in msodbcsql.h
 
+
 def inject_azure_credential(credential, engine, token_url='https://database.windows.net/'):
     @event.listens_for(engine, 'do_connect')
     def do_connect(dialect, conn_rec, cargs, cparams):
@@ -23,6 +25,7 @@ def inject_azure_credential(credential, engine, token_url='https://database.wind
         attrs_before = cparams.setdefault('attrs_before', {})
         attrs_before[SQL_COPT_SS_ACCESS_TOKEN] = bytes(token_struct)
         return dialect.connect(*cargs, **cparams)
+
 
 # Use DefaultAzureCredential or any other Azure credentials
 creds = DefaultAzureCredential()
@@ -45,6 +48,8 @@ Base = declarative_base(metadata=metadata)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Dependency to get DB session
+
+
 def get_db():
     db = SessionLocal()
     try:
@@ -52,9 +57,8 @@ def get_db():
     finally:
         db.close()
 
+
 if __name__ == "__main__":
     with engine.connect() as connection:
-        sql = text("SELECT * FROM dbo.PersonalInfo")
+        sql = text("TRUNCATE TABLE dbo.ReplyState")
         result = connection.execute(sql)
-        print(result.fetchone())
-

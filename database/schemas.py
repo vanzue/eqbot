@@ -3,6 +3,8 @@ from typing import List, Optional
 from datetime import datetime
 
 # PersonalInfo Schema
+
+
 class PersonalInfoBase(BaseModel):
     name: str
     gender: str
@@ -15,6 +17,7 @@ class PersonalInfoBase(BaseModel):
 
 class PersonalInfoCreate(PersonalInfoBase):
     pass
+
 
 class PersonalInfoUpdate(BaseModel):
     gender: Optional[str] = None
@@ -39,6 +42,8 @@ class PersonalInfo(PersonalInfoBase):
         from_attributes = True
 
 # EQScore Schema
+
+
 class EQScoreBase(BaseModel):
     dimension1_score: int
     dimension1_detail: Optional[str]
@@ -70,6 +75,8 @@ class EQScore(EQScoreBase):
         from_attributes = True
 
 # Courses Schema
+
+
 class CoursesBase(BaseModel):
     course_type: str
     course_level: int
@@ -88,6 +95,8 @@ class Courses(CoursesBase):
         from_attributes = True
 
 # PersonalInfoCourses Schema (Many-to-Many relationship between PersonalInfo and Courses)
+
+
 class PersonalInfoCoursesBase(BaseModel):
     person_id: int  # ForeignKey to PersonalInfo.id
     course_id: int  # ForeignKey to Courses.id
@@ -110,11 +119,13 @@ class PersonalInfoCourses(PersonalInfoCoursesBase):
         from_attributes = True
 
 # Contact Schema
+
+
 class ContactBase(BaseModel):
     person_id: int  # ForeignKey to PersonalInfo.id
     name: str
     tag: Optional[str]
-    contact_relationship : Optional[str]
+    contact_relationship: Optional[str]
 
 
 class ContactCreate(ContactBase):
@@ -129,6 +140,8 @@ class Contact(ContactBase):
         from_attributes = True
 
 # ChatRecords Schema
+
+
 class ChatRecordsBase(BaseModel):
     person_id: int  # ForeignKey to PersonalInfo.id
     contact_id: int  # ForeignKey to Contact.id
@@ -209,12 +222,33 @@ class ChatHistoryBase(BaseModel):
     analysis: str
     low_dim: str
 
+
 class ChatHistoryCreate(ChatHistoryBase):
     userId: int
+
 
 class ChatHistory(ChatHistoryBase):
     id: int
     userId: int
 
     class Config:
-        from_attributes = True 
+        from_attributes = True
+
+
+# ReplyState Schema
+class ReplyStateBase(BaseModel):
+    product: str
+    userId: str
+    stage2_output: Optional[str] = None
+    stage_number: Optional[int] = None
+
+
+class ReplyStateCreate(ReplyStateBase):
+    pass
+
+
+class ReplyState(ReplyStateBase):
+    id: int
+
+    class Config:
+        from_attributes = True
