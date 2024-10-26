@@ -157,7 +157,7 @@ def get_response_from_image(IMAGE_PATH, user_id, replyToken, db: Session):
     state = schemas.ReplyStateBase(
         product="Line",
         userId=user_id,
-        stage2_output=json.dumps(chat_history),
+        stage2_output=response,
         stage_number=eqmaster.current_stage
     )
     crud.update_reply_state(db, "LINE", user_id, state)
@@ -169,7 +169,9 @@ def get_response_from_text(user_id, message, replyToken, db):
         db, "Line", user_id)
     if retrieved_state.stage_number == 3:
         eqmaster = EQmaster()
-        eqmaster.options = retrieved_state.stage2_output
+        response = retrieved_state.stage2_output
+        eqmaster.options = [re.sub(r"^\d+\️⃣", "", line).strip()
+                                for line in response.split("\n") if line.strip()]
         response = eqmaster.get_response_eqmaster(
             user_nick_name="Bob", query=message)
         send_message(response, replyToken)

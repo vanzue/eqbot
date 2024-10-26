@@ -48,7 +48,6 @@ class EQmaster:
         self.chat_history = []
         self.username = username
         self.current_stage = 1  # 初始化状态为stage1
-        self.options = []  # 存储stage2的回复选项
 
     def get_response_stage1(self, chat_history, user_nick_name):
         self.chat_history = chat_history
@@ -105,7 +104,7 @@ class EQmaster:
         response = llm.invoke(message).content
 
         self.message += [{"role": "assistant", "content": response}]
-        self.options = [re.sub(r"^\d+\️⃣", "", line).strip()
+        options = [re.sub(r"^\d+\️⃣", "", line).strip()
                         for line in response.split("\n") if line.strip()]
 
         if language == 'zh':
@@ -113,7 +112,7 @@ class EQmaster:
         else:
             options_prompt = "There are several possible replies, which one do you prefer? You can also tell me what kind of reply you prefer!\n"
 
-        for i, option in enumerate(self.options, 1):
+        for i, option in enumerate(options, 1):
             options_prompt += f"{i}️⃣ {option.strip()}\n"
 
         return options_prompt
