@@ -1,5 +1,5 @@
 # Use the official Python image from the Docker Hub
-FROM python:3.9-slim-buster
+FROM python:3.9-slim-bullseye
 
 # 设置环境变量，避免交互式安装
 ENV ACCEPT_EULA=Y
