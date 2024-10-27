@@ -44,10 +44,10 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
 
 
 def reply2text(product, message: str, user_id, replyToken: str, db: Session):
-    if message == "eqoach":
+    if message.lower() == "eqoach":
         reply_message("Welcome to EQoach! Drop your chat screenshot and I will do analyze for you. \nOr you can type 'new' to start a new chat analysis.",
                       replyToken)
-    elif message == "new":
+    elif message.lower() == "new":
         state = schemas.ReplyStateCreate(
             product=product,
             userId=user_id,
