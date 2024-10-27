@@ -125,4 +125,4 @@ def course_exists(person_id: int, db: Session = Depends(database.get_db)):
 @router.post("/update/diamond")
 def update_diamond(request: data_types.DiamondUpdate, db: Session = Depends(database.get_db)):
     db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=request.num_diamond)
-    return {"diamond_num": db_star}
+    return {"diamond_num": db_star, "message": True}
