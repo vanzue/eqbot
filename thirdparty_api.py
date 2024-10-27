@@ -35,8 +35,8 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
         if evt['type'] != 'message':
             continue
         if evt['message']['type'] == 'image':
-            reply2image("LINE", message_id, user_id, reply_token, db)
             reply_message("processing...", reply_token)
+            reply2image("LINE", message_id, user_id, reply_token, db)
         elif evt['message']['type'] == 'text':
             reply2text("LINE", evt['message']['text'],
                        user_id, reply_token, db)
@@ -129,7 +129,7 @@ def send_message(data, to):
         "Content-Type": "application/json",
         "Authorization": f"Bearer {channel_access_token}",
     }
-    message_url = f"https://api.line.me/v2/bot/message/reply"
+    message_url = f"https://api.line.me/v2/bot/message/push"
     data = {
         "to": to,
         "messages": [
