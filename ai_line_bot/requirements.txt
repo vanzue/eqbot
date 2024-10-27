@@ -1,4 +1,0 @@
-openai
-tiktoken
-torch
-numpy

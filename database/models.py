@@ -166,7 +166,7 @@ class ChatHistory(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     userId = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
     chatHistory = Column(UnicodeText, nullable=False)  # 存储聊天记录
-    summary = Column(UnicodeText, nullable=False) # 存储聊天记录总结
+    summary = Column(UnicodeText, nullable=False)  # 存储聊天记录总结
     low_dim = Column(UnicodeText, nullable=False)
     analysis = Column(UnicodeText, nullable=False)  # 存储分析信息
 
@@ -181,5 +181,6 @@ class ReplyState(Base):
 
     product = Column(Unicode(100), primary_key=True)
     userId = Column(Unicode(100), primary_key=True)
+    chat_history = Column(UnicodeText)
     stage2_output = Column(UnicodeText)
     stage_number = Column(Integer)

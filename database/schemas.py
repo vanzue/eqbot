@@ -239,6 +239,7 @@ class ChatHistory(ChatHistoryBase):
 class ReplyStateBase(BaseModel):
     product: str
     userId: str
+    chat_history: str
     stage2_output: Optional[str] = None
     stage_number: Optional[int] = None
 

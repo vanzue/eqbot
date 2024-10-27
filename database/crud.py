@@ -390,7 +390,8 @@ def get_supervisor_analysis_by_contact_id(db: Session, contact_id: str):
 
 
 def create_chat_history(db: Session, chat: schemas.ChatHistoryCreate):
-    db_chat = models.ChatHistory(userId=chat.userId, chatHistory=chat.chatHistory, summary=chat.summary, analysis=chat.analysis, low_dim=chat.low_dim)
+    db_chat = models.ChatHistory(userId=chat.userId, chatHistory=chat.chatHistory,
+                                 summary=chat.summary, analysis=chat.analysis, low_dim=chat.low_dim)
     db.add(db_chat)
     db.commit()
     db.refresh(db_chat)
@@ -412,21 +413,6 @@ def delete_chat_history(db: Session, chat_id: int):
         return chat_history
     return None
 
-# Create ReplyState
-
-
-def create_reply_state(db: Session, reply_state: schemas.ReplyStateCreate):
-    db_reply_state = models.ReplyState(
-        product=reply_state.product,
-        userId=reply_state.userId,
-        stage2_output=reply_state.stage2_output,
-        stage_number=reply_state.stage_number
-    )
-    db.add(db_reply_state)
-    db.commit()
-    db.refresh(db_reply_state)
-    return db_reply_state
-
 # Get ReplyState by product and userId (composite primary key)
 
 
@@ -436,21 +422,31 @@ def get_reply_state_by_product_and_user(db: Session, product: str, user_id: str)
         models.ReplyState.userId == user_id
     ).first()
 
-# Update ReplyState
 
+def replace_reply_state(db: Session, reply_state_data: schemas.ReplyStateCreate):
+    # Try to get the existing record
+    db_reply_state = get_reply_state_by_product_and_user(
+        db, reply_state_data.product, reply_state_data.userId)
 
-def update_reply_state(db: Session, product: str, user_id: str, update_data: schemas.ReplyStateBase):
-    db_reply_state = get_reply_state_by_product_and_user(db, product, user_id)
+    # If it doesn't exist, create a new one
     if not db_reply_state:
-        return None
-
-    # Update fields
-    for field, value in update_data.dict(exclude_unset=True).items():
-        setattr(db_reply_state, field, value)
+        db_reply_state = models.ReplyState(
+            product=reply_state_data.product,
+            userId=reply_state_data.userId,
+            chat_history=reply_state_data.chat_history,
+            stage2_output=reply_state_data.stage2_output,
+            stage_number=reply_state_data.stage_number
+        )
+        db.add(db_reply_state)
+    else:
+        # Update fields if it exists
+        for field, value in reply_state_data.dict(exclude_unset=True).items():
+            setattr(db_reply_state, field, value)
 
     db.commit()
     db.refresh(db_reply_state)
     return db_reply_state
+
 
 # Delete ReplyState
 

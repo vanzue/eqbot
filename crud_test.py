@@ -185,7 +185,8 @@ def main():
 
         state = schemas.ReplyStateCreate(
             product="Wechat",
-            userId="user123",
+            userId="random_user12",
+            chat_history=json.dumps(messages),
             stage2_output=json.dumps(messages),
             stage_number=2
         )
@@ -193,8 +194,12 @@ def main():
         crud.create_reply_state(db, state)
 
         retrieved_state = crud.get_reply_state_by_product_and_user(
-            db, "Wechat", "user123")
-        print(f"Retrieved ReplyState: {retrieved_state}")
+            db, "Wechat", "random_user")
+        print(f"Product: {retrieved_state.product}")
+        print(f"UserId: {retrieved_state.userId}")
+        print(f"Chat History: {retrieved_state.chat_history}")
+        print(f"Stage2 Output: {retrieved_state.stage2_output}")
+        print(f"Stage Number: {retrieved_state.stage_number}")
 
     finally:
         db.close()

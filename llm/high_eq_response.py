@@ -1,5 +1,4 @@
 import re
-from html import unescape
 from datetime import datetime
 from llm.keyless_setup import creat_llm
 from langchain_core.prompts import ChatPromptTemplate
@@ -18,15 +17,16 @@ def detect_language(text):
         except json.JSONDecodeError:
             raise ValueError(
                 "Invalid format: text is a string but cannot be parsed as JSON.")
-    
+
     # Check if text is a dictionary with 'chat' field or a list
     if isinstance(text, dict) and 'chat' in text:
         chat_entries = text['chat']
     elif isinstance(text, list):
         chat_entries = text
     else:
-        raise TypeError("Expected either a dictionary with a 'chat' field or a list of dictionaries.")
-    
+        raise TypeError(
+            "Expected either a dictionary with a 'chat' field or a list of dictionaries.")
+
     if not isinstance(chat_entries, list):
         raise TypeError("The 'chat' field should be a list of dictionaries.")
 
@@ -41,18 +41,17 @@ def detect_language(text):
 
 
 class EQmaster:
-    def __init__(self, username=None):
+    def __init__(self):
         self.scene = ""
-        self.analyse = ""
         self.message = []
         self.chat_history = []
-        self.username = username
         self.current_stage = 1  # 初始化状态为stage1
 
-    def get_response_stage1(self, chat_history, user_nick_name):
+    # do analyze
+    def get_response_stage1(self, chat_history):
         self.chat_history = chat_history
         sys_prompt = stage1_prompt.format(
-            chat_history=self.chat_history, user_nick_name=user_nick_name)
+            chat_history=self.chat_history, user_nick_name="")
         message = [{"role": "system", "content": sys_prompt}]
         self.message = []
 
@@ -73,13 +72,14 @@ class EQmaster:
 
         return response
 
-    def get_response_stage2(self, userPrefer=None, analyse=None, user_nick_name=None):
-        language = detect_language(self.chat_history)
+    # do response
+    def get_response_stage2(self, chat_history,
+                            userPrefer=None, analyse=None):
+        language = detect_language(chat_history)
         print("Language detected:", language)
-        self.options = []
         sys_prompt = stage2_prompt1.format(
-            chat_history=self.chat_history, user_nick_name=user_nick_name,
-            analyse=self.analyse)
+            chat_history=chat_history, user_nick_name="",
+            analyse=analyse)
 
         message = [{"role": "system", "content": sys_prompt}]
         keys = []
@@ -93,7 +93,7 @@ class EQmaster:
                 temp += scene_data[scene] + "\n"
 
         sys_prompt = stage2_prompt2.format(
-            chat_history=self.chat_history, user_nick_name=user_nick_name, analyse=analyse,
+            chat_history=self.chat_history, user_nick_name="", analyse=analyse,
             userPrefer=userPrefer if userPrefer else None, temp=temp)
 
         if language == 'en':
@@ -103,22 +103,10 @@ class EQmaster:
         llm = creat_llm()
         response = llm.invoke(message).content
 
-        self.message += [{"role": "assistant", "content": response}]
         options = [re.sub(r"^\d+\️⃣", "", line).strip()
-                        for line in response.split("\n") if line.strip()]
+                   for line in response.split("\n") if line.strip()]
 
-        if language == 'zh':
-            options_prompt = "以下有几种回复参考，请问您倾向选择哪一种回复呢？当然也可以告诉我您有什么回复倾向哦~\n"
-        else:
-            options_prompt = "There are several possible replies, which one do you prefer? You can also tell me what kind of reply you prefer!\n"
-
-        for i, option in enumerate(options, 1):
-            options_prompt += f"{i}️⃣ {option.strip()}\n"
-
-        return options_prompt
-
-    def get_response_stage3(self, user_choice):
-        return self.options[user_choice - 1]
+        return options
 
     def get_text_response(self, query):
         sys_prompt = f"""
@@ -133,25 +121,16 @@ class EQmaster:
         response = llm.invoke(message).content
         return response
 
-    def get_response_eqmaster(self, user_nick_name=None, chat_history=None, query=None):
-        if chat_history:
-            analyse = self.get_response_stage1(chat_history, user_nick_name)
-            self.current_stage = 2
-            response = self.get_response_stage2(analyse, user_nick_name)
-            self.current_stage = 3
-            return response
-        elif query:
-            if query.isdigit():
-                user_choice = int(query.strip())
-                response = self.get_response_stage3(user_choice)
-            elif self.current_stage == 2:
-                print("current stage is 2, regenerating stage 2 response")
-                response = self.get_response_stage2(
-                    query, self.analyse, user_nick_name)
-            else:
-                print("query provided but not a valid stage")
-                response = self.get_text_response(query)
-            return response
+    def get_response_and_analyze(self, chat_history):
+        analyse = self.get_response_stage1(chat_history,)
+        response = self.get_response_stage2(chat_history, "",
+                                            analyse)
+        return response, analyse
+
+    def get_response_by_intent(self, chat_history, intent, analyze):
+        response = self.get_response_stage2(chat_history,
+                                            intent, analyze)
+        return response
 
 
 def main():
