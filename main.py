@@ -6,6 +6,7 @@ from WXBizMsgCrypt3 import WXBizMsgCrypt
 
 from workflow_api import router as workflow_router
 from onboarding.onboarding_api import router as onboarding_router
+from onboarding.onboarding_api_new import router as onboarding_router_new
 from network_api import router as network_router
 
 
@@ -38,6 +39,7 @@ app.include_router(eqmaster_router)
 
 app.include_router(workflow_router)
 app.include_router(onboarding_router)
+app.include_router(onboarding_router_new)
 app.include_router(network_router)
 
 app.include_router(comic_router)

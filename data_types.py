@@ -62,7 +62,7 @@ class ScenarioRequest(BaseModel):
     locale: Optional[str]
 
 class ScenarioFinal(BaseModel):
-    scores: List[int]
+    scores: Dict[str, int] # dimension name: score
     job_id: str
-    dialogue_history: List[Dict[str, str]]
+    dialogue_history: str
     locale: Optional[str] = None
