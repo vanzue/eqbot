@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Dict
 
 
 class SignatureVerifyModel(BaseModel):
@@ -51,3 +51,18 @@ class BattlefieldEval(BaseModel):
     result: int
     person_star: int
     lang_type: str = "zh"
+
+class DiamondUpdate(BaseModel):
+    person_id: int
+    num_diamond: int
+
+class ScenarioRequest(BaseModel):
+    scenario_id: int
+    choices: str
+    locale: Optional[str]
+
+class ScenarioFinal(BaseModel):
+    scores: List[int]
+    job_id: str
+    dialogue_history: List[Dict[str, str]]
+    locale: Optional[str] = None
