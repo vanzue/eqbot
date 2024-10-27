@@ -36,7 +36,7 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
             continue
         if evt['message']['type'] == 'image':
             reply2image("LINE", message_id, user_id, reply_token, db)
-            send_message("processing...", reply_token)
+            reply_message("processing...", reply_token)
         elif evt['message']['type'] == 'text':
             reply2text("LINE", evt['message']['text'],
                        user_id, reply_token, db)
@@ -45,26 +45,26 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
 
 def reply2text(product, message: str, user_id, replyToken: str, db: Session):
     if message == "eqoach":
-        send_message("Welcome to EQoach! Drop your chat screenshot and I will do analyze for you. \nOr you can type 'new' to start a new chat analysis.",
-                     replyToken)
+        reply_message("Welcome to EQoach! Drop your chat screenshot and I will do analyze for you. \nOr you can type 'new' to start a new chat analysis.",
+                      replyToken)
     elif message == "new":
         state = schemas.ReplyStateCreate(
             product=product,
             userId=user_id,
             chat_history="",
+            stage2_output="",
             stage_number=1
         )
         crud.replace_reply_state(db, state)
-        send_message(
+        reply_message(
             "OK, drop another chat to me", replyToken)
-        return
     else:
         responses, analyze = generate_auto_reply(
             product, user_id, None, message, db)
 
-        send_message(analyze, replyToken)
+        send_message(analyze, user_id)
         for response in responses:
-            send_message(response, replyToken)
+            send_message(response, user_id)
 
 
 def reply2image(product, message_id, user_id, replyToken: str, db: Session):
@@ -98,12 +98,12 @@ def get_response_from_image(product, IMAGE_PATH, user_id, replyToken, db: Sessio
 
     responses, analyze = generate_auto_reply(
         product, user_id, chat_history, "", db)
-    send_message(analyze, replyToken)
+    send_message(analyze, user_id)
     for response in responses:
-        send_message(response, replyToken)
+        send_message(response, user_id)
 
 
-def send_message(data, replyToken):
+def reply_message(data, replyToken):
     # Ensure the access token is valid before sending a message
     headers = {
         "Content-Type": "application/json",
@@ -112,6 +112,26 @@ def send_message(data, replyToken):
     message_url = f"https://api.line.me/v2/bot/message/reply"
     data = {
         "replyToken": replyToken,
+        "messages": [
+            {
+                "type": "text",
+                "text": data
+            },
+        ]
+    }
+    response = requests.post(
+        message_url, headers=headers, data=json.dumps(data))
+    return response.json()
+
+
+def send_message(data, to):
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {channel_access_token}",
+    }
+    message_url = f"https://api.line.me/v2/bot/message/reply"
+    data = {
+        "to": to,
         "messages": [
             {
                 "type": "text",
