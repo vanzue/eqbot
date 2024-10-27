@@ -28,8 +28,10 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
         print(f"message from Line: {body_json}")
     except json.JSONDecodeError as e:
         return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
-    user_id = body_json['destination']
     for evt in body_json.get('events', []):
+        if evt['source']['type'] != 'user':
+            continue
+        user_id = evt['source']['userId']
         reply_token = evt['replyToken']
         message_id = evt['message']['id']
         if evt['type'] != 'message':
