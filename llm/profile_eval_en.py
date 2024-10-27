@@ -230,7 +230,7 @@ async def process_with_llm_en(scores: list, analysis_data: str):
 
     return retry_parse_LLMresponse(scenario)
 
-async def process_with_llm_en_new(scores: list, analysis_data: str):
+async def process_with_llm_en_new(scores, analysis_data):
     scenario = ""
     scenario += "Score by dimension:\n"
     for dimension, score in scores.items():
