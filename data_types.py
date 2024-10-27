@@ -64,5 +64,5 @@ class ScenarioRequest(BaseModel):
 class ScenarioFinal(BaseModel):
     scores: Dict[str, int] # dimension name: score
     job_id: str
-    dialogue_history: str
+    dialogue_history: str # 不能有{}和”
     locale: Optional[str] = None

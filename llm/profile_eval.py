@@ -208,6 +208,23 @@ async def process_with_llm(scores: list, analysis_data: str):
     for dimension, score in scores.items():
         scenario += f"- {dimension}: {score}\n"
 
+    scenario += "\n对话分析:\n"
+    for i, analysis in enumerate(analysis_data, 1):
+        scenario += f"\n场景 {i}:\n"
+        scenario += f"背景: {analysis['background']}\n"
+        scenario += f"描述: {analysis['description']}\n"
+        scenario += f"选择: {analysis['choice']}\n"
+        scenario += f"分析: {analysis['analysis']}\n"
+    # scenario += analysis_data
+
+    return retry_parse_LLMresponse(scenario)
+
+async def process_with_llm_new(scores: list, analysis_data: str):
+    scenario = ""
+    scenario += "各维度得分:\n"
+    for dimension, score in scores.items():
+        scenario += f"- {dimension}: {score}\n"
+
     # scenario += "\n对话分析:\n"
     # for i, analysis in enumerate(analysis_data, 1):
     #     scenario += f"\n场景 {i}:\n"
