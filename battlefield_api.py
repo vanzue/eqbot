@@ -121,3 +121,8 @@ def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
 def course_exists(person_id: int, db: Session = Depends(database.get_db)):
     record = crud.course_exists(db, person_id=person_id)
     return record
+
+@router.post("/update/diamond")
+def update_diamond(request: data_types.DiamondUpdate, db: Session = Depends(database.get_db)):
+    db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=request.num_diamond)
+    return {"diamond_num": db_star}
