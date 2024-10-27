@@ -219,14 +219,14 @@ async def process_with_llm_en(scores: list, analysis_data: str):
         scenario += f"- {dimension}: {score}\n"
     print(scenario)
 
-    # scenario += "\nAnalyze the scenario:\n"
-    # for i, analysis in enumerate(analysis_data, 1):
-    #     scenario += f"\nScenario {i}:\n"
-    #     scenario += f"Background: {analysis['background']}\n"
-    #     scenario += f"Descriptiom: {analysis['description']}\n"
-    #     scenario += f"Choice: {analysis['choice']}\n"
-    #     scenario += f"Analysis: {analysis['analysis']}\n"
-    scenario += analysis_data
+    scenario += "\nAnalyze the scenario:\n"
+    for i, analysis in enumerate(analysis_data, 1):
+        scenario += f"\nScenario {i}:\n"
+        scenario += f"Background: {analysis['background']}\n"
+        scenario += f"Descriptiom: {analysis['description']}\n"
+        scenario += f"Choice: {analysis['choice']}\n"
+        scenario += f"Analysis: {analysis['analysis']}\n"
+    # scenario += analysis_data
 
     return retry_parse_LLMresponse(scenario)
 
