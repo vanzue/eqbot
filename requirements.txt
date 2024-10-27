@@ -8,10 +8,9 @@ sqlalchemy
 pydantic
 pyodbc
 langchain
-python-multipart
+python-multipart==0.0.12
 aiofiles
 azure-identity
 langchain_openai
 azure-storage-blob
 azure-cognitiveservices-speech
-python-multipart
