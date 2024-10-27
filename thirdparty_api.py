@@ -10,7 +10,6 @@ from llm.image2chat import image2text
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, Request
 
-router = APIRouter()
 channel_secret = os.getenv("LINE_CHANNEL_SECRET")
 channel_access_token = os.getenv("LINE_ACCESS_TOKEN")
 AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
@@ -18,12 +17,15 @@ CONTAINER_NAME = os.getenv("CONTAINER_NAME")
 SAS_TOKEN = os.getenv("SAS_TOKEN")
 
 
+router = APIRouter()
+
+
 @router.post("/LINE/webhook")
 async def line_webhook(request: Request, db: Session = Depends(database.get_db)):
     body = await request.body()
-
     try:
         body_json = json.loads(body)
+        print(f"message from Line: {body_json}")
     except json.JSONDecodeError as e:
         return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
     user_id = body_json['destination']
@@ -34,6 +36,7 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
             continue
         if evt['message']['type'] == 'image':
             reply2image("LINE", message_id, user_id, reply_token, db)
+            send_message("processing...", reply_token)
         elif evt['message']['type'] == 'text':
             reply2text("LINE", evt['message']['text'],
                        user_id, reply_token, db)
@@ -41,12 +44,27 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
 
 
 def reply2text(product, message: str, user_id, replyToken: str, db: Session):
-    responses, analyze = generate_auto_reply(
-        product, user_id, None, message, db)
+    if message == "eqoach":
+        send_message("Welcome to EQoach! Drop your chat screenshot and I will do analyze for you. \nOr you can type 'new' to start a new chat analysis.",
+                     replyToken)
+    elif message == "new":
+        state = schemas.ReplyStateCreate(
+            product=product,
+            userId=user_id,
+            chat_history="",
+            stage_number=1
+        )
+        crud.replace_reply_state(db, state)
+        send_message(
+            "OK, drop another chat to me", replyToken)
+        return
+    else:
+        responses, analyze = generate_auto_reply(
+            product, user_id, None, message, db)
 
-    send_message(analyze, replyToken)
-    for response in responses:
-        send_message(response, replyToken)
+        send_message(analyze, replyToken)
+        for response in responses:
+            send_message(response, replyToken)
 
 
 def reply2image(product, message_id, user_id, replyToken: str, db: Session):
@@ -126,7 +144,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
     else:
         # no chat history
         # new chat:
-        if not retrieved_state:
+        if not retrieved_state or not retrieved_state.chat_history:
             chat_history = [{
                 "userName": "other",
                 "message": intent
