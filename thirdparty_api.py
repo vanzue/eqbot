@@ -22,6 +22,7 @@ router = APIRouter()
 
 @router.post("/LINE/webhook")
 async def line_webhook(request: Request, db: Session = Depends(database.get_db)):
+    print("LINE webhook received")
     body = await request.body()
     try:
         body_json = json.loads(body)
@@ -189,7 +190,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
             state = schemas.ReplyStateBase(
                 product=product,
                 userId=user_id,
-                stage2_output=response,
+                stage2_output=json.dumps(response),
                 chat_history=retrieved_state.chat_history,
                 stage_number=3
             )

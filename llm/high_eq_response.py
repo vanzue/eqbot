@@ -10,13 +10,10 @@ load_dotenv()
 
 
 def detect_language(text):
+    chinese_pattern = re.compile(r'[\u4e00-\u9fff]')
     print("here is text:", text)
     if isinstance(text, str):
-        try:
-            text = json.loads(text)
-        except json.JSONDecodeError:
-            raise ValueError(
-                "Invalid format: text is a string but cannot be parsed as JSON.")
+        return chinese_pattern.search(text) and 'zh' or 'en'
 
     # Check if text is a dictionary with 'chat' field or a list
     if isinstance(text, dict) and 'chat' in text:
@@ -29,8 +26,6 @@ def detect_language(text):
 
     if not isinstance(chat_entries, list):
         raise TypeError("The 'chat' field should be a list of dictionaries.")
-
-    chinese_pattern = re.compile(r'[\u4e00-\u9fff]')
 
     for entry in chat_entries:
         message = entry.get('message', '')
