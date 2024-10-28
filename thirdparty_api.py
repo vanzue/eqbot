@@ -38,7 +38,6 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
         if evt['type'] != 'message':
             continue
         if evt['message']['type'] == 'image':
-            reply_message("processing...", reply_token)
             reply2image("LINE", message_id, user_id, reply_token, db)
         elif evt['message']['type'] == 'text':
             reply2text("LINE", evt['message']['text'],
