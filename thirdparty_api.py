@@ -15,7 +15,8 @@ channel_access_token = os.getenv("LINE_ACCESS_TOKEN")
 AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("CONTAINER_NAME")
 SAS_TOKEN = os.getenv("SAS_TOKEN")
-
+telegram_Toekn = os.getenv("TELEGRAM_TOKEN")
+processed_update_ids = set()
 
 router = APIRouter()
 
@@ -63,10 +64,14 @@ def reply2text(product, message: str, user_id, replyToken: str, db: Session):
     else:
         responses, analyze = generate_auto_reply(
             product, user_id, None, message, db)
-
-        send_message(analyze, user_id)
-        for response in responses:
-            send_message(response, user_id)
+        if(product == "LINE"):
+            send_message(analyze, user_id)
+            for response in responses:
+                send_message(response, user_id)
+        else:
+            send_telegram_message(user_id, analyze)
+            for response in responses:
+                send_telegram_message(user_id, response)
 
 
 def reply2image(product, message_id, user_id, replyToken: str, db: Session):
@@ -100,9 +105,10 @@ def get_response_from_image(product, IMAGE_PATH, user_id, replyToken, db: Sessio
 
     responses, analyze = generate_auto_reply(
         product, user_id, chat_history, "", db)
-    send_message(analyze, user_id)
     for response in responses:
         send_message(response, user_id)
+    send_message(analyze, user_id)
+
 
 
 def reply_message(data, replyToken):
@@ -200,16 +206,56 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
 
 
 @router.post("/Telegram/webhook")
-async def telegram_webhook(request: Request):
-    # Read the request body as text for debugging
+async def telegram_webhook(request: Request,db: Session = Depends(database.get_db)):
+    print("Telegram webhook received")
     body = await request.body()
-
     try:
-        # Parse the JSON
         body_json = json.loads(body)
+        print(f"message from Telegram: {body_json}")
     except json.JSONDecodeError as e:
-        print(f"JSON decode error: {e}")
         return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
-
-    print(f"message from Telegram: {body_json}")
+    for evt in body_json.get('result', []):
+        update_id = evt['update_id']
+        if update_id in processed_update_ids:
+            continue  # Skip already processed updates
+        processed_update_ids.add(update_id)
+        if 'message' not in evt:
+            continue
+        if evt['message']['photo'] != None and evt['message']['text'] != None:
+            continue
+        if evt['message']['photo'] != None:
+            reply2imageTelegram("Telegram", evt['message']['photo'][0]['file_id'], evt['message']['from']['id'], None, db)
+        elif evt['message']['text'] != None:
+            reply2text("Telegram", evt['message']['text'],
+                       evt['message']['from']['id'], evt['message']['message_id'], db)
     return JSONResponse(status_code=200, content={"message": "Message received"})
+
+def reply2imageTelegram(product, message_id, user_id, replyToken: str, db: Session):
+    url = f'https://api.telegram.org/bot{telegram_Toekn}/getFile?file_id={message_id}'
+
+    response = requests.get(url)
+
+    if response.status_code != 200:
+        print("Failed to get file path")
+        return
+    file_path = response.json()['result']['file_path']
+    
+    # 下载文件
+    download_url = f"https://api.telegram.org/file/bot{telegram_Toekn}/{file_path}"
+    image_response = requests.get(download_url)
+    if image_response.status_code == 200:
+        local_Image(product, image_response.content, user_id, replyToken, db)
+    else:
+        print(f"Failed to retrieve image. Status code: {image_response.status_code}")
+
+def send_telegram_message(chat_id, text):
+    url = f"https://api.telegram.org/bot{telegram_Toekn}/sendMessage"
+    payload = {
+        "chat_id": chat_id,
+        "text": text
+    }
+    headers = {
+        "Content-Type": "application/json"
+    }
+    response = requests.post(url, json=payload, headers=headers)
+    return response.json()
