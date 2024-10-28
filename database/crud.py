@@ -222,9 +222,8 @@ def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCo
     return new_course
 
 
-def get_coursesperson_by_person_id(db: Session, person_id: int, course_id: int):
-    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id,
-                                                       models.PersonalInfoCourses.course_id == course_id).one_or_none()
+def get_coursesperson_by_person_id(db: Session, person_id: int):
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id).one_or_none()
 
 
 def course_exists(db: Session, person_id: int):

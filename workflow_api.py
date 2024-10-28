@@ -157,8 +157,6 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
     personal_info = crud.get_personal_info_by_personid(db, personal_id)
     eq_scores = crud.get_eq_scores_by_person_id(db, personal_info.id)
 
-    # if not personal_info.tag:
-    #     return {"message": "Uncomplete personal info"}
     if not eq_scores:
         return {"message": "Uncomplete eq scores"}
     
@@ -188,7 +186,7 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
         contacts_list.append(one_contact)
 
     # num_star
-    db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id, course_id=1)
+    db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id)
     if db_person_course is None:
         num_star = 0
     else:
