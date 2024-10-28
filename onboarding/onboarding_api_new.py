@@ -7,8 +7,8 @@ import json
 
 import data_types
 from database import crud, database, schemas
-from llm.profile_eval import process_with_llm_new
-from llm.profile_eval_en import process_with_llm_en_new
+from llm.profile_eval import process_with_llm
+from llm.profile_eval_en import process_with_llm_en
 
 router = APIRouter()
 
@@ -63,7 +63,7 @@ async def retrieve_scene(request: data_types.ScenarioRequest):
     filepath = os.path.join(folder, f"branch_{branch}.json")
 
     scene = load_json(filepath)
-    return {"scene": scene}
+    return {"scene": scene, "scenario_id": request.scenario_id}
 
 @router.post("/finalize_scenario")
 async def finalize_scenario(
@@ -86,9 +86,9 @@ async def finalize_scenario(
 async def background_process_data(locale: str, job_id: str, scores: list, dialogue_history: str, db: Session = Depends(database.get_db),):
     # 异步调用 LLM 分析
     if locale != "en":
-        response = await process_with_llm_new(scores, dialogue_history)
+        response = await process_with_llm(scores, dialogue_history)
     else:
-        response = await process_with_llm_en_new(scores, dialogue_history)
+        response = await process_with_llm_en(scores, dialogue_history)
 
     # 更新数据库
     min_score_idx = min(scores, key=scores.get)
