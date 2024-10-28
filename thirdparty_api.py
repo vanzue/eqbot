@@ -15,7 +15,7 @@ channel_access_token = os.getenv("LINE_ACCESS_TOKEN")
 AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("CONTAINER_NAME")
 SAS_TOKEN = os.getenv("SAS_TOKEN")
-telegram_Toekn = os.getenv("TELEGRAM_TOKEN")
+telegram_Token = os.getenv("TELEGRAM_TOKEN")
 processed_update_ids = set()
 
 router = APIRouter()
@@ -231,25 +231,28 @@ async def telegram_webhook(request: Request,db: Session = Depends(database.get_d
     return JSONResponse(status_code=200, content={"message": "Message received"})
 
 def reply2imageTelegram(product, message_id, user_id, replyToken: str, db: Session):
-    url = f'https://api.telegram.org/bot{telegram_Toekn}/getFile?file_id={message_id}'
+    try:
+        url = f'https://api.telegram.org/bot{telegram_Token}/getFile?file_id={message_id}'
 
-    response = requests.get(url)
+        response = requests.get(url)
 
-    if response.status_code != 200:
-        print("Failed to get file path")
-        return
-    file_path = response.json()['result']['file_path']
-    
-    # 下载文件
-    download_url = f"https://api.telegram.org/file/bot{telegram_Toekn}/{file_path}"
-    image_response = requests.get(download_url)
-    if image_response.status_code == 200:
-        local_Image(product, image_response.content, user_id, replyToken, db)
-    else:
-        print(f"Failed to retrieve image. Status code: {image_response.status_code}")
+        if response.status_code != 200:
+            print("Failed to get file path")
+            return
+        file_path = response.json()['result']['file_path']
+        
+        # 下载文件
+        download_url = f"https://api.telegram.org/file/bot{telegram_Token}/{file_path}"
+        image_response = requests.get(download_url)
+        if image_response.status_code == 200:
+            local_Image(product, image_response.content, user_id, replyToken, db)
+        else:
+            print(f"Failed to retrieve image. Status code: {image_response.status_code}")
+    except requests.RequestException as e:
+        print(f"Failed to download image: {e}")
 
 def send_telegram_message(chat_id, text):
-    url = f"https://api.telegram.org/bot{telegram_Toekn}/sendMessage"
+    url = f"https://api.telegram.org/bot{telegram_Token}/sendMessage"
     payload = {
         "chat_id": chat_id,
         "text": text
@@ -257,5 +260,10 @@ def send_telegram_message(chat_id, text):
     headers = {
         "Content-Type": "application/json"
     }
-    response = requests.post(url, json=payload, headers=headers)
-    return response.json()
+    try:
+        response = requests.post(url, json=payload, headers=headers)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        print(f"Failed to send message: {e}")
+        return None
