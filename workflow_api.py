@@ -186,7 +186,8 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
         contacts_list.append(one_contact)
 
     # num_star
-    db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id)
+    db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id, course_id=4)
+    
     if db_person_course is None:
         num_star = 0
     else:
