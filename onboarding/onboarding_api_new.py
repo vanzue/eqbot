@@ -63,7 +63,7 @@ async def retrieve_scene(request: data_types.ScenarioRequest):
     filepath = os.path.join(folder, f"branch_{branch}.json")
 
     scene = load_json(filepath)
-    return {"scene": scene}
+    return {"scene": scene, "scenario_id": request.scenario_id}
 
 @router.post("/finalize_scenario")
 async def finalize_scenario(

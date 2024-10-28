@@ -202,7 +202,7 @@ def retry_parse_LLMresponse(scenario, max_retries=5):
     return None
 
 
-async def process_with_llm(scores: list, analysis_data: str):
+async def process_with_llm(scores, analysis_data):
     scenario = ""
     scenario += "各维度得分:\n"
     for dimension, score in scores.items():

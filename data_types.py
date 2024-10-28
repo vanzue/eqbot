@@ -58,7 +58,7 @@ class DiamondUpdate(BaseModel):
 
 class ScenarioRequest(BaseModel):
     scenario_id: int
-    choices: str
+    choices: str # eg.11,21
     locale: Optional[str]
 
 class ScenarioFinal(BaseModel):
