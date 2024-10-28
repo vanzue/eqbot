@@ -7,8 +7,8 @@ import json
 
 import data_types
 from database import crud, database, schemas
-from llm.profile_eval import process_with_llm
-from llm.profile_eval_en import process_with_llm_en
+from llm.profile_eval import process_with_llm_new
+from llm.profile_eval_en import process_with_llm_en_new
 
 router = APIRouter()
 
@@ -86,12 +86,14 @@ async def finalize_scenario(
 async def background_process_data(locale: str, job_id: str, scores: list, dialogue_history: str, db: Session = Depends(database.get_db),):
     # 异步调用 LLM 分析
     if locale != "en":
-        response = await process_with_llm(scores, dialogue_history)
+        response = await process_with_llm_new(scores, dialogue_history)
     else:
-        response = await process_with_llm_en(scores, dialogue_history)
+        response = await process_with_llm_en_new(scores, dialogue_history)
 
     # 更新数据库
-    min_score_idx = min(scores, key=scores.get)
+    min_score_key = min(scores, key=scores.get)
+    dimension_keys = list(scores.keys())  # 获取 scores 的键的列表
+    min_score_idx = dimension_keys.index(min_score_key)
     tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if locale != "en" else ["Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
     tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"] if locale != "en" else ["tag_description0", "tag_description1", "tag_description2", "tag_description3", "tag_description4"]
 
@@ -104,6 +106,7 @@ async def background_process_data(locale: str, job_id: str, scores: list, dialog
 
     # 创建 EQ 分数记录
     eq_score_data = schemas.EQScoreCreate(
+        job_id=job_id,
         person_id=personal_info.id,
         dimension1_score=response["dimension1_score"],
         dimension1_detail=response["dimension1_detail"],

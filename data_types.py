@@ -61,8 +61,14 @@ class ScenarioRequest(BaseModel):
     choices: str # eg.11,21
     locale: Optional[str]
 
+class AnalysisData(BaseModel):
+    background: str
+    description: str
+    choice: str
+    analysis: str
+
 class ScenarioFinal(BaseModel):
     scores: Dict[str, int] # dimension name: score
     job_id: str
-    dialogue_history: str # 不能有{}和”
+    dialogue_history: List[AnalysisData] # 不能有{}和”
     locale: Optional[str] = None
