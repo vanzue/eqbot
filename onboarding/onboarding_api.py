@@ -13,6 +13,26 @@ from data_types import Choice
 
 router = APIRouter()
 
+def load_json_files_to_dict(base_folder):
+    json_data = {}
+    
+    for root, dirs, files in os.walk(base_folder):
+        if os.path.basename(root).startswith("scenario_"):
+            for file_name in files:
+                if file_name.endswith(".json"):
+                    file_path = os.path.join(root, file_name)
+                    #relative_path = os.path.relpath(full_file_path, base_folder)
+                    try:
+                        with open(file_path, 'r', encoding='utf-8') as f:
+                            json_data[file_path] = json.load(f)
+                    except json.JSONDecodeError as e:
+                        print(f"Error decoding JSON in file {file_path}: {e}")
+                    except IOError as e:
+                        print(f"Error reading file {file_path}: {e}")
+    return json_data
+
+all_scenario_data = load_json_files_to_dict("onboarding")
+
 
 class ScenarioManager:
     def __init__(self, scenario_id: Optional[int] = None, locale: Optional[str] = None):
@@ -70,7 +90,7 @@ class ScenarioManager:
 
     def get_scene(self):
         filepath = os.path.join(self.folder, f"branch_{self.current_branch}.json")
-        return self.load_json(filepath)
+        return all_scenario_data[filepath]
 
     def make_choice(self, choice: int):
         scene = self.get_scene()
