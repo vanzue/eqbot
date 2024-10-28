@@ -15,7 +15,8 @@ channel_access_token = os.getenv("LINE_ACCESS_TOKEN")
 AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("CONTAINER_NAME")
 SAS_TOKEN = os.getenv("SAS_TOKEN")
-
+telegram_Token = os.getenv("TELEGRAM_TOKEN")
+processed_update_ids = set()
 
 router = APIRouter()
 
@@ -52,7 +53,7 @@ def reply2text(product, message: str, user_id, replyToken: str, db: Session):
     elif message.lower() == "new":
         state = schemas.ReplyStateCreate(
             product=product,
-            userId=user_id,
+            userId=str(user_id),
             chat_history="",
             stage2_output="",
             stage_number=1
@@ -63,10 +64,14 @@ def reply2text(product, message: str, user_id, replyToken: str, db: Session):
     else:
         responses, analyze = generate_auto_reply(
             product, user_id, None, message, db)
-
-        send_message(analyze, user_id)
-        for response in responses:
-            send_message(response, user_id)
+        if(product == "LINE"):
+            for response in responses:
+                send_message(response, user_id)
+            send_message(analyze, user_id)
+        else:
+            for response in responses:
+                send_telegram_message(user_id, response)
+            send_telegram_message(user_id, analyze)
 
 
 def reply2image(product, message_id, user_id, replyToken: str, db: Session):
@@ -100,9 +105,14 @@ def get_response_from_image(product, IMAGE_PATH, user_id, replyToken, db: Sessio
 
     responses, analyze = generate_auto_reply(
         product, user_id, chat_history, "", db)
-    send_message(analyze, user_id)
-    for response in responses:
-        send_message(response, user_id)
+    if(product == "LINE"):
+        for response in responses:
+            send_message(response, user_id)
+        send_message(analyze, user_id)
+    else:
+        for response in responses:
+            send_telegram_message(user_id, response)
+        send_telegram_message(user_id, analyze)
 
 
 def reply_message(data, replyToken):
@@ -158,7 +168,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
 
         state = schemas.ReplyStateCreate(
             product=product,
-            userId=user_id,
+            userId=str(user_id),
             chat_history=json.dumps(chat_history),
             stage2_output=analyse,
             stage_number=3)
@@ -175,7 +185,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 chat_history=chat_history)
             state = schemas.ReplyStateCreate(
                 product=product,
-                userId=user_id,
+                userId=str(user_id),
                 chat_history=json.dumps(chat_history),
                 stage2_output=analyse,
                 stage_number=3)
@@ -200,16 +210,64 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
 
 
 @router.post("/Telegram/webhook")
-async def telegram_webhook(request: Request):
-    # Read the request body as text for debugging
+async def telegram_webhook(request: Request,db: Session = Depends(database.get_db)):
+    print("Telegram webhook received")
     body = await request.body()
-
     try:
-        # Parse the JSON
         body_json = json.loads(body)
+        print(f"message from Telegram: {body_json}")
     except json.JSONDecodeError as e:
-        print(f"JSON decode error: {e}")
         return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
+    message= body_json.get('message', [])
+    update_id = body_json['update_id']
+    if update_id in processed_update_ids:
+        return JSONResponse(status_code=200, content={"message": "Message received"})
 
-    print(f"message from Telegram: {body_json}")
+    processed_update_ids.add(update_id)
+    try:
+        if 'photo' in message:
+            reply2imageTelegram("Telegram", message['photo'][0]['file_id'], message['from']['id'], None, db)
+        elif 'text' in message:
+            reply2text("Telegram", message['text'],
+                        message['from']['id'], message['message_id'], db)
+    except json.JSONDecodeError as e:
+        return JSONResponse(status_code=400, content={"message": "An error occurred while processing the message"})
     return JSONResponse(status_code=200, content={"message": "Message received"})
+
+def reply2imageTelegram(product, message_id, user_id, replyToken: str, db: Session):
+    try:
+        url = f'https://api.telegram.org/bot{telegram_Token}/getFile?file_id={message_id}'
+
+        response = requests.get(url)
+
+        if response.status_code != 200:
+            print(f"Failed to get file path:{url}")
+            return
+        file_path = response.json()['result']['file_path']
+        
+        # 下载文件
+        download_url = f"https://api.telegram.org/file/bot{telegram_Token}/{file_path}"
+        image_response = requests.get(download_url)
+        if image_response.status_code == 200:
+            local_Image(product, image_response.content, user_id, replyToken, db)
+        else:
+            print(f"Failed to retrieve image. Status code: {image_response.status_code}")
+    except requests.RequestException as e:
+        print(f"Failed to download image: {e}")
+
+def send_telegram_message(chat_id, text):
+    url = f"https://api.telegram.org/bot{telegram_Token}/sendMessage"
+    payload = {
+        "chat_id": chat_id,
+        "text": text
+    }
+    headers = {
+        "Content-Type": "application/json"
+    }
+    try:
+        response = requests.post(url, json=payload, headers=headers)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        print(f"Failed to send message: {e}")
+        return None
