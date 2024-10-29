@@ -63,7 +63,7 @@ def reply2text(product, message: str, user_id, replyToken: str, db: Session):
             "OK, drop another chat to me", replyToken)
     else:
         responses, analyze = generate_auto_reply(
-            product, user_id, None, message, db)
+            product, str(user_id), None, message, db)
         if(product == "LINE"):
             for response in responses:
                 send_message(response, user_id)
@@ -226,10 +226,10 @@ async def telegram_webhook(request: Request,db: Session = Depends(database.get_d
     processed_update_ids.add(update_id)
     try:
         if 'photo' in message:
-            reply2imageTelegram("Telegram", message['photo'][0]['file_id'], message['from']['id'], None, db)
+            reply2imageTelegram("Telegram", message['photo'][0]['file_id'], message['chat']['id'], None, db)
         elif 'text' in message:
             reply2text("Telegram", message['text'],
-                        message['from']['id'], message['message_id'], db)
+                        message['chat']['id'], message['message_id'], db)
     except json.JSONDecodeError as e:
         return JSONResponse(status_code=400, content={"message": "An error occurred while processing the message"})
     return JSONResponse(status_code=200, content={"message": "Message received"})
@@ -267,6 +267,7 @@ def send_telegram_message(chat_id, text):
     try:
         response = requests.post(url, json=payload, headers=headers)
         response.raise_for_status()
+        print(f"Telegram message sent: {response.json()} to {chat_id}")
         return response.json()
     except requests.RequestException as e:
         print(f"Failed to send message: {e}")
