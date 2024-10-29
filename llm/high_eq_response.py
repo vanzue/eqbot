@@ -43,10 +43,10 @@ class EQmaster:
         self.current_stage = 1  # 初始化状态为stage1
 
     # do analyze
-    def get_response_stage1(self, chat_history):
+    def get_response_stage1(self, chat_history,user_nick_name=""):
         self.chat_history = chat_history
         sys_prompt = stage1_prompt.format(
-            chat_history=self.chat_history, user_nick_name="")
+            chat_history=self.chat_history, user_nick_name= user_nick_name)
         message = [{"role": "system", "content": sys_prompt}]
         self.message = []
 
@@ -99,9 +99,8 @@ class EQmaster:
         response = llm.invoke(message).content
 
         options = [re.sub(r"^\d+\️⃣", "", line).strip()
-                   for line in response.split("\n") if line.strip()]
-
-        return options
+                   for line in response.split("\n") if line.strip()]  
+        return options,language
 
     def get_text_response(self, query):
         sys_prompt = f"""
@@ -116,16 +115,16 @@ class EQmaster:
         response = llm.invoke(message).content
         return response
 
-    def get_response_and_analyze(self, chat_history):
-        analyse = self.get_response_stage1(chat_history,)
-        response = self.get_response_stage2(chat_history, "",
+    def get_response_and_analyze(self, chat_history,user_nick_name=""):
+        analyse = self.get_response_stage1(chat_history,user_nick_name)
+        response,language = self.get_response_stage2(chat_history, "",
                                             analyse)
-        return response, analyse
+        return response, analyse,language
 
     def get_response_by_intent(self, chat_history, intent, analyze):
-        response = self.get_response_stage2(chat_history,
+        response,language = self.get_response_stage2(chat_history,
                                             intent, analyze)
-        return response
+        return response,language
 
 
 def main():
