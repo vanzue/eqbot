@@ -115,13 +115,13 @@ def request_LLM_response(scenario):
                             "Tips": "[Provide a short tip, 20 words or less]
                         }},
                         "7. Cultivation Suggestions": {{
-                            "Suggestions": "[Provide detailed analysis by including both pros and cons that show in senes and also consists content in scenes. Please make the suggestions mainly based on the cons!]"
+                            "Suggestions": "[Provide detailed analysis by including both pros and cons that show in senes and also consists content in scenes, and please make sure that both pros and cons are mentioned! Pros are the dimension that scores the highest and cons are dimension that scores the lowest.]"
                         }},
                         "8. Summary of Cultivation Suggestions": {{
                             "Summary of Suggestions": "[Summarize the suggestions based on cultivation suggestions into one sentence, like a title]"
                         }},
                         "9. Overall Suggestion": {{
-                            "Overall Suggestion": "[According to the user's situation, give a comprehensive evaluation and good wishes to the user, related to the user's cons]"
+                            "Overall Suggestion": "[According to the user's situation, give a comprehensive evaluation and good wishes to the user, related to the user's pros and cons]"
                         }}
                     }}
                     """
