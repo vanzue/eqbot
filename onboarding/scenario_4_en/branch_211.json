@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob crosses his arms and frowns, while Monica looks at the clock anxiously.",
-        "role": "Bob",
-        "location": "Office",
-        "description": "‘We are running out of time. Can you just make a quick decision already?’",
+        "background": "Bob thanks you for extending your time on the call.",
+        "role": "Monica",
+        "location": "Home Office",
+        "description": "We need one more thing from you. Can you review this document before you go?",
         "options": [
             {
-                "text": "Let's assign the most critical parts to the team members who are available.",
+                "text": "Alright, I'll quickly review it and provide my feedback.",
                 "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
+                    "Perception": 3,
+                    "Self Regulation": 2,
                     "Empathy": 4,
                     "Social Skill": 3,
                     "Motivation": 4
                 },
-                "analysis": "You took a proactive approach to delegate tasks, showing good perception and empathy, though your self-regulation could be stronger."
+                "analysis": "You agreed to review the document, showing empathy and motivation, but potentially compromising your self-regulation."
             },
             {
-                "text": "I understand the urgency, but maybe you can handle the key elements, and I'll review them later.",
+                "text": "I think it can wait. Let's handle it when I'm back.",
                 "scores": {
-                    "Perception": 3,
+                    "Perception": 4,
                     "Self Regulation": 4,
-                    "Empathy": 2,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You acknowledged the urgency but emphasized your need for leave, showing strong self-regulation but lower empathy and motivation."
+                "analysis": "You suggested handling it later, maintaining boundaries and demonstrating good self-regulation, but empathy and motivation were lower."
             },
             {
-                "text": "You should be able to manage this without my input. It’s part of your role.",
+                "text": "I'm afraid I can't. Please proceed without me and update me later.",
                 "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 2,
-                    "Empathy": 1,
-                    "Social Skill": 3,
-                    "Motivation": 2
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
                 },
-                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which could negatively impact team dynamics."
+                "analysis": "You prioritized your leave, showing good emotional perception and self-regulation, but social skills could improve."
             }
         ]
     }

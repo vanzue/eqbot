@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica is looking at her phone with a worried expression. Bob is rubbing his temples, clearly stressed out.",
-        "role": "Monica",
-        "location": "Break Room",
-        "description": "'We have another issue with the client. This needs immediate attention. What should we do?'",
+        "background": "Bob nods slightly, Monica looks relieved.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "How do you think we can avoid such situations in the future?",
         "options": [
             {
-                "text": "Let's take a moment to assess the situation and come up with a plan.",
+                "text": "We could establish a more detailed workflow to handle emergencies.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a practical solution, showing good self-regulation and social skills, but empathy and perception could be improved."
+            },
+            {
+                "text": "Maybe we should set clearer boundaries about contacting during leave periods.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You suggested a calm and reflective approach, showing good perception and self-regulation, though the emotional impact on others was not deeply addressed."
-            },
-            {
-                "text": "Monica, could you provide more details on the issue? We need to understand it fully.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You directed the conversation towards Monica and asked for specifics, demonstrating empathy and social skills, but the perception of the broader problem could be stronger."
-            },
-            {
-                "text": "Bob, maybe we should discuss this later and come up with a better plan.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose setting boundaries, demonstrating strong perception and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If it’s really necessary, we can discuss it further. But I think we managed pretty well this time.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You suggested postponing the discussion to avoid immediate conflict, showing good social skill but lower empathy and motivation to resolve the issue now."
+                "analysis": "You offer a flexible approach, showing empathy but lower in perception and motivation."
             }
         ]
     }

@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob frowns and crosses his arms. Monica looks at you expectantly.",
-        "role": "Bob",
+        "background": "You decided to give Monica a chance and step in if needed.",
+        "role": "Monica",
         "location": "Office",
-        "description": "'You always say we need a plan, but nothing changes. Are you going to help or not?'",
+        "description": "I’m feeling a bit overwhelmed. Any chance you can join the call?",
         "options": [
             {
-                "text": "I get your frustration. Let's discuss a better plan once I finish this urgent task.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You acknowledged Bob's frustration and offered a future solution, demonstrating empathy and perception, though your motivation and self-regulation could be stronger."
-            },
-            {
-                "text": "I can't help right now. We should really rethink our approach to avoid this in the future.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You stood firm on your boundaries and suggested a future improvement, showcasing strong self-regulation but lower empathy and motivation to help immediately."
-            },
-            {
-                "text": "It's always the same story. Maybe if you planned better, we wouldn't be in this mess.",
+                "text": "I'll join briefly. Send me the link.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You chose to join briefly, showing empathy and motivation, but slightly compromised your self-regulation."
+            },
+            {
+                "text": "I’ve given you all the necessary information. You can handle it from here.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
+                "analysis": "You maintained your boundaries and provided reassurance, showing good self-regulation, but empathy and motivation were lower."
+            },
+            {
+                "text": "I’m happy to help, but I need to maintain my leave. Let's discuss further next week.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You balanced your willingness to help with maintaining your leave, showing emotional perception, though social skills could improve."
             }
         ]
     }

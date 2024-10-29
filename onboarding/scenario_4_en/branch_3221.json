@@ -1,12 +1,12 @@
 {
     "scenes": {
-        "background": "Bob and Monica are discussing your detailed feedback. Bob seems unsure.",
-        "role": "Bob",
+        "background": "You framed the situation positively with Bob. Monica chimes in:",
+        "role": "Monica",
         "location": "Office",
-        "description": "'Thanks for the details. However, we might need your direct intervention. Can you join us for a bit?'",
+        "description": "I appreciate the teamwork, but I still feel overwhelmed.",
         "options": [
             {
-                "text": "I can join briefly, but please understand my leave is still important.",
+                "text": "Let's break down the tasks together and see what we can manage.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,29 +14,29 @@
                     "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You demonstrated empathy and willingness to help, but reminded them of your leave, showing balanced skills but slightly lower self-regulation and motivation."
+                "analysis": "You showed strong perception and empathy by offering a collaborative approach to manage the workload."
             },
             {
-                "text": "I'll join quickly to help, but need to return to my leave soon.",
+                "text": "I didn’t realize it was this bad. How about we prioritize the most urgent tasks?",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 2
+                    "Social Skill": 4,
+                    "Motivation": 3
                 },
-                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+                "analysis": "You acknowledged the situation and suggested a practical approach, showing good self-regulation and social skills."
             },
             {
-                "text": "I trust you both can handle this without me. Use the feedback I provided.",
+                "text": "If this is too much, maybe Bob can help with some of the tasks.",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+                "analysis": "You suggested involving another colleague, showing motivation and social skills, but empathy and perception were lower."
             }
         ]
     }

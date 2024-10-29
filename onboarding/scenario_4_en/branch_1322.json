@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica looks visibly relieved while Bob takes a deep breath, trying to calm himself.",
-        "role": "Monica",
-        "location": "Conference Room",
-        "description": "'Okay, I realize I made a mistake. How can we fix this quickly?'",
+        "background": "Bob nods slightly, Monica looks relieved.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "Alright, lets brainstorm some ideas for this plan. Any suggestions?",
         "options": [
             {
-                "text": "Let’s brainstorm together and come up with a solution.",
+                "text": "Perhaps we could establish a protocol for such emergencies.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a structured approach, showing good self-regulation and social skills, but empathy and perception could be enhanced."
+            },
+            {
+                "text": "Maybe a rotating responsibility schedule would help.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You opted for a collaborative approach, showing good perception and self-regulation, though the emotional impact on others was not deeply considered."
-            },
-            {
-                "text": "Monica, it’s important to understand the root cause. Can you tell us more?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You encouraged Monica to elaborate on her mistake, demonstrating empathy and social skills, but the broader problem's perception could be stronger."
-            },
-            {
-                "text": "We should discuss this later and come up with a better plan.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a practical solution, demonstrating strong perception and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If you both think it's needed, but I believe clear communication would suffice.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You suggested postponing the discussion to avoid immediate conflict, showing good social skills but lower empathy and motivation to resolve the issue now."
+                "analysis": "You express agreement with a hint of doubt, showcasing empathy but lower in perception and motivation."
             }
         ]
     }

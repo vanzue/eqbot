@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica and Bob exchange glances, then return their attention to the screen as you allocate more time for the task.",
+        "background": "You assured Bob about handling workload management on your own. Monica overhears and steps in.",
         "role": "Monica",
         "location": "Office",
-        "description": "'We appreciate it. Can you also join our meeting later to discuss the next steps?'",
+        "description": "Is that your way of saying you dont need my help?",
         "options": [
             {
-                "text": "Sure, I can join the meeting. Let's make the most of this session.",
+                "text": "No, it’s just a temporary issue. We’ll get through it together.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You reassured Monica and emphasized teamwork, demonstrating social skills and empathy, but your self-regulation could be improved."
+            },
+            {
+                "text": "I didn’t mean it that way. Let’s work on a plan to balance things better.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
                     "Empathy": 4,
-                    "Social Skill": 4,
+                    "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You showed strong empathy and willingness to collaborate by committing to the meeting, but your self-regulation and motivation to maintain your leave were slightly lower."
+                "analysis": "You clarified your statement and suggested a collaborative approach, showing strong perception and empathy."
             },
             {
-                "text": "I can join briefly, but I won't be able to stay for the entire meeting.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You balanced your time off with a willingness to help by agreeing to join briefly, showing good self-regulation, but your motivation and empathy were not particularly high."
-            },
-            {
-                "text": "It's better if you handle this without my full involvement. Follow the guidelines.",
+                "text": "If you’re feeling overwhelmed, maybe Bob can help us out?",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+                "analysis": "You suggested involving another colleague, showing motivation and social skills, but empathy and perception were lower."
             }
         ]
     }

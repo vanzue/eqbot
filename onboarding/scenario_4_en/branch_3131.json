@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica and Bob are still in the office, and you are troubleshooting via video call from home.",
-        "role": "Bob",
-        "location": "Office",
-        "description": "'Even with your help, we can't seem to figure this out. Are you sure we’re doing it right?'",
+        "background": "You acknowledged Bobs feedback about being harsh. Monica later approaches you and says:",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "I overheard you and Bob. Are you really trying to support me?",
         "options": [
             {
-                "text": "Let's take a step back and review everything from the beginning.",
+                "text": "Yes, I'm committed to finding ways to make your workload more manageable.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
                     "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 2
+                    "Social Skill": 3,
+                    "Motivation": 4
                 },
-                "analysis": "You show strong perception and empathy, offering thorough assistance, but your motivation to maintain your leave drops."
+                "analysis": "You reassured Monica of your intentions, reflecting strong perception, empathy, and motivation."
             },
             {
-                "text": "Try to troubleshoot step by step and let me know where you get stuck.",
+                "text": "I am, but you also need to communicate when you're overwhelmed.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
                     "Social Skill": 3,
-                    "Motivation": 3
+                    "Motivation": 4
                 },
-                "analysis": "You encourage them to find the solution independently, demonstrating good self-regulation and balanced empathy, though the motivation is moderate."
+                "analysis": "You acknowledged your support but emphasized the need for Monica's communication, showing good self-regulation and motivation."
             },
             {
-                "text": "You should be able to handle this if you follow the instructions carefully.",
+                "text": "Of course, but it's a two-way street. We both need to work on this.",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You maintain boundaries and encourage self-reliance, showing strong self-regulation but lower empathy and motivation."
+                "analysis": "You highlighted mutual responsibility, showing strong motivation but lower empathy and perception."
             }
         ]
     }

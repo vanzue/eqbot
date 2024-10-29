@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob looks frustrated as he reads your message while Monica sighs.",
+        "background": "Bob overhears your suggestion of involving him. He approaches you with a serious expression.",
         "role": "Bob",
         "location": "Office",
-        "description": "'I understand you're on leave, but we really could use your input. What's your final call?'",
+        "description": "Why are you dragging me into this? Ive got my own workload.",
         "options": [
             {
-                "text": "Alright, I'll review it briefly and give you my thoughts.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 2,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You decided to help despite being on leave, showing strong empathy and social skills, but lower self-regulation."
-            },
-            {
-                "text": "I can't, I'm on leave. You'll have to manage without me.",
-                "scores": {
-                    "Perception": 2,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You maintained your boundaries, showing strong self-regulation, but your empathy and motivation to help were lower."
-            },
-            {
-                "text": "Let me quickly review it, but I won't be able to deep dive.",
+                "text": "I thought you might have some capacity to help. Let's discuss it.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 3,
                     "Empathy": 3,
-                    "Social Skill": 3,
+                    "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
+                "analysis": "You initiated a discussion to understand Bob's capacity, showing social skills and balanced emotional perception and empathy."
+            },
+            {
+                "text": "I didn't realize you were so busy. I'll find another solution.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged Bob's workload and took responsibility, showing strong perception and empathy, but lesser motivation."
+            },
+            {
+                "text": "I just thought you could pitch in since we are all in this together.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You appealed to teamwork, showing motivation and social skills, but lacked in perception and empathy."
             }
         ]
     }

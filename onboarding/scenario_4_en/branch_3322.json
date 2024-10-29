@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica sighs and Bob rubs his temples, both visibly stressed.",
+        "background": "After discussing efficiency, Monica seems uneasy and approaches you.",
         "role": "Monica",
         "location": "Office",
-        "description": "'We tried revisiting the steps, but it's still not working. What should we do?'",
+        "description": "Im still worried about handling everything on time.",
         "options": [
             {
-                "text": "I understand your frustration. Let me log in and help resolve this quickly.",
+                "text": "Let's take another look at our priorities to see what can be adjusted.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
                     "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 4
+                    "Motivation": 3
                 },
-                "analysis": "You showed empathy and willingness to help, demonstrating good perception. However, your self-regulation to maintain your leave was slightly lower."
+                "analysis": "You offered a collaborative approach, showing good perception and empathy, but your self-regulation could be slightly improved."
             },
             {
-                "text": "I'm confident you can figure it out. Maybe take a short break and come back to it?",
+                "text": "I understand your concern, but I believe we can manage if we stay focused.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 3,
+                    "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You maintained your boundaries, showing good self-regulation, but your empathy and motivation to assist were lower."
+                "analysis": "You expressed confidence and focus, demonstrating strong self-regulation and motivation, but your empathy was lower."
             },
             {
-                "text": "I'm on leave. You need to handle this on your own.",
+                "text": "If it's too much, maybe we should discuss redistributing some tasks.",
                 "scores": {
-                    "Perception": 2,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 2,
-                    "Motivation": 2
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
                 },
-                "analysis": "You emphasized your need for personal time off, exhibiting strong self-regulation, but your perception, empathy, and motivation were notably lower."
+                "analysis": "You showed concern for your colleague's well-being and suggested a practical solution, but your self-regulation could be improved."
             }
         ]
     }

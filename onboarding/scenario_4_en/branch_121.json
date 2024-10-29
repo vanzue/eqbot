@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob leans against the wall, clearly frustrated. Monica takes a deep breath, trying to stay calm.",
-        "role": "You",
+        "background": "Monica and Bob are still discussing the urgency of tasks.",
+        "role": "Monica",
         "location": "Office",
-        "description": "'Alright, let's list down the issues and tackle them one by one. Who wants to start?'",
+        "description": "I think we should set clearer guidelines for what constitutes an urgent task.",
         "options": [
             {
-                "text": "Bob, since you're visibly upset, would you like to start?",
+                "text": "That sounds reasonable. Let's work on defining those guidelines together.",
                 "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
+                    "Perception": 3,
+                    "Self Regulation": 4,
                     "Empathy": 3,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You acknowledged Bob's emotions and gave him a chance to voice his concerns first, showing good perception and social skills."
+                "analysis": "You agree with Monica and propose a collaborative approach, showing good social skills and self-regulation, but empathy and perception could be stronger."
             },
             {
-                "text": "Monica, why don't you explain the unexpected issues you encountered?",
+                "text": "Sure, but sometimes it's hard to predict the urgency until you're in the situation.",
                 "scores": {
-                    "Perception": 3,
+                    "Perception": 2,
                     "Self Regulation": 3,
                     "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You gave Monica the opportunity to explain her side, showing empathy, but the overall engagement and motivation to resolve the issue were moderate."
-            },
-            {
-                "text": "Let's keep this focused. We can't afford delays. Bob, you start.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You aimed to keep the discussion focused and efficient, demonstrating strong self-regulation, but lower empathy and motivation to address the problem collaboratively."
+                "analysis": "You acknowledge the difficulty in predicting urgency, demonstrating empathy but lower in perception and motivation."
+            },
+            {
+                "text": "I understand the need, but let's not overcomplicate things with too many rules.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You express a desire for simplicity while acknowledging the need for some guidelines, showing good perception and social skills but lower empathy."
             }
         ]
     }

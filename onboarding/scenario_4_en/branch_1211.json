@@ -1,12 +1,12 @@
 {
     "scenes": {
-        "background": "Bob sighs deeply and begins speaking, while Monica nods slowly, taking notes.",
+        "background": "Bob nods as you and Monica discuss the task guidelines.",
         "role": "Bob",
         "location": "Office",
-        "description": "'So, the first issue is the incomplete specifications from the client. Monica, were you aware of this?'",
+        "description": "We should also consider how to handle urgent tasks when someone is on leave.",
         "options": [
             {
-                "text": "I think this needs to be addressed collectively. Monica, what do you think?",
+                "text": "That's a good point, Bob. Let's create a system where we can designate backups.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,29 +14,29 @@
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You focused on collective problem-solving, showing good perception and social skills, though self-regulation was moderate."
+                "analysis": "You acknowledge Bob's suggestion and propose a practical solution, showing good perception, social skills, and motivation."
             },
             {
-                "text": "Monica, can you explain why the specifications were incomplete?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You asked Monica for clarification, showing empathy but with moderate overall engagement and motivation."
-            },
-            {
-                "text": "This is a critical issue, and we need to confront it directly. Monica, please clarify.",
+                "text": "I agree, but it might be challenging to always have a backup ready.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 2,
+                    "Empathy": 4,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You aimed to address the issue directly, demonstrating strong self-regulation but lower empathy and motivation for collaborative resolution."
+                "analysis": "You agree while pointing out potential challenges, showing empathy and self-regulation, but lower motivation."
+            },
+            {
+                "text": "That could work, but we also need to respect people's time off.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize respecting personal time off, demonstrating strong motivation and self-regulation, but lower perception and empathy."
             }
         ]
     }

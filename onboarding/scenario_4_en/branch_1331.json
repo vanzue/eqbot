@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica stands up, holding a stack of papers, while Bob looks at you expectantly.",
-        "role": "Monica",
+        "background": "Bob fidgets with his pen, waiting.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'Okay, so what are the key issues that we need to address first?'",
+        "description": "A meeting sounds good. But do we really need another discussion for this?",
         "options": [
             {
-                "text": "Let's list the top three problems and prioritize them.",
+                "text": "It may help us avoid similar situations in the future.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You justify the need for a meeting by focusing on preventing future issues, showing good self-regulation and social skills, but could improve on perception and empathy."
+            },
+            {
+                "text": "We can decide together if it's necessary. Maybe a quick chat is enough.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You proposed a methodical approach to address the issues, showing good perception and self-regulation, but the emotional engagement could be better."
-            },
-            {
-                "text": "Monica, why don't you start by telling us what you think the main issues are?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You encouraged Monica to share her perspective, demonstrating empathy and social skills, though your perception of the overall problem might need more depth."
-            },
-            {
-                "text": "I think we should each identify one major issue and then discuss them together.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a more flexible approach, showing good perception and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If you don't think it's useful, we can skip it, but it might help.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You suggested a collaborative approach but with less immediate empathy and motivation, showing good social skill."
+                "analysis": "You show understanding of Bob's concerns while suggesting the meeting might still be beneficial, demonstrating empathy but lower in perception and motivation."
             }
         ]
     }

@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica sighs, and Bob rubs his temples during the video call.",
+        "background": "Bobs comment was left hanging in the air. Monica approaches you later.",
         "role": "Monica",
-        "location": "Office",
-        "description": "'We're still facing issues. Can you help us troubleshoot this one last time?'",
+        "location": "Hallway",
+        "description": "So, you think I should ask for help if I cant handle things?",
         "options": [
             {
-                "text": "I'll help you one last time, but then I need to focus on my leave.",
+                "text": "It's just a suggestion. You know what's best for you.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You tried to be diplomatic, demonstrating social skills and empathy, but your self-regulation could be improved."
+            },
+            {
+                "text": "Maybe we can find a better way to manage everything together.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
-                    "Empathy": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the challenge and showed willingness to collaborate, demonstrating strong perception and empathy."
+            },
+            {
+                "text": "If it's too much, there's no shame in asking for help.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
                     "Social Skill": 3,
                     "Motivation": 4
                 },
-                "analysis": "You showed a willingness to help while setting boundaries, demonstrating strong perception and motivation, though your self-regulation could be stronger."
-            },
-            {
-                "text": "I really need to focus on my leave. Can you revisit the guidelines and try again?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You maintained your boundaries, showing good self-regulation, but your empathy and motivation to help were lower."
-            },
-            {
-                "text": "I'll send you a detailed email with instructions. Follow that, and let me know if it helps.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You provided a solution without committing to extended help, showing good perception and social skills, though your self-regulation and motivation were slightly lower."
+                "analysis": "You suggested a practical solution, showing motivation and social skills, but empathy and perception were lower."
             }
         ]
     }

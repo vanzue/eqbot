@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica is tapping her fingers on the table anxiously while Bob leans back in his chair, eyes closed.",
-        "role": "Monica",
+        "background": "Bob frowns, while Monica looks thoughtful.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'Do you really think just taking a break will solve our problems? We need real solutions, not just time off.'",
+        "description": "Maybe. But was it really the best move to step in without consulting more?",
         "options": [
             {
-                "text": "I think a clear mind can help us see the problems more clearly. Let's trust the process.",
+                "text": "I thought it was an urgent situation that needed immediate action.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You emphasized the importance of a clear mind for problem-solving, showing good perception and self-regulation, but the immediate emotional needs of others were not deeply addressed."
-            },
-            {
-                "text": "You might be right. We need actionable steps. How about we brainstorm some ideas together?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
+                    "Empathy": 2,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You acknowledged Monica's concern and suggested a collaborative solution, demonstrating empathy and social skills, but the perception of the broader problem could be stronger."
+                "analysis": "You justify your proactive approach, showing good perception and social skills, but empathy could be stronger."
             },
             {
-                "text": "Monica, sometimes a short break is necessary to avoid burnout. We'll tackle this with fresh energy.",
+                "text": "Possibly, but sometimes you need to make quick decisions for the greater good.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
                     "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You defend the need for quick decisions, showing good self-regulation, but both perception and empathy could be improved."
+            },
+            {
+                "text": "You might be right, Bob. We could have discussed it more.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You suggested taking a break to prevent burnout, showing strong self-regulation, but your motivation to address the issue immediately is lower."
+                "analysis": "You acknowledge Bob's perspective, showing empathy but lower in perception and motivation."
             }
         ]
     }

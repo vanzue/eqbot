@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica takes a deep breath while Bob continues to look frustrated.",
-        "role": "Monica",
+        "background": "Bob scratches his head, still looking unconvinced.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'Alright, let’s get some feedback from the team. But what if the suggestions are just as ineffective?'",
+        "description": "But what if this happens again? Should we always rely on someone stepping in?",
         "options": [
             {
-                "text": "We should still try. Any input is better than none.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You encouraged trying for feedback, showing good perception and empathy, although your motivation to explore alternatives was moderate."
-            },
-            {
-                "text": "If we think the feedback is not useful, we can filter it and focus on actionable items.",
+                "text": "We should try to prepare better so we don't always need extra help.",
                 "scores": {
                     "Perception": 3,
-                    "Self Regulation": 3,
+                    "Self Regulation": 4,
                     "Empathy": 3,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You suggested a practical approach to filter feedback, demonstrating balanced empathy and social skills, but the perception and self-regulation were moderate."
+                "analysis": "You emphasize the importance of preparation, showing good self-regulation and social skills, but could improve on perception and empathy."
             },
             {
-                "text": "I think we need to trust the team’s judgment and at least give their suggestions a try.",
+                "text": "Relying on each other is part of teamwork, but we can work on reducing these situations.",
                 "scores": {
-                    "Perception": 3,
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You highlight the value of teamwork while suggesting improvements, demonstrating good perception and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If it does, we'll handle it just like we did this time.",
+                "scores": {
+                    "Perception": 2,
                     "Self Regulation": 3,
                     "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 4
+                    "Motivation": 2
                 },
-                "analysis": "You emphasized trusting the team and trying their suggestions, showing strong empathy and motivation, but the perception and self-regulation were moderate."
+                "analysis": "You reassure Bob but don't propose a change, showing empathy but lower in perception and motivation."
             }
         ]
     }

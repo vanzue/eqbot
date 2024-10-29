@@ -1,12 +1,23 @@
 {
     "scenes": {
-        "background": "Monica rubs her temples in frustration while Bob stares at the screen intensely.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "'We need a bit more clarity. Can you walk us through just one more example?'",
+        "background": "Monica seemed stressed. Bob approaches you in the break room.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "Do you really think telling Monica to lighten her load was a good idea?",
         "options": [
             {
-                "text": "Alright, I'll walk you through one more example, but let's make it quick.",
+                "text": "I thought it might help her manage better. Was I wrong?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You tried to justify your suggestion by showing concern for Monica's workload, demonstrating social skills and empathy, though your self-regulation could be improved."
+            },
+            {
+                "text": "Maybe not. Let’s figure out a better way together.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,29 +25,18 @@
                     "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You demonstrated strong empathy and perception by agreeing to help, though your self-regulation and motivation to maintain your leave were slightly lower."
+                "analysis": "You acknowledged the possibility of a mistake and showed willingness to collaborate, demonstrating strong perception and empathy."
             },
             {
-                "text": "I think you can handle this yourselves if you review the previous guidelines carefully.",
+                "text": "Well, if she can't handle it, she should ask for help.",
                 "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
+                    "Perception": 2,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You encouraged self-reliance and showed good self-regulation, but your empathy and motivation to help were lower."
-            },
-            {
-                "text": "I'll give you a quick example, but I must get back to my leave soon.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You balanced your willingness to help with your need for time off, showing good perception and empathy, though your self-regulation was slightly lower."
+                "analysis": "You suggested a practical solution, showing motivation and social skills, but empathy and perception were lower."
             }
         ]
     }

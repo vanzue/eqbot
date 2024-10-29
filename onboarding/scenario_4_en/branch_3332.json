@@ -1,12 +1,23 @@
 {
     "scenes": {
-        "background": "Monica sighs deeply, rubbing her temples as she looks at her screen, while Bob checks his phone.",
+        "background": "You accepted Bobs help. Monica approaches you with a concerned look.",
         "role": "Monica",
         "location": "Office",
-        "description": "'We really need someone to handle the client side. Can you take that on?'",
+        "description": "You really think I cant handle this on my own?",
         "options": [
             {
-                "text": "I can manage the client side, but I'll need help with other tasks.",
+                "text": "It's not about that. I just thought it might ease the burden.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You tried to clarify your intention, showing social skills and empathy, but lacked self-regulation and motivation."
+            },
+            {
+                "text": "I didn't mean to undermine you. Let's figure out a way to balance the workload.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,29 +25,18 @@
                     "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You showed strong perception and empathy by offering to help with the client side, but your self-regulation and motivation to maintain your leave were slightly lower."
+                "analysis": "You acknowledged the misunderstanding and showed willingness to collaborate, demonstrating strong perception and empathy."
             },
             {
-                "text": "I'll provide some guidance, but you both need to handle the bulk of it.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your empathy and motivation were lower."
-            },
-            {
-                "text": "I can't take on the client side right now. Please manage it according to the plan.",
+                "text": "If you feel overwhelmed, it's okay to ask for help.",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+                "analysis": "You suggested seeking help, showing motivation and social skills, but empathy and perception were lower."
             }
         ]
     }
