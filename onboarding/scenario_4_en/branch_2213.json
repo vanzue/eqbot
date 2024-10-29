@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You suggested collaborating with Monica on the task.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Collaborating sounds good, but what if it delays our progress?",
+        "options": [
+            {
+                "text": "We can set clear timelines to ensure we stay on track.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a solution to manage potential delays, showing good perception and self-regulation. However, social skills were lower due to a lack of addressing Bob's concerns directly."
+            },
+            {
+                "text": "I understand the concern, but collaboration can bring better results.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You emphasized the benefits of collaboration, showing good self-regulation and empathy. However, motivation was lower as you didn't fully commit to addressing the potential delay."
+            },
+            {
+                "text": "If progress is a priority, I can handle it solo.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You offered to take full responsibility, showing strong empathy and motivation. However, self-regulation could be improved as you didn't consider the collaborative benefits."
+            }
+        ]
+    }
+}

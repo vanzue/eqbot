@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs and looks at her watch.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, I understand the need for speed, but we cant afford to make errors.",
+        "options": [
+            {
+                "text": "We need to find the middle ground. Let's finalize our discussion in the next 10 minutes.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a compromise with a specific timeframe, showing self-regulation and social skill but keeping balanced empathy and perception."
+            },
+            {
+                "text": "I get your point, Bob. Let's quickly double-check the critical points and move ahead.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge Bob's concerns but emphasize the urgency, demonstrating good perception and motivation while maintaining a balanced approach."
+            },
+            {
+                "text": "If we keep discussing, we'll miss the opportunity. Let's make a decision now and adjust if needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You stress the importance of time and motivate the team to decide quickly, showing social skill and motivation but less empathy and perception."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs, crossing her arms.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, Monica, balancing speed and thoroughness is crucial for success.",
+        "options": [
+            {
+                "text": "We should set clear priorities to move efficiently without compromising quality.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of setting priorities, showing good self-regulation and social skills while maintaining a balanced approach."
+            },
+            {
+                "text": "I agree that we need to act quickly, but a thorough plan will save us from future problems.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the need for speed but stress the importance of planning, demonstrating empathy and perception."
+            },
+            {
+                "text": "Monica, rushing could lead to errors. A bit more discussion ensures we get it right.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You stress the importance of caution and thoroughness, showing empathy for potential outcomes but risking a slower pace."
+            }
+        ]
+    }
+}

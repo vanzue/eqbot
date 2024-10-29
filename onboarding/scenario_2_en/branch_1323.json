@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob rubs his temples, looking frustrated, while Monica taps her pen on the table.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, How do we manage with this constant back and forth?",
+        "options": [
+            {
+                "text": "Perhaps we need to establish clearer guidelines to streamline our decision-making.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a structured approach, showing good perception and empathy while maintaining social harmony."
+            },
+            {
+                "text": "I think sticking to a more flexible strategy could help us adapt better.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You lean towards adaptability, showing good self-regulation and motivation, but less empathy and social skills."
+            },
+            {
+                "text": "We should just pick one method and stick to it, even if it's not perfect.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest a decisive approach, showing good social skills and motivation, but less perception and empathy."
+            }
+        ]
+    }
+}

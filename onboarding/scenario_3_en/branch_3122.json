@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob sighs and leans back in his chair.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Finding a middle ground sounds like more trouble than its worth. What do you think?",
+        "options": [
+            {
+                "text": "Sometimes compromise is necessary to ensure everyone feels included.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the difficulty but emphasized the importance of inclusivity, showing good perception and empathy, though self-regulation and social skill were moderate."
+            },
+            {
+                "text": "We can try to keep it simple while still considering everyone's input.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You aimed for simplicity while considering inclusivity, showing good empathy and self-regulation, but social skill and perception were moderate."
+            },
+            {
+                "text": "Maybe we should just pick the most popular option and move on.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested a straightforward approach, showing good motivation but lower social skill, perception, and empathy."
+            }
+        ]
+    }
+}

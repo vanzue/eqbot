@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity.",
+        "role": "Sam",
+        "location": "Break Room",
+        "description": "How about we just go to the bar? Its the easiest option.",
+        "options": [
+            {
+                "text": "The bar could be fun, but maybe we could also consider other options to make sure everyone is happy.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognized the usefulness of Sam's suggestion while also showing empathy by considering the preferences of the entire team."
+            },
+            {
+                "text": "A bar might be fun, but let's think about what everyone might enjoy.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy and self-regulation, considering everyone's preferences, but social skill and perception were moderate."
+            },
+            {
+                "text": "I think we should aim for something more inclusive than a bar.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed your opinion calmly, showing good social skill and motivation, but empathy and perception were lower."
+            }
+        ]
+    }
+}

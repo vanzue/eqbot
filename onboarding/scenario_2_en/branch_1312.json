@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica raises her eyebrows, glancing at Bob with a skeptical look.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, Quick decisions are fine, but we also need to make sure were on the same page. Thoughts?",
+        "options": [
+            {
+                "text": "We could set up follow-up meetings to review and adjust our decisions if needed.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach that ensures quick decisions are not final and can be revised, showing good perception, empathy, and social skills."
+            },
+            {
+                "text": "I think sticking to quick decisions is key. We'll handle any misalignments as they occur.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of quick decisions and show confidence in dealing with any issues later, demonstrating good self-regulation and social skills."
+            },
+            {
+                "text": "Rushing through decisions without proper alignment could be risky, let's slow down a bit.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You advocate for a more cautious approach, showing empathy and motivation, but less focus on self-regulation and perception."
+            }
+        ]
+    }
+}

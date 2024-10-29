@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica nods slightly, showing shes willing to listen.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, Balancing speed and thoroughness is fine, but we must set clear priorities.",
+        "options": [
+            {
+                "text": "Absolutely, let's list our priorities and ensure we're on the same page.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You agree with Bob's suggestion, showing good perception and social skills by ensuring team alignment."
+            },
+            {
+                "text": "We need to move fast, but thorough planning is also crucial. Can we compromise?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the importance of both speed and planning, showing a balanced approach with good self-regulation."
+            },
+            {
+                "text": "If we keep debating priorities, we'll never move forward. Let's just start.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize action over discussion, showing empathy for the urgency but risking team alignment."
+            }
+        ]
+    }
+}

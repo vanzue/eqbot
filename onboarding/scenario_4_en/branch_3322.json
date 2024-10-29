@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "After discussing efficiency, Monica seems uneasy and approaches you.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "Im still worried about handling everything on time.",
+        "options": [
+            {
+                "text": "Let's take another look at our priorities to see what can be adjusted.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered a collaborative approach, showing good perception and empathy, but your self-regulation could be slightly improved."
+            },
+            {
+                "text": "I understand your concern, but I believe we can manage if we stay focused.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed confidence and focus, demonstrating strong self-regulation and motivation, but your empathy was lower."
+            },
+            {
+                "text": "If it's too much, maybe we should discuss redistributing some tasks.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed concern for your colleague's well-being and suggested a practical solution, but your self-regulation could be improved."
+            }
+        ]
+    }
+}

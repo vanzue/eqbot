@@ -51,3 +51,25 @@ CREATE TABLE ChatRecords (
     FOREIGN KEY (person_id) REFERENCES PersonalInfo(id),
     FOREIGN KEY (contact_id) REFERENCES Contact(id)
 );
+
+-- 创建 ReplyState 表
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='HighEqReplyState' AND xtype='U')
+CREATE TABLE ReplyState (
+    product VARCHAR(100),
+    userId VARCHAR(100),
+    stage2_output TEXT,
+    stage_number INT,
+    PRIMARY KEY (product, userId)
+);
+
+-- 检查表 ReplyState 是否存在
+IF EXISTS (SELECT * FROM sysobjects WHERE name='HighEqReplyState' AND xtype='U')
+BEGIN
+    -- 检查列 chat_history 是否已经存在
+    IF NOT EXISTS (SELECT * FROM syscolumns WHERE id=OBJECT_ID('HighEqReplyState') AND name='chat_history')
+    BEGIN
+        -- 如果 chat_history 列不存在，则添加它
+        ALTER TABLE ReplyState
+        ADD chat_history TEXT;
+    END
+END

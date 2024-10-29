@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You, Monica, and Bob are exploring other celebration options. Monica frowns and crosses her arms.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "Monica says, Outdoor activities can be tiring for some.",
+        "options": [
+            {
+                "text": "We can plan shorter activities to accommodate everyone.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed empathy and self-regulation by considering everyone's comfort, but social skill and motivation were moderate."
+            },
+            {
+                "text": "Let's choose an activity that has both relaxing and active options.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Outdoor activities might not be for everyone, let's brainstorm other fun ideas.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You showed good social skill and motivation by considering other options, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
+}

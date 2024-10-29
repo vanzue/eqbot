@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs and looks at both of you, frustration evident.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, This constant back and forth is wasting valuable time.",
+        "options": [
+            {
+                "text": "Let's try to understand what's really causing this conflict and address it directly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by trying to understand the root cause of the conflict and suggest addressing it directly, promoting a balanced resolution."
+            },
+            {
+                "text": "I get that it's frustrating, Bob, but finding a balanced approach will benefit us in the long run.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob's frustration and emphasize the importance of a balanced approach, showing good self-regulation and social skill."
+            },
+            {
+                "text": "If this continues, we'll never finish on time. Let's make a decision and move on.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest making a quick decision to move forward, showing empathy for the need to complete tasks but also emphasizing the importance of action."
+            }
+        ]
+    }
+}

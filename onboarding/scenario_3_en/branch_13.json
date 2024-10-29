@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica, Bob, and you continue discussing celebration ideas.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob leans back and says, I think the outdoor activity will be too tiring for some people.",
+        "options": [
+            {
+                "text": "Maybe we can find a compromise that includes some rest breaks.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern and proposed a solution, showing good social skill and self-regulation, but empathy and perception were moderate."
+            },
+            {
+                "text": "An outdoor activity can be rejuvenating; let's try to make it enjoyable.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed confidence in the idea, displaying good perception and motivation, but empathy was lower."
+            },
+            {
+                "text": "Maybe an indoor activity would be more suitable for everyone.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy by acknowledging the concern, but self-regulation and social skill were moderate."
+            }
+        ]
+    }
+}

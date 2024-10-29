@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica nods, but Bob seems unconvinced, leaning back in his chair.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, I still think were rushing things.",
+        "options": [
+            {
+                "text": "What if we take a quick break and come back with fresh perspectives?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy and perception by acknowledging Bob's concern and suggesting a break to refresh minds, fostering balanced decision-making."
+            },
+            {
+                "text": "I get that, but we do need to keep momentum. Maybe just a brief review?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize Bob's need for caution while emphasizing the importance of progress, showing good self-regulation and social skills."
+            },
+            {
+                "text": "We really can't afford delays. Let's finalize decisions now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize urgency and motivation to keep moving forward, showing a willingness to take calculated risks while acknowledging the need for some caution."
+            }
+        ]
+    }
+}

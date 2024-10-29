@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica and Bob discuss combining activities.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "Monica shrugs and says, Combining activities sounds chaotic.",
+        "options": [
+            {
+                "text": "We could schedule the activities to make it more organized.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern, showing good perception and social skills, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "If we plan it well, it might be less chaotic than you think.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed self-regulation and practicality by suggesting careful planning, but empathy and social skill were moderate."
+            },
+            {
+                "text": "It might complicate things, but it could also be a lot of fun.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized the potential fun, showing good social skill and motivation, but self-regulation and empathy were lower."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You are on annual leave, and a colleague messages you about an urgent task.",
+        "role": "Bob",
+        "location": "Home",
+        "description": "Hey, sorry to bother you during your leave, but we have an urgent task that needs immediate attention.",
+        "options": [
+            {
+                "text": "I understand the urgency. I'll take a quick look and help as much as I can.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the urgency and provided assistance, demonstrating strong emotional perception and empathy, but could improve on self-regulation."
+            },
+            {
+                "text": "I’m on leave, but I can guide you on how to handle it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered help while maintaining your boundaries, showing good self-regulation and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "I'm currently on leave and can't assist right now. Please reach out to [another colleague].",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You set clear boundaries and suggested an alternative, showing good self-regulation, but emotional perception and empathy were lower."
+            }
+        ]
+    }
+}

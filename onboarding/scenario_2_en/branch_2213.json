@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob frowns, tapping his pen on the table.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, Rushing leads to errors. We need to be more diligent.",
+        "options": [
+            {
+                "text": "We should consider both our perspectives and find a balanced approach.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You aim for a balanced approach, showing good social skill and self-regulation while valuing both perspectives."
+            },
+            {
+                "text": "Bob, diligence is important, but we can't afford delays. Let’s find a faster way.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for speed while acknowledging the importance of diligence, showing empathy and motivation."
+            },
+            {
+                "text": "Diligence is key, but let's not overcomplicate things. Prioritizing quick wins might be more effective.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the need for quick wins, showing good perception of the urgency but lower empathy towards Bob's concerns."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica nods, shifting her focus between Alex and Bob.",
+        "role": "Alex",
+        "location": "Conference Room",
+        "description": "Alex says, Dividing tasks sounds fine, but I still think speed should be our priority.",
+        "options": [
+            {
+                "text": "How about we set milestones to ensure we're moving fast but also not missing any critical steps?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest setting milestones, showing good self-regulation and social skills by aiming for a balanced approach."
+            },
+            {
+                "text": "Speed is important, but rushing might lead to mistakes. Let's take a bit more time to plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You lean towards a slower, more thorough approach, showing empathy and motivation for the project's success."
+            },
+            {
+                "text": "If we focus on speed, we might overlook details. Let's ensure we don't cut corners.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need to avoid cutting corners, showing good perception of potential issues but lower empathy towards the urgency."
+            }
+        ]
+    }
+}

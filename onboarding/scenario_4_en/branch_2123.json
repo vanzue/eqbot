@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica and Bob are discussing the urgency of finalizing the project.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "I really think we need to have a detailed discussion to avoid any issues later.",
+        "options": [
+            {
+                "text": "Perhaps we can handle this over a detailed email thread instead.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested an alternative to another meeting, showing good emotional perception and maintaining self-regulation, but empathy could be improved."
+            },
+            {
+                "text": "I understand the concern. Let's schedule a brief call tomorrow to finalize things.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You agreed to a brief call, showing empathy and motivation, but self-regulation was slightly compromised."
+            },
+            {
+                "text": "If it's that urgent, we should prioritize it now and wrap it up quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You showed initiative to address the urgency immediately, demonstrating good emotional perception, but social skills could be better."
+            }
+        ]
+    }
+}

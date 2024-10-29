@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica shakes her head, looking at her watch.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, Lets not rush into things without considering all aspects.",
+        "options": [
+            {
+                "text": "We need to ensure every detail is covered, even if it takes more time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of detailed planning, demonstrating good self-regulation and social skills."
+            },
+            {
+                "text": "I see the urgency, but a thorough plan will help us avoid future problems.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the urgency but stress the need for a detailed plan, showing empathy and perception."
+            },
+            {
+                "text": "Maybe we can find a middle ground where we move quickly but also carefully.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a compromise, balancing the need for speed with careful planning, showing empathy and social skills."
+            }
+        ]
+    }
+}

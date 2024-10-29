@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "In a project meeting, Alex and Bobs different work styles clash.",
+        "role": "Alex",
+        "location": "Conference Room",
+        "description": "Alex says, We need to decide quickly and move forward. Why are we wasting time?",
+        "options": [
+            {
+                "text": "Let's take a moment to hear Bob's thoughts; it might offer valuable insights.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show a high level of empathy by valuing Bob's perspective and encourage a balanced discussion, maintaining social harmony."
+            },
+            {
+                "text": "I understand the urgency, Alex, but thorough discussion can prevent future issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize both the need for quick decisions and the importance of thorough planning, showing good self-regulation and social skill."
+            },
+            {
+                "text": "Let's agree on a timeline for a decision after a brief discussion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a compromise, showing empathy and motivation to move forward while ensuring all voices are heard."
+            }
+        ]
+    }
+}

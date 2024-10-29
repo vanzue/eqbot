@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica and Bob continue discussing the task.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "That sounds like a good plan, but what if we face another emergency?",
+        "options": [
+            {
+                "text": "We need a solid plan for emergencies. Let's outline one together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a proactive approach, showing good perception and social skills, but motivation and empathy could be improved."
+            },
+            {
+                "text": "I agree, Bob. We need to be ready for unforeseen events.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge the need for preparedness, demonstrating good self-regulation and motivation but lower perception and empathy."
+            },
+            {
+                "text": "Emergencies are unavoidable, but we handled this one well.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You downplay the concern, showing good social skills but lower in perception and empathy."
+            }
+        ]
+    }
+}

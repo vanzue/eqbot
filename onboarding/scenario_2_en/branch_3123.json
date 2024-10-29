@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "After pushing to prioritize and move on, Monica looks frustrated.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, We cant keep going in circles. We need a decision now.",
+        "options": [
+            {
+                "text": "We should make a decision quickly, even if it's not perfect.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You agree with Monica's urgency, showing motivation and social skill, but lack a bit in perception and empathy."
+            },
+            {
+                "text": "Let's take a step back and summarize our key points before deciding.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy and perception by suggesting a summary, while maintaining calm and control."
+            },
+            {
+                "text": "If we rush, we might overlook something critical. Let's take another minute.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of thoroughness, showing good perception and empathy while balancing urgency."
+            }
+        ]
+    }
+}

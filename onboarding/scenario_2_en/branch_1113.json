@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob nods, slightly relaxing his posture, while Monica scribbles notes.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, Shouldnt we at least ensure everyone understands the plan before moving forward?",
+        "options": [
+            {
+                "text": "Absolutely, a quick review can help clear any doubts.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by taking Monica's concern seriously and encourage clarity, promoting balanced decision-making."
+            },
+            {
+                "text": "I get your point, but we need to keep moving to stay on schedule.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Monica's concern while emphasizing the need to stay on track, showing good self-regulation and social skill."
+            },
+            {
+                "text": "We can't afford to keep rehashing details, let's proceed as planned.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest moving forward without further discussion, showing motivation to proceed but risking potential misunderstandings."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica is visibly frustrated, pacing around the room.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, I think we need more time to discuss the details before rushing.",
+        "options": [
+            {
+                "text": "I see your point, Bob. Let's set a timer for a brief discussion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob's need for a thorough discussion while proposing a compromise, showing good empathy and self-regulation."
+            },
+            {
+                "text": "Monica, could you give us a few more minutes to wrap up our discussion?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You address Monica's urgency directly, showing good perception and motivation to ensure everyone's concerns are met."
+            },
+            {
+                "text": "If we delay any longer, we'll miss the deadline. Let's make a quick decision.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of deadlines and urge a swift decision, demonstrating social skill and motivation to move forward."
+            }
+        ]
+    }
+}

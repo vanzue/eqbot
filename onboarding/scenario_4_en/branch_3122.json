@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You explained your rationale to Bob. Monica then interjects:",
+        "role": "Monica",
+        "location": "Hallway",
+        "description": "I appreciate the thought, but you didnt need to intervene without asking me first.",
+        "options": [
+            {
+                "text": "I just wanted to help. Let's discuss how to handle these situations in the future.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Monica's concern and proposed a collaborative solution, showing strong perception and empathy."
+            },
+            {
+                "text": "I understand. I'll make sure to check with you first next time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You accepted Monica's feedback and showed willingness to improve, demonstrating good social skills and balanced empathy."
+            },
+            {
+                "text": "I thought it was the best way to help. Sorry if it caused any issues.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You apologized but with a hint of justification, showing strong motivation but lower empathy and perception."
+            }
+        ]
+    }
+}

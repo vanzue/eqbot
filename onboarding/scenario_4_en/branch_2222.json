@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You admitted it was a mistake to step in without consulting.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "I appreciate your honesty. How do you plan to handle similar situations in the future?",
+        "options": [
+            {
+                "text": "I'll make sure to consult with the team before making decisions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed willingness to improve communication, demonstrating good emotional perception and balanced skills."
+            },
+            {
+                "text": "I'll probably take a step back and let others take the lead next time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You indicated a desire to avoid future conflicts, showing empathy and motivation, but self-regulation and social skills need improvement."
+            },
+            {
+                "text": "Let's set up a clear protocol for such situations to avoid confusion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested a practical solution, indicating good self-regulation and social skills, though motivation was lower."
+            }
+        ]
+    }
+}

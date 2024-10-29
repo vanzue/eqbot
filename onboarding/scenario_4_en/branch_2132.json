@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica and Bob continue the video call without you.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Monica and I did our best, but were unsure about a few points. Can you give it another go?",
+        "options": [
+            {
+                "text": "Let me quickly review it and offer my thoughts.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You chose to review the work despite your leave, showing empathy and motivation, but could improve self-regulation."
+            },
+            {
+                "text": "I have full confidence in both of you. Just finalize it and send me the final version.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed trust in your colleagues and maintained boundaries, demonstrating good self-regulation, but empathy and motivation were lower."
+            },
+            {
+                "text": "I'm really on leave. Please handle it and I'll review it when I'm back.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You prioritized your leave and showed good emotional perception, but social skills could be improved."
+            }
+        ]
+    }
+}

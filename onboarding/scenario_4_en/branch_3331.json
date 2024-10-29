@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You assured Bob about handling workload management on your own. Monica overhears and steps in.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "Is that your way of saying you dont need my help?",
+        "options": [
+            {
+                "text": "No, it’s just a temporary issue. We’ll get through it together.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You reassured Monica and emphasized teamwork, demonstrating social skills and empathy, but your self-regulation could be improved."
+            },
+            {
+                "text": "I didn’t mean it that way. Let’s work on a plan to balance things better.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You clarified your statement and suggested a collaborative approach, showing strong perception and empathy."
+            },
+            {
+                "text": "If you’re feeling overwhelmed, maybe Bob can help us out?",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested involving another colleague, showing motivation and social skills, but empathy and perception were lower."
+            }
+        ]
+    }
+}

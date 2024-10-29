@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica glances at Bob, then turns to you.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "So, whats the plan? Do we just keep butting heads?",
+        "options": [
+            {
+                "text": "Sometimes conflict is unavoidable, but it can lead to better solutions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge the inevitability of conflict but suggest it can be constructive, showing good perception and motivation but lower empathy."
+            },
+            {
+                "text": "Monica, you have a point. We need a strategy to align our approaches.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You agree with Monica, showing good self-regulation and social skills while recognizing the need for strategic alignment."
+            },
+            {
+                "text": "Maybe we should just let each person handle things their own way.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a hands-off approach, showing a balanced view but potentially lower social skill in fostering teamwork."
+            }
+        ]
+    }
+}

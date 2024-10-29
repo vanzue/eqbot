@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs and glances at you.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "I just hope everyone is happy with the final decision.",
+        "options": [
+            {
+                "text": "It's impossible to please everyone, but we can aim for a compromise.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the challenge of pleasing everyone and suggested a compromise, showing good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "I'm sure we can find a way to make it work for most of us.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You expressed optimism and confidence, showing good self-regulation and social skills but moderate empathy and perception."
+            },
+            {
+                "text": "If people are too stubborn, it might be impossible to find a solution.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You pointed out a potential difficulty in reaching a consensus, showing good perception and motivation but lower social skills."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs and crosses her arms.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, We’re going to regret it if we rush this and make mistakes.",
+        "options": [
+            {
+                "text": "We can always correct issues later. Right now, speed is crucial.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of speed and demonstrate motivation to proceed quickly, showing social skills but lacking in empathy and perception."
+            },
+            {
+                "text": "You might be right, Monica. Let's spend a bit more time to get things right.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You agree with Monica’s concerns, showing good perception and empathy, but your motivation to move forward is somewhat reduced."
+            },
+            {
+                "text": "I understand the risk, but we need to find a balance between thoroughness and efficiency.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge both sides of the argument, demonstrating self-regulation and social skill but lacking strong perception and empathy."
+            }
+        ]
+    }
+}

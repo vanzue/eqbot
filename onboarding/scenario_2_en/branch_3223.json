@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica looks frustrated but listens intently.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, I get it, but lets not rush into mistakes.",
+        "options": [
+            {
+                "text": "Maybe we can break the project into phases to balance speed and detail.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offer a solution that values both speed and thoroughness, showing strong perception and empathy."
+            },
+            {
+                "text": "Bob, sometimes quick decisions can be beneficial. Let's trust the team.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You support a quicker approach, displaying good self-regulation and social skills in handling the disagreement."
+            },
+            {
+                "text": "It's critical to take our time with planning to avoid potential risks.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of thorough planning, reflecting strong motivation and social skills."
+            }
+        ]
+    }
+}

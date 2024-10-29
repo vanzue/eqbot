@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica rubs her temples, looking stressed.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, Maybe we should just take a break and come back with fresh perspectives.",
+        "options": [
+            {
+                "text": "Let's see if taking a break helps us think more clearly and come to an agreement.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 5,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You demonstrate high self-regulation and empathy, suggesting a break to reduce stress and improve decision-making."
+            },
+            {
+                "text": "I think we're wasting too much time. We need to decide now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for immediate action, showing motivation but lacking empathy for others' stress."
+            },
+            {
+                "text": "Why don't we list the pros and cons quickly and then decide?",
+                "scores": {
+                    "Perception": 5,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a practical approach to balance both viewpoints, showing strong perception and social skills."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica seemed stressed. Bob approaches you in the break room.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "Do you really think telling Monica to lighten her load was a good idea?",
+        "options": [
+            {
+                "text": "I thought it might help her manage better. Was I wrong?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You tried to justify your suggestion by showing concern for Monica's workload, demonstrating social skills and empathy, though your self-regulation could be improved."
+            },
+            {
+                "text": "Maybe not. Let’s figure out a better way together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the possibility of a mistake and showed willingness to collaborate, demonstrating strong perception and empathy."
+            },
+            {
+                "text": "Well, if she can't handle it, she should ask for help.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested a practical solution, showing motivation and social skills, but empathy and perception were lower."
+            }
+        ]
+    }
+}

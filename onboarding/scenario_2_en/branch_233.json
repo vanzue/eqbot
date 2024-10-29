@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob taps his fingers on the table, visibly annoyed.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Monica, taking risks without proper planning is reckless. We cant afford mistakes.",
+        "options": [
+            {
+                "text": "Bob, while I see your point, sometimes calculated risks are necessary for progress.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob's caution but emphasize the importance of taking risks, showing good perception and social skills."
+            },
+            {
+                "text": "Monica, Bob's approach might prevent future issues. Let's not dismiss it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You validate Bob's cautious approach, showing empathy and self-regulation while maintaining a balanced perspective."
+            },
+            {
+                "text": "Sometimes, we need to act quickly even if it involves risks. We can't always be too cautious.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for quick decisions, showing higher motivation but lower empathy towards Bob’s concerns."
+            }
+        ]
+    }
+}

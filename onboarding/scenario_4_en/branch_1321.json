@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob adjusts his glasses, Monica nods slightly.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "So, whats the next step now that weve agreed on planning ahead?",
+        "options": [
+            {
+                "text": "We should set up a regular meeting to discuss potential issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a proactive approach, showing good self-regulation and social skills, but empathy and perception could be improved."
+            },
+            {
+                "text": "Let's delegate this responsibility to someone who can handle it efficiently.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose delegation, demonstrating strong perception and social skills, but empathy is on the lower side."
+            },
+            {
+                "text": "If you both think that's the best way, I'm fine with it.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You show agreement with a hint of passive acceptance, showcasing empathy but lower in perception and motivation."
+            }
+        ]
+    }
+}

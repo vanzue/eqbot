@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob thanks you for extending your time on the call.",
+        "role": "Monica",
+        "location": "Home Office",
+        "description": "We need one more thing from you. Can you review this document before you go?",
+        "options": [
+            {
+                "text": "Alright, I'll quickly review it and provide my feedback.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You agreed to review the document, showing empathy and motivation, but potentially compromising your self-regulation."
+            },
+            {
+                "text": "I think it can wait. Let's handle it when I'm back.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested handling it later, maintaining boundaries and demonstrating good self-regulation, but empathy and motivation were lower."
+            },
+            {
+                "text": "I'm afraid I can't. Please proceed without me and update me later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You prioritized your leave, showing good emotional perception and self-regulation, but social skills could improve."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "After expressing doubt in Monicas ability to manage, Bob pulls you aside and says:",
+        "role": "Bob",
+        "location": "Hallway",
+        "description": "You know, that was kind of harsh. Monica really needed support, not criticism.",
+        "options": [
+            {
+                "text": "I didn't mean to be harsh. Let's see how we can support her better.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Bob's feedback and expressed willingness to support Monica, showing strong perception and empathy."
+            },
+            {
+                "text": "I understand, but she needs to learn to handle these tasks.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You justified your stance while acknowledging the need for support, demonstrating good self-regulation and motivation."
+            },
+            {
+                "text": "Maybe, but she should have mentioned if she was overwhelmed earlier.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You deflected some responsibility back to Monica, showing strong motivation but lower empathy and perception."
+            }
+        ]
+    }
+}

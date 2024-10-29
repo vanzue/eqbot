@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob throws his hands up in frustration.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, We cant keep changing our approach every time. Its confusing.",
+        "options": [
+            {
+                "text": "Let's establish a consistent strategy and stick to it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest a consistent strategy, showing good self-regulation and motivation but less empathy and perception."
+            },
+            {
+                "text": "We need to adapt our approach based on the situation. Flexibility is key.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You advocate for flexibility, showing good perception, empathy, and social skills but slightly less motivation."
+            },
+            {
+                "text": "Changing strategies is part of growth. Let's review what's working and adjust as needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest a review and adjustment approach, showing empathy and motivation but less perception and self-regulation."
+            }
+        ]
+    }
+}

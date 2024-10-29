@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You decide to check in with Monica about the task. Monica looks stressed and says:",
+        "role": "Monica",
+        "location": "Office",
+        "description": "I cant believe you dumped this task on me while youre on leave!",
+        "options": [
+            {
+                "text": "I apologize, Monica. Let's figure out a way to handle this together.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged her stress and offered to collaborate, demonstrating strong perception and empathy."
+            },
+            {
+                "text": "I didn't mean to overwhelm you. Can I help you prioritize?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You offered help while maintaining your boundaries, showing good self-regulation and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If it's too much, maybe Bob can assist.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested a practical solution, showing motivation and social skills, but empathy and perception were lower."
+            }
+        ]
+    }
+}

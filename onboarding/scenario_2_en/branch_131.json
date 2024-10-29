@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob leans forward, rubbing his temples as he looks at you and Monica.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, We need immediate action. How can we ensure quick yet effective decisions?",
+        "options": [
+            {
+                "text": "We should implement a system where quick decisions are made, but with room for later revisions.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggest a flexible approach that addresses the need for speed while allowing for adjustments, showing good perception and empathy."
+            },
+            {
+                "text": "I agree, Bob. We need to act fast and deal with any issues as they come up.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You support Bob's urgency, showing good self-regulation and social skills, but less empathy and perception."
+            },
+            {
+                "text": "Rushing might lead to mistakes. Let's carefully consider our options first.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a more cautious approach, showing empathy and motivation, but less emphasis on self-regulation and perception."
+            }
+        ]
+    }
+}

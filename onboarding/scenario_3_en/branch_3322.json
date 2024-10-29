@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob looks at Monica and you, raising an eyebrow.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "Do you think Emma and Sam will ever agree on anything?",
+        "options": [
+            {
+                "text": "They might not agree, but we can find a solution that works for everyone.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the disagreement and suggested a collaborative solution, showing good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "They both have strong opinions, but we'll figure it out.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You expressed optimism and confidence in resolving the issue, showing good self-regulation and social skills but moderate empathy and perception."
+            },
+            {
+                "text": "It's unlikely given their differences, but we have to try.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You pointed out the difficulty in reaching a consensus, showing good perception and motivation but lower social skills."
+            }
+        ]
+    }
+}

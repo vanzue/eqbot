@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You, Monica, and Bob are discussing the celebration planning.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob sighs and says, Maybe we should just cancel the whole thing.",
+        "options": [
+            {
+                "text": "Cancelling isn't the best idea. Let's find a compromise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You showed good self-regulation and empathy by suggesting finding a compromise, but motivation was lower."
+            },
+            {
+                "text": "Cancelling might be too drastic. We can come up with a better plan.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern and proposed an alternative, showing good perception but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "If we're really divided, cancelling might be the best option.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed willingness to adapt and consider another idea, showing good motivation but empathy and self-regulation were lower."
+            }
+        ]
+    }
+}

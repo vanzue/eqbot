@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You redirected a task to Monica while you were on leave. Bob sees this and comments:",
+        "role": "Bob",
+        "location": "Office",
+        "description": "I noticed you passed your task to Monica. Not cool while shes swamped.",
+        "options": [
+            {
+                "text": "Monica is very capable, I'm sure she can handle it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You expressed confidence in Monica's abilities, showing social skills, but lacked empathy and self-regulation."
+            },
+            {
+                "text": "I didn't realize Monica was that busy. I'll check in with her.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the situation and showed willingness to address it, demonstrating strong perception and empathy."
+            },
+            {
+                "text": "If Monica is overwhelmed, she can delegate it to someone else.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested a practical solution, showing motivation and social skills, but empathy and perception were lower."
+            }
+        ]
+    }
+}

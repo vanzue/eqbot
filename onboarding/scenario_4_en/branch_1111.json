@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica looks relieved but Bob still seems uneasy.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "I just hope this doesnt set a precedent for future tasks during your leave.",
+        "options": [
+            {
+                "text": "Let's focus on getting this done efficiently, and we can set clearer boundaries next time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of efficiency while acknowledging the need for better future boundaries, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I understand your concern, Bob. We'll make sure this is an exception and not the norm.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You reassure Bob, showing good perception and empathy but could improve on self-regulation and social skills."
+            },
+            {
+                "text": "I hear you, Bob. Let's handle this now and revisit our policies later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledge Bob's concern and suggest discussing policies later, showing good social skills but lower in motivation and self-regulation."
+            }
+        ]
+    }
+}

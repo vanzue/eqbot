@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You chose to reassure Monica about handling the task.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "I heard you told Monica to handle it. Are you sure thats the best choice?",
+        "options": [
+            {
+                "text": "I trust Monica's abilities and believe she can manage it.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You showed confidence in Monica, indicating good emotional perception and motivation, but your social skill could be improved."
+            },
+            {
+                "text": "I think it's better if I handle it myself. I'll step in.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You opted to take over, showing empathy and motivation, but self-regulation was compromised."
+            },
+            {
+                "text": "Let’s give her a chance. We can always step in if needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced giving Monica a chance and being prepared to help, showing good self-regulation, though motivation was lower."
+            }
+        ]
+    }
+}

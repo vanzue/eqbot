@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica and Bob are on a video call with you.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Thanks for agreeing to another meeting. How about we start at 9 AM?",
+        "options": [
+            {
+                "text": " AM works for me. I'll see you then.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You agreed to the early meeting time, demonstrating empathy and motivation, but potentially compromising your self-regulation."
+            },
+            {
+                "text": "Could we push it to 10 AM? I have something scheduled earlier.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested a later time, showing good self-regulation and emotional perception, but empathy and motivation were lower."
+            },
+            {
+                "text": " AM is a bit too early for me. Could we find another time?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You indicated that the early meeting time was inconvenient, showing good emotional perception, though social skills could improve."
+            }
+        ]
+    }
+}

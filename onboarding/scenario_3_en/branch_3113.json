@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob taps his pen on the table and looks at Monica.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "Sticking to one idea might oversimplify things. How will we ensure everyone feels included?",
+        "options": [
+            {
+                "text": "We can rotate the activities so everyone gets a chance to enjoy their preferred type.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a balanced approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "Maybe we should just make a decision and not worry too much about everyone's preferences.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You leaned towards decisiveness, showing good self-regulation and motivation, but empathy and perception were lower."
+            },
+            {
+                "text": "We could send out a poll to see what the majority prefers.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a democratic approach, showing good social skills, but perception, empathy, and self-regulation were moderate."
+            }
+        ]
+    }
+}

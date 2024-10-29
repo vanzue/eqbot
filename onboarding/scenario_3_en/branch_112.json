@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica rolls her eyes and says, A bar party will just be a noisy mess.",
+        "role": "You",
+        "location": "Meeting Room",
+        "description": "Why dont we find a bar with a quieter atmosphere?",
+        "options": [
+            {
+                "text": "We can look for a bar with a private room.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You showed empathy and social skill by suggesting a compromise, but motivation was lower."
+            },
+            {
+                "text": "Or we could do something else altogether if noise is a concern.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern and proposed an alternative, showing good perception but empathy was lower."
+            },
+            {
+                "text": "Let's just go with Ryan's outdoor activity idea then.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed willingness to adapt and support another idea, showing good motivation but self-regulation was lower."
+            }
+        ]
+    }
+}

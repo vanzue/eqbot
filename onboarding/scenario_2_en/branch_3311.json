@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica nods, still concerned. Bob looks at his notes.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, We really should take a bit more time to ensure we get this right.",
+        "options": [
+            {
+                "text": "I understand, Bob. Let's allocate five more minutes to finalize.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Bob's need for thoroughness and propose a short extension, showing empathy and self-regulation."
+            },
+            {
+                "text": "Monica, any chance you can give us a few more minutes to wrap up?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You address Monica's urgency directly, showing good perception and motivation to ensure everyone's concerns are met."
+            },
+            {
+                "text": "If we delay any longer, we'll miss the deadline. Let's make a quick decision.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of deadlines and urge a swift decision, demonstrating social skill and motivation to move forward."
+            }
+        ]
+    }
+}

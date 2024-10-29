@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs and says, I just dont see why we cant have a simple dinner.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Bob crosses his arms and says, A dinner wont be memorable enough for our hard work.",
+        "options": [
+            {
+                "text": "A dinner might be low-key, but it can still be special if we plan it right.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You showed empathy and social skill by acknowledging the suggestion and proposing a way to make it special, but motivation was lower."
+            },
+            {
+                "text": "Let's think about how we can combine a dinner with some fun activities.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good perception and social skill by suggesting a compromise, but empathy and self-regulation were moderate."
+            },
+            {
+                "text": "Maybe a dinner isn't exciting enough for everyone after such hard work.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the concern, showing good social skill and motivation, but empathy, perception, and self-regulation were moderate."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica looks thoughtful, Bob frowns.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "Next time, we should have a better plan to avoid such dilemmas. Dont you think?",
+        "options": [
+            {
+                "text": "Absolutely, Monica. Planning ahead is always beneficial.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You agree with Monica's suggestion, showing good self-regulation and social skills, but empathy and perception could be enhanced."
+            },
+            {
+                "text": "Let's discuss this further and come up with a concrete plan.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a detailed discussion, indicating strong perception and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If you both think it's necessary. I believe we did fine this time.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You express a slightly passive-aggressive agreement, showcasing empathy but lower in perception and motivation."
+            }
+        ]
+    }
+}

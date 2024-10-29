@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica crosses her arms and looks at Bob.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "Why dont we just vote on it and go with the majority?",
+        "options": [
+            {
+                "text": "Voting seems fair, but we should consider everyone's preferences too.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the fairness of voting but suggested considering everyone's preferences, showing good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "Sure, voting is a democratic way to decide.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You agreed with the voting idea, showing good self-regulation and social skills, but empathy was lower."
+            },
+            {
+                "text": "Voting might not solve the issue if people feel strongly about their choices.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You pointed out a potential flaw in the voting system, showing good perception and motivation but lower social skills."
+            }
+        ]
+    }
+}

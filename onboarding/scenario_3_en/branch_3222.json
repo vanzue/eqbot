@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs and looks at Bob after considering mixing elements from each suggestion.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Mixing elements? That sounds complicated and might not please anyone.",
+        "options": [
+            {
+                "text": "Maybe we can simplify it by picking just the best parts of each idea.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You tried to address the complexity by simplifying, showing good perception and empathy, but self-regulation and social skills were moderate."
+            },
+            {
+                "text": "We could give it a try and see if everyone is happy with the result.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a trial approach, showing good self-regulation and social skills, but perception and empathy were moderate."
+            },
+            {
+                "text": "Compromise is always tricky, but it's worth the effort to keep everyone satisfied.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the difficulty, showing good empathy and motivation, but social skills and perception were lower."
+            }
+        ]
+    }
+}

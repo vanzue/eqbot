@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You notice Monica biting her lip, looking concerned.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Setting up a detailed plan sounds like a lot of work. Is it really necessary?",
+        "options": [
+            {
+                "text": "It's crucial to avoid future conflicts. Let's do it for better teamwork.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You stress the importance of planning to ensure smooth collaboration, showing good self-regulation and motivation."
+            },
+            {
+                "text": "Maybe we can simplify it and just outline the main points.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a simpler approach, demonstrating perception of the workload while maintaining a balanced level of empathy and social skill."
+            },
+            {
+                "text": "If it's too much, we could handle issues as they arise instead.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You offer a reactive approach, showing empathy towards Monica's concerns but lower social skill in proactive planning."
+            }
+        ]
+    }
+}

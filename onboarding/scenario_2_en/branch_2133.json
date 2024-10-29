@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob leans forward, rubbing his temples.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "We cant just keep going in circles. How do we move forward?",
+        "options": [
+            {
+                "text": "Maybe we need to assign roles based on strengths and avoid overlap.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a practical solution that leverages team strengths, showing good perception and social skill."
+            },
+            {
+                "text": "Bob, I think we need to have more structured meetings to streamline our discussions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a structured approach to meetings, showing good self-regulation and motivation to improve the process."
+            },
+            {
+                "text": "We might just need to accept that some disagreements are part of the process.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledge the inevitability of some conflict, showing good perception and motivation but lower empathy."
+            }
+        ]
+    }
+}

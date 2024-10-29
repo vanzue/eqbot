@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica frowns slightly as she looks at the clock.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, Monica, we understand the urgency, but rushing could lead to mistakes.",
+        "options": [
+            {
+                "text": "Let's find a middle ground to keep things moving while ensuring quality.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You aim for a compromise, demonstrating good perception and empathy while maintaining motivation to progress."
+            },
+            {
+                "text": "We need to balance speed and thoroughness to avoid issues later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You highlight the importance of both approaches, showing good self-regulation and social skill."
+            },
+            {
+                "text": "Monica, we can't afford mistakes. A bit more discussion won't hurt.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You stress the importance of caution, showing empathy for the potential consequences but risking a slower pace."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica glances at you, raising an eyebrow.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Listing potential pitfalls is fine, but it might slow us down. What’s your take?",
+        "options": [
+            {
+                "text": "We could list the major risks only and proceed quickly with the minor ones.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach, maintaining pace while acknowledging potential risks, showing good self-regulation and social skills."
+            },
+            {
+                "text": "Monica, we need to be thorough to avoid mistakes. It’s worth the time.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of thoroughness, showing empathy towards risk management and motivation to ensure quality."
+            },
+            {
+                "text": "Addressing potential issues as they come up could save us more time.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight a more agile approach, showing good perception of the urgency but lower empathy towards thorough planning."
+            }
+        ]
+    }
+}

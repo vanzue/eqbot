@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica leans back in her chair, tapping her pen.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Alright, lets put it to a vote. Whos in favor of the bar idea?",
+        "options": [
+            {
+                "text": "Maybe we should first discuss the pros and cons of each option.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a more thorough discussion, showing good self-regulation and social skills, but perception and empathy were moderate."
+            },
+            {
+                "text": "I think a bar could be fun, but let's hear everyone's thoughts first.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the bar idea while remaining open to other opinions, showing good perception and empathy, but self-regulation and social skills were moderate."
+            },
+            {
+                "text": "A bar might not be the best idea for everyone. Let's consider other options.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
+}

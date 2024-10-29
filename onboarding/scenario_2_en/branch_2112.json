@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob massages his temples, looking increasingly frustrated.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "I think we need to find a middle ground to avoid future conflicts.",
+        "options": [
+            {
+                "text": "Let's put together a plan that factors in both urgency and thoroughness.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a balanced approach, showing good self-regulation and social skills in addressing both viewpoints."
+            },
+            {
+                "text": "I agree, Monica. We need to align our methods to improve efficiency.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the need for alignment, showing empathy and social skill in recognizing the importance of both approaches."
+            },
+            {
+                "text": "Conflicts are inevitable. We just need to handle them as they arise.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You downplay the need for change, showing good perception but lower empathy towards Monica's concerns."
+            }
+        ]
+    }
+}

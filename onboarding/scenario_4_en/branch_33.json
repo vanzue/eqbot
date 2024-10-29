@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You suggested Monica delegate her tasks. Monica hears about it and approaches you.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "So, you think I cant handle my workload?",
+        "options": [
+            {
+                "text": "It's not that. I just thought it might help to lighten your load.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You attempted to clarify your intention, showing social skills and empathy, but your self-regulation could be improved."
+            },
+            {
+                "text": "I didn't mean to imply that. Let's discuss how we can manage the tasks better.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the misunderstanding and showed willingness to collaborate, demonstrating strong perception and empathy."
+            },
+            {
+                "text": "If it's overwhelming, it's okay to ask for help.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested seeking help, showing motivation and social skills, but empathy and perception were lower."
+            }
+        ]
+    }
+}

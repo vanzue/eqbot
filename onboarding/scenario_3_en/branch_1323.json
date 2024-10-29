@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica, Bob, and you are still in the meeting room discussing ideas.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "Monica crosses her arms and says, Honestly, I dont think an outdoor activity is the best idea.",
+        "options": [
+            {
+                "text": "It's one option, but maybe we need to consider all suggestions equally.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the suggestion, displaying good social skill but moderate perception and self-regulation. Empathy was lower."
+            },
+            {
+                "text": "Outdoor activities can be a great way to bond; let's give it a shot.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed confidence in the idea, demonstrating good perception and motivation. However, empathy was lower."
+            },
+            {
+                "text": "Maybe you're right; we should think about an indoor activity instead.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed empathy by acknowledging the concern, but self-regulation and social skill were moderate."
+            }
+        ]
+    }
+}

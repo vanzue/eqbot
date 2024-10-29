@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica glances at Bob and raises an eyebrow.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "So, does anyone actually want to go to a bar?",
+        "options": [
+            {
+                "text": "Perhaps a bar is not the best idea for everyone. What do you think, Monica?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You considered others' preferences and sought Monica's opinion, showing good perception, empathy, and social skills."
+            },
+            {
+                "text": "A bar could be fun, but I see why some might be hesitant.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You recognized the potential downside while expressing tentative support, showing good self-regulation and motivation."
+            },
+            {
+                "text": "Going to a bar isn't going to work for everyone. Let's think of something else.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed your disagreement calmly, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
+}

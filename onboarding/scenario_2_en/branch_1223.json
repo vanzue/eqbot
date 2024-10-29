@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob rubs his temples, clearly stressed.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, This project is behind schedule because of endless discussions.",
+        "options": [
+            {
+                "text": "Perhaps we need a more structured approach to balance discussions and action.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy by acknowledging Bob's frustration and suggest a balanced approach to improve efficiency."
+            },
+            {
+                "text": "I understand your frustration, Bob. Maybe we could set strict time limits for discussions.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You recognize Bob's concern and propose a practical solution, showing good self-regulation and social skill."
+            },
+            {
+                "text": "Focusing solely on speed might lead to errors. We need to find a middle ground.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of thoroughness while acknowledging the need for efficiency, showing empathy and motivation."
+            }
+        ]
+    }
+}

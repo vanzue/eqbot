@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You see Bob and Monica exchanging concerned glances as the meeting progresses.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, If we keep switching between approaches, it will just confuse everyone.",
+        "options": [
+            {
+                "text": "Let's clarify our strategy and stick to it consistently.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for a clear and consistent strategy, showing good self-regulation and motivation, but less empathy."
+            },
+            {
+                "text": "I think a flexible approach can be beneficial if managed well.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You support a flexible approach, demonstrating good perception and empathy, but slightly lower self-regulation and motivation."
+            },
+            {
+                "text": "Switching approaches might be necessary to adapt to different situations.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest adaptability, showing high perception and social skills, but lower empathy and motivation."
+            }
+        ]
+    }
+}

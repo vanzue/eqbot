@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs, glancing between you and Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, I just dont want us to get bogged down in endless discussions.",
+        "options": [
+            {
+                "text": "Balancing quick actions with thorough planning can ensure we don't miss critical details.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge both the need for speed and thoroughness, demonstrating empathy and perception."
+            },
+            {
+                "text": "I understand, Monica, but rushing might lead to mistakes that cost more time later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You emphasize the risks of rushing, showing good self-regulation and social skills in addressing Monica's concerns."
+            },
+            {
+                "text": "We should find a middle ground where we act swiftly but also ensure quality.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach, valuing both speed and quality, demonstrating empathy and social skills."
+            }
+        ]
+    }
+}

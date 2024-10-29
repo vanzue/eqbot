@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica glances at you with a skeptical look.",
+        "role": "you",
+        "location": "Conference Room",
+        "description": "I think we should come up with a different idea for celebrating.",
+        "options": [
+            {
+                "text": "How about we brainstorm and find something that suits everyone?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a collaborative approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "I guess a different idea might work better. Any suggestions?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the need for a new idea and sought input, showing good self-regulation and motivation, but empathy and social skill were moderate."
+            },
+            {
+                "text": "Maybe none of these ideas are suitable. Let's rethink the plan.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed a need for a new plan calmly, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
+}

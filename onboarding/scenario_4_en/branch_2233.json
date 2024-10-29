@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You balanced helping Monica with maintaining your leave.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "I saw Monicas message. Isnt it better if you handle it directly?",
+        "options": [
+            {
+                "text": "Monica is capable. Let's give her a chance to prove herself.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You chose to trust Monica's abilities, showing good self-regulation and motivation, but social skill could be improved."
+            },
+            {
+                "text": "I guess I can step in for a bit to help her out.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You opted to assist Monica briefly, demonstrating empathy and motivation, but self-regulation was slightly compromised."
+            },
+            {
+                "text": "If Monica needs help, she can ask for it directly. Let's trust her judgment.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested trusting Monica's judgment, showing good emotional perception and maintaining boundaries, but empathy could be stronger."
+            }
+        ]
+    }
+}

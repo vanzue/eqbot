@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You lean forward, noticing Monicas worried expression.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, If we keep switching strategies, how can we ensure consistency?",
+        "options": [
+            {
+                "text": "Consistency is important, but we also need to adapt when necessary.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You balance the need for consistency with the necessity for adaptation, demonstrating good perception, empathy, and social skills."
+            },
+            {
+                "text": "Maybe we should stick to one strategy and see it through before making changes.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize sticking to a single strategy for consistency, showing good self-regulation and motivation but less empathy and perception."
+            },
+            {
+                "text": "Switching strategies might be confusing, but it can also be a sign of growth.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You highlight the potential benefits of changing strategies, showing empathy and motivation but slightly less self-regulation and perception."
+            }
+        ]
+    }
+}

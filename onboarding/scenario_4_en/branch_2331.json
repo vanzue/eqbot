@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You acknowledged the urgency and suggested finding another way.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Weve tried other options, but we really need your expertise. Can you reconsider?",
+        "options": [
+            {
+                "text": "I understand the challenge, but I'm unable to assist directly. Let's arrange a follow-up next week.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledged the situation and proposed a future discussion, showing good emotional perception and self-regulation, but lower motivation."
+            },
+            {
+                "text": "If it's that critical, I'll join for a short session to provide guidance.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You decided to join despite your leave, demonstrating empathy and motivation, but compromising self-regulation."
+            },
+            {
+                "text": "I've already communicated my stance. You'll need to manage without my direct involvement.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You reinforced your boundaries, showing good self-regulation, but emotional perception and empathy were lower."
+            }
+        ]
+    }
+}

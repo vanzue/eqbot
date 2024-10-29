@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica nods and reluctantly agrees. Bob raises an eyebrow.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, Isnt it better to stick with a detailed plan and do it right?",
+        "options": [
+            {
+                "text": "We can follow the detailed plan and adjust as we go.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a flexible approach, showing empathy and perception by acknowledging the need for both planning and adaptability."
+            },
+            {
+                "text": "A detailed plan is indeed crucial, but we can also be open to simplifying if needed.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize the importance of thorough planning while being open to adjustments, showing good self-regulation and social skills."
+            },
+            {
+                "text": "Let's stick with the detailed plan for now and see if we need to simplify later.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a methodical approach, reflecting good motivation and social skills."
+            }
+        ]
+    }
+}

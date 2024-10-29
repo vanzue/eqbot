@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica glances at her watch and sighs.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, We need to wrap this up soon, Monica is getting impatient.",
+        "options": [
+            {
+                "text": "Maybe we should prioritize the most critical points and finish quickly.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You propose focusing on key issues to expedite the meeting, demonstrating good perception and empathy."
+            },
+            {
+                "text": "Let's stick to our previous approach. Thoroughness is key to avoiding future issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You stress the importance of a thorough approach, showing good self-regulation and social skill."
+            },
+            {
+                "text": "Monica, we understand your urgency, but a few more minutes won't hurt to ensure quality.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Monica's urgency while emphasizing the importance of quality, demonstrating empathy."
+            }
+        ]
+    }
+}

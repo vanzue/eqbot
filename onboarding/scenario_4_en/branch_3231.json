@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica and Bob are both looking at you expectantly after your discussion.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "So, whats the plan now with this task?",
+        "options": [
+            {
+                "text": "Let's all sit down and figure out how to tackle this efficiently.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested a collaborative approach, showing strong perception and empathy, but self-regulation could be improved."
+            },
+            {
+                "text": "I think we should break it down and assign parts based on our strengths.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You proposed a structured plan, showcasing good self-regulation and social skills, but motivation was lower."
+            },
+            {
+                "text": "Maybe we should consider bringing in another team member to help.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested getting additional help, displaying motivation and social skills, but lacked in perception and empathy."
+            }
+        ]
+    }
+}

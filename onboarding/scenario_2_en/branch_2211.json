@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob crosses his arms, glancing at Alex and then you.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Bob says, Milestones are good, but we cant neglect the details. Whats your take?",
+        "options": [
+            {
+                "text": "I think setting clear milestones will help us balance speed and thoroughness.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You advocate for a balanced approach, showing good self-regulation and social skills by aiming for both speed and thoroughness."
+            },
+            {
+                "text": "While milestones are important, let's not forget to double-check our work at each stage.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of double-checking work, showing empathy and motivation for achieving a thorough outcome."
+            },
+            {
+                "text": "Milestones are fine, but we should prioritize getting things done quickly and fix issues as they arise.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You prioritize speed, showing good perception of urgency but lower empathy towards the need for thoroughness."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You acknowledge Bobs attention to detail but propose focusing on key points.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, We cant afford to waste more time. Are we moving forward or not?",
+        "options": [
+            {
+                "text": "Let's quickly outline the main points and then decide.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a balanced approach, showing perception and social skill while managing the situation's urgency."
+            },
+            {
+                "text": "Yes, Monica, we need to start now. We'll figure out the details as we go.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You prioritize action, showing motivation but potentially overlooking the importance of thorough planning."
+            },
+            {
+                "text": "We should take a bit more time to ensure we're not missing anything critical.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You advocate for caution and thoroughness, demonstrating empathy and self-regulation but potentially delaying progress."
+            }
+        ]
+    }
+}

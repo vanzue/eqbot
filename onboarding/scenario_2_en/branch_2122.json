@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica glances at her notes, looking conflicted.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "If we minimize overlap, wont that lead to more misunderstandings?",
+        "options": [
+            {
+                "text": "It's possible, but we can use regular updates to stay aligned.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the potential for misunderstandings but propose a structured approach to mitigate them, showing good self-regulation and social skills."
+            },
+            {
+                "text": "I see your concern, but reducing overlap might actually streamline our workflow.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You validate Monica's concern but highlight the potential benefits of reducing overlap, showing empathy and motivation to improve efficiency."
+            },
+            {
+                "text": "Overlapping roles can lead to conflicts. We should try this approach and adjust if needed.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need to try new approaches to reduce conflict, showing good perception but lower empathy towards Monica's concerns."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob leans back in his chair, crossing his arms.",
+        "role": "Bob",
+        "location": "Meeting Room",
+        "description": "Balancing everyone’s preferences might lead to more confusion.",
+        "options": [
+            {
+                "text": "We can create a poll to see which option is preferred by most.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a democratic approach, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "It’s true, but we need to consider everyone’s feelings to avoid dissatisfaction.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You highlighted the importance of inclusivity, showing good empathy and self-regulation, but social skill and perception were moderate."
+            },
+            {
+                "text": "Maybe we should go with the majority’s choice to keep it simple.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested a pragmatic approach, showing good empathy and motivation, but social skill and perception were lower."
+            }
+        ]
+    }
+}

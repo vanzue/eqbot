@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You stepped in to handle the urgent task.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "Thanks for stepping in. Bob feels we shouldve handled it ourselves. Thoughts?",
+        "options": [
+            {
+                "text": "Let's discuss this later. We need to focus on the task now.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You chose to prioritize the task over the discussion, showing good self-regulation, though motivation was lower."
+            },
+            {
+                "text": "I think Bob's right. It was my mistake to step in without consulting.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the mistake and showed empathy, but self-regulation was compromised."
+            },
+            {
+                "text": "We all make decisions under pressure. Let's learn from this for next time.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You provided a balanced perspective, showing good emotional perception, but social skill could be improved."
+            }
+        ]
+    }
+}

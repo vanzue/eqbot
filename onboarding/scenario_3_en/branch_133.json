@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica and Bob are still discussing celebration plans.",
+        "role": "Monica",
+        "location": "Meeting Room",
+        "description": "Monica sighs and says, Formal dinners are so stiff and boring.",
+        "options": [
+            {
+                "text": "Formal dinners can be elegant and memorable. Let's give it a try.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You showed confidence in the idea, displaying good self-regulation and motivation, but perception and empathy were moderate."
+            },
+            {
+                "text": "Maybe we can incorporate some fun elements to make the dinner more lively.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the concern and proposed a compromise, showing good perception and empathy, but social skill and self-regulation were moderate."
+            },
+            {
+                "text": "Formal dinners might not be everyone's cup of tea; let's consider more options.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You showed good social skill by considering other options, but perception, empathy, and self-regulation were moderate."
+            }
+        ]
+    }
+}

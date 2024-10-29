@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You asked Bob to take on one of Monica’s tasks. Monica reacts to this.",
+        "role": "Monica",
+        "location": "Office",
+        "description": "Are you seriously offloading my tasks to Bob now?",
+        "options": [
+            {
+                "text": "I'm just trying to find the best way to manage things.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You attempted to justify your actions, showing social skills and empathy, but self-regulation could be improved."
+            },
+            {
+                "text": "I thought it would help to relieve some of your burden.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the situation and explained your intention, demonstrating strong perception and empathy."
+            },
+            {
+                "text": "If you're overwhelmed, it's okay to delegate tasks.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested a practical solution, showing motivation and social skills, but empathy and perception were lower."
+            }
+        ]
+    }
+}

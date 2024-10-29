@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob leans back in his chair, glancing at Monica.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "A quieter venue sounds more inclusive. But wont that be boring for some?",
+        "options": [
+            {
+                "text": "We could find a middle ground that accommodates both preferences.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a balanced solution, showing good perception, empathy, and social skills, but self-regulation and motivation were moderate."
+            },
+            {
+                "text": "True, it might be boring. Maybe we can add some fun elements.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the potential downside but suggested a compromise, showing good self-regulation and motivation."
+            },
+            {
+                "text": "Not everyone enjoys loud places. We should prioritize inclusivity.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 2,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized inclusivity, showing good empathy and motivation, but social skills and perception were lower."
+            }
+        ]
+    }
+}

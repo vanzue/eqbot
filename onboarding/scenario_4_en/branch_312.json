@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You offered to help Monica manage her workload. Bob later comments:",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "So, now youre doing Monicas job too?",
+        "options": [
+            {
+                "text": "Just trying to be a team player. We all need to support each other.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasized teamwork and empathy, showing strong social skills, but slightly lower self-regulation."
+            },
+            {
+                "text": "Monica was overloaded, so I thought it was best to help her prioritize.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You explained your rationale calmly, demonstrating good perception and motivation, but empathy could be stronger."
+            },
+            {
+                "text": "If you're concerned, maybe you can assist Monica instead.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You redirected the suggestion to Bob, showing strong motivation but lower empathy and perception."
+            }
+        ]
+    }
+}

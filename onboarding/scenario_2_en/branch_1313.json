@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sits up straight, glancing at Bob and you with concern.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, Bob, do you think taking more time will help or hinder our progress?",
+        "options": [
+            {
+                "text": "It's crucial to strike a balance. Let's set a timeframe for discussions before taking action.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a balanced approach, showing good perception and empathy while maintaining social harmony."
+            },
+            {
+                "text": "I believe quick actions are essential, and we can refine as we progress.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the importance of quick decisions, showing good self-regulation and motivation but less empathy."
+            },
+            {
+                "text": "We need to ensure decisions are well thought out to avoid future issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You advocate for thorough decision-making, demonstrating empathy and motivation but less emphasis on self-regulation."
+            }
+        ]
+    }
+}

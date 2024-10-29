@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob nods thoughtfully, then glances at Monica and you.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "Still, its tough when people feel left out.",
+        "options": [
+            {
+                "text": "We could rotate celebration ideas so everyone gets a turn.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a rotating system to include everyone's preferences, showing good perception and empathy but moderate social skills and self-regulation."
+            },
+            {
+                "text": "True, but it's hard to find a solution that pleases everyone.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the difficulty of pleasing everyone, showing good self-regulation and motivation but moderate perception and empathy."
+            },
+            {
+                "text": "Maybe we should set a rule that everyone must compromise sometimes.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested a rule for compromise, showing good social skills and motivation but lower empathy."
+            }
+        ]
+    }
+}

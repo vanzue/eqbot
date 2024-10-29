@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob looks at you and Monica while scratching his head.",
+        "role": "Bob",
+        "location": "Break Room",
+        "description": "Sticking to one plan might be easier, but it could be boring for some.",
+        "options": [
+            {
+                "text": "Let's try to find a balance that accommodates everyone's preferences.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged Bob's concern, showing good perception and empathy. Your self-regulation and social skills were moderate."
+            },
+            {
+                "text": "Maybe, but sticking to one plan will ensure we avoid any complications.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed self-regulation and practicality by considering simplicity, but empathy and social skills were moderate."
+            },
+            {
+                "text": "It's true, but it might be worth the effort to mix things up a bit.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested adding some variety, showing good social skill, but your self-regulation and empathy were lower."
+            }
+        ]
+    }
+}

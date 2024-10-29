@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica sighs and glances at Bob, who remains silent.",
+        "role": "You",
+        "location": "Conference Room",
+        "description": "You say, We need to move forward, but lets make sure we cover everyones concerns first.",
+        "options": [
+            {
+                "text": "Monica, can you summarize the main points we've discussed so far?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You show empathy by ensuring everyone's voice is heard and aim to keep the meeting focused, displaying good self-regulation."
+            },
+            {
+                "text": "Bob, can you share any final thoughts before we make a decision?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 5,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You show high empathy by explicitly inviting Bob to share his perspective, fostering an inclusive environment."
+            },
+            {
+                "text": "Let's set a deadline for this discussion and then make a decision.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a practical approach to manage the discussion time effectively, showing good social skills and motivation."
+            }
+        ]
+    }
+}

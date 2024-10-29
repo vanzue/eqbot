@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica leans forward, looking at both you and Bob with concern.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, This back-and-forth is not helping. We need a clear direction.",
+        "options": [
+            {
+                "text": "We should establish clear guidelines to ensure everyone is on the same page.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest creating clear guidelines to maintain consistency and reduce confusion, showing good perception, empathy, and social skills."
+            },
+            {
+                "text": "Let's decide on a single approach and stick to it for the rest of this project.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose committing to one approach to avoid further conflicts, showing good self-regulation and motivation but less empathy and social skills."
+            },
+            {
+                "text": "I think we should be flexible and adapt our approach as needed.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You advocate for flexibility, showing good perception and social skills, but slightly lower empathy and self-regulation."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica crosses her arms, looking between you and Bob.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "I agree with Alex. Sometimes we have to take risks to move forward. Why cant you see that?",
+        "options": [
+            {
+                "text": "Every approach has its merits. What if we assess the risks quickly and then decide?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge both viewpoints, showing good perception and social skill while trying to keep the project moving."
+            },
+            {
+                "text": "Monica, Bob's cautious approach might save us from potential problems. It's worth considering.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You show empathy for Bob's cautious approach while maintaining a balanced view of the situation."
+            },
+            {
+                "text": "We can't always play it safe. Sometimes, quick action is necessary, even if there's a risk.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasize the need for quick decisions, showing higher motivation but lower empathy towards Bob’s concerns."
+            }
+        ]
+    }
+}

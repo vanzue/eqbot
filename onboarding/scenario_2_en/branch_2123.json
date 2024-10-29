@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Monica shifts uncomfortably in her chair, looking at both of you.",
+        "role": "Monica",
+        "location": "Conference Room",
+        "description": "Monica says, Compromise sounds good, but how do we ensure its fair?",
+        "options": [
+            {
+                "text": "Let's have a neutral party help us mediate the discussion.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest involving an unbiased third party, showing good self-regulation and social skills."
+            },
+            {
+                "text": "We can set clear guidelines on what each of us is willing to compromise on.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You propose a structured approach to ensure fairness, demonstrating empathy and motivation for resolution."
+            },
+            {
+                "text": "Fairness is subjective. We should focus on what benefits the project most.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You prioritize the project's success over individual fairness, showing good perception but lower empathy."
+            }
+        ]
+    }
+}
