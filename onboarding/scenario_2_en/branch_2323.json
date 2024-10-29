@@ -3,7 +3,7 @@
         "background": "Monica looks around, tapping her pen nervously.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'We can't keep delaying. Bob, why are you always so hesitant?'",
+        "description": "We cant keep delaying. Bob, why are you always so hesitant?",
         "options": [
             {
                 "text": "Maybe Bob has valid concerns. What if we try to address them quickly?",

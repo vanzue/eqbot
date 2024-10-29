@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob and Monica are still discussing the task in the office, and you decide to join the discussion via a video call.",
-        "role": "Bob",
+        "background": "Monica looks at you, still visibly stressed. Bob leans back in his chair, arms crossed.",
+        "role": "Monica",
         "location": "Office",
-        "description": "'We understand you're on leave, but could you join a quick call to clarify a few more points?'",
+        "description": "I cant believe this is happening. How do you expect me to manage all this?",
         "options": [
             {
-                "text": "I can join the call briefly, but I need to get back to my break soon.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
-            },
-            {
-                "text": "I think the current feedback should suffice. Try to work with what you have for now.",
-                "scores": {
-                    "Perception": 2,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
-            },
-            {
-                "text": "Sure, I can join the call and help you out. Let's get this sorted together.",
+                "text": "Let's break it down together and see what can be prioritized.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
                     "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You offered to collaborate and prioritize, showing strong perception and empathy, while maintaining self-regulation."
+            },
+            {
+                "text": "I understand it's overwhelming, but we can find a way to handle it.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You demonstrated strong empathy and social skills by offering to help, but your self-regulation and motivation to maintain your leave were slightly lower."
+                "analysis": "You acknowledged her feelings and offered a solution, showing good self-regulation and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "This needs to get done, so let’s focus on solutions instead of problems.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized the importance of the task, showing motivation but lacked empathy and perception."
             }
         ]
     }

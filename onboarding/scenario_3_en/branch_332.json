@@ -3,7 +3,7 @@
         "background": "Monica sighs and glances at you.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'I just hope everyone is happy with the final decision.'",
+        "description": "I just hope everyone is happy with the final decision.",
         "options": [
             {
                 "text": "It's impossible to please everyone, but we can aim for a compromise.",

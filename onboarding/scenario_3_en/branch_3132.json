@@ -3,7 +3,7 @@
         "background": "Bob crosses his arms and looks at Monica thoughtfully.",
         "role": "You",
         "location": "Meeting Room",
-        "description": "'I understand, but we need to be practical. A simpler plan might work best.'",
+        "description": "I understand, but we need to be practical. A simpler plan might work best.",
         "options": [
             {
                 "text": "Maybe we can simplify the plan but still include some variety.",

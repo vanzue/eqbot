@@ -3,7 +3,7 @@
         "background": "Sam suggests going to a bar for a lively party, and Monica frowns.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "'I don't think a bar is a good idea.'",
+        "description": "I dont think a bar is a good idea.",
         "options": [
             {
                 "text": "Bars can be fun if we pick one with a good atmosphere.",

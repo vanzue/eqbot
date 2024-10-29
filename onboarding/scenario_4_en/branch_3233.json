@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica is typing furiously while Bob shakes his head, visibly stressed.",
+        "background": "Monica overhears the conversation with Bob and steps in, looking frustrated.",
         "role": "Monica",
         "location": "Office",
-        "description": "'We’re still struggling here. Are you sure you can't help a bit more?'",
+        "description": "This is getting out of hand. We need to sort this out.",
         "options": [
             {
-                "text": "I'll help a little more, but I can't fully commit.",
+                "text": "Let's all sit down and find a way to distribute the workload fairly.",
                 "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 2,
+                    "Perception": 4,
+                    "Self Regulation": 3,
                     "Empathy": 4,
                     "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You agreed to help further, showing empathy but lower self-regulation as you struggled to maintain your boundaries."
+                "analysis": "You suggested a collaborative approach to problem-solving, showing strong perception and empathy, but could improve on self-regulation."
             },
             {
-                "text": "I really can't do more. You need to manage this on your own.",
+                "text": "I understand it's frustrating. Let's prioritize and tackle the most urgent tasks first.",
                 "scores": {
-                    "Perception": 2,
+                    "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You maintained your boundaries, showing strong self-regulation, but your empathy and motivation to help were lower."
-            },
-            {
-                "text": "Maybe there's a middle ground we can find? What exactly do you need?",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
                     "Empathy": 3,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You sought a compromise, showing good perception and social skills, but your self-regulation and motivation were balanced."
+                "analysis": "You acknowledged the frustration and offered a practical solution, demonstrating good self-regulation and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If the workload is too much, we might need to escalate this to management.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested involving management as a solution, showing motivation and social skills, but empathy and perception were lower."
             }
         ]
     }

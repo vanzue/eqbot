@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "Monica suggests considering a mix of activities to cater to everyone's preferences.",
+        "background": "Monica suggests considering a mix of activities to cater to everyones preferences.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'I think a mix might just complicate things even more.'",
+        "description": "I think a mix might just complicate things even more.",
         "options": [
             {
                 "text": "A mix could ensure everyone has something they enjoy.",

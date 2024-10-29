@@ -3,7 +3,7 @@
         "background": "Monica looks at Bob, then back at you.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Isn't this taking too long? We have deadlines.'",
+        "description": "Monica says, Isnt this taking too long? We have deadlines.",
         "options": [
             {
                 "text": "We need to cover all details to ensure the project's success.",

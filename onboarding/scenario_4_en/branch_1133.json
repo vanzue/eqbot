@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica sighs and rolls her eyes, while Bob checks his watch frequently.",
-        "role": "Monica",
+        "background": "Bob looks thoughtful and turns to you.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'Are we seriously going to delay this again? We need a plan that everyone sticks to.'",
+        "description": "Do you think we handled this situation the best we could?",
         "options": [
             {
-                "text": "Let's try to outline a plan together so everyone knows their role.",
+                "text": "I think we did well given the circumstances, but there's always room for improvement.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge the effort made while suggesting future improvements, showing good self-regulation and social skills, but empathy and perception could be stronger."
+            },
+            {
+                "text": "Honestly, I believe we could have managed things better with more foresight.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
                     "Empathy": 3,
                     "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You suggested collaboration to create a clear plan, showing good perception and balanced emotional regulation."
-            },
-            {
-                "text": "Monica, you're right. Bob, can we agree on a deadline?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You supported Monica's point and sought to establish a deadline, demonstrating empathy and social skills."
-            },
-            {
-                "text": "Monica, maybe we need to rethink our approach. Bob, any suggestions?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 2,
-                    "Social Skill": 4,
                     "Motivation": 2
                 },
-                "analysis": "You suggested re-evaluating the approach, showing social skill but lower empathy and motivation."
+                "analysis": "You express a critical view and emphasize the need for foresight, demonstrating good perception but lower in motivation and social skills."
+            },
+            {
+                "text": "We did what we could under the circumstances; let's focus on learning and moving forward.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize learning from the experience and moving forward, showing good self-regulation but could improve on perception and empathy."
             }
         ]
     }

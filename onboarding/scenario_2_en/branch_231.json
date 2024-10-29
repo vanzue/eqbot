@@ -3,7 +3,7 @@
         "background": "Monica sighs, glancing at Bob with frustration.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Every time we rush, we end up with mistakes. Can't we be more careful?'",
+        "description": "Every time we rush, we end up with mistakes. Cant we be more careful?",
         "options": [
             {
                 "text": "Let's not get stuck in a loop of overthinking. Quick decisions can drive progress.",

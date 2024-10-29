@@ -3,7 +3,7 @@
         "background": "Bob sighs and leans back in his chair.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'Sticking to one plan might be boring for some of us.'",
+        "description": "Sticking to one plan might be boring for some of us.",
         "options": [
             {
                 "text": "We can always add a fun twist to the plan to keep it interesting.",

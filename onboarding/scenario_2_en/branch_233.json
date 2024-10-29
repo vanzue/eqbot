@@ -3,7 +3,7 @@
         "background": "Bob taps his fingers on the table, visibly annoyed.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Monica, taking risks without proper planning is reckless. We can't afford mistakes.'",
+        "description": "Monica, taking risks without proper planning is reckless. We cant afford mistakes.",
         "options": [
             {
                 "text": "Bob, while I see your point, sometimes calculated risks are necessary for progress.",

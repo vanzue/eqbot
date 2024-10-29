@@ -3,7 +3,7 @@
         "background": "Bob looks at you and Monica while scratching his head.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'Sticking to one plan might be easier, but it could be boring for some.'",
+        "description": "Sticking to one plan might be easier, but it could be boring for some.",
         "options": [
             {
                 "text": "Let's try to find a balance that accommodates everyone's preferences.",

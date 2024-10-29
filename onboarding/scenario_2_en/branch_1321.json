@@ -3,7 +3,7 @@
         "background": "Monica leans forward, tapping her pen on the table.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Okay, we have a strategy now. How do we ensure everyone follows it?'",
+        "description": "Monica says, Okay, we have a strategy now. How do we ensure everyone follows it?",
         "options": [
             {
                 "text": "Let's hold a team meeting to explain the strategy and its importance.",

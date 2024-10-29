@@ -1,12 +1,12 @@
 {
     "scenes": {
-        "background": "Bob sighs deeply, rubbing his forehead. Monica glances at you, clearly overwhelmed.",
-        "role": "Bob",
+        "background": "Monica and Bob continue discussing the task.",
+        "role": "Monica",
         "location": "Office",
-        "description": "'We can't keep pushing this off. What's our next step here?'",
+        "description": "We all need to be more aware of each others workload and boundaries.",
         "options": [
             {
-                "text": "Let's gather our thoughts and come up with a plan together.",
+                "text": "Absolutely, Monica. Let's plan a better way to manage tasks.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,29 +14,29 @@
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You suggested a collaborative approach, showing good perception and social skills. However, your self-regulation could be stronger."
+                "analysis": "You agree and suggest a solution, showing strong perception and social skills, but motivation and empathy could be improved."
             },
             {
-                "text": "Monica, do you need more resources to handle these issues?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You offered to understand Monica's situation better, showing high empathy. However, the overall engagement and motivation to resolve the issue were moderate."
-            },
-            {
-                "text": "Bob, maybe we should talk about this after Monica has had some time to regroup.",
+                "text": "I agree, but sometimes immediate action is necessary to avoid bigger issues.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 2,
+                    "Empathy": 3,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You suggested deferring the discussion to avoid immediate conflict, demonstrating strong self-regulation but lower empathy and motivation to address the problem now."
+                "analysis": "You justify the urgency of your actions, demonstrating good self-regulation and motivation but lower perception and empathy."
+            },
+            {
+                "text": "I think we managed well. Let's not overcomplicate things.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You downplay the issue, showing good social skills but lower in perception and empathy."
             }
         ]
     }

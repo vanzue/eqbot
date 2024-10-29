@@ -3,7 +3,7 @@
         "background": "Monica frowns slightly, looking concerned.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Taking more time to plan might be safer, but are we risking delays?'",
+        "description": "Bob says, Taking more time to plan might be safer, but are we risking delays?",
         "options": [
             {
                 "text": "We could prioritize critical tasks first and then refine the plan as we go.",

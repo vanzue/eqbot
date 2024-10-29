@@ -3,7 +3,7 @@
         "background": "Monica and Bob discuss the celebration plans. Monica looks thoughtful.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'Do you think everyone will be okay with a less formal venue?'",
+        "description": "Do you think everyone will be okay with a less formal venue?",
         "options": [
             {
                 "text": "A less formal venue could make everyone feel more relaxed and comfortable.",

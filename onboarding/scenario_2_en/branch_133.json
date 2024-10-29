@@ -3,7 +3,7 @@
         "background": "Bob throws his hands up in frustration.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'We can't keep changing our approach every time. It's confusing.'",
+        "description": "Bob says, We cant keep changing our approach every time. Its confusing.",
         "options": [
             {
                 "text": "Let's establish a consistent strategy and stick to it.",

@@ -3,7 +3,7 @@
         "background": "Monica nods slightly, considering your point.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Alright, let's make sure we don't overlook any details then.'",
+        "description": "Bob says, Alright, lets make sure we dont overlook any details then.",
         "options": [
             {
                 "text": "Absolutely, Bob. Let's double-check everything before moving forward.",

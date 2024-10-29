@@ -3,7 +3,7 @@
         "background": "Bob looks thoughtful while Monica frowns.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'If we keep debating, we'll never get started on the project.'",
+        "description": "Monica says, If we keep debating, well never get started on the project.",
         "options": [
             {
                 "text": "You're right, Monica. Let's focus on the most important issues and move forward.",

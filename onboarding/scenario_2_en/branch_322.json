@@ -3,7 +3,7 @@
         "background": "Bob looks thoughtful, considering the implications of quick decisions.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We really don't have much time to waste here, team.'",
+        "description": "Monica says, We really dont have much time to waste here, team.",
         "options": [
             {
                 "text": "I think we can find a middle ground that addresses both speed and thoroughness.",

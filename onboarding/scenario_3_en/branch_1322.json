@@ -3,7 +3,7 @@
         "background": "You, Monica, and Bob are debating celebration plans.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob sighs and says, 'An indoor activity might be safer given the weather forecast.'",
+        "description": "Bob sighs and says, An indoor activity might be safer given the weather forecast.",
         "options": [
             {
                 "text": "Indoor activities can be cozy and fun. Let's explore that.",

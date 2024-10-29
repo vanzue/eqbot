@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica taps her pen on the table, visibly frustrated. Bob looks at you expectantly.",
-        "role": "Monica",
+        "background": "You balanced helping Monica with maintaining your leave.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'This isn't just about planning better. We need your help now. Are you really going to leave us hanging?'",
+        "description": "I saw Monicas message. Isnt it better if you handle it directly?",
         "options": [
             {
-                "text": "I understand the urgency. Let's try to quickly tackle this together.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You acknowledged the urgency and showed willingness to help, demonstrating good empathy and perception, though your self-regulation could be stronger."
-            },
-            {
-                "text": "I can't help right now. Maybe it's time we consider better long-term solutions.",
+                "text": "Monica is capable. Let's give her a chance to prove herself.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
                 },
-                "analysis": "You stood firm on your boundaries and suggested a long-term improvement, showcasing strong self-regulation but lower empathy and motivation to help immediately."
+                "analysis": "You chose to trust Monica's abilities, showing good self-regulation and motivation, but social skill could be improved."
             },
             {
-                "text": "It's not fair to expect me to drop everything. We need to distribute tasks better.",
+                "text": "I guess I can step in for a bit to help her out.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might strain your relationship with colleagues."
+                "analysis": "You opted to assist Monica briefly, demonstrating empathy and motivation, but self-regulation was slightly compromised."
+            },
+            {
+                "text": "If Monica needs help, she can ask for it directly. Let's trust her judgment.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You suggested trusting Monica's judgment, showing good emotional perception and maintaining boundaries, but empathy could be stronger."
             }
         ]
     }

@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "During the meeting, after acknowledging Monica's urgency, Bob looks concerned.",
+        "background": "During the meeting, after acknowledging Monicas urgency, Bob looks concerned.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I'm still worried that we're rushing things and might miss important details.'",
+        "description": "Bob says, Im still worried that were rushing things and might miss important details.",
         "options": [
             {
                 "text": "It's a valid concern, Bob. Let's ensure all critical points are discussed quickly.",

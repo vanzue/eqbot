@@ -3,7 +3,7 @@
         "background": "Emma leans back and crosses her arms.",
         "role": "Emma",
         "location": "Break Room",
-        "description": "'An outdoor activity sounds exhausting.'",
+        "description": "An outdoor activity sounds exhausting.",
         "options": [
             {
                 "text": "Outdoor activities can be refreshing and fun.",

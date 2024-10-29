@@ -3,7 +3,7 @@
         "background": "Bob and Monica are discussing the celebration. Monica looks thoughtful.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Should we ask everyone for their input on the celebration?'",
+        "description": "Should we ask everyone for their input on the celebration?",
         "options": [
             {
                 "text": "Getting everyone's input could lead to a decision that satisfies most.",

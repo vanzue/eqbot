@@ -3,7 +3,7 @@
         "background": "Monica agrees to find a quieter spot. Bob chimes in with a cautious tone.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'But what if we end up splitting the group?'",
+        "description": "But what if we end up splitting the group?",
         "options": [
             {
                 "text": "If we communicate well, we can make sure everyone stays together.",

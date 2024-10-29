@@ -3,7 +3,7 @@
         "background": "Monica nods, still concerned. Bob looks at his notes.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'We really should take a bit more time to ensure we get this right.'",
+        "description": "Bob says, We really should take a bit more time to ensure we get this right.",
         "options": [
             {
                 "text": "I understand, Bob. Let's allocate five more minutes to finalize.",

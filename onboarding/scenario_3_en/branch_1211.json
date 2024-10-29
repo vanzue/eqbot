@@ -3,7 +3,7 @@
         "background": "You, Monica, and Bob are discussing the celebration planning.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob sighs and says, 'But a formal dinner seems too stiff.'",
+        "description": "Bob sighs and says, But a formal dinner seems too stiff.",
         "options": [
             {
                 "text": "Formal dinners can be elegant and memorable.",

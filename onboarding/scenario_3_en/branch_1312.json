@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you are still discussing celebration ideas.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob raises an eyebrow and says, 'A relaxed formal venue? Is that even a thing?'",
+        "description": "Bob raises an eyebrow and says, A relaxed formal venue? Is that even a thing?",
         "options": [
             {
                 "text": "We can find a place that blends formality with a relaxed vibe.",

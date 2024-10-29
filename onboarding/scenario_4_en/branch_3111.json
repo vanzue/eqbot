@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica and Bob are now in a heated discussion as you try to guide them.",
-        "role": "Bob",
-        "location": "Office",
-        "description": "'We really appreciate your input, but this is taking too long. Can you just take over?'",
+        "background": "You emphasized teamwork to Bob. Monica joins the conversation and says:",
+        "role": "Monica",
+        "location": "Open Office",
+        "description": "But isnt it unfair to rely on others too much?",
         "options": [
             {
-                "text": "I understand the urgency. Let's wrap this up quickly together.",
+                "text": "True, but occasional support strengthens our team.",
                 "scores": {
-                    "Perception": 4,
+                    "Perception": 3,
                     "Self Regulation": 3,
-                    "Empathy": 4,
+                    "Empathy": 3,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You acknowledged the urgency and offered to expedite the process, showing strong empathy and social skills, though your self-regulation could be better."
+                "analysis": "You balanced the argument by emphasizing the value of support, showing good social skills and balanced empathy."
             },
             {
-                "text": "I get it, but I'm on leave. Let's find a way for you to handle this.",
+                "text": "I get it, but sometimes we all need a little help.",
                 "scores": {
                     "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 3
                 },
-                "analysis": "You balanced acknowledging the urgency with maintaining your boundaries, showing good self-regulation but lower motivation and empathy."
+                "analysis": "You acknowledged Monica's point and highlighted the occasional need for help, demonstrating strong empathy."
             },
             {
-                "text": "I believe you both are capable of handling this efficiently. Trust yourselves.",
+                "text": "It's not about fairness, it's about efficiency.",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You encouraged self-reliance, showing strong self-regulation but lower empathy, perception, and motivation."
+                "analysis": "You focused on efficiency over fairness, showing strong motivation but lower empathy."
             }
         ]
     }

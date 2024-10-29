@@ -3,7 +3,7 @@
         "background": "During the meeting, Monica looks impatient, and Bob seems conflicted.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We really can't afford any more delays. Can we finalize this?'",
+        "description": "Monica says, We really cant afford any more delays. Can we finalize this?",
         "options": [
             {
                 "text": "We need to make sure we haven't missed any critical details before moving on.",

@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica taps her pen on the table. Bob looks frustrated.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "‘We really need to address this issue. Can we count on you to help us sort this out?’",
+        "background": "Monica and Bob look slightly disappointed.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "We understand. Can you at least provide some guidance on the key points?",
         "options": [
             {
-                "text": "I can offer some guidance, but you’ll need to handle most of the work.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 2,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You offered limited help, showing good perception and social skills, but empathy could be improved."
-            },
-            {
-                "text": "I’m on leave, but I can help if it’s absolutely necessary.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 3,
-                    "Social Skill": 2,
-                    "Motivation": 2
-                },
-                "analysis": "You acknowledged your leave but showed willingness to help if crucial, demonstrating strong self-regulation but lower social skills and motivation."
-            },
-            {
-                "text": "This seems like something you should be able to handle without me.",
+                "text": "Sure, I'll highlight the key points for you quickly.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You agreed to provide guidance, showing empathy and motivation, but potentially compromising your self-regulation."
+            },
+            {
+                "text": "Let's do this later when I'm back. It's important for me to fully disconnect now.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "Your response was somewhat dismissive, showing lower empathy and self-regulation, which might affect team relationships negatively."
+                "analysis": "You prioritized your need to disconnect, maintaining boundaries and demonstrating good self-regulation, but empathy and motivation were lower."
+            },
+            {
+                "text": "I'm afraid I can't help right now. Please proceed without me and update me later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You set clear boundaries, showing good emotional perception and self-regulation, but social skills could improve."
             }
         ]
     }

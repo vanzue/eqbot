@@ -3,7 +3,7 @@
         "background": "Bob leans back, arms crossed, looking at Monica.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'Efficiency is key, but we shouldn't ignore inclusivity.'",
+        "description": "Efficiency is key, but we shouldnt ignore inclusivity.",
         "options": [
             {
                 "text": "Inclusivity is essential, but we need to balance it with efficiency.",

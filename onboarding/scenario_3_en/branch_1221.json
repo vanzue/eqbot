@@ -3,7 +3,7 @@
         "background": "Bob sighs and rubs his temples.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'Why don't we just vote on it and be done?'",
+        "description": "Why dont we just vote on it and be done?",
         "options": [
             {
                 "text": "Voting could be a fair way to decide.",

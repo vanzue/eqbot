@@ -3,7 +3,7 @@
         "background": "Monica and Bob are discussing the formal dinner idea. Monica looks concerned.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'Do you think everyone would be comfortable with a formal dinner?'",
+        "description": "Do you think everyone would be comfortable with a formal dinner?",
         "options": [
             {
                 "text": "A formal dinner can be a great way to celebrate our success.",

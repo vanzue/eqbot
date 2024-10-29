@@ -3,7 +3,7 @@
         "background": "Monica looks frustrated but listens intently.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I get it, but let's not rush into mistakes.'",
+        "description": "Bob says, I get it, but lets not rush into mistakes.",
         "options": [
             {
                 "text": "Maybe we can break the project into phases to balance speed and detail.",

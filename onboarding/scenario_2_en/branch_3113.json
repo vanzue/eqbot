@@ -3,7 +3,7 @@
         "background": "Monica nods slightly but still looks concerned.",
         "role": "You",
         "location": "Conference Room",
-        "description": "You say, 'We need to find a way to stay on schedule without compromising quality.'",
+        "description": "You say, We need to find a way to stay on schedule without compromising quality.",
         "options": [
             {
                 "text": "Let's assign specific tasks to each person to ensure we're efficient and thorough.",

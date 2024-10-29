@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica takes a deep breath, trying to calm herself. Bob leans against the desk, waiting for a solution.",
-        "role": "Monica",
+        "background": "Monica and Bob look at you expectantly.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'I need a bit more time to sort through these issues. Can we reconvene later?'",
+        "description": "So, do you think we should always call for help immediately?",
         "options": [
             {
-                "text": "Sure, let's set a time to meet later and discuss the details.",
+                "text": "It depends on the situation. Some issues need immediate attention, others can wait.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You acknowledge the complexity of the situation, showing good perception and social skills, but motivation is slightly lower."
+            },
+            {
+                "text": "Immediate action can prevent bigger problems. It's better safe than sorry.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
                     "Social Skill": 3,
-                    "Motivation": 3
+                    "Motivation": 4
                 },
-                "analysis": "You agreed to give Monica more time, showing good self-regulation while maintaining empathy and social skills."
+                "analysis": "You justify taking immediate action, showing strong self-regulation and motivation, but perception and empathy could be improved."
             },
             {
-                "text": "We really need to handle this now. Can you manage with some support?",
+                "text": "Not always. Sometimes waiting is the best course of action.",
                 "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 2,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You insisted on an immediate solution, showing strong perception and empathy, but your self-regulation was lower as you pushed for urgency."
-            },
-            {
-                "text": "Bob, maybe we can give Monica some space to work through this.",
-                "scores": {
-                    "Perception": 3,
+                    "Perception": 2,
                     "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 4,
-                    "Motivation": 2
+                    "Motivation": 3
                 },
-                "analysis": "You suggested giving Monica space, showing good social skills and self-regulation, but lower empathy and motivation to resolve the issue now."
+                "analysis": "You suggest a more cautious approach, showing good social skills but lower perception and empathy."
             }
         ]
     }

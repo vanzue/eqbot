@@ -3,7 +3,7 @@
         "background": "Bob nods and glances at you for support. Monica looks exasperated.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob sighs and says, 'Should we just vote on this?'",
+        "description": "Bob sighs and says, Should we just vote on this?",
         "options": [
             {
                 "text": "A vote might be a fair way to decide.",

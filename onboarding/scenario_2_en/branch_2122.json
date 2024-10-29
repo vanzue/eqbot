@@ -3,7 +3,7 @@
         "background": "Monica glances at her notes, looking conflicted.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'If we minimize overlap, won't that lead to more misunderstandings?'",
+        "description": "If we minimize overlap, wont that lead to more misunderstandings?",
         "options": [
             {
                 "text": "It's possible, but we can use regular updates to stay aligned.",

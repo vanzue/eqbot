@@ -3,7 +3,7 @@
         "background": "Bob leans back, sighing, looking frustrated.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Alex, your rush doesn't account for potential pitfalls. Can't we be more thorough?'",
+        "description": "Alex, your rush doesnt account for potential pitfalls. Cant we be more thorough?",
         "options": [
             {
                 "text": "Alex, Bob has a point. Maybe we should balance speed with caution.",

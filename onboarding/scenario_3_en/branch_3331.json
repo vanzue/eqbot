@@ -3,7 +3,7 @@
         "background": "Bob shifts uncomfortably and glances at Monica.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'Maybe we should just let the manager decide.'",
+        "description": "Maybe we should just let the manager decide.",
         "options": [
             {
                 "text": "That could work, but it might make some people feel left out.",

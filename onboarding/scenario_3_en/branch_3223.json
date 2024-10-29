@@ -3,7 +3,7 @@
         "background": "Bob crosses his arms and looks frustrated.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'I just don't see us agreeing on anything at this rate.'",
+        "description": "I just dont see us agreeing on anything at this rate.",
         "options": [
             {
                 "text": "Maybe we need to take a step back and reassess our options.",

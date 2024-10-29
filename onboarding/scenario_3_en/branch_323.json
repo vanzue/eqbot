@@ -3,7 +3,7 @@
         "background": "Monica glances at you with a skeptical look.",
         "role": "you",
         "location": "Conference Room",
-        "description": "'I think we should come up with a different idea for celebrating.'",
+        "description": "I think we should come up with a different idea for celebrating.",
         "options": [
             {
                 "text": "How about we brainstorm and find something that suits everyone?",

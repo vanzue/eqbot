@@ -3,7 +3,7 @@
         "background": "Monica nods but still looks uncertain. Bob glances at you, waiting.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Even with a review, I'm worried we might miss critical details.'",
+        "description": "Bob says, Even with a review, Im worried we might miss critical details.",
         "options": [
             {
                 "text": "We can create a checklist to ensure we cover all bases during the review.",

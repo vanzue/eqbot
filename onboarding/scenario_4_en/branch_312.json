@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica and Bob are discussing the task in the office while you join the discussion via video call.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "'I understand you’re on leave, but could you quickly run through the main points with us?'",
+        "background": "You offered to help Monica manage her workload. Bob later comments:",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "So, now youre doing Monicas job too?",
         "options": [
             {
-                "text": "I can spare a few minutes to go over the essentials.",
+                "text": "Just trying to be a team player. We all need to support each other.",
                 "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
+                    "Perception": 3,
+                    "Self Regulation": 2,
                     "Empathy": 4,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You showed willingness to help despite being on leave, demonstrating good perception and empathy. However, your self-regulation could be stronger."
+                "analysis": "You emphasized teamwork and empathy, showing strong social skills, but slightly lower self-regulation."
             },
             {
-                "text": "I’ll send you a quick summary and you can reach out if you have more questions.",
+                "text": "Monica was overloaded, so I thought it was best to help her prioritize.",
                 "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
+                    "Perception": 4,
+                    "Self Regulation": 3,
                     "Empathy": 3,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You balanced helping with maintaining your boundaries, showing good self-regulation and perception. However, motivation and empathy were lower."
+                "analysis": "You explained your rationale calmly, demonstrating good perception and motivation, but empathy could be stronger."
             },
             {
-                "text": "I'm sure you both can manage it. Just follow the instructions I left.",
+                "text": "If you're concerned, maybe you can assist Monica instead.",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You maintained your boundaries, showing strong self-regulation. However, perception, empathy, and motivation to help were lower."
+                "analysis": "You redirected the suggestion to Bob, showing strong motivation but lower empathy and perception."
             }
         ]
     }

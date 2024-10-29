@@ -3,7 +3,7 @@
         "background": "You, Monica, and Bob are exploring other celebration options. Monica frowns and crosses her arms.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "Monica says, 'Outdoor activities can be tiring for some.'",
+        "description": "Monica says, Outdoor activities can be tiring for some.",
         "options": [
             {
                 "text": "We can plan shorter activities to accommodate everyone.",

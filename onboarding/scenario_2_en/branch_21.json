@@ -3,7 +3,7 @@
         "background": "Monica fidgets with her pen, looking uneasy.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Maybe we should consider a different approach to avoid these conflicts in the future?'",
+        "description": "Maybe we should consider a different approach to avoid these conflicts in the future?",
         "options": [
             {
                 "text": "Let's brainstorm some strategies to improve our collaboration.",

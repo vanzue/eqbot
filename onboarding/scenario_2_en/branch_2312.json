@@ -3,7 +3,7 @@
         "background": "Monica furrows her brow, glancing between you and Bob.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'I don't understand why we can't find a way to be both quick and thorough. Is that too much to ask?'",
+        "description": "I dont understand why we cant find a way to be both quick and thorough. Is that too much to ask?",
         "options": [
             {
                 "text": "Maybe we can outline a plan that addresses both speed and thoroughness?",

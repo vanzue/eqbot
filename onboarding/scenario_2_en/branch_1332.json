@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "You lean forward, noticing Monica's worried expression.",
+        "background": "You lean forward, noticing Monicas worried expression.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'If we keep switching strategies, how can we ensure consistency?'",
+        "description": "Monica says, If we keep switching strategies, how can we ensure consistency?",
         "options": [
             {
                 "text": "Consistency is important, but we also need to adapt when necessary.",

@@ -3,7 +3,7 @@
         "background": "Bob leans back in his chair with a thoughtful expression.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'Alright, let's brainstorm a hybrid plan. Any ideas on how to start?'",
+        "description": "Alright, lets brainstorm a hybrid plan. Any ideas on how to start?",
         "options": [
             {
                 "text": "We could have a short outdoor activity followed by a casual dinner.",

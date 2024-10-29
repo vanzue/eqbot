@@ -3,7 +3,7 @@
         "background": "Monica and Bob are now seated, looking at you expectantly.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'So, what's the plan now?'",
+        "description": "Bob says, So, whats the plan now?",
         "options": [
             {
                 "text": "We'll proceed with a balanced approach, considering both speed and thoroughness.",

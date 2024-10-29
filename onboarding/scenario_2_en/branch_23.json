@@ -3,7 +3,7 @@
         "background": "Monica crosses her arms, looking between you and Bob.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'I agree with Alex. Sometimes we have to take risks to move forward. Why can't you see that?'",
+        "description": "I agree with Alex. Sometimes we have to take risks to move forward. Why cant you see that?",
         "options": [
             {
                 "text": "Every approach has its merits. What if we assess the risks quickly and then decide?",

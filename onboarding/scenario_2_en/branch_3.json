@@ -3,7 +3,7 @@
         "background": "During the meeting, after agreeing to a brief discussion, Monica enters the room.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'What's the hold-up here? We need to start the project soon.'",
+        "description": "Monica says, Whats the hold-up here? We need to start the project soon.",
         "options": [
             {
                 "text": "We're just finishing up our discussion to ensure we cover all bases.",

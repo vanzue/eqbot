@@ -3,7 +3,7 @@
         "background": "Monica is visibly frustrated, pacing around the room.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I think we need more time to discuss the details before rushing.'",
+        "description": "Bob says, I think we need more time to discuss the details before rushing.",
         "options": [
             {
                 "text": "I see your point, Bob. Let's set a timer for a brief discussion.",

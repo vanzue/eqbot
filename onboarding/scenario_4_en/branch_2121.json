@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica taps her pen impatiently. Bob sits down heavily, looking exasperated.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "‘We need a clear plan. What should we do next?’",
+        "background": "Monica and Bob are on a video call with you, discussing the next steps.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Just to be clear, are you suggesting we postpone all further discussions until next week?",
         "options": [
             {
-                "text": "Let's have a quick meeting to outline our priorities and actions.",
+                "text": "Yes, I believe we need a break to come back with fresh perspectives.",
                 "scores": {
                     "Perception": 4,
-                    "Self Regulation": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You advocated for a break, showing good self-regulation and emotional perception, but social skills and empathy could be improved."
+            },
+            {
+                "text": "I'm open to discussing it more tomorrow if it really can't wait.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
                     "Empathy": 4,
                     "Social Skill": 3,
                     "Motivation": 4
                 },
-                "analysis": "You suggested a structured approach, showing high perception and empathy, but your self-regulation could be stronger."
+                "analysis": "You showed willingness to continue discussions, demonstrating empathy and motivation, but potentially compromising your self-regulation."
             },
             {
-                "text": "I think you should decide based on what you think is most urgent.",
+                "text": "I think we've made good progress. Let's finalize anything outstanding via email.",
                 "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You delegated the decision-making, showing strong self-regulation but less empathy."
-            },
-            {
-                "text": "If this was planned better, we wouldn't be in this mess.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "Your response was somewhat passive-aggressive, showing low empathy and self-regulation, which might impact team dynamics negatively."
+                "analysis": "You suggested completing tasks via email, showing good emotional perception and self-regulation, but your motivation could be seen as lacking."
             }
         ]
     }

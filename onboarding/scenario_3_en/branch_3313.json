@@ -3,7 +3,7 @@
         "background": "Bob nods thoughtfully, then glances at Monica and you.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'Still, it's tough when people feel left out.'",
+        "description": "Still, its tough when people feel left out.",
         "options": [
             {
                 "text": "We could rotate celebration ideas so everyone gets a turn.",

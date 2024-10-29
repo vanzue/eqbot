@@ -1,23 +1,34 @@
 {
     "scenes": {
-        "background": "Bob sighs and leans against the wall, while Monica rubs her temples.",
-        "role": "Bob",
+        "background": "You justify your assistance. Monica looks anxious.",
+        "role": "Monica",
         "location": "Office",
-        "description": "'Redistributing tasks is fine, but we need to act fast. What’s the plan?'",
+        "description": "I understand, but Bob and I were worried about handling such situations ourselves in the future.",
         "options": [
             {
-                "text": "Let's quickly list out the remaining tasks and assign them based on availability.",
+                "text": "It's crucial to learn from this and be better prepared next time.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
                     "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasize learning from the experience to improve future preparedness, showing good perception and social skills but could be stronger in empathy."
+            },
+            {
+                "text": "I get your concern, but sometimes stepping in is necessary to avoid bigger issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 4
                 },
-                "analysis": "You aimed for a practical solution, demonstrating good perception and motivation, though your empathy and self-regulation were balanced."
+                "analysis": "You acknowledge their concern while stressing the necessity of intervention, demonstrating good self-regulation and motivation, but social skills could be better."
             },
             {
-                "text": "I suggest Monica takes a break while Bob and I handle the urgent tasks for now.",
+                "text": "If you felt unprepared, we should discuss how to handle these situations next time.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 3,
@@ -25,18 +36,7 @@
                     "Social Skill": 4,
                     "Motivation": 2
                 },
-                "analysis": "You prioritized Monica's well-being and suggested a temporary redistribution of tasks, showing high empathy and social skills."
-            },
-            {
-                "text": "We should all work together right now and figure out the details later.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 2,
-                    "Empathy": 2,
-                    "Social Skill": 4,
-                    "Motivation": 4
-                },
-                "analysis": "You emphasized immediate action and teamwork, showing high motivation and social skills but lower self-regulation and empathy."
+                "analysis": "You propose discussing future strategies, showing good empathy and social skills, but the motivation score is lower."
             }
         ]
     }

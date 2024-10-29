@@ -3,7 +3,7 @@
         "background": "Monica glances at her watch, looking concerned.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'We're running out of time. We need to wrap this up.'",
+        "description": "Bob says, Were running out of time. We need to wrap this up.",
         "options": [
             {
                 "text": "I hear you, Bob. Let's summarize our key points quickly.",

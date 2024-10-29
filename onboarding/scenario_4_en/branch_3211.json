@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica and Bob are discussing the task over video call while you are on leave.",
+        "background": "You emphasized task completion. Monica looks relieved but Bob remains skeptical.",
         "role": "Monica",
         "location": "Office",
-        "description": "‘We really need your expertise on this. Can you quickly guide us through the process?’",
+        "description": "Thanks for stepping in. Its a relief to have your help now.",
         "options": [
             {
-                "text": "Sure, I can guide you through it. Let's get this done together.",
+                "text": "It's the least I can do. Let's get this done together.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
                     "Empathy": 4,
-                    "Social Skill": 4,
+                    "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You demonstrated strong empathy and social skills by offering to help, but your self-regulation and motivation to maintain your leave were slightly lower."
+                "analysis": "You reinforced your commitment to teamwork, showing strong perception and empathy, but self-regulation could be improved."
             },
             {
-                "text": "I'm on leave, but I can give you some pointers quickly.",
+                "text": "I should have been more aware earlier. Let's finish this.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 2
+                    "Social Skill": 4,
+                    "Motivation": 3
                 },
-                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+                "analysis": "You acknowledged your oversight and showed determination to complete the task, demonstrating good self-regulation and social skills."
             },
             {
-                "text": "I think you can handle this without me. Try to follow the guidelines I left.",
+                "text": "If it becomes too much, we can break it down and delegate.",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+                "analysis": "You suggested a practical solution, showing motivation and social skills, but your empathy and perception were lower."
             }
         ]
     }

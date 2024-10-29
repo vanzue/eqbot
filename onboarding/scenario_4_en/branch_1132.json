@@ -1,12 +1,12 @@
 {
     "scenes": {
-        "background": "Monica looks up from her papers, a bit exasperated, while Bob leans back in his chair, arms crossed.",
-        "role": "Monica",
+        "background": "Bob looks frustrated, Monica seems thoughtful.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'Bob, I know you're concerned, but I'm handling it. Can we trust each other to do our parts?'",
+        "description": "Sometimes it feels like were always playing catch-up with these emergencies.",
         "options": [
             {
-                "text": "Trust is important, Monica. Let's all agree on what needs to be done next.",
+                "text": "It can be overwhelming, Bob. Let's brainstorm how we can improve our response times.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,29 +14,29 @@
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You emphasized the importance of trust and collaboration, showing good social skills and perception, though your self-regulation could be stronger."
+                "analysis": "You acknowledge Bob's frustration and suggest a proactive approach, showing good perception and social skills, but self-regulation could be improved."
             },
             {
-                "text": "Monica, maybe Bob just needs some reassurance. Can you give a quick update?",
+                "text": "I get it, Bob. Sometimes we just need to take a step back and assess our priorities.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You empathize with Bob's feelings and suggest taking a step back, showing good self-regulation but could improve on perception and empathy."
+            },
+            {
+                "text": "We can't predict everything, Bob. Maybe we need to accept that some chaos is inevitable.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 3,
                     "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You acknowledged Monica's efforts while addressing Bob's concerns, demonstrating empathy and social skills."
-            },
-            {
-                "text": "Monica, if you're handling it, why is Bob still worried?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 2,
-                    "Social Skill": 4,
+                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You challenged Monica's statement, potentially creating tension but showing social skill in addressing underlying issues."
+                "analysis": "You acknowledge the unpredictability of emergencies, showing good empathy but lower in motivation and perception."
             }
         ]
     }

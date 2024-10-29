@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob is pacing around the office, looking stressed. Monica sits at her desk, typing quickly.",
-        "role": "Bob",
+        "background": "Monica nods in agreement, but Bob looks unconvinced.",
+        "role": "Monica",
         "location": "Office",
-        "description": "‘Can someone explain why this project is delayed? Monica, were you supposed to handle this?’",
+        "description": "We really appreciate your dedication, but Im worried about your work-life balance.",
         "options": [
             {
-                "text": "Let's not point fingers. We should focus on resolving the issue.",
+                "text": "I get it, Monica. Let's just focus on the task for now and discuss later.",
                 "scores": {
-                    "Perception": 4,
+                    "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge Monica's concern but prioritize the task, demonstrating good self-regulation and social skills, though empathy and perception could be stronger."
+            },
+            {
+                "text": "Thanks, Monica. Balancing work and personal time is important to me too.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
                     "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You tried to de-escalate the situation by focusing on a solution rather than assigning blame, showing strong perception and self-regulation."
+                "analysis": "You agree with Monica, showing good perception and empathy, but could improve on self-regulation and social skills."
             },
             {
-                "text": "Monica, it seems Bob is upset. Could you give us an update?",
+                "text": "I appreciate your concern, but this task needs immediate attention. Let's deal with it first.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You acknowledged Bob's emotions and directed the conversation back to Monica, demonstrating empathy and social skills."
-            },
-            {
-                "text": "Bob, maybe we should discuss this privately later.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 2,
+                    "Empathy": 3,
                     "Social Skill": 4,
                     "Motivation": 2
                 },
-                "analysis": "You suggested taking the conversation offline to avoid public conflict, showing social skill but lower empathy and motivation to immediately resolve the issue."
+                "analysis": "You acknowledge Monica's concern but insist on prioritizing the task, showing good social skills but lower in motivation and self-regulation."
             }
         ]
     }

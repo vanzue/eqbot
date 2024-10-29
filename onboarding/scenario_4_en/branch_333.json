@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob looks frustrated, pacing around the office as Monica types away at her computer.",
+        "background": "You suggested Monica ask for help. Bob notices the tension and comments:",
         "role": "Bob",
         "location": "Office",
-        "description": "'This is getting out of hand. We need more than just a quick check-in from you. Can you commit some more time?'",
+        "description": "Looks like there’s some stress around. Anything I can do to help?",
         "options": [
             {
-                "text": "I understand the urgency. I can allocate more time, but only for this task.",
+                "text": "Just some workload management issues. We’ll figure it out.",
                 "scores": {
-                    "Perception": 4,
+                    "Perception": 2,
                     "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
                 },
-                "analysis": "You showed strong empathy and social skills by offering more time, but your self-regulation and motivation to maintain your leave were slightly lower."
+                "analysis": "You acknowledged the situation without fully addressing it, showing motivation, but empathy and perception were lower."
             },
             {
-                "text": "I can only help intermittently. You need to handle most of it.",
+                "text": "Actually, any assistance you can offer would be appreciated.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
-                    "Social Skill": 3,
+                    "Social Skill": 4,
                     "Motivation": 2
                 },
-                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+                "analysis": "You accepted help, showing good social skills and self-regulation, but your motivation and empathy could be stronger."
             },
             {
-                "text": "I think you both need to manage this without my full involvement. Follow the plan.",
+                "text": "Thanks, Bob. Maybe you could take on one of Monica’s tasks?",
                 "scores": {
-                    "Perception": 2,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 3
                 },
-                "analysis": "You maintained strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+                "analysis": "You directly asked for help, demonstrating strong perception and empathy, but your self-regulation could be improved."
             }
         ]
     }

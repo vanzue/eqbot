@@ -3,7 +3,7 @@
         "background": "Bob rubs his temples, clearly stressed.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Aligning our work styles is easier said than done. What's the next step?'",
+        "description": "Aligning our work styles is easier said than done. Whats the next step?",
         "options": [
             {
                 "text": "Let's set up a meeting to create a detailed plan for collaboration.",

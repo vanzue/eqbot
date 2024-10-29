@@ -3,7 +3,7 @@
         "background": "Monica and Bob are discussing the celebration. Bob looks uncertain.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'I'm not sure if everyone will enjoy a formal dinner.'",
+        "description": "Im not sure if everyone will enjoy a formal dinner.",
         "options": [
             {
                 "text": "A formal dinner can be a great way to celebrate our success.",

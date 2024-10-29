@@ -3,7 +3,7 @@
         "background": "Monica shifts uncomfortably in her chair, looking at both of you.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Compromise sounds good, but how do we ensure it's fair?'",
+        "description": "Monica says, Compromise sounds good, but how do we ensure its fair?",
         "options": [
             {
                 "text": "Let's have a neutral party help us mediate the discussion.",

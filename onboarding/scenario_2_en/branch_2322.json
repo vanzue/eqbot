@@ -3,7 +3,7 @@
         "background": "Monica looks at Bob with raised eyebrows.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Bob, we can't just sit and analyze forever. We need to take action at some point.'",
+        "description": "Bob, we cant just sit and analyze forever. We need to take action at some point.",
         "options": [
             {
                 "text": "Bob, Monica is right about needing to act. Let's find a middle ground.",

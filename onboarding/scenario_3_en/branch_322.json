@@ -3,7 +3,7 @@
         "background": "Monica sighs and looks at you.",
         "role": "You",
         "location": "Conference Room",
-        "description": "'It seems like we're all having different opinions on this.'",
+        "description": "It seems like were all having different opinions on this.",
         "options": [
             {
                 "text": "Why don't we take a vote and go with the majority?",

@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "Monica rolls her eyes and says, 'A bar party will just be a noisy mess.'",
+        "background": "Monica rolls her eyes and says, A bar party will just be a noisy mess.",
         "role": "You",
         "location": "Meeting Room",
-        "description": "Bars can be fun; let's try to make it enjoyable for everyone.",
+        "description": "Bars can be fun; lets try to make it enjoyable for everyone.",
         "options": [
             {
                 "text": "I think with the right planning, a bar can be fun and not too noisy.",

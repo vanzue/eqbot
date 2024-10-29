@@ -3,7 +3,7 @@
         "background": "Monica rubs her forehead, looking stressed.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Bob, we can't just ignore the risks, but Alex has a point about speed. How do we balance this?'",
+        "description": "Bob, we cant just ignore the risks, but Alex has a point about speed. How do we balance this?",
         "options": [
             {
                 "text": "Let's consider the immediate risks and decide on a few quick actions.",

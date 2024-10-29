@@ -3,7 +3,7 @@
         "background": "In the meeting, Monica taps her pen on the table, looking uneasy.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'I think we're getting sidetracked with all this back and forth.'",
+        "description": "Monica says, I think were getting sidetracked with all this back and forth.",
         "options": [
             {
                 "text": "Let's focus on our main objectives and avoid unnecessary discussions.",

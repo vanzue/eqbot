@@ -3,7 +3,7 @@
         "background": "Bob taps his pen on the table and looks at Monica.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "'Sticking to one idea might oversimplify things. How will we ensure everyone feels included?'",
+        "description": "Sticking to one idea might oversimplify things. How will we ensure everyone feels included?",
         "options": [
             {
                 "text": "We can rotate the activities so everyone gets a chance to enjoy their preferred type.",

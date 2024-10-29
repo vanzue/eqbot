@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "Monica rolls her eyes and says, 'A bar party will just be a noisy mess.'",
+        "background": "Monica rolls her eyes and says, A bar party will just be a noisy mess.",
         "role": "You",
         "location": "Meeting Room",
-        "description": "Why don't we find a bar with a quieter atmosphere?",
+        "description": "Why dont we find a bar with a quieter atmosphere?",
         "options": [
             {
                 "text": "We can look for a bar with a private room.",

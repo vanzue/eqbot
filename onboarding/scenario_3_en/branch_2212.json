@@ -3,7 +3,7 @@
         "background": "Monica and Bob are discussing the celebration. Monica seems a bit frustrated.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'I just feel a formal dinner might be too uptight for our team.'",
+        "description": "I just feel a formal dinner might be too uptight for our team.",
         "options": [
             {
                 "text": "Formal dinners can still be relaxed and enjoyable if we plan them right.",

@@ -3,7 +3,7 @@
         "background": "Bob looks at the clock, shaking his head in frustration.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'We can't afford mistakes, but dragging this out isn't helping either.'",
+        "description": "We cant afford mistakes, but dragging this out isnt helping either.",
         "options": [
             {
                 "text": "We need to find a balance. Can we set a deadline for this discussion?",

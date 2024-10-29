@@ -3,7 +3,7 @@
         "background": "Monica raises her eyebrow, glancing between the two of you.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'How are we going to integrate both approaches without causing more delays?'",
+        "description": "Monica says, How are we going to integrate both approaches without causing more delays?",
         "options": [
             {
                 "text": "We'll need a clear plan that outlines steps for both methods.",

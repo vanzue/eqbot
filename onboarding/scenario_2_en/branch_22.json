@@ -3,7 +3,7 @@
         "background": "Monica adjusts her glasses, looking at both Alex and Bob.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'We need to find a middle ground. How can we proceed without wasting time or missing details?'",
+        "description": "We need to find a middle ground. How can we proceed without wasting time or missing details?",
         "options": [
             {
                 "text": "Maybe we could divide tasks based on our strengths and then come together for a quick review.",

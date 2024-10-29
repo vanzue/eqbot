@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob crosses his arms, looking frustrated. Monica leans forward, tapping her fingers on the desk.",
-        "role": "Bob",
-        "location": "Office",
-        "description": "'Seriously, we are all at our limit. Can't you just help a bit longer?'",
+        "background": "You told Bob you trust Monicas abilities.",
+        "role": "Monica",
+        "location": "Break Room",
+        "description": "Bob seemed skeptical. Are you sure I can handle this alone?",
         "options": [
             {
-                "text": "I understand the pressure. Let’s try to wrap this up quickly.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You acknowledged the situation and offered to help more, showing good empathy and perception, but your self-regulation and motivation could be stronger."
-            },
-            {
-                "text": "I really need to stick to my break. Maybe we can redistribute the tasks?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You stood firm on needing your break, showing strong self-regulation but lower empathy and motivation to help."
-            },
-            {
-                "text": "It’s not fair that this always falls on me. This needs better planning.",
+                "text": "Absolutely, I believe in you. You've got this.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
                     "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You expressed strong confidence and motivation, showing empathy. However, self-regulation could be improved as you didn't address the potential risks."
+            },
+            {
+                "text": "I think you're capable, but I'll stay available just in case.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
                     "Motivation": 2
                 },
-                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially straining relationships with your colleagues."
+                "analysis": "You balanced support with readiness to assist, showing good perception and social skills. Motivation was lower, as you didn't fully commit to either side."
+            },
+            {
+                "text": "If you're not confident, let's collaborate on this.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You offered a collaborative approach, showing strong perception and balanced empathy. Social skills were lower as you didn't fully empower Monica."
             }
         ]
     }

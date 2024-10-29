@@ -3,7 +3,7 @@
         "background": "Monica leans forward, frowning slightly.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Why can't we just find a method that suits both of you? This constant back and forth is exhausting.'",
+        "description": "Why cant we just find a method that suits both of you? This constant back and forth is exhausting.",
         "options": [
             {
                 "text": "We could blend both methods and adjust as needed.",

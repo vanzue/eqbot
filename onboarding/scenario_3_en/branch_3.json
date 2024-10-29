@@ -3,7 +3,7 @@
         "background": "Emma frowns slightly while looking at Ryan.",
         "role": "Ryan",
         "location": "Break Room",
-        "description": "'I think an outdoor activity would be a great way to bond and relax.'",
+        "description": "I think an outdoor activity would be a great way to bond and relax.",
         "options": [
             {
                 "text": "Why not combine both? We could start with a dinner and then head outdoors.",

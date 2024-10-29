@@ -3,7 +3,7 @@
         "background": "Bob sighs and leans back in his chair, visibly annoyed.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Finding a middle ground seems impossible with such different approaches.'",
+        "description": "Monica says, Finding a middle ground seems impossible with such different approaches.",
         "options": [
             {
                 "text": "Maybe we should consider the benefits of both methods to find a compromise.",

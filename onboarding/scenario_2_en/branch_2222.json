@@ -3,7 +3,7 @@
         "background": "Bob pinches the bridge of his nose, looking stressed.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Alex, making a quick decision might backfire. Can we rethink our approach?'",
+        "description": "Alex, making a quick decision might backfire. Can we rethink our approach?",
         "options": [
             {
                 "text": "Let's brainstorm a few solutions and then decide on the best one quickly.",

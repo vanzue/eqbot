@@ -3,7 +3,7 @@
         "background": "Monica sits up straight, glancing at Bob and you with concern.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Bob, do you think taking more time will help or hinder our progress?'",
+        "description": "Monica says, Bob, do you think taking more time will help or hinder our progress?",
         "options": [
             {
                 "text": "It's crucial to strike a balance. Let's set a timeframe for discussions before taking action.",

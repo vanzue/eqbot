@@ -3,7 +3,7 @@
         "background": "Monica sighs and looks at both of you, frustration evident.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'This constant back and forth is wasting valuable time.'",
+        "description": "Bob says, This constant back and forth is wasting valuable time.",
         "options": [
             {
                 "text": "Let's try to understand what's really causing this conflict and address it directly.",

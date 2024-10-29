@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica adjusts her glasses, looking frustrated. Bob crosses his arms, staring at you.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "'So, should we just let things fall apart whenever someone is on leave?'",
+        "background": "You suggest finding another solution without involving you. Bob responds:",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "This is a bit disappointing. Can you reconsider your stance?",
         "options": [
             {
-                "text": "We need a better backup plan for such situations. Let's brainstorm some ideas.",
+                "text": "I understand your frustration, but I need to prioritize my leave. Can someone else step in?",
                 "scores": {
                     "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You suggested a proactive solution, showing good perception and social skills, though your motivation and self-regulation were moderate."
-            },
-            {
-                "text": "I understand the frustration, but emergencies happen. We need to improve our overall preparedness.",
-                "scores": {
-                    "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 2,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You acknowledged the issue but pointed out the need for better preparedness, showing strong self-regulation but lower empathy and motivation."
+                "analysis": "You show good self-regulation and perception but slightly lower empathy and motivation, maintaining boundaries while acknowledging the situation."
             },
             {
-                "text": "If everyone did their part, we wouldn't be in this situation. Accountability is key.",
+                "text": "I’m willing to help a bit more but can't commit fully. What’s the most critical part?",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "Your response was somewhat passive-aggressive, indicating lower empathy and self-regulation, and it might strain relationships with colleagues."
+                "analysis": "You demonstrate empathy and willingness to assist, but self-regulation is compromised as you offer to help despite being on leave."
+            },
+            {
+                "text": "I’ve made my decision. Please respect my time off and find another solution.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You maintain strong boundaries and self-regulation, but emotional perception and empathy are lower as you firmly decline further involvement."
             }
         ]
     }

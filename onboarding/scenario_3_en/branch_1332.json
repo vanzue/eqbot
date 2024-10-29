@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you continue discussing celebration plans.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob shrugs and says, 'How about a mix of activities to please everyone?'",
+        "description": "Bob shrugs and says, How about a mix of activities to please everyone?",
         "options": [
             {
                 "text": "A mix sounds good. Let's list activities and vote.",

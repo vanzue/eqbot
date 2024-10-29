@@ -1,12 +1,12 @@
 {
     "scenes": {
-        "background": "Monica takes a deep breath and nods slightly as Bob resumes his pacing.",
-        "role": "Monica",
+        "background": "You stress the necessity of intervention. Bob seems unconvinced.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'Alright, so what’s the first step? How do we divide these tasks?'",
+        "description": "We need to handle these issues ourselves; relying on you isnt a long-term solution.",
         "options": [
             {
-                "text": "Let's write down all tasks and assign them based on everyone's strengths.",
+                "text": "I understand, Bob. Let's plan a training session for future emergencies.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,10 +14,10 @@
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You suggested a structured approach focusing on individual strengths, showing good perception and social skills, though your empathy and motivation were balanced."
+                "analysis": "You propose a proactive solution, demonstrating good perception and social skills, but empathy and self-regulation could be stronger."
             },
             {
-                "text": "Maybe we can each take a task and regroup after an hour to see the progress.",
+                "text": "I get it, but sometimes immediate action is required to avoid bigger problems.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
@@ -25,18 +25,18 @@
                     "Social Skill": 3,
                     "Motivation": 4
                 },
-                "analysis": "You proposed a time-boxed approach to managing tasks, showing strong self-regulation and motivation, with balanced empathy and social skills."
+                "analysis": "You acknowledge their concern while emphasizing the need for timely intervention, showing good self-regulation and motivation, but social skills could be better."
             },
             {
-                "text": "Why not just divide the tasks equally and work independently?",
+                "text": "If you felt unprepared, let’s discuss strategies for handling these situations next time.",
                 "scores": {
                     "Perception": 3,
-                    "Self Regulation": 2,
-                    "Empathy": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
                     "Social Skill": 4,
-                    "Motivation": 3
+                    "Motivation": 2
                 },
-                "analysis": "You suggested a straightforward division of labor, showing strong social skills but lower self-regulation and empathy."
+                "analysis": "You propose discussing future strategies, showing good empathy and social skills, but the motivation score is lower."
             }
         ]
     }

@@ -3,7 +3,7 @@
         "background": "Monica and Bob discuss the celebration plans. Monica seems uncertain.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Do you think a less formal venue will make everyone happy?'",
+        "description": "Do you think a less formal venue will make everyone happy?",
         "options": [
             {
                 "text": "A less formal venue might be more relaxing for everyone.",

@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you continue discussing celebration ideas.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob leans back and says, 'I think the outdoor activity will be too tiring for some people.'",
+        "description": "Bob leans back and says, I think the outdoor activity will be too tiring for some people.",
         "options": [
             {
                 "text": "Maybe we can find a compromise that includes some rest breaks.",

@@ -3,7 +3,7 @@
         "background": "Bob leans back in his chair, looking thoughtful.",
         "role": "You",
         "location": "Break Room",
-        "description": "'We could have a discussion to ensure everyone's concerns are heard.'",
+        "description": "We could have a discussion to ensure everyones concerns are heard.",
         "options": [
             {
                 "text": "Let's schedule a meeting where everyone can voice their opinions.",

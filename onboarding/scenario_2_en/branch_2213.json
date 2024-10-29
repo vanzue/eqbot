@@ -3,7 +3,7 @@
         "background": "Bob frowns, tapping his pen on the table.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Rushing leads to errors. We need to be more diligent.'",
+        "description": "Bob says, Rushing leads to errors. We need to be more diligent.",
         "options": [
             {
                 "text": "We should consider both our perspectives and find a balanced approach.",

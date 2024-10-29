@@ -3,7 +3,7 @@
         "background": "Monica raises an eyebrow at your suggestion.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'While a detailed plan is essential, we might be overdoing it. Thoughts?'",
+        "description": "Bob says, While a detailed plan is essential, we might be overdoing it. Thoughts?",
         "options": [
             {
                 "text": "We need to ensure we’re thorough, but I’m open to simplifying where it makes sense.",

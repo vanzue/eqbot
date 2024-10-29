@@ -3,7 +3,7 @@
         "background": "Monica frowns at your suggestion. Bob glances at his watch.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'We do need to make sure we aren't missing anything, though.'",
+        "description": "Bob says, We do need to make sure we arent missing anything, though.",
         "options": [
             {
                 "text": "I think we can find a middle ground that addresses everyone's concerns.",

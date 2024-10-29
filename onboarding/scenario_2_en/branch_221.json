@@ -3,7 +3,7 @@
         "background": "Monica nods, shifting her focus between Alex and Bob.",
         "role": "Alex",
         "location": "Conference Room",
-        "description": "Alex says, 'Dividing tasks sounds fine, but I still think speed should be our priority.'",
+        "description": "Alex says, Dividing tasks sounds fine, but I still think speed should be our priority.",
         "options": [
             {
                 "text": "How about we set milestones to ensure we're moving fast but also not missing any critical steps?",

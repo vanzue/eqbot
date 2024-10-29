@@ -1,12 +1,23 @@
 {
     "scenes": {
-        "background": "Monica frowns and starts gathering documents, while Bob checks his phone anxiously.",
-        "role": "Monica",
+        "background": "You suggest discussing future strategies. Bob looks slightly frustrated.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'We need to coordinate our efforts. Who is taking the lead on this?'",
+        "description": "But what if we run into a similar issue again next week?",
         "options": [
             {
-                "text": "Let's divide the leadership based on our strengths and collaborate efficiently.",
+                "text": "Then we'll cross that bridge when we come to it, Bob.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You chose to address the problem as it arises, showing good self-regulation, but empathy and perception could be stronger."
+            },
+            {
+                "text": "We need to build our confidence and skills to handle these situations independently.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,10 +25,10 @@
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You proposed a balanced approach by leveraging everyone's strengths, showing good perception and social skills, but a moderate level of empathy and self-regulation."
+                "analysis": "You emphasize self-improvement and independence, showing good perception and social skills, but self-regulation could be better."
             },
             {
-                "text": "Monica, you have the most experience here. Can you lead us while we support you?",
+                "text": "If it happens again, let's review our contingency plans to avoid last-minute chaos.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 3,
@@ -25,18 +36,7 @@
                     "Social Skill": 4,
                     "Motivation": 2
                 },
-                "analysis": "You acknowledged Monica's expertise and suggested she lead, showing high empathy and social skills, but lower motivation to take the lead yourself."
-            },
-            {
-                "text": "We can't waste time deciding. I'll take the lead, and let's get started immediately.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 2,
-                    "Empathy": 2,
-                    "Social Skill": 4,
-                    "Motivation": 4
-                },
-                "analysis": "You took immediate action and assumed leadership, showing high motivation and social skills, but lower empathy and self-regulation."
+                "analysis": "You propose reviewing plans to prevent future issues, demonstrating good empathy and social skills, but the motivation score is lower."
             }
         ]
     }

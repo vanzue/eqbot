@@ -3,7 +3,7 @@
         "background": "Monica looks frustrated and crosses her arms.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "Monica frowns and says, 'If we keep debating, we'll never decide.'",
+        "description": "Monica frowns and says, If we keep debating, well never decide.",
         "options": [
             {
                 "text": "Let's set a deadline for making a decision.",

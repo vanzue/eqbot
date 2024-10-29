@@ -3,7 +3,7 @@
         "background": "Monica raises an eyebrow and looks at Bob skeptically.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'Combining both ideas sounds chaotic. How do you see this working out?'",
+        "description": "Combining both ideas sounds chaotic. How do you see this working out?",
         "options": [
             {
                 "text": "We could have a structured plan to keep things organized.",

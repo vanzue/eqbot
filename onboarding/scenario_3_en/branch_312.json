@@ -3,7 +3,7 @@
         "background": "Monica glances at Bob and nods slightly.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "'Trying to make everyone happy sounds unrealistic. We should be practical.'",
+        "description": "Trying to make everyone happy sounds unrealistic. We should be practical.",
         "options": [
             {
                 "text": "Balancing everyone's preferences is challenging, but not impossible.",

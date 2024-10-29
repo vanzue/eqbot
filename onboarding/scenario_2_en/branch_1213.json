@@ -3,7 +3,7 @@
         "background": "Bob sighs and shakes his head slightly.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Taking risks sounds great, but what if it backfires on us?'",
+        "description": "Bob says, Taking risks sounds great, but what if it backfires on us?",
         "options": [
             {
                 "text": "Every decision has risks, but we can mitigate them with a solid plan.",

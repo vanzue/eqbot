@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "You acknowledge Bob's attention to detail but propose focusing on key points.",
+        "background": "You acknowledge Bobs attention to detail but propose focusing on key points.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We can't afford to waste more time. Are we moving forward or not?'",
+        "description": "Monica says, We cant afford to waste more time. Are we moving forward or not?",
         "options": [
             {
                 "text": "Let's quickly outline the main points and then decide.",

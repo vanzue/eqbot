@@ -3,7 +3,7 @@
         "background": "Bob nods and begins outlining a plan. Monica sighs loudly.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'I still think we're overcomplicating this. Can we simplify?'",
+        "description": "Monica says, I still think were overcomplicating this. Can we simplify?",
         "options": [
             {
                 "text": "We can simplify some parts while ensuring the key details are well-planned.",

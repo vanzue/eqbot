@@ -3,7 +3,7 @@
         "background": "Bob sighs and leans back in his chair.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'Finding a middle ground sounds like more trouble than it's worth. What do you think?'",
+        "description": "Finding a middle ground sounds like more trouble than its worth. What do you think?",
         "options": [
             {
                 "text": "Sometimes compromise is necessary to ensure everyone feels included.",

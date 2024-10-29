@@ -3,7 +3,7 @@
         "background": "Monica sits back, sighing as she glances between you and Bob.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We need to find a balance. How do you propose we handle this?'",
+        "description": "Monica says, We need to find a balance. How do you propose we handle this?",
         "options": [
             {
                 "text": "Let's establish a protocol that allows for quick decisions while ensuring thorough discussions.",

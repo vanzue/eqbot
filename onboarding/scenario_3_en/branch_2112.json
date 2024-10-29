@@ -3,7 +3,7 @@
         "background": "The discussion continues, and Bob chimes in.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'A formal dinner sounds boring to me.'",
+        "description": "A formal dinner sounds boring to me.",
         "options": [
             {
                 "text": "Formal dinners can be elegant and a nice change of pace.",

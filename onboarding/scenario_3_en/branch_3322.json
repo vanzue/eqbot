@@ -3,7 +3,7 @@
         "background": "Bob looks at Monica and you, raising an eyebrow.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'Do you think Emma and Sam will ever agree on anything?'",
+        "description": "Do you think Emma and Sam will ever agree on anything?",
         "options": [
             {
                 "text": "They might not agree, but we can find a solution that works for everyone.",

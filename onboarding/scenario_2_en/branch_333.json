@@ -3,7 +3,7 @@
         "background": "Monica sighs and crosses her arms.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We’re going to regret it if we rush this and make mistakes.'",
+        "description": "Monica says, We’re going to regret it if we rush this and make mistakes.",
         "options": [
             {
                 "text": "We can always correct issues later. Right now, speed is crucial.",

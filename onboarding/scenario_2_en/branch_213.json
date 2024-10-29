@@ -3,7 +3,7 @@
         "background": "Monica glances at Bob, then turns to you.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'So, what's the plan? Do we just keep butting heads?'",
+        "description": "So, whats the plan? Do we just keep butting heads?",
         "options": [
             {
                 "text": "Sometimes conflict is unavoidable, but it can lead to better solutions.",

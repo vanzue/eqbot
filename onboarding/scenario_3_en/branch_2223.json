@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "Monica looks thoughtful after Bob's suggestion.",
+        "background": "Monica looks thoughtful after Bobs suggestion.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'A less formal venue could work, but it might not feel as special.'",
+        "description": "A less formal venue could work, but it might not feel as special.",
         "options": [
             {
                 "text": "Special moments are about the people, not the place.",
