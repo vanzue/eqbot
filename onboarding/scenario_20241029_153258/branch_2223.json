@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You emphasized learning from the experience.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "Do you think we can avoid such issues in the future?",
+        "options": [
+            {
+                "text": "We should create a better communication plan to prevent misunderstandings.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You proposed a proactive solution, showing good emotional perception and empathy, but could improve on self-regulation."
+            },
+            {
+                "text": "Such issues are part of the process. It's important to stay flexible.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You highlighted the inevitability of issues, showing good social skills, but self-regulation and motivation were lower."
+            },
+            {
+                "text": "We need to establish clear roles and responsibilities to avoid confusion.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You emphasized the importance of roles, showing good emotional perception and motivation, but empathy was lower."
+            }
+        ]
+    }
+}

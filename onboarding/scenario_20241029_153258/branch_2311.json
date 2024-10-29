@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You agreed to a quick call to resolve the issue. Bob jumps in and says:",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Thanks for joining. Can we count on you for ongoing support until this is resolved?",
+        "options": [
+            {
+                "text": "Let's take it one step at a time. What's the current status?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You show willingness to help while trying to understand the situation better, demonstrating good emotional perception and empathy."
+            },
+            {
+                "text": "I have limited time. You should be able to manage after this call.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You set clear boundaries and encourage independence, showing good self-regulation but lower empathy and motivation."
+            },
+            {
+                "text": "If it's ongoing, you might need to find another solution without my involvement.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You set clear boundaries and suggest finding an alternative solution, showing good self-regulation but lower empathy."
+            }
+        ]
+    }
+}

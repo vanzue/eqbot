@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You reassured Monica to handle the task independently.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "Monicas struggling. Are you sure she can manage without your help?",
+        "options": [
+            {
+                "text": "Let's give her more time. Everyone has a learning curve.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You balanced patience and support, showing good self-regulation, though motivation was lower."
+            },
+            {
+                "text": "I'll join briefly to assist and make sure everything's on track.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You opted to assist briefly, demonstrating empathy and motivation, but compromised self-regulation."
+            },
+            {
+                "text": "Monica needs to learn to handle these situations independently.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You emphasized the importance of independence, showing good perception, but empathy could be improved."
+            }
+        ]
+    }
+}

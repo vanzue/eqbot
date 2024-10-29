@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob and Monica are still discussing the urgency of tasks.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "What if we had a list of examples for urgent and non-urgent tasks?",
+        "options": [
+            {
+                "text": "That's a good idea. It would help us all be on the same page.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You support Bob's idea and emphasize teamwork, showing good perception and social skills, but could improve on self-regulation."
+            },
+            {
+                "text": "I'm not sure a list will cover everything, but it's worth trying.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You express some doubt but are willing to give it a shot, demonstrating good self-regulation and motivation."
+            },
+            {
+                "text": "Lists might help, but let's not make it too rigid.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You caution against rigidity while acknowledging the idea, showing good social skills but lower perception and empathy."
+            }
+        ]
+    }
+}

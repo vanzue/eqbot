@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob nods slightly, Monica looks relieved.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "How do you think we can avoid such situations in the future?",
+        "options": [
+            {
+                "text": "We could establish a more detailed workflow to handle emergencies.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest a practical solution, showing good self-regulation and social skills, but empathy and perception could be improved."
+            },
+            {
+                "text": "Maybe we should set clearer boundaries about contacting during leave periods.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose setting boundaries, demonstrating strong perception and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If it’s really necessary, we can discuss it further. But I think we managed pretty well this time.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You offer a flexible approach, showing empathy but lower in perception and motivation."
+            }
+        ]
+    }
+}

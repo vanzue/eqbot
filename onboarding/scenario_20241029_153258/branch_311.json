@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You offered to find someone else to help Monica. Bob overhears your conversation and remarks:",
+        "role": "Bob",
+        "location": "Open Office",
+        "description": "Isnt it your responsibility to handle your own tasks?",
+        "options": [
+            {
+                "text": "I see your point, but teamwork is about supporting each other.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Bob's concern and emphasized the importance of teamwork, showing good social skills and empathy."
+            },
+            {
+                "text": "Maybe, but I was on leave and couldn't manage it myself.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You explained your situation, showing self-regulation and motivation, but empathy and perception could be improved."
+            },
+            {
+                "text": "It's not just about tasks; it's about ensuring we all succeed.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You prioritized team success over individual tasks, demonstrating strong perception and empathy, but slightly lower motivation."
+            }
+        ]
+    }
+}

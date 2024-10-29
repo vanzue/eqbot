@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You framed the situation positively with Bob. Monica chimes in:",
+        "role": "Monica",
+        "location": "Office",
+        "description": "I appreciate the teamwork, but I still feel overwhelmed.",
+        "options": [
+            {
+                "text": "Let's break down the tasks together and see what we can manage.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You showed strong perception and empathy by offering a collaborative approach to manage the workload."
+            },
+            {
+                "text": "I didn’t realize it was this bad. How about we prioritize the most urgent tasks?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged the situation and suggested a practical approach, showing good self-regulation and social skills."
+            },
+            {
+                "text": "If this is too much, maybe Bob can help with some of the tasks.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested involving another colleague, showing motivation and social skills, but empathy and perception were lower."
+            }
+        ]
+    }
+}

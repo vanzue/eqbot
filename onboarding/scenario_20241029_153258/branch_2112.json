@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You suggested handling the document later, and Monica frowns slightly.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "I understand youre on leave, but this really cant wait. Can you reconsider?",
+        "options": [
+            {
+                "text": "I'll take a quick look, but it has to be brief.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You chose to help despite your leave, showing empathy and motivation, but possibly compromising your self-regulation."
+            },
+            {
+                "text": "I really think it can wait until I'm back. Let's not rush it.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You maintained your boundaries and suggested waiting, showing good self-regulation, but empathy and motivation were lower."
+            },
+            {
+                "text": "I'm afraid I can't help right now. Please proceed without me and give me an update later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You prioritized your leave, showing good emotional perception and self-regulation, but social skills could improve."
+            }
+        ]
+    }
+}

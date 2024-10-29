@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob thanks you for reviewing the document.",
+        "role": "Monica",
+        "location": "Home Office",
+        "description": "Can you also help us with the final presentation slides?",
+        "options": [
+            {
+                "text": "I can help streamline the slides quickly. Send them over.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You agreed to help with the slides, showing empathy and motivation, but potentially compromising your self-regulation."
+            },
+            {
+                "text": "I think you can handle it. Let's finalize it when I'm back.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You suggested handling it later, maintaining boundaries and demonstrating good self-regulation, but empathy and motivation were lower."
+            },
+            {
+                "text": "I'm afraid I can't. Please proceed without me and update me later.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You prioritized your leave, showing good emotional perception and self-regulation, but social skills could improve."
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You suggest finding another solution without involving you. Bob responds:",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "This is a bit disappointing. Can you reconsider your stance?",
+        "options": [
+            {
+                "text": "I understand your frustration, but I need to prioritize my leave. Can someone else step in?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You show good self-regulation and perception but slightly lower empathy and motivation, maintaining boundaries while acknowledging the situation."
+            },
+            {
+                "text": "I’m willing to help a bit more but can't commit fully. What’s the most critical part?",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You demonstrate empathy and willingness to assist, but self-regulation is compromised as you offer to help despite being on leave."
+            },
+            {
+                "text": "I’ve made my decision. Please respect my time off and find another solution.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You maintain strong boundaries and self-regulation, but emotional perception and empathy are lower as you firmly decline further involvement."
+            }
+        ]
+    }
+}

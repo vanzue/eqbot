@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You decide to make an exception and join the urgent call for a short while.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Thanks for joining on short notice. We need your input on this critical project.",
+        "options": [
+            {
+                "text": "I'm here now. Let's make this quick and efficient.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You chose to prioritize efficiency and demonstrated empathy, but slightly compromised your self-regulation."
+            },
+            {
+                "text": "I've made an exception to join this call. Let's focus on the main issues.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You balanced your willingness to help with setting boundaries, showing good emotional perception and motivation."
+            },
+            {
+                "text": "I appreciate the urgency, but I'll need to leave soon. Please be concise.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You set clear time boundaries and asked for conciseness, showing good self-regulation, but lower empathy."
+            }
+        ]
+    }
+}

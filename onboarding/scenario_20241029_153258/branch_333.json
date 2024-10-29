@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You suggested Monica ask for help. Bob notices the tension and comments:",
+        "role": "Bob",
+        "location": "Office",
+        "description": "Looks like there’s some stress around. Anything I can do to help?",
+        "options": [
+            {
+                "text": "Just some workload management issues. We’ll figure it out.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged the situation without fully addressing it, showing motivation, but empathy and perception were lower."
+            },
+            {
+                "text": "Actually, any assistance you can offer would be appreciated.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 2
+                },
+                "analysis": "You accepted help, showing good social skills and self-regulation, but your motivation and empathy could be stronger."
+            },
+            {
+                "text": "Thanks, Bob. Maybe you could take on one of Monica’s tasks?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You directly asked for help, demonstrating strong perception and empathy, but your self-regulation could be improved."
+            }
+        ]
+    }
+}

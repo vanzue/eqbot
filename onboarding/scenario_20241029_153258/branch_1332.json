@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "Bob nods thoughtfully, while Monica looks at you.",
+        "role": "Bob",
+        "location": "Office",
+        "description": "Clearer guidelines would help. But, do you think its practical to implement them?",
+        "options": [
+            {
+                "text": "Yes, with everyone on board, we can make it work.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You express confidence in the plan and encourage teamwork, showing good perception and social skills, but could improve on empathy and self-regulation."
+            },
+            {
+                "text": "We might face obstacles, but it's still worth trying.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 4,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledge potential challenges but maintain a positive outlook, demonstrating good self-regulation and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If everyone feels it's necessary, we should definitely give it a go.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 2
+                },
+                "analysis": "You agree with the proposal and emphasize the importance of collective effort, showing empathy but lower in perception and motivation."
+            }
+        ]
+    }
+}

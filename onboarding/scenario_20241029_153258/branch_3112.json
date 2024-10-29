@@ -1,0 +1,43 @@
+{
+    "scenes": {
+        "background": "You explained your situation to Bob. Monica, hearing the exchange, chimes in:",
+        "role": "Monica",
+        "location": "Open Office",
+        "description": "I understand you were on leave, but passing your tasks shouldnt become a habit.",
+        "options": [
+            {
+                "text": "I hear you. Let's discuss how we can better manage this in the future.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 3
+                },
+                "analysis": "You acknowledged Monica's concerns and suggested a collaborative approach, showing strong perception and empathy, but slightly lower motivation."
+            },
+            {
+                "text": "I understand your point, but sometimes everyone needs a bit of help.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You accepted Monica's feedback but highlighted the importance of mutual support, demonstrating good social skills and balanced empathy."
+            },
+            {
+                "text": "I get it, but it's not like this happens often.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You acknowledged Monica’s concerns but downplayed the issue, showing strong motivation but lower empathy and perception."
+            }
+        ]
+    }
+}
