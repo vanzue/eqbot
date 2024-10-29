@@ -121,7 +121,7 @@ def request_LLM_response(scenario):
                             "Summary of Suggestions": "[Summarize the suggestions based on cultivation suggestions into one sentence, like a title]"
                         }},
                         "9. Overall Suggestion": {{
-                            "Overall Suggestion": "[According to the user's situation, give a comprehensive evaluation and good wishes to the user, realted to the user's cons]"
+                            "Overall Suggestion": "[According to the user's situation, give a comprehensive evaluation and good wishes to the user, related to the user's cons]"
                         }}
                     }}
                     """
