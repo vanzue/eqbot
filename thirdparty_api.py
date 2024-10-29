@@ -62,17 +62,27 @@ def reply2text(product, message: str, user_id, replyToken: str, db: Session):
         reply_message(
             "OK, drop another chat to me", replyToken)
     else:
-        responses, analyze = generate_auto_reply(
+        responses, analyze ,language= generate_auto_reply(
             product, str(user_id), None, message, db)
-        if(product == "LINE"):
-            for response in responses:
-                send_message(response, user_id)
-            send_message(analyze, user_id)
-        else:
-            for response in responses:
-                send_telegram_message(user_id, response)
-            send_telegram_message(user_id, analyze)
+        response_line_or_telegram(product, responses,analyze, user_id, language)
 
+def response_line_or_telegram(product, responses,analyze, user_id, language: str):
+    if(product == "LINE"):
+        if language == 'en':
+            send_message("Suggested Reply:", user_id)
+        else:
+            send_message("建议回复:", user_id)
+        for response in responses:
+            send_message(response, user_id)
+        send_message(analyze, user_id)
+    else:
+        if language == 'en':
+            send_telegram_message(user_id,"Suggested Reply:")
+        else:
+            send_telegram_message(user_id,"建议回复:")
+        for response in responses:
+            send_telegram_message(user_id, response)
+        send_telegram_message(user_id, analyze)
 
 def reply2image(product, message_id, user_id, replyToken: str, db: Session):
     url = f'https://api-data.line.me/v2/bot/message/{message_id}/content'
@@ -103,16 +113,10 @@ def get_response_from_image(product, IMAGE_PATH, user_id, replyToken, db: Sessio
     except Exception as e:
         print(f"An error occurred while deleting the image file: {e}")
 
-    responses, analyze = generate_auto_reply(
+    responses, analyze,language = generate_auto_reply(
         product, user_id, chat_history, "", db)
-    if(product == "LINE"):
-        for response in responses:
-            send_message(response, user_id)
-        send_message(analyze, user_id)
-    else:
-        for response in responses:
-            send_telegram_message(user_id, response)
-        send_telegram_message(user_id, analyze)
+    response_line_or_telegram(product, responses,analyze, user_id, language)
+
 
 
 def reply_message(data, replyToken):
@@ -161,10 +165,10 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
     retrieved_state = crud.get_reply_state_by_product_and_user(
         db, product, user_id)
     eqmaster = EQmaster()
-    response, analyse = [], ""
+    response, analyse ,language= [], "",""
     if chat_history:
-        response, analyse = eqmaster.get_response_and_analyze(
-            chat_history)
+        response, analyse,language = eqmaster.get_response_and_analyze(
+            chat_history,"me")
 
         state = schemas.ReplyStateCreate(
             product=product,
@@ -181,7 +185,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 "userName": "other",
                 "message": intent
             }]
-            response, analyse = eqmaster.get_response_and_analyze(
+            response, analyse,language = eqmaster.get_response_and_analyze(
                 chat_history=chat_history)
             state = schemas.ReplyStateCreate(
                 product=product,
@@ -191,7 +195,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 stage_number=3)
         else:
             chat_history = json.loads(retrieved_state.chat_history)
-            response = eqmaster.get_response_by_intent(
+            response ,language= eqmaster.get_response_by_intent(
                 chat_history=retrieved_state.chat_history,
                 intent=intent,
                 analyze=retrieved_state.stage2_output
@@ -206,7 +210,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
             crud.replace_reply_state(db, state)
 
     # here should only be list of responses.
-    return response, analyse
+    return response, analyse,language
 
 
 @router.post("/Telegram/webhook")
@@ -226,7 +230,7 @@ async def telegram_webhook(request: Request,db: Session = Depends(database.get_d
     processed_update_ids.add(update_id)
     try:
         if 'photo' in message:
-            reply2imageTelegram("Telegram", message['photo'][0]['file_id'], message['chat']['id'], None, db)
+            reply2imageTelegram("Telegram", message['photo'][-1]['file_id'], message['chat']['id'], None, db)
         elif 'text' in message:
             reply2text("Telegram", message['text'],
                         message['chat']['id'], message['message_id'], db)
