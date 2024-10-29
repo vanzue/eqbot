@@ -15,7 +15,7 @@ def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate)
         job_level=personal_info.job_level,
         issues=personal_info.issues,
         job_id=personal_info.job_id,
-        num_star=100
+        num_star=500
     )
     db.add(db_personal_info)
     db.commit()
