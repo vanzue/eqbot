@@ -1,99 +1,94 @@
-import io
 import os
 import azure.cognitiveservices.speech as speechsdk
 import dotenv
-import wave
 
 dotenv.load_dotenv()
 
-def synthesize_speech(text: str, voice_name: str = "en-US-AvaMultilingualNeural", style: str = "general"):
-    """
-    Synthesizes speech from the given text and uploads it to Azure Blob Storage.
 
-    Parameters:
-    - text (str): The text to be synthesized into speech.
-    - container_name (str): The name of the blob container where the audio will be uploaded.
-    - blob_name (str): The name of the blob where the audio will be stored.
-    - voice_name (str): The voice to use for synthesis (default is "en-US-AvaMultilingualNeural").
-    - style (str): The speaking style (e.g., "cheerful", "sad", "angry", etc., default is "general").
+def synthesize_speech(
+    text: str,
+    voice_name: str = "en-US-AvaMultilingualNeural",
+    style: str = "general",
+    rate: str = "0%"
+):
     """
-    # Set up the Speech Configuration with your Azure Speech Service subscription key and region
+    合成语音并返回音频数据。
+
+    参数：
+    - text (str): 要合成的文本。
+    - voice_name (str): 使用的语音名称。
+    - style (str): 语音风格。
+    - rate (str): 语速，默认为"0%"
+
+    返回：
+    - bytes: 合成的音频数据。
+    """
     speech_config = speechsdk.SpeechConfig(
-        subscription=os.environ.get('AZURE_SPEECH_KEY'), 
+        subscription=os.environ.get('AZURE_SPEECH_KEY'),
         region=os.environ.get('AZURE_SPEECH_REGION')
     )
 
-    # Set the voice for the speech synthesis
+    # 设置语音和输出格式
     speech_config.speech_synthesis_voice_name = voice_name
+    speech_config.set_speech_synthesis_output_format(
+        speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm
+    )
 
-    # Create the Speech Synthesizer with the given configurations
-    speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=None)
+    speech_synthesizer = speechsdk.SpeechSynthesizer(
+        speech_config=speech_config, audio_config=None
+    )
 
-    # Define SSML structure to include voice and style
     ssml_string = f"""
-    <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xml:lang="en-US">
+    <speak version="1.0"
+           xmlns="http://www.w3.org/2001/10/synthesis"
+           xmlns:mstts="http://www.w3.org/2001/mstts"
+           xml:lang="en-US">
         <voice name="{voice_name}">
             <mstts:express-as style="{style}">
-                {text}
+                <prosody rate="{rate}">
+                    {text}
+                </prosody>
             </mstts:express-as>
         </voice>
     </speak>
     """
 
-    # Perform the speech synthesis using SSML to apply the style
-    speech_synthesis_result = speech_synthesizer.speak_ssml_async(ssml_string).get()
+    speech_synthesis_result = speech_synthesizer.speak_ssml_async(
+        ssml_string
+    ).get()
 
-    # Check the result of the synthesis
     if speech_synthesis_result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
-        # Retrieve the audio data from the result
-        audio_stream = speechsdk.AudioDataStream(speech_synthesis_result)
-        audio_data = bytearray()
-        buffer = bytes(4096)
-        
-        while True:
-            read_size = audio_stream.read_data(buffer)
-            if read_size == 0:
-                break
-            audio_data.extend(buffer[:read_size])
-        
+        # 获取音频数据
+        audio_data = speech_synthesis_result.audio_data
         return audio_data
-        
-    
     elif speech_synthesis_result.reason == speechsdk.ResultReason.Canceled:
         cancellation_details = speech_synthesis_result.cancellation_details
-        print(f"Speech synthesis canceled: {cancellation_details.reason}")
-        if cancellation_details.reason == speechsdk.CancellationReason.Error:
-            if cancellation_details.error_details:
-                print(f"Error details: {cancellation_details.error_details}")
-                print("Did you set the speech resource key and region values?")
+        print(f"语音合成被取消: {cancellation_details.reason}")
+        if (
+            cancellation_details.reason == speechsdk.CancellationReason.Error
+            and cancellation_details.error_details
+        ):
+            print(f"错误详情: {cancellation_details.error_details}")
+            print("请检查您的语音服务密钥和区域设置。")
         return None
-    print("Error happened generating voice.")
-    return None
+    else:
+        print("生成语音时发生错误。")
+        return None
 
-def get_wav_data(audio_data: bytearray) -> bytes:
-    """
-    Get the WAV data as bytes from the given audio data.
 
-    Parameters:
-    - audio_data (bytearray): The synthesized audio data.
-
-    Returns:
-    - bytes: The WAV data as bytes.
-    """
-    with io.BytesIO() as wav_io:
-        with wave.open(wav_io, 'wb') as wf:
-            wf.setnchannels(1)  # Mono channel
-            wf.setsampwidth(2)  # Sample width in bytes (16-bit)
-            wf.setframerate(24000)  # Sample rate
-            wf.writeframes(audio_data)
-        wav_data = wav_io.getvalue()
-    return wav_data
-
-# Example usage of the function
 if __name__ == "__main__":
-    # Example text and blob details
     text_input = "I'm really angry at this situation. I need to calm down and think clearly."
-    result = synthesize_speech(text_input)
-    wavdata = get_wav_data(result)
-    with open("audio.wav", "wb") as audio_file:
-        audio_file.write(wavdata)
+    # 使用默认语速
+    audio_data = synthesize_speech(text_input)
+    if audio_data:
+        # 将音频数据保存为文件，供测试
+        with open("output_default_rate.wav", "wb") as f:
+            f.write(audio_data)
+        print("音频已生成并保存为output_default_rate.wav")
+
+    # 调整语速为比默认慢10%
+    audio_data_slow = synthesize_speech(text_input, rate="-10%")
+    if audio_data_slow:
+        with open("output_slow_rate.wav", "wb") as f:
+            f.write(audio_data_slow)
+        print("音频已生成并保存为output_slow_rate.wav")
