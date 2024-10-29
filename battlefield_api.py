@@ -126,3 +126,8 @@ def course_exists(person_id: int, db: Session = Depends(database.get_db)):
 def update_diamond(request: data_types.DiamondUpdate, db: Session = Depends(database.get_db)):
     db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=request.num_diamond)
     return {"diamond_num": db_star, "message": True}
+
+@router.get("/get_course/{person_id}/{course_id}")
+def get_course_status(person_id: int, course_id: int, db: Session = Depends(database.get_db)):
+    db_course = crud.get_coursesperson_by_person_id(db, person_id=person_id, course_id=course_id)
+    return {"course": db_course}
