@@ -3,7 +3,7 @@
         "background": "Bob rubs his temples, looking frustrated, while Monica taps her pen on the table.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'How do we manage with this constant back and forth?'",
+        "description": "Monica says, How do we manage with this constant back and forth?",
         "options": [
             {
                 "text": "Perhaps we need to establish clearer guidelines to streamline our decision-making.",

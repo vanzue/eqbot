@@ -3,7 +3,7 @@
         "background": "Monica nods thoughtfully at Bob.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'A bar might not be the best idea for everyone. Maybe we should think of alternatives.'",
+        "description": "A bar might not be the best idea for everyone. Maybe we should think of alternatives.",
         "options": [
             {
                 "text": "How about we make a list of suggestions and vote on it?",

@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica glances at you with a concerned expression while Bob checks his calendar.",
-        "role": "Monica",
+        "background": "Bob raises an eyebrow, looking skeptical.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'So, when should we schedule this meeting? We need to resolve this quickly.'",
+        "description": "So, whats the plan for the next time we have an urgent situation?",
         "options": [
             {
-                "text": "Let's meet tomorrow morning. We need to act fast.",
+                "text": "We need a clear, step-by-step plan for handling emergencies.",
                 "scores": {
                     "Perception": 4,
-                    "Self Regulation": 2,
+                    "Self Regulation": 3,
                     "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 4
+                    "Social Skill": 4,
+                    "Motivation": 3
                 },
-                "analysis": "You suggested an immediate meeting, showing a high level of urgency and motivation but potentially lower self-regulation."
+                "analysis": "You suggest a concrete plan, showing good perception and social skills, but could improve on empathy and self-regulation."
             },
             {
-                "text": "How about we take some time to gather our thoughts and meet in the afternoon?",
+                "text": "Maybe we should have a designated team for emergencies. What do you think, Monica?",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You suggested a more considered approach, showing good self-regulation and balanced perception, though the urgency is less emphasized."
-            },
-            {
-                "text": "We should have a preliminary discussion over email first and then decide the meeting time.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You propose a team-based approach and involve Monica, demonstrating good self-regulation and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If you feel that way, then perhaps we should discuss this further to find the best solution.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You suggested starting with an email discussion, showing good social skills but potentially lower empathy and immediate motivation."
+                "analysis": "You agree to discuss further, showing empathy and willingness to find a solution, but perception and motivation were lower."
             }
         ]
     }

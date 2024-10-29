@@ -3,7 +3,7 @@
         "background": "Monica and Bob discuss combining activities.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "Monica shrugs and says, 'Combining activities sounds chaotic.'",
+        "description": "Monica shrugs and says, Combining activities sounds chaotic.",
         "options": [
             {
                 "text": "We could schedule the activities to make it more organized.",

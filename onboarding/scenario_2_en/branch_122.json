@@ -3,7 +3,7 @@
         "background": "Monica leans back and sighs, looking at both of you.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Maybe we should just stick to one approach to avoid confusion.'",
+        "description": "Monica says, Maybe we should just stick to one approach to avoid confusion.",
         "options": [
             {
                 "text": "We could try integrating both approaches to see what works best.",

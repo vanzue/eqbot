@@ -3,7 +3,7 @@
         "background": "Monica raises an eyebrow, looking at you and Bob.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'I get that we need to be cautious, but can't we speed things up a bit?'",
+        "description": "I get that we need to be cautious, but cant we speed things up a bit?",
         "options": [
             {
                 "text": "We could try to be more efficient without compromising on quality.",

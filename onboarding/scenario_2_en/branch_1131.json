@@ -3,7 +3,7 @@
         "background": "Monica sighs and glances at Bob, who remains silent.",
         "role": "You",
         "location": "Conference Room",
-        "description": "You say, 'We need to move forward, but let's make sure we cover everyone's concerns first.'",
+        "description": "You say, We need to move forward, but lets make sure we cover everyones concerns first.",
         "options": [
             {
                 "text": "Monica, can you summarize the main points we've discussed so far?",

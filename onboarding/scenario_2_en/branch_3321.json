@@ -3,7 +3,7 @@
         "background": "Monica sighs and glances at her watch.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'We really should have wrapped this up by now.'",
+        "description": "Bob says, We really should have wrapped this up by now.",
         "options": [
             {
                 "text": "I understand, Bob. Let's finalize this quickly and move on.",

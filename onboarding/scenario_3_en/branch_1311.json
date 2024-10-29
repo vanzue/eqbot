@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you are still discussing the celebration ideas.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob scratches his head and says, 'A bar party might be too wild for some of us.'",
+        "description": "Bob scratches his head and says, A bar party might be too wild for some of us.",
         "options": [
             {
                 "text": "Bars can be fun if we plan it well; let's make it enjoyable for everyone.",

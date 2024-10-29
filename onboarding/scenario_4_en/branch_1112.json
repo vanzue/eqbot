@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica looks up, clearly agitated. Bob is tapping his foot impatiently.",
-        "role": "Monica",
+        "background": "Bob looks thoughtful, and Monica nods in agreement.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'I thought we all agreed to share the workload. Why am I the only one doing this?'",
+        "description": "I see your point, but how do you manage to stay so motivated?",
         "options": [
             {
-                "text": "Let's discuss calmly and figure out how we can better share the tasks.",
+                "text": "I find motivation in knowing that our work makes a difference.",
+                "scores": {
+                    "Perception": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "Your response shows empathy and motivation, as you highlight the impact of your work, though self-regulation and perception could be reinforced."
+            },
+            {
+                "text": "Thanks, Bob. Staying focused on goals helps me keep my energy up.",
                 "scores": {
                     "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You express gratitude and emphasize goal orientation, reflecting strong perception and motivation, but empathy and self-regulation could be better."
+            },
+            {
+                "text": "It's a challenge, but I try to stay positive and take breaks when needed.",
+                "scores": {
+                    "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You aimed to diffuse the tension and promote a collaborative approach, showing good perception and self-regulation."
-            },
-            {
-                "text": "Monica, it seems you’re overwhelmed. Bob, can we redistribute some tasks?",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You acknowledged Monica's frustration and sought to reallocate work, demonstrating empathy and social skills."
-            },
-            {
-                "text": "Monica, maybe we need to have a meeting to clarify everyone's responsibilities.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 3,
-                    "Empathy": 2,
-                    "Social Skill": 4,
-                    "Motivation": 2
-                },
-                "analysis": "You suggested a structured approach to address the issue, showing social skill but lower empathy and motivation."
+                "analysis": "You acknowledge the difficulty and share practical strategies, showing good self-regulation and perception, though motivation and empathy could be improved."
             }
         ]
     }

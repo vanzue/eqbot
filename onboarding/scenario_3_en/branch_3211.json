@@ -3,7 +3,7 @@
         "background": "Bob scratches his head and looks at Monica.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'So, what about a mix of suggestions? Should we start drafting a list?'",
+        "description": "So, what about a mix of suggestions? Should we start drafting a list?",
         "options": [
             {
                 "text": "Sure, let's gather everyone's ideas and vote.",

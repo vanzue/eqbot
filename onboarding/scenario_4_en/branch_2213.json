@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica nods and looks at you expectantly. Bob sighs and sits down.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "'I understand your frustration, but we're in this together. Can we count on you for a bit more?'",
+        "background": "You suggested collaborating with Monica on the task.",
+        "role": "Bob",
+        "location": "Conference Room",
+        "description": "Collaborating sounds good, but what if it delays our progress?",
         "options": [
             {
-                "text": "I get it, let's see what we can accomplish quickly.",
+                "text": "We can set clear timelines to ensure we stay on track.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
                     "Motivation": 3
                 },
-                "analysis": "You acknowledged the situation and offered to help more, showing good empathy and perception, but your self-regulation and motivation could be stronger."
+                "analysis": "You proposed a solution to manage potential delays, showing good perception and self-regulation. However, social skills were lower due to a lack of addressing Bob's concerns directly."
             },
             {
-                "text": "I really need to stick to my break. Maybe we can redistribute the tasks?",
+                "text": "I understand the concern, but collaboration can bring better results.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
-                    "Empathy": 2,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You stood firm on needing your break, showing strong self-regulation but lower empathy and motivation to help."
+                "analysis": "You emphasized the benefits of collaboration, showing good self-regulation and empathy. However, motivation was lower as you didn't fully commit to addressing the potential delay."
             },
             {
-                "text": "It's not fair that this always falls on me. We need a better plan.",
+                "text": "If progress is a priority, I can handle it solo.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, potentially straining relationships with your colleagues."
+                "analysis": "You offered to take full responsibility, showing strong empathy and motivation. However, self-regulation could be improved as you didn't consider the collaborative benefits."
             }
         ]
     }

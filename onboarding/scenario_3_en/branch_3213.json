@@ -3,7 +3,7 @@
         "background": "Bob taps his pen on the table and glances at Monica.",
         "role": "You",
         "location": "Conference Room",
-        "description": "'It seems like we should consider a different plan altogether.'",
+        "description": "It seems like we should consider a different plan altogether.",
         "options": [
             {
                 "text": "Let's gather everyone's suggestions and vote on the best one.",

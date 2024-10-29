@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you are still in the meeting room discussing ideas.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "Monica crosses her arms and says, 'Honestly, I don't think an outdoor activity is the best idea.'",
+        "description": "Monica crosses her arms and says, Honestly, I dont think an outdoor activity is the best idea.",
         "options": [
             {
                 "text": "It's one option, but maybe we need to consider all suggestions equally.",

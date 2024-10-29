@@ -3,7 +3,7 @@
         "background": "Bob rubs his temples, looking exasperated.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Prioritizing quick wins could backfire. What if we miss something crucial?'",
+        "description": "Prioritizing quick wins could backfire. What if we miss something crucial?",
         "options": [
             {
                 "text": "We should weigh the risks accordingly. Let's list potential pitfalls.",

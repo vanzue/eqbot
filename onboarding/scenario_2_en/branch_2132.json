@@ -3,7 +3,7 @@
         "background": "Bob raises an eyebrow and looks at you.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'So, how do we actually align our approaches?'",
+        "description": "So, how do we actually align our approaches?",
         "options": [
             {
                 "text": "Maybe we should establish clear guidelines everyone agrees on.",

@@ -3,7 +3,7 @@
         "background": "Monica leans back in her chair, tapping her pen.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Alright, let's put it to a vote. Who's in favor of the bar idea?'",
+        "description": "Alright, lets put it to a vote. Whos in favor of the bar idea?",
         "options": [
             {
                 "text": "Maybe we should first discuss the pros and cons of each option.",

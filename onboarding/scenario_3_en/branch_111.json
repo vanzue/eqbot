@@ -1,6 +1,6 @@
 {
     "scenes": {
-        "background": "Bob leans back and says, 'We should just take a vote and decide.'",
+        "background": "Bob leans back and says, We should just take a vote and decide.",
         "role": "You",
         "location": "Meeting Room",
         "description": "Is a vote really the best way to handle this?",

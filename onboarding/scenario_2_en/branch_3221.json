@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "Monica nods slightly, showing she's willing to listen.",
+        "background": "Monica nods slightly, showing shes willing to listen.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Balancing speed and thoroughness is fine, but we must set clear priorities.'",
+        "description": "Bob says, Balancing speed and thoroughness is fine, but we must set clear priorities.",
         "options": [
             {
                 "text": "Absolutely, let's list our priorities and ensure we're on the same page.",

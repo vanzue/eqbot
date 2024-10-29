@@ -3,7 +3,7 @@
         "background": "After a few more minutes of discussion, Monica taps her foot impatiently.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We really can't afford to delay any further. What's the plan?'",
+        "description": "Monica says, We really cant afford to delay any further. Whats the plan?",
         "options": [
             {
                 "text": "We're almost done, Monica. Just a few more minutes, please.",

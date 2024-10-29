@@ -3,7 +3,7 @@
         "background": "Bob rubs his temples, clearly stressed.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'This project is behind schedule because of endless discussions.'",
+        "description": "Bob says, This project is behind schedule because of endless discussions.",
         "options": [
             {
                 "text": "Perhaps we need a more structured approach to balance discussions and action.",

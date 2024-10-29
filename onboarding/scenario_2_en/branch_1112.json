@@ -3,7 +3,7 @@
         "background": "Bob sighs, leaning back in his chair.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We can't ignore the urgency, but we need a well-thought plan.'",
+        "description": "Monica says, We can't ignore the urgency, but we need a well-thought plan.",
         "options": [
             {
                 "text": "How about a quick brainstorming session to balance speed and thoroughness?",

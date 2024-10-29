@@ -3,7 +3,7 @@
         "background": "You see Bob sighing and rubbing his temples.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'At this rate, we're going to miss our deadline.'",
+        "description": "Bob says, At this rate, were going to miss our deadline.",
         "options": [
             {
                 "text": "Let's prioritize the tasks and focus on the most critical ones first.",

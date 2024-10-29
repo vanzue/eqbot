@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica nods slightly, then turns to you, looking for some direction.",
-        "role": "Monica",
+        "background": "Bob nods but still seems skeptical.",
+        "role": "Bob",
         "location": "Office",
-        "description": "'You've always been good at solving these issues. What do you think we should do next?'",
+        "description": "I get that, but what if it happens again? Are we just going to rely on you every time?",
         "options": [
             {
-                "text": "We should have a team meeting to brainstorm ideas and find a solution together.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You suggested a collective approach, showing good perception and empathy, but your motivation for immediate action is average."
-            },
-            {
-                "text": "I think we need to delegate tasks more efficiently. Maybe that's where we went wrong.",
+                "text": "Ideally, no. We should prepare better for such situations.",
                 "scores": {
                     "Perception": 3,
-                    "Self Regulation": 3,
+                    "Self Regulation": 4,
                     "Empathy": 3,
                     "Social Skill": 4,
                     "Motivation": 3
                 },
-                "analysis": "You suggested improving task delegation, showing balanced empathy and social skills, but your perception of the broader issue could be stronger."
+                "analysis": "You suggest improving preparation, showing good self-regulation and social skills, but could improve on perception and empathy."
             },
             {
-                "text": "It might be best to pause and reassess our goals. We're missing something fundamental.",
+                "text": "We can handle that when it comes. Let's focus on the present.",
                 "scores": {
                     "Perception": 4,
-                    "Self Regulation": 4,
-                    "Empathy": 3,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You suggest addressing future issues later, showing good perception and social skills, but empathy could be stronger."
+            },
+            {
+                "text": "If necessary, yes. But we should also build a more resilient team.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 4,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You suggested reassessing the goals, showing strong perception and self-regulation, but your motivation to address the issue immediately is lower."
+                "analysis": "You agree with Bob but emphasize team resilience, demonstrating empathy but lower in perception and motivation."
             }
         ]
     }

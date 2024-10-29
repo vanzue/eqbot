@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "Bob crosses his arms and says, 'Fine, no bar. But what's the plan then?'",
+        "background": "Bob crosses his arms and says, Fine, no bar. But whats the plan then?",
         "role": "You",
         "location": "Meeting Room",
-        "description": "Let's explore Ryan's idea of an outdoor activity.",
+        "description": "Lets explore Ryans idea of an outdoor activity.",
         "options": [
             {
                 "text": "We can plan a variety of activities to suit everyone's interests.",

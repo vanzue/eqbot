@@ -3,7 +3,7 @@
         "background": "Bob leans back in his chair, arms crossed.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'Sure, voting is fair, but what if some people still aren't happy?'",
+        "description": "Sure, voting is fair, but what if some people still arent happy?",
         "options": [
             {
                 "text": "We can always have a backup plan to address any strong objections.",

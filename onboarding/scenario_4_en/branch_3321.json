@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica and Bob are now preparing to implement the solutions you suggested during the video call.",
+        "background": "Monica and Bob are discussing the plan in the meeting room.",
         "role": "Monica",
-        "location": "Office",
-        "description": "'Thanks for your help. But what if we encounter more issues? Will you be available?'",
+        "location": "Meeting Room",
+        "description": "Are we really sure this new plan will work?",
         "options": [
             {
-                "text": "I'll be available for a short while, but then I really need to disconnect.",
+                "text": "It's a start. We can adjust as we go.",
                 "scores": {
-                    "Perception": 4,
+                    "Perception": 3,
                     "Self Regulation": 3,
-                    "Empathy": 4,
-                    "Social Skill": 3,
-                    "Motivation": 4
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
                 },
-                "analysis": "You are showing empathy and willingness to help, but still maintaining some personal boundaries and self-regulation."
+                "analysis": "You provided a balanced response, showing flexibility and readiness to adapt, which demonstrates good social skills and perception."
             },
             {
-                "text": "I hope you can manage from here. Please try to solve it independently.",
+                "text": "I'm confident it will. Let's stay focused and we'll get there.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 3
+                    "Motivation": 4
                 },
-                "analysis": "You are setting clear boundaries for your time off, showing strong self-regulation, but your empathy and motivation could be perceived as lower."
+                "analysis": "You showed confidence and motivation, maintaining focus, but empathy was lower as you didn't fully acknowledge Monica's concern."
             },
             {
-                "text": "I might not be available later. You'll need to rely on your own skills.",
+                "text": "If we encounter issues, we can always rethink the approach.",
                 "scores": {
-                    "Perception": 2,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 2,
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 4,
+                    "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You are emphasizing the need for personal time, showing strong self-regulation but lower perception, empathy, and motivation to help."
+                "analysis": "You prioritized flexibility and empathy, showing concern for potential issues, but self-regulation and motivation were weaker."
             }
         ]
     }

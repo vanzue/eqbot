@@ -3,7 +3,7 @@
         "background": "Monica glances at you, eyebrows raised, waiting for your input.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Taking risks might be necessary, but Bob's caution isn't without merit. What's your take?'",
+        "description": "Taking risks might be necessary, but Bobs caution isnt without merit. Whats your take?",
         "options": [
             {
                 "text": "It's true that caution can prevent mistakes. Maybe we should analyze the risks quickly before moving forward.",

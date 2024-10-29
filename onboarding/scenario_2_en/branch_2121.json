@@ -3,7 +3,7 @@
         "background": "You notice Monica biting her lip, looking concerned.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Setting up a detailed plan sounds like a lot of work. Is it really necessary?'",
+        "description": "Setting up a detailed plan sounds like a lot of work. Is it really necessary?",
         "options": [
             {
                 "text": "It's crucial to avoid future conflicts. Let's do it for better teamwork.",

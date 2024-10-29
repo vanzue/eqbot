@@ -3,7 +3,7 @@
         "background": "Monica sighs and looks at Bob with frustration.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I agree, but we can't sacrifice thoroughness for speed.'",
+        "description": "Bob says, I agree, but we cant sacrifice thoroughness for speed.",
         "options": [
             {
                 "text": "Let's try to find a balance and ensure we cover all critical points swiftly.",

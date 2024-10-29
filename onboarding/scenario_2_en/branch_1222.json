@@ -3,7 +3,7 @@
         "background": "Monica looks at the clock, visibly anxious.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We really need to wrap this up soon. We can't afford to go over time.'",
+        "description": "Monica says, We really need to wrap this up soon. We cant afford to go over time.",
         "options": [
             {
                 "text": "Time is important, but so is making the right decision. Let's quickly summarize our points.",

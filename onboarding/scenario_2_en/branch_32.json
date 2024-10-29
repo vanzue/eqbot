@@ -3,7 +3,7 @@
         "background": "Monica looks frustrated and crosses her arms.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I understand the need for speed, but this project's complexity requires careful planning.'",
+        "description": "Bob says, I understand the need for speed, but this projects complexity requires careful planning.",
         "options": [
             {
                 "text": "Perhaps we can allocate some tasks to move faster while ensuring detailed planning.",

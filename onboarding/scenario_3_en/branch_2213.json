@@ -3,7 +3,7 @@
         "background": "Monica and Bob are still deliberating. Monica looks thoughtful.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'Finding a less formal venue is a good idea, but what about the budget?'",
+        "description": "Finding a less formal venue is a good idea, but what about the budget?",
         "options": [
             {
                 "text": "We can balance between formal and informal while keeping costs low.",

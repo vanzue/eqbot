@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Bob runs his hand through his hair, clearly frustrated. Monica crosses her arms, looking at you.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "‘That was a bit harsh. We are all trying our best here. Can we find a middle ground?’",
+        "background": "Monica and Bob are on a video call with you as you review the draft.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Thanks for the review. Could you also help us with the presentation slides?",
         "options": [
             {
-                "text": "I apologize if it came off that way. Let's discuss how we can tackle this together.",
+                "text": "I'll help with the slides to ensure everything is perfect.",
                 "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
+                    "Perception": 3,
+                    "Self Regulation": 2,
                     "Empathy": 4,
                     "Social Skill": 3,
                     "Motivation": 4
                 },
-                "analysis": "You acknowledged the harshness and offered to collaborate, showing good perception and empathy, though your self-regulation could be stronger."
+                "analysis": "You chose to help further, showing strong empathy and motivation, but could improve on self-regulation."
             },
             {
-                "text": "I understand, maybe you can prioritize the tasks and handle the most urgent ones first.",
+                "text": "I think you both can manage the slides. I'll review them later.",
                 "scores": {
-                    "Perception": 3,
+                    "Perception": 4,
                     "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 3
-                },
-                "analysis": "You suggested a practical solution while acknowledging the situation, showing strong self-regulation but less empathy."
-            },
-            {
-                "text": "Honestly, I think this should be managed internally. It’s part of your roles.",
-                "scores": {
-                    "Perception": 3,
-                    "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 3,
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "Your response was somewhat passive-aggressive, showing lower empathy and self-regulation, which might impact team dynamics negatively."
+                "analysis": "You delegated the task, maintaining boundaries and showing good self-regulation, but empathy and motivation were lower."
+            },
+            {
+                "text": "I'm still on leave. Please handle the slides and update me.",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 3,
+                    "Empathy": 3,
+                    "Social Skill": 2,
+                    "Motivation": 3
+                },
+                "analysis": "You prioritized your leave and delegated the task, showing good emotional perception, though social skills could improve."
             }
         ]
     }

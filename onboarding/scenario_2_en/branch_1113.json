@@ -3,7 +3,7 @@
         "background": "Bob nods, slightly relaxing his posture, while Monica scribbles notes.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Shouldn't we at least ensure everyone understands the plan before moving forward?'",
+        "description": "Monica says, Shouldnt we at least ensure everyone understands the plan before moving forward?",
         "options": [
             {
                 "text": "Absolutely, a quick review can help clear any doubts.",

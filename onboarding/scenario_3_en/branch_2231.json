@@ -3,7 +3,7 @@
         "background": "Bob and Monica are discussing the celebration plans. Monica looks thoughtful.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Do you think an outdoor activity will be fun for everyone?'",
+        "description": "Do you think an outdoor activity will be fun for everyone?",
         "options": [
             {
                 "text": "Outdoor activities can be refreshing and fun.",

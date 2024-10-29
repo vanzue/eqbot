@@ -3,7 +3,7 @@
         "background": "Bob rubs his temples and glances at Monica.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'Maybe we should just do nothing and skip the celebration.'",
+        "description": "Maybe we should just do nothing and skip the celebration.",
         "options": [
             {
                 "text": "Skipping the celebration seems extreme, but maybe we need a break.",

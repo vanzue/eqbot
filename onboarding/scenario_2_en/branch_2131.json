@@ -3,7 +3,7 @@
         "background": "Bob leans forward, frowning as he looks at Monica.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'How do you think we should handle these constant disagreements?'",
+        "description": "How do you think we should handle these constant disagreements?",
         "options": [
             {
                 "text": "We need to establish clear guidelines for decision-making to reduce conflicts.",

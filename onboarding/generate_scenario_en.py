@@ -326,7 +326,7 @@ def recursive_dialogue(context, folder, depth=0, max_depth=5, branch_path=""):
                                 Don't repeat the tedious background each time and the backgrounds of each scenario are high based on the previous interactions but keep it shorter than 30 words.
                                 Don't ask the same persion to say in the adjacent scenes and keep the output format. Make sure to return the given Standard Output Format and do not generate inside other containers like ```json```!
                                 """
-        new_context += "\nPlease avoid repeating previous scenarios or answers and the background shoule keep going with the new interations, and it can be more varied, combined with the last round of dialogue, add some body movements but don't include the original background. The description includes the words that role says and following the movements described in background. Make sure to return the JSON data structure (do not start with json letters, do not omit,) and take it easy.\n"
+        new_context += "\nPlease avoid repeating previous scenarios or answers and the background shoule keep going with the new interations, and it can be more varied, combined with the last round of dialogue, add some body movements but don't include the original background. The description only includes the words that role says. Make sure to return the JSON data structure (do not start with json letters, do not omit,) and take it easy.\n"
         # print(new_context)
 
         new_branch_path = f"{branch_path}{i}"

@@ -3,7 +3,7 @@
         "background": "Monica shifts in her seat, glancing at Bob with concern.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'If we keep rushing, we might overlook important details. What's your take?'",
+        "description": "Monica says, If we keep rushing, we might overlook important details. Whats your take?",
         "options": [
             {
                 "text": "We should strike a balance, ensuring thoroughness without losing momentum.",

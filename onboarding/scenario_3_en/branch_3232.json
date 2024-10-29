@@ -3,7 +3,7 @@
         "background": "Bob looks around the room, then at Monica.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'So, what are we going to do then?'",
+        "description": "So, what are we going to do then?",
         "options": [
             {
                 "text": "Let's try to come up with a unique idea that everyone will enjoy.",

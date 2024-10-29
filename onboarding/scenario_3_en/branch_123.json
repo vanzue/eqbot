@@ -3,7 +3,7 @@
         "background": "Bob looks thoughtful and then speaks up.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'What about a mix of activities? A bar and then some outdoor adventure?'",
+        "description": "What about a mix of activities? A bar and then some outdoor adventure?",
         "options": [
             {
                 "text": "That could work. Mixing activities might keep everyone happy.",

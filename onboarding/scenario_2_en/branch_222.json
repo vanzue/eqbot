@@ -3,7 +3,7 @@
         "background": "Alex taps his fingers on the table, visibly impatient.",
         "role": "Alex",
         "location": "Conference Room",
-        "description": "'This discussion is dragging. We need a decision now.'",
+        "description": "This discussion is dragging. We need a decision now.",
         "options": [
             {
                 "text": "How about we list the pros and cons quickly, then decide?",

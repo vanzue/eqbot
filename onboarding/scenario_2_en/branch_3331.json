@@ -3,7 +3,7 @@
         "background": "Monica sighs and looks at her watch.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I understand the need for speed, but we can't afford to make errors.'",
+        "description": "Bob says, I understand the need for speed, but we cant afford to make errors.",
         "options": [
             {
                 "text": "We need to find the middle ground. Let's finalize our discussion in the next 10 minutes.",

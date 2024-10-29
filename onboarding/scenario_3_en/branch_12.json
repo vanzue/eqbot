@@ -3,7 +3,7 @@
         "background": "You, Monica, and Bob are discussing the celebration planning.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "Monica rolls her eyes and says, 'A bar party will just be a noisy mess.'",
+        "description": "Monica rolls her eyes and says, A bar party will just be a noisy mess.",
         "options": [
             {
                 "text": "Bars can be fun; let's try to make it enjoyable for everyone.",

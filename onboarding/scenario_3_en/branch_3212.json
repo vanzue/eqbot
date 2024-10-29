@@ -3,7 +3,7 @@
         "background": "Bob leans back in his chair, glancing at Monica.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'A quieter venue sounds more inclusive. But won't that be boring for some?'",
+        "description": "A quieter venue sounds more inclusive. But wont that be boring for some?",
         "options": [
             {
                 "text": "We could find a middle ground that accommodates both preferences.",

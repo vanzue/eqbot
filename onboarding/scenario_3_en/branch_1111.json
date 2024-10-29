@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "Monica sighs and says, 'I just don't see why we can't have a simple dinner.'",
+        "background": "Monica sighs and says, I just dont see why we cant have a simple dinner.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob crosses his arms and says, 'A dinner won't be memorable enough for our hard work.'",
+        "description": "Bob crosses his arms and says, A dinner wont be memorable enough for our hard work.",
         "options": [
             {
                 "text": "A dinner might be low-key, but it can still be special if we plan it right.",

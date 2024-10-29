@@ -3,7 +3,7 @@
         "background": "Bob leans forward, rubbing his temples as he looks at you and Monica.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'We need immediate action. How can we ensure quick yet effective decisions?'",
+        "description": "Bob says, We need immediate action. How can we ensure quick yet effective decisions?",
         "options": [
             {
                 "text": "We should implement a system where quick decisions are made, but with room for later revisions.",

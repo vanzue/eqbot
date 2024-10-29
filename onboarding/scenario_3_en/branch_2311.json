@@ -3,7 +3,7 @@
         "background": "Ryan suggests an outdoor activity. Emma looks skeptical.",
         "role": "Emma",
         "location": "Break Room",
-        "description": "'An outdoor activity sounds exhausting.'",
+        "description": "An outdoor activity sounds exhausting.",
         "options": [
             {
                 "text": "Outdoor activities can be refreshing and fun.",

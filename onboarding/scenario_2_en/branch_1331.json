@@ -3,7 +3,7 @@
         "background": "Monica leans forward, tapping her pen on the table.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'How do we know this strategy will work?'",
+        "description": "Monica says, How do we know this strategy will work?",
         "options": [
             {
                 "text": "We need to pilot the strategy with a small team first.",

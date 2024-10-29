@@ -3,7 +3,7 @@
         "background": "Monica furrows her brow, looking at you with concern.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Taking risks is fine, but we need a plan. Why can't we find a middle ground?'",
+        "description": "Taking risks is fine, but we need a plan. Why cant we find a middle ground?",
         "options": [
             {
                 "text": "A middle ground sounds reasonable. Let's outline the risks and then decide.",

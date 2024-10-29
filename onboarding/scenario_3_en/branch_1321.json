@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you keep discussing ideas.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob folds his arms and says, 'We really should consider everyone's preferences.'",
+        "description": "Bob folds his arms and says, We really should consider everyones preferences.",
         "options": [
             {
                 "text": "True, it's important to take everyone's opinions into account.",

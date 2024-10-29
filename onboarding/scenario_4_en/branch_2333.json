@@ -1,23 +1,12 @@
 {
     "scenes": {
-        "background": "Bob sighs and looks at Monica for support.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "'Maybe we should address how we handle these tasks going forward. What do you think?'",
+        "background": "You reinforced your boundaries with Monica and suggested managing without your involvement.",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "Its really important. Can we discuss it briefly now?",
         "options": [
             {
-                "text": "We should consider a more structured approach to handle urgent tasks.",
-                "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
-                    "Empathy": 3,
-                    "Social Skill": 4,
-                    "Motivation": 3
-                },
-                "analysis": "You suggested a rational solution, showing good perception and social skills, though your motivation and self-regulation were moderate."
-            },
-            {
-                "text": "I agree, but I'm not sure we can solve everything with just meetings. More resources might be needed.",
+                "text": "I’ve set my boundaries clearly. You need to handle it without me.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
@@ -25,18 +14,29 @@
                     "Social Skill": 3,
                     "Motivation": 2
                 },
-                "analysis": "You acknowledged the problem but expressed skepticism about a meeting's effectiveness, showing strong self-regulation but lower empathy and motivation."
+                "analysis": "You reiterated your boundaries, showing strong self-regulation but lower empathy and motivation."
             },
             {
-                "text": "I think everyone needs to step up. Some people aren't pulling their weight.",
+                "text": "Alright, let's have a quick discussion. What's the issue?",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "Your response was somewhat passive-aggressive, indicating lower empathy and self-regulation, and it might strain relationships with colleagues."
+                "analysis": "You agreed to a brief discussion, showing empathy and motivation, but compromising on self-regulation."
+            },
+            {
+                "text": "If it's that critical, I'll listen in for a few minutes. What's going on?",
+                "scores": {
+                    "Perception": 4,
+                    "Self Regulation": 2,
+                    "Empathy": 3,
+                    "Social Skill": 4,
+                    "Motivation": 3
+                },
+                "analysis": "You chose to join briefly, demonstrating good perception and social skills, but compromised on self-regulation."
             }
         ]
     }

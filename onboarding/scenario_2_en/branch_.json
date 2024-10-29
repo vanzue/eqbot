@@ -1,9 +1,9 @@
 {
     "scenes": {
-        "background": "In a project meeting, Alex and Bob's different work styles clash.",
+        "background": "In a project meeting, Alex and Bobs different work styles clash.",
         "role": "Alex",
         "location": "Conference Room",
-        "description": "Alex says, 'We need to decide quickly and move forward. Why are we wasting time?'",
+        "description": "Alex says, We need to decide quickly and move forward. Why are we wasting time?",
         "options": [
             {
                 "text": "Let's take a moment to hear Bob's thoughts; it might offer valuable insights.",

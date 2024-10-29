@@ -3,7 +3,7 @@
         "background": "Monica sighs and checks her notes.",
         "role": "Alex",
         "location": "Conference Room",
-        "description": "Alex says, 'We really can't afford to delay this project any longer.'",
+        "description": "Alex says, We really cant afford to delay this project any longer.",
         "options": [
             {
                 "text": "I get your point, but let's not rush and miss crucial details.",

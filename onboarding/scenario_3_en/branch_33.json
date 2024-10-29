@@ -3,7 +3,7 @@
         "background": "Monica crosses her arms and looks at Bob.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'Why don't we just vote on it and go with the majority?'",
+        "description": "Why dont we just vote on it and go with the majority?",
         "options": [
             {
                 "text": "Voting seems fair, but we should consider everyone's preferences too.",

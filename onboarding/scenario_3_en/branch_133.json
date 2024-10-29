@@ -3,7 +3,7 @@
         "background": "Monica and Bob are still discussing celebration plans.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "Monica sighs and says, 'Formal dinners are so stiff and boring.'",
+        "description": "Monica sighs and says, Formal dinners are so stiff and boring.",
         "options": [
             {
                 "text": "Formal dinners can be elegant and memorable. Let's give it a try.",

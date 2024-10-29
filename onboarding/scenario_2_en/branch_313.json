@@ -3,7 +3,7 @@
         "background": "Monica nods but looks at Bob, who seems uneasy.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I just don't want us to miss an important detail. We should be cautious.'",
+        "description": "Bob says, I just dont want us to miss an important detail. We should be cautious.",
         "options": [
             {
                 "text": "Bob, your attention to detail is crucial. Let's focus on key points quickly.",

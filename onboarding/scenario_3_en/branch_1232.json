@@ -3,7 +3,7 @@
         "background": "Bob looks disappointed and sighs.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'I just thought mixing activities might have been interesting.'",
+        "description": "I just thought mixing activities might have been interesting.",
         "options": [
             {
                 "text": "I see your point. Maybe we can discuss more to find a balance.",

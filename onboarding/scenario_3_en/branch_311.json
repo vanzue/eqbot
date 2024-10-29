@@ -3,7 +3,7 @@
         "background": "Monica leans back in her chair, crossing her arms.",
         "role": "You",
         "location": "Meeting Room",
-        "description": "'We could have a structured plan to keep things organized.'",
+        "description": "We could have a structured plan to keep things organized.",
         "options": [
             {
                 "text": "Let's create a detailed schedule to ensure everything runs smoothly.",

@@ -3,7 +3,7 @@
         "background": "Monica sighs and glances at you.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'Voting is fine, but it might not satisfy everyone.'",
+        "description": "Voting is fine, but it might not satisfy everyone.",
         "options": [
             {
                 "text": "True, but maybe we can find a compromise that works for most.",

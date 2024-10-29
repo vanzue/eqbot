@@ -3,7 +3,7 @@
         "background": "Monica sighs and glances at Bob with a hint of frustration.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "'Simplifying things might be easier, but we could be missing out on a more inclusive experience.'",
+        "description": "Simplifying things might be easier, but we could be missing out on a more inclusive experience.",
         "options": [
             {
                 "text": "True, inclusivity is important. Let's brainstorm a hybrid plan.",

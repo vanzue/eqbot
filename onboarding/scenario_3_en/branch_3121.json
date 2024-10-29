@@ -3,7 +3,7 @@
         "background": "Bob leans back in his chair, crossing his arms.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "'Balancing everyone’s preferences might lead to more confusion.'",
+        "description": "Balancing everyone’s preferences might lead to more confusion.",
         "options": [
             {
                 "text": "We can create a poll to see which option is preferred by most.",

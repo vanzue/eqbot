@@ -3,7 +3,7 @@
         "background": "The team has successfully completed an important project, and everyone is excited to organize a celebration. However, there are differing opinions on how to celebrate. Colleague Sam suggests going to a bar for a lively party, Emma prefers a formal dinner, and Ryan proposes an outdoor team-building activity.",
         "role": "Sam",
         "location": "Break Room",
-        "description": "'How about we just go to the bar? It's the easiest option.'",
+        "description": "How about we just go to the bar? Its the easiest option.",
         "options": [
             {
                 "text": "The bar could be fun, but maybe we could also consider other options to make sure everyone is happy.",

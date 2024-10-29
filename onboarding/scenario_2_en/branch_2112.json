@@ -3,7 +3,7 @@
         "background": "Bob massages his temples, looking increasingly frustrated.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'I think we need to find a middle ground to avoid future conflicts.'",
+        "description": "I think we need to find a middle ground to avoid future conflicts.",
         "options": [
             {
                 "text": "Let's put together a plan that factors in both urgency and thoroughness.",

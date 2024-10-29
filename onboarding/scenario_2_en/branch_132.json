@@ -3,7 +3,7 @@
         "background": "You see Bob and Monica exchanging concerned glances as the meeting progresses.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'If we keep switching between approaches, it will just confuse everyone.'",
+        "description": "Bob says, If we keep switching between approaches, it will just confuse everyone.",
         "options": [
             {
                 "text": "Let's clarify our strategy and stick to it consistently.",

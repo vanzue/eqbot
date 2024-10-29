@@ -3,7 +3,7 @@
         "background": "Bob nods thoughtfully while glancing at Monica.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "'Making everyone happy sounds ideal, but is it realistic?'",
+        "description": "Making everyone happy sounds ideal, but is it realistic?",
         "options": [
             {
                 "text": "It's a challenge, but with cooperation, we can achieve it.",

@@ -3,7 +3,7 @@
         "background": "You notice Monica tapping her pen impatiently.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'We need to keep moving. This discussion is dragging.'",
+        "description": "Monica says, We need to keep moving. This discussion is dragging.",
         "options": [
             {
                 "text": "Maybe we can summarize our key points quickly and then move on.",

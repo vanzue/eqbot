@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you are still weighing options for the celebration.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob sighs and says, 'I'm not sure any of these ideas will work for everyone.'",
+        "description": "Bob sighs and says, Im not sure any of these ideas will work for everyone.",
         "options": [
             {
                 "text": "Let's brainstorm more ideas to find something that suits everyone.",

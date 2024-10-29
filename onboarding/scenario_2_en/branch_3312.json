@@ -3,7 +3,7 @@
         "background": "Monica seems slightly more relaxed but still apprehensive.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I think we need more data before making a final decision.'",
+        "description": "Bob says, I think we need more data before making a final decision.",
         "options": [
             {
                 "text": "Let's gather the necessary data quickly to avoid further delays.",

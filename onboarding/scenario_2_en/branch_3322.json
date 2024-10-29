@@ -3,7 +3,7 @@
         "background": "Monica sighs and shifts her weight as Bob starts to speak.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I think we should finalize the decision now, even if it means compromising a bit.'",
+        "description": "Bob says, I think we should finalize the decision now, even if it means compromising a bit.",
         "options": [
             {
                 "text": "Let's blend both approaches: a quick decision with a follow-up discussion later.",

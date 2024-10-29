@@ -3,7 +3,7 @@
         "background": "Bob raises an eyebrow and looks at Monica.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'I think we should consider everyone's feelings before making a decision.'",
+        "description": "I think we should consider everyones feelings before making a decision.",
         "options": [
             {
                 "text": "True, but sometimes we have to make tough decisions.",

@@ -3,7 +3,7 @@
         "background": "You, Monica, and Bob continue discussing celebration plans.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob crosses his arms and says, 'What about a mix of activities? A little bit of everything.'",
+        "description": "Bob crosses his arms and says, What about a mix of activities? A little bit of everything.",
         "options": [
             {
                 "text": "That sounds like a fair way to include everyone's preferences.",

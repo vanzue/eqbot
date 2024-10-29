@@ -3,7 +3,7 @@
         "background": "Bob looks at you with concern, leaning forward slightly.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I just think we need to be more careful with these decisions.'",
+        "description": "Bob says, I just think we need to be more careful with these decisions.",
         "options": [
             {
                 "text": "Perhaps we can find a middle ground that addresses both speed and thoroughness.",

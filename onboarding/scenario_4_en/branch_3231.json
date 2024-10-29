@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica and Bob review your feedback. Monica looks relieved, but Bob still seems concerned.",
+        "background": "Monica and Bob are both looking at you expectantly after your discussion.",
         "role": "Monica",
         "location": "Office",
-        "description": "'Thanks for the feedback. Can you stay on call in case we need more help?'",
+        "description": "So, whats the plan now with this task?",
         "options": [
             {
-                "text": "I can stay on call for a bit longer. Let's get this sorted out.",
+                "text": "Let's all sit down and figure out how to tackle this efficiently.",
                 "scores": {
                     "Perception": 4,
-                    "Self Regulation": 2,
+                    "Self Regulation": 3,
                     "Empathy": 4,
-                    "Social Skill": 4,
+                    "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You showed a willingness to continue helping, demonstrating strong empathy and social skills, but your self-regulation was lower."
+                "analysis": "You suggested a collaborative approach, showing strong perception and empathy, but self-regulation could be improved."
             },
             {
-                "text": "I'm sorry, but I need to log off now. I trust you can handle it from here.",
-                "scores": {
-                    "Perception": 2,
-                    "Self Regulation": 4,
-                    "Empathy": 2,
-                    "Social Skill": 3,
-                    "Motivation": 2
-                },
-                "analysis": "You maintained your boundaries, showing strong self-regulation, but your empathy and motivation to help were lower."
-            },
-            {
-                "text": "I can stay on call for a few more minutes, but I'll need to log off soon.",
+                "text": "I think we should break it down and assign parts based on our strengths.",
                 "scores": {
                     "Perception": 3,
-                    "Self Regulation": 3,
+                    "Self Regulation": 4,
                     "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 3
+                    "Social Skill": 4,
+                    "Motivation": 2
                 },
-                "analysis": "You offered partial help, showing balanced empathy and social skills, but your motivation and self-regulation were not particularly high."
+                "analysis": "You proposed a structured plan, showcasing good self-regulation and social skills, but motivation was lower."
+            },
+            {
+                "text": "Maybe we should consider bringing in another team member to help.",
+                "scores": {
+                    "Perception": 2,
+                    "Self Regulation": 3,
+                    "Empathy": 2,
+                    "Social Skill": 3,
+                    "Motivation": 4
+                },
+                "analysis": "You suggested getting additional help, displaying motivation and social skills, but lacked in perception and empathy."
             }
         ]
     }

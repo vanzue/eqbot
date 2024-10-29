@@ -3,7 +3,7 @@
         "background": "Monica nods and reluctantly agrees. Bob raises an eyebrow.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Isn't it better to stick with a detailed plan and do it right?'",
+        "description": "Bob says, Isnt it better to stick with a detailed plan and do it right?",
         "options": [
             {
                 "text": "We can follow the detailed plan and adjust as we go.",

@@ -3,7 +3,7 @@
         "background": "Monica sighs and crosses her arms, looking at the clock.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I feel like we're going in circles. We need to make a decision.'",
+        "description": "Bob says, I feel like were going in circles. We need to make a decision.",
         "options": [
             {
                 "text": "Let's wrap this up quickly and refine details later.",

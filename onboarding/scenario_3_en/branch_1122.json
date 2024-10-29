@@ -3,7 +3,7 @@
         "background": "You, Monica, and Bob are discussing the celebration planning.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob sighs and says, 'Maybe we should just cancel the whole thing.'",
+        "description": "Bob sighs and says, Maybe we should just cancel the whole thing.",
         "options": [
             {
                 "text": "Cancelling isn't the best idea. Let's find a compromise.",

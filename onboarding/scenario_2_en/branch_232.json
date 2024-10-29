@@ -3,7 +3,7 @@
         "background": "Bob leans in, looking determined. Monica shifts uncomfortably.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Bob, maybe you're being too cautious. We can't progress if we're always doubting.'",
+        "description": "Bob, maybe youre being too cautious. We cant progress if were always doubting.",
         "options": [
             {
                 "text": "Bob, Monica has a point. Maybe a bit of risk could benefit us this time.",

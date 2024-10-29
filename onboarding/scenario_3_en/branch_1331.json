@@ -3,7 +3,7 @@
         "background": "Monica, Bob, and you continue discussing the celebration plans.",
         "role": "Bob",
         "location": "Meeting Room",
-        "description": "Bob frowns slightly and says, 'But not everyone enjoys formal dinners. It can be uncomfortable for some.'",
+        "description": "Bob frowns slightly and says, But not everyone enjoys formal dinners. It can be uncomfortable for some.",
         "options": [
             {
                 "text": "Formal dinners can be enjoyable if we add some fun activities.",

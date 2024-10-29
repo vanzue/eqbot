@@ -3,7 +3,7 @@
         "background": "Monica sighs while crossing her arms.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'So, what do you suggest we do then?'",
+        "description": "So, what do you suggest we do then?",
         "options": [
             {
                 "text": "Maybe we should take a vote to see what the majority prefers.",

@@ -3,7 +3,7 @@
         "background": "Bob shrugs while looking at Monica and you.",
         "role": "You",
         "location": "Break Room",
-        "description": "'Explaining the decision process might help, but what if people are still unhappy?'",
+        "description": "Explaining the decision process might help, but what if people are still unhappy?",
         "options": [
             {
                 "text": "We'll handle it case by case and address concerns individually.",

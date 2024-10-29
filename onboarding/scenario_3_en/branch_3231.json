@@ -3,7 +3,7 @@
         "background": "Monica leans back in her chair, tapping her pen on the table.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Brainstorming sounds great, but we need to decide soon.'",
+        "description": "Brainstorming sounds great, but we need to decide soon.",
         "options": [
             {
                 "text": "Let's set a time limit and vote on the best idea.",

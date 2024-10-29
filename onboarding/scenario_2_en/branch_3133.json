@@ -3,7 +3,7 @@
         "background": "Monica and Bob exchange a look, clearly uneasy about the decision.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'Are we really letting Bob's caution dictate our pace?'",
+        "description": "Monica says, Are we really letting Bobs caution dictate our pace?",
         "options": [
             {
                 "text": "Monica, Bob's caution helps us avoid potential pitfalls. Let's balance speed with thoroughness.",

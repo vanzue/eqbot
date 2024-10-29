@@ -3,7 +3,7 @@
         "background": "Monica leans forward, looking at both you and Bob with concern.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'This back-and-forth is not helping. We need a clear direction.'",
+        "description": "Monica says, This back-and-forth is not helping. We need a clear direction.",
         "options": [
             {
                 "text": "We should establish clear guidelines to ensure everyone is on the same page.",

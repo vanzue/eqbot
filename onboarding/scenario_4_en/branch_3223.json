@@ -1,12 +1,12 @@
 {
     "scenes": {
-        "background": "Monica and Bob are trying to work with your previous feedback, but they seem stuck again.",
-        "role": "Bob",
+        "background": "You reassured Bob about supporting Monica. Monica seems overwhelmed and says:",
+        "role": "Monica",
         "location": "Office",
-        "description": "'We appreciate the feedback, but we're still hitting roadblocks. Can you help us troubleshoot?'",
+        "description": "I appreciate your help, but this really should have been handled differently.",
         "options": [
             {
-                "text": "I'll help you troubleshoot, but I'll need to keep it brief.",
+                "text": "You're right, Monica. Let's find a better approach next time.",
                 "scores": {
                     "Perception": 4,
                     "Self Regulation": 3,
@@ -14,29 +14,29 @@
                     "Social Skill": 3,
                     "Motivation": 3
                 },
-                "analysis": "You offered to help while reminding them of your need for brevity, showing good perception and empathy but slightly lower self-regulation and motivation."
+                "analysis": "You acknowledged Monica's feelings and aimed for a solution, showing strong perception and empathy."
             },
             {
-                "text": "I can provide a quick overview of potential solutions, but I can't stay long.",
+                "text": "I can see that. Let’s work through this and learn from it.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 3,
-                    "Social Skill": 3,
-                    "Motivation": 2
+                    "Social Skill": 4,
+                    "Motivation": 3
                 },
-                "analysis": "You balanced your time off with a willingness to help, showing good self-regulation, but your motivation and empathy were not particularly high."
+                "analysis": "You offered a collaborative approach and a learning opportunity, demonstrating good self-regulation and social skills."
             },
             {
-                "text": "I've given you enough to work with. Try to solve it based on the feedback.",
+                "text": "Maybe, but the urgency left us with little choice.",
                 "scores": {
                     "Perception": 2,
-                    "Self Regulation": 4,
+                    "Self Regulation": 3,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "You showed strong self-regulation by maintaining your boundaries, but your perception, empathy, and motivation to help were lower."
+                "analysis": "You justified the decision based on urgency, showing motivation and social skills, but empathy and perception were lower."
             }
         ]
     }

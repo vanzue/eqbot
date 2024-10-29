@@ -3,7 +3,7 @@
         "background": "Monica glances at you, raising an eyebrow.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "'Listing potential pitfalls is fine, but it might slow us down. What’s your take?'",
+        "description": "Listing potential pitfalls is fine, but it might slow us down. What’s your take?",
         "options": [
             {
                 "text": "We could list the major risks only and proceed quickly with the minor ones.",

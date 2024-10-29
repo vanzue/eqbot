@@ -3,7 +3,7 @@
         "background": "Monica glances at her watch and sighs.",
         "role": "You",
         "location": "Conference Room",
-        "description": "You say, 'We need to wrap this up soon, Monica is getting impatient.'",
+        "description": "You say, We need to wrap this up soon, Monica is getting impatient.",
         "options": [
             {
                 "text": "Maybe we should prioritize the most critical points and finish quickly.",

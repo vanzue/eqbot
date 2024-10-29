@@ -3,7 +3,7 @@
         "background": "Monica sighs, glancing between you and Bob.",
         "role": "Monica",
         "location": "Conference Room",
-        "description": "Monica says, 'I just don't want us to get bogged down in endless discussions.'",
+        "description": "Monica says, I just dont want us to get bogged down in endless discussions.",
         "options": [
             {
                 "text": "Balancing quick actions with thorough planning can ensure we don't miss critical details.",

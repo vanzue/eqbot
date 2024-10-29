@@ -3,7 +3,7 @@
         "background": "Monica frowns slightly as she looks at the clock.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Monica, we understand the urgency, but rushing could lead to mistakes.'",
+        "description": "Bob says, Monica, we understand the urgency, but rushing could lead to mistakes.",
         "options": [
             {
                 "text": "Let's find a middle ground to keep things moving while ensuring quality.",

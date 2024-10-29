@@ -3,7 +3,7 @@
         "background": "Bob suggests finding a quieter bar. Monica frowns and crosses her arms.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "'Quieter bar? That still sounds like a bad idea to me.'",
+        "description": "Quieter bar? That still sounds like a bad idea to me.",
         "options": [
             {
                 "text": "Let's try to keep an open mind about different suggestions.",

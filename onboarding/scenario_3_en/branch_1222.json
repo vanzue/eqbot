@@ -3,7 +3,7 @@
         "background": "You, Monica, and Bob are discussing the celebration planning.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "Monica frowns and crosses her arms, 'Quieter bar? That still sounds like a bad idea to me.'",
+        "description": "Monica frowns and crosses her arms, Quieter bar? That still sounds like a bad idea to me.",
         "options": [
             {
                 "text": "Let's try to keep an open mind about different suggestions.",

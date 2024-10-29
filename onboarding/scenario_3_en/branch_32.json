@@ -3,7 +3,7 @@
         "background": "Monica glances at Bob and raises an eyebrow.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'So, does anyone actually want to go to a bar?'",
+        "description": "So, does anyone actually want to go to a bar?",
         "options": [
             {
                 "text": "Perhaps a bar is not the best idea for everyone. What do you think, Monica?",

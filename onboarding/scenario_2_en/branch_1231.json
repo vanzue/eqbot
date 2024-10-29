@@ -3,7 +3,7 @@
         "background": "Monica nods, but Bob seems unconvinced, leaning back in his chair.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'I still think we're rushing things.'",
+        "description": "Bob says, I still think were rushing things.",
         "options": [
             {
                 "text": "What if we take a quick break and come back with fresh perspectives?",

@@ -1,42 +1,42 @@
 {
     "scenes": {
-        "background": "Monica looks up from her notes, glancing at you. Bob is still typing on his laptop.",
-        "role": "Monica",
-        "location": "Office",
-        "description": "'So, if more clarity on roles is needed, how should we start addressing that?'",
+        "background": "You maintain your boundaries, encouraging independence. Bob responds:",
+        "role": "Bob",
+        "location": "Home Office",
+        "description": "I understand, but we still need more input from you.",
         "options": [
             {
-                "text": "We could outline everyone's responsibilities in a shared document and review it monthly.",
+                "text": "I can give you a quick overview, but the detailed work needs to be handled by the team.",
                 "scores": {
-                    "Perception": 4,
-                    "Self Regulation": 3,
+                    "Perception": 3,
+                    "Self Regulation": 4,
                     "Empathy": 3,
-                    "Social Skill": 4,
-                    "Motivation": 3
+                    "Social Skill": 3,
+                    "Motivation": 2
                 },
-                "analysis": "You suggested a practical solution to improve clarity, showing good perception and social skills, though your motivation and self-regulation were moderate."
+                "analysis": "You offer limited help while maintaining your boundaries, showing good self-regulation but lower motivation."
             },
             {
-                "text": "I'm not sure if writing it down will solve the issue. We might need more direct communication.",
+                "text": "I appreciate the need, but I’ve already provided as much guidance as I can for now.",
                 "scores": {
                     "Perception": 3,
                     "Self Regulation": 4,
                     "Empathy": 2,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 3
                 },
-                "analysis": "You expressed skepticism about a written approach, advocating for direct communication. This showed strong self-regulation but lower empathy and motivation."
+                "analysis": "You reiterate your boundaries and previous assistance, showing good self-regulation but lower empathy."
             },
             {
-                "text": "Honestly, some people should already know their roles. We shouldn't have to spell it out for everyone.",
+                "text": "If it's that critical, let’s schedule a brief call to ensure you have what you need.",
                 "scores": {
-                    "Perception": 3,
+                    "Perception": 4,
                     "Self Regulation": 2,
-                    "Empathy": 1,
+                    "Empathy": 4,
                     "Social Skill": 3,
-                    "Motivation": 2
+                    "Motivation": 4
                 },
-                "analysis": "Your response was somewhat passive-aggressive, indicating lower empathy and self-regulation, and it might strain relationships with colleagues."
+                "analysis": "You prioritize the team's immediate need while showing empathy and motivation, though self-regulation could improve."
             }
         ]
     }

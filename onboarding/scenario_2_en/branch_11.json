@@ -3,7 +3,7 @@
         "background": "During the meeting, Bob frowns and crosses his arms, clearly frustrated.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "Bob says, 'Rushing decisions without thinking them through will just lead to mistakes.'",
+        "description": "Bob says, Rushing decisions without thinking them through will just lead to mistakes.",
         "options": [
             {
                 "text": "Let's take a moment to weigh the pros and cons before moving forward.",

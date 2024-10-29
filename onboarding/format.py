@@ -72,7 +72,7 @@ def remove_brackets(text):
     return text.replace("[", "").replace("]", "")
 
 def remove_brackets2(text):
-    return text.replace("(", "").replace(")", "")
+    return text.replace("'", "")
 
 # 删除编号的函数
 def remove_numbering(text):
@@ -118,7 +118,7 @@ def process_folder(folder_path):
 # process_file("D:\\VSCode_Porgrams\\eqbot\\onboarding\\scenario_1\\branch_.json")
 
 # 设定目标文件夹路径
-folder_path = r'D:\\VSCode_Porgrams\\eqbot\\onboarding\\scenario_2_en'  # 修改为你的文件夹路径
+folder_path = r'D:\\VSCode_Porgrams\\eqbot\\onboarding\\scenario_3_en'  # 修改为你的文件夹路径
 
 # 开始处理文件夹中的所有 JSON 文件
 process_folder(folder_path)

@@ -3,7 +3,7 @@
         "background": "Monica sighs as she looks at Bob and you.",
         "role": "Monica",
         "location": "Break Room",
-        "description": "'What if people end up unhappy with the majority decision?'",
+        "description": "What if people end up unhappy with the majority decision?",
         "options": [
             {
                 "text": "We could have a discussion to ensure everyone's concerns are heard.",

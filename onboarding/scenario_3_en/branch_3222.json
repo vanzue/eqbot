@@ -3,7 +3,7 @@
         "background": "Monica sighs and looks at Bob after considering mixing elements from each suggestion.",
         "role": "Bob",
         "location": "Conference Room",
-        "description": "'Mixing elements? That sounds complicated and might not please anyone.'",
+        "description": "Mixing elements? That sounds complicated and might not please anyone.",
         "options": [
             {
                 "text": "Maybe we can simplify it by picking just the best parts of each idea.",

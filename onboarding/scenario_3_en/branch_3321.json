@@ -3,7 +3,7 @@
         "background": "Bob shrugs and looks at Monica and you.",
         "role": "Bob",
         "location": "Break Room",
-        "description": "'I guess we could try to come up with a compromise, but it might not be easy.'",
+        "description": "I guess we could try to come up with a compromise, but it might not be easy.",
         "options": [
             {
                 "text": "Let's brainstorm and see if we can find a middle ground that works for everyone.",

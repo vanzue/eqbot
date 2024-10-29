@@ -3,7 +3,7 @@
         "background": "Bob taps his fingers on the table, looking thoughtful.",
         "role": "Monica",
         "location": "Meeting Room",
-        "description": "'A detailed schedule is great, but what if things go off track?'",
+        "description": "A detailed schedule is great, but what if things go off track?",
         "options": [
             {
                 "text": "We can build in flexibility to adjust as needed.",
