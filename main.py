@@ -21,6 +21,7 @@ from file_upload import file_router
 from thirdparty_api import router as thirdparty_router
 from text_to_voice import router as text_to_voice_router
 from dotenv import load_dotenv
+from login import router as login_router
 
 from data_types import SignatureVerifyModel
 
@@ -51,6 +52,7 @@ app.include_router(batttlefield_agent_router)
 app.include_router(file_router)
 app.include_router(thirdparty_router)
 app.include_router(text_to_voice_router)
+app.include_router(login_router)
 
 
 def verify_signature(request: SignatureVerifyModel, i):
