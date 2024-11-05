@@ -11,16 +11,16 @@ from llm.chat_battlefield import request_LLM_response, chat_eval, request_LLM_re
 router = APIRouter()
 
 
-@router.post("/chat/batttlefield/v2")
-def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
-    personal_id = request.person_id
-    course_id = request.course_id
+# @router.post("/chat/batttlefield/v2")
+# def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
+#     personal_id = request.person_id
+#     course_id = request.course_id
     
-    matching_course = crud.get_course_by_coursid(db, course_id=course_id)
-    print(matching_course.prompt)
+#     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
+#     print(matching_course.prompt)
 
-    response = request_LLM_response_v2(json.loads(request.chat_content), matching_course.prompt)
-    return response
+#     response = request_LLM_response_v2(json.loads(request.chat_content), matching_course.prompt)
+#     return response
 
 @router.post("/chat/batttlefield")
 def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
@@ -85,9 +85,9 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
 
 
 
-@router.get("/get_battlefield/{person_id}")
-def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
-    eq_scores = crud.get_eq_scores_by_person_id(db, person_id=person_id)
+@router.get("/get_battlefield/{user_id}")
+def get_battlefield(user_id: int, db: Session = Depends(database.get_db)):
+    eq_scores = crud.get_eq_scores_by_person_id(db, user_id=user_id)
 
     if not eq_scores:
         print("no eq scores")
@@ -109,7 +109,7 @@ def get_battlefield(person_id: int, db: Session = Depends(database.get_db)):
     # eq_type = eq_dimensions[lowest_dimension]
     eq_type = "情绪掌控力"
 
-    person_course = crud.get_coursesperson_by_person_id_all(db, person_id=person_id)
+    person_course = crud.get_coursesperson_by_person_id_all(db, user_id=user_id)
     if not person_course:
         new_course = crud.get_course_by_course_type_and_level(db, course_type=eq_type, course_level=1)
         return {"courses": [new_course.id]}
@@ -127,7 +127,7 @@ def update_diamond(request: data_types.DiamondUpdate, db: Session = Depends(data
     db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=request.num_diamond)
     return {"diamond_num": db_star, "message": True}
 
-@router.get("/get_course/{person_id}/{course_id}")
-def get_course_status(person_id: int, course_id: int, db: Session = Depends(database.get_db)):
-    db_course = crud.get_coursesperson_by_person_id(db, person_id=person_id, course_id=course_id)
+@router.get("/get_course/{user_id}/{course_id}")
+def get_course_status(user_id: int, course_id: int, db: Session = Depends(database.get_db)):
+    db_course = crud.get_coursesperson_by_person_id(db, person_id=user_id, course_id=course_id)
     return {"course": db_course}

@@ -3,10 +3,10 @@ from typing import List, Optional
 from datetime import datetime
 
 # PersonalInfo Schema
-
-
 class PersonalInfoBase(BaseModel):
     name: str
+    source: str
+    unique_id: str
     gender: str
     tag: Optional[str] = None
     tag_description: Optional[str] = None
@@ -34,16 +34,13 @@ class PersonalInfoUpdate(BaseModel):
 class PersonalInfo(PersonalInfoBase):
     id: str  # Changed to str to match the SQLAlchemy model
     eq_scores: List['EQScore'] = []  # Relationship
-    contacts: List['Contact'] = []  # Relationship
-    chat_records: List['ChatRecords'] = []  # Relationship
 
     class Config:
         # orm_mode = True
         from_attributes = True
 
+
 # EQScore Schema
-
-
 class EQScoreBase(BaseModel):
     dimension1_score: int
     dimension1_detail: Optional[str]
@@ -63,22 +60,20 @@ class EQScoreBase(BaseModel):
 
 
 class EQScoreCreate(EQScoreBase):
-    person_id: int  # ForeignKey to PersonalInfo.id
+    user_id: int  # ForeignKey to PersonalInfo.id
 
 
 class EQScore(EQScoreBase):
     id: int
-    person_id: int  # ForeignKey to PersonalInfo.id
+    user_id: int  # ForeignKey to PersonalInfo.id
 
     class Config:
-        # orm_mode = True
         from_attributes = True
 
+
 # Courses Schema
-
-
 class CoursesBase(BaseModel):
-    course_type: str
+    course_dim: str
     course_level: int
     prompt: str
 
@@ -91,14 +86,12 @@ class Courses(CoursesBase):
     id: int
 
     class Config:
-        # orm_mode = True
         from_attributes = True
 
+
 # PersonalInfoCourses Schema (Many-to-Many relationship between PersonalInfo and Courses)
-
-
 class PersonalInfoCoursesBase(BaseModel):
-    person_id: int  # ForeignKey to PersonalInfo.id
+    user_id: int  # ForeignKey to PersonalInfo.id
     course_id: int  # ForeignKey to Courses.id
     course_type: str
     course_level: int
@@ -115,107 +108,10 @@ class PersonalInfoCoursesCreate(PersonalInfoCoursesBase):
 
 class PersonalInfoCourses(PersonalInfoCoursesBase):
     class Config:
-        # orm_mode = True
-        from_attributes = True
-
-# Contact Schema
-
-
-class ContactBase(BaseModel):
-    person_id: int  # ForeignKey to PersonalInfo.id
-    name: str
-    tag: Optional[str]
-    contact_relationship: Optional[str]
-
-
-class ContactCreate(ContactBase):
-    pass
-
-
-class Contact(ContactBase):
-    id: int  # Changed to str to match the SQLAlchemy model
-
-    class Config:
-        # orm_mode = True
-        from_attributes = True
-
-# ChatRecords Schema
-
-
-class ChatRecordsBase(BaseModel):
-    person_id: int  # ForeignKey to PersonalInfo.id
-    contact_id: int  # ForeignKey to Contact.id
-    chat_time: datetime  # Use DateTime
-    chat_content: str
-
-
-class ChatRecordsCreate(ChatRecordsBase):
-    pass
-
-
-class ChatRecords(ChatRecordsBase):
-    id: int
-
-    class Config:
-        # orm_mode = True
         from_attributes = True
 
 
-# Subordinate Analysis Schema
-class SubordinateAnalysisBase(BaseModel):
-    contact_id: int
-    relationship_analysis: str
-    work_compatibility: str
-    cunning_index: str
-    work_personality: str
-    interests: str
-    bad_colleague_risk: str
-
-
-class SubordinateAnalysisCreate(SubordinateAnalysisBase):
-    pass
-
-
-class SubordinateAnalysis(SubordinateAnalysisBase):
-    id: int
-
-    class Config:
-        # orm_mode = True
-        from_attributes = True
-
-
-# Supervisor Analysis Schema
-class SupervisorAnalysisBase(BaseModel):
-    contact_id: int
-    relationship_analysis: str
-    interaction_suggestions: str
-    leader_opinion_of_me: str
-    pua_detection: str
-    preferred_subordinate: str
-    gift_recommendation: str
-
-
-class SupervisorAnalysisCreate(SupervisorAnalysisBase):
-    pass
-
-
-class SupervisorAnalysis(SupervisorAnalysisBase):
-    id: int
-
-    class Config:
-        # orm_mode = True
-        from_attributes = True
-
-
-# Patterns
-
-class CreateUserRequest(BaseModel):
-    name: str
-    job_level: str
-    gender: str
-    concerns: List[str]
-
-
+# ChatHistory
 class ChatHistoryBase(BaseModel):
     chatHistory: str
     summary: str
@@ -224,12 +120,12 @@ class ChatHistoryBase(BaseModel):
 
 
 class ChatHistoryCreate(ChatHistoryBase):
-    userId: int
+    user_id: int
 
 
 class ChatHistory(ChatHistoryBase):
     id: int
-    userId: int
+    user_id: int
 
     class Config:
         from_attributes = True
@@ -253,3 +149,20 @@ class ReplyState(ReplyStateBase):
 
     class Config:
         from_attributes = True
+
+
+
+
+
+
+
+
+
+
+
+# Patterns
+class CreateUserRequest(BaseModel):
+    name: str
+    job_level: str
+    gender: str
+    concerns: List[str]

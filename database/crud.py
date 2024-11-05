@@ -9,13 +9,15 @@ from . import models, schemas
 def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate):
     db_personal_info = models.PersonalInfo(
         name=personal_info.name,
+        source = personal_info.source,
+        unique_id = personal_info.unique_id,
         gender=personal_info.gender,
         tag=personal_info.tag,
         tag_description=personal_info.tag_description,
         job_level=personal_info.job_level,
         issues=personal_info.issues,
         job_id=personal_info.job_id,
-        num_star=500
+        num_diamond=500
     )
     db.add(db_personal_info)
     db.commit()
@@ -44,11 +46,11 @@ def update_personal_info_by_name(
     return db_personal_info
 
 
-def update_personal_stars_by_name(db: Session, name: str, new_stars: int):
+def update_personal_diamond_by_name(db: Session, name: str, new_diamond: int):
     try:
         person = db.query(models.PersonalInfo).filter(
             models.PersonalInfo.name == name).one()
-        person.num_star = new_stars
+        person.num_diamond = new_diamond
         db.commit()
         return True
     except NoResultFound:
