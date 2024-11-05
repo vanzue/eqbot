@@ -28,4 +28,17 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
     if response.status_code != 200:
         return JSONResponse(status_code=response.status_code, content={"message": "Failed to get session"})
     print(response.json())
-    return response.json()
+    openid = response.json().get('openid')
+    personal_info = crud.get_personal_info_by_name(db, openid)
+    if personal_info is None:
+        return JSONResponse(status_code=200, content={
+            "message": response.json(),
+            "isNewUser": True,
+              })
+    else:
+        return JSONResponse(status_code=200, content={
+            "message": response.json(),
+            "isNewUser": False, 
+            "jobid":personal_info.job_id,
+            "userid":personal_info.id 
+            })
