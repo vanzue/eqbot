@@ -3,7 +3,7 @@ import requests
 import base64
 import json
 
-from keyless_setup import creat_llm
+from llm.keyless_setup import creat_llm
 from langchain_core.prompts import ChatPromptTemplate
 
 
