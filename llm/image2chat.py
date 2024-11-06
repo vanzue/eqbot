@@ -27,7 +27,9 @@ def image2text(image_path):
     system_prompt = """
         **Task Description**
         - You're an image recognition expert. You will receive a screenshot of my chat with someone else. You need to extract our conversation.
-        - You're also an expert of summary. Please summurize the given chat history by less than 10 words and give out the most uegent dimension that need to be improved among Perception, Self Regulation, Empathy, Social Skill and Motivation.
+        - You're also an expert of summary. Please summurize the given chat history by less than 10 words and give out the most uegent dimension that need to be improved among five dimensions.
+        - If the language used in image is chinese, then the dimension are 情绪侦查力, 情绪掌控力, 人际平衡术,沟通表达力,社交得体度".
+        - If the language used in image is english, then the dimension are Perception, Self Regulation, Empathy, Social Skill and Motivation.
 
         **Main Details**
         - Message has to inlcude:
@@ -112,6 +114,6 @@ if __name__ == "__main__":
     current_path = os.getcwd()
     image_path = os.path.join(current_path, "test_image.png")
     res = get_image2text(image_path=image_path)
-    # print(res)
+    print(res)
     # parse_chatHistory(res)
     
