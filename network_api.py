@@ -171,7 +171,7 @@ async def upload_image(file: UploadFile = File(...)):
 
 
 @router.post("/analyze/history")
-async def analyze_history_from_image(locale: str, user_id: int = Form(...), file: UploadFile = File(...), db: Session = Depends(database.get_db)):
+async def analyze_history_from_image(locale: str = "en", user_id: int = Form(...), file: UploadFile = File(...), db: Session = Depends(database.get_db)):
     chat_history_response = await upload_image(file)
     chat_history = chat_history_response["chat_history"]
     summary = chat_history_response["summary"]
