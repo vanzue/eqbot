@@ -4,6 +4,7 @@ from fastapi import FastAPI
 import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
+from fastapi.staticfiles import StaticFiles
 
 from workflow_api import router as workflow_router
 from onboarding.onboarding_api import router as onboarding_router
@@ -53,6 +54,8 @@ app.include_router(file_router)
 app.include_router(thirdparty_router)
 app.include_router(text_to_voice_router)
 app.include_router(login_router)
+
+app.mount("/home", StaticFiles(directory="static", html=False), name="home")
 
 
 def verify_signature(request: SignatureVerifyModel, i):
