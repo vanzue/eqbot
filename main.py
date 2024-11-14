@@ -55,8 +55,6 @@ app.include_router(thirdparty_router)
 app.include_router(text_to_voice_router)
 app.include_router(login_router)
 
-app.mount("/home", StaticFiles(directory="static", html=False), name="home")
-
 
 def verify_signature(request: SignatureVerifyModel, i):
     if not sToken or not sEncodingAESKey or not sCorpID:
@@ -95,6 +93,7 @@ def verify_signature(request: SignatureVerifyModel, i):
 async def root():
     return RedirectResponse(url='/ping')
 
+app.mount("/home", StaticFiles(directory="static", html=True), name="home")
 
 @app.get('/ping')
 async def ping():
