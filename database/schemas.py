@@ -253,3 +253,16 @@ class ReplyState(ReplyStateBase):
 
     class Config:
         from_attributes = True
+
+class ReplyEvalBase(BaseModel):
+    chat_history: str
+    analysis: str
+    suggest_response: str
+
+class ReplyEvalCreate(ReplyEvalBase):
+    eval_score: str
+    eval_reason: str
+    eval_time: datetime
+
+class ReplyEval(ReplyEvalBase):
+    pass

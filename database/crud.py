@@ -461,6 +461,33 @@ def delete_reply_state(db: Session, product: str, user_id: str):
 
 # Get all ReplyState entries
 
+def create_reply_eval(db: Session, reply_eval: schemas.ReplyEvalCreate):
+    db_reply_eval = models.ReplyEval(
+        chat_history=reply_eval.chat_history,
+        analysis=reply_eval.analysis,
+        suggest_response=reply_eval.suggest_response,
+        eval_score=reply_eval.eval_score,
+        eval_reason=reply_eval.eval_reason,
+        eval_time=reply_eval.eval_time
+    )
+    db.add(db_reply_eval)
+    db.commit()
+    db.refresh(db_reply_eval)
+    return db_reply_eval
+
+def delete_reply_eval(db: Session, reply_eval_id: int):
+    db_reply_eval = db.query(models.ReplyEval).filter(
+        models.ReplyEval.id == reply_eval_id).first()
+    if db_reply_eval:
+        db.delete(db_reply_eval)
+        db.commit()
+    return db_reply_eval
+
+def get_all_reply_evals(db: Session):
+    return db.query(models.ReplyEval).all()
+
+def get_reply_eval_by_id(db: Session, reply_eval_id: int):
+    return db.query(models.ReplyEval).filter(models.ReplyEval.id == reply_eval_id).first()
 
 def get_all_reply_states(db: Session):
     return db.query(models.ReplyState).all()

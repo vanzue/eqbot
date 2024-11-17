@@ -9,6 +9,8 @@ from llm.high_eq_response import EQmaster
 from llm.image2chat import image2text
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, Request
+import threading
+from workflow_api import evaluate_eqscore
 
 channel_secret = os.getenv("LINE_CHANNEL_SECRET")
 channel_access_token = os.getenv("LINE_ACCESS_TOKEN")
@@ -159,6 +161,18 @@ def send_message(data, to):
         message_url, headers=headers, data=json.dumps(data))
     return response.json()
 
+def evaluate_in_thread(chat_history, analyse, response, db: Session):
+    """
+    新线程中请求接口并处理评估。
+    """
+    for r in response:
+        replyEvalCreate = schemas.ReplyEval(
+            chat_history=chat_history,
+            analysis=analyse,
+            suggest_response=r
+        )
+        eval_result = evaluate_eqscore(replyEvalCreate, db)
+        print("Eval result in thread:", eval_result)
 
 def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                         db: Session):
@@ -170,7 +184,6 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
         language = eqmaster.detect_language(chat_history)
         response, analyse = eqmaster.get_response_and_analyze(
             chat_history,"me", language)
-
         state = schemas.ReplyStateCreate(
             product=product,
             userId=str(user_id),
@@ -217,7 +230,9 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 stage_number=3
             )
             crud.replace_reply_state(db, state)
-
+    print("response:", response)
+    thread = threading.Thread(target=evaluate_in_thread, args=(chat_history, analyse, response, db))
+    thread.start()
     # here should only be list of responses.
     return response, analyse, language
 
