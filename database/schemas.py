@@ -97,7 +97,7 @@ class Courses(CoursesBase):
 class PersonalInfoCoursesBase(BaseModel):
     user_id: int  # ForeignKey to PersonalInfo.id
     course_id: int  # ForeignKey to Courses.id
-    course_type: str
+    course_dim: str
     course_level: int
     status: str
     result: Optional[int]

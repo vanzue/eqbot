@@ -71,7 +71,7 @@ class PersonalInfoCourses(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey('PersonalInfo.id'))
     course_id = Column(Integer, ForeignKey('Courses.id'))
-    course_type = Column(Unicode(50), nullable=False)
+    course_dim = Column(Unicode(50), nullable=False)
     course_level = Column(Integer)
     status = Column(Unicode(50))
     result = Column(Integer)    # number of stars

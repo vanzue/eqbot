@@ -49,7 +49,7 @@ class BattlefieldRequest(BaseModel):
     person_id: int
     course_id: int
     chat_content: str
-    lang_type: str = "zh"
+    locale: str = "zh"
 
 class BattlefieldEval(BaseModel):
     person_id: int
@@ -58,7 +58,7 @@ class BattlefieldEval(BaseModel):
     status: str
     result: int
     person_star: int
-    lang_type: str = "zh"
+    locale: str = "zh"
 
 class DiamondUpdate(BaseModel):
     person_id: int

@@ -1,5 +1,6 @@
 import uuid
 import json
+import base64
 from fastapi import APIRouter, Request, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import Optional
@@ -10,6 +11,9 @@ from database import database, crud, schemas
 from llm.chat_battlefield import request_LLM_response, chat_eval, request_LLM_response_v2
 
 router = APIRouter()
+
+def encode_image_to_base64(binary_data: bytes) -> str:
+    return base64.b64encode(binary_data).decode("utf-8")
 
 
 # @router.post("/chat/batttlefield/v2")
@@ -23,66 +27,66 @@ router = APIRouter()
 #     response = request_LLM_response_v2(json.loads(request.chat_content), matching_course.prompt)
 #     return response
 
-@router.post("/chat/batttlefield")
-def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
-    personal_id = request.person_id
-    course_id = request.course_id
+# @router.post("/chat/batttlefield")
+# def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
+#     personal_id = request.person_id
+#     course_id = request.course_id
 
-    matching_course = crud.get_course_by_coursid(db, course_id=course_id)
-    print(matching_course.prompt)
+#     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
+#     print(matching_course.prompt)
 
-    response = request_LLM_response(json.loads(request.chat_content), matching_course.prompt)
-    return response
+#     response = request_LLM_response(json.loads(request.chat_content), matching_course.prompt)
+#     return response
 
 
-@router.post("/eval/battlefield") 
-def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
-    # return chat_eval(request.chat_content)
-    eval_data = chat_eval(request.chat_content)['eval']
-    course_type, course_level = crud.get_course_by_id(db, course_id=request.course_id)
-    # print(course_type, course_level)
+# @router.post("/eval/battlefield") 
+# def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
+#     # return chat_eval(request.chat_content)
+#     eval_data = chat_eval(request.chat_content)['eval']
+#     course_type, course_level = crud.get_course_by_id(db, course_id=request.course_id)
+#     # print(course_type, course_level)
 
-    # update stars
-    person_star = request.person_star
-    # db_person = crud.get_personal_id_by_personid(db, personid=request.person_id)
-    # db_person.num_star += person_star
-    db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=person_star)
-    # print("number of stars: ", db_star)
+#     # update stars
+#     person_star = request.person_star
+#     # db_person = crud.get_personal_id_by_personid(db, personid=request.person_id)
+#     # db_person.num_star += person_star
+#     db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=person_star)
+#     # print("number of stars: ", db_star)
 
-    # 创建新的数据库条目
-    course_entry = schemas.PersonalInfoCoursesCreate(
-        person_id=request.person_id,
-        course_id=request.course_id,
-        course_type=course_type,
-        course_level=course_level, 
-        status=request.status,
-        result=request.result,
-        comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
-        comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
-        comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None
-    )
-    # print(eval_data[0]['analysis'] if len(eval_data) > 0 else None)
-    # print(eval_data[1]['analysis'] if len(eval_data) > 1 else None)
-    # print(eval_data[2]['analysis'] if len(eval_data) > 2 else None)
+#     # 创建新的数据库条目
+#     course_entry = schemas.PersonalInfoCoursesCreate(
+#         person_id=request.person_id,
+#         course_id=request.course_id,
+#         course_type=course_type,
+#         course_level=course_level, 
+#         status=request.status,
+#         result=request.result,
+#         comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
+#         comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
+#         comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None
+#     )
+#     # print(eval_data[0]['analysis'] if len(eval_data) > 0 else None)
+#     # print(eval_data[1]['analysis'] if len(eval_data) > 1 else None)
+#     # print(eval_data[2]['analysis'] if len(eval_data) > 2 else None)
 
-    # create new
-    db_course = crud.get_coursesperson_by_person_id(db, request.person_id, request.course_id)
-    # print(db_course.person_id, db_course.course_id)
-    if db_course is None:
-        print("not have")
-        db_course = crud.create_personal_info_course(db, course_entry)
-    else:
-        print("have")
-        db_course = crud.update_personal_info_course(db, 
-                                                    person_id=request.person_id,
-                                                    course_id=request.course_id,
-                                                    course_level=course_level,
-                                                    status=request.status,
-                                                    result=request.result,
-                                                    comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
-                                                    comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
-                                                    comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None)
-    return {"db_course": db_course}
+#     # create new
+#     db_course = crud.get_coursesperson_by_person_id(db, request.person_id, request.course_id)
+#     # print(db_course.person_id, db_course.course_id)
+#     if db_course is None:
+#         print("not have")
+#         db_course = crud.create_personal_info_course(db, course_entry)
+#     else:
+#         print("have")
+#         db_course = crud.update_personal_info_course(db, 
+#                                                     person_id=request.person_id,
+#                                                     course_id=request.course_id,
+#                                                     course_level=course_level,
+#                                                     status=request.status,
+#                                                     result=request.result,
+#                                                     comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
+#                                                     comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
+#                                                     comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None)
+#     return {"db_course": db_course}
 
 
 
@@ -151,7 +155,7 @@ def get_battlefield_map(
                 {"name": "John", "role": "mentor", "mood": "happy"},
                 {"name": "Sarah", "role": "challenger", "mood": "neutral"}
             ],
-            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+            "image": None
         },  
         {
             "id": 2,
@@ -163,7 +167,7 @@ def get_battlefield_map(
                 {"name": "John", "role": "mentor", "mood": "happy"},
                 {"name": "Sarah", "role": "challenger", "mood": "neutral"}
             ],
-            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+            "image": None
         },
         {
             "id": 3,
@@ -175,7 +179,7 @@ def get_battlefield_map(
                 {"name": "John", "role": "mentor", "mood": "happy"},
                 {"name": "Sarah", "role": "challenger", "mood": "neutral"}
             ],
-            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+            "image": None
         }
     ]
 
@@ -221,7 +225,7 @@ def get_course_by_id(course_id: int, db: Session = Depends(database.get_db)):
                 {"name": "John", "role": "mentor", "mood": "happy"},
                 {"name": "Sarah", "role": "challenger", "mood": "neutral"}
             ],
-            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+            "image": None
         }
     
     return {"course_data": course_data}

@@ -161,7 +161,7 @@ def delete_eq_score(db: Session, eq_score_id: int):
 
 def create_course(db: Session, course: schemas.CoursesCreate):
     db_course = models.Courses(
-        course_type=course.course_type,
+        course_dim=course.course_dim,
         course_level=course.course_level,
         prompt=course.prompt,
         title=course.title,
@@ -179,15 +179,15 @@ def get_courses(db: Session, skip: int = 0, limit: int = 100):
 
 
 def get_course_by_id(db: Session, course_id: int):
-    course = db.query(models.Courses.course_type, models.Courses.course_level).filter(
+    course = db.query(models.Courses.course_dim, models.Courses.course_level).filter(
         models.Courses.id == course_id).first()
 
-    return course.course_type, course.course_level
+    return course.course_dim, course.course_level
 
 
-def get_course_by_course_type_and_level(db: Session, course_type: str, course_level: int):
+def get_course_by_course_dim_and_level(db: Session, course_dim: str, course_level: int):
     return db.query(models.Courses).filter(
-        models.Courses.course_type == course_type,
+        models.Courses.course_dim == course_dim,
         models.Courses.course_level == course_level
     ).first()
 
@@ -213,7 +213,7 @@ def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCo
     new_course = models.PersonalInfoCourses(
         person_id=course_data.person_id,
         course_id=course_data.course_id,
-        course_type=course_data.course_type,
+        course_dim=course_data.course_dim,
         course_level=course_data.course_level,
         status=course_data.status,
         result=course_data.result,

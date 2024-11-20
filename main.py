@@ -94,7 +94,7 @@ def verify_signature(request: SignatureVerifyModel, i):
 async def root():
     return RedirectResponse(url='/ping')
 
-app.mount("/home", StaticFiles(directory="static", html=True), name="home")
+# app.mount("/home", StaticFiles(directory="static", html=True), name="home")
 
 @app.get('/profile')
 async def serve_profile():

@@ -10,6 +10,8 @@ weixin_appid = os.getenv('WEIXIN_APPID')
 weixin_secret = os.getenv('WEIXIN_APPSECRET')
 
 router = APIRouter()
+
+# 小程序
 @router.post("/wxprogram/login")
 async def line_webhook(request: Request, db: Session = Depends(database.get_db)):
     body = await request.body()
@@ -42,3 +44,13 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
             "jobid":personal_info.job_id,
             "userid":personal_info.id 
             })
+    
+# app转微信登录
+@router.post("/app2wx/login")
+async def login_app(request: Request, db: Session = Depends(database.get_db)):
+    pass
+
+# google登录
+@router.post("/google/login")
+async def login_google(request: Request, db: Session = Depends(database.get_db)):
+    pass
