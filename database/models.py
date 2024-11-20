@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, Text, DateTime
+from sqlalchemy import Column, ForeignKey, Integer, String, Text, DateTime, JSON, LargeBinary
 from sqlalchemy.orm import relationship
 from .database import Base
 from sqlalchemy.types import Unicode, UnicodeText
@@ -10,7 +10,7 @@ class PersonalInfo(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     name = Column(Unicode(100), nullable=False)
 
-    source = Column(Unicode(100), nullable=False)   # eg. google, apple
+    source = Column(Unicode(100), nullable=False)   # eg. google, apple, wechat
     unique_id = Column(Unicode(100), nullable=False) # openid
 
     gender = Column(Unicode(50))
@@ -32,16 +32,16 @@ class EQScore(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey('PersonalInfo.id'), nullable=False)
-    dimension1_score = Column(Integer)
-    dimension1_detail = Column(UnicodeText)
-    dimension2_score = Column(Integer)
-    dimension2_detail = Column(UnicodeText)
-    dimension3_score = Column(Integer)
-    dimension3_detail = Column(UnicodeText)
-    dimension4_score = Column(Integer)
-    dimension4_detail = Column(UnicodeText)
-    dimension5_score = Column(Integer)
-    dimension5_detail = Column(UnicodeText)
+    perception_score = Column(Integer)
+    perception_detail = Column(UnicodeText)
+    social_skill_score = Column(Integer)
+    social_skill_detail = Column(UnicodeText)
+    self_regulaton_score = Column(Integer)
+    self_regulaton_detail = Column(UnicodeText)
+    empathy_score = Column(Integer)
+    empathy_detail = Column(UnicodeText)
+    motivation_score = Column(Integer)
+    motivation_detail = Column(UnicodeText)
     summary = Column(UnicodeText)
     detail = Column(UnicodeText)
     detail_summary = Column(UnicodeText)
@@ -58,7 +58,10 @@ class Courses(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     course_dim = Column(Unicode(50), nullable=False)
     course_level = Column(Integer)
-    prompt = Column(UnicodeText)
+    prompt = Column(UnicodeText) # background
+    title = Column(UnicodeText)
+    npc = Column(JSON, nullable=True)
+    image = Column(LargeBinary, nullable=True) 
 
 
 # PersonalInfoCourses Table (Many-to-Many relationship between PersonalInfo and Courses)
@@ -77,7 +80,6 @@ class PersonalInfoCourses(Base):
     comment3 = Column(UnicodeText)
 
     person = relationship("PersonalInfo", back_populates="courses")
-    # course = relationship("Courses", back_populates="personal_info_courses")
 
 
 # ChatHistory Table

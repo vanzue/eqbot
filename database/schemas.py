@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import List, Optional
+from typing import List, Optional, Dict
 from datetime import datetime
 
 # PersonalInfo Schema
@@ -13,6 +13,7 @@ class PersonalInfoBase(BaseModel):
     job_level: str
     issues: str
     job_id: str
+    num_diamond: int
 
 
 class PersonalInfoCreate(PersonalInfoBase):
@@ -42,16 +43,16 @@ class PersonalInfo(PersonalInfoBase):
 
 # EQScore Schema
 class EQScoreBase(BaseModel):
-    dimension1_score: int
-    dimension1_detail: Optional[str]
-    dimension2_score: int
-    dimension2_detail: Optional[str]
-    dimension3_score: int
-    dimension3_detail: Optional[str]
-    dimension4_score: int
-    dimension4_detail: Optional[str]
-    dimension5_score: int
-    dimension5_detail: Optional[str]
+    perception_score: int
+    perception_detail: Optional[str]
+    social_skill_score: int
+    social_skill_detail: Optional[str]
+    self_regulaton_score: int
+    self_regulaton_detail: Optional[str]
+    empathy_score: int
+    empathy_detail: Optional[str]
+    motivation_score: int
+    motivation_detail: Optional[str]
     summary: Optional[str]
     detail: Optional[str]
     detail_summary: Optional[str]
@@ -76,6 +77,9 @@ class CoursesBase(BaseModel):
     course_dim: str
     course_level: int
     prompt: str
+    title: str
+    npc: Optional[List[Dict[str, str]]]
+    image: Optional[bytes]
 
 
 class CoursesCreate(CoursesBase):
@@ -153,16 +157,3 @@ class ReplyState(ReplyStateBase):
 
 
 
-
-
-
-
-
-
-
-# Patterns
-class CreateUserRequest(BaseModel):
-    name: str
-    job_level: str
-    gender: str
-    concerns: List[str]

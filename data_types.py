@@ -1,6 +1,14 @@
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 
+class CreateUserRequest(BaseModel):
+    name: str
+    source: str
+    unique_id: str
+    gender: str
+    job_level: str
+    issues: str
+    job_id: str
 
 class SignatureVerifyModel(BaseModel):
     msg_signature: str

@@ -2,6 +2,7 @@ import uuid
 import json
 from fastapi import APIRouter, Request, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
+from typing import Optional
 
 import data_types
 from database import database, crud, schemas
@@ -131,3 +132,145 @@ def update_diamond(request: data_types.DiamondUpdate, db: Session = Depends(data
 def get_course_status(user_id: int, course_id: int, db: Session = Depends(database.get_db)):
     db_course = crud.get_coursesperson_by_person_id(db, person_id=user_id, course_id=course_id)
     return {"course": db_course}
+
+
+@router.get("/get_battlefield_map/{person_id}")
+def get_battlefield_map(
+    person_id: int,
+    dim_name: Optional[str] = None,
+    db: Session = Depends(database.get_db)
+):
+    course_list = [
+        {
+            "id": 1,
+            "course_dim": "Emotional Intelligence",
+            "course_level": 1,
+            "prompt": "Learn how to manage emotions effectively in challenging situations.",
+            "title": "Mastering Emotional Resilience",
+            "npc": [
+                {"name": "John", "role": "mentor", "mood": "happy"},
+                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+            ],
+            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+        },  
+        {
+            "id": 2,
+            "course_dim": "Emotional Intelligence",
+            "course_level": 2,
+            "prompt": "Learn how to manage emotions effectively in challenging situations.",
+            "title": "Mastering Emotional Resilience",
+            "npc": [
+                {"name": "John", "role": "mentor", "mood": "happy"},
+                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+            ],
+            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+        },
+        {
+            "id": 3,
+            "course_dim": "Emotional Intelligence",
+            "course_level": 3,
+            "prompt": "Learn how to manage emotions effectively in challenging situations.",
+            "title": "Mastering Emotional Resilience",
+            "npc": [
+                {"name": "John", "role": "mentor", "mood": "happy"},
+                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+            ],
+            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+        }
+    ]
+
+    course_result = [
+        {
+            "id": 1,  # 自增的主键 ID
+            "user_id": 101,  # 关联的用户 ID
+            "course_id": 1,  # 关联的课程 ID
+            "course_type": "Emotional Intelligence",  # 课程类型
+            "course_level": 1,  # 课程等级
+            "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
+            "result": 3,  # 结果：星级评分（1-3）
+            "comment1": "The course content was very insightful.",  # 第一条评论
+            "comment2": "The NPC interactions made it engaging.",  # 第二条评论
+            "comment3": "I would recommend this to others.",  # 第三条评论
+        },
+        {
+            "id": 2,
+            "user_id": 101, 
+            "course_id": 201, 
+            "course_type": "Emotional Intelligence", 
+            "course_level": 2, 
+            "status": "incomplete", 
+            "result": 0,
+            "comment1": "",
+            "comment2": "",  
+            "comment3": "",  
+        }
+    ]
+
+
+    return {"course_list": course_list, "course_result": course_result, "next_course_id": 3}
+
+@router.get("/get_course_data/{course_id}")
+def get_course_by_id(course_id: int, db: Session = Depends(database.get_db)):
+    course_data = {
+            "id": 1,
+            "course_dim": "Emotional Intelligence",
+            "course_level": 1,
+            "prompt": "Learn how to manage emotions effectively in challenging situations.",
+            "title": "Mastering Emotional Resilience",
+            "npc": [
+                {"name": "John", "role": "mentor", "mood": "happy"},
+                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+            ],
+            "image": b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff"
+        }
+    
+    return {"course_data": course_data}
+
+@router.get("/get_course_analysis/{person_id}/{course_id}")
+def get_course_analysis(person_id: int, course_id: int, db: Session = Depends(database.get_db)):
+    course_analysis = {
+        "id": 1,  # 自增的主键 ID
+        "user_id": 101,  # 关联的用户 ID
+        "course_id": 1,  # 关联的课程 ID
+        "course_type": "Emotional Intelligence",  # 课程类型
+        "course_level": 1,  # 课程等级
+        "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
+        "result": 3,  # 结果：星级评分（1-3）
+        "comment1": "The course content was very insightful.",  # 第一条评论
+        "comment2": "The NPC interactions made it engaging.",  # 第二条评论
+        "comment3": "I would recommend this to others.",  # 第三条评论
+    }
+
+    return {"course_analysis": course_analysis}
+
+
+@router.post("/chat/battlefield")
+def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
+    # person_id = request.person_id
+    # course_id = request.course_id
+    # lang_type = request.lang_type
+    # lang_type = 'zh' if course_id == 1 else 'en'
+    # matching_course = crud.get_course_by_coursid(db, course_id=course_id)
+    # # print(matching_course.prompt)
+
+    # response = request_LLM_response(json.loads(
+    #     request.chat_content), matching_course.prompt, lang=lang_type)
+    # return response
+    return {"response": "For testing chat battlefield"}
+
+@router.post("/eval/battlefield")
+def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
+    response = {
+        "id": 1,  # 自增的主键 ID
+        "user_id": 101,  # 关联的用户 ID
+        "course_id": 1,  # 关联的课程 ID
+        "course_type": "Emotional Intelligence",  # 课程类型
+        "course_level": 1,  # 课程等级
+        "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
+        "result": 3,  # 结果：星级评分（1-3）
+        "comment1": "The course content was very insightful.",  # 第一条评论
+        "comment2": "The NPC interactions made it engaging.",  # 第二条评论
+        "comment3": "I would recommend this to others.",  # 第三条评论
+    }
+
+    return {"response": response}
