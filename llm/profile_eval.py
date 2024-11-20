@@ -3,7 +3,6 @@ import requests
 import base64
 import json
 
-# from llm.llm_setup import setup_LLM
 from llm.keyless_setup import creat_llm
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -19,36 +18,36 @@ def request_LLM_response(scenario):
                     - 基于最低得分，提供情商修炼的建议。
 
                     **参考打分细则**
-                    1. 情绪侦查/阅读力（情绪感知与理解）
+                    1. 感知力
                     我能够迅速察觉到自己情绪的变化。（1-5分）
                     我能够轻易辨别他人情绪的微妙变化。（1-5分）
                     我擅长分析他人情绪背后的原因。（1-5分）
                     我能够区分不同类型的情绪，如焦虑、愤怒或悲伤。（1-5分）
                     我能根据情境判断他人的情感需求。（1-5分）
-                    2. 情绪掌控力（情绪控制与管理）
+                    2. 掌控力
                     我能在情绪激动时保持冷静并控制自己的反应。（1-5分）
                     我在面对突发事件时，能够快速稳定自己的情绪。（1-5分）
                     我能通过有效的方式宣泄负面情绪，而不影响他人。（1-5分）
                     在面对压力时，我能有效调节自己的情绪以保持理性。（1-5分）
                     我能适应情绪上的变化，并迅速恢复情绪稳定。（1-5分）
-                    3. 人际平衡术（关系管理）
-                    我能够在团队中有效地处理人际关系。（1-5分）
-                    当出现矛盾时，我能够通过妥协和沟通解决问题。（1-5分）
-                    我能够在不同背景和性格的人之间找到平衡点。（1-5分）
-                    我能够敏锐地捕捉团队中的紧张情绪，并采取行动化解。（1-5分）
-                    我能够建立长期的、稳定的关系，无论是在个人生活中还是在工作中。（1-5分）
-                    4. 沟通表达力（沟通与表达）
-                    我能够清晰地表达自己的想法和需求。（1-5分）
-                    在沟通过程中，我能保持开放的态度，倾听他人意见。（1-5分）
-                    我善于在不同场合选择合适的沟通方式。（1-5分）
-                    我能通过非语言的方式（如面部表情、肢体语言）有效传达信息。（1-5分）
-                    我能够在复杂的对话中避免误解和冲突。（1-5分）
-                    5. 社交得体度（社交礼仪与技巧）
-                    我能在社交场合中得体地表现自己，遵守礼仪规范。（1-5分）
-                    我能根据场合和对象调整自己的言行，保持礼貌和尊重。（1-5分）
-                    在需要互动时，我能迅速判断该如何得体地介入对话。（1-5分）
-                    我能够识别他人的社交暗示，避免尴尬或不适。（1-5分）
-                    我擅长维护和提升个人形象，避免在社交中犯下失礼行为。（1-5分）
+                    3. 共情力
+                    我很容易理解和分享别人的感受。(1 - 5分)
+                    我可以设身处地地为别人着想，对他们的情绪做出适当的反应。(1 - 5分)
+                    我能识别并认同他人的情绪状态，即使他们没有说出来。(1 - 5分)
+                    我可以在情绪激动或困难的情况下为他人提供支持和安慰。(1 - 5分)
+                    我可以在个人和工作关系中对他人的幸福表现出同情和关心。(1 - 5分)
+                    4. 社交力
+                    我能在社交场合得体地表现自己，遵守礼仪规范。(1 - 5分)
+                    我可以根据情况和人调整自己的言行，保持礼貌和尊重。(1 - 5分)
+                    当需要互动时，我能很快判断出如何适当地参与对话。(1 - 5分)
+                    我能识别他人的社交暗示，避免尴尬或不适。(1 - 5分)
+                    善于维护和提升个人形象，避免在社交场合失礼。(1 - 5分)
+                    5. 驱动力
+                    我能保持高度的精力和热情来实现我的目标。(1 - 5分)
+                    我积极主动地寻找个人或职业发展的机会。(1 - 5分)
+                    即使面对挫折或挑战，我也能保持动力和专注。(1 - 5分)
+                    我能为自己设定明确的、可实现的目标，并为之不懈努力。(1 - 5分)
+                    我能激励他人主动为共同的目标做出贡献。(1 - 5分)
 
                     **语气与风格:**
                     - 你是年轻人，请在专业、客观的同时，保持幽默和轻松的语气氛围。批判现实，思考深刻，语言风趣，擅长一针见血地抓住本质，注意拿捏冒犯的分寸感。
@@ -81,23 +80,23 @@ def request_LLM_response(scenario):
 
                     **标准输出格式(不要写上json字母, 也不要漏,)**
                     {{
-                        "1. 情绪侦查力": {{
+                        "1. 感知力": {{
                             "分数": [分数],
                             "原因": [结合实际对话内容，简述原因]
                         }},
-                        "2. 情绪掌控力": {{
+                        "2. 掌控力": {{
                             "分数": [分数],
                             "原因": [结合实际对话内容，简述原因]
                         }},
-                        "3. 人际平衡术": {{
+                        "3. 共情力": {{
                             "分数": [分数],
                             "原因": [结合实际对话内容，简述原因]
                         }},
-                        "4. 沟通表达力": {{
+                        "4. 社交力": {{
                             "分数": [分数],
                             "原因": [结合实际对话内容，简述原因]
                         }},
-                        "5. 社交得体度": {{
+                        "5. 驱动力": {{
                             "分数": [分数],
                             "原因": [结合实际对话内容，简述原因]
                         }},
@@ -108,10 +107,10 @@ def request_LLM_response(scenario):
                             "建议": [针对最低得分的维度提供详细的修炼建议]
                         }},
                         "8. 情商修炼建议总结": {{
-                            "建议总结": [基于情商修炼建议总结成一句话，20字以内]
+                            "建议总结": [基于情商修炼建议总结成一句话，类似于一个标题]
                         }},
-                        "9. 评估总结": {{
-                            "总结": [针对用户情况，给出综合评价以及对用户的美好愿望]
+                        "9. 总结建议": {{
+                            "总结": [根据用户的情况，给用户一个综合的评价和良好的祝愿，涉及到用户的优点与缺点]
                         }}
                     }}
                     """
@@ -145,25 +144,25 @@ def parse_LLMresponse(json_data):
         response = json.loads(json_data)
         print("JSON is valid.")
 
-        dimension1_score = response['1. 情绪侦查力']['分数']
-        dimension1_detail = response['1. 情绪侦查力']['原因']
+        dimension1_score = response['1. 感知力']['分数']
+        dimension1_detail = response['1. 感知力']['原因']
 
-        dimension2_score = response['2. 情绪掌控力']['分数']
-        dimension2_detail = response['2. 情绪掌控力']['原因']
+        dimension2_score = response['2. 掌控力']['分数']
+        dimension2_detail = response['2. 掌控力']['原因']
 
-        dimension3_score = response['3. 人际平衡术']['分数']
-        dimension3_detail = response['3. 人际平衡术']['原因']
+        dimension3_score = response['3. 共情力']['分数']
+        dimension3_detail = response['3. 共情力']['原因']
 
-        dimension4_score = response['4. 沟通表达力']['分数']
-        dimension4_detail = response['4. 沟通表达力']['原因']
+        dimension4_score = response['4. 社交力']['分数']
+        dimension4_detail = response['4. 社交力']['原因']
 
-        dimension5_score = response['5. 社交得体度']['分数']
-        dimension5_detail = response['5. 社交得体度']['原因']
+        dimension5_score = response['5. 驱动力']['分数']
+        dimension5_detail = response['5. 驱动力']['原因']
 
         summary = response['6. 综合小贴士']['小贴士']
         detail = response['7. 情商修炼建议']['建议']
         detail_summary = response['8. 情商修炼建议总结']['建议总结']
-        overall_suggestion = response['9. 评估总结']['总结']
+        overall_suggestion = response['9. 总结建议']['总结']
 
         eq_scores = {
             "dimension1_score": dimension1_score,
@@ -188,7 +187,7 @@ def parse_LLMresponse(json_data):
 
 def retry_parse_LLMresponse(scenario, max_retries=5):
     attempt = 0
-    while attempt < max_retries:
+    while True:
         try:
             json_data = request_LLM_response(scenario)
             eq_scores = parse_LLMresponse(json_data)
@@ -237,8 +236,11 @@ async def process_with_llm_new(scores, analysis_data):
 
     
 if __name__ == "__main__":
-        
+    # import asynicio
     from example_debug import analysis_data, scores
+
+    # res = asyncio.run(process_with_llm_new(scores, analysis_data))
+    # print(res)
 
     scenario = ""
 
@@ -253,11 +255,7 @@ if __name__ == "__main__":
         scenario += f"描述: {analysis['description']}\n"
         scenario += f"选择: {analysis['choice']}\n"
         scenario += f"分析: {analysis['analysis']}\n"
-    # print(scenario)
     
-    # response = request_LLM_response(scenario)
-    # print(response)
-
     eq_scores = retry_parse_LLMresponse(scenario)
     print(eq_scores)
-    # await process_with_llm(scores, analysis_data)
+    # # await process_with_llm(scores, analysis_data)

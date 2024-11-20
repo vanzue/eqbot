@@ -113,7 +113,7 @@ def get_response_from_image(product, IMAGE_PATH, user_id, replyToken, db: Sessio
     except Exception as e:
         print(f"An error occurred while deleting the image file: {e}")
 
-    responses, analyze,language = generate_auto_reply(
+    responses, analyze, language= generate_auto_reply(
         product, user_id, chat_history, "", db)
     response_line_or_telegram(product, responses,analyze, user_id, language)
 
@@ -167,8 +167,9 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
     eqmaster = EQmaster()
     response, analyse ,language= [], "",""
     if chat_history:
-        response, analyse,language = eqmaster.get_response_and_analyze(
-            chat_history,"me")
+        language = eqmaster.detect_language(chat_history)
+        response, analyse = eqmaster.get_response_and_analyze(
+            chat_history,"me", language)
 
         state = schemas.ReplyStateCreate(
             product=product,
@@ -185,7 +186,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 "userName": "other",
                 "message": intent
             }]
-            response, analyse,language = eqmaster.get_response_and_analyze(
+            response, analyse = eqmaster.get_response_and_analyze(
                 chat_history=chat_history)
             state = schemas.ReplyStateCreate(
                 product=product,
@@ -195,11 +196,19 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 stage_number=3)
         else:
             chat_history = json.loads(retrieved_state.chat_history)
-            response ,language= eqmaster.get_response_by_intent(
-                chat_history=retrieved_state.chat_history,
-                intent=intent,
-                analyze=retrieved_state.stage2_output
-            )
+            language = eqmaster.detect_language(chat_history)
+            if language == 'en':
+                response = eqmaster.get_response_by_intent(
+                    chat_history=retrieved_state.chat_history,
+                    intent=intent,
+                    analyze=retrieved_state.stage2_output
+                )
+            else:
+                response = eqmaster.get_response_by_intent_zh(
+                    chat_history=retrieved_state.chat_history,
+                    intent=intent,
+                    analyze=retrieved_state.stage2_output
+                )
             state = schemas.ReplyStateBase(
                 product=product,
                 userId=user_id,
@@ -210,7 +219,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
             crud.replace_reply_state(db, state)
 
     # here should only be list of responses.
-    return response, analyse,language
+    return response, analyse, language
 
 
 @router.post("/Telegram/webhook")
@@ -276,3 +285,33 @@ def send_telegram_message(chat_id, text):
     except requests.RequestException as e:
         print(f"Failed to send message: {e}")
         return None
+    
+def main():
+    # 创建测试数据
+    product = "test_product"
+    user_id = "user_12345"
+    intent = "I'm interested in your product"
+    chat_history = [
+        {"userName": "other", "message": "Hello! How can I help you today?"},
+        {"userName": "me", "message": "Tell me about the product features."}
+    ]
+    
+    # 创建数据库会话 (Session)
+    # 这里假设你已经设置了数据库并且crud, schemas模块都可以使用。
+    db = Session()  # 替换成实际的Session生成代码，如果有必要
+    
+    # 调用 generate_auto_reply 并捕获结果
+    response, analyse = generate_auto_reply(
+        product=product,
+        user_id=user_id,
+        chat_history=chat_history,
+        intent=intent,
+        db=db
+    )
+    
+    # 打印输出结果
+    print("Response:", response)
+    print("Analysis:", analyse)
+
+if __name__ == "__main__":
+    main()
