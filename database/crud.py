@@ -91,6 +91,12 @@ def get_personal_info_by_personid(db: Session, personid: int):
         models.PersonalInfo.id == personid).first()
     return personal_info
 
+def get_personal_info_by_unqiueid(db: Session, unique_id: int):
+    personal_info = db.query(models.PersonalInfo).filter(
+        models.PersonalInfo.unique_id == unique_id).first()
+    return personal_info
+
+
 
 def get_personal_info_by_name(db: Session, name: str):
     personal_info = db.query(models.PersonalInfo).filter(
