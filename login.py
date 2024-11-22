@@ -77,6 +77,7 @@ async def line_webhook(request: data_types.MiniProgramLogin, db: Session = Depen
     if personal_info is not None:
         return JSONResponse(status_code=200, content={
             "isNewUser": False, 
+            "name": personal_info.name,
             "jobid":personal_info.job_id,
             "userid":personal_info.id 
         })
@@ -175,8 +176,8 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     # old user
     if personal_info is not None:
         return JSONResponse(status_code=200, content={
-            "message": response.json(),
             "isNewUser": False, 
+            "name": personal_info.name,
             "jobid":personal_info.job_id,
             "userid":personal_info.id 
         })
@@ -204,8 +205,8 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     job_id, user_id = create_profile_endpoint(nickname, "wechat", union_id, unique_id, gender, age, phone, email, avatar, db)
 
     return JSONResponse(status_code=200, content={
-        "message": response.json(),
         "isNewUser": True,
+        "name": nickname,
         "jobid": job_id,
         "userid": user_id
     })
@@ -213,22 +214,30 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
 
 # google登录
 @router.post("/google/login")
-async def login_google(request: Request, db: Session = Depends(database.get_db)):
-    name = request.name
-    openid = request.openid
-    unique_id = "google:" + str(openid)
+async def login_google(request: data_types.GoogleLogin, db: Session = Depends(database.get_db)):
+    name = request.nickname
+    avatar = request.headimgurl
+    email = request.email
+
+    union_id = request.unionid
+    unique_id = "google:" + str(union_id)
     personal_info = crud.get_personal_info_by_unqiueid(db, unique_id)
+    gender = ""
+    age = ""
+    phone = ""
 
     if personal_info is None:
-        job_id, user_id = create_profile_endpoint(name, openid, "google", db)
+        job_id, user_id = create_profile_endpoint(name, "google", union_id, unique_id, gender, age, phone, email, avatar, db)
         return {
             "isNewUser": True,
+            "name": name,
             "jobid": job_id,
             "userid": user_id
         }
     else:
         return {
             "isNewUser": False,
+            "name": personal_info.name,
             "jobid": personal_info.job_id,
             "userid": personal_info.user_id
         }
