@@ -5,6 +5,7 @@ from typing import Optional
 
 from database import database, schemas, crud
 import helper
+import data_types
 
 router = APIRouter()
 
@@ -57,7 +58,7 @@ async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: s
 
 # signup as a new user and get the EQ Score Report
 @router.post("/create_profile")
-async def create_profile(request: schemas.CreateUserRequest, db: Session = Depends(database.get_db)):
+async def create_profile(request: data_types.CreateUserRequest, db: Session = Depends(database.get_db)):
     # Receive all the info from frontend
     # personal info
     name = request.name
@@ -67,18 +68,15 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
     gender = request.gender
     concerns = request.concerns
     issues = ", ".join(concerns)
+    source = request.source
+    unique_id = request.unique_id
 
-    # tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"]
-    # tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"]
     job_id = str(uuid.uuid4())
 
-    # isExist_name = crud.get_personal_id_by_name(db, name)
-    # if isExist_name:
-    #     return {"message": "Name is exist, please use another name."}
-
-    # await create_personal_info_endpoint(name=name, gender=gender, job_level=job_level, issues=issues, job_id=job_id, db=db)
     personal_info_data = schemas.PersonalInfoCreate(
                             name=name, 
+                            source=source,
+                            unique_id=unique_id,
                             gender=gender, 
                             job_level=job_level, 
                             issues=issues, 
@@ -86,69 +84,6 @@ async def create_profile(request: schemas.CreateUserRequest, db: Session = Depen
     db_personal_info = crud.create_personal_info(db, personal_info_data)
 
     return {"job_id": job_id, "user_id": db_personal_info.id}
-
-
-
-# @router.post("/get_homepage/{job_id}")
-# async def get_homepage(job_id: str, db: Session = Depends(database.get_db)):
-#     # profile & eq scores
-#     personal_info = crud.get_personal_info_by_job_id(db, job_id)
-#     eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
-
-#     # if not personal_info.tag:
-#     #     return {"message": "Uncomplete personal info"}
-#     if not eq_scores:
-#         return {"message": "Uncomplete eq scores"}
-    
-#     scores = [eq_scores.dimension1_score, 
-#               eq_scores.dimension2_score, 
-#               eq_scores.dimension3_score, 
-#               eq_scores.dimension4_score, 
-#               eq_scores.dimension5_score]
-#     overall_score = helper.calculate_average(*scores)
-    
-#     # network
-#     contacts = crud.get_contacts_by_person_name(db, personal_info.name)
-#     contacts_list = []
-    
-#     for contact in contacts:
-#         one_contact = dict()
-#         one_contact["name"] = contact.name
-#         one_contact["tag"] = contact.tag
-#         one_contact["contact_relationship"] = contact.contact_relationship
-
-#         if contact.contact_relationship == "subordinate":
-#             relationship_analysis = crud.get_subordinate_analysis_by_contact_id(db, contact.id)
-#         elif contact.contact_relationship == "supervisor":
-#             relationship_analysis = crud.get_supervisor_analysis_by_contact_id(db, contact.id)
-#         one_contact["relationship_analysis"] = relationship_analysis
-
-#         contacts_list.append(one_contact)
-
-
-#     response = {
-#         "personal_info": {
-#             "name": personal_info.name,
-#             "tag": personal_info.tag,
-#             "tag_description": personal_info.tag_description,
-#             "job_id": personal_info.job_id
-#         },
-#         "eq_scores": {
-#             "score": overall_score, 
-#             "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
-#             "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
-#             "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
-#             "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
-#             "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
-#             "summary": eq_scores.summary,
-#             "detail": eq_scores.detail,
-#             "detail_summary": eq_scores.detail_summary,
-#             "overall_suggestion": eq_scores.overall_suggestion
-#         },
-#         "contacts": contacts_list
-#     }
-    
-#     return {"response": response}
 
 
 @router.post("/get_homepage/{personal_id}")
@@ -160,38 +95,21 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
     if not eq_scores:
         return {"message": "Uncomplete eq scores"}
     
-    scores = [eq_scores.dimension1_score, 
-              eq_scores.dimension2_score, 
-              eq_scores.dimension3_score, 
-              eq_scores.dimension4_score, 
-              eq_scores.dimension5_score]
+    scores = [eq_scores.perception_score, 
+              eq_scores.social_skill_score, 
+              eq_scores.self_regulaton_score, 
+              eq_scores.empathy_score, 
+              eq_scores.motivation_score]
     overall_score = sum(scores)
-    
-    # network
-    contacts = crud.get_contacts_by_person_name(db, personal_info.name)
-    contacts_list = []
-    
-    for contact in contacts:
-        one_contact = dict()
-        one_contact["name"] = contact.name
-        one_contact["tag"] = contact.tag
-        one_contact["contact_relationship"] = contact.contact_relationship
 
-        if contact.contact_relationship == "subordinate":
-            relationship_analysis = crud.get_subordinate_analysis_by_contact_id(db, contact.id)
-        elif contact.contact_relationship == "supervisor":
-            relationship_analysis = crud.get_supervisor_analysis_by_contact_id(db, contact.id)
-        one_contact["relationship_analysis"] = relationship_analysis
-
-        contacts_list.append(one_contact)
-
-    # num_star
-    db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id, course_id=4)
-    
-    if db_person_course is None:
-        num_star = 0
-    else:
-        num_star = db_person_course.result
+    # num_star calculate
+    num_star = crud.calculate_total_result(db, user_id=personal_id)
+    # db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id, course_id=4)
+    # if db_person_course is None:
+    #     num_star = 0
+    # else:
+    #     # calculate all stars
+    #     num_star = db_person_course.result
 
     response = {
         "personal_info": {
@@ -199,22 +117,21 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
             "tag": personal_info.tag,
             "tag_description": personal_info.tag_description,
             "job_id": personal_info.job_id,
-            "num_diamond": personal_info.num_star,
+            "num_diamond": personal_info.num_diamond,
             "num_star": num_star
         },
         "eq_scores": {
             "score": overall_score, 
-            "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
-            "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
-            "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
-            "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
-            "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
+            "perception_score": eq_scores.perception_score, "perception_detail": eq_scores.perception_detail,
+            "social_skill_score": eq_scores.social_skill_score, "social_skill_detail": eq_scores.social_skill_detail,
+            "self_regulaton_score": eq_scores.self_regulaton_score, "self_regulaton_detail": eq_scores.self_regulaton_detail,
+            "empathy_score": eq_scores.empathy_score, "empathy_detail": eq_scores.empathy_detail,
+            "motivation_score": eq_scores.motivation_score, "motivation_detail": eq_scores.motivation_detail,
             "summary": eq_scores.summary,
             "detail": eq_scores.detail,
             "detail_summary": eq_scores.detail_summary,
             "overall_suggestion": eq_scores.overall_suggestion
-        },
-        "contacts": contacts_list
+        }
     }
     
     return {"response": response}
@@ -230,11 +147,11 @@ async def get_analysis(job_id: str, db: Session = Depends(database.get_db)):
     if not eq_scores:
         return {"message": "Uncomplete eq scores"}
     
-    scores = [eq_scores.dimension1_score, 
-              eq_scores.dimension2_score, 
-              eq_scores.dimension3_score, 
-              eq_scores.dimension4_score, 
-              eq_scores.dimension5_score]
+    scores = [eq_scores.perception_score, 
+              eq_scores.social_skill_score, 
+              eq_scores.self_regulaton_score, 
+              eq_scores.empathy_score, 
+              eq_scores.motivation_score]
     overall_score = helper.calculate_average(*scores)
 
     response = {
@@ -246,11 +163,11 @@ async def get_analysis(job_id: str, db: Session = Depends(database.get_db)):
         },
         "eq_scores": {
             "score": overall_score, 
-            "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
-            "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
-            "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
-            "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
-            "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
+            "perception_score": eq_scores.perception_score, "perception_detail": eq_scores.perception_detail,
+            "social_skill_score": eq_scores.social_skill_score, "social_skill_detail": eq_scores.social_skill_detail,
+            "self_regulaton_score": eq_scores.self_regulaton_score, "self_regulaton_detail": eq_scores.self_regulaton_detail,
+            "empathy_score": eq_scores.empathy_score, "empathy_detail": eq_scores.empathy_detail,
+            "motivation_score": eq_scores.motivation_score, "motivation_detail": eq_scores.motivation_detail,
             "summary": eq_scores.summary,
             "detail": eq_scores.detail,
             "detail_summary": eq_scores.detail_summary,
@@ -267,11 +184,11 @@ async def get_analysis_detail(name: str, db: Session = Depends(database.get_db))
     personal_info = crud.get_personal_info_by_name(db, name)
     eq_scores = crud.get_eq_scores_by_person_id(db, personal_info)
     
-    scores = [eq_scores.dimension1_score, 
-              eq_scores.dimension2_score, 
-              eq_scores.dimension3_score, 
-              eq_scores.dimension4_score, 
-              eq_scores.dimension5_score]
+    scores = [eq_scores.perception_score, 
+              eq_scores.social_skill_score, 
+              eq_scores.self_regulaton_score, 
+              eq_scores.empathy_score, 
+              eq_scores.motivation_score]
     overall_score = helper.calculate_average(*scores)
 
     response = {
@@ -283,11 +200,11 @@ async def get_analysis_detail(name: str, db: Session = Depends(database.get_db))
         },
         "eq_scores": {
             "score": overall_score, 
-            "dimension1_score": eq_scores.dimension1_score, "dimension1_detail": eq_scores.dimension1_detail,
-            "dimension2_score": eq_scores.dimension2_score, "dimension2_detail": eq_scores.dimension2_detail,
-            "dimension3_score": eq_scores.dimension3_score, "dimension3_detail": eq_scores.dimension3_detail,
-            "dimension4_score": eq_scores.dimension4_score, "dimension4_detail": eq_scores.dimension4_detail,
-            "dimension5_score": eq_scores.dimension5_score, "dimension5_detail": eq_scores.dimension5_detail,
+            "perception_score": eq_scores.perception_score, "perception_detail": eq_scores.perception_detail,
+            "social_skill_score": eq_scores.social_skill_score, "social_skill_detail": eq_scores.social_skill_detail,
+            "self_regulaton_score": eq_scores.self_regulaton_score, "self_regulaton_detail": eq_scores.self_regulaton_detail,
+            "empathy_score": eq_scores.empathy_score, "empathy_detail": eq_scores.empathy_detail,
+            "motivation_score": eq_scores.motivation_score, "motivation_detail": eq_scores.motivation_detail,
             "summary": eq_scores.summary,
             "detail": eq_scores.detail,
             "detail_summary": eq_scores.detail_summary,

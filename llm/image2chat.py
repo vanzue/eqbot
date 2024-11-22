@@ -50,8 +50,8 @@ def image2text(image_path):
         }}    
 
         ** Extra Instructions **
-        If the language used in image is chinese, then the output should be chinese.
-        If the language used in image is english, then the output should be english.
+        If the language used in chat history is chinese, then the output should be chinese.
+        If the language used in chat history is english, then the output should be english.
     """
 
 

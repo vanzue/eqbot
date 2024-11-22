@@ -105,9 +105,9 @@ async def background_process_data(locale: str, job_id: str, scores: list, dialog
     min_score_key = min(scores, key=scores.get)
     dimension_keys = list(scores.keys())  # 获取 scores 的键的列表
     min_score_idx = dimension_keys.index(min_score_key)
-    tags = ["超绝顿感力", "情绪小火山", "职场隐士", "交流绝缘体", "交流绝缘体"] if locale != "en" else [
-        "Perception", "Self Regulation", "Empathy", "Social Skill", "Motivation"]
-    tag_description = ["超绝顿感力tag_description", "情绪小火山tag_description", "职场隐士tag_description", "交流绝缘体tag_description", "交流绝缘体tag_description"] if locale != "en" else [
+    tags = ["感知力", "社交力", "掌控力", "共情力", "驱动力"] if locale != "en" else [
+        "Perception", "Social Skill", "Self Regulation", "Empathy", "Motivation"]
+    tag_description = ["感知力tag_description", "社交力tag_description", "掌控力tag_description", "共情力tag_description", "驱动力tag_description"] if locale != "en" else [
         "tag_description0", "tag_description1", "tag_description2", "tag_description3", "tag_description4"]
 
     personal_info = crud.get_personal_info_by_job_id(db, job_id)
@@ -122,16 +122,16 @@ async def background_process_data(locale: str, job_id: str, scores: list, dialog
     eq_score_data = schemas.EQScoreCreate(
         job_id=job_id,
         person_id=personal_info.id,
-        dimension1_score=response["dimension1_score"],
-        dimension1_detail=response["dimension1_detail"],
-        dimension2_score=response["dimension2_score"],
-        dimension2_detail=response["dimension2_detail"],
-        dimension3_score=response["dimension3_score"],
-        dimension3_detail=response["dimension3_detail"],
-        dimension4_score=response["dimension4_score"],
-        dimension4_detail=response["dimension4_detail"],
-        dimension5_score=response["dimension5_score"],
-        dimension5_detail=response["dimension5_detail"],
+        perception_score=response["dimension1_score"],
+        perception_detail=response["dimension1_detail"],
+        social_skill_score=response["dimension2_score"],
+        social_skill_detail=response["dimension2_detail"],
+        self_regulaton_score=response["dimension3_score"],
+        self_regulaton_detail=response["dimension3_detail"],
+        empathy_score=response["dimension4_score"],
+        empathy_detail=response["dimension4_detail"],
+        motivation_score=response["dimension5_score"],
+        motivation_detail=response["dimension5_detail"],
         summary=response["summary"],
         detail=response["detail"],
         detail_summary=response['detail_summary'],

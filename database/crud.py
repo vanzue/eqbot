@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from sqlalchemy import desc
+from sqlalchemy import desc, func
 from sqlalchemy.exc import NoResultFound
 from . import models, schemas
 
@@ -9,13 +9,19 @@ from . import models, schemas
 def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate):
     db_personal_info = models.PersonalInfo(
         name=personal_info.name,
+        auth_provider = personal_info.auth_provider,
+        union_id = personal_info.union_id,
+        unique_id = personal_info.unique_id,
         gender=personal_info.gender,
+        age=personal_info.age,
+        phone=personal_info.phone,
+        email=personal_info.email,
+        avatar=personal_info.avatar,
         tag=personal_info.tag,
         tag_description=personal_info.tag_description,
-        job_level=personal_info.job_level,
         issues=personal_info.issues,
         job_id=personal_info.job_id,
-        num_star=500
+        num_diamond=500
     )
     db.add(db_personal_info)
     db.commit()
@@ -44,11 +50,11 @@ def update_personal_info_by_name(
     return db_personal_info
 
 
-def update_personal_stars_by_name(db: Session, name: str, new_stars: int):
+def update_personal_diamond_by_name(db: Session, name: str, new_diamond: int):
     try:
         person = db.query(models.PersonalInfo).filter(
             models.PersonalInfo.name == name).one()
-        person.num_star = new_stars
+        person.num_diamond = new_diamond
         db.commit()
         return True
     except NoResultFound:
@@ -64,14 +70,14 @@ def get_personal_info(db: Session, personal_info_id: str):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == personal_info_id).first()
 
 
-def update_personal_stars(db: Session, id: int, num_stars: int):
+def update_personal_diamond(db: Session, id: int, num_diamond: int):
     db_person = db.query(models.PersonalInfo).filter(
         models.PersonalInfo.id == id).one_or_none()
-    db_person.num_star += num_stars
+    db_person.num_diamond += num_diamond
 
     db.commit()
     db.refresh(db_person)
-    return db_person.num_star
+    return db_person.num_diamond
 
 
 def get_personal_infos(db: Session, id: int):
@@ -88,6 +94,12 @@ def get_personal_info_by_personid(db: Session, personid: int):
     personal_info = db.query(models.PersonalInfo).filter(
         models.PersonalInfo.id == personid).first()
     return personal_info
+
+def get_personal_info_by_unqiueid(db: Session, unique_id: int):
+    personal_info = db.query(models.PersonalInfo).filter(
+        models.PersonalInfo.unique_id == unique_id).first()
+    return personal_info
+
 
 
 def get_personal_info_by_name(db: Session, name: str):
@@ -116,16 +128,16 @@ def delete_personal_info(db: Session, personal_info_id: str):
 def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
     db_eq_score = models.EQScore(
         person_id=eq_score.person_id,
-        dimension1_score=eq_score.dimension1_score,
-        dimension1_detail=eq_score.dimension1_detail,
-        dimension2_score=eq_score.dimension2_score,
-        dimension2_detail=eq_score.dimension2_detail,
-        dimension3_score=eq_score.dimension3_score,
-        dimension3_detail=eq_score.dimension3_detail,
-        dimension4_score=eq_score.dimension4_score,
-        dimension4_detail=eq_score.dimension4_detail,
-        dimension5_score=eq_score.dimension5_score,
-        dimension5_detail=eq_score.dimension5_detail,
+        perception_score = eq_score.perception_score,
+        perception_detail = eq_score.perception_detail,
+        social_skill_score = eq_score.social_skill_score,
+        social_skill_detail = eq_score.social_skill_detail,
+        self_regulaton_score = eq_score.self_regulaton_score,
+        self_regulaton_detail = eq_score.self_regulaton_detail,
+        empathy_score = eq_score.empathy_score,
+        empathy_detail = eq_score.empathy_detail,
+        motivation_score = eq_score.motivation_score,
+        motivation_detail = eq_score.motivation_detail,
         summary=eq_score.summary,
         detail=eq_score.detail,
         detail_summary=eq_score.detail_summary,
@@ -159,9 +171,12 @@ def delete_eq_score(db: Session, eq_score_id: int):
 
 def create_course(db: Session, course: schemas.CoursesCreate):
     db_course = models.Courses(
-        course_type=course.course_type,
+        course_dim=course.course_dim,
         course_level=course.course_level,
-        prompt=course.prompt
+        prompt=course.prompt,
+        title=course.title,
+        npc=course.npc,
+        image=course.image
     )
     db.add(db_course)
     db.commit()
@@ -174,15 +189,15 @@ def get_courses(db: Session, skip: int = 0, limit: int = 100):
 
 
 def get_course_by_id(db: Session, course_id: int):
-    course = db.query(models.Courses.course_type, models.Courses.course_level).filter(
+    course = db.query(models.Courses.course_dim, models.Courses.course_level).filter(
         models.Courses.id == course_id).first()
 
-    return course.course_type, course.course_level
+    return course.course_dim, course.course_level
 
 
-def get_course_by_course_type_and_level(db: Session, course_type: str, course_level: int):
+def get_course_by_course_dim_and_level(db: Session, course_dim: str, course_level: int):
     return db.query(models.Courses).filter(
-        models.Courses.course_type == course_type,
+        models.Courses.course_dim == course_dim,
         models.Courses.course_level == course_level
     ).first()
 
@@ -208,7 +223,7 @@ def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCo
     new_course = models.PersonalInfoCourses(
         person_id=course_data.person_id,
         course_id=course_data.course_id,
-        course_type=course_data.course_type,
+        course_dim=course_data.course_dim,
         course_level=course_data.course_level,
         status=course_data.status,
         result=course_data.result,
@@ -221,6 +236,15 @@ def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCo
     db.refresh(new_course)
     return new_course
 
+def calculate_total_result(db: Session, user_id: int) -> int:
+    # 查询并计算指定用户的所有 result 总和
+    total_result = (
+        db.query(func.sum(models.PersonalInfoCourses.result))
+        .filter(models.PersonalInfoCourses.user_id == user_id)
+        .scalar()
+    )
+    # 如果没有记录，则返回 0
+    return total_result or 0
 
 def get_coursesperson_by_person_id(db: Session, person_id: int, course_id: int):
     return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id,
@@ -270,121 +294,7 @@ def remove_course_from_personal_info(db: Session, person_id: str, course_id: int
         db.commit()
     return db_personal_info_course
 
-# CRUD for Contact
 
-
-def create_contact(db: Session, contact: schemas.ContactCreate):
-    db_contact = models.Contact(
-        person_id=contact.person_id,
-        name=contact.name,
-        tag=contact.tag,
-        contact_relationship=contact.contact_relationship
-    )
-    db.add(db_contact)
-    db.commit()
-    db.refresh(db_contact)
-    return db_contact
-
-
-def get_contacts_by_person_id(db: Session, person_id: str, skip: int = 0, limit: int = 100):
-    return db.query(models.Contact).filter(models.Contact.person_id == person_id).offset(skip).limit(limit).all()
-
-
-def get_contacts_by_contact_id(db: Session, contact_id: str):
-    return db.query(models.Contact).filter(models.Contact.id == contact_id).one_or_none()
-
-
-def get_contacts_by_contact_name(db: Session, contact_name: str):
-    return db.query(models.Contact).filter(models.Contact.name == contact_name).one_or_none()
-
-
-def get_contacts_by_person_name(db: Session, person_name: str, skip: int = 0, limit: int = 100):
-    db_personal_info = db.query(models.PersonalInfo).filter(
-        models.PersonalInfo.name == person_name).first()
-    if db_personal_info:
-        return db.query(models.Contact).filter(models.Contact.person_id == db_personal_info.id)\
-            .order_by(desc(models.Contact.id))\
-            .offset(skip).limit(limit).all()
-    return []
-
-
-def delete_contact(db: Session, contact_id: str):
-    db_contact = db.query(models.Contact).filter(
-        models.Contact.id == contact_id).first()
-    if db_contact:
-        db.delete(db_contact)
-        db.commit()
-    return db_contact
-
-# CRUD for ChatRecords
-
-
-def create_chat_record(db: Session, chat_record: schemas.ChatRecordsCreate):
-    db_chat_record = models.ChatRecords(
-        person_id=chat_record.person_id,
-        contact_id=chat_record.contact_id,
-        chat_time=chat_record.chat_time,
-        chat_content=chat_record.chat_content
-    )
-    db.add(db_chat_record)
-    db.commit()
-    db.refresh(db_chat_record)
-    return db_chat_record
-
-
-def get_chat_records_by_person_id(db: Session, person_id: str):
-    return db.query(models.ChatRecords).filter(models.ChatRecords.person_id == person_id).all()
-
-
-def delete_chat_record(db: Session, chat_record_id: int):
-    db_chat_record = db.query(models.ChatRecords).filter(
-        models.ChatRecords.id == chat_record_id).first()
-    if db_chat_record:
-        db.delete(db_chat_record)
-        db.commit()
-    return db_chat_record
-
-# CRUD for SubordinateAnalysis
-
-
-def create_subordinate_analysis(db: Session, analysis: schemas.SubordinateAnalysisCreate):
-    db_analysis = models.SubordinateAnalysis(
-        contact_id=analysis.contact_id,
-        relationship_analysis=analysis.relationship_analysis,
-        work_compatibility=analysis.work_compatibility,
-        cunning_index=analysis.cunning_index,
-        work_personality=analysis.work_personality,
-        interests=analysis.interests,
-        bad_colleague_risk=analysis.bad_colleague_risk
-    )
-    db.add(db_analysis)
-    db.commit()
-    db.refresh(db_analysis)
-    return db_analysis
-
-
-def create_supervisor_analysis(db: Session, analysis: schemas.SupervisorAnalysisCreate):
-    db_analysis = models.SupervisorAnalysis(
-        contact_id=analysis.contact_id,
-        relationship_analysis=analysis.relationship_analysis,
-        interaction_suggestions=analysis.interaction_suggestions,
-        leader_opinion_of_me=analysis.leader_opinion_of_me,
-        pua_detection=analysis.pua_detection,
-        preferred_subordinate=analysis.preferred_subordinate,
-        gift_recommendation=analysis.gift_recommendation
-    )
-    db.add(db_analysis)
-    db.commit()
-    db.refresh(db_analysis)
-    return db_analysis
-
-
-def get_subordinate_analysis_by_contact_id(db: Session, contact_id: str):
-    return db.query(models.SubordinateAnalysis).filter(models.SubordinateAnalysis.contact_id == contact_id).first()
-
-
-def get_supervisor_analysis_by_contact_id(db: Session, contact_id: str):
-    return db.query(models.SupervisorAnalysis).filter(models.SupervisorAnalysis.contact_id == contact_id).first()
 
 # Chat History
 
