@@ -10,13 +10,18 @@ class PersonalInfo(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     name = Column(Unicode(100), nullable=False)
 
-    source = Column(Unicode(100), nullable=False)   # eg. google, apple, wechat
-    unique_id = Column(Unicode(100), nullable=False) # openid
+    auth_provider = Column(Unicode(100), nullable=False)   # eg. google, apple, wechat
+    union_id = Column(Unicode(100), nullable=False)  # union_id
+    unique_id = Column(Unicode(100), nullable=False, unique=True) # auth:union_id
 
     gender = Column(Unicode(50))
+    age = Column(Unicode(50)) # age
+    phone = Column(Unicode(50))
+    email = Column(Unicode(50))
+    avatar = Column(Unicode(150)) # url
+
     tag = Column(Unicode(50), nullable=True)
     tag_description = Column(UnicodeText, nullable=True)
-    job_level = Column(Unicode(50))
     issues = Column(Unicode(100))
     job_id = Column(Unicode(100))
     num_diamond = Column(Integer)

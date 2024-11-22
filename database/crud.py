@@ -9,12 +9,16 @@ from . import models, schemas
 def create_personal_info(db: Session, personal_info: schemas.PersonalInfoCreate):
     db_personal_info = models.PersonalInfo(
         name=personal_info.name,
-        source = personal_info.source,
+        auth_provider = personal_info.auth_provider,
+        union_id = personal_info.union_id,
         unique_id = personal_info.unique_id,
         gender=personal_info.gender,
+        age=personal_info.age,
+        phone=personal_info.phone,
+        email=personal_info.email,
+        avatar=personal_info.avatar,
         tag=personal_info.tag,
         tag_description=personal_info.tag_description,
-        job_level=personal_info.job_level,
         issues=personal_info.issues,
         job_id=personal_info.job_id,
         num_diamond=500

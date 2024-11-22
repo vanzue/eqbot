@@ -5,15 +5,19 @@ from datetime import datetime
 # PersonalInfo Schema
 class PersonalInfoBase(BaseModel):
     name: str
-    source: str
+    auth_provider: str
+    union_id: str
     unique_id: str
     gender: str
+    age: str
+    phone: str
+    email: str
+    avatar: str
     tag: Optional[str] = None
     tag_description: Optional[str] = None
-    job_level: str
     issues: str
     job_id: str
-    num_diamond: int
+    num_diamond: Optional[int] = 500
 
 
 class PersonalInfoCreate(PersonalInfoBase):
@@ -21,10 +25,11 @@ class PersonalInfoCreate(PersonalInfoBase):
 
 
 class PersonalInfoUpdate(BaseModel):
+    name: Optional[str] = None
     gender: Optional[str] = None
     tag: Optional[str] = None
     tag_description: Optional[str] = None
-    job_level: Optional[str] = None
+    age: Optional[str] = None
     issues: Optional[str] = None
     job_id: Optional[str] = None
 
