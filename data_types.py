@@ -80,3 +80,8 @@ class ScenarioFinal(BaseModel):
     job_id: str
     dialogue_history: List[AnalysisData] # 不能有{}和”
     locale: Optional[str] = None
+
+class MiniProgramLogin(BaseModel):
+    code: str
+    encryptedData: str
+    iv: str
