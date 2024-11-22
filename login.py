@@ -7,7 +7,9 @@ from database import crud, schemas, database
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, Request
 
+import data_types
 from WXBizDataCrypt_login import WXBizDataCrypt
+
 
 weixin_appid = os.getenv('WEIXIN_APPID')
 weixin_secret = os.getenv('WEIXIN_APPSECRET')
@@ -39,13 +41,13 @@ def create_profile_endpoint(name, auth_provider, union_id, unique_id, gender, ag
 
 # 小程序
 @router.post("/wxprogram/login")
-async def line_webhook(request: Request, db: Session = Depends(database.get_db)):
-    body = await request.body()
-    try:
-        body_json = json.loads(body)
-    except json.JSONDecodeError as e:
-        return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
-    code = body_json.get('code')
+async def line_webhook(request: data_types.MiniProgramLogin, db: Session = Depends(database.get_db)):
+    # body = await request.body()
+    # try:
+    #     body_json = json.loads(body)
+    # except json.JSONDecodeError as e:
+    #     return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
+    code = request.code
     headers = {
         "Content-Type": "application/json",
     }
@@ -74,7 +76,6 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
     # old user
     if personal_info is not None:
         return JSONResponse(status_code=200, content={
-            # "message": response.json(),
             "isNewUser": False, 
             "jobid":personal_info.job_id,
             "userid":personal_info.id 
@@ -82,32 +83,11 @@ async def line_webhook(request: Request, db: Session = Depends(database.get_db))
     
     # new user
     # create new user
-    # print(response)
-    # name = response.name
-    # job_id, user_id = create_profile_endpoint(nickname, "wechat", union_id, unique_id, gender, age, phone, email, avatar, db)
-
-    return JSONResponse(status_code=200, content={
-        "isNewUser": True,
-        "session_key": session_key,
-        "open_id": open_id,
-        "union_id": union_id
-    })
-
-
-# only for new user
-@router.post("/wxprogram/login/encrypte")
-async def encrypte_miniProgram(request: Request,  db: Session = Depends(database.get_db)):
-    sessionKey = request.sessionKey
     encryptedData = request.encryptedData
     iv = request.iv
     appId = weixin_appid
 
-    # appId = 'wx4f4bc4dec97d474b'
-    # sessionKey = 'tiihtNczf5v6AKRyjwEUhQ=='
-    # encryptedData = 'CiyLU1Aw2KjvrjMdj8YKliAjtP4gsMZMQmRzooG2xrDcvSnxIMXFufNstNGTyaGS9uT5geRa0W4oTOb1WT7fJlAC+oNPdbB+3hVbJSRgv+4lGOETKUQz6OYStslQ142dNCuabNPGBzlooOmB231qMM85d2/fV6ChevvXvQP8Hkue1poOFtnEtpyxVLW1zAo6/1Xx1COxFvrc2d7UL/lmHInNlxuacJXwu0fjpXfz/YqYzBIBzD6WUfTIF9GRHpOn/Hz7saL8xz+W//FRAUid1OksQaQx4CMs8LOddcQhULW4ucetDf96JcR3g0gfRK4PC7E/r7Z6xNrXd2UIeorGj5Ef7b1pJAYB6Y5anaHqZ9J6nKEBvB4DnNLIVWSgARns/8wR2SiRS7MNACwTyrGvt9ts8p12PKFdlqYTopNHR1Vf7XjfhQlVsAJdNiKdYmYVoKlaRv85IfVunYzO0IKXsyl7JCUjCpoG20f0a04COwfneQAGGwd5oa+T8yO5hzuyDb/XcxxmK01EpqOyuxINew=='
-    # iv = 'r7BXXKkLb8qrSNn05n0qiA=='
-
-    pc = WXBizDataCrypt(appId, sessionKey)
+    pc = WXBizDataCrypt(appId, session_key)
     info_data = pc.decrypt(encryptedData, iv)
     # print(pc.decrypt(encryptedData, iv))
     # {'openId': 'oGZUI0egBJY1zhBYw2KhdUfwVJJE', 'nickName': 'Band', 'gender': 1, 'language': 'zh_CN', 'city': 'Guangzhou', 'province': 'Guangdong', 'country': 'CN', 'avatarUrl': 'http://wx.qlogo.cn/mmopen/vi_32/aSKcBBPpibyKNicHNTMM0qJVh8Kjgiak2AHWr8MHM4WgMEm7GFhsf8OYrySdbvAMvTsw3mo8ibKicsnfN5pRjl1p8HQ/0', 'unionId': 'ocMvos6NjeKLIBqg5Mr9QjxrP1FA', 'watermark': {'timestamp': 1477314187, 'appid': 'wx4f4bc4dec97d474b'}}
@@ -122,8 +102,44 @@ async def encrypte_miniProgram(request: Request,  db: Session = Depends(database
     phone = ""
     email = ""
     job_id, user_id = create_profile_endpoint(nickname, "wechat", union_id, unique_id, gender, age, phone, email, avatar, db)
+
+    return JSONResponse(status_code=200, content={
+        "isNewUser": True,
+        "job_id": job_id,
+        "user_id": user_id
+    })
+
+
+# # only for new user
+# @router.post("/wxprogram/login/encrypte")
+# async def encrypte_miniProgram(request: Request,  db: Session = Depends(database.get_db)):
+#     sessionKey = request.sessionKey
+#     encryptedData = request.encryptedData
+#     iv = request.iv
+#     appId = weixin_appid
+
+#     # appId = 'wx4f4bc4dec97d474b'
+#     # sessionKey = 'tiihtNczf5v6AKRyjwEUhQ=='
+#     # encryptedData = 'CiyLU1Aw2KjvrjMdj8YKliAjtP4gsMZMQmRzooG2xrDcvSnxIMXFufNstNGTyaGS9uT5geRa0W4oTOb1WT7fJlAC+oNPdbB+3hVbJSRgv+4lGOETKUQz6OYStslQ142dNCuabNPGBzlooOmB231qMM85d2/fV6ChevvXvQP8Hkue1poOFtnEtpyxVLW1zAo6/1Xx1COxFvrc2d7UL/lmHInNlxuacJXwu0fjpXfz/YqYzBIBzD6WUfTIF9GRHpOn/Hz7saL8xz+W//FRAUid1OksQaQx4CMs8LOddcQhULW4ucetDf96JcR3g0gfRK4PC7E/r7Z6xNrXd2UIeorGj5Ef7b1pJAYB6Y5anaHqZ9J6nKEBvB4DnNLIVWSgARns/8wR2SiRS7MNACwTyrGvt9ts8p12PKFdlqYTopNHR1Vf7XjfhQlVsAJdNiKdYmYVoKlaRv85IfVunYzO0IKXsyl7JCUjCpoG20f0a04COwfneQAGGwd5oa+T8yO5hzuyDb/XcxxmK01EpqOyuxINew=='
+#     # iv = 'r7BXXKkLb8qrSNn05n0qiA=='
+
+#     pc = WXBizDataCrypt(appId, sessionKey)
+#     info_data = pc.decrypt(encryptedData, iv)
+#     # print(pc.decrypt(encryptedData, iv))
+#     # {'openId': 'oGZUI0egBJY1zhBYw2KhdUfwVJJE', 'nickName': 'Band', 'gender': 1, 'language': 'zh_CN', 'city': 'Guangzhou', 'province': 'Guangdong', 'country': 'CN', 'avatarUrl': 'http://wx.qlogo.cn/mmopen/vi_32/aSKcBBPpibyKNicHNTMM0qJVh8Kjgiak2AHWr8MHM4WgMEm7GFhsf8OYrySdbvAMvTsw3mo8ibKicsnfN5pRjl1p8HQ/0', 'unionId': 'ocMvos6NjeKLIBqg5Mr9QjxrP1FA', 'watermark': {'timestamp': 1477314187, 'appid': 'wx4f4bc4dec97d474b'}}
+
+#     # create new user
+#     nickname = info_data['nickName']
+#     gender = 'male' if info_data['gender'] == 1 else 'female'
+#     avatar = info_data['avatarUrl']
+#     union_id = info_data['unionId']
+#     unique_id = "wechat:" + str(union_id)
+#     age = ""
+#     phone = ""
+#     email = ""
+#     job_id, user_id = create_profile_endpoint(nickname, "wechat", union_id, unique_id, gender, age, phone, email, avatar, db)
     
-    return {"job_id": job_id, "user_id": user_id}
+#     return {"job_id": job_id, "user_id": user_id}
     
     
 # app转微信登录
@@ -199,7 +215,8 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
 async def login_google(request: Request, db: Session = Depends(database.get_db)):
     name = request.name
     openid = request.openid
-    personal_info = crud.get_personal_info_by_unqiueid(db, openid)
+    unique_id = "google:" + str(openid)
+    personal_info = crud.get_personal_info_by_unqiueid(db, unique_id)
 
     if personal_info is None:
         job_id, user_id = create_profile_endpoint(name, openid, "google", db)
