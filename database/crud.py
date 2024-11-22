@@ -127,7 +127,7 @@ def delete_personal_info(db: Session, personal_info_id: str):
 
 def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
     db_eq_score = models.EQScore(
-        person_id=eq_score.person_id,
+        user_id=eq_score.user_id,
         perception_score = eq_score.perception_score,
         perception_detail = eq_score.perception_detail,
         social_skill_score = eq_score.social_skill_score,
@@ -150,8 +150,8 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
     return db_eq_score
 
 
-def get_eq_scores_by_person_id(db: Session, person_id: str):
-    return db.query(models.EQScore).filter(models.EQScore.person_id == person_id).first()
+def get_eq_scores_by_person_id(db: Session, user_id: str):
+    return db.query(models.EQScore).filter(models.EQScore.user_id == user_id).first()
 
 
 def get_eq_scores_by_job_id(db: Session, job_id: str):

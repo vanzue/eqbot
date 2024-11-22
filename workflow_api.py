@@ -104,12 +104,6 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
 
     # num_star calculate
     num_star = crud.calculate_total_result(db, user_id=personal_id)
-    # db_person_course = crud.get_coursesperson_by_person_id(db, person_id=personal_id, course_id=4)
-    # if db_person_course is None:
-    #     num_star = 0
-    # else:
-    #     # calculate all stars
-    #     num_star = db_person_course.result
 
     response = {
         "personal_info": {
@@ -182,7 +176,7 @@ async def get_analysis(job_id: str, db: Session = Depends(database.get_db)):
 async def get_analysis_detail(name: str, db: Session = Depends(database.get_db)):
     # profile & eq scores
     personal_info = crud.get_personal_info_by_name(db, name)
-    eq_scores = crud.get_eq_scores_by_person_id(db, personal_info)
+    eq_scores = crud.get_eq_scores_by_person_id(db, personal_info.id)
     
     scores = [eq_scores.perception_score, 
               eq_scores.social_skill_score, 
