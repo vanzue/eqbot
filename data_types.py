@@ -85,3 +85,12 @@ class MiniProgramLogin(BaseModel):
     code: str
     encryptedData: str
     iv: str
+
+class GoogleLogin(BaseModel):
+    email: str
+    headimgurl: str
+    nickname: str
+    unionid: str
+
+
+
