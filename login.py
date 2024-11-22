@@ -239,6 +239,6 @@ async def login_google(request: data_types.GoogleLogin, db: Session = Depends(da
             "isNewUser": False,
             "name": personal_info.name,
             "jobid": personal_info.job_id,
-            "userid": personal_info.user_id
+            "userid": personal_info.id
         }
     
