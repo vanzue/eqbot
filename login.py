@@ -105,6 +105,7 @@ async def line_webhook(request: data_types.MiniProgramLogin, db: Session = Depen
 
     return JSONResponse(status_code=200, content={
         "isNewUser": True,
+        "name": nickname,
         "job_id": job_id,
         "user_id": user_id
     })
