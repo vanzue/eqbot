@@ -13,6 +13,8 @@ from WXBizDataCrypt_login import WXBizDataCrypt
 
 weixin_appid = os.getenv('WEIXIN_APPID')
 weixin_secret = os.getenv('WEIXIN_APPSECRET')
+thrid2weixin_appid = os.getenv('THIRD2WEIXIN_APPID')
+thrid2weixin_appsecret = os.getenv('THIRD2WEIXIN_APPSECRET')
 
 router = APIRouter()
 
@@ -157,10 +159,11 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
         "Content-Type": "application/json",
     }
 
-    print(weixin_appid)
-    print(weixin_secret)
+    print(thrid2weixin_appid)
+    print(thrid2weixin_appsecret)
 
-    message_url = f"https://api.weixin.qq.com/sns/oauth2/access_token?appid={weixin_appid}&secret={weixin_secret}&code={code}&grant_type=authorization_code"
+    message_url = f"https://api.weixin.qq.com/sns/oauth2/access_token?appid={thrid2weixin_appid}&secret={thrid2weixin_appsecret}&code={code}&grant_type=authorization_code"
+    print(message_url)
     response = requests.get(message_url, headers=headers)
 
     if response.status_code != 200:
