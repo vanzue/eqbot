@@ -114,7 +114,7 @@ def get_battlefield(user_id: int, db: Session = Depends(database.get_db)):
     # eq_type = eq_dimensions[lowest_dimension]
     eq_type = "情绪掌控力"
 
-    person_course = crud.get_coursesperson_by_person_id_all(db, user_id=user_id)
+    person_course = crud.get_coursesperson_by_person_id_all(db, person_id=user_id)
     if not person_course:
         new_course = crud.get_course_by_course_type_and_level(db, course_type=eq_type, course_level=1)
         return {"courses": [new_course.id]}

@@ -163,6 +163,7 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     print(thrid2weixin_appsecret)
 
     message_url = f"https://api.weixin.qq.com/sns/oauth2/access_token?appid={thrid2weixin_appid}&secret={thrid2weixin_appsecret}&code={code}&grant_type=authorization_code"
+
     print(message_url)
     response = requests.get(message_url, headers=headers)
 
