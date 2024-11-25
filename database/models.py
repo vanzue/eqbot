@@ -18,7 +18,7 @@ class PersonalInfo(Base):
     age = Column(Unicode(50)) # age
     phone = Column(Unicode(50))
     email = Column(Unicode(50))
-    avatar = Column(Unicode(150)) # url
+    avatar = Column(UnicodeText) # url
 
     tag = Column(Unicode(50), nullable=True)
     tag_description = Column(UnicodeText, nullable=True)

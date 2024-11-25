@@ -211,6 +211,7 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     age = ""
     phone = ""
     email = ""
+    # {'openid': 'oft6z6TTPMwcpL_Dyg0C_Yr2zPRQ', 'nickname': 'Elijah Lin', 'sex': 0, 'language': '', 'city': '', 'province': '', 'country': '', 'headimgurl': 'https://thirdwx.qlogo.cn/mmopen/vi_32/yaywFdfM3rQw5fjfTJuXOrFVdbXDWSBz3YYuwUSeo30oCbBAmwc3HkQZ7Xn3vN1ZZ3gMfxRMHTRFKIqibpQRl1ddciaViblY443rOWceowv3Zc/132', 'privilege': [], 'unionid': 'oZL-Y6jIyyC2iRPYAkO7UImdKGTs'}
 
     # create new user
     job_id, user_id = create_profile_endpoint(nickname, "wechat", union_id, unique_id, gender, age, phone, email, avatar, db)
