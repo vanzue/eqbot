@@ -161,6 +161,7 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     print(weixin_secret)
 
     message_url = f"https://api.weixin.qq.com/sns/oauth2/access_token?appid={weixin_appid}&secret={weixin_secret}&code={code}&grant_type=authorization_code"
+    print(message_url)
     response = requests.get(message_url, headers=headers)
 
     if response.status_code != 200:
