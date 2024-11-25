@@ -221,7 +221,7 @@ def delete_course(db: Session, course_id: int):
 
 def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCoursesCreate):
     new_course = models.PersonalInfoCourses(
-        person_id=course_data.person_id,
+        user_id=course_data.user_id,
         course_id=course_data.course_id,
         course_dim=course_data.course_dim,
         course_level=course_data.course_level,
@@ -247,16 +247,16 @@ def calculate_total_result(db: Session, user_id: int) -> int:
     return total_result or 0
 
 def get_coursesperson_by_person_id(db: Session, person_id: int, course_id: int):
-    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id,
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id,
                                                        models.PersonalInfoCourses.course_id == course_id).one_or_none()
 
 
 def course_exists(db: Session, person_id: int):
-    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id).first() is not None
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id).first() is not None
 
 
 def update_personal_info_course(db: Session, person_id: int, course_id: int, course_level: int = None, status: str = None, result: int = None, comment1: str = None, comment2: str = None, comment3: str = None):
-    course = db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id,
+    course = db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id,
                                                          models.PersonalInfoCourses.course_id == course_id).first()
     if not course:
         return None
@@ -281,12 +281,12 @@ def update_personal_info_course(db: Session, person_id: int, course_id: int, cou
 
 
 def get_coursesperson_by_person_id_all(db: Session, person_id: str):
-    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.person_id == person_id).all()
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id).all()
 
 
 def remove_course_from_personal_info(db: Session, person_id: str, course_id: int):
     db_personal_info_course = db.query(models.PersonalInfoCourses).filter(
-        models.PersonalInfoCourses.person_id == person_id,
+        models.PersonalInfoCourses.user_id == person_id,
         models.PersonalInfoCourses.course_id == course_id
     ).first()
     if db_personal_info_course:
