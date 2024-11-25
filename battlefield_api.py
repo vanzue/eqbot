@@ -8,7 +8,7 @@ from typing import Optional
 import data_types
 from database import database, crud, schemas
 
-from llm.chat_battlefield import request_LLM_response, chat_eval, request_LLM_response_v2
+from llm.chat_battlefield_agent import request_LLM_response, request_LLM_response_by_eval
 
 router = APIRouter()
 
@@ -250,17 +250,18 @@ def get_course_analysis(person_id: int, course_id: int, db: Session = Depends(da
 
 @router.post("/chat/battlefield")
 def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
-    # person_id = request.person_id
-    # course_id = request.course_id
-    # lang_type = request.lang_type
-    # lang_type = 'zh' if course_id == 1 else 'en'
-    # matching_course = crud.get_course_by_coursid(db, course_id=course_id)
-    # # print(matching_course.prompt)
+    person_id = request.person_id
+    course_id = request.course_id
+    locale = request.locale
 
-    # response = request_LLM_response(json.loads(
-    #     request.chat_content), matching_course.prompt, lang=lang_type)
-    # return response
-    return {"response": "For testing chat battlefield"}
+    matching_course = crud.get_course_by_coursid(db, course_id=course_id)
+    background = matching_course.prompt
+    npc = matching_course.npc
+    prompt = background + npc
+
+    response = request_LLM_response(json.loads(
+        request.chat_content), prompt, lang=locale)
+    return response
 
 @router.post("/eval/battlefield")
 def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
