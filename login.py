@@ -170,10 +170,16 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     if response.status_code != 200:
         return JSONResponse(status_code=response.status_code, content={"message": "Failed to get session"})
     print(response.json())
+    # {'access_token': '86_qsBjQYJn7-iDonUCWvB0YT43LS95J5XJFsZopKGJGGDcEriAGTglTNRVY9HEQkCI5zQjaCpb8Ldw1_l_xB-Bllzf3e6RgB2Yeqdijm8dGWc', 
+    # 'expires_in': 7200, 
+    # 'refresh_token': '86_r_Zgh8ofu0msyc1Sw3pXjs-tYSJEv--gA85wbDRT3G1t49e2DsTPUWH6IFS7gkacFih97JCswTLLKeAaIHu5u_u88HfYNQlSokz0otlq9Ik', 
+    # 'openid': 'oft6z6TTPMwcpL_Dyg0C_Yr2zPRQ', 
+    # 'scope': 'snsapi_userinfo', 
+    # 'unionid': 'oZL-Y6jIyyC2iRPYAkO7UImdKGTs'}
 
 
     union_id = response.json().get('unionid')
-    refresh_token = response.json.get('refresh_token')
+    refresh_token = response.json().get('refresh_token')
     unique_id = "wechat:" + str(union_id)
     personal_info = crud.get_personal_info_by_unqiueid(db, unique_id)
 
