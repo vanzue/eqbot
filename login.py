@@ -195,12 +195,12 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     # send request
     # refresh
     refresh_url = f"https://api.weixin.qq.com/sns/oauth2/refresh_token?appid={weixin_appid}&grant_type=refresh_token&refresh_token={refresh_token}"
-    refresh_res = request.get(url=refresh_url, headers=headers)
+    refresh_res = requests.get(url=refresh_url, headers=headers)
     access_token = refresh_res.json().get('access_token')
 
     # get user info
     info_url = f"https://api.weixin.qq.com/sns/userinfo?access_token={access_token}&openid={weixin_appid}"
-    info_res = request.get(url=info_url, headers=headers)
+    info_res = requests.get(url=info_url, headers=headers)
     info_data = info_res.json()
     nickname = info_data['nickname']
     gender = 'male' if info_data['sex'] == 1 else 'female'
