@@ -163,13 +163,11 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     print(thrid2weixin_appsecret)
 
     message_url = f"https://api.weixin.qq.com/sns/oauth2/access_token?appid={thrid2weixin_appid}&secret={thrid2weixin_appsecret}&code={code}&grant_type=authorization_code"
-
-    print(message_url)
     response = requests.get(message_url, headers=headers)
 
     if response.status_code != 200:
         return JSONResponse(status_code=response.status_code, content={"message": "Failed to get session"})
-    print(response.json())
+    # print(response.json())
     # {'access_token': '86_qsBjQYJn7-iDonUCWvB0YT43LS95J5XJFsZopKGJGGDcEriAGTglTNRVY9HEQkCI5zQjaCpb8Ldw1_l_xB-Bllzf3e6RgB2Yeqdijm8dGWc', 
     # 'expires_in': 7200, 
     # 'refresh_token': '86_r_Zgh8ofu0msyc1Sw3pXjs-tYSJEv--gA85wbDRT3G1t49e2DsTPUWH6IFS7gkacFih97JCswTLLKeAaIHu5u_u88HfYNQlSokz0otlq9Ik', 
@@ -203,7 +201,8 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
     info_url = f"https://api.weixin.qq.com/sns/userinfo?access_token={access_token}&openid={weixin_appid}"
     info_res = requests.get(url=info_url, headers=headers)
     info_data = info_res.json()
-    nickname = info_data['nickname']
+    print(info_data)
+    nickname = info_data['Nickname']
     gender = 'male' if info_data['sex'] == 1 else 'female'
     avatar = info_data['headimgurl']
     # placeholder
