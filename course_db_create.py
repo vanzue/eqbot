@@ -51,21 +51,25 @@ def main():
     db = SessionLocal()
 
     try:
+        npc_data = """
+                    领导：擅长PUA，脾气很大。
+                    同事A：阿谀奉承，讨好领导。
+                    同事B：尖酸刻薄。
+                """
         course_data = schemas.CoursesCreate(
-                        course_type = "情绪掌控力",
+                        course_dim = "掌控力",
                         course_level = 1,
                         prompt = """
-                            你是一位情绪掌控大师。今晚，我和三位同事——我的领导、同事A和同事B——在餐厅聚餐。通过轻松的日常对话，他们会考察我的情绪掌控力。每位同事初始都有一个心情值，每次对话都会使他们的心情加或减。请根据以下人物性格生成对话：请根据以下人物性格生成对话：
-
-                            领导：擅长PUA，脾气很大。
-                            同事A：阿谀奉承，讨好领导。
-                            同事B：尖酸刻薄。
+                            今晚，我和三位同事——我的领导、同事A和同事B——在餐厅聚餐。通过轻松的日常对话，他们会考察我的情绪掌控力。每位同事初始都有一个心情值，每次对话都会使他们的心情加或减。
 
                             NPC的话题需要紧扣点菜，可以出现具体的菜品名称。
                             
                             另外，如果用户给出了一个合理的点菜方案，请让领导说出“你点的菜真不错”这句话。
-                            """
-                        )
+                            """, 
+                        title = "老板肚子里的蛔虫",
+                        npc = npc_data,
+                        image = None
+                    )
         db_course_data = crud.create_course(db, course_data)
         print(f"Created Course: {db_course_data.id}")
 

@@ -61,12 +61,12 @@ class Courses(Base):
     __tablename__ = 'Courses'
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    course_dim = Column(Unicode(50), nullable=False)
+    course_dim = Column(Unicode(50), nullable=False) # zh: 掌控力， en：self-regulation
     course_level = Column(Integer)
     prompt = Column(UnicodeText) # background
     title = Column(UnicodeText)
-    npc = Column(JSON, nullable=True)
-    image = Column(LargeBinary, nullable=True) 
+    npc = Column(UnicodeText)
+    image = Column(Unicode(150)) # url
 
 
 # PersonalInfoCourses Table (Many-to-Many relationship between PersonalInfo and Courses)

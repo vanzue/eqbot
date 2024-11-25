@@ -83,8 +83,8 @@ class CoursesBase(BaseModel):
     course_level: int
     prompt: str
     title: str
-    npc: Optional[List[Dict[str, str]]]
-    image: Optional[bytes]
+    npc: str
+    image: Optional[str]
 
 
 class CoursesCreate(CoursesBase):
