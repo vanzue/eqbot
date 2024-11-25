@@ -66,7 +66,7 @@ class Courses(Base):
     prompt = Column(UnicodeText) # background
     title = Column(UnicodeText)
     npc = Column(UnicodeText)
-    image = Column(Unicode(150)) # url
+    image = Column(UnicodeText) # url
 
 
 # PersonalInfoCourses Table (Many-to-Many relationship between PersonalInfo and Courses)
