@@ -9,6 +9,8 @@ from llm.keyless_setup import creat_llm
 
 
 def autoreply_eval(chat_history, analysis, suggest_response):
+    # TODO: reduce dimension, polish dimension description and add one shot
+    # TODO: set up pipeline in github repo priority: 0
     system_prompt = """
                     **任务描述**
                     - 你是一位高情商评估专家。你将接收一段我与我的一个联系人的聊天记录，以及我的回复。你需要根据以下几个维度对我的回复内容进行评估打分，每个维度的满分是100分。

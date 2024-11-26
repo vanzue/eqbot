@@ -167,7 +167,7 @@ def evaluate_in_thread(chat_history, analyse, response, db: Session):
     """
     for r in response:
         replyEvalCreate = schemas.ReplyEval(
-            chat_history=chat_history,
+            chat_history=json.dumps(chat_history),
             analysis=analyse,
             suggest_response=r
         )
@@ -182,6 +182,7 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
     response, analyse ,language= [], "",""
     if chat_history:
         language = eqmaster.detect_language(chat_history)
+        print("language:", language)
         response, analyse = eqmaster.get_response_and_analyze(
             chat_history,"me", language)
         state = schemas.ReplyStateCreate(
@@ -231,8 +232,8 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
             )
             crud.replace_reply_state(db, state)
     print("response:", response)
-    thread = threading.Thread(target=evaluate_in_thread, args=(chat_history, analyse, response, db))
-    thread.start()
+    # thread = threading.Thread(target=evaluate_in_thread, args=(chat_history, analyse, response, db))
+    # thread.start()
     # here should only be list of responses.
     return response, analyse, language
 
