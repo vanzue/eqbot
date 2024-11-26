@@ -121,7 +121,7 @@ async def background_process_data(locale: str, job_id: str, scores: list, dialog
     # 创建 EQ 分数记录
     eq_score_data = schemas.EQScoreCreate(
         job_id=job_id,
-        person_id=personal_info.id,
+        user_id=personal_info.id,
         perception_score=response["dimension1_score"],
         perception_detail=response["dimension1_detail"],
         social_skill_score=response["dimension2_score"],
