@@ -86,6 +86,15 @@ async def create_profile(request: data_types.CreateUserRequest, db: Session = De
     return {"job_id": job_id, "user_id": db_personal_info.id}
 
 
+@router.post("/update_name")
+def update_username(request: data_types.UpdateUserName, db: Session = Depends(database.get_db)):
+    person_id = request.person_id
+    new_name = request.new_name
+
+    # update
+    crud.update_personal_name(db, person_id, new_name)
+    return {"message": "updated new name"}
+
 @router.post("/get_homepage/{personal_id}")
 async def get_homepage(personal_id: int, db: Session = Depends(database.get_db)):
     # profile & eq scores

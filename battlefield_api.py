@@ -116,7 +116,7 @@ def get_battlefield(user_id: int, db: Session = Depends(database.get_db)):
 
     person_course = crud.get_coursesperson_by_person_id_all(db, person_id=user_id)
     if not person_course:
-        new_course = crud.get_course_by_course_type_and_level(db, course_type=eq_type, course_level=1)
+        new_course = crud.get_course_by_course_dim_and_level(db, course_dim=eq_type, course_level=1)
         return {"courses": [new_course.id]}
     else:
         return {"courses": person_course}
