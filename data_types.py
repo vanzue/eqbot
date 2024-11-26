@@ -92,5 +92,7 @@ class GoogleLogin(BaseModel):
     nickname: str
     unionid: str
 
-
+class UpdateUserName(BaseModel):
+    person_id: int
+    new_name: str
 

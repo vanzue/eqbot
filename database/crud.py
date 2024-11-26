@@ -79,6 +79,15 @@ def update_personal_diamond(db: Session, id: int, num_diamond: int):
     db.refresh(db_person)
     return db_person.num_diamond
 
+def update_personal_name(db: Session, id: int, new_name: int):
+    db_person = db.query(models.PersonalInfo).filter(
+        models.PersonalInfo.id == id).one_or_none()
+    db_person.name = new_name
+
+    db.commit()
+    db.refresh(db_person)
+    return db_person.id
+
 
 def get_personal_infos(db: Session, id: int):
     return db.query(models.PersonalInfo).filter(models.PersonalInfo.id == id).one_or_none()
