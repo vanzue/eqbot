@@ -210,6 +210,11 @@ def get_course_by_course_dim_and_level(db: Session, course_dim: str, course_leve
         models.Courses.course_level == course_level
     ).first()
 
+def get_course_by_course_dim(db: Session, course_dim: str):
+    return db.query(models.Courses).filter(
+        models.Courses.course_dim == course_dim
+    ).all()
+
 
 def get_course_by_coursid(db: Session, course_id: int):
     return db.query(models.Courses).filter(
@@ -258,6 +263,10 @@ def calculate_total_result(db: Session, user_id: int) -> int:
 def get_coursesperson_by_person_id(db: Session, person_id: int, course_id: int):
     return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id,
                                                        models.PersonalInfoCourses.course_id == course_id).one_or_none()
+
+def get_courseResults_by_person_id(db: Session, person_id: int, course_dim: int):
+    return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id,
+                                                       models.PersonalInfoCourses.course_dim == course_dim).all()
 
 
 def course_exists(db: Session, person_id: int):
@@ -320,7 +329,7 @@ def create_chat_history(db: Session, chat: schemas.ChatHistoryCreate):
 
 
 def get_chat_history_by_user(db: Session, user_id: int):
-    return db.query(models.ChatHistory).filter(models.ChatHistory.userId == user_id).all()
+    return db.query(models.ChatHistory).filter(models.ChatHistory.user_id == user_id).all()
 
 
 def delete_chat_history(db: Session, chat_id: int):

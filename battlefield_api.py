@@ -143,107 +143,111 @@ def get_battlefield_map(
     person_id: int,
     dim_name: Optional[str] = None,
     db: Session = Depends(database.get_db)
-):
-    course_list = [
-        {
-            "id": 1,
-            "course_dim": "Emotional Intelligence",
-            "course_level": 1,
-            "prompt": "Learn how to manage emotions effectively in challenging situations.",
-            "title": "Mastering Emotional Resilience",
-            "npc": [
-                {"name": "John", "role": "mentor", "mood": "happy"},
-                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-            ],
-            "image": None
-        },  
-        {
-            "id": 2,
-            "course_dim": "Emotional Intelligence",
-            "course_level": 2,
-            "prompt": "Learn how to manage emotions effectively in challenging situations.",
-            "title": "Mastering Emotional Resilience",
-            "npc": [
-                {"name": "John", "role": "mentor", "mood": "happy"},
-                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-            ],
-            "image": None
-        },
-        {
-            "id": 3,
-            "course_dim": "Emotional Intelligence",
-            "course_level": 3,
-            "prompt": "Learn how to manage emotions effectively in challenging situations.",
-            "title": "Mastering Emotional Resilience",
-            "npc": [
-                {"name": "John", "role": "mentor", "mood": "happy"},
-                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-            ],
-            "image": None
-        }
-    ]
+):  
+    course_list = crud.get_course_by_course_dim(db, dim_name)
+    course_result = crud.get_courseResults_by_person_id(db, person_id, dim_name)
+    # course_list = [
+    #     {
+    #         "id": 1,
+    #         "course_dim": "Emotional Intelligence",
+    #         "course_level": 1,
+    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
+    #         "title": "Mastering Emotional Resilience",
+    #         "npc": [
+    #             {"name": "John", "role": "mentor", "mood": "happy"},
+    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+    #         ],
+    #         "image": None
+    #     },  
+    #     {
+    #         "id": 2,
+    #         "course_dim": "Emotional Intelligence",
+    #         "course_level": 2,
+    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
+    #         "title": "Mastering Emotional Resilience",
+    #         "npc": [
+    #             {"name": "John", "role": "mentor", "mood": "happy"},
+    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+    #         ],
+    #         "image": None
+    #     },
+    #     {
+    #         "id": 3,
+    #         "course_dim": "Emotional Intelligence",
+    #         "course_level": 3,
+    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
+    #         "title": "Mastering Emotional Resilience",
+    #         "npc": [
+    #             {"name": "John", "role": "mentor", "mood": "happy"},
+    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+    #         ],
+    #         "image": None
+    #     }
+    # ]
 
-    course_result = [
-        {
-            "id": 1,  # 自增的主键 ID
-            "user_id": 101,  # 关联的用户 ID
-            "course_id": 1,  # 关联的课程 ID
-            "course_type": "Emotional Intelligence",  # 课程类型
-            "course_level": 1,  # 课程等级
-            "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
-            "result": 3,  # 结果：星级评分（1-3）
-            "comment1": "The course content was very insightful.",  # 第一条评论
-            "comment2": "The NPC interactions made it engaging.",  # 第二条评论
-            "comment3": "I would recommend this to others.",  # 第三条评论
-        },
-        {
-            "id": 2,
-            "user_id": 101, 
-            "course_id": 201, 
-            "course_type": "Emotional Intelligence", 
-            "course_level": 2, 
-            "status": "incomplete", 
-            "result": 0,
-            "comment1": "",
-            "comment2": "",  
-            "comment3": "",  
-        }
-    ]
+    # course_result = [
+    #     {
+    #         "id": 1,  # 自增的主键 ID
+    #         "user_id": 101,  # 关联的用户 ID
+    #         "course_id": 1,  # 关联的课程 ID
+    #         "course_type": "Emotional Intelligence",  # 课程类型
+    #         "course_level": 1,  # 课程等级
+    #         "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
+    #         "result": 3,  # 结果：星级评分（1-3）
+    #         "comment1": "The course content was very insightful.",  # 第一条评论
+    #         "comment2": "The NPC interactions made it engaging.",  # 第二条评论
+    #         "comment3": "I would recommend this to others.",  # 第三条评论
+    #     },
+    #     {
+    #         "id": 2,
+    #         "user_id": 101, 
+    #         "course_id": 201, 
+    #         "course_type": "Emotional Intelligence", 
+    #         "course_level": 2, 
+    #         "status": "incomplete", 
+    #         "result": 0,
+    #         "comment1": "",
+    #         "comment2": "",  
+    #         "comment3": "",  
+    #     }
+    # ]
 
 
     return {"course_list": course_list, "course_result": course_result, "next_course_id": 3}
 
 @router.get("/get_course_data/{course_id}")
 def get_course_by_id(course_id: int, db: Session = Depends(database.get_db)):
-    course_data = {
-            "id": 1,
-            "course_dim": "Emotional Intelligence",
-            "course_level": 1,
-            "prompt": "Learn how to manage emotions effectively in challenging situations.",
-            "title": "Mastering Emotional Resilience",
-            "npc": [
-                {"name": "John", "role": "mentor", "mood": "happy"},
-                {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-            ],
-            "image": None
-        }
+    course_data = crud.get_course_by_id(db, course_id)
+    # course_data = {
+    #         "id": 1,
+    #         "course_dim": "Emotional Intelligence",
+    #         "course_level": 1,
+    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
+    #         "title": "Mastering Emotional Resilience",
+    #         "npc": [
+    #             {"name": "John", "role": "mentor", "mood": "happy"},
+    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
+    #         ],
+    #         "image": None
+    #     }
     
     return {"course_data": course_data}
 
 @router.get("/get_course_analysis/{person_id}/{course_id}")
 def get_course_analysis(person_id: int, course_id: int, db: Session = Depends(database.get_db)):
-    course_analysis = {
-        "id": 1,  # 自增的主键 ID
-        "user_id": 101,  # 关联的用户 ID
-        "course_id": 1,  # 关联的课程 ID
-        "course_type": "Emotional Intelligence",  # 课程类型
-        "course_level": 1,  # 课程等级
-        "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
-        "result": 3,  # 结果：星级评分（1-3）
-        "comment1": "The course content was very insightful.",  # 第一条评论
-        "comment2": "The NPC interactions made it engaging.",  # 第二条评论
-        "comment3": "I would recommend this to others.",  # 第三条评论
-    }
+    course_analysis = crud.get_coursesperson_by_person_id(db, person_id, course_id)
+    # course_analysis = {
+    #     "id": 1,  # 自增的主键 ID
+    #     "user_id": 101,  # 关联的用户 ID
+    #     "course_id": 1,  # 关联的课程 ID
+    #     "course_type": "Emotional Intelligence",  # 课程类型
+    #     "course_level": 1,  # 课程等级
+    #     "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
+    #     "result": 3,  # 结果：星级评分（1-3）
+    #     "comment1": "The course content was very insightful.",  # 第一条评论
+    #     "comment2": "The NPC interactions made it engaging.",  # 第二条评论
+    #     "comment3": "I would recommend this to others.",  # 第三条评论
+    # }
 
     return {"course_analysis": course_analysis}
 
@@ -265,17 +269,64 @@ def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depen
 
 @router.post("/eval/battlefield")
 def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
-    response = {
-        "id": 1,  # 自增的主键 ID
-        "user_id": 101,  # 关联的用户 ID
-        "course_id": 1,  # 关联的课程 ID
-        "course_type": "Emotional Intelligence",  # 课程类型
-        "course_level": 1,  # 课程等级
-        "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
-        "result": 3,  # 结果：星级评分（1-3）
-        "comment1": "The course content was very insightful.",  # 第一条评论
-        "comment2": "The NPC interactions made it engaging.",  # 第二条评论
-        "comment3": "I would recommend this to others.",  # 第三条评论
-    }
+    # response = {
+    #     "id": 1,  # 自增的主键 ID
+    #     "user_id": 101,  # 关联的用户 ID
+    #     "course_id": 1,  # 关联的课程 ID
+    #     "course_type": "Emotional Intelligence",  # 课程类型
+    #     "course_level": 1,  # 课程等级
+    #     "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
+    #     "result": 3,  # 结果：星级评分（1-3）
+    #     "comment1": "The course content was very insightful.",  # 第一条评论
+    #     "comment2": "The NPC interactions made it engaging.",  # 第二条评论
+    #     "comment3": "I would recommend this to others.",  # 第三条评论
+    # }
+    locale = request.locale
+    course_id = request.course_id
+    person_id = request.person_id
+
+    eval_result = request_LLM_response_by_eval(request.chat_content, lang=locale)
+    eval_data = eval_result['eval']
+    tips = eval_result['eq_tips']
+    course_dim, course_level = crud.get_course_by_id(db, course_id=request.course_id)
+
+    # update stars
+    person_diamond = request.person_diamond
+    db_diamond = crud.update_personal_diamond(db, id=request.person_id, num_diamond=person_diamond)
+    # print("number of diamonds: ", db_diamond)
+
+    # 创建新的数据库条目
+    course_entry = schemas.PersonalInfoCoursesCreate(
+        user_id=person_id,
+        course_id=course_id,
+        course_dim=course_dim,
+        course_level=course_level,
+        status=request.status,
+        result=request.result,
+        comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
+        comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
+        comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None
+    )
+
+    # create new data for CoursePerson
+    db_course = crud.get_coursesperson_by_person_id(
+        db, request.person_id, request.course_id)
+    # print(db_course.person_id, db_course.course_id)
+    if db_course is None:
+        db_course = crud.create_personal_info_course(db, course_entry)
+    else:
+        db_course = crud.update_personal_info_course(db,
+                                                     person_id=request.person_id,
+                                                     course_id=request.course_id,
+                                                     course_level=course_level,
+                                                     status=request.status,
+                                                     result=request.result,
+                                                     comment1=eval_data[0]['analysis'] if len(
+                                                         eval_data) > 0 else None,
+                                                     comment2=eval_data[1]['analysis'] if len(
+                                                         eval_data) > 1 else None,
+                                                     comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None)
+
+    response = {**vars(db_course), "tips": tips}
 
     return {"response": response}
