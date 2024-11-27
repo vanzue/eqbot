@@ -313,10 +313,8 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
         db, request.person_id, request.course_id)
     # print(db_course.person_id, db_course.course_id)
     if db_course is None:
-        print("not have")
         db_course = crud.create_personal_info_course(db, course_entry)
     else:
-        print("have")
         db_course = crud.update_personal_info_course(db,
                                                      person_id=request.person_id,
                                                      course_id=request.course_id,
