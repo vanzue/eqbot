@@ -1,6 +1,14 @@
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 
+class CreateUserRequest(BaseModel):
+    name: str
+    source: str
+    unique_id: str
+    gender: str
+    job_level: str
+    issues: str
+    job_id: str
 
 class SignatureVerifyModel(BaseModel):
     msg_signature: str
@@ -41,7 +49,7 @@ class BattlefieldRequest(BaseModel):
     person_id: int
     course_id: int
     chat_content: str
-    lang_type: str = "zh"
+    locale: str = "zh"
 
 class BattlefieldEval(BaseModel):
     person_id: int
@@ -50,7 +58,7 @@ class BattlefieldEval(BaseModel):
     status: str
     result: int
     person_star: int
-    lang_type: str = "zh"
+    locale: str = "zh"
 
 class DiamondUpdate(BaseModel):
     person_id: int
@@ -72,3 +80,19 @@ class ScenarioFinal(BaseModel):
     job_id: str
     dialogue_history: List[AnalysisData] # 不能有{}和”
     locale: Optional[str] = None
+
+class MiniProgramLogin(BaseModel):
+    code: str
+    encryptedData: str
+    iv: str
+
+class GoogleLogin(BaseModel):
+    email: str
+    headimgurl: str
+    nickname: str
+    unionid: str
+
+class UpdateUserName(BaseModel):
+    person_id: int
+    new_name: str
+

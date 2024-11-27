@@ -46,9 +46,9 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
         request.chat_content, lang=lang_type)
     eval_data = eval_result['eval']
     tips = eval_result['eq_tips']
-    course_type, course_level = crud.get_course_by_id(
+    course_dim, course_level = crud.get_course_by_id(
         db, course_id=request.course_id)
-    # print(course_type, course_level)
+    # print(course_dim, course_level)
 
     # update stars
     person_star = request.person_star
@@ -62,7 +62,7 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
     course_entry = schemas.PersonalInfoCoursesCreate(
         person_id=request.person_id,
         course_id=request.course_id,
-        course_type=course_type,
+        course_dim=course_dim,
         course_level=course_level,
         status=request.status,
         result=request.result,

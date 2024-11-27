@@ -58,7 +58,7 @@ def request_LLM_response(chat_history):
                     {{      
                         "title": [
                             {{
-                                "title: "Clarity and Timely Communication" ]
+                                "title: "Clarity and Timely Communication"
                             }}
                         ], 
                         "summary": [
@@ -84,7 +84,7 @@ def request_LLM_response(chat_history):
 
                     """
     user_prompt = """
-                **Rhe following is the chat history**
+                **The following is the chat history**
 
                 {chat_history}
                 """
@@ -106,6 +106,105 @@ def request_LLM_response(chat_history):
     return output
 
 
+def request_LLM_response_zh(chat_history):
+    system_prompt = """
+                    ** 任务描述 **
+                    你是关系分析专家。你会收到我和一个同伴的聊天记录。您需要从输入的截图中分析聊天内容，并根据对话提供量身定制的情商提升建议。你的回答应该包括：
+
+                    ** 语气风格 **
+                    - 专业和客观，同时保持礼貌和中立的语气。
+
+                    你的回答应该包括：
+                    title：一个简洁的短语，概括了聊天中关键的情商方面（例如，“反应能力和主动沟通”）。
+                    summary：用一句话描述当前问题
+                    您可以:
+                    [基于当前背景的第一个可操作建议]
+                    [基于分析对方对你的看法而提出的第二个可行建议]
+                    [自我提升的第三个可行建议]
+                    [用户可以给出的第四个可操作的建议]
+
+                    ** 标准输出格式（开头不要写上json字母，不要漏,） **
+                    {{
+                        "title": [
+                            {{
+                                "title: [一个简洁的短语，概括了聊天中关键的情商方面（例如，“反应能力和主动沟通”）]
+                            }}
+                        ], 
+                        "summary": [
+                            {{
+                                "summary: [用一句话描述当前问题]
+                            }}
+                        ],
+                        "suggestions": [
+                            {{
+                            "point": [基于当前背景的第一个可操作建议]
+                            }},
+                            {{
+                            "point": [基于分析对方对你的看法而提出的第二个可行建议]
+                            }},
+                            {{
+                            "point": [自我提升的第三个可行建议]
+                            }},
+                            {{
+                            "point": [用户可以给出的第四个可操作的建议]
+                            }}
+                        ]                        
+                    }}
+
+                    ** 目标受众 **
+                    - 目标受众是那些希望了解他人如何看待他们的人。
+
+                    ** 输出样例 **
+                    {{      
+                        "title": [
+                            {{
+                                "title: "清晰和及时的沟通" 
+                            }}
+                        ], 
+                        "summary": [
+                            {{
+                                "summary: "问题在于，尽管任务已经达成共识，但缺乏主动的进度或延误沟通，导致错过电话和潜在的误解。"
+                            }}
+                        ],
+                        "suggestions": [
+                            {{
+                            "point": "即使进展不完全，也要定期提供状态更新，以便管理预期"
+                            }},
+                            {{
+                            "point": "及时处理未接来电，以避免对方感到被忽视或焦"
+                            }},
+                            {{
+                            "point": "这是第三个可行的建议"
+                            }},
+                            {{
+                            "point": "这是第四个可行的建议"
+                            }}
+                        ]
+                    }}
+
+                    """
+    user_prompt = """
+                **以下是给出的聊天记录**
+
+                {chat_history}
+                """
+
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ('system', system_prompt),
+            ('user', user_prompt),
+        ]
+    )
+    
+    input_dict = {'chat_history': chat_history}
+
+    llm = creat_llm()
+    model = prompt | llm
+
+    analysis_output = model.invoke(input_dict)
+    output = analysis_output.content
+    return output
+
 def parse_LLMresponse(json_data):
     try:
         response = json.loads(json_data)
@@ -125,11 +224,14 @@ def parse_LLMresponse(json_data):
         print("JSON is invalid:", e)
         raise
 
-def retry_parse_LLMresponse(chat_history, max_retries=5):
+def retry_parse_LLMresponse(chat_history, locale=None, max_retries=5):
     attempt = 0
     while attempt < max_retries:
         try:
-            json_data = request_LLM_response(chat_history)
+            if locale == "en":
+                json_data = request_LLM_response(chat_history)
+            else:
+                json_data = request_LLM_response_zh(chat_history)
             analysis = parse_LLMresponse(json_data)
             return analysis
         except json.JSONDecodeError as e:
@@ -147,7 +249,7 @@ if __name__ == "__main__":
     chat_history2 = [{"role": "colleague", "content": "亲爱的你干什么去了？"}, {"role": "user", "content": "在处理点事情。"}, {"role": "colleague", "content": "说嘛，咋俩谁跟谁。"}, {"role": "user", "content": "在忙，待会儿聊。"}, {"role": "colleague", "content": "你不会是去面试了吧？"}]
 
     # response = retry_parse_LLMresponse_with_subordinate(personal_name="test", contact_name="test_contact", chat_history=chat_history1)
-    analysis = retry_parse_LLMresponse(chat_history=chat_history2)
+    analysis = retry_parse_LLMresponse(chat_history=chat_history2, locale = "en")
     print(analysis)
 
     # response = parse_LLMresponse_from_supervisor(response)

@@ -1,9 +1,11 @@
 import os
 import json
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse
 import xml.etree.ElementTree as ET
 
 from WXBizMsgCrypt3 import WXBizMsgCrypt
+from fastapi.staticfiles import StaticFiles
 
 from workflow_api import router as workflow_router
 from onboarding.onboarding_api import router as onboarding_router
@@ -21,6 +23,7 @@ from file_upload import file_router
 from thirdparty_api import router as thirdparty_router
 from text_to_voice import router as text_to_voice_router
 from dotenv import load_dotenv
+from login import router as login_router
 
 from data_types import SignatureVerifyModel
 
@@ -51,6 +54,7 @@ app.include_router(batttlefield_agent_router)
 app.include_router(file_router)
 app.include_router(thirdparty_router)
 app.include_router(text_to_voice_router)
+app.include_router(login_router)
 
 
 def verify_signature(request: SignatureVerifyModel, i):
@@ -90,6 +94,14 @@ def verify_signature(request: SignatureVerifyModel, i):
 async def root():
     return RedirectResponse(url='/ping')
 
+# app.mount("/home", StaticFiles(directory="static", html=True), name="home")
+
+@app.get('/profile')
+async def serve_profile():
+    profile_path = os.path.join('static', 'apple-app-site-association.mobileprovision')
+    if not os.path.exists(profile_path):
+        raise HTTPException(status_code=404, detail="Profile file not found")
+    return FileResponse(profile_path, media_type='application/x-apple-aspen-config')
 
 @app.get('/ping')
 async def ping():
