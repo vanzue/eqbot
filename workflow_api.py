@@ -1,9 +1,12 @@
+from datetime import datetime
 import uuid
 from fastapi import APIRouter, Request, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import Optional
 
+from llm.reply_eval.autoreply_eval import autoreply_eval
 from database import database, schemas, crud
+from database.crud import create_reply_eval
 import helper
 import data_types
 
@@ -224,3 +227,40 @@ def loginin_user(request: Request, name: str, db: Session = Depends(database.get
     personal_id = crud.get_personal_id_by_name(db, name=name)
 
     return personal_id
+
+
+# evaluate the user's EQ score
+@router.post("/evaluate_reply_eqscore")
+def evaluate_eqscore(request: schemas.ReplyEval, db: Session = Depends(database.get_db)):
+    # 将 eval_result 拆分成 eval_score 和 eval_reason
+    def split_eval_result(eval_result: str):
+        eval_parts = eval_result.split("评分依据：")
+        eval_score = eval_parts[0].replace("分数：", "").strip()
+        eval_reason = eval_parts[1].strip()
+        return {"eval_score": eval_score, "eval_reason": eval_reason}
+    chat_history = request.chat_history
+    analysis = request.analysis
+    suggest_response = request.suggest_response
+    eval_result = autoreply_eval(chat_history, analysis, suggest_response)
+    eval_parts = split_eval_result(eval_result)
+
+    # 获取拆分后的 eval_score 和 eval_reason
+    eval_score = eval_parts['eval_score']
+    eval_reason = eval_parts['eval_reason']
+    print("eval_result: ", eval_result) 
+    print("eval_score: ", eval_score)
+    print("eval_reason: ", eval_reason)
+    reply_eval_create = schemas.ReplyEvalCreate(
+        chat_history=chat_history,
+        analysis=analysis,
+        suggest_response=suggest_response,
+        eval_score=eval_score,
+        eval_reason=eval_reason,
+        eval_time=datetime.utcnow()  # 使用当前时间
+    )
+    # 创建 reply_eval 数据
+    db_reply_eval = create_reply_eval(db, reply_eval_create)
+    return db_reply_eval
+    # await create_eqscore_endpoint(person_id=person_id, scores_details=scores_details, job_id=job_id, db=db)
+    
+    # return db_eq_score

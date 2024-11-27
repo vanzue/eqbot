@@ -9,6 +9,7 @@ from llm.keyless_setup import creat_llm
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from llm.prompt import *
+from fastapi import Request
 import json
 
 load_dotenv()
@@ -218,6 +219,7 @@ def main():
         chat_history_zh, "me", language)
     print("response:", response)
     print("analyse:", analyse)
+    
     # if(language == 'en'):
     #     response = eqmaster.get_response_stage1(
     #         user_nick_name="TestUser", chat_history=chat_history)
