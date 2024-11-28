@@ -9,6 +9,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 from dotenv import load_dotenv
 import json
+from datetime import datetime
 
 load_dotenv()
 
@@ -177,29 +178,66 @@ def main():
         #             )
         # crud.create_subordinate_analysis(db, analysis)
 
-        messages = [
-            {"userName": "Alice", "message": "Hello!"},
-            {"userName": "Bob", "message": "How are you?"},
-            {"userName": "Charlie", "message": "Good morning!"}
-        ]
+        # 将时间字符串转为 datetime 对象
+        eval_time = datetime.strptime("2024-08-26 14:00:00", "%Y-%m-%d %H:%M:%S")
 
-        state = schemas.ReplyStateCreate(
-            product="Wechat",
-            userId="random_user12",
-            chat_history=json.dumps(messages),
-            stage2_output=json.dumps(messages),
-            stage_number=2
+        # 创建 eval_result_data 对象
+        eval_result_data = schemas.ReplyEvalCreate(
+            chat_history=json.dumps([
+                {"userName": "我", "message": "你好，我需要一些项目上的帮助。"},
+                {"userName": "同事", "message": "好的，你需要什么帮助？"},
+                {"userName": "我", "message": "我需要帮助准备我们即将召开的会议的演示文稿。"},
+                {"userName": "同事", "message": "没问题，我可以帮忙。"}
+            ], ensure_ascii=False),  # 将列表转换为 JSON 字符串
+            analysis="你与这位同事的关系较为紧张，沟通中存在信息不对称和误解，表现出一定的争执和不满。",
+            suggest_response="太感谢啦！",
+            eval_score=json.dumps({
+                "语义理解能力": ["80"],
+                "语言风格适宜度": ["90"],
+                "心眼子指数": ["80"],
+                "回复策略有效程度": ["70"],
+                "情绪感知与表达能力": ["85"],
+                "同理心": ["90"]
+            }, ensure_ascii=False),  # 将字典转换为 JSON 字符串
+            eval_reason=json.dumps({
+                "语义理解能力": ["能够准确理解问题中的细微差异，例如识别用户问题中的多重含义并予以有效解答。"],
+                "语言风格适宜度": ["根据对话环境调整语言风格，例如在正式场合使用得体的措辞，在轻松场合保持自然随意。"],
+                "心眼子指数": ["巧妙地避开潜在敏感话题，例如在讨论中避免对方不想触及的个人隐私问题。"],
+                "回复策略有效程度": ["提供的建议具有可操作性，例如在问题中用户表达焦虑时，直接提供可行的解决方案。"],
+                "情绪感知与表达能力": ["能够通过用户的语气识别情绪，例如在用户语气中听出焦虑并及时给予安慰。"],
+                "同理心": ["展现出对用户感受的深刻理解，例如在用户表达失落时，用贴心的语言表示支持和鼓励。"]
+            }, ensure_ascii=False),  # 将字典转换为 JSON 字符串
+            eval_time=eval_time  # 使用 datetime 对象
         )
 
-        crud.create_reply_state(db, state)
+        # 调用 CRUD 创建方法
+        eval_result = crud.create_reply_eval(db, eval_result_data)
 
-        retrieved_state = crud.get_reply_state_by_product_and_user(
-            db, "Wechat", "random_user")
-        print(f"Product: {retrieved_state.product}")
-        print(f"UserId: {retrieved_state.userId}")
-        print(f"Chat History: {retrieved_state.chat_history}")
-        print(f"Stage2 Output: {retrieved_state.stage2_output}")
-        print(f"Stage Number: {retrieved_state.stage_number}")
+        print(f"Created ReplyEval: {eval_result}")
+
+        # messages = [
+        #     {"userName": "Alice", "message": "Hello!"},
+        #     {"userName": "Bob", "message": "How are you?"},
+        #     {"userName": "Charlie", "message": "Good morning!"}
+        # ]
+
+        # state = schemas.ReplyStateCreate(
+        #     product="Wechat",
+        #     userId="random_user12",
+        #     chat_history=json.dumps(messages),
+        #     stage2_output=json.dumps(messages),
+        #     stage_number=2
+        # )
+
+        # crud.create_reply_state(db, state)
+
+        # retrieved_state = crud.get_reply_state_by_product_and_user(
+        #     db, "Wechat", "random_user")
+        # print(f"Product: {retrieved_state.product}")
+        # print(f"UserId: {retrieved_state.userId}")
+        # print(f"Chat History: {retrieved_state.chat_history}")
+        # print(f"Stage2 Output: {retrieved_state.stage2_output}")
+        # print(f"Stage Number: {retrieved_state.stage_number}")
 
     finally:
         db.close()

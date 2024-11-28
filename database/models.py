@@ -114,3 +114,14 @@ class ReplyState(Base):
     chat_history = Column(UnicodeText)
     stage2_output = Column(UnicodeText)
     stage_number = Column(Integer)
+
+class ReplyEval(Base):
+    __tablename__ = 'ReplyEval'
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    chat_history = Column(UnicodeText, nullable=False)
+    analysis = Column(UnicodeText, nullable=False)
+    suggest_response = Column(UnicodeText, nullable=False)
+    eval_score = Column(UnicodeText, nullable=False)
+    eval_reason = Column(UnicodeText, nullable=False)
+    eval_time = Column(DateTime, nullable=False)
