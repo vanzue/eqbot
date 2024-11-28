@@ -274,8 +274,8 @@ def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depen
         request.chat_content), prompt, lang=locale)
     print(response)
     if course_id == 1:
-        task_situation = task_lib.check_course1(response)
-    return {"response": response, "task_situation": task_situation}
+        task_check = task_lib.check_course1(response)
+    return {"response": response, "task_check": task_check}
 
 @router.post("/eval/battlefield")
 def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
