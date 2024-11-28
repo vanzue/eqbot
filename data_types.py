@@ -3,10 +3,13 @@ from typing import List, Optional, Dict
 
 class CreateUserRequest(BaseModel):
     name: str
-    source: str
-    unique_id: str
+    auth_provider: str
+    union_id: str
     gender: str
-    job_level: str
+    age: str
+    phone: str
+    email: str
+    avatar: str
     issues: str
     job_id: str
 

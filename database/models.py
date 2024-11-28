@@ -66,6 +66,7 @@ class Courses(Base):
     prompt = Column(UnicodeText) # for LLM
     title = Column(UnicodeText)
     background = Column(UnicodeText)
+    location = Column(UnicodeText)
     npc = Column(UnicodeText)
     task = Column(UnicodeText)
     image = Column(UnicodeText) # url

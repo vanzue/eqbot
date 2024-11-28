@@ -84,6 +84,7 @@ class CoursesBase(BaseModel):
     prompt: str
     title: str
     background: Optional[str]
+    location: str
     npc: str
     task: Optional[str]
     image: Optional[str]

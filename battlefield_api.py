@@ -213,7 +213,6 @@ def get_battlefield_map(
     #     }
     # ]
 
-
     return {"course_list": course_list, "course_result": course_result, "next_course_id": 3}
 
 @router.get("/get_course_data/{course_id}")
