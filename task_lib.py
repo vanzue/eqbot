@@ -1,0 +1,24 @@
+# if course_id = 1
+# return 0: not meet requirement
+# return 1: task1 finish
+# return 2: task2 finish
+# return 3: task1 and task2 finish
+def check_course1(response):
+    result = 0
+    if "dialog" in response:    
+        dialog = response["dialog"]
+        for pr in dialog:
+            if pr["role"] == "领导" and pr["content"] == "你点的菜真不错":
+                result += 2
+    
+    if "moods" in response:
+        moods = response["moods"]
+        isAllGood = True
+        for pr in moods:
+            mood = int(pr["mood"])
+            if mood <= 0:
+                isAllGood = False
+        if isAllGood:
+            result += 1
+    
+    return result

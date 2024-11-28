@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 from typing import Optional
 
 import data_types
+import task_lib
 from database import database, crud, schemas
 
 from llm.chat_battlefield_agent import request_LLM_response, request_LLM_response_by_eval
@@ -260,12 +261,21 @@ def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depen
 
     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
     background = matching_course.prompt
-    npc = matching_course.npc
-    prompt = background + npc
+
+    # npc post condition
+    npc_str = matching_course.npc
+    npc_json = json.loads(npc_str)
+    result = [f"{npc['name']}: {npc['personality']}" for npc in npc_json.values()]
+    final_string = "\n".join(result)
+
+    prompt = background + final_string
 
     response = request_LLM_response(json.loads(
         request.chat_content), prompt, lang=locale)
-    return response
+    print(response)
+    if course_id == 1:
+        task_situation = task_lib.check_course1(response)
+    return {"response": response, "task_situation": task_situation}
 
 @router.post("/eval/battlefield")
 def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
@@ -275,7 +285,7 @@ def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depend
     #     "course_id": 1,  # 关联的课程 ID
     #     "course_type": "Emotional Intelligence",  # 课程类型
     #     "course_level": 1,  # 课程等级
-    #     "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
+    #     "status": "complete",  # 当前状态（如：complete、incomplete）
     #     "result": 3,  # 结果：星级评分（1-3）
     #     "comment1": "The course content was very insightful.",  # 第一条评论
     #     "comment2": "The NPC interactions made it engaging.",  # 第二条评论
