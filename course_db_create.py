@@ -60,15 +60,15 @@ def main():
         npc_json = {
             "npc1": {
                 "name": "领导",
-                "特性": "擅长PUA，脾气很大。"
+                "personality": "擅长PUA，脾气很大。"
             },
             "npc2": {
                 "name": "同事A",
-                "特性": "阿谀奉承，讨好领导。"
+                "personality": "阿谀奉承，讨好领导。"
             },
             "npc3": {
                 "name": "同事B",
-                "特性": "尖酸刻薄。"
+                "personality": "尖酸刻薄。"
             }
         }
         npc_data = json.dumps(npc_json, ensure_ascii=False, indent=4)
