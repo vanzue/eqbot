@@ -185,6 +185,7 @@ def create_course(db: Session, course: schemas.CoursesCreate):
         prompt=course.prompt,
         title=course.title,
         background=course.background,
+        location=course.location,
         npc=course.npc,
         task=course.task,
         image=course.image
