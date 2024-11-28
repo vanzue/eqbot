@@ -83,7 +83,9 @@ class CoursesBase(BaseModel):
     course_level: int
     prompt: str
     title: str
+    background: Optional[str]
     npc: str
+    task: Optional[str]
     image: Optional[str]
 
 

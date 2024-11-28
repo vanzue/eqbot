@@ -184,7 +184,9 @@ def create_course(db: Session, course: schemas.CoursesCreate):
         course_level=course.course_level,
         prompt=course.prompt,
         title=course.title,
+        background=course.background,
         npc=course.npc,
+        task=course.task,
         image=course.image
     )
     db.add(db_course)
@@ -203,6 +205,11 @@ def get_course_by_id(db: Session, course_id: int):
 
     return course.course_dim, course.course_level
 
+def get_course_data_by_id(db: Session, course_id: int):
+    course = db.query(models.Courses).filter(
+        models.Courses.id == course_id).first()
+
+    return course
 
 def get_course_by_course_dim_and_level(db: Session, course_dim: str, course_level: int):
     return db.query(models.Courses).filter(

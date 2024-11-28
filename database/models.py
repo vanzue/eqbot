@@ -63,9 +63,11 @@ class Courses(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     course_dim = Column(Unicode(50), nullable=False) # zh: 掌控力， en：self-regulation
     course_level = Column(Integer)
-    prompt = Column(UnicodeText) # background
+    prompt = Column(UnicodeText) # for LLM
     title = Column(UnicodeText)
+    background = Column(UnicodeText)
     npc = Column(UnicodeText)
+    task = Column(UnicodeText)
     image = Column(UnicodeText) # url
 
 

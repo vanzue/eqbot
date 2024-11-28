@@ -217,7 +217,7 @@ def get_battlefield_map(
 
 @router.get("/get_course_data/{course_id}")
 def get_course_by_id(course_id: int, db: Session = Depends(database.get_db)):
-    course_data = crud.get_course_by_id(db, course_id)
+    course_data = crud.get_course_data_by_id(db, course_id)
     # course_data = {
     #         "id": 1,
     #         "course_dim": "Emotional Intelligence",
