@@ -147,6 +147,13 @@ def get_battlefield_map(
 ):  
     course_list = crud.get_course_by_course_dim(db, dim_name)
     course_result = crud.get_courseResults_by_person_id(db, person_id, dim_name)
+
+    next_course_id = course_list[0].id
+    for i in range(len(course_result)):
+        res = course_result[i]
+        status = res.status
+        if status == "complete":
+            next_course_id = course_list[i+1].id
     # course_list = [
     #     {
     #         "id": 1,
@@ -213,7 +220,7 @@ def get_battlefield_map(
     #     }
     # ]
 
-    return {"course_list": course_list, "course_result": course_result, "next_course_id": 3}
+    return {"course_list": course_list, "course_result": course_result, "next_course_id": next_course_id}
 
 @router.get("/get_course_data/{course_id}")
 def get_course_by_id(course_id: int, db: Session = Depends(database.get_db)):
