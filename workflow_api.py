@@ -61,24 +61,31 @@ async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: s
 async def create_profile(request: data_types.CreateUserRequest, db: Session = Depends(database.get_db)):
     # Receive all the info from frontend
     # personal info
-    name = request.name
-    
-    # preference
-    job_level = request.job_level
-    gender = request.gender
-    concerns = request.concerns
-    issues = ", ".join(concerns)
-    source = request.source
-    unique_id = request.unique_id
-
     job_id = str(uuid.uuid4())
+    
+    name = request.name
+    auth_provider = request.auth_provider
+    union_id = request.union_id
+    unique_id = auth_provider + ":" + union_id
+    gender = request.gender
+    age = request.age
+    phone = request.phone
+    email = request.email
+    avatar = request.avatar
+    issues = request.issues
+
+    
 
     personal_info_data = schemas.PersonalInfoCreate(
                             name=name, 
-                            source=source,
+                            auth_provider=auth_provider,
+                            union_id=union_id,
                             unique_id=unique_id,
                             gender=gender, 
-                            job_level=job_level, 
+                            age=age,
+                            phone=phone,
+                            email=email,
+                            avatar=avatar,
                             issues=issues, 
                             job_id=job_id)
     db_personal_info = crud.create_personal_info(db, personal_info_data)

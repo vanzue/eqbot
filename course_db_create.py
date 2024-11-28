@@ -52,44 +52,53 @@ def main():
     db = SessionLocal()
 
     try:
-        # npc_data = """
-        #             领导：擅长PUA，脾气很大。
-        #             同事A：阿谀奉承，讨好领导。
-        #             同事B：尖酸刻薄。
-        #         """
-        npc_json = {
-            "npc1": {
-                "name": "领导",
-                "personality": "擅长PUA，脾气很大。"
-            },
-            "npc2": {
-                "name": "同事A",
-                "personality": "阿谀奉承，讨好领导。"
-            },
-            "npc3": {
-                "name": "同事B",
-                "personality": "尖酸刻薄。"
-            }
-        }
-        npc_data = json.dumps(npc_json, ensure_ascii=False, indent=4)
-        course_data = schemas.CoursesCreate(
-                        course_dim = "掌控力",
-                        course_level = 1,
-                        prompt = """
-                            今晚，我和三位同事——我的领导、同事A和同事B——在餐厅聚餐。通过轻松的日常对话，他们会考察我的情绪掌控力。每位同事初始都有一个心情值，每次对话都会使他们的心情加或减。
+        # npc_json = {
+        #     "npc1": {
+        #         "name": "领导",
+        #         "personality": "擅长PUA，脾气很大。"
+        #     },
+        #     "npc2": {
+        #         "name": "同事A",
+        #         "personality": "阿谀奉承，讨好领导。"
+        #     },
+        #     "npc3": {
+        #         "name": "同事B",
+        #         "personality": "尖酸刻薄。"
+        #     }
+        # }
+        # npc_data = json.dumps(npc_json, ensure_ascii=False, indent=4)
+        # course_data = schemas.CoursesCreate(
+        #                 course_dim = "掌控力",
+        #                 course_level = 2,
+        #                 prompt = """
+        #                     今晚，我和三位同事——我的领导、同事A和同事B——在餐厅聚餐。通过轻松的日常对话，他们会考察我的情绪掌控力。每位同事初始都有一个心情值，每次对话都会使他们的心情加或减。
 
-                            NPC的话题需要紧扣点菜，可以出现具体的菜品名称。
+        #                     NPC的话题需要紧扣点菜，可以出现具体的菜品名称。
                             
-                            另外，如果用户给出了一个合理的点菜方案，请让领导说出“你点的菜真不错”这句话。
-                            """, 
-                        title = "老板肚子里的蛔虫",
-                        background = "在一个精致的会所包厢里，你与一位高层领导和两名同事共进晚餐。看似轻松的聚会，实际上领导在暗中观察你们，准备决定谁将参与重要项目。你必须讨好领导，同时平衡同事关系，因为一个小小的失误可能改变你的未来。",
-                        npc = npc_data,
-                        task = "一句话让每位同事心情愉悦:点出让每位同事满意的菜品",
-                        image = None
-                    )
-        db_course_data = crud.create_course(db, course_data)
-        print(f"Created Course: {db_course_data.id}")
+        #                     另外，如果用户给出了一个合理的点菜方案，请让领导说出“你点的菜真不错”这句话。
+        #                     """, 
+        #                 title = "老板肚子里的蛔虫",
+        #                 background = "在一个精致的会所包厢里，你与一位高层领导和两名同事共进晚餐。看似轻松的聚会，实际上领导在暗中观察你们，准备决定谁将参与重要项目。你必须讨好领导，同时平衡同事关系，因为一个小小的失误可能改变你的未来。",
+        #                 npc = npc_data,
+        #                 task = "一句话让每位同事心情愉悦:点出让每位同事满意的菜品",
+        #                 image = None
+        #             )
+        # db_course_data = crud.create_course(db, course_data)
+        # print(f"Created Course: {db_course_data.id}")
+
+        person_course_data = schemas.PersonalInfoCoursesCreate(
+            user_id=1,
+            course_id=1,
+            course_dim="掌控力",
+            course_level=1,
+            status="complete",
+            result=2,
+            comment1="comment for testing",
+            comment2="comment for testing",
+            comment3="comment for testing",
+        )
+        db_person_course = crud.create_personal_info_course(db, person_course_data)
+        print(db_person_course)
 
 
     finally:
