@@ -22,3 +22,32 @@ def check_course1(response):
             result += 1
     
     return result
+
+# if course = 3
+# return 1: task1 finish
+# return 2: task2 finish
+# return 0: none of them finish
+def check_course3(response):
+    # task1
+    isSam = True
+    isJason = True
+    if "eval" in response:
+        eval = response["eval"]
+        for pr in eval:
+            role = pr['role']
+            satisfaction = pr['satisfaction']
+            if role == "Sam" and satisfaction!="Satisfied":
+                isSam = False
+            if role == "Jason" and satisfaction!="Satisfied":
+                isJason = False
+    if isSam and isJason:
+        return 1
+
+    # task2
+    if "dialog" in response:    
+        dialog = response["dialog"]
+        for pr in dialog:
+            if "I agree with you" in pr['content']:
+                return 2
+            
+    return 0
