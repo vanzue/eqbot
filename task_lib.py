@@ -8,7 +8,7 @@ def check_course1(response):
     if "dialog" in response:    
         dialog = response["dialog"]
         for pr in dialog:
-            if pr["role"] == "领导" and pr["content"] == "你点的菜真不错":
+            if pr["role"] == "领导" and "你点的菜真不错" in pr["content"]:
                 result += 2
     
     if "moods" in response:

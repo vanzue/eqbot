@@ -35,30 +35,6 @@ async def create_personal_info_endpoint(
     return db_personal_info
 
 
-# create a new eq score report
-async def create_eqscore_endpoint(person_id: int, scores_details:dict, job_id: str, db: Session = Depends(database.get_db)):
-    eq_score_data = schemas.EQScoreCreate(
-            person_id=person_id,
-            dimension1_score=scores_details['dimension1_score'],
-            dimension1_detail=scores_details['dimension1_detail'],
-            dimension2_score=scores_details['dimension2_score'],
-            dimension2_detail=scores_details['dimension2_detail'],
-            dimension3_score=scores_details['dimension3_score'],
-            dimension3_detail=scores_details['dimension3_detail'],
-            dimension4_score=scores_details['dimension4_score'],
-            dimension4_detail=scores_details['dimension4_detail'],
-            dimension5_score=scores_details['dimension5_score'],
-            dimension5_detail=scores_details['dimension5_detail'],
-            summary=scores_details['summary'],
-            detail=scores_details['detail'],
-            detail_summary=scores_details['detail_summary'],
-            overall_suggestion=scores_details['overall_suggestion'],
-            job_id=job_id
-        )
-    db_eq_score = crud.create_eq_score(db, eq_score_data)
-    return db_eq_score
-
-
 # signup as a new user and get the EQ Score Report
 @router.post("/create_profile")
 async def create_profile(request: data_types.CreateUserRequest, db: Session = Depends(database.get_db)):
@@ -76,8 +52,6 @@ async def create_profile(request: data_types.CreateUserRequest, db: Session = De
     email = request.email
     avatar = request.avatar
     issues = request.issues
-
-    
 
     personal_info_data = schemas.PersonalInfoCreate(
                             name=name, 
