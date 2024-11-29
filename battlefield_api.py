@@ -92,7 +92,7 @@ def encode_image_to_base64(binary_data: bytes) -> str:
 
 
 @router.get("/get_battlefield/{user_id}")
-def get_battlefield(user_id: int, db: Session = Depends(database.get_db)):
+def get_battlefield(user_id: int, locale: str, db: Session = Depends(database.get_db)):
     eq_scores = crud.get_eq_scores_by_person_id(db, user_id=user_id)
 
     if not eq_scores:
@@ -124,17 +124,17 @@ def get_battlefield(user_id: int, db: Session = Depends(database.get_db)):
     # return {"course": person_course}
 
 @router.get("/course_exists/{person_id}")
-def course_exists(person_id: int, db: Session = Depends(database.get_db)):
+def course_exists(person_id: int, locale: str, db: Session = Depends(database.get_db)):
     record = crud.course_exists(db, person_id=person_id)
     return record
 
 @router.post("/update/diamond")
-def update_diamond(request: data_types.DiamondUpdate, db: Session = Depends(database.get_db)):
+def update_diamond(request: data_types.DiamondUpdate, locale: str, db: Session = Depends(database.get_db)):
     db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=request.num_diamond)
     return {"diamond_num": db_star, "message": True}
 
 @router.get("/get_course/{user_id}/{course_id}")
-def get_course_status(user_id: int, course_id: int, db: Session = Depends(database.get_db)):
+def get_course_status(user_id: int, course_id: int, locale: str, db: Session = Depends(database.get_db)):
     db_course = crud.get_coursesperson_by_person_id(db, person_id=user_id, course_id=course_id)
     return {"course": db_course}
 
@@ -142,7 +142,8 @@ def get_course_status(user_id: int, course_id: int, db: Session = Depends(databa
 @router.get("/get_battlefield_map/{person_id}")
 def get_battlefield_map(
     person_id: int,
-    dim_name: Optional[str] = None,
+    dim_name: str,
+    locale: str,
     db: Session = Depends(database.get_db)
 ):  
     course_list = crud.get_course_by_course_dim(db, dim_name)
@@ -223,7 +224,7 @@ def get_battlefield_map(
     return {"course_list": course_list, "course_result": course_result, "next_course_id": next_course_id}
 
 @router.get("/get_course_data/{course_id}")
-def get_course_by_id(course_id: int, db: Session = Depends(database.get_db)):
+def get_course_by_id(course_id: int, locale: str, db: Session = Depends(database.get_db)):
     course_data = crud.get_course_data_by_id(db, course_id)
     # course_data = {
     #         "id": 1,
@@ -241,7 +242,7 @@ def get_course_by_id(course_id: int, db: Session = Depends(database.get_db)):
     return {"course_data": course_data}
 
 @router.get("/get_course_analysis/{person_id}/{course_id}")
-def get_course_analysis(person_id: int, course_id: int, db: Session = Depends(database.get_db)):
+def get_course_analysis(person_id: int, course_id: int, locale: str, db: Session = Depends(database.get_db)):
     course_analysis = crud.get_coursesperson_by_person_id(db, person_id, course_id)
     # course_analysis = {
     #     "id": 1,  # 自增的主键 ID
@@ -260,7 +261,7 @@ def get_course_analysis(person_id: int, course_id: int, db: Session = Depends(da
 
 
 @router.post("/chat/battlefield")
-def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
+def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Session = Depends(database.get_db)):
     person_id = request.person_id
     course_id = request.course_id
     locale = request.locale
@@ -284,7 +285,7 @@ def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depen
     return {"response": response, "task_check": task_check}
 
 @router.post("/eval/battlefield")
-def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
+def create_course_eval(request: data_types.BattlefieldEval, locale: str, db: Session = Depends(database.get_db)):
     # response = {
     #     "id": 1,  # 自增的主键 ID
     #     "user_id": 101,  # 关联的用户 ID

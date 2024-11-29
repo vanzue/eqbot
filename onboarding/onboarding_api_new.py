@@ -56,7 +56,7 @@ async def initialize_scenario(locale: Optional[str] = None):
 
 
 @router.post("/retrieve_scene")
-async def retrieve_scene(request: data_types.ScenarioRequest):
+async def retrieve_scene(request: data_types.ScenarioRequest, locale: str):
     """
     接收用户选择列表，根据选择路径返回对应的场景 JSON 文件
     """
@@ -78,6 +78,7 @@ async def retrieve_scene(request: data_types.ScenarioRequest):
 async def finalize_scenario(
     request: data_types.ScenarioFinal,
     background_tasks: BackgroundTasks,
+    locale: str,
     db: Session = Depends(database.get_db),
 ):
     """

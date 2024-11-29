@@ -1,7 +1,7 @@
 # if course_id = 1
 # return 0: not meet requirement
-# return 1: task1 finish
-# return 2: task2 finish
+# return 1: task1 finish 心情都好
+# return 2: task2 finish 说出固定的话
 # return 3: task1 and task2 finish
 def check_course1(response):
     result = 0

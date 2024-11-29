@@ -37,7 +37,7 @@ async def create_personal_info_endpoint(
 
 # signup as a new user and get the EQ Score Report
 @router.post("/create_profile")
-async def create_profile(request: data_types.CreateUserRequest, db: Session = Depends(database.get_db)):
+async def create_profile(request: data_types.CreateUserRequest, locale: str, db: Session = Depends(database.get_db)):
     # Receive all the info from frontend
     # personal info
     job_id = str(uuid.uuid4())
@@ -71,7 +71,7 @@ async def create_profile(request: data_types.CreateUserRequest, db: Session = De
 
 
 @router.post("/update_name")
-def update_username(request: data_types.UpdateUserName, db: Session = Depends(database.get_db)):
+def update_username(request: data_types.UpdateUserName, locale: str, db: Session = Depends(database.get_db)):
     person_id = request.person_id
     new_name = request.new_name
 
@@ -80,7 +80,7 @@ def update_username(request: data_types.UpdateUserName, db: Session = Depends(da
     return {"message": "updated new name"}
 
 @router.post("/get_homepage/{personal_id}")
-async def get_homepage(personal_id: int, db: Session = Depends(database.get_db)):
+async def get_homepage(personal_id: int, locale: str, db: Session = Depends(database.get_db)):
     # profile & eq scores
     personal_info = crud.get_personal_info_by_personid(db, personal_id)
     eq_scores = crud.get_eq_scores_by_person_id(db, personal_info.id)
@@ -124,7 +124,7 @@ async def get_homepage(personal_id: int, db: Session = Depends(database.get_db))
     return {"response": response}
 
 @router.post("/get_analysis/{job_id}")
-async def get_analysis(job_id: str, db: Session = Depends(database.get_db)):
+async def get_analysis(job_id: str, locale: str, db: Session = Depends(database.get_db)):
     # profile & eq scores
     personal_info = crud.get_personal_info_by_job_id(db, job_id)
     eq_scores = crud.get_eq_scores_by_job_id(db, job_id)
