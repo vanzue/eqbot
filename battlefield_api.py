@@ -192,6 +192,8 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
     print(response)
     if course_id == 1:
         task_check = task_lib.check_course1(response)
+    elif course_id == 3:
+        task_check = task_lib.check_course3(response)
     return {"response": response, "task_check": task_check}
 
 @router.post("/eval/battlefield")
