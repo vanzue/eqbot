@@ -14,7 +14,7 @@ from llm.image2chat import image2text, parse_chatHistory, get_image2text
 router = APIRouter()
 
 @router.post("/create_contact_profile")
-def create_contact_profile(request: data_types.ContactProfileCreate, db: Session = Depends(database.get_db)):
+def create_contact_profile(request: data_types.ContactProfileCreate, locale: str, db: Session = Depends(database.get_db)):
     personal_info_id = crud.get_personal_id_by_name(db, request.personal_name)
     contact_data = schemas.ContactCreate(person_id=personal_info_id, 
                                         name=request.name, 
@@ -25,7 +25,7 @@ def create_contact_profile(request: data_types.ContactProfileCreate, db: Session
 
 
 @router.post("/analyze/screenshot")
-async def upload_image(file: UploadFile = File(...)):
+async def upload_image(file: UploadFile = File(...), locale: str="en"):
     if file.content_type not in ["image/jpeg", "image/png"]:
         raise HTTPException(status_code=400, detail="Invalid image format. Please upload JPEG or PNG image.")
     
@@ -95,12 +95,12 @@ async def analyze_history_from_image(locale: str = "en", user_id: int = Form(...
 
 
 @router.delete("/delete_chats/{chat_id}", response_model=schemas.ChatHistory)
-def delete_chat(chat_id: int, db: Session = Depends(database.get_db)):
+def delete_chat(chat_id: int, locale: str, db: Session = Depends(database.get_db)):
     chat_history = crud.delete_chat_history(db=db, chat_id=chat_id)
     if chat_history is None:
         raise HTTPException(status_code=404, detail="Chat history not found")
     return chat_history
 
 @router.get("/{user_id}/analysisList")
-async def get_analysis(user_id: int, db: Session = Depends(database.get_db)):
+async def get_analysis(user_id: int, locale: str, db: Session = Depends(database.get_db)):
     return crud.get_chat_history_by_user(db, user_id=user_id)
