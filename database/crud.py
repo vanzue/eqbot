@@ -141,8 +141,8 @@ def create_eq_score(db: Session, eq_score: schemas.EQScoreCreate):
         perception_detail = eq_score.perception_detail,
         social_skill_score = eq_score.social_skill_score,
         social_skill_detail = eq_score.social_skill_detail,
-        self_regulaton_score = eq_score.self_regulaton_score,
-        self_regulaton_detail = eq_score.self_regulaton_detail,
+        self_regulation_score = eq_score.self_regulation_score,
+        self_regulation_detail = eq_score.self_regulation_detail,
         empathy_score = eq_score.empathy_score,
         empathy_detail = eq_score.empathy_detail,
         motivation_score = eq_score.motivation_score,
@@ -187,6 +187,7 @@ def create_course(db: Session, course: schemas.CoursesCreate):
         background=course.background,
         location=course.location,
         npc=course.npc,
+        locale=course.locale,
         task=course.task,
         image=course.image
     )
@@ -218,9 +219,10 @@ def get_course_by_course_dim_and_level(db: Session, course_dim: str, course_leve
         models.Courses.course_level == course_level
     ).first()
 
-def get_course_by_course_dim(db: Session, course_dim: str):
+def get_course_by_course_dim(db: Session, course_dim: str, locale: str):
     return db.query(models.Courses).filter(
-        models.Courses.course_dim == course_dim
+        models.Courses.course_dim == course_dim,
+        models.Courses.locale == locale
     ).all()
 
 
@@ -251,7 +253,8 @@ def create_personal_info_course(db: Session, course_data: schemas.PersonalInfoCo
         result=course_data.result,
         comment1=course_data.comment1,
         comment2=course_data.comment2,
-        comment3=course_data.comment3
+        comment3=course_data.comment3,
+        locale=course_data.locale
     )
     db.add(new_course)
     db.commit()
@@ -272,9 +275,10 @@ def get_coursesperson_by_person_id(db: Session, person_id: int, course_id: int):
     return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id,
                                                        models.PersonalInfoCourses.course_id == course_id).one_or_none()
 
-def get_courseResults_by_person_id(db: Session, person_id: int, course_dim: int):
+def get_courseResults_by_person_id(db: Session, person_id: int, course_dim: int, locale: int):
     return db.query(models.PersonalInfoCourses).filter(models.PersonalInfoCourses.user_id == person_id,
-                                                       models.PersonalInfoCourses.course_dim == course_dim).all()
+                                                       models.PersonalInfoCourses.course_dim == course_dim,
+                                                       models.PersonalInfoCourses.locale == locale).all()
 
 
 def course_exists(db: Session, person_id: int):

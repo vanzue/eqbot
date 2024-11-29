@@ -52,8 +52,8 @@ class EQScoreBase(BaseModel):
     perception_detail: Optional[str]
     social_skill_score: int
     social_skill_detail: Optional[str]
-    self_regulaton_score: int
-    self_regulaton_detail: Optional[str]
+    self_regulation_score: int
+    self_regulation_detail: Optional[str]
     empathy_score: int
     empathy_detail: Optional[str]
     motivation_score: int
@@ -86,6 +86,7 @@ class CoursesBase(BaseModel):
     background: Optional[str]
     location: str
     npc: str
+    locale: str 
     task: Optional[str]
     image: Optional[str]
 
@@ -112,6 +113,7 @@ class PersonalInfoCoursesBase(BaseModel):
     comment1: Optional[str]
     comment2: Optional[str]
     comment3: Optional[str]
+    locale: str
 
 
 class PersonalInfoCoursesCreate(PersonalInfoCoursesBase):
