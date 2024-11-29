@@ -111,7 +111,7 @@ async def get_homepage(personal_id: int, locale: str, db: Session = Depends(data
             "score": overall_score, 
             "perception_score": eq_scores.perception_score, "perception_detail": eq_scores.perception_detail,
             "social_skill_score": eq_scores.social_skill_score, "social_skill_detail": eq_scores.social_skill_detail,
-            "self_regulaton_score": eq_scores.self_regulaton_score, "self_regulaton_detail": eq_scores.self_regulaton_detail,
+            "self_regulation_score": eq_scores.self_regulation_score, "self_regulaton_detail": eq_scores.self_regulation_detail,
             "empathy_score": eq_scores.empathy_score, "empathy_detail": eq_scores.empathy_detail,
             "motivation_score": eq_scores.motivation_score, "motivation_detail": eq_scores.motivation_detail,
             "summary": eq_scores.summary,
@@ -152,7 +152,7 @@ async def get_analysis(job_id: str, locale: str, db: Session = Depends(database.
             "score": overall_score, 
             "perception_score": eq_scores.perception_score, "perception_detail": eq_scores.perception_detail,
             "social_skill_score": eq_scores.social_skill_score, "social_skill_detail": eq_scores.social_skill_detail,
-            "self_regulaton_score": eq_scores.self_regulaton_score, "self_regulaton_detail": eq_scores.self_regulaton_detail,
+            "self_regulation_score": eq_scores.self_regulation_score, "self_regulaton_detail": eq_scores.self_regulation_detail,
             "empathy_score": eq_scores.empathy_score, "empathy_detail": eq_scores.empathy_detail,
             "motivation_score": eq_scores.motivation_score, "motivation_detail": eq_scores.motivation_detail,
             "summary": eq_scores.summary,
@@ -173,7 +173,7 @@ async def get_analysis_detail(name: str, db: Session = Depends(database.get_db))
     
     scores = [eq_scores.perception_score, 
               eq_scores.social_skill_score, 
-              eq_scores.self_regulaton_score, 
+              eq_scores.self_regulation_score, 
               eq_scores.empathy_score, 
               eq_scores.motivation_score]
     overall_score = helper.calculate_average(*scores)
@@ -189,7 +189,7 @@ async def get_analysis_detail(name: str, db: Session = Depends(database.get_db))
             "score": overall_score, 
             "perception_score": eq_scores.perception_score, "perception_detail": eq_scores.perception_detail,
             "social_skill_score": eq_scores.social_skill_score, "social_skill_detail": eq_scores.social_skill_detail,
-            "self_regulaton_score": eq_scores.self_regulaton_score, "self_regulaton_detail": eq_scores.self_regulaton_detail,
+            "self_regulation_score": eq_scores.self_regulation_score, "self_regulation_detail": eq_scores.self_regulation_detail,
             "empathy_score": eq_scores.empathy_score, "empathy_detail": eq_scores.empathy_detail,
             "motivation_score": eq_scores.motivation_score, "motivation_detail": eq_scores.motivation_detail,
             "summary": eq_scores.summary,

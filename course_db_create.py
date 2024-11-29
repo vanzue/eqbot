@@ -68,7 +68,7 @@ def main():
         # }
         # npc_data = json.dumps(npc_json, ensure_ascii=False, indent=4)
         # course_data = schemas.CoursesCreate(
-        #                 course_dim = "掌控力",
+        #                 course_dim = "Self_regulation",
         #                 course_level = 2,
         #                 prompt = """
         #                     今晚，我和三位同事——我的领导、同事A和同事B——在餐厅聚餐。通过轻松的日常对话，他们会考察我的情绪掌控力。每位同事初始都有一个心情值，每次对话都会使他们的心情加或减。
@@ -77,10 +77,11 @@ def main():
                             
         #                     另外，如果用户给出了一个合理的点菜方案，请让领导说出“你点的菜真不错”这句话。
         #                     """, 
-        #                 title = "老板肚子里的蛔虫",
+        #                 title = "老板肚子里的蛔虫2",
         #                 background = "在一个精致的会所包厢里，你与一位高层领导和两名同事共进晚餐。看似轻松的聚会，实际上领导在暗中观察你们，准备决定谁将参与重要项目。你必须讨好领导，同时平衡同事关系，因为一个小小的失误可能改变你的未来。",
         #                 location = "聚餐中",
         #                 npc = npc_data,
+        #                 locale = "zh",
         #                 task = "一句话让每位同事心情愉悦:点出让每位同事满意的菜品",
         #                 image = None
         #             )
@@ -90,13 +91,14 @@ def main():
         person_course_data = schemas.PersonalInfoCoursesCreate(
             user_id=1,
             course_id=1,
-            course_dim="掌控力",
+            course_dim="Self_regulation",
             course_level=1,
             status="complete",
             result=2,
             comment1="comment for testing",
             comment2="comment for testing",
             comment3="comment for testing",
+            locale="zh"
         )
         db_person_course = crud.create_personal_info_course(db, person_course_data)
         print(db_person_course)

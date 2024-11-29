@@ -41,8 +41,8 @@ class EQScore(Base):
     perception_detail = Column(UnicodeText)
     social_skill_score = Column(Integer)
     social_skill_detail = Column(UnicodeText)
-    self_regulaton_score = Column(Integer)
-    self_regulaton_detail = Column(UnicodeText)
+    self_regulation_score = Column(Integer)
+    self_regulation_detail = Column(UnicodeText)
     empathy_score = Column(Integer)
     empathy_detail = Column(UnicodeText)
     motivation_score = Column(Integer)
@@ -68,6 +68,7 @@ class Courses(Base):
     background = Column(UnicodeText)
     location = Column(UnicodeText)
     npc = Column(UnicodeText)
+    locale = Column(UnicodeText)
     task = Column(UnicodeText)
     image = Column(UnicodeText) # url
 
@@ -86,6 +87,7 @@ class PersonalInfoCourses(Base):
     comment1 = Column(UnicodeText)
     comment2 = Column(UnicodeText)
     comment3 = Column(UnicodeText)
+    locale = Column(UnicodeText)
 
     person = relationship("PersonalInfo", back_populates="courses")
 

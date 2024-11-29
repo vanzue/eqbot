@@ -146,8 +146,8 @@ def get_battlefield_map(
     locale: str,
     db: Session = Depends(database.get_db)
 ):  
-    course_list = crud.get_course_by_course_dim(db, dim_name)
-    course_result = crud.get_courseResults_by_person_id(db, person_id, dim_name)
+    course_list = crud.get_course_by_course_dim(db, dim_name, locale)
+    course_result = crud.get_courseResults_by_person_id(db, person_id, dim_name, locale)
 
     next_course_id = course_list[0].id
     for i in range(len(course_result)):
@@ -155,107 +155,17 @@ def get_battlefield_map(
         status = res.status
         if status == "complete":
             next_course_id = course_list[i+1].id
-    # course_list = [
-    #     {
-    #         "id": 1,
-    #         "course_dim": "Emotional Intelligence",
-    #         "course_level": 1,
-    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
-    #         "title": "Mastering Emotional Resilience",
-    #         "npc": [
-    #             {"name": "John", "role": "mentor", "mood": "happy"},
-    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-    #         ],
-    #         "image": None
-    #     },  
-    #     {
-    #         "id": 2,
-    #         "course_dim": "Emotional Intelligence",
-    #         "course_level": 2,
-    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
-    #         "title": "Mastering Emotional Resilience",
-    #         "npc": [
-    #             {"name": "John", "role": "mentor", "mood": "happy"},
-    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-    #         ],
-    #         "image": None
-    #     },
-    #     {
-    #         "id": 3,
-    #         "course_dim": "Emotional Intelligence",
-    #         "course_level": 3,
-    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
-    #         "title": "Mastering Emotional Resilience",
-    #         "npc": [
-    #             {"name": "John", "role": "mentor", "mood": "happy"},
-    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-    #         ],
-    #         "image": None
-    #     }
-    # ]
-
-    # course_result = [
-    #     {
-    #         "id": 1,  # 自增的主键 ID
-    #         "user_id": 101,  # 关联的用户 ID
-    #         "course_id": 1,  # 关联的课程 ID
-    #         "course_type": "Emotional Intelligence",  # 课程类型
-    #         "course_level": 1,  # 课程等级
-    #         "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
-    #         "result": 3,  # 结果：星级评分（1-3）
-    #         "comment1": "The course content was very insightful.",  # 第一条评论
-    #         "comment2": "The NPC interactions made it engaging.",  # 第二条评论
-    #         "comment3": "I would recommend this to others.",  # 第三条评论
-    #     },
-    #     {
-    #         "id": 2,
-    #         "user_id": 101, 
-    #         "course_id": 201, 
-    #         "course_type": "Emotional Intelligence", 
-    #         "course_level": 2, 
-    #         "status": "incomplete", 
-    #         "result": 0,
-    #         "comment1": "",
-    #         "comment2": "",  
-    #         "comment3": "",  
-    #     }
-    # ]
-
     return {"course_list": course_list, "course_result": course_result, "next_course_id": next_course_id}
 
 @router.get("/get_course_data/{course_id}")
 def get_course_by_id(course_id: int, locale: str, db: Session = Depends(database.get_db)):
     course_data = crud.get_course_data_by_id(db, course_id)
-    # course_data = {
-    #         "id": 1,
-    #         "course_dim": "Emotional Intelligence",
-    #         "course_level": 1,
-    #         "prompt": "Learn how to manage emotions effectively in challenging situations.",
-    #         "title": "Mastering Emotional Resilience",
-    #         "npc": [
-    #             {"name": "John", "role": "mentor", "mood": "happy"},
-    #             {"name": "Sarah", "role": "challenger", "mood": "neutral"}
-    #         ],
-    #         "image": None
-    #     }
-    
+   
     return {"course_data": course_data}
 
 @router.get("/get_course_analysis/{person_id}/{course_id}")
 def get_course_analysis(person_id: int, course_id: int, locale: str, db: Session = Depends(database.get_db)):
     course_analysis = crud.get_coursesperson_by_person_id(db, person_id, course_id)
-    # course_analysis = {
-    #     "id": 1,  # 自增的主键 ID
-    #     "user_id": 101,  # 关联的用户 ID
-    #     "course_id": 1,  # 关联的课程 ID
-    #     "course_type": "Emotional Intelligence",  # 课程类型
-    #     "course_level": 1,  # 课程等级
-    #     "status": "complete",  # 当前状态（如：completed、in-progress、not-started）
-    #     "result": 3,  # 结果：星级评分（1-3）
-    #     "comment1": "The course content was very insightful.",  # 第一条评论
-    #     "comment2": "The NPC interactions made it engaging.",  # 第二条评论
-    #     "comment3": "I would recommend this to others.",  # 第三条评论
-    # }
 
     return {"course_analysis": course_analysis}
 
