@@ -40,8 +40,8 @@ def check_course3(response):
                 isSam = False
             if role == "Jason" and satisfaction!="Satisfied":
                 isJason = False
-    if isSam and isJason:
-        return 1
+        if isSam and isJason:
+            return 1
 
     # task2
     if "dialog" in response:    
