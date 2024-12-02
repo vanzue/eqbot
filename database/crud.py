@@ -175,6 +175,17 @@ def delete_eq_score(db: Session, eq_score_id: int):
         db.commit()
     return db_eq_score
 
+def delete_eqscore_by_userid(db: Session, user_id: str):
+    # 查找需要删除的记录
+    user_to_delete = db.query(models.EQScore).filter(models.EQScore.user_id == user_id).first()
+    
+    if not user_to_delete:
+        return False  # 表示未找到该记录
+    
+    db.delete(user_to_delete)  # 删除记录
+    db.commit()  # 提交事务
+    return True  # 表示删除成功
+
 
 # CRUD for Courses
 
