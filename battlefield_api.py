@@ -148,6 +148,8 @@ def get_battlefield_map(
 ):  
     course_list = crud.get_course_by_course_dim(db, dim_name, locale)
     course_result = crud.get_courseResults_by_person_id(db, person_id, dim_name, locale)
+    print("debug course_list: ", course_list)
+    print("debug course_result: ", course_result)
 
     next_course_id = course_list[0].id
     for i in range(len(course_result)):
@@ -201,18 +203,6 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
 
 @router.post("/eval/battlefield")
 def create_course_eval(request: data_types.BattlefieldEval, locale: str, db: Session = Depends(database.get_db)):
-    # response = {
-    #     "id": 1,  # 自增的主键 ID
-    #     "user_id": 101,  # 关联的用户 ID
-    #     "course_id": 1,  # 关联的课程 ID
-    #     "course_type": "Emotional Intelligence",  # 课程类型
-    #     "course_level": 1,  # 课程等级
-    #     "status": "complete",  # 当前状态（如：complete、incomplete）
-    #     "result": 3,  # 结果：星级评分（1-3）
-    #     "comment1": "The course content was very insightful.",  # 第一条评论
-    #     "comment2": "The NPC interactions made it engaging.",  # 第二条评论
-    #     "comment3": "I would recommend this to others.",  # 第三条评论
-    # }
     locale = request.locale
     course_id = request.course_id
     person_id = request.person_id
