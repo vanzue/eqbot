@@ -190,6 +190,9 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
     response = request_LLM_response(json.loads(
         request.chat_content), prompt, lang=locale)
     print(response)
+
+    # check task status
+    task_check = 0
     if course_id == 1:
         task_check = task_lib.check_course1(response)
     elif course_id == 3:
