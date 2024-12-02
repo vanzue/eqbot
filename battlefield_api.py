@@ -130,7 +130,7 @@ def course_exists(person_id: int, locale: str, db: Session = Depends(database.ge
 
 @router.post("/update/diamond")
 def update_diamond(request: data_types.DiamondUpdate, locale: str, db: Session = Depends(database.get_db)):
-    db_star = crud.update_personal_diamond(db, id=request.person_id, num_stars=request.num_diamond)
+    db_star = crud.update_personal_diamond(db, id=request.person_id, num_diamond=request.num_diamond)
     return {"diamond_num": db_star, "message": True}
 
 @router.get("/get_course/{user_id}/{course_id}")
