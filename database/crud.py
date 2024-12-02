@@ -340,7 +340,7 @@ def remove_course_from_personal_info(db: Session, person_id: str, course_id: int
 
 
 def create_chat_history(db: Session, chat: schemas.ChatHistoryCreate):
-    db_chat = models.ChatHistory(userId=chat.userId, chatHistory=chat.chatHistory,
+    db_chat = models.ChatHistory(user_id=chat.user_id, chatHistory=chat.chatHistory,
                                  summary=chat.summary, analysis=chat.analysis, low_dim=chat.low_dim)
     db.add(db_chat)
     db.commit()
