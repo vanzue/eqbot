@@ -140,3 +140,14 @@ async def background_process_data(locale: str, job_id: str, scores: list, dialog
     )
     eq_score = crud.create_eq_score(db, eq_score_data)
     print("llm 分析完成")
+
+# temp implement
+@router.delete("/delete_eqscore/{user_id}")
+async def delete_user(user_id: str, db: Session = Depends(database.get_db)):
+    success = crud.delete_eqscore_by_userid(db, user_id)
+    
+    if not success:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    # 返回成功消息
+    return {"message": f"User with user_id {user_id} deleted successfully"}
