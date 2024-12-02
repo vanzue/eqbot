@@ -29,9 +29,9 @@ def check_course1(response):
 # return 0: none of them finish
 def check_course3(response):
     # task1
-    isSam = True
-    isJason = True
     if "eval" in response:
+        isSam = True
+        isJason = True
         eval = response["eval"]
         for pr in eval:
             role = pr['role']
