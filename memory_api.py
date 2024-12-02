@@ -64,7 +64,7 @@ async def analyze_history_from_image(locale: str = "en", user_id: int = Form(...
 
     # create it into db
     # print(summary1)
-    chat_data = schemas.ChatHistoryCreate(userId=user_id,
+    chat_data = schemas.ChatHistoryCreate(user_id=user_id,
                                          chatHistory=json.dumps(chat_history, ensure_ascii=False),
                                          summary = summary,
                                          analysis=json.dumps(analysis, ensure_ascii=False),
@@ -73,25 +73,6 @@ async def analyze_history_from_image(locale: str = "en", user_id: int = Form(...
     db_chat = crud.create_chat_history(db, chat_data)
     
     return {"id": db_chat.id, "chatHistory": chat_history, "summary": summary, "analysis": analysis}
-
-
-# @router.post("/analyze/history/bot")
-# async def analyze_history_from_image(user_id: int, chat_history: str, db: Session = Depends(database.get_db)):
-#     # chat_history_response = await upload_image(file)
-#     # chat_history = chat_history_response["chat_history"]
-
-#     # request LLM analyze chat history
-#     analysis = retry_parse_LLMresponse(chat_history=chat_history)
-#     # print(analysis)
-
-#     # create it into db
-#     chat_data = schemas.ChatHistoryCreate(userId=user_id,
-#                                          chatHistory=json.dumps(chat_history, ensure_ascii=False),
-#                                          summary = summary,
-#                                          analysis=json.dumps(analysis))
-#     db_chat = crud.create_chat_history(db, chat_data)
-    
-#     return {"id": db_chat.id, "chatHistory": chat_history, "analysis": analysis}
 
 
 @router.delete("/delete_chats/{chat_id}", response_model=schemas.ChatHistory)
