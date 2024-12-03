@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "Monica glances at you with a skeptical look.",
-        "role": "you",
+        "role": "Bob",
         "location": "Conference Room",
         "description": "I think we should come up with a different idea for celebrating.",
         "options": [

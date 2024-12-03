@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "Bob crosses his arms and looks at Monica thoughtfully.",
-        "role": "You",
+        "role": "Bob",
         "location": "Meeting Room",
         "description": "I understand, but we need to be practical. A simpler plan might work best.",
         "options": [

@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "Bob crosses his arms and says, Fine, no bar. But whats the plan then?",
-        "role": "You",
+        "role": "Bob",
         "location": "Meeting Room",
         "description": "Lets explore Ryans idea of an outdoor activity.",
         "options": [

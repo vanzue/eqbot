@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "Monica sighs and looks at you.",
-        "role": "You",
+        "role": "Bob",
         "location": "Conference Room",
         "description": "It seems like were all having different opinions on this.",
         "options": [

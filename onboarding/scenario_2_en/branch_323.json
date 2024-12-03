@@ -1,9 +1,9 @@
 {
     "scenes": {
         "background": "Monica shakes her head, looking at her watch.",
-        "role": "You",
+        "role": "Bob",
         "location": "Conference Room",
-        "description": "You say, Lets not rush into things without considering all aspects.",
+        "description": "Bob says, Lets not rush into things without considering all aspects.",
         "options": [
             {
                 "text": "We need to ensure every detail is covered, even if it takes more time.",

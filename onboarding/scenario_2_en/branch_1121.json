@@ -1,9 +1,9 @@
 {
     "scenes": {
         "background": "Bob sighs again, rubbing his temples in frustration.",
-        "role": "You",
+        "role": "Bob",
         "location": "Conference Room",
-        "description": "You say, Lets consider both perspectives carefully to find a solution that satisfies everyone.",
+        "description": "Bob says, Lets consider both perspectives carefully to find a solution that satisfies everyone.",
         "options": [
             {
                 "text": "We should analyze the potential risks and benefits of each approach before deciding.",

@@ -1,9 +1,9 @@
 {
     "scenes": {
         "background": "Bob reluctantly agrees, and Monica looks relieved that the project can now proceed.",
-        "role": "You",
+        "role": "Bob",
         "location": "Conference Room",
-        "description": "You say, Alright, lets get started then. Any last thoughts?",
+        "description": "Bob says, Alright, lets get started then. Any last thoughts?",
         "options": [
             {
                 "text": "We'll address any issues as they come up. Let's move forward.",
