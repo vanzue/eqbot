@@ -185,6 +185,31 @@ def delete_eqscore_by_userid(db: Session, user_id: str):
     db.commit()
     return True 
 
+def update_eq_score(db: Session, job_id: int, eq_score_update: schemas.EQScoreUpdate):
+    # 查询需要更新的记录
+    db_eq_score = db.query(models.EQScore).filter(models.EQScore.job_id == job_id).first()
+
+    # 更新字段
+    db_eq_score.perception_score = eq_score_update.perception_score or db_eq_score.perception_score
+    db_eq_score.perception_detail = eq_score_update.perception_detail or db_eq_score.perception_detail
+    db_eq_score.social_skill_score = eq_score_update.social_skill_score or db_eq_score.social_skill_score
+    db_eq_score.social_skill_detail = eq_score_update.social_skill_detail or db_eq_score.social_skill_detail
+    db_eq_score.self_regulation_score = eq_score_update.self_regulation_score or db_eq_score.self_regulation_score
+    db_eq_score.self_regulation_detail = eq_score_update.self_regulation_detail or db_eq_score.self_regulation_detail
+    db_eq_score.empathy_score = eq_score_update.empathy_score or db_eq_score.empathy_score
+    db_eq_score.empathy_detail = eq_score_update.empathy_detail or db_eq_score.empathy_detail
+    db_eq_score.motivation_score = eq_score_update.motivation_score or db_eq_score.motivation_score
+    db_eq_score.motivation_detail = eq_score_update.motivation_detail or db_eq_score.motivation_detail
+    db_eq_score.summary = eq_score_update.summary or db_eq_score.summary
+    db_eq_score.detail = eq_score_update.detail or db_eq_score.detail
+    db_eq_score.detail_summary = eq_score_update.detail_summary or db_eq_score.detail_summary
+    db_eq_score.overall_suggestion = eq_score_update.overall_suggestion or db_eq_score.overall_suggestion
+
+    # 提交更改
+    db.commit()
+    db.refresh(db_eq_score)
+    return db_eq_score
+
 
 # CRUD for Courses
 
