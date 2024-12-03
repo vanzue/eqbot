@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "Bob leans back in his chair, looking thoughtful.",
-        "role": "You",
+        "role": "Bob",
         "location": "Break Room",
         "description": "We could have a discussion to ensure everyones concerns are heard.",
         "options": [

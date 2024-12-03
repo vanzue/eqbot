@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "Monica rolls her eyes and says, A bar party will just be a noisy mess.",
-        "role": "You",
+        "role": "Bob",
         "location": "Meeting Room",
         "description": "Bars can be fun; lets try to make it enjoyable for everyone.",
         "options": [

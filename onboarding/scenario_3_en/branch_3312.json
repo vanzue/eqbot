@@ -1,7 +1,7 @@
 {
     "scenes": {
         "background": "Bob shrugs while looking at Monica and you.",
-        "role": "You",
+        "role": "Bob",
         "location": "Break Room",
         "description": "Explaining the decision process might help, but what if people are still unhappy?",
         "options": [

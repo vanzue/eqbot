@@ -1,9 +1,9 @@
 {
     "scenes": {
         "background": "Monica sighs, crossing her arms.",
-        "role": "You",
+        "role": "Bob",
         "location": "Conference Room",
-        "description": "You say, Monica, balancing speed and thoroughness is crucial for success.",
+        "description": "Bob says, Monica, balancing speed and thoroughness is crucial for success.",
         "options": [
             {
                 "text": "We should set clear priorities to move efficiently without compromising quality.",

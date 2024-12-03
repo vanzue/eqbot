@@ -1,9 +1,9 @@
 {
     "scenes": {
         "background": "Monica sighs deeply, clearly frustrated.",
-        "role": "You",
+        "role": "Bob",
         "location": "Conference Room",
-        "description": "You say, We really need to find a way to move forward without compromising quality.",
+        "description": "Bob says, We really need to find a way to move forward without compromising quality.",
         "options": [
             {
                 "text": "How about we set smaller milestones to ensure both speed and thoroughness?",
