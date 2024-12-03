@@ -118,28 +118,51 @@ async def background_process_data(locale: str, job_id: str, scores: list, dialog
     )
     updated_personal_info = crud.update_personal_info_by_name(
         db, personal_info.name, personal_info_update)
-
-    # 创建 EQ 分数记录
-    eq_score_data = schemas.EQScoreCreate(
-        job_id=job_id,
-        user_id=personal_info.id,
-        perception_score=response["dimension1_score"],
-        perception_detail=response["dimension1_detail"],
-        social_skill_score=response["dimension2_score"],
-        social_skill_detail=response["dimension2_detail"],
-        self_regulation_score=response["dimension3_score"],
-        self_regulation_detail=response["dimension3_detail"],
-        empathy_score=response["dimension4_score"],
-        empathy_detail=response["dimension4_detail"],
-        motivation_score=response["dimension5_score"],
-        motivation_detail=response["dimension5_detail"],
-        summary=response["summary"],
-        detail=response["detail"],
-        detail_summary=response['detail_summary'],
-        overall_suggestion=response["overall_suggestion"]
-    )
-    eq_score = crud.create_eq_score(db, eq_score_data)
-    print("llm 分析完成")
+    
+    # if done onboarding before
+    db_eqscore = crud.get_eq_scores_by_job_id(db, job_id)
+    if db_eqscore: # already have data, need update
+        # update
+        eq_score_update = schemas.EQScoreUpdate(
+            perception_score=response["dimension1_score"],
+            perception_detail=response["dimension1_detail"],
+            social_skill_score=response["dimension2_score"],
+            social_skill_detail=response["dimension2_detail"],
+            self_regulation_score=response["dimension3_score"],
+            self_regulation_detail=response["dimension3_detail"],
+            empathy_score=response["dimension4_score"],
+            empathy_detail=response["dimension4_detail"],
+            motivation_score=response["dimension5_score"],
+            motivation_detail=response["dimension5_detail"],
+            summary=response["summary"],
+            detail=response["detail"],
+            detail_summary=response['detail_summary'],
+            overall_suggestion=response["overall_suggestion"]
+        )
+        crud.update_eq_score(db, job_id, eq_score_update)
+        print("update successfully")
+    else:
+        # new user for onboarding, need to create
+        eq_score_data = schemas.EQScoreCreate(
+            job_id=job_id,
+            user_id=personal_info.id,
+            perception_score=response["dimension1_score"],
+            perception_detail=response["dimension1_detail"],
+            social_skill_score=response["dimension2_score"],
+            social_skill_detail=response["dimension2_detail"],
+            self_regulation_score=response["dimension3_score"],
+            self_regulation_detail=response["dimension3_detail"],
+            empathy_score=response["dimension4_score"],
+            empathy_detail=response["dimension4_detail"],
+            motivation_score=response["dimension5_score"],
+            motivation_detail=response["dimension5_detail"],
+            summary=response["summary"],
+            detail=response["detail"],
+            detail_summary=response['detail_summary'],
+            overall_suggestion=response["overall_suggestion"]
+        )
+        eq_score = crud.create_eq_score(db, eq_score_data)
+        print("llm 分析完成")
 
 # temp implement
 @router.delete("/delete_eqscore/{user_id}")

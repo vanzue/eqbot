@@ -76,6 +76,22 @@ class EQScore(EQScoreBase):
     class Config:
         from_attributes = True
 
+class EQScoreUpdate(BaseModel):
+    perception_score: Optional[float]
+    perception_detail: Optional[str]
+    social_skill_score: Optional[float]
+    social_skill_detail: Optional[str]
+    self_regulation_score: Optional[float]
+    self_regulation_detail: Optional[str]
+    empathy_score: Optional[float]
+    empathy_detail: Optional[str]
+    motivation_score: Optional[float]
+    motivation_detail: Optional[str]
+    summary: Optional[str]
+    detail: Optional[str]
+    detail_summary: Optional[str]
+    overall_suggestion: Optional[str]
+
 
 # Courses Schema
 class CoursesBase(BaseModel):
