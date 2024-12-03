@@ -29,16 +29,16 @@ def check_course1(response):
 # return 0: none of them finish
 def check_course3(response):
     # task1
-    if "eval" in response:
+    if "moods" in response:
         isSam = True
         isJason = True
-        eval = response["eval"]
-        for pr in eval:
+        moods = response["moods"]
+        for pr in moods:
             role = pr['role']
-            satisfaction = pr['satisfaction']
-            if role == "Sam" and satisfaction!="Satisfied":
+            mood = pr['mood']
+            if role == "Sam" and mood <= 0:
                 isSam = False
-            if role == "Jason" and satisfaction!="Satisfied":
+            if role == "Jason" and mood < 0:
                 isJason = False
         if isSam and isJason:
             return 1
