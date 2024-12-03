@@ -35,7 +35,7 @@ def check_course3(response):
         moods = response["moods"]
         for pr in moods:
             role = pr['role']
-            mood = pr['mood']
+            mood = int(pr['mood'])
             if role == "Sam" and mood <= 0:
                 isSam = False
             if role == "Jason" and mood < 0:
