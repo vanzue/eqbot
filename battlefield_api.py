@@ -227,7 +227,8 @@ def create_course_eval(request: data_types.BattlefieldEval, locale: str, db: Ses
         result=request.result,
         comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
         comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
-        comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None
+        comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None,
+        locale=locale
     )
 
     # create new data for CoursePerson
