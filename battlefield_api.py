@@ -4,12 +4,14 @@ import base64
 from fastapi import APIRouter, Request, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import Optional
+from collections import defaultdict
 
 import data_types
 import task_lib
 from database import database, crud, schemas
 
 from llm.chat_battlefield_agent import request_LLM_response, request_LLM_response_by_eval
+from text_to_voice import call_azure_tts
 
 router = APIRouter()
 
@@ -178,6 +180,19 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
     course_id = request.course_id
     locale = request.locale
 
+    # prevcondition npc
+    npcs = json.loads(request.npcs)
+    npc_map = defaultdict(list)
+    for i in range(3):
+        npc_idx = f"npc_{i+1}"
+        npc = npcs[npc_idx]
+
+        name = npc['name']
+        voice = npc['voice']
+        style = npc['style']
+        rate = npc['rate']
+        npc_map[name] = (voice, style, rate)
+
     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
     background = matching_course.prompt
 
@@ -191,7 +206,24 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
 
     response = request_LLM_response(json.loads(
         request.chat_content), prompt, lang=locale)
-    print(response)
+    print("original:", response)
+    # add voice to response
+    if "dialog" in response:
+        for i, npc in enumerate(response['dialog']):
+            role = npc['role']
+            content = npc['content']
+            voice = npc_map[role][0]
+            style = npc_map[role][1]
+            rate = npc_map[role][2]
+
+            voice_url = call_azure_tts(content, voice, style, rate)
+            response['dialog'][i] = {
+                'role': role,
+                'content': content,
+                'voice_url': voice_url
+            }
+        print("update:", response)
+
 
     # check task status
     task_check = 0

@@ -275,6 +275,16 @@ def delete_course(db: Session, course_id: int):
         db.commit()
     return db_course
 
+def update_course_npc(db: Session, course_id: int, new_npc: str):
+    db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
+    
+    # 更新 NPC 属性
+    db_course.npc = new_npc
+    db.commit()
+    db.refresh(db_course)
+    
+    return db_course
+
 # CRUD for PersonalInfoCourses (Many-to-Many Relationship)
 
 
