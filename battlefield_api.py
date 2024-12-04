@@ -184,7 +184,7 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
     npcs = json.loads(request.npcs)
     npc_map = defaultdict(list)
     for i in range(3):
-        npc_idx = f"npc_{i+1}"
+        npc_idx = f"npc{i+1}"
         npc = npcs[npc_idx]
 
         name = npc['name']
