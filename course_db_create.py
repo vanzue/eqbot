@@ -56,6 +56,7 @@ def main():
             "npc1": {
                 "name": "Jason",
                 "personality": "A results-driven colleague from another department, Jason is direct and can become impatient under pressure. He values quick solutions and gets frustrated when meetings don’t progress as expected, though his intent is to push projects forward efficiently.",
+                "avatar_url": "/static/web/battlefield/boss11.webp",
                 "voice": "en-US-DavisNeural",
                 "style": "chat",
                 "rate": "0%"
@@ -63,6 +64,7 @@ def main():
             "npc2": {
                 "name": "Sam",
                 "personality": "An introverted and detail-oriented team member who prefers to take time to process information before speaking. Sam is sensitive to tense situations and tends to withdraw when feeling pressured or uncomfortable in group discussions.",
+                "avatar_url": "/static/web/battlefield/xiaoA1.webp",
                 "voice": "en-US-JasonNeural",
                 "style": "friendly",
                 "rate": "10%"
@@ -70,6 +72,7 @@ def main():
             "npc3": {
                 "name": "Anna",
                 "personality": "An optimistic and easy-going team member who is rarely affected by tense atmospheres. She tends to remain positive and often approaches problem-solving in a light-hearted manner, but she doesn't always sense the urgency in the room.",
+                "avatar_url": "/static/web/battlefield/xiaoB1.webp",
                 "voice": "en-US-JennyNeural",
 				"style": "chat",
 				"rate": "10%",
@@ -77,7 +80,7 @@ def main():
         }
         npc_data = json.dumps(npc_json, ensure_ascii=False, indent=4)
         print(npc_data)
-        crud.update_course_npc(db, 4, npc_data)
+        crud.update_course_npc(db, 3, npc_data)
         # course_data = schemas.CoursesCreate(
         #                 course_dim = "self_regulation",
         #                 course_level = 1,
