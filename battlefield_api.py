@@ -5,6 +5,8 @@ from fastapi import APIRouter, Request, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import Optional
 from collections import defaultdict
+from fastapi.concurrency import run_in_threadpool
+import asyncio
 
 import data_types
 import task_lib
@@ -174,8 +176,30 @@ def get_course_analysis(person_id: int, course_id: int, locale: str, db: Session
     return {"course_analysis": course_analysis}
 
 
+async def add_voice_to_response(response, npc_map):
+    tasks = []
+    for i, npc in enumerate(response['dialog']):
+        role = npc['role']
+        content = npc['content']
+        voice, style, rate = npc_map[role]
+
+        tasks.append(run_in_threadpool(call_azure_tts, content, voice, style, rate))
+
+    # in parallel
+    voice_urls = await asyncio.gather(*tasks)
+
+    # update response
+    for i, npc in enumerate(response['dialog']):
+        response['dialog'][i] = {
+            'role': npc['role'],
+            'content': npc['content'],
+            'voice_url': voice_urls[i]
+        }
+
+    return response
+
 @router.post("/chat/battlefield")
-def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Session = Depends(database.get_db)):
+async def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Session = Depends(database.get_db)):
     person_id = request.person_id
     course_id = request.course_id
     locale = request.locale
@@ -207,22 +231,24 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
     response = request_LLM_response(json.loads(
         request.chat_content), prompt, lang=locale)
     print("original:", response)
+
     # add voice to response
     if "dialog" in response:
-        for i, npc in enumerate(response['dialog']):
-            role = npc['role']
-            content = npc['content']
-            voice = npc_map[role][0]
-            style = npc_map[role][1]
-            rate = npc_map[role][2]
+        response = await add_voice_to_response(response, npc_map)
+        # for i, npc in enumerate(response['dialog']):
+        #     role = npc['role']
+        #     content = npc['content']
+        #     voice = npc_map[role][0]
+        #     style = npc_map[role][1]
+        #     rate = npc_map[role][2]
 
-            voice_url = call_azure_tts(content, voice, style, rate)
-            response['dialog'][i] = {
-                'role': role,
-                'content': content,
-                'voice_url': voice_url
-            }
-        print("update:", response)
+        #     voice_url = call_azure_tts(content, voice, style, rate)
+        #     response['dialog'][i] = {
+        #         'role': role,
+        #         'content': content,
+        #         'voice_url': voice_url
+        #     }
+        # print("update:", response)
 
 
     # check task status
@@ -232,6 +258,7 @@ def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, db: Se
     elif course_id == 3:
         task_check = task_lib.check_course3(response)
     return {"response": response, "task_check": task_check}
+
 
 @router.post("/eval/battlefield")
 def create_course_eval(request: data_types.BattlefieldEval, locale: str, db: Session = Depends(database.get_db)):
