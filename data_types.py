@@ -53,6 +53,7 @@ class BattlefieldRequest(BaseModel):
     course_id: int
     chat_content: str
     locale: str = "zh"
+    npcs: str
 
 class BattlefieldEval(BaseModel):
     person_id: int

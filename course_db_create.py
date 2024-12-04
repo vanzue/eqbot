@@ -55,34 +55,45 @@ def main():
         npc_json = {
             "npc1": {
                 "name": "Jason",
-                "personality": "A results-driven colleague from another department, Jason is direct and can become impatient under pressure. He values quick solutions and gets frustrated when meetings don’t progress as expected, though his intent is to push projects forward efficiently."
+                "personality": "A results-driven colleague from another department, Jason is direct and can become impatient under pressure. He values quick solutions and gets frustrated when meetings don’t progress as expected, though his intent is to push projects forward efficiently.",
+                "voice": "en-US-DavisNeural",
+                "style": "chat",
+                "rate": "0%"
             },
             "npc2": {
                 "name": "Sam",
-                "personality": "An introverted and detail-oriented team member who prefers to take time to process information before speaking. Sam is sensitive to tense situations and tends to withdraw when feeling pressured or uncomfortable in group discussions."
+                "personality": "An introverted and detail-oriented team member who prefers to take time to process information before speaking. Sam is sensitive to tense situations and tends to withdraw when feeling pressured or uncomfortable in group discussions.",
+                "voice": "en-US-JasonNeural",
+                "style": "friendly",
+                "rate": "10%"
             },
             "npc3": {
                 "name": "Anna",
-                "personality": "An optimistic and easy-going team member who is rarely affected by tense atmospheres. She tends to remain positive and often approaches problem-solving in a light-hearted manner, but she doesn't always sense the urgency in the room."
+                "personality": "An optimistic and easy-going team member who is rarely affected by tense atmospheres. She tends to remain positive and often approaches problem-solving in a light-hearted manner, but she doesn't always sense the urgency in the room.",
+                "voice": "en-US-JennyNeural",
+				"style": "chat",
+				"rate": "10%",
             }
         }
         npc_data = json.dumps(npc_json, ensure_ascii=False, indent=4)
-        course_data = schemas.CoursesCreate(
-                        course_dim = "self_regulation",
-                        course_level = 1,
-                        prompt = """
-                            "You are a master of emotional quotient. You will observe conversations in a scenario and you will help npc generate dialog, evaluate my EQ and help drive the progress of conversation.   **Background of the conversation**: Today, I'm attending a cross-department communication meeting to discuss an urgent issue in Jason's project. Jason, from another department, is seeking collaboration and ideas for a solution. He asks the team (Sam, Anna, and user) for feedback, but the room falls into silence as no one responds immediately. Jason, feeling frustrated, raises his voice slightly, saying, \"Why isn’t anyone sharing ideas? I thought this was a team effort!\" The atmosphere becomes tense. Sam appears uncomfortable, while Anna remains relaxed, unaffected by the tension.
-                            """, 
-                        title = "Managing Tensions in a Meeting2",
-                        background = "Jason joins your team meeting, frustrated by the lack of feedback on his project.Tension rises as Sam feels uneasy, and Anna stays clam. How will you respond to ease the situation?",
-                        location = "Meeting Room",
-                        npc = npc_data,
-                        locale = "en",
-                        task = "Cheee up Sam while avoiding further infuriating Jason:Encourage teammates to engage and get at least one to say, \"I agree with you\"",
-                        image = None
-                    )
-        db_course_data = crud.create_course(db, course_data)
-        print(f"Created Course: {db_course_data.id}")
+        print(npc_data)
+        crud.update_course_npc(db, 4, npc_data)
+        # course_data = schemas.CoursesCreate(
+        #                 course_dim = "self_regulation",
+        #                 course_level = 1,
+        #                 prompt = """
+        #                     "You are a master of emotional quotient. You will observe conversations in a scenario and you will help npc generate dialog, evaluate my EQ and help drive the progress of conversation.   **Background of the conversation**: Today, I'm attending a cross-department communication meeting to discuss an urgent issue in Jason's project. Jason, from another department, is seeking collaboration and ideas for a solution. He asks the team (Sam, Anna, and user) for feedback, but the room falls into silence as no one responds immediately. Jason, feeling frustrated, raises his voice slightly, saying, \"Why isn’t anyone sharing ideas? I thought this was a team effort!\" The atmosphere becomes tense. Sam appears uncomfortable, while Anna remains relaxed, unaffected by the tension.
+        #                     """, 
+        #                 title = "Managing Tensions in a Meeting2",
+        #                 background = "Jason joins your team meeting, frustrated by the lack of feedback on his project.Tension rises as Sam feels uneasy, and Anna stays clam. How will you respond to ease the situation?",
+        #                 location = "Meeting Room",
+        #                 npc = npc_data,
+        #                 locale = "en",
+        #                 task = "Cheee up Sam while avoiding further infuriating Jason:Encourage teammates to engage and get at least one to say, \"I agree with you\"",
+        #                 image = None
+        #             )
+        # db_course_data = crud.create_course(db, course_data)
+        # print(f"Created Course: {db_course_data.id}")
 
         # person_course_data = schemas.PersonalInfoCoursesCreate(
         #     user_id=1,
