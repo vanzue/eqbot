@@ -3,7 +3,7 @@ import requests
 import json
 
 from langchain_core.prompts import ChatPromptTemplate
-from llm.keyless_setup import creat_llm
+from keyless_setup import creat_llm
 
 
 def request_LLM_response(chat_history):
@@ -15,7 +15,7 @@ def request_LLM_response(chat_history):
                     - Professional and objective, while maintaining a polite and neutral tone.
 
                     Your response should include:
-                    title: A concise phrase summarizing the key emotional intelligence aspect of the chat (e.g., "Responsiveness and Proactive Communication"). 
+                    title: A concise phrase summarizing the key emotional intelligence aspect of the chat (e.g., "Responsiveness and Proactive Communication"), please includes emoji(eg. U+1F604, U+1F31F)
                     summary: One sentence describing the current issue
                     You can: 
                     [First actionable suggestion based on the current context] 
@@ -27,7 +27,7 @@ def request_LLM_response(chat_history):
                     {{
                         "title": [
                             {{
-                                "title: [A concise phrase summarizing the key emotional intelligence aspect of the chat. ]
+                                "title: [A concise phrase summarizing the key emotional intelligence aspect of the chat, please includes emoji(eg. U+1F604, U+1F31F)]
                             }}
                         ], 
                         "summary": [
@@ -115,7 +115,7 @@ def request_LLM_response_zh(chat_history):
                     - 专业和客观，同时保持礼貌和中立的语气。
 
                     你的回答应该包括：
-                    title：一个简洁的短语，概括了聊天中关键的情商方面（例如，“反应能力和主动沟通”）。
+                    title：一个简洁的短语，概括了聊天中关键的情商方面（例如，“反应能力和主动沟通”），包含emoji(eg. U+1F604, U+1F31F)。
                     summary：用一句话描述当前问题
                     您可以:
                     [基于当前背景的第一个可操作建议]
@@ -127,7 +127,7 @@ def request_LLM_response_zh(chat_history):
                     {{
                         "title": [
                             {{
-                                "title: [一个简洁的短语，概括了聊天中关键的情商方面（例如，“反应能力和主动沟通”）]
+                                "title: [一个简洁的短语，概括了聊天中关键的情商方面（例如，“反应能力和主动沟通”），包含emoji(eg. U+1F604, U+1F31F)]
                             }}
                         ], 
                         "summary": [
