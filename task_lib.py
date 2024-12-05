@@ -30,7 +30,6 @@ def check_course1(response):
 def check_course3(response):
     # task1
     if "moods" in response:
-        print("in moods")
         isSam = True
         isJason = True
         moods = response["moods"]
@@ -46,7 +45,6 @@ def check_course3(response):
 
     # task2
     if "dialog" in response:  
-        print("in dialog")  
         dialog = response["dialog"]
         for pr in dialog:
             # hard to pass, change "I agree with you" to "I agree"
