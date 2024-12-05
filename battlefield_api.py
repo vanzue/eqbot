@@ -80,7 +80,8 @@ def get_battlefield_map(
         res = course_result[i]
         status = res.status
         if status == "complete":
-            next_course_id = course_list[i+1].id
+            if i != len(course_result)-1:
+                next_course_id = course_list[i+1].id
     return {"course_list": course_list, "course_result": course_result, "next_course_id": next_course_id}
 
 @router.get("/get_course_data/{course_id}")
