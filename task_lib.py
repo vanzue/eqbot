@@ -30,6 +30,7 @@ def check_course1(response):
 def check_course3(response):
     # task1
     if "moods" in response:
+        print("in moods")
         isSam = True
         isJason = True
         moods = response["moods"]
@@ -44,7 +45,8 @@ def check_course3(response):
             return 1
 
     # task2
-    if "dialog" in response:    
+    if "dialog" in response:  
+        print("in dialog")  
         dialog = response["dialog"]
         for pr in dialog:
             # hard to pass, change "I agree with you" to "I agree"
@@ -52,3 +54,25 @@ def check_course3(response):
                 return 2
             
     return 0
+
+
+response = {
+		"comments": "You demonstrated good emotional intelligence by acknowledging Sam's need for time and reassuring him, which should help him feel more comfortable. You also validated Jason's feelings and recognized the team's effort, which may help ease his frustration. However, you could have given Anna a specific role or direction to ensure everyone is engaged.",
+		"moods": [
+			{
+				"role": "Jason",
+				"mood": "+3"
+			},
+			{
+				"role": "Sam",
+				"mood": "+4"
+			},
+			{
+				"role": "Anna",
+				"mood": "+0"
+			}
+		]
+	}
+
+res = check_course3(response)
+print(res)

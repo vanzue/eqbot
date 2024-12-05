@@ -173,9 +173,9 @@ async def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, 
 
     # check task status
     task_check = 0
-    if course_id == 1:
+    if course_id == 1 or course_id == 2:
         task_check = task_lib.check_course1(response)
-    elif course_id == 3:
+    elif course_id == 3 or course_id == 4:
         task_check = task_lib.check_course3(response)
     return {"response": response, "task_check": task_check}
 
