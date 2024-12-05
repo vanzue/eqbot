@@ -1,9 +1,6 @@
-import uuid
 import json
-import base64
 from fastapi import APIRouter, Request, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
-from typing import Optional
 from collections import defaultdict
 from fastapi.concurrency import run_in_threadpool
 import asyncio
@@ -17,115 +14,38 @@ from text_to_voice import call_azure_tts
 
 router = APIRouter()
 
-def encode_image_to_base64(binary_data: bytes) -> str:
-    return base64.b64encode(binary_data).decode("utf-8")
 
+# @router.get("/get_battlefield/{user_id}")
+# def get_battlefield(user_id: int, locale: str, db: Session = Depends(database.get_db)):
+#     eq_scores = crud.get_eq_scores_by_person_id(db, user_id=user_id)
 
-# @router.post("/chat/batttlefield/v2")
-# def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
-#     personal_id = request.person_id
-#     course_id = request.course_id
-    
-#     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
-#     print(matching_course.prompt)
-
-#     response = request_LLM_response_v2(json.loads(request.chat_content), matching_course.prompt)
-#     return response
-
-# @router.post("/chat/batttlefield")
-# def chat_battlefield(request: data_types.BattlefieldRequest, db: Session = Depends(database.get_db)):
-#     personal_id = request.person_id
-#     course_id = request.course_id
-
-#     matching_course = crud.get_course_by_coursid(db, course_id=course_id)
-#     print(matching_course.prompt)
-
-#     response = request_LLM_response(json.loads(request.chat_content), matching_course.prompt)
-#     return response
-
-
-# @router.post("/eval/battlefield") 
-# def create_course_eval(request: data_types.BattlefieldEval, db: Session = Depends(database.get_db)):
-#     # return chat_eval(request.chat_content)
-#     eval_data = chat_eval(request.chat_content)['eval']
-#     course_type, course_level = crud.get_course_by_id(db, course_id=request.course_id)
-#     # print(course_type, course_level)
-
-#     # update stars
-#     person_star = request.person_star
-#     # db_person = crud.get_personal_id_by_personid(db, personid=request.person_id)
-#     # db_person.num_star += person_star
-#     db_star = crud.update_personal_stars(db, id=request.person_id, num_stars=person_star)
-#     # print("number of stars: ", db_star)
-
-#     # 创建新的数据库条目
-#     course_entry = schemas.PersonalInfoCoursesCreate(
-#         person_id=request.person_id,
-#         course_id=request.course_id,
-#         course_type=course_type,
-#         course_level=course_level, 
-#         status=request.status,
-#         result=request.result,
-#         comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
-#         comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
-#         comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None
-#     )
-#     # print(eval_data[0]['analysis'] if len(eval_data) > 0 else None)
-#     # print(eval_data[1]['analysis'] if len(eval_data) > 1 else None)
-#     # print(eval_data[2]['analysis'] if len(eval_data) > 2 else None)
-
-#     # create new
-#     db_course = crud.get_coursesperson_by_person_id(db, request.person_id, request.course_id)
-#     # print(db_course.person_id, db_course.course_id)
-#     if db_course is None:
-#         print("not have")
-#         db_course = crud.create_personal_info_course(db, course_entry)
+#     if not eq_scores:
+#         print("no eq scores")
+#         lowest_dimension = 1
 #     else:
-#         print("have")
-#         db_course = crud.update_personal_info_course(db, 
-#                                                     person_id=request.person_id,
-#                                                     course_id=request.course_id,
-#                                                     course_level=course_level,
-#                                                     status=request.status,
-#                                                     result=request.result,
-#                                                     comment1=eval_data[0]['analysis'] if len(eval_data) > 0 else None,
-#                                                     comment2=eval_data[1]['analysis'] if len(eval_data) > 1 else None,
-#                                                     comment3=eval_data[2]['analysis'] if len(eval_data) > 2 else None)
-#     return {"db_course": db_course}
-
-
-
-@router.get("/get_battlefield/{user_id}")
-def get_battlefield(user_id: int, locale: str, db: Session = Depends(database.get_db)):
-    eq_scores = crud.get_eq_scores_by_person_id(db, user_id=user_id)
-
-    if not eq_scores:
-        print("no eq scores")
-        lowest_dimension = 1
-    else:
-        scores = {
-            "dimension1": eq_scores.dimension1_score,
-            "dimension2": eq_scores.dimension2_score,
-            "dimension3": eq_scores.dimension3_score,
-            "dimension4": eq_scores.dimension4_score,
-            "dimension5": eq_scores.dimension5_score
-        }
+#         scores = {
+#             "dimension1": eq_scores.dimension1_score,
+#             "dimension2": eq_scores.dimension2_score,
+#             "dimension3": eq_scores.dimension3_score,
+#             "dimension4": eq_scores.dimension4_score,
+#             "dimension5": eq_scores.dimension5_score
+#         }
         
-        # 找到最低分的维度
-        lowest_dimension_key = min(scores, key=scores.get)
-        lowest_dimension = int(lowest_dimension_key.replace("dimension", ""))
+#         # find the lowest dim
+#         lowest_dimension_key = min(scores, key=scores.get)
+#         lowest_dimension = int(lowest_dimension_key.replace("dimension", ""))
         
-    eq_dimensions = ["情绪侦查力", "情绪掌控力", "人际平衡术", "沟通表达力", "社交得体度"]
-    # eq_type = eq_dimensions[lowest_dimension]
-    eq_type = "情绪掌控力"
+#     eq_dimensions = ["情绪侦查力", "情绪掌控力", "人际平衡术", "沟通表达力", "社交得体度"]
+#     # eq_type = eq_dimensions[lowest_dimension]
+#     eq_type = "情绪掌控力"
 
-    person_course = crud.get_coursesperson_by_person_id_all(db, person_id=user_id)
-    if not person_course:
-        new_course = crud.get_course_by_course_dim_and_level(db, course_dim=eq_type, course_level=1)
-        return {"courses": [new_course.id]}
-    else:
-        return {"courses": person_course}
-    # return {"course": person_course}
+#     person_course = crud.get_coursesperson_by_person_id_all(db, person_id=user_id)
+#     if not person_course:
+#         new_course = crud.get_course_by_course_dim_and_level(db, course_dim=eq_type, course_level=1)
+#         return {"courses": [new_course.id]}
+#     else:
+#         return {"courses": person_course}
+#     # return {"course": person_course}
 
 @router.get("/course_exists/{person_id}")
 def course_exists(person_id: int, locale: str, db: Session = Depends(database.get_db)):
@@ -253,9 +173,9 @@ async def chat_battlefield(request: data_types.BattlefieldRequest, locale: str, 
 
     # check task status
     task_check = 0
-    if course_id == 1:
+    if course_id == 1 or course_id == 2:
         task_check = task_lib.check_course1(response)
-    elif course_id == 3:
+    elif course_id == 3 or course_id == 4:
         task_check = task_lib.check_course3(response)
     return {"response": response, "task_check": task_check}
 
@@ -276,7 +196,6 @@ def create_course_eval(request: data_types.BattlefieldEval, locale: str, db: Ses
     db_diamond = crud.update_personal_diamond(db, id=request.person_id, num_diamond=person_diamond)
     # print("number of diamonds: ", db_diamond)
 
-    # 创建新的数据库条目
     course_entry = schemas.PersonalInfoCoursesCreate(
         user_id=person_id,
         course_id=course_id,

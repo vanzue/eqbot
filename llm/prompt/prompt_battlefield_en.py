@@ -83,7 +83,7 @@ Format is the as follows:
 }}
 
 3. HelpReply
-**Only when I issue the "HelpReply" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas)**:
+**Only when I issue the "HelpReply" command**, provide the best suitable response directly, without extra information. **Standard output format (do not include the word 'json', and do not omit commas, number of character should be limited under 160)**:
 {{
  
     "responsive": "xxx"

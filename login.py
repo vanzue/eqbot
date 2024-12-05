@@ -44,18 +44,11 @@ def create_profile_endpoint(name, auth_provider, union_id, unique_id, gender, ag
 # 小程序
 @router.post("/wxprogram/login")
 async def line_webhook(request: data_types.MiniProgramLogin, db: Session = Depends(database.get_db)):
-    # body = await request.body()
-    # try:
-    #     body_json = json.loads(body)
-    # except json.JSONDecodeError as e:
-    #     return JSONResponse(status_code=400, content={"message": "Invalid JSON"})
     code = request.code
     headers = {
         "Content-Type": "application/json",
     }
 
-    # print(weixin_appid)
-    # print(weixin_secret)
 
     message_url = f"https://api.weixin.qq.com/sns/jscode2session?appid={weixin_appid}&secret={weixin_secret}&js_code={code}&grant_type=authorization_code"
     response = requests.get(message_url, headers=headers)
@@ -63,12 +56,7 @@ async def line_webhook(request: data_types.MiniProgramLogin, db: Session = Depen
     if response.status_code != 200:
         return JSONResponse(status_code=response.status_code, content={"message": "Failed to get session"})
     print(response.json())
-    # {'session_key': 'kxZmRzab5re+UlT9/XVAkg==', 'openid': 'obhRt7R4GThypSkeNpmc3TqFSy1M', 'unionid': 'oZL-Y6qZ4U9UZcdI42IYMNRPhbX0'}
-    
-    # test
-    # session_key = "kxZmRzab5re+UlT9/XVAkg=="
-    # open_id = "obhRt7R4GThypSkeNpmc3TqFSy1M"
-    # union_id = "oZL-Y6qZ4U9UZcdI42IYMNRPhbX0"
+
     union_id = response.json().get('unionid')
     open_id = response.json().get('open_id')
     session_key = response.json().get('session_key')
@@ -101,8 +89,6 @@ async def line_webhook(request: data_types.MiniProgramLogin, db: Session = Depen
 
     pc = WXBizDataCrypt(appId, session_key)
     info_data = pc.decrypt(encryptedData, iv)
-    # print(pc.decrypt(encryptedData, iv))
-    # {'openId': 'oGZUI0egBJY1zhBYw2KhdUfwVJJE', 'nickName': 'Band', 'gender': 1, 'language': 'zh_CN', 'city': 'Guangzhou', 'province': 'Guangdong', 'country': 'CN', 'avatarUrl': 'http://wx.qlogo.cn/mmopen/vi_32/aSKcBBPpibyKNicHNTMM0qJVh8Kjgiak2AHWr8MHM4WgMEm7GFhsf8OYrySdbvAMvTsw3mo8ibKicsnfN5pRjl1p8HQ/0', 'unionId': 'ocMvos6NjeKLIBqg5Mr9QjxrP1FA', 'watermark': {'timestamp': 1477314187, 'appid': 'wx4f4bc4dec97d474b'}}
 
     # create new user
     nickname = info_data['nickName']
@@ -144,14 +130,6 @@ async def login_app(request: Request, db: Session = Depends(database.get_db)):
 
     if response.status_code != 200:
         return JSONResponse(status_code=response.status_code, content={"message": "Failed to get session"})
-    # print(response.json())
-    # {'access_token': '86_qsBjQYJn7-iDonUCWvB0YT43LS95J5XJFsZopKGJGGDcEriAGTglTNRVY9HEQkCI5zQjaCpb8Ldw1_l_xB-Bllzf3e6RgB2Yeqdijm8dGWc', 
-    # 'expires_in': 7200, 
-    # 'refresh_token': '86_r_Zgh8ofu0msyc1Sw3pXjs-tYSJEv--gA85wbDRT3G1t49e2DsTPUWH6IFS7gkacFih97JCswTLLKeAaIHu5u_u88HfYNQlSokz0otlq9Ik', 
-    # 'openid': 'oft6z6TTPMwcpL_Dyg0C_Yr2zPRQ', 
-    # 'scope': 'snsapi_userinfo', 
-    # 'unionid': 'oZL-Y6jIyyC2iRPYAkO7UImdKGTs'}
-
 
     union_id = response.json().get('unionid')
     open_id = response.json().get('openid')
