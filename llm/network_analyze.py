@@ -237,7 +237,7 @@ def retry_parse_LLMresponse(chat_history, locale=None, max_retries=5):
             return analysis
         except json.JSONDecodeError as e:
             attempt += 1
-            print(f"Attempt {attempt} failed. Retrying...")
+            print(f"Attempt {attempt} failed. Retrying... for analysis")
             if attempt == max_retries:
                 print("Max retries reached. Giving up.")
                 # raise
