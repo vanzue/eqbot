@@ -2,6 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import desc, func
 from sqlalchemy.exc import NoResultFound
 from . import models, schemas
+from datetime import datetime
 
 # CRUD for PersonalInfo
 
@@ -116,7 +117,12 @@ def get_personal_info_by_name(db: Session, name: str):
         models.PersonalInfo.name == name).limit(1).one_or_none()
     return personal_info\
 
-
+def calculate_days_since_registration(user: models.PersonalInfo):
+    if user.registration_date:
+        delta = datetime.utcnow() - user.registration_date
+        return delta.days + 1
+    else:
+        return None  # Handle cases where registration_date is not set
 
 def get_personal_info_by_job_id(db: Session, job_id: str):
     personal_info = db.query(models.PersonalInfo).filter(

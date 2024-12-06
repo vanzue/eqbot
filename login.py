@@ -6,6 +6,7 @@ import requests
 from database import crud, schemas, database
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, Request
+from datetime import datetime
 
 import data_types
 from WXBizDataCrypt_login import WXBizDataCrypt
@@ -36,7 +37,8 @@ def create_profile_endpoint(name, auth_provider, union_id, unique_id, gender, ag
                             email=email,
                             avatar=avatar,
                             issues=issues, 
-                            job_id=job_id)
+                            job_id=job_id,
+                            registration_date=datetime.utcnow())
     db_personal_info = crud.create_personal_info(db, personal_info_data)
 
     return job_id, db_personal_info.id

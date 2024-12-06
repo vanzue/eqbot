@@ -11,7 +11,6 @@ class CreateUserRequest(BaseModel):
     email: str
     avatar: str
     issues: str
-    job_id: str
 
 class SignatureVerifyModel(BaseModel):
     msg_signature: str
