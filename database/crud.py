@@ -284,7 +284,6 @@ def delete_course(db: Session, course_id: int):
 def update_course_npc(db: Session, course_id: int, new_npc: str):
     db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
     
-    # 更新 NPC 属性
     db_course.npc = new_npc
     db.commit()
     db.refresh(db_course)
@@ -294,8 +293,17 @@ def update_course_npc(db: Session, course_id: int, new_npc: str):
 def update_course_title(db: Session, course_id: int, new_title: str):
     db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
     
-    # 更新 NPC 属性
     db_course.title = new_title
+    db.commit()
+    db.refresh(db_course)
+    
+    return db_course
+
+def update_course_color(db: Session, course_id: int, background_color: str, border_color: str):
+    db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
+    
+    db_course.border_color = border_color
+    db_course.background_color = background_color
     db.commit()
     db.refresh(db_course)
     
@@ -304,7 +312,6 @@ def update_course_title(db: Session, course_id: int, new_title: str):
 def update_course_task(db: Session, course_id: int, new_task: str):
     db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
     
-    # 更新 NPC 属性
     db_course.task = new_task
     db.commit()
     db.refresh(db_course)
