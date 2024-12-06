@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 import os
 import uuid
 import json
+import random
 
 import data_types
 from database import crud, database, schemas
@@ -34,6 +35,10 @@ async def upload_image(file: UploadFile = File(...), locale: str="en"):
     temp_filepath = os.path.join("temp_images", temp_filename)
     os.makedirs("temp_images", exist_ok=True)
 
+    # emoji, unicode
+    emoji_list = ["U+1F31F", "U+1F49B", "U+1F527", "U+1F64C", "U+270D", "U+1F31E"]
+    emoji = random.choice(emoji_list)
+
     with open(temp_filepath, "wb") as f:
             f.write(await file.read())
     try:
@@ -42,7 +47,7 @@ async def upload_image(file: UploadFile = File(...), locale: str="en"):
         res = get_image2text(image_path=temp_filepath)
         chat_history = res['chat_history']
         chat_summary = res['summary']
-        low_dim = res['low_dim']
+        low_dim = res['low_dim'] + emoji
     finally:
         # Delete the temporary file after processing
         if os.path.exists(temp_filepath):
