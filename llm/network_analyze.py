@@ -226,7 +226,8 @@ def parse_LLMresponse(json_data):
 
 def retry_parse_LLMresponse(chat_history, locale=None, max_retries=5):
     attempt = 0
-    while attempt < max_retries:
+    # while attempt < max_retries:
+    while 1:
         try:
             if locale == "en":
                 json_data = request_LLM_response(chat_history)

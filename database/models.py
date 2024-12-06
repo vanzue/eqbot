@@ -73,6 +73,8 @@ class Courses(Base):
     locale = Column(UnicodeText)
     task = Column(UnicodeText)
     image = Column(UnicodeText) # url
+    border_color = Column(Unicode(50), nullable=True)  # Hex code
+    background_color = Column(Unicode(50), nullable=True)  # Hex code
 
 
 # PersonalInfoCourses Table (Many-to-Many relationship between PersonalInfo and Courses)

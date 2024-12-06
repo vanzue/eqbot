@@ -106,6 +106,8 @@ class CoursesBase(BaseModel):
     locale: str 
     task: Optional[str]
     image: Optional[str]
+    border_color: str
+    background_color: str
 
 
 class CoursesCreate(CoursesBase):
