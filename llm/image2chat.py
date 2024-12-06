@@ -97,14 +97,15 @@ def parse_chatHistory(json_data):
 
 def get_image2text(image_path, max_retries=5):
     attempt = 0
-    while attempt < max_retries:
+    # while attempt < max_retries:
+    while 1:
         try:
             json_data = image2text(image_path)
             analysis = parse_chatHistory(json_data)
             return analysis
         except json.JSONDecodeError as e:
             attempt += 1
-            print(f"Attempt {attempt} failed. Retrying...")
+            print(f"Attempt {attempt} failed. Retrying... for images")
             if attempt == max_retries:
                 print("Max retries reached. Giving up.")
                 # raise
