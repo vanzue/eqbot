@@ -111,7 +111,8 @@ async def get_homepage(personal_id: int, locale: str, db: Session = Depends(data
             "job_id": personal_info.job_id,
             "num_diamond": personal_info.num_diamond,
             "num_star": num_star,
-            "days_till_reg": days_till_reg
+            "days_till_reg": days_till_reg,
+            "wordings": "Empathy is a corerstone in buildingtrust; validating others' feelings withphrases like \"| can see why you feel thatway \" builds connection."
         },
         "eq_scores": {
             "score": overall_score, 

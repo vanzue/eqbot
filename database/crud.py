@@ -291,6 +291,26 @@ def update_course_npc(db: Session, course_id: int, new_npc: str):
     
     return db_course
 
+def update_course_title(db: Session, course_id: int, new_title: str):
+    db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
+    
+    # 更新 NPC 属性
+    db_course.title = new_title
+    db.commit()
+    db.refresh(db_course)
+    
+    return db_course
+
+def update_course_task(db: Session, course_id: int, new_task: str):
+    db_course = db.query(models.Courses).filter(models.Courses.id == course_id).first()
+    
+    # 更新 NPC 属性
+    db_course.task = new_task
+    db.commit()
+    db.refresh(db_course)
+    
+    return db_course
+
 # CRUD for PersonalInfoCourses (Many-to-Many Relationship)
 
 
