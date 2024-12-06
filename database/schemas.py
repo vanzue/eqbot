@@ -18,6 +18,7 @@ class PersonalInfoBase(BaseModel):
     issues: str
     job_id: str
     num_diamond: Optional[int] = 500
+    registration_date: datetime
 
 
 class PersonalInfoCreate(PersonalInfoBase):

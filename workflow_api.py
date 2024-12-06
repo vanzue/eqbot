@@ -30,7 +30,8 @@ async def create_personal_info_endpoint(
                             tag_description=tag_description, 
                             job_level=job_level, 
                             issues=issues, 
-                            job_id=job_id)
+                            job_id=job_id,
+                            registration_date=datetime.utcnow())
     db_personal_info = crud.create_personal_info(db, personal_info_data)
     return db_personal_info
 
@@ -64,7 +65,8 @@ async def create_profile(request: data_types.CreateUserRequest, locale: str, db:
                             email=email,
                             avatar=avatar,
                             issues=issues, 
-                            job_id=job_id)
+                            job_id=job_id,
+                            registration_date=datetime.utcnow())
     db_personal_info = crud.create_personal_info(db, personal_info_data)
 
     return {"job_id": job_id, "user_id": db_personal_info.id}
@@ -98,6 +100,9 @@ async def get_homepage(personal_id: int, locale: str, db: Session = Depends(data
     # num_star calculate
     num_star = crud.calculate_total_result(db, user_id=personal_id)
 
+    # cal days
+    days_till_reg = crud.calculate_days_since_registration(personal_info)
+
     response = {
         "personal_info": {
             "name": personal_info.name,
@@ -105,7 +110,8 @@ async def get_homepage(personal_id: int, locale: str, db: Session = Depends(data
             "tag_description": personal_info.tag_description,
             "job_id": personal_info.job_id,
             "num_diamond": personal_info.num_diamond,
-            "num_star": num_star
+            "num_star": num_star,
+            "days_till_reg": days_till_reg
         },
         "eq_scores": {
             "score": overall_score, 

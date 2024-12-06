@@ -2,6 +2,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Text, DateTime, JSON
 from sqlalchemy.orm import relationship
 from .database import Base
 from sqlalchemy.types import Unicode, UnicodeText
+from datetime import datetime
 
 # PersonalInfo Table
 class PersonalInfo(Base):
@@ -25,6 +26,7 @@ class PersonalInfo(Base):
     issues = Column(Unicode(100))
     job_id = Column(Unicode(100))
     num_diamond = Column(Integer)
+    registration_date = Column(DateTime, default=datetime.utcnow, nullable=False)
 
     eq_scores = relationship("EQScore", back_populates="person")
     courses = relationship("PersonalInfoCourses", back_populates="person")
