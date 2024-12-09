@@ -58,7 +58,7 @@ def request_LLM_response(chat_history):
                     {{      
                         "title": [
                             {{
-                                "title: "U+1F31F Clarity and Timely Communication"
+                                "title: "❤️Clarity and Timely Communication"
                             }}
                         ], 
                         "summary": [
@@ -158,7 +158,7 @@ def request_LLM_response_zh(chat_history):
                     {{      
                         "title": [
                             {{
-                                "title: "U+1F31F 清晰和及时的沟通" 
+                                "title: "❤️清晰和及时的沟通" 
                             }}
                         ], 
                         "summary": [
