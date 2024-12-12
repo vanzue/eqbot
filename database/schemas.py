@@ -171,6 +171,8 @@ class ReplyStateBase(BaseModel):
     chat_history: str
     stage2_output: Optional[str] = None
     stage_number: Optional[int] = None
+    stage_str: Optional[str] = None
+    multi_number: Optional[int] = None
 
 
 class ReplyStateCreate(ReplyStateBase):

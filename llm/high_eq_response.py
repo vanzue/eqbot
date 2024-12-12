@@ -182,6 +182,13 @@ class EQmaster:
             response = self.get_response_stage2(chat_history, "",
                                                 analyse)
         return response, analyse
+    
+    def get_analyze(self, chat_history,user_nick_name="", language="en"):
+        if(language == 'zh'):
+            analyse = self.get_response_stage1_zh(chat_history,user_nick_name)
+        else:
+            analyse = self.get_response_stage1(chat_history,user_nick_name)
+        return analyse
 
     def get_response_by_intent(self, chat_history, intent, analyze):
         response = self.get_response_stage2(chat_history,

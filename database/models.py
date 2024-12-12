@@ -120,6 +120,8 @@ class ReplyState(Base):
     chat_history = Column(UnicodeText)
     stage2_output = Column(UnicodeText)
     stage_number = Column(Integer)
+    stage_str = Column(UnicodeText)
+    multi_number = Column(Integer)
 
 class ReplyEval(Base):
     __tablename__ = 'ReplyEval'

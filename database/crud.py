@@ -453,7 +453,9 @@ def replace_reply_state(db: Session, reply_state_data: schemas.ReplyStateCreate)
             userId=reply_state_data.userId,
             chat_history=reply_state_data.chat_history,
             stage2_output=reply_state_data.stage2_output,
-            stage_number=reply_state_data.stage_number
+            stage_number=reply_state_data.stage_number,
+            stage_str=reply_state_data.stage_str,
+            multi_number=reply_state_data.multi_number
         )
         db.add(db_reply_state)
     else:

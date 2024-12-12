@@ -58,7 +58,8 @@ def reply2text(product, message: str, user_id, replyToken: str, db: Session):
             userId=str(user_id),
             chat_history="",
             stage2_output="",
-            stage_number=1
+            stage_number=1,
+            stage_str="none"
         )
         crud.replace_reply_state(db, state)
         reply_message(
@@ -69,22 +70,22 @@ def reply2text(product, message: str, user_id, replyToken: str, db: Session):
         response_line_or_telegram(product, responses,analyze, user_id, language)
 
 def response_line_or_telegram(product, responses,analyze, user_id, language: str):
-    if(product == "LINE"):
-        if language == 'en':
-            send_message("Suggested Reply:", user_id)
-        else:
-            send_message("建议回复:", user_id)
-        for response in responses:
-            send_message(response, user_id)
-        send_message(analyze, user_id)
+    if language == 'en':
+        send_message_line_or_telegram(product,"Suggested Reply:", user_id)
     else:
-        if language == 'en':
-            send_telegram_message(user_id,"Suggested Reply:")
-        else:
-            send_telegram_message(user_id,"建议回复:")
-        for response in responses:
-            send_telegram_message(user_id, response)
-        send_telegram_message(user_id, analyze)
+        send_message_line_or_telegram(product,"建议回复:", user_id)
+
+    for response in responses:
+        send_message_line_or_telegram(product,response, user_id)
+    send_message_line_or_telegram(product,"Ps: analysis is saved in memory, input /analysis to view", user_id)
+   
+
+def send_message_line_or_telegram(product, massage, user_id):
+    if(product == "LINE"):
+
+            send_message(massage, user_id)
+    else:
+            send_telegram_message(user_id, massage)
 
 def reply2image(product, message_id, user_id, replyToken: str, db: Session):
     url = f'https://api-data.line.me/v2/bot/message/{message_id}/content'
@@ -98,6 +99,33 @@ def reply2image(product, message_id, user_id, replyToken: str, db: Session):
 
 
 def local_Image(product, imagedate, user_id, replyToken, db: Session):
+    retrieved_state = crud.get_reply_state_by_product_and_user(
+        db, product, user_id)
+    if retrieved_state.stage_str == "none":
+        stage= schemas.ReplyStateCreate(
+            product=product,
+            userId=str(user_id),
+            chat_history="",
+            stage2_output="",
+            stage_number = retrieved_state.stage_number,
+            stage_str="analyze",
+            multi_number=0,
+        )
+        crud.replace_reply_state(db, stage)
+    elif retrieved_state.stage_str == "multi":
+        chat_history = json.loads(retrieved_state.chat_history) if retrieved_state.chat_history else []
+        
+        state = schemas.ReplyStateCreate(
+            product=product,
+            userId=str(user_id),
+            chat_history=json.dumps(chat_history) if chat_history else "", 
+            stage2_output="",
+            stage_number = retrieved_state.stage_number,
+            stage_str="multi",
+            multi_number=retrieved_state.multi_number+1,
+        )
+        crud.replace_reply_state(db, state)
+
     temp_filename = f"{uuid.uuid4()}.png"
     temp_filepath = os.path.join("temp_images", temp_filename)
     os.makedirs("temp_images", exist_ok=True)
@@ -108,16 +136,40 @@ def local_Image(product, imagedate, user_id, replyToken, db: Session):
 
 
 def get_response_from_image(product, IMAGE_PATH, user_id, replyToken, db: Session):
-    chat_history = image2text(image_path=IMAGE_PATH)
+    chat_history_img = image2text(image_path=IMAGE_PATH)
     try:
         os.remove(IMAGE_PATH)
         print(f"Deleted local image file: {IMAGE_PATH}")
     except Exception as e:
         print(f"An error occurred while deleting the image file: {e}")
-
-    responses, analyze, language= generate_auto_reply(
-        product, user_id, chat_history, "", db)
-    response_line_or_telegram(product, responses,analyze, user_id, language)
+    retrieved_state = crud.get_reply_state_by_product_and_user(
+        db, product, user_id)
+    print("stage_str:", retrieved_state.stage_str)
+    if retrieved_state.stage_str == "multi":
+        chat_history_more = json.loads(retrieved_state.chat_history) if retrieved_state.chat_history else ''
+        if chat_history_img:
+            chat_history_more=chat_history_more+chat_history_img
+       
+        stage= schemas.ReplyStateCreate(
+                product=product,
+                userId=str(user_id),
+                chat_history=json.dumps(chat_history_more),
+                stage2_output="",
+                stage_number = retrieved_state.stage_number,
+                stage_str="multi",
+                multi_number=retrieved_state.multi_number,
+            )
+        if retrieved_state.multi_number==5:
+            responses, analyze, language= generate_auto_reply(
+            product, user_id, chat_history_more, "", db)
+            response_line_or_telegram(product, responses,analyze, user_id, language)
+            stage.stage_str="analyze"
+        crud.replace_reply_state(db, stage)
+    else:
+        print("get stage_str:", retrieved_state.stage_str)
+        responses, analyze, language= generate_auto_reply(
+            product, user_id, chat_history_img, "", db)
+        response_line_or_telegram(product, responses,analyze, user_id, language)
 
 
 
@@ -190,7 +242,9 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
             userId=str(user_id),
             chat_history=json.dumps(chat_history),
             stage2_output=analyse,
-            stage_number=3)
+            stage_number=3,
+            stage_str="none",
+            multi_number=0)
         crud.replace_reply_state(db, state)
     else:
         # no chat history
@@ -207,7 +261,9 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 userId=str(user_id),
                 chat_history=json.dumps(chat_history),
                 stage2_output=analyse,
-                stage_number=3)
+                stage_number=3,
+                stage_str="none",
+                multi_number=0)
         else:
             chat_history = json.loads(retrieved_state.chat_history)
             language = eqmaster.detect_language(chat_history)
@@ -228,7 +284,9 @@ def generate_auto_reply(product: str, user_id: str, chat_history, intent,
                 userId=user_id,
                 stage2_output=json.dumps(response),
                 chat_history=retrieved_state.chat_history,
-                stage_number=3
+                stage_number=3,
+                stage_str="none",
+                multi_number=0
             )
             crud.replace_reply_state(db, state)
     print("response:", response)
@@ -251,17 +309,96 @@ async def telegram_webhook(request: Request,db: Session = Depends(database.get_d
     update_id = body_json['update_id']
     if update_id in processed_update_ids:
         return JSONResponse(status_code=200, content={"message": "Message received"})
-
     processed_update_ids.add(update_id)
     try:
+
         if 'photo' in message:
             reply2imageTelegram("Telegram", message['photo'][-1]['file_id'], message['chat']['id'], None, db)
         elif 'text' in message:
-            reply2text("Telegram", message['text'],
-                        message['chat']['id'], message['message_id'], db)
+            text = message['text']
+            chat_id = message['chat']['id']
+            if text.startswith('/'):
+                handle_command("Telegram",text, chat_id,db)
+            else:
+                reply2text("Telegram", message['text'],
+                            message['chat']['id'], message['message_id'], db)
     except json.JSONDecodeError as e:
         return JSONResponse(status_code=400, content={"message": "An error occurred while processing the message"})
     return JSONResponse(status_code=200, content={"message": "Message received"})
+
+def handle_command(product ,command, chat_id,db: Session):
+    retrieved_state = crud.get_reply_state_by_product_and_user(db, product, chat_id)
+    print("retrieved_state:", retrieved_state.stage_str)
+    if retrieved_state.stage_str == "multi":
+         if command != "/clean" and command != "/reply" and command != "/analyze":
+            send_message_line_or_telegram(product,  "please input image or /reply or /clean", chat_id)
+            return
+    if command == "/start":
+        send_message_line_or_telegram(product,  "Welcome to EQoach! Drop your chat screenshot and I will do analyze for you. \nOr you can type 'new' to start a new chat analysis.", chat_id)
+    elif command == "/help":
+        send_message_line_or_telegram(product,  "Available commands:\n/start - Start the bot\n/help - Get help information\n/info - Get information about the bot", chat_id)
+    elif command == "/multi":
+        print(retrieved_state.stage_str)
+        if retrieved_state.stage_str == "none":
+            stage= schemas.ReplyStateCreate(
+                product=product,
+                userId=str(chat_id),
+                chat_history="",
+                stage2_output="",
+                stage_number = retrieved_state.stage_number,
+                stage_str="multi",
+                multi_number=0,
+            )
+            crud.replace_reply_state(db, stage)
+        send_message_line_or_telegram(product,  "no more than 5 chat images, input /reply as an end", chat_id)
+    elif command == "/reply":
+        if retrieved_state.stage_str == "multi":
+            chat_history = json.loads(retrieved_state.chat_history)
+            print("chat_history:", chat_history)
+            eqmaster = EQmaster()
+            responses, analyze, language= generate_auto_reply(
+            product, chat_id, chat_history, "", db)
+            # state = schemas.ReplyStateCreate(
+            #     product=product,
+            #     userId=str(chat_id),
+            #     chat_history=json.dumps(chat_history),
+            #     stage2_output=analyze,
+            #     stage_number=3,
+            #     stage_str="none",
+            #     multi_number=0,
+            #     )
+            # crud.replace_reply_state(db, state)
+            response_line_or_telegram(product, responses,analyze, chat_id, "en")
+        else:
+            send_message_line_or_telegram(product, "No chat images to reply to.", chat_id)
+
+    elif command == "/clean":
+        if retrieved_state.stage_str == "multi":
+            stage= schemas.ReplyStateCreate(
+                product=product,
+                userId=str(chat_id),
+                chat_history="",
+                stage2_output="",
+                stage_number = retrieved_state.stage_number,
+                stage_str="none",
+                multi_number=0,
+            )
+            crud.replace_reply_state(db, stage)
+            send_message_line_or_telegram(product, "clean success!", chat_id)
+
+    elif command == "/analyze":
+        if retrieved_state.stage2_output:
+            send_message_line_or_telegram(product, f"Analysis: {retrieved_state.stage2_output }", chat_id)
+        else:
+            if retrieved_state.chat_history:
+                chat_history = json.loads(retrieved_state.chat_history)
+                responses, analyse, language = generate_auto_reply(
+                    product, chat_id, chat_history, "", db)
+                send_message_line_or_telegram(product,analyse, chat_id)
+            else:
+                send_message_line_or_telegram(product, "No analysis available.", chat_id)
+    else:
+        send_message_line_or_telegram(product, "Unknown command. Use /help to see available commands.", chat_id)
 
 def reply2imageTelegram(product, message_id, user_id, replyToken: str, db: Session):
     try:

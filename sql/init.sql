@@ -72,4 +72,18 @@ BEGIN
         ALTER TABLE ReplyState
         ADD chat_history TEXT;
     END
+    --检查列stage_str是否存在
+    IF NOT EXISTS (SELECT * FROM syscolumns WHERE id=OBJECT_ID('HighEqReplyState') AND name='stage_str')
+    BEGIN
+        -- 如果 stage_str 列不存在，则添加它
+        ALTER TABLE ReplyState
+        ADD stage_str TEXT;
+    END
+    --检查列multi_number是否存在
+    IF NOT EXISTS (SELECT * FROM syscolumns WHERE id=OBJECT_ID('HighEqReplyState') AND name='multi_number')
+    BEGIN
+        -- 如果 multi_number 列不存在，则添加它
+        ALTER TABLE ReplyState
+        ADD multi_number INT;
+    END
 END
