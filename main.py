@@ -34,9 +34,9 @@ import urllib.parse
 load_dotenv()
 
 
-sToken = os.getenv('TOKEN')
-sEncodingAESKey = os.getenv('ENCODING_AES_KEY')
-sCorpID = os.getenv('CORPID')
+sToken = os.getenv("TOKEN")
+sEncodingAESKey = os.getenv("ENCODING_AES_KEY")
+sCorpID = os.getenv("CORPID")
 
 app = FastAPI()
 app.include_router(eqmaster_router)
@@ -64,14 +64,18 @@ def verify_signature(request: SignatureVerifyModel, i):
     if not qy_api:
         return ""
     ret, echo_str = qy_api.VerifyURL(
-        request.msg_signature, request.timestamp,
-        request.nonce, urllib.parse.unquote(request.echostr))
-    if (ret != 0):
+        request.msg_signature,
+        request.timestamp,
+        request.nonce,
+        urllib.parse.unquote(request.echostr),
+    )
+    if ret != 0:
         print("ERR: VerifyURL ret: " + str(ret))
-        return ("failed")
+        return "failed"
     else:
         print("VerifyURL success")
         return echo_str
+
 
 # @app.get('/')
 # @app.post('/')
@@ -90,22 +94,26 @@ def verify_signature(request: SignatureVerifyModel, i):
 #     return echo_str
 
 
-@app.get('/')
+@app.get("/")
 async def root():
-    return RedirectResponse(url='/ping')
+    return RedirectResponse(url="/ping")
 
-# app.mount("/home", StaticFiles(directory="static", html=True), name="home")
 
-@app.get('/profile')
+app.mount("/home", StaticFiles(directory="static", html=True), name="home")
+
+
+@app.get("/profile")
 async def serve_profile():
-    profile_path = os.path.join('static', 'apple-app-site-association.mobileprovision')
+    profile_path = os.path.join("static", "apple-app-site-association.mobileprovision")
     if not os.path.exists(profile_path):
         raise HTTPException(status_code=404, detail="Profile file not found")
-    return FileResponse(profile_path, media_type='application/x-apple-aspen-config')
+    return FileResponse(profile_path, media_type="application/x-apple-aspen-config")
 
-@app.get('/ping')
+
+@app.get("/ping")
 async def ping():
     return "version 1.1"
+
 
 if __name__ == "__main__":
     # This will start the FastAPI server and allow for debugging
