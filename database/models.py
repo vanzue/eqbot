@@ -133,3 +133,12 @@ class ReplyEval(Base):
     eval_score = Column(UnicodeText, nullable=False)
     eval_reason = Column(UnicodeText, nullable=False)
     eval_time = Column(DateTime, nullable=False)
+
+class CommandUsage(Base):
+    __tablename__ = 'CommandUsage'
+
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    product = Column(String, index=True)
+    command = Column(String, index=True)
+    user_id = Column(String, index=True)
+    num = Column(Integer)

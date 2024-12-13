@@ -332,6 +332,7 @@ async def telegram_webhook(request: Request,db: Session = Depends(database.get_d
 def handle_command(product ,command, chat_id,db: Session):
     retrieved_state = crud.get_reply_state_by_product_and_user(db, product, chat_id)
     print("retrieved_state:", retrieved_state.stage_str)
+    record_command_usage(product, chat_id, command, db)
     if retrieved_state.stage_str == "multi":
          if command != "/clean" and command != "/reply" and command != "/analyze":
             send_message_line_or_telegram(product,  "please input image or /reply or /clean", chat_id)
@@ -402,6 +403,23 @@ def handle_command(product ,command, chat_id,db: Session):
                 send_message_line_or_telegram(product, "No analysis available.", chat_id)
     else:
         send_message_line_or_telegram(product, "Unknown command. Use /help to see available commands.", chat_id)
+
+def record_command_usage(product, user_id, command, db: Session):
+    command_usage = crud.get_command_usage(db,user_id,command,product)
+    if command_usage:
+        command_usage.num += 1
+        db.commit()
+        db.refresh(command_usage)
+
+    else:
+        command_usage = schemas.CommandUsage(
+            product=product,
+            user_id=str(user_id),
+            command=command,
+            num=1
+        )
+        crud.creat_command_usage(db, command_usage)
+
 
 def reply2imageTelegram(product, message_id, user_id, replyToken: str, db: Session):
     try:

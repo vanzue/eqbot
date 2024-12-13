@@ -51,7 +51,14 @@ CREATE TABLE ChatRecords (
     FOREIGN KEY (person_id) REFERENCES PersonalInfo(id),
     FOREIGN KEY (contact_id) REFERENCES Contact(id)
 );
-
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='CommandUsage' AND xtype='U')
+CREATE TABLE CommandUsage (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    product VARCHAR(255),
+    command VARCHAR(255),
+    user_id VARCHAR(255),
+    num INT
+);
 -- 创建 ReplyState 表
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='HighEqReplyState' AND xtype='U')
 CREATE TABLE ReplyState (

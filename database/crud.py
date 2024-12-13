@@ -511,3 +511,17 @@ def get_reply_eval_by_id(db: Session, reply_eval_id: int):
 
 def get_all_reply_states(db: Session):
     return db.query(models.ReplyState).all()
+
+def get_command_usage(db: Session, user_id: str, command: str, product: str):
+    return db.query(models.CommandUsage).filter_by(product=product, user_id=user_id, command=command).first()
+def creat_command_usage(db: Session, commandUsage: schemas.CommandUsage):
+    db_commandUsage = models.CommandUsage(
+        product=commandUsage.product,
+        user_id=str(commandUsage.user_id),
+        command=commandUsage.command,
+        num=1
+    )
+    db.add(db_commandUsage)
+    db.commit()
+    db.refresh(db_commandUsage)
+    return db_commandUsage

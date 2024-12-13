@@ -198,5 +198,9 @@ class ReplyEvalCreate(ReplyEvalBase):
 class ReplyEval(ReplyEvalBase):
     pass
 
-
+class CommandUsage(BaseModel):
+    command: str
+    product: str
+    num: int
+    user_id: str
 
