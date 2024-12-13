@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional, Dict
 from datetime import datetime
 
+
 # PersonalInfo Schema
 class PersonalInfoBase(BaseModel):
     name: str
@@ -40,7 +41,7 @@ class PersonalInfoUpdate(BaseModel):
 
 class PersonalInfo(PersonalInfoBase):
     id: str  # Changed to str to match the SQLAlchemy model
-    eq_scores: List['EQScore'] = []  # Relationship
+    eq_scores: List["EQScore"] = []  # Relationship
 
     class Config:
         # orm_mode = True
@@ -77,6 +78,7 @@ class EQScore(EQScoreBase):
     class Config:
         from_attributes = True
 
+
 class EQScoreUpdate(BaseModel):
     perception_score: Optional[float]
     perception_detail: Optional[str]
@@ -103,11 +105,12 @@ class CoursesBase(BaseModel):
     background: Optional[str]
     location: str
     npc: str
-    locale: str 
+    locale: str
     task: Optional[str]
     image: Optional[str]
     border_color: str
     background_color: str
+    theme: Optional[str]
 
 
 class CoursesCreate(CoursesBase):
@@ -183,18 +186,18 @@ class ReplyState(ReplyStateBase):
     class Config:
         from_attributes = True
 
+
 class ReplyEvalBase(BaseModel):
     chat_history: str
     analysis: str
     suggest_response: str
+
 
 class ReplyEvalCreate(ReplyEvalBase):
     eval_score: str
     eval_reason: str
     eval_time: datetime
 
+
 class ReplyEval(ReplyEvalBase):
     pass
-
-
-
