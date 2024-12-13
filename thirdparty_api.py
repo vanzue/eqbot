@@ -320,8 +320,11 @@ async def telegram_webhook(request: Request,db: Session = Depends(database.get_d
             if text.startswith('/'):
                 handle_command("Telegram",text, chat_id,db)
             else:
-                reply2text("Telegram", message['text'],
-                            message['chat']['id'], message['message_id'], db)
+                retrieved_state = crud.get_reply_state_by_product_and_user(db, "Telegram", chat_id)
+                if retrieved_state.stage2_output:
+                    reply2text("Telegram", message['text'],message['chat']['id'], message['message_id'], db)
+                else:
+                    send_message_line_or_telegram("Telegram", "please give me chat history image", chat_id)
     except json.JSONDecodeError as e:
         return JSONResponse(status_code=400, content={"message": "An error occurred while processing the message"})
     return JSONResponse(status_code=200, content={"message": "Message received"})
