@@ -13,7 +13,7 @@ from onboarding.onboarding_api import all_scenario_data
 
 router = APIRouter()
 
-# 定义文件名
+# 场景lib
 filename = ["scenario_1", "scenario_2", "scenario_3", "scenario_4", "scenario_5",
             "scenario_6", "scenario_7", "scenario_8", "scenario_9", "scenario_10"]
 filename_en = ["scenario_1_en", "scenario_2_en",
