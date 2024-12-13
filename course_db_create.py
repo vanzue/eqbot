@@ -81,9 +81,9 @@ def main():
         # npc_data = json.dumps(npc_json, ensure_ascii=False, indent=4)
         # print(npc_data)
         # crud.update_course_npc(db, 3, npc_data)
-        # new_task = "Cheer up Sam while avoiding further infuriating Jason:Encourage teammates to engage and get at least one to say, \"I agree with you\""
+        new_task = "Cheer up Sam while avoiding further infuriating Jason.:Encourage teammates to engage and get at least one to say, \"I agree with you\"."
         # new_title = "Managing Tensions in a Meeting"
-        # crud.update_course_task(db, 4, new_task)
+        crud.update_course_task(db, 3, new_task)
         # course_data = schemas.CoursesCreate(
         #                 course_dim = "self_regulation",
         #                 course_level = 1,
@@ -100,9 +100,9 @@ def main():
         #             )
         # db_course_data = crud.create_course(db, course_data)
         # print(f"Created Course: {db_course_data.id}")
-        border_color = "#90E0E7"
-        background_color = "#D6FCF6"
-        crud.update_course_color(db, 4, background_color, border_color)
+        # border_color = "#90E0E7"
+        # background_color = "#D6FCF6"
+        # crud.update_course_color(db, 4, background_color, border_color)
 
         # person_course_data = schemas.PersonalInfoCoursesCreate(
         #     user_id=1,
